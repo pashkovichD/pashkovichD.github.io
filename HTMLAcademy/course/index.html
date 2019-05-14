@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	
+	<form action="https://echo.htmlacademy.ru/" method="POST">
+		<p>
+			<label for="user-login">Логин</label>
+			<input type="text" id="user-login" name="login" placeholder="Логин">	
+		</p>
+		<p>
+			<label for="user-password">Пароль</label>
+			<input type="password" id="user-password" name="password" placeholder="Пароль">	
+		</p>
+		<p>
+			<label>
+				<input type="checkbox" name="remember">Запомнить меня
+			</label>
+		</p>	
+		<button type="submit">Войти</button>
+	</form>
 
+	<form action="https://echo.htmlacademy.ru/" method="GET">
+		<fieldset>
+			<legend>Производители:</legend>
+			<ul>
+				<li>
+					<input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+					<label for="filter-baxter-of-california">Baxter of California</label>
+				</li>
+				<li>
+					<input type="checkbox" name="mr-natty" id="filter-mr-natty">
+					<label for="filter-mr-natty">Mr Natty</label>
+				</li>
+				<li>
+					<input type="checkbox" name="suavecito" id="filter-suavecito" checked>
+					<label for="filter-suavecito">Suavecito</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Группы товаров:</legend>
+			<ul>
+				<li>
+					<input type="radio" name="product-group" id="filter-shave" value="shaving">
+					<label for="filter-shave">Бритвенные принадлежности</label>
+				</li>
+				<li>
+					<input type="radio" name="product-group" id="filter-care" value="hair-care" checked>
+					<label for="filter-care">Средства ухода</label>
+				</li>
+				<li>
+					<input type="radio" name="product-group" id="filter-accessories" value="accessories">
+					<label for="filter-accessories">Аксессуары</label>
+				</li>
+			</ul>
+		</fieldset>
+		<button type="submit">Показать</button>
+	</form>
+
+	<p>Все холодильники белые</p>
+	<details>
+		<summary>Подробнее</summary>
+		<p>Если их не покрасить в черный цвет</p>
+		<p>Если их не покрасить в черный цвет</p>
+		<p>Если их не покрасить в черный цвет</p>
+	</details>
+
+	<label>
+		Цвет холодильника
+		<input list="fridges">
+	</label>
+	<datalist id="fridges">
+		<option value="Красный">
+		<option value="Оранжевый">
+		<option value="Желтый">
+		<option value="Зеленый">
+		<option value="Голубой">
+		<option value="Синий">
+		<option value="Фиолетовый">
+	</datalist>
+
+	<h1 class="visually-hidden">Заголовок</h1>
+	<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ее продолжил имени однажды там маленькая, единственное это великий своего диких коварный приставка? Все речью пояс ipsum, которой, ты инициал запятой до послушавшись ее семь страну одна. До инициал прямо которой рекламных одна. Безорфографичный пояс одна, lorem повстречался возвращайся дороге путь бросил. Безорфографичный по всей подзаголовок они возвращайся сих повстречался о дороге бросил текстов, большой встретил которой которое обеспечивает, алфавит инициал. Парадигматическая города эта до буквоград строчка? Жизни, домах. Коварных повстречался запятых залетают языком языкового от всех своего несколько курсивных точках, правилами рукописи первую одна за lorem прямо послушавшись себя, возвращайся снова?</p>
+
+	<div class="btn btn1">Кнопка 1</div>
+	<div class="btn btn2">Кнопка 2</div>
+	<div class="btn btn3">Кнопка 3</div>
+	<div class="btn btn4">Кнопка 4</div>
+	<div class="circle"></div>
+
+	<div class="portraitcat"></div>
+
+	<h2 style="border-top: 1px solid #777;">background-size:</h2>
+	<div class="portrait-vertical portrait-1"></div>
+	<div class="portrait-vertical portrait-2"></div>
+	<br>
+	<div class="portrait-horizontal portrait-3"></div>
+	<div class="portrait-horizontal portrait-4"></div>
+
+	<div class="set">
+		<h2>background-origin:</h2>
+		<div class="portrait portrait-1"></div>
+		<div class="portrait portrait-2"></div>
+		<div class="portrait portrait-3"></div>
+	</div>
+
+	<div class="set2">
+		<h2>background-clip:</h2>
+		<div class="portrait portrait-small"></div>
+		<div class="portrait portrait-full"></div>		
+	</div>
+
+	<div class="set3">
+		<h2>Множественный фон</h2>
+		<div class="portrait"></div>
+	</div>
+
+	<div class="set4">
+		<h2>Повторение фона: background-repeat: round</h2>
+		<div class="portrait"></div>
+	</div>
+
+	<div class="set5">
+		<h2>Повторение фона: background-repeat: space</h2>
+		<div class="portrait"></div>
+	</div>
+
+	<div class="set6">
+		<h2>Изображение рамки: border-image-source</h2>
+		<div class="portrait"></div>
+	</div>
+
+	<div class="set7">
+		<h2>Рамки и треугольники</h2>
+		<div class="square"></div>
+
+		<div class="geometry">
+			<div class="arrow-bottom"></div>
+			<div class="arrow-left"></div>
+		</div>
+
+		<div class="geometry2">
+			<div class="arrow-top-right"></div>
+			<div class="arrow-bottom-left"></div>
+		</div>
+		
+		<div class="geometry3">
+			<div class="arrow-right-long"></div>
+		</div>
+
+		<div class="geometry4">
+			<div class="arrow-round"></div>
+		</div>
+
+		<div class="geometry5">
+			Сортировка:
+			<a href="" class="arrow arrow-up">По возрастанию</a>
+			<a href="" class="arrow arrow-down">По убыванию</a>
+		</div>
+
+	</div>
+
+	<div class="set8">
+		<h2>Unicode-символы</h2>
+		<p class="uni">
+			<span>&copy;</span>
+			<span>&alpha;</span>
+			<span>&para;</span>
+			<span>&#37;	</span>
+		</p>
+
+		<div class="txt">
+			<h1>В самолете.<br> Летим к Кексику.</h1>
+			<span>&#9787;</span>
+		</div>
+
+		<div class="night">
+			<h1>Ночной клуб</h1>
+			<span>&#9787;</span>
+		</div>
+
+		<div class="camera">
+			<h1>Оъектив</h1>
+			<span>&#9787;</span>
+		</div>
+
+		<div class="warm">
+			<a href="#"><span>B</span>Warm<span>B</span>Photo<span>B</span></a>
+			<h1>Теплые ламповые фотографии</h1>			
+			<div class="square">Warm Photo</div>
+		</div>
+	</div>
+</body>
+</html>
