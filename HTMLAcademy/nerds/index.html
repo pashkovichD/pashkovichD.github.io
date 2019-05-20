@@ -19,7 +19,7 @@
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
-			<a href="" class="cart">Корзина</a>
+			<a href="#" class="cart">Корзина</a>
 		</nav>
 	</header>
 	
@@ -145,9 +145,25 @@
 		</section>
 	</footer>
 
-	<section class="modal modal-email">
+	<section class="modal modal-message">
 		<h2>Напишите нам</h2>
 <!-- Здесь нужно разработать и вставить форму со всеми необходимыми полями ввода и кнопкой отправки формы. Потом сделать интерактивной с помощью JS. Данные отправлять на http://echo.htmlacademy.ru -->
+		<form action="https://echo.htmlacademy.ru" method="POST" class="message-form">
+			<p class="message-item">
+				<label for="message-name">Ваше имя:</label>
+				<input type="text" name="name" id="message-name" placeholder="Имя Фамилия" value="">
+			</p>
+			<p class="message-item">
+				<label for="message-email">Ваш e-mail:</label>
+				<input type="text" name="email" id="message-email" placeholder="email@example.com" value="">
+			</p>
+			<p class="message-item">
+				<label for="message-text">Текст письма:</label>
+				<textarea name="text" id="message-text" cols="30" rows="10">В свободной форме</textarea>				
+			</p>
+			<button type="submit" class="button">Отправить</button>
+		</form>
+		<button type="button" class="modal-close">Закрыть форму</button>
 	</section>
 </body>
 </html>
