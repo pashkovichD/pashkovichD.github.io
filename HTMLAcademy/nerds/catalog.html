@@ -36,10 +36,184 @@
 		
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр выбора шаблона</h2>
-			<form action="https://echo.htmlacademy.ru">
-				<!-- <h2>Стоимость:</h2>
-				<h2>Сетка:</h2>
-				<h2>Особенности:</h2> -->
+			<form action="https://echo.htmlacademy.ru" method="GET" class="filter">
+				<fieldset class="filter-item">
+					<legend>Стоимость:</legend>
+					<!-- --------- Потом убрать в стилевой файл -->
+					<style>
+						.range-filter {
+							margin: 0;
+							padding: 0;
+
+							
+
+							width: 260px;
+							margin-top: 49px;
+						}
+
+						.filter-item {
+							margin: 0;
+							padding: 0;
+
+							border: none;
+
+							font-family: Roboto, Arial, sans-serif;							
+							font-size: 16px;
+							line-height: 24px;
+							font-weight: 400;
+							color: #000000;
+						}
+
+						.filter-item legend {
+							font-size: 18px;
+							line-height: 24px;
+							text-transform: uppercase;
+							font-weight: 700;
+						}
+
+						.range-controls {
+							position: relative;
+
+							height: 41px;
+							margin-bottom: 15px;
+							padding-top: 39px;
+							padding-right: 20px;
+							padding-left: 20px;
+
+							background-color: #f1f1f1;
+
+							border-radius: 5px;
+						}
+
+						.range-controls .scale {
+							height: 2px;
+
+							background: #d7dcde;
+						}
+
+						.range-controls .bar {
+							width: 70%;
+							height: 2px;
+
+							background: #00ca74;
+						}
+
+						.range-controls .toggle {
+							position: absolute;
+							top: 31px;
+							left: 0;
+
+							width: 4px;
+							height: 4px;
+							padding: 0;
+
+							border: 8px solid #ffffff;
+							background-color: #ababab;
+							box-shadow: 0 2px 1px 0 #cfcfcf;
+							border-radius: 50%;
+							cursor: pointer;
+						}
+
+						.range-controls .toggle-min {
+							left: 18px;
+						}
+
+						.range-controls .toggle-max {
+							left: 160px;
+						}
+						
+						.price-controls {
+							font-size: 0;
+						}
+
+						.price-controls label {
+							display: inline-block;
+							width: 50%;
+
+							font-size: 16px;
+							text-transform: uppercase;
+						}
+
+						.price-controls input {
+							width: 60px;
+							padding: 8px 10px;
+							margin-left: 10px;
+
+							font-family: Roboto, Arial, sans-serif;							
+							font-size: 16px;
+							text-align: center;
+							color: #283136;
+
+							border: none;
+							border-radius: 5px;
+							background: #f1f1f1;							
+						}
+
+						.max-price {
+							text-align: right;
+						}
+					</style>
+					<!-- --------- Потом убрать в стилевой файл -->
+					
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden" name="grid" id="filter-adaptive" value="adaptive" checked>
+							<label for="filter-adaptive">Адаптивная</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden" name="grid" id="filter-fixed" value="fixed">
+							<label for="filter-fixed">Фиксированная</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" class="visually-hidden" name="grid" id="filter-rubber" value="rubber">
+							<label for="filter-rubber">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="checkbox" name="slider" id="filter-slider" class="visually-hidden" checked>
+							<label for="filter-slider">Слайдер</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="advantage-block" id="filter-advantage-block" class="visually-hidden">
+							<label for="filter-advantage-block">Блок преимуществ</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="news" id="filter-news" class="visually-hidden" checked>
+							<label for="filter-news">Новости</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="gallery" id="filter-gallery" class="visually-hidden">
+							<label for="filter-gallery">Галерея</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="cart" id="filter-cart" class="visually-hidden">
+							<label for="filter-cart">Корзина</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="button filter-button">Показать</button>
 			</form>
 		</section>
 
@@ -67,7 +241,7 @@
 						</p>
 					</div>
 					<div class="decoration"></div>
-					<img src="img/templates/sedona.jpg" alt="Шаблон сайта 'Седона'">
+					<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'Седона'" width="360" height="576">
 				</li>
 				<li class="template-item">
 					<div class="template-desc">
@@ -78,7 +252,7 @@
 						</p>
 					</div>
 					<div class="decoration"></div>
-					<img src="img/templates/sedona.jpg" alt="Шаблон сайта 'Седона'">
+					<img src="img/templates/template-2.jpg" alt="Шаблон сайта 'Pink App'" width="360" height="576">
 				</li>
 				<li class="template-item">
 					<div class="template-desc">
@@ -89,7 +263,7 @@
 						</p>
 					</div>
 					<div class="decoration"></div>
-					<img src="img/templates/sedona.jpg" alt="Шаблон сайта 'Седона'">
+					<img src="img/templates/template-3.jpg" alt="Шаблон сайта 'Barbershop'" width="360" height="576">
 				</li>
 				<li class="template-item">
 					<div class="template-desc">
@@ -100,7 +274,7 @@
 						</p>
 					</div>
 					<div class="decoration"></div>
-					<img src="img/templates/sedona.jpg" alt="Шаблон сайта 'Седона'">
+					<img src="img/templates/template-4.jpg" alt="Шаблон сайта 'Mishka'" width="360" height="576">
 				</li>
 				<li class="template-item">
 					<div class="template-desc">
@@ -111,7 +285,7 @@
 						</p>
 					</div>
 					<div class="decoration"></div>
-					<img src="img/templates/sedona.jpg" alt="Шаблон сайта 'Седона'">
+					<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'A plus'" width="360" height="576">
 				</li>
 				<li class="template-item">
 					<div class="template-desc">
@@ -122,7 +296,7 @@
 						</p>
 					</div>
 					<div class="decoration"></div>
-					<img src="img/templates/sedona.jpg" alt="Шаблон сайта 'Седона'">
+					<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'Кваст'" width="360" height="576">
 				</li>
 			</ul>
 			<ul class="pagination-list">
