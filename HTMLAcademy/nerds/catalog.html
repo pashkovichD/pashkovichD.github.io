@@ -11,7 +11,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
-				<img src="img/indexlogo.png" alt="Логотип веб-студии «Нёрдс»" width="" height="">
+				<img src="img/nerds-logo.svg" alt="Логотип веб-студии «Нёрдс»" width="160" height="65">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
@@ -133,7 +133,7 @@
 				<a href="#" class="button contacts-button">Напишите нам</a>
 			</div>
 			<p>
-				<img src="img/map.jpg" alt="Карта офиса по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="" height="">
+				<img src="img/map.jpg" alt="Карта офиса по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
 			</p>
 		</section>
 
@@ -153,9 +153,25 @@
 		</section>
 	</footer>
 
-	<section class="modal modal-email">
+	<section class="modal modal-message">
 		<h2>Напишите нам</h2>
-<!-- Здесь нужно разработать и вставить форму со всеми необходимыми полями ввода и кнопкой отправки формы. Потом сделать интерактивной с помощью JS. Данные отправлять на http://echo.htmlacademy.ru -->
+		<form action="https://echo.htmlacademy.ru" method="POST" class="message-form">
+			<p class="message-item">
+				<label for="message-name">Ваше имя:</label>
+				<input type="text" name="name" id="message-name" placeholder="Имя Фамилия" value="">
+			</p>
+			<p class="message-item">
+				<label for="message-email">Ваш e-mail:</label>
+				<input type="text" name="email" id="message-email" placeholder="email@example.com" value="">
+			</p>
+			<p class="message-item">
+				<label for="message-text">Текст письма:</label>
+				<textarea name="text" id="message-text" cols="30" rows="10">В свободной форме</textarea>				
+			</p>
+			<button type="submit" class="button">Отправить</button>
+		</form>
+		<button type="button" class="modal-close">Закрыть форму</button>
+		
 	</section>
 </body>
 </html>
