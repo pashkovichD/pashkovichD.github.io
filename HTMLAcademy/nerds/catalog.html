@@ -27,292 +27,296 @@
 				<img src="img/nerds-logo.svg" alt="Логотип веб-студии «Нёрдс»" width="160" height="65">
 			</a>
 			<ul class="site-navigation">
-				<!-- <li><a href="studio.html">Студия</a></li>
+				<li><a href="studio.html">Студия</a></li>
 				<li><a href="clients.html">Клиенты</a></li>
-				<li><a href="catalog.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li> -->
+				<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
-			<a href="cart.html" class="cart">
-				<!-- Корзина -->
-			</a>
+			<a href="cart.html" class="cart">Корзина</a>
 		</nav>
 	</header>
 	
 	<main>
 		<h1>Магазин готовых шаблонов</h1>
 		
-		<section class="filters">
-			<h2 class="visually-hidden">Фильтр выбора шаблона</h2>
-			<form action="https://echo.htmlacademy.ru" method="GET" class="filter">
-				<fieldset class="filter-item">
-					<legend>Стоимость:</legend>
-					<!-- --------- Потом убрать в стилевой файл -->
-					<style>
-						.range-filter {
-							margin: 0;
-							padding: 0;
+		<div class="content container out-1">
 
+			<section class="filters out-2">
+				<h2 class="visually-hidden">Фильтр выбора шаблона</h2>
+				<form action="https://echo.htmlacademy.ru" method="GET" class="filter">
+					<fieldset class="filter-item">
+						<legend>Стоимость:</legend>
+						<!-- --------- Потом убрать в стилевой файл -->
+						<style>
+							.range-filter {
+								margin: 0;
+								padding: 0;
+
+								
+
+								width: 260px;
+								margin-top: 49px;
+							}
+
+							.filter-item {
+								margin: 0;
+								padding: 0;
+
+								border: none;
+
+								font-family: Roboto, Arial, sans-serif;							
+								font-size: 16px;
+								line-height: 24px;
+								font-weight: 400;
+								color: #000000;
+							}
+
+							.filter-item legend {
+								font-size: 18px;
+								line-height: 24px;
+								text-transform: uppercase;
+								font-weight: 700;
+							}
+
+							.range-controls {
+								position: relative;
+
+								height: 41px;
+								margin-bottom: 15px;
+								padding-top: 39px;
+								padding-right: 20px;
+								padding-left: 20px;
+
+								background-color: #f1f1f1;
+
+								border-radius: 5px;
+							}
+
+							.range-controls .scale {
+								height: 2px;
+
+								background: #d7dcde;
+							}
+
+							.range-controls .bar {
+								width: 70%;
+								height: 2px;
+
+								background: #00ca74;
+							}
+
+							.range-controls .toggle {
+								position: absolute;
+								top: 31px;
+								left: 0;
+
+								width: 4px;
+								height: 4px;
+								padding: 0;
+
+								border: 8px solid #ffffff;
+								background-color: #ababab;
+								box-shadow: 0 2px 1px 0 #cfcfcf;
+								border-radius: 50%;
+								cursor: pointer;
+							}
+
+							.range-controls .toggle-min {
+								left: 18px;
+							}
+
+							.range-controls .toggle-max {
+								left: 160px;
+							}
 							
+							.price-controls {
+								font-size: 0;
+							}
 
-							width: 260px;
-							margin-top: 49px;
-						}
+							.price-controls label {
+								display: inline-block;
+								width: 50%;
 
-						.filter-item {
-							margin: 0;
-							padding: 0;
+								font-size: 16px;
+								text-transform: uppercase;
+							}
 
-							border: none;
+							.price-controls input {
+								width: 60px;
+								padding: 8px 10px;
+								margin-left: 10px;
 
-							font-family: Roboto, Arial, sans-serif;							
-							font-size: 16px;
-							line-height: 24px;
-							font-weight: 400;
-							color: #000000;
-						}
+								font-family: Roboto, Arial, sans-serif;							
+								font-size: 16px;
+								text-align: center;
+								color: #283136;
 
-						.filter-item legend {
-							font-size: 18px;
-							line-height: 24px;
-							text-transform: uppercase;
-							font-weight: 700;
-						}
+								border: none;
+								border-radius: 5px;
+								background: #f1f1f1;							
+							}
 
-						.range-controls {
-							position: relative;
-
-							height: 41px;
-							margin-bottom: 15px;
-							padding-top: 39px;
-							padding-right: 20px;
-							padding-left: 20px;
-
-							background-color: #f1f1f1;
-
-							border-radius: 5px;
-						}
-
-						.range-controls .scale {
-							height: 2px;
-
-							background: #d7dcde;
-						}
-
-						.range-controls .bar {
-							width: 70%;
-							height: 2px;
-
-							background: #00ca74;
-						}
-
-						.range-controls .toggle {
-							position: absolute;
-							top: 31px;
-							left: 0;
-
-							width: 4px;
-							height: 4px;
-							padding: 0;
-
-							border: 8px solid #ffffff;
-							background-color: #ababab;
-							box-shadow: 0 2px 1px 0 #cfcfcf;
-							border-radius: 50%;
-							cursor: pointer;
-						}
-
-						.range-controls .toggle-min {
-							left: 18px;
-						}
-
-						.range-controls .toggle-max {
-							left: 160px;
-						}
+							.max-price {
+								text-align: right;
+							}
+						</style>
+						<!-- --------- Потом убрать в стилевой файл -->
 						
-						.price-controls {
-							font-size: 0;
-						}
-
-						.price-controls label {
-							display: inline-block;
-							width: 50%;
-
-							font-size: 16px;
-							text-transform: uppercase;
-						}
-
-						.price-controls input {
-							width: 60px;
-							padding: 8px 10px;
-							margin-left: 10px;
-
-							font-family: Roboto, Arial, sans-serif;							
-							font-size: 16px;
-							text-align: center;
-							color: #283136;
-
-							border: none;
-							border-radius: 5px;
-							background: #f1f1f1;							
-						}
-
-						.max-price {
-							text-align: right;
-						}
-					</style>
-					<!-- --------- Потом убрать в стилевой файл -->
-					
-					<div class="range-filter">
-						<div class="range-controls">
-							<div class="scale">
-								<div class="bar"></div>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
 							</div>
-							<div class="toggle toggle-min"></div>
-							<div class="toggle toggle-max"></div>
+							<div class="price-controls">
+								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+							</div>
 						</div>
-						<div class="price-controls">
-							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
-							<label class="max-price">до <input type="text" name="max-price" value="15000"></label>
-						</div>
-					</div>
-				</fieldset>
+					</fieldset>
 
-				<fieldset>
-					<legend>Сетка:</legend>
-					<ul>
-						<li class="filter-option">
-							<input type="radio" class="visually-hidden" name="grid" id="filter-adaptive" value="adaptive" checked>
-							<label for="filter-adaptive">Адаптивная</label>
-						</li>
-						<li class="filter-option">
-							<input type="radio" class="visually-hidden" name="grid" id="filter-fixed" value="fixed">
-							<label for="filter-fixed">Фиксированная</label>
-						</li>
-						<li class="filter-option">
-							<input type="radio" class="visually-hidden" name="grid" id="filter-rubber" value="rubber">
-							<label for="filter-rubber">Резиновая</label>
-						</li>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul>
+							<li class="filter-option">
+								<input type="radio" class="visually-hidden" name="grid" id="filter-adaptive" value="adaptive" checked>
+								<label for="filter-adaptive">Адаптивная</label>
+							</li>
+							<li class="filter-option">
+								<input type="radio" class="visually-hidden" name="grid" id="filter-fixed" value="fixed">
+								<label for="filter-fixed">Фиксированная</label>
+							</li>
+							<li class="filter-option">
+								<input type="radio" class="visually-hidden" name="grid" id="filter-rubber" value="rubber">
+								<label for="filter-rubber">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul>
+							<li class="filter-option">
+								<input type="checkbox" name="slider" id="filter-slider" class="visually-hidden" checked>
+								<label for="filter-slider">Слайдер</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="advantage-block" id="filter-advantage-block" class="visually-hidden">
+								<label for="filter-advantage-block">Блок преимуществ</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="news" id="filter-news" class="visually-hidden" checked>
+								<label for="filter-news">Новости</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="gallery" id="filter-gallery" class="visually-hidden">
+								<label for="filter-gallery">Галерея</label>
+							</li>
+							<li class="filter-option">
+								<input type="checkbox" name="cart" id="filter-cart" class="visually-hidden">
+								<label for="filter-cart">Корзина</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="button filter-button">Показать</button>
+				</form>
+			</section>
+
+			<div class="right-column out-2">
+				<section class="sort out-3">
+					<h2 class="visually-hidden">Сортировка</h2>
+					<!-- <p>Сортировать:</p> -->
+					<ul class="sort-list">
+						<!-- <li class="sort-item"><a href="#">по цене</a></li>
+						<li class="sort-item"><a href="#">по типу</a></li>
+						<li class="sort-item"><a href="#">по названию</a></li>
+						<li class="sort-item"><a href="#">по убыванию</a></li>
+						<li class="sort-item"><a href="#">по возрастанию</a></li> -->
 					</ul>
-				</fieldset>
+				</section>
 
-				<fieldset>
-					<legend>Особенности:</legend>
-					<ul>
-						<li class="filter-option">
-							<input type="checkbox" name="slider" id="filter-slider" class="visually-hidden" checked>
-							<label for="filter-slider">Слайдер</label>
+				<section class="templates out-3">
+					<h2 class="visually-hidden">Шаблоны веб-сайтов</h2>
+					<ul class="templates-list out-1">
+						<!-- <li class="template-item">
+							<div class="template-desc">
+								<h3><a href="#">Sedona</a></h3>
+								<p>Информационный сайт для туристов</p>
+								<p class="template-price">
+									<a href="#" class="button button-template">9900 руб.</a>
+								</p>
+							</div>
+							<div class="decoration"></div>
+							<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'Седона'" width="360" height="576">
 						</li>
-						<li class="filter-option">
-							<input type="checkbox" name="advantage-block" id="filter-advantage-block" class="visually-hidden">
-							<label for="filter-advantage-block">Блок преимуществ</label>
+						<li class="template-item">
+							<div class="template-desc">
+								<h3><a href="#">Pink app</a></h3>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
+								<p class="template-price">
+									<a href="#" class="button button-template">9900 руб.</a>
+								</p>
+							</div>
+							<div class="decoration"></div>
+							<img src="img/templates/template-2.jpg" alt="Шаблон сайта 'Pink App'" width="360" height="576">
 						</li>
-						<li class="filter-option">
-							<input type="checkbox" name="news" id="filter-news" class="visually-hidden" checked>
-							<label for="filter-news">Новости</label>
+						<li class="template-item">
+							<div class="template-desc">
+								<h3><a href="#">Barbershop</a></h3>
+								<p>Сайт салоны красоты. Для мужчин, да.</p>
+								<p class="template-price">
+									<a href="#" class="button button-template">9900 руб.</a>
+								</p>
+							</div>
+							<div class="decoration"></div>
+							<img src="img/templates/template-3.jpg" alt="Шаблон сайта 'Barbershop'" width="360" height="576">
 						</li>
-						<li class="filter-option">
-							<input type="checkbox" name="gallery" id="filter-gallery" class="visually-hidden">
-							<label for="filter-gallery">Галерея</label>
+						<li class="template-item">
+							<div class="template-desc">
+								<h3><a href="#">Mishka</a></h3>
+								<p>Интернет-магазин вязаных игрушек</p>
+								<p class="template-price">
+									<a href="#" class="button button-template">9900 руб.</a>
+								</p>
+							</div>
+							<div class="decoration"></div>
+							<img src="img/templates/template-4.jpg" alt="Шаблон сайта 'Mishka'" width="360" height="576">
 						</li>
-						<li class="filter-option">
-							<input type="checkbox" name="cart" id="filter-cart" class="visually-hidden">
-							<label for="filter-cart">Корзина</label>
+						<li class="template-item">
+							<div class="template-desc">
+								<h3><a href="#">A plus</a></h3>
+								<p>Лендинг курсов повышения квалификации</p>
+								<p class="template-price">
+									<a href="#" class="button button-template">9900 руб.</a>
+								</p>
+							</div>
+							<div class="decoration"></div>
+							<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'A plus'" width="360" height="576">
 						</li>
+						<li class="template-item">
+							<div class="template-desc">
+								<h3><a href="#">Кваст</a></h3>
+								<p>Промо-сайт производителя крафтового кваса</p>
+								<p class="template-price">
+									<a href="#" class="button button-template">9900 руб.</a>
+								</p>
+							</div>
+							<div class="decoration"></div>
+							<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'Кваст'" width="360" height="576">
+						</li> -->
 					</ul>
-				</fieldset>
-				<button type="submit" class="button filter-button">Показать</button>
-			</form>
-		</section>
+					<ul class="pagination-list out-1">
+						<!-- <li class="pagination-item pagination-item-current"><a>1</a></li>
+						<li class="pagination-item"><a href="#">2</a></li>
+						<li class="pagination-item"><a href="#">3</a></li>
+						<li class="pagination-item"><a href="#">Следующая</a></li> -->
+					</ul>
+				</section>
+			</div>
 
-		<!-- <section class="sort">
-			<h2 class="visually-hidden">Сортировка</h2>
-			<p>Сортировать:</p>
-			<ul class="sort-list">
-				<li class="sort-item"><a href="#">по цене</a></li>
-				<li class="sort-item"><a href="#">по типу</a></li>
-				<li class="sort-item"><a href="#">по названию</a></li>
-				<li class="sort-item"><a href="#">по убыванию</a></li>
-				<li class="sort-item"><a href="#">по возрастанию</a></li>
-			</ul>
-		</section> -->
-
-		<!-- <section class="templates">
-			<h2 class="visually-hidden">Шаблоны веб-сайтов</h2>
-			<ul class="templates-list">
-				<li class="template-item">
-					<div class="template-desc">
-						<h3><a href="#">Sedona</a></h3>
-						<p>Информационный сайт для туристов</p>
-						<p class="template-price">
-							<a href="#" class="button button-template">9900 руб.</a>
-						</p>
-					</div>
-					<div class="decoration"></div>
-					<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'Седона'" width="360" height="576">
-				</li>
-				<li class="template-item">
-					<div class="template-desc">
-						<h3><a href="#">Pink app</a></h3>
-						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<p class="template-price">
-							<a href="#" class="button button-template">9900 руб.</a>
-						</p>
-					</div>
-					<div class="decoration"></div>
-					<img src="img/templates/template-2.jpg" alt="Шаблон сайта 'Pink App'" width="360" height="576">
-				</li>
-				<li class="template-item">
-					<div class="template-desc">
-						<h3><a href="#">Barbershop</a></h3>
-						<p>Сайт салоны красоты. Для мужчин, да.</p>
-						<p class="template-price">
-							<a href="#" class="button button-template">9900 руб.</a>
-						</p>
-					</div>
-					<div class="decoration"></div>
-					<img src="img/templates/template-3.jpg" alt="Шаблон сайта 'Barbershop'" width="360" height="576">
-				</li>
-				<li class="template-item">
-					<div class="template-desc">
-						<h3><a href="#">Mishka</a></h3>
-						<p>Интернет-магазин вязаных игрушек</p>
-						<p class="template-price">
-							<a href="#" class="button button-template">9900 руб.</a>
-						</p>
-					</div>
-					<div class="decoration"></div>
-					<img src="img/templates/template-4.jpg" alt="Шаблон сайта 'Mishka'" width="360" height="576">
-				</li>
-				<li class="template-item">
-					<div class="template-desc">
-						<h3><a href="#">A plus</a></h3>
-						<p>Лендинг курсов повышения квалификации</p>
-						<p class="template-price">
-							<a href="#" class="button button-template">9900 руб.</a>
-						</p>
-					</div>
-					<div class="decoration"></div>
-					<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'A plus'" width="360" height="576">
-				</li>
-				<li class="template-item">
-					<div class="template-desc">
-						<h3><a href="#">Кваст</a></h3>
-						<p>Промо-сайт производителя крафтового кваса</p>
-						<p class="template-price">
-							<a href="#" class="button button-template">9900 руб.</a>
-						</p>
-					</div>
-					<div class="decoration"></div>
-					<img src="img/templates/template-1.jpg" alt="Шаблон сайта 'Кваст'" width="360" height="576">
-				</li>
-			</ul>
-			<ul class="pagination-list">
-				<li class="pagination-item pagination-item-current"><a>1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item"><a href="#">Следующая</a></li>
-			</ul>
-		</section> -->
+		</div>
 
 	</main>
 	

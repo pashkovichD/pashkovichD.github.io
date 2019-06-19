@@ -17,8 +17,8 @@ a {
 }
 
 img {
-/*	max-width: 100%;
-	height: auto;*/
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -52,6 +52,8 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a;
 	border: none;
 	border-radius: 3px;
+
+	transition: all .2s ease;
 }
 
 .button:hover,
@@ -74,46 +76,30 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-	/* демо */
-	min-height: 115px;
+	position: relative;
+	z-index: 1;
 
-	background: rgba(0,116,1,.4);
-	outline: 2px solid #007401;
-	outline-offset: -2px;
+	background-color: #eeeeee;
 }
 
 .main-navigation {
+	min-height: 115px;
+
 	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #eeeeee;
-	
-	/* демо */
-	min-height: 115px;
-
-	background: rgba(255,39,75,.4);
-	outline: 2px solid #FF274B;
-	outline-offset: -2px;
 }
 
 .main-navigation.container {
 	display: flex;
-	align-items: flex-end;	
+	align-items: flex-end;
 }
 
 .main-header-logo {
 	width: 160px;
 	height: 65px;
-	margin-right: 140px;
-
-	/* демо */
-	/*display: block;*/
-
-	background: rgba(235,244,54,.4);
-	outline: 2px solid #EBF436;
-	outline-offset: -2px;
+	margin-right: 175px;
 }
 
 .main-navigation a {
@@ -131,32 +117,63 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-	width: 660px;
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 600px;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+}
 
-	/* демо */
-	min-height: 115px;	
-
-	background: rgba(112,16,111,.4);
-	outline: 2px solid #70106F;
-	outline-offset: -2px;
+.site-navigation a {
+	display: block;
+	padding: 10px 25px;
 }
 
 .cart {
-	width: 160px;
+	position: relative;
+
+	max-width: 160px;
 	margin-left: auto;
-	
-	/* демо */
-	min-height: 115px;
+	padding: 10px 0 10px 45px;	
+}
 
-	display: block;	
+.cart::before {
+	content: '';
 
-	background: rgba(112,16,111,.4);
-	outline: 2px solid #70106F;
-	outline-offset: -2px;
+	position: absolute;
+	top: 17px;
+	left: 4px;
+
+	width: 15px;
+	height: 15px;
+
+	background-image: url("../img/cart-icon.svg");
+	background-repeat: no-repeat;
+}
+
+.site-navigation-current {
+	position: relative;
+}
+
+.site-navigation-current::after {
+	content: '';
+
+	position: absolute;	
+	left: 25px;
+	right: 25px;
+	bottom: 0;
+
+	height: 2px;
+
+	background: red;
+}
+
+.cart.site-navigation-current::after {
+	left: 0;
+	right: 0;
 }
 
 
@@ -173,6 +190,11 @@ main h1 {
 	color: #000000;
 
 	background-color: #eeeeee;  
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
 }
 
 .features {
@@ -327,12 +349,7 @@ main h1 {
 .trends {	
 	margin-bottom: 40px;
 
-	/* демо */
-	min-height: 430px;
-
-	background: rgba(0,116,1,.4);
-	outline: 2px solid #007401;
-	outline-offset: -2px;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .trends-list {
@@ -342,32 +359,73 @@ main h1 {
 	padding: 0;	
 
 	list-style: none;
-
-	/* демо */
-	min-height: 430px;
-
-	background: rgba(255,39,75,.4);
-	outline: 2px solid #FF274B;
-	outline-offset: -2px;
 }
 
 .trends-item {
-	width: 360px;
+	position: relative;
 
-	/* демо */
-	min-height: 430px;
+	width: 300px;
+}
 
-	background: rgba(112,16,111,.4);
-	outline: 2px solid #70106F;
-	outline-offset: -2px;
+.trends-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .trends-item h3 {
+	margin: 0;
+	margin-top: 171px;
+	margin-bottom: 20px;
+	padding: 0;
+
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
+	text-transform: uppercase;
 	color: #000000;	
 }
+
+.trends-item p {
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+}
+
+.trends-item-button {
+	margin-bottom: 80px;
+	padding: 16px 40px;	
+
+	display: inline-block;
+}
+
+.btn-green {
+	background-color: #00ca74;
+}
+
+.btn-yellow {
+	background-color: #efc84a;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+	background-color: #00bc6c;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+	background-color: #eab534;
+}
+
+.btn-green:active {
+	background-color: #00aa62;
+}
+
+.btn-yellow:active {
+	background-color: #e5a722;
+}
+
+
 
 .index-columns {
 	display: flex;
@@ -380,30 +438,58 @@ main h1 {
 
 .description {
 	width: 760px;
-
-	/* демо */
-	min-height: 430px;
-
-	background: rgba(112,16,111,.4);
-	outline: 2px solid #70106F;
-	outline-offset: -2px;
 }
 
-.tagline {
+.description p {
+	margin: 0;
+	margin-bottom: 45px;
+	padding: 0;
+}
+
+p.tagline {
+	margin: 30px 0 35px 0;
+	padding: 0;
+
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 	color: #000000;
 }
 
-.development-title {	
+p.development-title {
+	margin-bottom: 0;
+
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 }
 
 .development-type {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.development-type li {
+	position: relative;
+
+	margin-top: 30px;
+	padding-left: 35px;
+}
+
+.development-type li::before {
+	content: '';
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	width: 25px;
+	height: 2px;
+	margin-top: -1px;
+
+	background-color: #fb565a;
 }
 
 /*--- Веб-студия в числах ---*/
@@ -441,8 +527,7 @@ main h1 {
 }
 
 .partners {
-	margin: 0;
-	margin-bottom: 80px;
+	margin: 0;	
 
 	/* демо */
 	min-height: 180px;
@@ -484,6 +569,10 @@ p.contacts-title {
 	color: #000000;
 }
 
+.main-footer {
+	margin-top: 80px;
+}
+
 .footer-map img {
 	width: 1200px;
 	height: 410px;
@@ -523,6 +612,11 @@ p.contacts-title {
 	color: #000000;
 }
 
+/*--- Фильтр ---*/
+.filters {
+	width: 260px;
+}
+
 .filter fieldset {
 	border: none;
 }
@@ -554,6 +648,17 @@ p.contacts-title {
 	background-color: #dfdfdf;
 }
 
+.right-column {
+	width: 760px;	
+}
+
+.sort {
+	margin-bottom: 60px;
+
+	/* демо */
+	min-height: 20px;
+}
+
 .sort p {
 	font-size: 18px;
 	line-height: 18px;
@@ -563,6 +668,9 @@ p.contacts-title {
 }
 
 .sort-list {	
+	margin: 0;
+	padding: 0;
+
 	text-transform: uppercase;
 
 	list-style: none;
@@ -584,8 +692,21 @@ p.contacts-title {
 	opacity: 1;
 }
 
+.templates {
+
+	/* демо */
+	min-height: 1900px;
+}
+
 .templates-list {
+	margin: 0;
+	margin-bottom: 60px;
+	padding: 0;
+
 	list-style: none;
+
+	/* демо */
+	min-height: 1900px;
 }
 
 .template-desc {
@@ -613,8 +734,14 @@ p.contacts-title {
 }
 
 .pagination-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 	text-align: center;
+
+	/* демо */
+	min-height: 50px;
 }
 
 .pagination-list a {
