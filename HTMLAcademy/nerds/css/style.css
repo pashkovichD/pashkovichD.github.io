@@ -496,16 +496,20 @@ p.development-title {
 
 .numbers {
 	width: 360px;
+}
 
-	/* демо */
-	min-height: 430px;
+.numbers img {
+	margin-bottom: 40px;
 
-	background: rgba(112,16,111,.4);
-	outline: 2px solid #70106F;
-	outline-offset: -2px;
+	width: 360px;
+	height: 208px;
 }
 
 .numbers-title {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
