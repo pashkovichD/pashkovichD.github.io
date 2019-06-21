@@ -689,6 +689,17 @@ p.contacts-title {
 	padding: 16px;
 }
 
+.marker {
+	position: absolute;
+	top: 70px;
+	left: 680px;	
+	width: 231px;
+	height: 190px;
+
+	background-image: url('../img/map-marker.png');
+	background-repeat: no-repeat;
+}
+
 .footer-social {
 	display: flex;
 	justify-content: space-between;
