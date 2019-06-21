@@ -532,9 +532,11 @@ p.development-title {
 }
 
 .numbers-table td {
+	padding: 0;
+
 	position: relative;
 
-	width: 30%;
+	width: 33%;
 }
 
 .percent {
