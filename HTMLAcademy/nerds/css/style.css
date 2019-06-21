@@ -307,7 +307,7 @@ main h1 {
 .feature-item:nth-child(1) {
 	background-image: url(../img/slide1.png);
 	background-repeat: no-repeat;
-	background-position: 93% 18px;
+	background-position: 93% bottom;
 }
 
 .feature-item:nth-child(2) {
