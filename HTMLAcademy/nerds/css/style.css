@@ -530,7 +530,7 @@ p.development-title {
 }
 
 .numbers-table tr:nth-child(2) td {
-	padding-top: 25px;
+	padding-top: 28px;
 }
 
 .numbers-table td {
@@ -561,21 +561,45 @@ p.development-title {
 
 
 .partners {
-	margin: 0;	
-
-	/* демо */
-	min-height: 180px;
-
-	background: rgba(0,116,1,.4);
-	outline: 2px solid #007401;
-	outline-offset: -2px;
+	margin: 0;
 }
 
 .partners-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;	
+
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.partners-list li {
+	width: 260px;
+	margin: 45px 0;
+
+	text-align: center;
+}
+
+.partners-list a {
+	display: block;
+}
+
+.partners-list img {	
+	opacity: .2;
+}
+
+.partners-list a:hover img,
+.partners-list a:focus img {
+	opacity: 1;
+}
+
+.partners-list a:active img {
+	opacity: .1;
 }
 
 .footer-map {
