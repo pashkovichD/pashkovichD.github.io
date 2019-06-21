@@ -532,7 +532,8 @@ p.development-title {
 }
 
 .numbers-table td {
-	padding: 0;
+	margin: 0;
+	padding: 0;	
 
 	position: relative;
 
