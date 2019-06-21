@@ -752,6 +752,7 @@ p.contacts-title {
 
 .social-sale {
 	width: 760px;
+	padding-top: 6px;
 
 	color: #444444;
 }
@@ -762,7 +763,7 @@ p {
 }
 
 p.sale-tagline {
-	margin-bottom: 10px;	
+	margin-bottom: 8px;	
 
 	font-size: 36px;
 	line-height: 36px;
