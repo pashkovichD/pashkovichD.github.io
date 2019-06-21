@@ -438,7 +438,7 @@ main h1 {
 	display: flex;
 	justify-content: space-between;
 
-	margin-bottom: 75px;
+	padding-bottom: 75px;
 
 	border-bottom: 2px solid #eeeeee;
 }
