@@ -513,22 +513,38 @@ p.development-title {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .numbers-table {
 	line-height: 18px;	
 }
 
+.numbers-table tr:nth-child(2) td {
+	padding-top: 20px;
+}
+
+.numbers-table td {
+	position: relative;
+
+	width: 33%;
+}
+
 .percent {
 	font-size: 45px;
-	/*line-height: 10px;*/
+	line-height: 25px;
+	
 	font-weight: 700;
 	color: #000000;
 }
 
 .percent span {
-	font-size: 28px;
+	position: absolute;
+	top: -5px;	
+
+	font-size: 28px;	
 }
+
 
 .partners {
 	margin: 0;	
