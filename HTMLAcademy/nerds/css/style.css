@@ -449,12 +449,12 @@ main h1 {
 
 .description p {
 	margin: 0;
-	margin-bottom: 45px;
+	margin-bottom: 38px;
 	padding: 0;
 }
 
 p.tagline {
-	margin: 30px 0 35px 0;
+	margin: 32px 0 35px 0;
 	padding: 0;
 
 	font-size: 45px;
@@ -481,7 +481,7 @@ p.development-title {
 .development-type li {
 	position: relative;
 
-	margin-top: 30px;
+	margin-top: 24px;
 	padding-left: 35px;
 }
 
