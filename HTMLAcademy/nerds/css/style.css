@@ -579,10 +579,26 @@ p.development-title {
 }
 
 .partners-list li {
+	position: relative;
+
 	width: 260px;
 	margin: 50px 0;
 
 	text-align: center;
+}
+
+.partners-list li:not(:last-child)::before {
+	content: '';
+
+	position: absolute;
+	top: 50%;
+	right: -19px;
+
+	width: 2px;
+	height: 52px;
+	margin-top: -26px;
+
+	background-color: #eeeeee;
 }
 
 .partners-list a {
