@@ -729,18 +729,41 @@ p.contacts-title {
 
 	background: #e1e1e1;
 	border-radius: 50%;
+
+	transition: all .2s ease;
+}
+
+.footer-social svg {
+	transition: all .2s ease;
+}
+
+.footer-social li:hover,
+.footer-social li:focus {
+	background-color: #e74246;
+}
+
+.footer-social li:active {
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.1) inset;
+}
+
+.footer-social li:active svg {
+	opacity: .3;
 }
 
 .social-sale {
 	width: 760px;
 
 	color: #444444;
-
-	/* демо */
-	min-height: 80px;
 }
 
-.sale-tagline {
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p.sale-tagline {
+	margin-bottom: 10px;	
+
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
