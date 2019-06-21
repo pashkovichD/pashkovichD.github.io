@@ -623,20 +623,51 @@ p.development-title {
 	opacity: .1;
 }
 
+
+
+/*--- Footer ---*/
+
+.main-footer {
+	margin-top: 80px;
+}
+
+.footer-map img {
+	width: 1200px;
+	height: 416px;
+	margin: 0 auto;
+}
+
 .footer-map {
 	margin-bottom: 70px;
 
-	min-height: 410px;
+	min-height: 416px;
 
 	text-align: center;
 	line-height: 0;
 }
 
-.contacts {
+.footer-map .container {
+	position: relative;
+}
 
+.footer-map .contacts {
+	position: absolute;
+	top: 55px;
+	
+	z-index: 1;
+
+	padding: 55px 50px 50px 50px;
+
+	text-align: left;
+
+	background: #fff;
 }
 
 .contacts p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+
 	line-height: 18px;
 	color: #666666;
 }
@@ -648,14 +679,9 @@ p.contacts-title {
 	color: #000000;
 }
 
-.main-footer {
-	margin-top: 80px;
-}
-
-.footer-map img {
-	width: 1200px;
-	height: 410px;
-	margin: 0 auto;
+.contacts-button {
+	display: block;
+	padding: 20px;
 }
 
 .footer-social {
