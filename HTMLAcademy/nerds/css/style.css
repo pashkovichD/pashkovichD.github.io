@@ -576,8 +576,7 @@ p.development-title {
 
 	list-style: none;
 
-	/*border-bottom: 2px solid #eeeeee;*/
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .partners-list li {
