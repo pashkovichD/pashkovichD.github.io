@@ -506,7 +506,7 @@ p.development-title {
 }
 
 .numbers img {
-	margin-bottom: 40px;
+	margin-bottom: 29px;
 
 	width: 360px;
 	height: 208px;
@@ -514,7 +514,7 @@ p.development-title {
 
 .numbers-title {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 48px;
 	padding: 0;
 
 	font-weight: 700;
@@ -528,7 +528,7 @@ p.development-title {
 }
 
 .numbers-table tr:nth-child(2) td {
-	padding-top: 20px;
+	padding-top: 25px;
 }
 
 .numbers-table td {
@@ -547,7 +547,9 @@ p.development-title {
 
 .percent span {
 	position: absolute;
-	top: -5px;	
+	top: -7px;	
+
+	margin-left: -3px;
 
 	font-size: 28px;	
 }
