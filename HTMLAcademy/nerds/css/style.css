@@ -707,14 +707,28 @@ p.contacts-title {
 }
 
 .footer-social ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
 	width: 260px;	
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 
 	list-style: none;
+}
 
-	/* демо */
-	min-height: 80px;
+.footer-social li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 78px;
+	height: 78px;
+
+	vertical-align: middle;
+
+	background: #e1e1e1;
+	border-radius: 50%;
 }
 
 .social-sale {
