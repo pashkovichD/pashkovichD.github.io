@@ -656,7 +656,8 @@ p.development-title {
 	
 	z-index: 1;
 
-	padding: 55px 50px 50px 50px;
+	width: 320px;
+	padding: 50px;
 
 	text-align: left;
 
@@ -666,7 +667,7 @@ p.development-title {
 .contacts p {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
+	margin-bottom: 21px;
 
 	line-height: 18px;
 	color: #666666;
@@ -679,9 +680,13 @@ p.contacts-title {
 	color: #000000;
 }
 
+.contacts .phone {
+	margin-bottom: 35px;
+}
+
 .contacts-button {
 	display: block;
-	padding: 20px;
+	padding: 16px;
 }
 
 .footer-social {
