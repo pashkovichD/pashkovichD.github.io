@@ -570,7 +570,7 @@ p.development-title {
 	align-items: center;
 	flex-wrap: wrap;	
 
-	min-height: 180px;
+	/*min-height: 180px;*/
 	margin: 0;
 	padding: 0;
 
@@ -583,12 +583,16 @@ p.development-title {
 .partners-list li {
 	position: relative;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 260px;	
+	min-height: 180px;
 
 	text-align: center;
 }
 
-.partners-list li:not(:last-child)::before {
+.partners-list li:not(:nth-child(4n))::before {
 	content: '';
 
 	position: absolute;
