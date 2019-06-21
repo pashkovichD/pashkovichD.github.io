@@ -439,6 +439,8 @@ main h1 {
 	justify-content: space-between;
 
 	margin-bottom: 75px;
+
+	border-bottom: 2px solid #eeeeee;
 }
 
 /*--- Описание веб-студии ---*/
