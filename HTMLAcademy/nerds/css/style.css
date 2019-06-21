@@ -612,6 +612,7 @@ p.development-title {
 
 .partners-list img {	
 	opacity: .2;
+	transition: opacity .5s ease;
 }
 
 .partners-list a:hover img,
