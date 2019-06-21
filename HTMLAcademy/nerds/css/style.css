@@ -776,6 +776,7 @@ p.sale-tagline {
 }
 
 /*--- Модальное окно ---*/
+
 .modal {
 	display: none;
 	width: 760px;
