@@ -774,56 +774,6 @@ p.sale-tagline {
 	color: #000000;
 }
 
-/*--- Модальное окно ---*/
-
-.modal {	
-	position: fixed;
-	left: 50%;
-	bottom: 180px;
-	z-index: 100;
-	
-	width: 760px;
-	margin-left: -480px;
-	padding: 65px 100px 85px 100px;
-
-	background-color: #ffffff;
-	box-shadow: 0px 7px 5px 5px rgba(0,0,0,0.3);
-}
-
-.modal h2 {
-	margin: 0;
-	margin-bottom: 40px;
-	padding: 0;
-}
-
-.message-form {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.message-item {
-	width: 50%;
-	margin: 0;
-	margin-bottom: 35px;
-	padding: 0;
-
-	line-height: 0;
-}
-
-.message-item label {
-	display: block;
-	margin-bottom: 10px;
-}
-
-.text-letter {
-	width: 100%;
-	margin-bottom: 45px;
-}
-
-.message-form-button {
-	width: 260px;
-	padding: 16px;
-}
 
 /*--- Фильтр ---*/
 .filters {
@@ -986,24 +936,52 @@ p.sale-tagline {
 }
 
 
+/*--- Модальное окно ---*/
 
-.modal {
+.modal {	
+	position: fixed;
+	left: 50%;
+	bottom: 180px;
+	z-index: 100;
+	
+	width: 760px;
+	margin-left: -480px;
+	padding: 65px 100px 85px 100px;
 
+	background-color: #ffffff;
+	box-shadow: 0px 7px 5px 5px rgba(0,0,0,0.3);
 }
 
-.modal-message h2 {
+.modal h2 {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
 	color: #000000;
 }
 
-.message-from {
-	
-	color: #283136;
+.message-form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.message-item label {	
+.message-item {
+	width: 360px;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+
+	line-height: 0;
+}
+
+.message-item label {
+	display: block;
+	margin-bottom: 10px;
+
 	line-height: 18px;
 	font-weight: 700;
 	color: #000000;
@@ -1011,9 +989,14 @@ p.sale-tagline {
 
 .message-item input,
 .message-item textarea {
+	width: 100%;
+	margin: 0;
+	padding: 14px 13px;	
+	box-sizing: border-box;	
+
 	font: inherit;
 	line-height: 18px;
-	color: #444444;
+	color: #a1a1a1;
 
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
@@ -1035,4 +1018,28 @@ p.sale-tagline {
 	color: #e74246;
 
 	border-color: #e74246;
+}
+
+.text-letter {
+	width: 100%;
+	margin-bottom: 45px;
+}
+
+.message-form-button {
+	width: 260px;
+	padding: 16px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 80px;
+	right: 90px;	
+
+	width: 21px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+
+	background-color: red;
+	border: 0;
 }
