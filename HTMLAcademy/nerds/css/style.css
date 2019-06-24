@@ -969,7 +969,7 @@ p.sale-tagline {
 
 .filter-radio input[type=radio]:disabled + .indicator-radio,
 .filter-radio input[type=radio]:disabled + .indicator-radio + label {
-	opacity: .1;
+	opacity: .2;
 }
 
 .filter-radio li:hover .indicator-radio,
@@ -1006,7 +1006,7 @@ p.sale-tagline {
 
 .filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox,
 .filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox + label {
-	opacity: .1;
+	opacity: .2;
 }
 
 .filter-checkbox input[type=checkbox]:focus + .indicator-checkbox {
