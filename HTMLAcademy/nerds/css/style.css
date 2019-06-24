@@ -632,7 +632,7 @@ p.development-title {
 }
 
 .footer-map img {
-	width: 1200px;
+	width: 1440px;
 	height: 416px;
 	margin: 0 auto;
 }
@@ -691,8 +691,8 @@ p.contacts-title {
 
 .marker {
 	position: absolute;
-	top: 70px;
-	left: 680px;	
+	top: 75px;
+	left: 705px;	
 	width: 231px;
 	height: 190px;
 
