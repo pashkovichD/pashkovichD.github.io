@@ -364,25 +364,30 @@
 		</section>
 	</footer>
 
-	<!-- <section class="modal modal-message">
+	<section class="modal modal-message">
 		<h2>Напишите нам</h2>
 		<form action="https://echo.htmlacademy.ru" method="POST" class="message-form">
 			<p class="message-item">
 				<label for="message-name">Ваше имя:</label>
-				<input type="text" name="name" id="message-name" placeholder="Имя Фамилия" value="">
+				<input type="text" name="name" id="message-name" placeholder="Имя Фамилия" value="" class="test">
 			</p>
 			<p class="message-item">
 				<label for="message-email">Ваш e-mail:</label>
-				<input type="text" name="email" id="message-email" placeholder="email@example.com" value="">
+				<input type="email" name="email" id="message-email" placeholder="email@example.com" value="">
 			</p>
-			<p class="message-item">
+			<p class="message-item text-letter">
 				<label for="message-text">Текст письма:</label>
-				<textarea name="text" id="message-text" cols="30" rows="10">В свободной форме</textarea>				
+				<textarea name="text" id="message-text" cols="30" rows="5">В свободной форме</textarea>				
 			</p>
-			<button type="submit" class="button">Отправить</button>
+			<button type="submit" class="button message-form-button">Отправить</button>
 		</form>
-		<button type="button" class="modal-close">Закрыть форму</button>		
-	</section> -->
+		<button type="button" class="modal-close" tabindex="0"><span class="visually-hidden">Закрыть форму</span></button>
+	</section>
+	<div class="overlay"></div>
+
+	
+	
+	<script src="js/popup.js"></script>
 
 </body>
 </html>
