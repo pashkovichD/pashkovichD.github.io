@@ -803,10 +803,21 @@ p.sale-tagline {
 
 .message-item {
 	width: 50%;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+
+	line-height: 0;
+}
+
+.message-item label {
+	display: block;
+	margin-bottom: 10px;
 }
 
 .text-letter {
 	width: 100%;
+	margin-bottom: 45px;
 }
 
 .message-form-button {
