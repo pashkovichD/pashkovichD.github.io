@@ -180,7 +180,7 @@ input[type="radio"].visually-hidden {
 /*--- main ---*/
 main h1 {
 	margin: 0;
-	margin-bottom: 55px;
+	margin-bottom: 60px;
 	padding: 75px 0 105px 0;	
 
 	font-size: 55px;
@@ -781,10 +781,15 @@ p.sale-tagline {
 }
 
 .filter fieldset {
+	margin: 0;
+	padding: 0;
+
 	border: none;
 }
 
 .filter legend {
+	margin-bottom: 60px;
+
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
@@ -793,14 +798,134 @@ p.sale-tagline {
 }
 
 .filter ul {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
+
+.range-filter {
+	margin: 0;
+	margin-bottom: 60px;
+	padding: 0;								
+
+	width: 260px;
+	
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+
+	border: none;
+
+	font-family: Roboto, Arial, sans-serif;							
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.filter-item legend {
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.range-controls {
+	position: relative;
+
+	height: 41px;
+	margin-bottom: 15px;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	background-color: #f1f1f1;
+
+	border-radius: 5px;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background: #d7dcde;
+}
+
+.range-controls .bar {
+	width: 70%;
+	height: 2px;
+
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;
+
+	width: 4px;
+	height: 4px;
+	padding: 0;
+
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: 18px;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
+.price-controls {
+	font-size: 0;
+}
+
+.price-controls label {
+	display: inline-block;
+	width: 50%;
+
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.price-controls input {
+	width: 60px;
+	padding: 8px 10px;
+	margin-left: 10px;
+
+	font-family: Roboto, Arial, sans-serif;							
+	font-size: 16px;
+	text-align: center;
+	color: #283136;
+
+	border: none;
+	border-radius: 5px;
+	background: #f1f1f1;							
+}
+
+.max-price {
+	text-align: right;
+}
+
+
+
 
 .filter-option label {
 	line-height: 20px;
 }
 
 .filter-button {
+	width: 100%;
+	padding: 16px 0;
+
 	color: #000000;
 
 	background-color: #eeeeee;
