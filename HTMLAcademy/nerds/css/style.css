@@ -799,15 +799,20 @@ p.sale-tagline {
 
 .filter ul {
 	margin: 0;
+	margin-bottom: 50px;
 	padding: 0;
 	padding-left: 37px;
 
 	list-style: none;
 }
 
+.filter ul li {
+	margin-bottom: 16px;
+}
+
 .range-filter {
 	margin: 0;
-	margin-top: 32px;
+	margin-top: 33px;
 	margin-bottom: 55px;
 	padding: 0;								
 
