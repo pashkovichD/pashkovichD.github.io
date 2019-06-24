@@ -810,6 +810,11 @@ p.sale-tagline {
 	margin-bottom: 16px;
 }
 
+.filter ul label {
+	color: #283136;
+	line-height: 20px;
+}
+
 .range-filter {
 	margin: 0;
 	margin-top: 43px;
@@ -922,11 +927,23 @@ p.sale-tagline {
 	text-align: right;
 }
 
+.filter-radio li {
+	position: relative;
+}
 
+.filter-radio li::before {
+	content: '';
+	
+	position: absolute;
+	top: 0;
+	left: -20px;
 
+	width: 25px;
+	height: 25px;
 
-.filter-option label {
-	line-height: 20px;
+	/*background: red;*/
+	border: 5px solid #4d4d4d;
+	border-radius: 50%;
 }
 
 .filter-button {
@@ -942,6 +959,9 @@ p.sale-tagline {
 .filter-button:focus {
 	background-color: #dfdfdf;
 }
+
+
+
 
 .right-column {
 	width: 760px;	
