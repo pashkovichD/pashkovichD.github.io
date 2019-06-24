@@ -968,9 +968,9 @@ p.sale-tagline {
 }
 
 .filter-radio input[type=radio]:disabled + .indicator-radio,
-.filter-radio input[type=radio]:disabled + .indicator-radio + label {
+.filter-radio input[type=radio]:disabled + .indicator-radio + span {
 	opacity: .2;
-}
+} 
 
 .filter-radio li:hover .indicator-radio,
 .filter-radio li:hover label {
@@ -1005,7 +1005,7 @@ p.sale-tagline {
 }
 
 .filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox,
-.filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox + label {
+.filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox + span {
 	opacity: .2;
 }
 
@@ -1035,7 +1035,11 @@ p.sale-tagline {
 	background-color: #dfdfdf;
 }
 
+.filter-button:active {
+	color: #a9a9a9;
 
+	background-color: #d5d5d5;
+}
 
 
 .right-column {
@@ -1043,6 +1047,7 @@ p.sale-tagline {
 }
 
 .sort {
+	display: flex;	
 	margin-bottom: 60px;
 
 	/* демо */
@@ -1051,13 +1056,15 @@ p.sale-tagline {
 
 .sort p {
 	font-size: 18px;
-	line-height: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
 }
 
 .sort-list {	
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 
@@ -1079,6 +1086,10 @@ p.sale-tagline {
 }
 
 .sort-list a:active {
+	opacity: 1;
+}
+
+.sort-item-current a {
 	opacity: 1;
 }
 
