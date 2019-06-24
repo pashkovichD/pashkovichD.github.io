@@ -788,7 +788,7 @@ p.sale-tagline {
 }
 
 .filter legend {
-	margin-bottom: 60px;
+	margin-bottom: 23px;
 
 	font-size: 18px;
 	line-height: 30px;
@@ -800,13 +800,15 @@ p.sale-tagline {
 .filter ul {
 	margin: 0;
 	padding: 0;
+	padding-left: 37px;
 
 	list-style: none;
 }
 
 .range-filter {
 	margin: 0;
-	margin-bottom: 60px;
+	margin-top: 32px;
+	margin-bottom: 55px;
 	padding: 0;								
 
 	width: 260px;
