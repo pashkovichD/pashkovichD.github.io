@@ -796,6 +796,24 @@ p.sale-tagline {
 	padding: 0;
 }
 
+.message-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.message-item {
+	width: 50%;
+}
+
+.text-letter {
+	width: 100%;
+}
+
+.message-form-button {
+	width: 260px;
+	padding: 16px;
+}
+
 /*--- Фильтр ---*/
 .filters {
 	width: 260px;
