@@ -987,7 +987,7 @@ p.sale-tagline {
 	position: absolute;
 	left: -35px;
 
-	width: 23px;
+	width: 27px;
 	height: 23px;
 
 	background-image: url('../img/checkbox-off.svg');
@@ -1002,6 +1002,23 @@ p.sale-tagline {
 
 .filter-checkbox li:hover label {
 	color: #000000;
+}
+
+.filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox,
+.filter-checkbox input[type=checkbox]:disabled + .indicator-checkbox + label {
+	opacity: .1;
+}
+
+.filter-checkbox input[type=checkbox]:focus + .indicator-checkbox {
+	box-shadow: 
+		0 0 0 2px white, 
+		0 0 0 4px #fc0;
+	
+	opacity: 1;		
+}
+
+.filter-checkbox input[type=checkbox]:checked + .indicator-checkbox {
+	background-image: url('../img/checkbox-on.svg');
 }
 
 .filter-button {
