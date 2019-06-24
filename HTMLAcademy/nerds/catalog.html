@@ -41,7 +41,7 @@
 		
 		<div class="content container out-1">
 
-			<section class="filters out-2">
+			<section class="filters">
 				<h2 class="visually-hidden">Фильтр выбора шаблона</h2>
 				<form action="https://echo.htmlacademy.ru" method="GET" class="filter">
 					<fieldset class="filter-item">
@@ -66,14 +66,17 @@
 						<ul class="filter-radio">
 							<li>
 								<input type="radio" class="visually-hidden" name="grid" id="filter-adaptive" value="adaptive" checked>
+								<span class="indicator-radio"></span>
 								<label for="filter-adaptive">Адаптивная</label>
 							</li>
 							<li>
-								<input type="radio" class="visually-hidden" name="grid" id="filter-fixed" value="fixed">
+								<input type="radio" class="visually-hidden" name="grid" id="filter-fixed" value="fixed" disabled>
+								<span class="indicator-radio"></span>
 								<label for="filter-fixed">Фиксированная</label>
 							</li>
 							<li>
 								<input type="radio" class="visually-hidden" name="grid" id="filter-rubber" value="rubber">
+								<span class="indicator-radio"></span>
 								<label for="filter-rubber">Резиновая</label>
 							</li>
 						</ul>
