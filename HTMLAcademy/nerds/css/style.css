@@ -979,6 +979,31 @@ p.sale-tagline {
 	opacity: 1;
 }
 
+.filter-checkbox li {
+	position: relative;
+}
+
+.filter-checkbox .indicator-checkbox {
+	position: absolute;
+	left: -35px;
+
+	width: 23px;
+	height: 23px;
+
+	background-image: url('../img/checkbox-off.svg');
+	background-repeat: no-repeat;
+
+	opacity: .4;
+}
+
+.filter-checkbox li:hover .indicator-checkbox {
+	opacity: 1;
+}
+
+.filter-checkbox li:hover label {
+	color: #000000;
+}
+
 .filter-button {
 	width: 100%;
 	padding: 16px 0;
