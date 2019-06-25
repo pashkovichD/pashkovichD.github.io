@@ -1049,12 +1049,11 @@ p.sale-tagline {
 .sort {
 	display: flex;	
 	margin-bottom: 60px;
-
-	/* демо */
-	min-height: 20px;
 }
 
 .sort p {
+	width: 200px;
+
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
@@ -1065,7 +1064,10 @@ p.sale-tagline {
 .sort-list {	
 	display: flex;
 	flex-wrap: wrap;
+	
+	width: 360px;
 	margin: 0;
+	margin-left: auto;
 	padding: 0;
 
 	text-transform: uppercase;
@@ -1080,13 +1082,29 @@ p.sale-tagline {
 	opacity: .3;
 }
 
-.sort-list a:hover,
-.sort-list a:focus {
+.sort-item {
+	margin-right: 26px;
+
+	
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
 	opacity: .6;
 }
 
-.sort-list a:active {
+.sort-item a:active {
 	opacity: 1;
+} 
+
+.icon-down,
+.icon-up {
+	margin: 0;	
+}
+
+.icon-down {
+	margin-left: auto;
+	margin-right: 18px;	
 }
 
 .sort-item-current a {
