@@ -631,6 +631,10 @@ p.development-title {
 	margin-top: 80px;
 }
 
+.inner-footer {
+	margin-top: 60px;
+}
+
 .footer-map img {
 	width: 1440px;
 	height: 416px;
@@ -1121,7 +1125,7 @@ p.sale-tagline {
 	justify-content: space-between;
 
 	margin: 0;
-	margin-bottom: 60px;
+	margin-bottom: 27px;
 	padding: 0;
 
 	line-height: 0;
@@ -1214,17 +1218,20 @@ p.sale-tagline {
 }
 
 .pagination-list {
+	display: flex;
+
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
-	text-align: center;
-
-	/* демо */
-	min-height: 50px;
+	text-align: center;	
 }
 
 .pagination-list a {
+	display: block;
+	padding: 16px 20px;
+	margin-right: 11px;
+
 	line-height: 18px;
 	color: #000000;	
 }
