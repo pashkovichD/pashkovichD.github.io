@@ -36,7 +36,7 @@
 		
 		<h1 class="visually-hidden">Сайт города Седона</h1>
 
-		<section class="presentation">
+		<section class="promo">
 			<h2 class="visually-hidden">Описание города Седона в штате Аризона</h2>
 			<b>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</b>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -70,26 +70,25 @@
 					<p class="feature-number">№5</p>
 					<p class="feature-description">Большинство едет в гранд каньон и толпится там<p>
 				</li>
+				<li>					
+					<h2 class="visually-hidden">Услуги</h2>
+					<ul class="services-list">
+						<li>
+							<h3>Жилье</h3>	
+							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						</li>
+						<li>
+							<h3>Еда</h3>	
+							<p>Всегда заказывайте фирменный бургер, вы нЕ разочаруетесь!</p>
+						</li>
+						<li>
+							<h3>Сувениры</h3>	
+							<p>Не только китайского, но и местного производства!</p>
+						</li>
+					</ul>
+				</li>
 			</ul>
-		</section>
-
-		<section class="services">
-			<h2 class="visually-hidden">Услуги</h2>
-			<ul class="services-list">
-				<li>
-					<h3>Жилье</h3>	
-					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-				</li>
-				<li>
-					<h3>Еда</h3>	
-					<p>Всегда заказывайте фирменный бургер, вы нЕ разочаруетесь!</p>
-				</li>
-				<li>
-					<h3>Сувениры</h3>	
-					<p>Не только китайского, но и местного производства!</p>
-				</li>
-			</ul>
-		</section>
+		</section>		
 
 		<section class="search">
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -106,8 +105,41 @@
 	</main>
 
 	<footer class="main-footer">
-		
+		<a href="#">#visitsedona</a>
+		<ul class="social-buttons">
+			<li><a href="#">Твиттер</a></li>
+			<li><a href="#">Фейсбук</a></li>
+			<li><a href="#">Ютюб</a></li>
+		</ul>
+		<a href="#">HTML Academy</a>		
 	</footer>
+
+	<section class="modal serach-hotels">
+		<h2 class="visually-hidden">Форма поиска гостиницы</h2>
+		<form action="https://echo.htmlacademy.ru" method="POST" class="search-form">
+			<p class="search-item">
+				<label for="search-date-arrival">Дата заезда:</label>
+				<input type="text" name="date-arrival" id="search-date-arrival" placeholder="24 апреля 2017" value="">
+			</p>
+			<p class="search-item">
+				<label for="search-date-departure">Дата выезда:</label>
+				<input type="text" name="date-departure" id="search-date-departure" placeholder="4 июля 2017" value="">
+			</p>
+			<p class="search-item">
+				<label for="search-adults">Взрослые:</label>
+				<button type="button">-</button>
+				<input type="text" name="adults" id="search-adults" value="2">
+				<button type="button">+</button>
+			</p>
+			<p class="search-item">
+				<label for="search-childrens">Дети:</label>
+				<button type="button">-</button>
+				<input type="text" name="childrens" id="search-childrens" value="0">
+				<button type="button">+</button>
+			</p>
+			<button type="submit">Найти</button>
+		</form>
+	</section>
 
 	<!-- JavaScript -->
 	<!-- переключение слайдов -->
