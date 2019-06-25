@@ -1116,6 +1116,10 @@ p.sale-tagline {
 }
 
 .templates-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 	margin: 0;
 	margin-bottom: 60px;
 	padding: 0;
@@ -1128,7 +1132,8 @@ p.sale-tagline {
 	position: relative;
 
 	width: 360px;
-	padding-top: 40px;
+	margin-bottom: 33px;
+	padding-top: 40px;	
 }
 
 .template-item::before {
@@ -1145,6 +1150,20 @@ p.sale-tagline {
 	background-repeat: no-repeat;
 
 	opacity: .12;
+	transition: opacity .2s ease;
+}
+
+.template-item:hover {
+	box-shadow: 4px 6px 5px 0px rgba(0,0,0,.25);
+}
+
+.template-item:hover .template-desc {
+	opacity: 1;
+
+}
+
+.template-item:hover::before {
+	opacity: 1;
 }
 
 .template-desc {
@@ -1152,12 +1171,13 @@ p.sale-tagline {
 	left: 0;
 	right: 0;
 	bottom: 0;
-
-	/*display: none;*/
+	
+	opacity: 0;
 
 	text-align: center;
 
 	background: #eeeeee;
+	transition: all .2s ease;	
 }
 
 .template-desc h3 {
@@ -1184,9 +1204,9 @@ p.sale-tagline {
 .button-template {
 	display: block;
 	
-	width: 80px;
+	width: 180px;
 	margin: 0 auto 40px auto;
-	padding: 16px 60px;
+	padding: 16px 10px;
 }
 
 .button-template:active {
