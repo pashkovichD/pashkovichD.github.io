@@ -1153,13 +1153,15 @@ p.sale-tagline {
 	right: 0;
 	bottom: 0;
 
+	/*display: none;*/
+
 	text-align: center;
 
 	background: #eeeeee;
 }
 
 .template-desc h3 {
-	margin: 30px 0 20px 0;	
+	margin: 30px 0 15px 0;	
 
 	font-size: 18px;
 	line-height: 30px;
@@ -1182,7 +1184,7 @@ p.sale-tagline {
 .button-template {
 	display: block;
 	
-	width: 120px;
+	width: 80px;
 	margin: 0 auto 40px auto;
 	padding: 16px 60px;
 }
