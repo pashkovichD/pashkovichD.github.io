@@ -1236,7 +1236,13 @@ p.sale-tagline {
 	color: #000000;	
 }
 
+.next a {
+	padding: 16px 80px;
+}
+
 .pagination-item a {
+	text-transform: uppercase;
+
 	background-color: #eeeeee;	
 	border-radius: 3px;
 }
