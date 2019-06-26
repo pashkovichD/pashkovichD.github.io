@@ -38,19 +38,19 @@
 
 		<section class="promo">
 			<h2 class="visually-hidden">Описание города Седона в штате Аризона</h2>
-			<b>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</b>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			<p class="promo-title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
+			<p class="promo-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		</section>
 
 		<section class="features">
 			<h2 class="visually-hidden">Достопримечательности</h2>
 			<ul class="features-list">
-				<li>
+				<li class="white-style">
 					<h3>Настоящий городок</h3>
 					<p class="feature-number">№1</p>
 					<p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь<p>
 				</li>
-				<li>
+				<li class="white-style">
 					<h3>Там есть Мост дьявола</h3>
 					<p class="feature-number">№2</p>
 					<p class="feature-description">Да, по нему можно пройти! Если конечно вы осмелитесь<p>
@@ -70,7 +70,7 @@
 					<p class="feature-number">№5</p>
 					<p class="feature-description">Большинство едет в гранд каньон и толпится там<p>
 				</li>
-				<li>					
+				<li class="services">
 					<h2 class="visually-hidden">Услуги</h2>
 					<ul class="services-list">
 						<li>
@@ -93,23 +93,23 @@
 		<section class="search">
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
 			<p class="search-lead">Заинтересовались?</p>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<a href="search-hotels.html">Поиск гостиницы в Седоне</a>
+			<p class="search-data">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<a href="hotels.html" class="button btn-brown search-button">Поиск гостиницы в Седоне</a>
 		</section>
 
 		<section class="map">
 			<h2 class="visually-hidden">Где находится город?</h2>
-			<img src="img/map.jpg" alt="Город, расположенный по обе стороны границы между округами Коконино и Явапай в северной части долины Верде штата Аризона" width="" height="">
+			<img src="img/map.jpg" alt="Город, расположенный по обе стороны границы между округами Коконино и Явапай в северной части долины Верде штата Аризона" width="1200" height="593">
 		</section>
 
 	</main>
 
 	<footer class="main-footer">
-		<a href="#">#visitsedona</a>
+		<a href="#" class="visitsedona">#visitsedona</a>
 		<ul class="social-buttons">
-			<li><a href="#">Твиттер</a></li>
-			<li><a href="#">Фейсбук</a></li>
-			<li><a href="#">Ютюб</a></li>
+			<li><a href="#" class="btn-blue">Твиттер</a></li>
+			<li><a href="#" class="btn-blue">Фейсбук</a></li>
+			<li><a href="#" class="btn-blue">Ютюб</a></li>
 		</ul>
 		<p>
 			website by
@@ -117,7 +117,7 @@
 		</p>
 	</footer>
 
-	<section class="modal serach-hotels">
+	<section class="modal search-hotels">
 		<h2 class="visually-hidden">Форма поиска гостиницы</h2>
 		<form action="https://echo.htmlacademy.ru" method="POST" class="search-form">
 			<p class="search-item">
@@ -140,7 +140,7 @@
 				<input type="text" name="childrens" id="search-childrens" value="0">
 				<button type="button">+</button>
 			</p>
-			<button type="submit">Найти</button>
+			<button type="submit" class="button btn-blue search-hotels-button">Найти</button>
 		</form>
 	</section>
 
