@@ -109,6 +109,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
 	position: absolute;
 	left: 50%;
+	z-index: 1;
 
 	width: 138px;
 	height: 70px;
@@ -170,6 +171,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	background-image: url('../img/background-photo.jpg');
+	background-color: #56575c;
 	background-repeat: no-repeat;
 
 	/* demo */
@@ -180,14 +182,14 @@ input[type="radio"].visually-hidden {
 	content: '';
 
 	position: absolute;
-	top: 80px;
+	top: 76px;
 	left: 50%;
 
 	width: 458px;
 	height: 352px;
 	margin-left: -229px;
 
-	background-image: url('../img/welcome-sedona.png');
+	background-image: url('../img/welcome-sedona.png');	
 	background-repeat: no-repeat;
 }
 
@@ -197,11 +199,15 @@ input[type="radio"].visually-hidden {
 }
 
 .promo .promo-title {
+	margin-bottom: 35px;
+
 	font-size: 21px;
 	font-weight: 700;
 }
 
 .promo .promo-desc {
+	margin-bottom: 55px;
+
 	color: #333333;
 }
 
@@ -211,9 +217,26 @@ input[type="radio"].visually-hidden {
 	right: 0;
 	bottom: 0;
 
+	padding-top: 60px;
+
+	text-align: center;
+
 	background-color: #ffffff;
 }
 
+.promo-bottom::before {
+	content: '';
+
+	position: absolute;
+	top: -57px;
+	left: 0;
+
+	width: 1200px;
+	height: 57px;
+
+	background-image: url('../img/edge.png');
+	background-repeat: no-repeat;
+}
 
 
 /*--- Достопримечательности ---*/
