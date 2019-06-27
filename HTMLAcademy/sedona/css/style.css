@@ -366,8 +366,6 @@ li.services {
 
 	width: 100%;
 	padding: 0;
-
-
 }
 
 .services-list {
@@ -384,13 +382,30 @@ li.services {
 
 	padding-top: 160px;
 
-	background: #ffffff;	
+	background-color: #ffffff;	
 }
 
 .services-list p {
 	color: #333333;
 }
 
+.housing {
+	background-image: url('../img/icon-1.svg');
+	background-repeat: no-repeat;
+	background-position: center 60px;
+}
+
+.eat {
+	background-image: url('../img/icon-2.svg');
+	background-repeat: no-repeat;
+	background-position: center 60px;
+}
+
+.souvenirs {
+	background-image: url('../img/icon-3.svg');
+	background-repeat: no-repeat;
+	background-position: center 60px;
+}
 
 
 /*--- Поиск гостиницы ---*/
