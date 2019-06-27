@@ -168,14 +168,13 @@ input[type="radio"].visually-hidden {
 /*--- Promo ---*/
 .promo {
 	position: relative;
+	
+	min-height: 724px;
 
 	background-image: url('../img/background-photo.jpg');
 	background-color: #56575c;
 	background-repeat: no-repeat;
 	background-position: 0 -56px;
-
-	/* demo */
-	min-height: 725px;
 }
 
 .promo::before {
@@ -206,7 +205,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo .promo-desc {
-	margin-bottom: 52px;
+	margin-bottom: 51px;
 
 	color: #333333;
 }
@@ -267,6 +266,7 @@ input[type="radio"].visually-hidden {
 
 .features-list h3 {
 	margin: 0;
+	margin-bottom: 23px;
 	padding: 0;
 
 	font-size: 21px;
@@ -279,7 +279,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list .feature-number {
-	
+	margin-bottom: 22px;
 }
 
 .features-list .white-style {	
@@ -316,7 +316,7 @@ input[type="radio"].visually-hidden {
 .box-left,
 .box-right {
 	width: 280px;
-	padding: 45px 60px 55px 60px;
+	padding: 47px 60px 10px 60px;
 
 	text-align: center;
 }
