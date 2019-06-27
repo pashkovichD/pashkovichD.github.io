@@ -440,6 +440,7 @@ li.services {
 
 	padding: 29px 118px;
 
+
 	font-size: 21px;
 	line-height: 26px;
 }
@@ -478,7 +479,6 @@ li.services {
 	color: #ffffff;
 
 	list-style: none;
-	
 }
 
 .filters li input,
