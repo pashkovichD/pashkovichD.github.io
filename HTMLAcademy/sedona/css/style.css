@@ -167,8 +167,33 @@ input[type="radio"].visually-hidden {
 
 /*--- Promo ---*/
 .promo {
+	position: relative;
+
+	background-image: url('../img/background-photo.jpg');
+	background-repeat: no-repeat;
+
 	/* demo */
-	min-height: 725px;
+	min-height: 725px;	
+}
+
+.promo::before {
+	content: '';
+
+	position: absolute;
+	top: 80px;
+	left: 50%;
+
+	width: 458px;
+	height: 352px;
+	margin-left: -229px;
+
+	background-image: url('../img/welcome-sedona.png');
+	background-repeat: no-repeat;
+}
+
+.promo p {
+	margin: 0;
+	padding: 0;
 }
 
 .promo .promo-title {
