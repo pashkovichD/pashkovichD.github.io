@@ -173,6 +173,7 @@ input[type="radio"].visually-hidden {
 	background-image: url('../img/background-photo.jpg');
 	background-color: #56575c;
 	background-repeat: no-repeat;
+	background-position: 0 -56px;
 
 	/* demo */
 	min-height: 725px;	
