@@ -448,8 +448,9 @@ li.services {
 
 /*--- Карта ---*/
 .map {
-	/* demo */
-	min-height: 593px;	
+	min-height: 593px;
+
+	line-height: 0;
 }
 
 
