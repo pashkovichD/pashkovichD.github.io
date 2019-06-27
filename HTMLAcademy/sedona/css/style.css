@@ -118,6 +118,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
 	display: flex;
+	flex-wrap: wrap;
 
 	margin: 0 73px;
 	padding: 0;
@@ -126,8 +127,6 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 
 	background-color: #ffffff;
-
-	
 }
 
 .site-navigation li {
@@ -176,7 +175,7 @@ input[type="radio"].visually-hidden {
 	background-position: 0 -56px;
 
 	/* demo */
-	min-height: 725px;	
+	min-height: 725px;
 }
 
 .promo::before {
@@ -242,8 +241,7 @@ input[type="radio"].visually-hidden {
 
 /*--- Достопримечательности ---*/
 .features {
-	/* demo */
-	/*min-height: 1100px;*/
+	
 }
 
 
@@ -260,6 +258,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list li {
+	position: relative;
 	width: 400px;
 
 	/* demo */	
@@ -275,15 +274,15 @@ input[type="radio"].visually-hidden {
 	
 }
 
-.features-list .white-style {
+.features-list .white-style {	
 	width: 100%;
+	min-height: 256px;
 
 	color: #ffffff;
 
 	background-color: #81b3d2;
-
-	/* demo */
-	min-height: 255px;
+	
+	
 }
 
 .features-list .white-style:first-child {
@@ -304,6 +303,46 @@ input[type="radio"].visually-hidden {
 
 .features-list li:nth-child(5) {
 	order: 6;
+}
+
+.box-left,
+.box-right {
+	width: 280px;
+	padding: 45px 60px 55px 60px;
+
+	text-align: center;
+}
+
+.box-right {
+	margin-left: auto;
+}
+
+.white-style:nth-child(1)::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 800px;
+	height: 256px;
+
+	background-image: url('../img/town.jpg');
+	background-repeat: no-repeat;
+}
+
+.white-style:nth-child(2)::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 800px;
+	height: 256px;
+
+	background-image: url('../img/bridge.jpg');
+	background-repeat: no-repeat;
 }
 
 /*--- Услуги ---*/
