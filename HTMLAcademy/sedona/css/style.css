@@ -205,6 +205,15 @@ input[type="radio"].visually-hidden {
 	color: #333333;
 }
 
+.promo-bottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background-color: #ffffff;
+}
+
 
 
 /*--- Достопримечательности ---*/
