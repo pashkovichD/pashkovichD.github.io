@@ -315,8 +315,8 @@ input[type="radio"].visually-hidden {
 
 .box-left,
 .box-right {
-	width: 280px;
-	padding: 47px 60px 10px 60px;
+	width: 360px;
+	padding: 47px 20px 10px 20px;
 
 	text-align: center;
 }
@@ -329,11 +329,12 @@ input[type="radio"].visually-hidden {
 	content: '';
 
 	position: absolute;
-	top: 0;
+	top: 50%;
 	right: 0;
 
 	width: 800px;
 	height: 256px;
+	margin-top: -128px;
 
 	background-image: url('../img/town.jpg');
 	background-repeat: no-repeat;
@@ -343,11 +344,12 @@ input[type="radio"].visually-hidden {
 	content: '';
 
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
 
 	width: 800px;
 	height: 256px;
+	margin-top: -128px;
 
 	background-image: url('../img/bridge.jpg');
 	background-repeat: no-repeat;
