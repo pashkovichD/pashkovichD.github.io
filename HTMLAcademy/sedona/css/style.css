@@ -259,13 +259,19 @@ input[type="radio"].visually-hidden {
 .features-list li {
 	position: relative;
 	width: 400px;
+	min-height: 203px;
+	width: 320px;
+	padding: 47px 40px 10px 40px;
 
-	/* demo */	
-	min-height: 260px;
+	text-align: center;
+
+	background-color: #eeeeee;
 }
 
 .features-list h3 {
-	margin: 0;
+	width: 173px;
+
+	margin: 0 auto;
 	margin-bottom: 23px;
 	padding: 0;
 
@@ -285,12 +291,11 @@ input[type="radio"].visually-hidden {
 .features-list .white-style {	
 	width: 100%;
 	min-height: 256px;
+	padding: 0;
 
 	color: #ffffff;
 
-	background-color: #81b3d2;
-	
-	
+	background-color: #81b3d2;	
 }
 
 .features-list .white-style:first-child {
@@ -315,8 +320,8 @@ input[type="radio"].visually-hidden {
 
 .box-left,
 .box-right {
-	width: 360px;
-	padding: 47px 20px 10px 20px;
+	width: 320px;
+	padding: 47px 40px 10px 40px;
 
 	text-align: center;
 }
@@ -358,7 +363,11 @@ input[type="radio"].visually-hidden {
 /*--- Услуги ---*/
 li.services {
 	order: 2;
+
 	width: 100%;
+	padding: 0;
+
+
 }
 
 .services-list {
@@ -371,8 +380,11 @@ li.services {
 }
 
 .services-list li {
-	/* demo */
-	min-height: 330px;
+	min-height: 170px;
+
+	padding-top: 160px;
+
+	background: #ffffff;	
 }
 
 .services-list p {
