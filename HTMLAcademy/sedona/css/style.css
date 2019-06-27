@@ -112,13 +112,13 @@ input[type="radio"].visually-hidden {
 
 	width: 138px;
 	height: 70px;
-	margin-left: -79px;
+	margin-left: -69px;
 }
 
 .site-navigation {
 	display: flex;
 
-	margin: 0 25px;
+	margin: 0 73px;
 	padding: 0;
 
 	font-weight: 700;
@@ -130,13 +130,17 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-	width: 25%;
-	padding: 15px 48px;
+	width: 240px;
+	padding: 15px 0;
 }
 
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
 	text-align: right;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-left: auto;
 }
 
 .site-navigation a {
