@@ -22,7 +22,7 @@ img {
 	height: auto;
 }
 
-/*.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
 	position: absolute;
@@ -38,7 +38,7 @@ input[type="radio"].visually-hidden {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}*/
+}
 
  .button {
 	font: inherit;
@@ -99,8 +99,7 @@ input[type="radio"].visually-hidden {
 
 /*--- HEADER ---*/
 .main-header {
-	/* demo */
-	min-height: 55px;
+	
 }
 
 .main-navigation {
@@ -114,13 +113,12 @@ input[type="radio"].visually-hidden {
 	width: 138px;
 	height: 70px;
 	margin-left: -79px;
-
-	/* demo */
-	display: inline-block;
 }
 
 .site-navigation {
-	margin: 0;
+	display: flex;
+
+	margin: 0 25px;
 	padding: 0;
 
 	font-weight: 700;
@@ -128,8 +126,17 @@ input[type="radio"].visually-hidden {
 
 	background-color: #ffffff;
 
-	/* demo */
-	min-height: 55px;
+	
+}
+
+.site-navigation li {
+	width: 25%;
+	padding: 15px 48px;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
 }
 
 .site-navigation a {
@@ -573,7 +580,7 @@ li.services {
 
 .hotels-list li {
 	border-bottom: 1px solid #e5e5e5;
-	
+
 	/* demo */
 	min-height: 150px;
 }
