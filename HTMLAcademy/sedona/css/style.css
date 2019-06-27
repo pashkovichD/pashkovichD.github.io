@@ -410,7 +410,7 @@ li.services {
 
 /*--- Поиск гостиницы ---*/
 .search {
-	padding-top: 50px;
+	padding-top: 48px;
 	text-align: center;
 }
 
@@ -420,7 +420,7 @@ li.services {
 }
 
 .search .search-lead {
-	margin-bottom: 28px;
+	margin-bottom: 22px;
 
 	font-size: 30px;
 	line-height: 36px;		
@@ -429,7 +429,7 @@ li.services {
 
 .search .search-data {
 	width: 450px;
-	margin: 0 auto 50px auto;
+	margin: 0 auto 47px auto;
 
 	line-height: 24px;
 	color: #333333;
@@ -438,7 +438,7 @@ li.services {
 .search-button {
 	display: inline-block;
 
-	padding: 25px 140px;
+	padding: 29px 118px;
 
 	font-size: 21px;
 	line-height: 26px;
