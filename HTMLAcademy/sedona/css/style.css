@@ -378,7 +378,7 @@ li.services {
 }
 
 .services-list li {
-	min-height: 170px;
+	min-height: 160px;
 
 	padding-top: 160px;
 
@@ -410,19 +410,38 @@ li.services {
 
 /*--- Поиск гостиницы ---*/
 .search {
-	/* demo */
-	min-height: 290px;
+	padding-top: 50px;
+	text-align: center;
 }
 
-.search-lead {
-	font-size: 30px;	
+.search p {
+	margin: 0;
+	padding: 0;
+}
+
+.search .search-lead {
+	margin-bottom: 28px;
+
+	font-size: 30px;
 	line-height: 36px;		
 	font-weight: 700;
 }
 
-.search-data {
+.search .search-data {
+	width: 450px;
+	margin: 0 auto 50px auto;
+
 	line-height: 24px;
 	color: #333333;
+}
+
+.search-button {
+	display: inline-block;
+
+	padding: 25px 140px;
+
+	font-size: 21px;
+	line-height: 26px;
 }
 
 
