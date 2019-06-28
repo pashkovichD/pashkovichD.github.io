@@ -107,6 +107,39 @@
 				<p class="search-lead">Заинтересовались?</p>
 				<p class="search-data">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<a href="hotels.html" class="button btn-brown search-button">Поиск гостиницы в Седоне</a>
+
+				<section class="modal search-hotels">
+					<h3 class="visually-hidden">Форма поиска гостиницы</h3>
+					<form action="https://echo.htmlacademy.ru" method="POST" class="search-form">
+						<p class="search-item">
+							<label for="search-date-arrival">Дата заезда:</label>
+							<input type="text" name="date-arrival" id="search-date-arrival" placeholder="24 апреля 2017" value="">
+						</p>
+						<p class="search-item">
+							<label for="search-date-departure">Дата выезда:</label>
+							<input type="text" name="date-departure" id="search-date-departure" placeholder="4 июля 2017" value="">
+						</p>
+						<div class="two-columns">
+							<p class="search-item">
+								<label for="search-adults">Взрослые:</label>
+								<span class="count-people">
+									<button type="button">-</button>
+									<input type="text" name="adults" id="search-adults" value="2">
+									<button type="button">+</button>
+								</span>
+							</p>
+							<p class="search-item">
+								<label for="search-childrens">Дети:</label>
+								<span class="count-people">
+									<button type="button">-</button>
+									<input type="text" name="childrens" id="search-childrens" value="0">
+									<button type="button">+</button>
+								</span>
+							</p>
+						</div>
+						<button type="submit" class="button btn-blue search-hotels-button">Найти</button>
+					</form>
+				</section>
 			</section>
 
 			<section class="map">

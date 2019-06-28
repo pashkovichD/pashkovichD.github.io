@@ -410,6 +410,8 @@ li.services {
 
 /*--- Поиск гостиницы ---*/
 .search {
+	position: relative;
+
 	padding-top: 48px;
 	text-align: center;
 }
@@ -856,16 +858,64 @@ li.services {
 
 /*--- Модальное окно ---*/
 .search-hotels {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	/*z-index: 1;*/
+	
+	width: 458px;
+	padding: 55px;
+	margin-left: -284px;
+
 	font-weight: 700;
 
+	background-color: #ffffff;
+}
+
+.search-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+p.search-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.two-columns {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.two-columns .search-item {
+	width: 50%;
+}
+
+/*.two-columns {
+	display: flex;
+	justify-content: space-between;
+}*/
+
+.search-hotels label {
+	/*width: 100px;*/
 }
 
 .search-hotels input {
+	margin-left: 5px;
+	padding: 6px 12px;
+
 	font: inherit;
 	text-transform: uppercase;
 
 	background-color: #f2f2f2;
 	border: 2px solid transparent;
+
+	box-sizing: border-box;
 
 	transition: all .2s ease;
 }
@@ -878,6 +928,16 @@ li.services {
 .search-hotels input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
+}
+
+.search-hotels input[name=date-arrival],
+.search-hotels input[name=date-departure] {
+	width: 340px;
+}
+
+.search-hotels input[name=adults],
+.search-hotels input[name=childrens] {
+	width: 38px;
 }
 
 .search-hotels button[type=button] {
@@ -897,4 +957,13 @@ li.services {
 
 .search-hotels button[type=button]:active {
 	color: #81b3d2;
+}
+
+.search-hotels-button {
+	width: 100%;
+	padding: 17px 10px;
+
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
 }
