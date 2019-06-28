@@ -894,6 +894,7 @@ p.search-item {
 }
 
 .two-columns .search-item {
+	/*justify-content: flex-start;*/
 	width: 50%;
 }
 
@@ -901,6 +902,10 @@ p.search-item {
 	display: flex;
 	justify-content: space-between;
 }*/
+
+.two-columns .search-item label {
+	width: 50%;
+}
 
 .search-hotels label {
 	/*width: 100px;*/
@@ -939,6 +944,9 @@ p.search-item {
 .search-hotels input[name=adults],
 .search-hotels input[name=childrens] {
 	width: 38px;
+	margin-left: 0;
+
+	background-color: red;
 }
 
 .search-hotels button[type=button] {	
@@ -947,7 +955,8 @@ p.search-item {
 	font-weight: 700;
 
 
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
+	background-color: red;
 	border: none;
 
 	opacity: .3;
