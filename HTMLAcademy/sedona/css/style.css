@@ -768,9 +768,6 @@ li.services {
 	display: flex;
 
 	text-align: center;
-
-	/* demo */
-	/*min-height: 120px;*/
 }
 
 
@@ -792,16 +789,35 @@ li.services {
 	color: #81b3d2;
 }
 
-.main-footer .visitsedona a:active {
-	color: #766357;
+.main-footer .visitsedona a:active svg {
+	opacity: .3;
+}
+
+.main-footer .social {
+	width: 400px;
+	padding-top: 35px;
 }
 
 .main-footer .social-buttons {
-	width: 400px;
-	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 150px;
+	margin: 0 auto;
 	padding: 0;
 
 	list-style: none;
+}
+
+.social-buttons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 46px;
+	height: 48px;
 }
 
 .main-footer .website {
