@@ -10,7 +10,7 @@ body {
 	text-transform: uppercase;
 	color: #000000;
 		
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 }
 
 a {
@@ -94,6 +94,9 @@ input[type="radio"].visually-hidden {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0;
+
+	background-color: #ffffff;
+	box-shadow: 0px 5px 5px 0 rgba(0,0,0,.12);
 }
 
 
@@ -463,27 +466,50 @@ li.services {
 
 /*--- Фильтр ---*/
 .filters {
-	background: #83accb;
+	color: #ffffff;
 
-	/* demo */
-	min-height: 220px;
+	background-color: #83accb;
+	background-image: url('../img/background-filter.jpg');
+	background-repeat: no-repeat;
 }
 
 .filters fieldset {
+	width: 255px;
+	margin: 0;
+	padding: 0;	
+
 	border: none;
 }
 
 .filters legend {
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+	margin-bottom: 30px;
+
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
 }
 
+.filters-form {
+	display: flex;
+
+	margin: 0 73px;
+}
+
 .filters ul {
+	margin: 0;
+	padding: 0;
+
 	line-height: 21px;
 	color: #ffffff;
 
 	list-style: none;
+}
+
+.filters li {
+	margin: 0 0 30px 40px;
 }
 
 .filters li input,
@@ -504,7 +530,8 @@ li.services {
 
 .filter-range {
 	width: 330px;
-	padding: 20px; /*для демо*/	
+	margin-left: auto;
+	padding: 20px; /*для демо*/		
 
 	color: #ffffff;	
 	text-transform: uppercase;
@@ -869,6 +896,7 @@ li.services {
 	font-weight: 700;
 
 	background-color: #ffffff;
+	box-shadow: 0px 5px 5px 0 rgba(0,0,0,.12);
 	opacity: 0;
 
 	transition: all .5s ease;
