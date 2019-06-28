@@ -776,6 +776,7 @@ li.services {
 
 .main-footer .visitsedona {
 	width: 400px;
+	margin: 0;
 	padding: 47px 0;
 
 	font-size: 21px;
@@ -806,7 +807,7 @@ li.services {
 .main-footer .website {
 	width: 400px;
 	margin: 0;
-	padding: 47px 0;
+	padding: 23px 0 47px 0;
 }
 
 .main-footer .website a {
