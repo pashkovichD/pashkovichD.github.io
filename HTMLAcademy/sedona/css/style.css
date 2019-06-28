@@ -466,6 +466,8 @@ li.services {
 
 /*--- Фильтр ---*/
 .filters {
+	min-height: 219px;
+
 	color: #ffffff;
 
 	background-color: #83accb;
@@ -509,7 +511,11 @@ li.services {
 }
 
 .filters li {
-	margin: 0 0 25px 30px;
+	margin: 0 0 25px 38px;
+}
+
+.filters li  label {
+	position: relative;
 }
 
 .filters li input,
@@ -526,6 +532,37 @@ li.services {
 .filters input[type=checkbox]:disabled ~ span {
 	color: #6a6a6a;
 	opacity: .7;
+}
+
+.filters input[type=checkbox] + .indicator-checkbox {
+	position: absolute;
+	top: -4px;
+	left: -38px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url('../img/checkbox-off.svg');
+	background-repeat: no-repeat;	
+}
+
+.filters input[type=checkbox]:checked + .indicator-checkbox {
+	background-image: url('../img/checkbox-on.svg');	
+}
+
+.filters input[type=checkbox]:disabled + .indicator-checkbox {
+	background-image: url('../img/checkbox-disabled.svg');	
+}
+
+.filters input[type=checkbox]:focus ~ span {
+	opacity: 1;
+}
+
+.filters input[type=checkbox]:focus + .indicator-checkbox {
+	opacity: 1;
+	box-shadow: 
+		0 0 0 2px white, 
+		0 0 0 4px #fc0;	
 }
 
 .filter-range {
