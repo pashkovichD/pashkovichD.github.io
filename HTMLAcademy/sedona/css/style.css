@@ -452,7 +452,7 @@ li.services {
 
 /*--- Карта ---*/
 .map {
-	min-height: 593px;
+	min-height: 475px;
 
 	line-height: 0;
 }
