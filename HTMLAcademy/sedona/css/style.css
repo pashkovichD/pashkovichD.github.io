@@ -789,13 +789,13 @@ li.services {
 	color: #81b3d2;
 }
 
-.main-footer .visitsedona a:active svg {
-	opacity: .3;
+.main-footer .visitsedona a:active {
+	color: #766357;
 }
 
 .main-footer .social {
 	width: 400px;
-	padding-top: 35px;
+	padding-top: 36px;
 }
 
 .main-footer .social-buttons {
@@ -820,6 +820,10 @@ li.services {
 	height: 48px;
 }
 
+.social-buttons a:active svg {
+	opacity: .3;
+}
+
 .main-footer .website {
 	width: 400px;
 	margin: 0;
@@ -836,7 +840,19 @@ li.services {
 	line-height: 0;
 }
 
-.main-footer .website a::before {
+.main-footer .website a:hover svg path,
+.main-footer .website a:hover svg rect,
+.main-footer .website a:focus svg path,
+.main-footer .website a:focus svg rect {
+	fill: #81b3d2;
+}
+
+.main-footer .website a:active svg path,
+.main-footer .website a:active svg rect {
+	fill: #bdbbbc;
+}
+
+/* .main-footer .website a::before {
 	content: '';	
 
 	display: inline-block;
@@ -846,7 +862,7 @@ li.services {
 
 	background-image: url('../img/logo_name.svg');
 	background-repeat: no-repeat;
-}
+} */
 
 /*.social-buttons a {
 	background: #81b3d2;
