@@ -905,6 +905,13 @@ p.search-item {
 
 .two-columns .search-item label {
 	width: 50%;
+
+	text-align: left;
+}
+
+.two-columns .search-item:nth-child(2) label {
+	text-align: right;
+	padding-right: 20px;
 }
 
 .search-hotels label {
@@ -945,22 +952,28 @@ p.search-item {
 .search-hotels input[name=childrens] {
 	width: 38px;
 	margin-left: 0;
-
-	background-color: red;
 }
 
 .search-hotels button[type=button] {	
+	width: 38px;
+	height: 42px;
 	padding: 6px 12px;
 
+	font-size: 21px;
+	line-height: 26px;
 	font-weight: 700;
 
 
-	/*background-color: #f2f2f2;*/
-	background-color: red;
+	background-color: #f2f2f2;	
 	border: none;
 
 	opacity: .3;
 	transition: all .1s ease;
+}
+
+.count-people {
+	display: flex;
+	align-items: center;
 }
 
 .search-hotels button[type=button]:hover,
