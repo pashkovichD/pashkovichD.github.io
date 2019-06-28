@@ -484,8 +484,8 @@ li.services {
 .filters legend {
 	margin: 0;
 	padding: 0;
-	padding-top: 30px;
-	margin-bottom: 30px;
+	padding-top: 27px;
+	margin-bottom: 25px;
 
 	font-size: 16px;
 	line-height: 21px;
@@ -509,7 +509,7 @@ li.services {
 }
 
 .filters li {
-	margin: 0 0 30px 40px;
+	margin: 0 0 25px 30px;
 }
 
 .filters li input,
@@ -531,12 +531,10 @@ li.services {
 .filter-range {
 	width: 330px;
 	margin-left: auto;
-	padding: 20px; /*для демо*/		
+	padding: 27px 0;
 
 	color: #ffffff;	
 	text-transform: uppercase;
-
-	background: #777;
 }
 
 .filter-range-title {
@@ -551,7 +549,7 @@ li.services {
 	position: relative;
 
 	height: 36px;
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 
 	font-size: 0;
 
