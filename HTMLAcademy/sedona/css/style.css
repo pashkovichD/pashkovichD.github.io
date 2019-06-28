@@ -436,6 +436,9 @@ li.services {
 }
 
 .search-button {
+	position: relative;
+	z-index: 1;
+
 	display: inline-block;
 
 	padding: 29px 118px;
@@ -764,17 +767,32 @@ li.services {
 .main-footer {
 	display: flex;
 
+	text-align: center;
+
 	/* demo */
-	min-height: 120px;
+	/*min-height: 120px;*/
 }
 
 
 .main-footer .visitsedona {
 	width: 400px;
+	padding: 47px 0;
 
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: 700;	
+}
+
+.main-footer .visitsedona a {
 	color: #000000;
+}
+
+.main-footer .visitsedona a:hover,
+.main-footer .visitsedona a:focus {
+	color: #81b3d2;
+}
+
+.main-footer .visitsedona a:active {
+	color: #766357;
 }
 
 .main-footer .social-buttons {
@@ -785,10 +803,32 @@ li.services {
 	list-style: none;
 }
 
-.main-footer p {
+.main-footer .website {
 	width: 400px;
 	margin: 0;
-	padding: 0;
+	padding: 47px 0;
+}
+
+.main-footer .website a {
+	position: relative;
+	top: 16px;
+	left: 10px;
+
+	display: inline-block;
+
+	line-height: 0;
+}
+
+.main-footer .website a::before {
+	content: '';	
+
+	display: inline-block;
+	
+	width: 115px;
+	height: 41px;
+
+	background-image: url('../img/logo_name.svg');
+	background-repeat: no-repeat;
 }
 
 /*.social-buttons a {
