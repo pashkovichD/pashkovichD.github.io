@@ -859,9 +859,8 @@ li.services {
 /*--- Модальное окно ---*/
 .search-hotels {
 	position: absolute;
-	top: 100%;
-	left: 50%;
-	/*z-index: 1;*/
+	top: 50%;
+	left: 50%;	
 	
 	width: 458px;
 	padding: 55px;
@@ -870,6 +869,9 @@ li.services {
 	font-weight: 700;
 
 	background-color: #ffffff;
+	opacity: 0;
+
+	transition: all .5s ease;
 }
 
 .search-form {
@@ -893,15 +895,9 @@ p.search-item {
 	justify-content: space-between;
 }
 
-.two-columns .search-item {
-	/*justify-content: flex-start;*/
+.two-columns .search-item {	
 	width: 50%;
 }
-
-/*.two-columns {
-	display: flex;
-	justify-content: space-between;
-}*/
 
 .two-columns .search-item label {
 	width: 50%;
@@ -912,10 +908,6 @@ p.search-item {
 .two-columns .search-item:nth-child(2) label {
 	text-align: right;
 	padding-right: 20px;
-}
-
-.search-hotels label {
-	/*width: 100px;*/
 }
 
 .search-hotels input {
@@ -946,6 +938,23 @@ p.search-item {
 .search-hotels input[name=date-arrival],
 .search-hotels input[name=date-departure] {
 	width: 340px;
+	padding-right: 40px;
+
+	background-image: url('../img/calendar.png');
+	background-repeat: no-repeat;
+	background-position: right 9px center;
+}
+
+.search-hotels input[name=date-arrival]:hover,
+.search-hotels input[name=date-departure]:hover,
+.search-hotels input[name=date-arrival]:focus,
+.search-hotels input[name=date-departure]:focus {
+	background-image: url('../img/calendar-hover.png');
+}
+
+.search-hotels input[name=date-arrival]:active,
+.search-hotels input[name=date-departure]:active {
+	background-image: url('../img/calendar-active.png');
 }
 
 .search-hotels input[name=adults],
@@ -992,4 +1001,32 @@ p.search-item {
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
+}
+
+.modal-show {
+	top: 100%;
+	opacity: 1;
+}
+
+@keyframes modal {
+	100% {		
+		opacity: 1;
+	}	
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: .6s;
+}
+
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
 }
