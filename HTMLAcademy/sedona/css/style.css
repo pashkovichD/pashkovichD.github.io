@@ -706,6 +706,9 @@ li.services {
 /*--- колонки ---*/
 .columns {
 	display: flex;
+	justify-content: space-between;
+
+	margin: 0 73px;
 
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -717,35 +720,45 @@ li.services {
 	width: 165px;
 
 	font-size: 21px;
-	font-weight: 700;	
+	font-weight: 700;
+}
 
-	/* demo */
-	min-height: 89px;
+.count p {
+	margin: 0;
+	padding: 31px 0;
 }
 
 
 
 /*--- Сортировка результата ---*/
 .sort {
-	width: 1035px;
+	display: flex;
+
+	width: 889px;
+	padding-top: 35px;
 
 	font-size: 12px;
-	line-height: 18px;
-
-	/* demo */
-	min-height: 89px;
+	line-height: 18px;	
 }
 
 .sort p {
+	width: 115px;
 	margin: 0;
 	padding: 0;
 }
 
 .sort .sort-list {
+	display: flex;
+
+	width: 774px;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+}
+
+.sort-item {
+	margin-right: 30px;
 }
 
 .sort-item a {
@@ -769,6 +782,15 @@ li.services {
 	color: #81b3d2;
 
 	border-bottom: 1px dotted transparent;
+}
+
+.icon-updown {
+	margin-left: 12px;
+	margin-right: 0;
+}
+
+.to-right {
+	margin-left: auto;
 }
 
 .icon-updown svg polygon {
