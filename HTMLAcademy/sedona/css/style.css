@@ -883,11 +883,12 @@ p.search-item {
 	align-items: center;
 
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .two-columns {
 	width: 100%;
+	margin-bottom: 27px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -940,8 +941,11 @@ p.search-item {
 	width: 38px;
 }
 
-.search-hotels button[type=button] {
+.search-hotels button[type=button] {	
+	padding: 6px 12px;
+
 	font-weight: 700;
+
 
 	background-color: #f2f2f2;
 	border: none;
