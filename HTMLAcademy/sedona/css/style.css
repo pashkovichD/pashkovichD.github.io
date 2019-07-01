@@ -830,7 +830,7 @@ li.services {
 
 .hotels-list li {
 	display: flex;
-	padding-bottom: 30px;
+	padding-bottom: 22px;
 
 	border-bottom: 1px solid #e5e5e5;	
 }
@@ -872,13 +872,15 @@ li.services {
 }
 
 .hotel-description p {
+	display: flex;
 	margin: 0;
 	margin-bottom: 11px;
 	padding: 0;
 }
 
 .hotel-type {
-	margin-right: 40px;
+	width: 125px;
+	margin-right: 10px;
 }
 
 .rating {
