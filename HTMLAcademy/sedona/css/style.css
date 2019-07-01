@@ -830,6 +830,7 @@ li.services {
 
 .hotels-list li {
 	display: flex;
+	padding-bottom: 30px;
 
 	border-bottom: 1px solid #e5e5e5;	
 }
@@ -887,7 +888,7 @@ li.services {
 
 .rating p {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 35px;
 	padding: 3px 13px 3px 16px;
 
 	color: #666666;
