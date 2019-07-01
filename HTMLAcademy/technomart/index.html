@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		:focus {
+			outline: none;
+			box-shadow: 
+				0 0 0 2px white, 
+				0 0 0 4px #fc0;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="main-header">
+		<div class="top-menu">
+			<div class="container">
+				<a class="main-header-logo">Техномарт</a>
+				<form action="https://echo.htmlacademy.ru" method="GET" class="search">
+					<label for="search-form" class="visually-hidden">Поиск по сайту</label>
+					<input type="text" id="search-form" name="search" placeholder="Поиск:">
+				</form>		
+				<a href="bookmarks.html" class="bookmarks">Закладки: <span>0</span></a>
+				<a href="cart.html" class="cart">Корзина: <span>0</span></a>
+				<a href="checkout.html" class="checkout">Оформить заказ</a>
+			</div>
+		</div>
+
+		<nav class="main-navigation">
+			<h2 class="visually-hidden">Главная навигация по сайту</h2>
+			
+			<div class="center-menu">
+				<p class="description-shop">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+				<div class="center-menu-contacts">
+					<p class="contacts-phone">+7 (812) 555-05-05</p>
+					<p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				</div>
+				
+				<!-- неавторизованный пользователь -->
+				<ul class="user-navigation no-authorized">
+					<li>
+						<a href="login.html" class="login-link">Войти</a>
+					</li>
+					<li>
+						<a href="registration.html" class="registration-link">Регистрация</a>
+					</li>
+				</ul>
+
+				<!-- авторизованный пользователь -->
+				<ul class="user-navigation yes-authorized">
+					<li>
+						<a href="profile.html" class="profile-link">Равшан Джамшутович</a>
+					</li>
+					<li>
+						<a href="deauthorization.html" class="deauthorization-link">Выход из личного кабинета</a>
+					</li>
+					<li>
+						<a href="orders.html">Мои заказы</a>
+					</li>
+					<li>
+						<a href="profile.html">Личный кабинет</a>
+					</li>
+				</ul>
+			</div>			
+
+			<ul class="site-navigation">
+				<li><a>Главная</a></li>
+				<li><a href="company.html">Компания</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="special.html">Спецпредложения</a></li>
+				<li><a href="delivery.html">Доставка</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		
+		<h1 class="visually-hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта</h1>
+
+		<section class="promo">
+			<h2 class="visually-hidden">Промо-блок магазина</h2>
+			<ul class="promo-list">
+				<li class="materials new">
+					<h3>Материалы</h3>
+					<a href="#">На любой вкус</a>
+				</li>
+				<li class="instruments">
+					<h3>Инструменты</h3>
+					<a href="#">На все случаи жизни</a>
+				</li>
+				<li class="technics">
+					<h3>Техника</h3>
+					<a href="#">Для стройки</a>
+				</li>
+				<li class="sales">
+					<h3>Скидки 50%</h3>
+					<a href="#">на 350 товаров</a>
+				</li>
+				<li class="delivery">
+					<h3>Доставка</h3>
+					<a href="#">Бесплатно</a>
+				</li>
+			</ul>
+
+			<div class="slider">
+				<div class="controls">
+					<button class="back">Назад</button>
+					<button class="next">Вперед</button>
+				</div>
+				<ul class="slide-list">
+					<li class="slide-item">
+						<p class="slide-title">Дрели</p>
+						<p class="slide-tagline">Дрели</p>
+						<img src="img/slide1.jpg" alt="Дрели">
+					</li>
+					<li class="slide-item">
+						<p class="slide-title">Перфораторы</p>
+						<p class="slide-tagline">Настоящие мужские игрушки</p>
+						<img src="img/slide2.jpg" alt="Перфораторы">
+					</li>
+				</ul>
+
+				<a href="catalog.html">Открыть каталог</a>				
+			</div>
+		</section>
+
+		<section class="popular">
+			<h2>Популярные товары:</h2>
+			<a href="#">Все популярные товары</a>
+			<ul class="popular-list">
+				<li>
+					<a href="#">
+						<h3>Перфоратор BOSCH BFG 9000</h3>
+						<img src="img/зкщвгсе1юозп" alt="Перфоратор BOSCH BFG 9000">
+						<p class="sale">32 500 Р.</p>
+						<p class="price">25 500 Р.</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+	</main>
+
+		
+
+	
+
+
+	<!-- JavaScript -->
+	<!-- <script src="js/popup.js"></script> -->
+</body>
+</html>

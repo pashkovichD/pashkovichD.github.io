@@ -1,0 +1,113 @@
+body {	
+	/*min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'PT+Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+		
+	background-color: #f2f2f2;*/
+}
+
+a {
+	text-decoration: none; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px; 
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}*/
+
+/*.button {
+	font: inherit;
+	line-height: 21px;
+	font-weight: 700;
+
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+
+	border: none;	
+
+	transition: all .2s ease;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+
+.button:active {
+	color: rgba(255,255,255,.3);
+} 
+
+.btn-brown {
+	background-color: #766357;
+}
+
+.btn-brown:hover,
+.btn-brown:focus {
+	background-color: #604e43;
+}
+
+.btn-brown:active {
+	background-color: #503e33;
+}
+
+.btn-blue {
+	background-color: #81b3d2;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+	background-color: #669ec0;
+}
+
+.btn-blue:active {
+	background-color: #5496bd;
+}*/
+
+/*--- центровщик ---*/
+.container {
+	/*width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+
+	background-color: #ffffff;
+	box-shadow: 0px 5px 5px 0 rgba(0,0,0,.12);*/
+}
+
+
+.yes-authorized {
+	display: none;
+}
+
+.authorized .no-authorized {
+	display: none;
+}
+
+.authorized .yes-authorized {
+	display: block;
+}
