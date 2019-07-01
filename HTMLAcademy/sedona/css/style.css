@@ -561,7 +561,7 @@ li.services {
 .filters input[type=checkbox]:focus + .indicator-checkbox {
 	opacity: 1;
 	box-shadow: 
-		0 0 0 2px white, 
+		0 0 0 2px #6188AF, 
 		0 0 0 4px #fc0;	
 }
 
@@ -725,7 +725,7 @@ li.services {
 
 .count p {
 	margin: 0;
-	padding: 31px 0;
+	padding: 28px 0;
 }
 
 
@@ -758,7 +758,7 @@ li.services {
 }
 
 .sort-item {
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 .sort-item a {
@@ -787,6 +787,10 @@ li.services {
 .icon-updown {
 	margin-left: 12px;
 	margin-right: 0;
+}
+
+.icon-updown a {
+	border-bottom: 1px dotted transparent;
 }
 
 .to-right {
