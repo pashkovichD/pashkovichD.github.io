@@ -708,7 +708,7 @@ li.services {
 	display: flex;
 	justify-content: space-between;
 
-	margin: 0 73px;
+	padding: 0 73px;
 
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -725,7 +725,7 @@ li.services {
 
 .count p {
 	margin: 0;
-	padding: 28px 0;
+	padding: 28px 0 29px 0;
 }
 
 
@@ -818,7 +818,7 @@ li.services {
 
 /*--- Результат поиска ---*/
 .hotels-result {
-
+	padding: 0 73px;
 }
 
 .hotels-list {
@@ -829,10 +829,9 @@ li.services {
 }
 
 .hotels-list li {
-	border-bottom: 1px solid #e5e5e5;
-
-	/* demo */
-	min-height: 150px;
+	display: flex;
+	padding-top: 30px;
+	border-bottom: 1px solid #e5e5e5;	
 }
 
 .hotels-list h3 a {
@@ -851,6 +850,38 @@ li.services {
 	opacity: .3;
 }
 
+.img-wrap {	
+	width: 135px;
+	margin: 0;
+	margin-right: 30px;
+	padding: 0;
+}
+
+
+.hotel-description {
+	width: 600px;
+}
+
+.hotel-description h3 {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.hotel-description p {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.rating {
+	margin-left: auto;
+}
+
+.hotels-result-button {
+	display: inline-block;
+	padding: 3px 17px;
+}
 
 
 /*--- FOOTER ---*/
