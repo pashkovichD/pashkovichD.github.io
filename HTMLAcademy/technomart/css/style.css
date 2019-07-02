@@ -180,6 +180,19 @@ section h2 {
 	color: #000000;	
 }
 
+.user-navigation a:active {
+	opacity: .3;
+}
+
+.user-navigation .profile-link:hover,
+.user-navigation .profile-link:focus {
+	color: #ee3643;
+}
+
+.user-navigation .profile-link:active {
+	color: #32425c;
+}
+
 .user-navigation .profile-link {
 	font-size: 16px;
 	line-height: 18px;
@@ -209,6 +222,22 @@ section h2 {
 	background-color: #1d2739;
 }
 
+main h1 {
+	padding: 30px;
+
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #32425c;
+
+	background-color: #f2f6f8;
+}
+
+
+
+
+
 /*--- Promo ---*/
 .promo {
 
@@ -226,9 +255,28 @@ section h2 {
 }
 
 .promo-list a {
+	display: block;
+	width: 115px;
+	padding: 10px;
+
+	text-align: center;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #ffffff;
+
+	background-color: rgba(0,0,0,.1);
+	border-radius: 3px;
+
+	transition: all .2s ease;
+}
+
+.promo-list a:hover,
+.promo-list a:focus {
+	background-color: rgba(0,0,0,.2);
+}
+
+.promo-list a:active {
+	background-color: rgba(0,0,0,.3);
 }
 
 .promo-list .materials {
@@ -250,6 +298,7 @@ section h2 {
 .promo-list .delivery {
 	background-color: #ffc047;
 }
+
 
 
 
@@ -469,6 +518,77 @@ section h2 {
 
 
 
+/*--- Хлебные крошки ---*/
+.breadcrumbs {
+	line-height: 18px;
+	text-transform: uppercase;	
+
+	list-style: none;	
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+
+
+
+/*--- Фильтр ---*/
+
+
+
+
+
+/*--- Сортировка ---*/
+.sort {
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+
+	background-color: #f7f3ec;
+}
+
+.sort-title {
+	
+}
+
+.sort-list {
+	display: flex;
+
+	list-style: none;
+}
+
+.sort-list li {
+	margin-right: 70px;
+
+	
+}
+
+.sort-list a {
+	color: #b2b2b2;
+
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+	color: #000000;
+	border-bottom: 1px solid #ee3643;
+}
+
+.sort-list .icon-updown a {
+	border-bottom: none;
+}
+
+.sort-item-current a {
+	color: #ee3643;
+	border-bottom: none;
+}
+
+
+
+
+
 /*--- FOOTER ---*/
 .main-footer {
 	color: #ffffff;
@@ -590,13 +710,54 @@ section h2 {
 }
 
 .modal-message {
-	
+
 }
 
+.message-item label {
+	font-size: 18px;
+}
 
+.message-item input {
+	line-height: 18px;
 
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
 
+	transition: all .2s ease;
+}
 
+.message-item input:hover {
+	border: 2px solid #b5b5b5;
+}
+
+.message-item input:focus {
+	border: 2px solid #ee3643;
+}
+
+.message-item input::-webkit-input-placeholder {
+	color: #a9a9a9;
+}
+
+.message-item input:-moz-placeholder {
+	color: #a9a9a9;
+}
+
+.message-item textarea {
+	color: #a9a9a9;	
+
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+
+	transition: all .2s ease;
+}
+
+.message-item textarea:hover {
+	border: 2px solid #b5b5b5;
+}
+
+.message-item textarea:focus {
+	border: 2px solid #ee3643;
+}
 
 
 
