@@ -183,3 +183,46 @@ input[type="radio"].visually-hidden {
 	line-height: 17px;
 	color: #ffffff;
 }
+
+
+
+/*--- Promo ---*/
+.promo {
+
+}
+
+.promo-list {
+	list-style: none;
+}
+
+.promo-list h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.promo-list a {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.promo-list .materials {
+	background-color: #ffbf47;
+}
+
+.promo-list .instruments {
+	background-color: #3bbce3;
+}
+
+.promo-list .technics {
+	background-color: #dc91d8;
+}
+
+.promo-list .sales {
+	background-color: #8ed78f;
+}
+
+.promo-list .delivery {
+	background-color: #ffc047;
+}
