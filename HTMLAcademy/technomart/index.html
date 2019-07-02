@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -24,7 +24,7 @@
 				<a class="main-header-logo">Техномарт</a>
 				<form action="https://echo.htmlacademy.ru" method="GET" class="search">
 					<label for="search-form" class="visually-hidden">Поиск по сайту</label>
-					<input type="text" id="search-form" name="search" placeholder="Поиск:">
+					<input  type="text" id="search-form" name="search" placeholder="Поиск:">
 				</form>		
 				<a href="bookmarks.html" class="bookmarks">Закладки: <span>0</span></a>
 				<a href="cart.html" class="cart">Корзина: <span>0</span></a>
@@ -55,16 +55,16 @@
 				<!-- авторизованный пользователь -->
 				<ul class="user-navigation yes-authorized">
 					<li>
-						<a href="profile.html" class="profile-link">Равшан Джамшутович</a>
+						<a href="profile.html" class="login-link">Равшан Джамшутович</a>
 					</li>
 					<li>
-						<a href="deauthorization.html" class="deauthorization-link">Выход из личного кабинета</a>
+						<a href="deauthorization.html" class="deauthorization-link"><span class="visualli-hidden">Выход из личного кабинета</span></a>
 					</li>
 					<li>
-						<a href="orders.html">Мои заказы</a>
+						<a href="orders.html" class="profile-link">Мои заказы</a>
 					</li>
 					<li>
-						<a href="profile.html">Личный кабинет</a>
+						<a href="profile.html" class="profile-link">Личный кабинет</a>
 					</li>
 				</ul>
 			</div>			
@@ -183,23 +183,69 @@
 			<h2>Популярные производители:</h2>
 			<a href="#">Все производители</a>
 			<ul class="producer-list">
-				<li><a href="#">Bosch</a></li>
-				<li><a href="#">Makita</a></li>
-				<li><a href="#">DeWalt</a></li>
-				<li><a href="#">Интерскол</a></li>
-				<li><a href="#">Hitachi</a></li>
-				<li><a href="#">LG</a></li>
-				<li><a href="#">AEG Power Solutions</a></li>
-				<li><a href="#">metabo</a></li>
+				<li>
+					<a href="#">
+						<img src="img/bosch.jpg" alt="Bosch">
+						<span class="visually-hidden">Bosch</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/makita.jpg" alt="Makita">
+						<span class="visually-hidden">Makita</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/dewalt.jpg" alt="DeWalt">
+						<span class="visually-hidden">DeWalt</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/interskol.jpg" alt="Интерскол">
+						<span class="visually-hidden">Интерскол</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/hitachi.jpg" alt="Hitachi">
+						<span class="visually-hidden">Hitachi</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/lg.jpg" alt="LG">
+						<span class="visually-hidden">LG</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/aeg.jpg" alt="AEG Power Solutions">
+						<span class="visually-hidden">AEG Power Solutions</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/metabo.jpg" alt="Metabo">
+						<span class="visually-hidden">Metabo</span>
+					</a>
+				</li>
 			</ul>
 		</section>
 
 		<section class="services">
 			<h2>Сервисы</h2>
 			<ul class="tab-title">
-				<li>Доставка</li>
-				<li>Гарантия</li>
-				<li>Кредит</li>
+				<li>
+					<button type="button">Доставка</button>
+				</li>
+				<li>
+					<button type="button">Гарантия</button>
+				</li>
+				<li>
+					<button type="button">Кредит</button>
+				</li>
 			</ul>
 
 			<ul class="service-list">

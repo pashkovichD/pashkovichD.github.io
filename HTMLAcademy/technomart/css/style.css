@@ -1,16 +1,15 @@
 body {	
-	/*min-width: 1200px;
+	/*min-width: 1200px;*/
 	margin: 0;
 	padding: 0;
 	
-	font-family: 'PT+Sans', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 400;
-	text-transform: uppercase;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;	
 	color: #000000;
 		
-	background-color: #f2f2f2;*/
+	background-color: #ffffff;
 }
 
 a {
@@ -99,7 +98,6 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0px 5px 5px 0 rgba(0,0,0,.12);*/
 }
 
-
 .yes-authorized {
 	display: none;
 }
@@ -110,4 +108,78 @@ input[type="radio"].visually-hidden {
 
 .authorized .yes-authorized {
 	display: block;
+}
+
+
+
+/*--- HEADER ---*/
+.main-header {
+	background-color: #f3f7f8;
+}
+
+.top-menu {
+	background-color: #293449;
+}
+
+.top-menu a {
+	color: #ffffff;
+}
+
+.main-header-logo {
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	
+}
+
+.main-header .search input {
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.description-shop {
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: #ee3643;
+}
+
+.contacts-phone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+
+.contacts-address {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+
+.user-navigation {
+	list-style: none;
+}
+
+.user-navigation a {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;	
+}
+
+.user-navigation .profile-link {
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+	color: #32425c;
+}
+
+.site-navigation {
+	list-style: none;
+
+	background-color: #32425c;
+}
+
+.site-navigation a {
+	line-height: 17px;
+	color: #ffffff;
 }
