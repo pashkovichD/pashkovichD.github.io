@@ -39,54 +39,32 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }*/
 
-/*.button {
+.button {
+	padding: 10px 55px;
+
 	font: inherit;
-	line-height: 21px;
-	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
 
 	text-align: center;
 	vertical-align: middle;
 	color: #ffffff;
 
-	border: none;	
+	background-color: #ee3643;
+	border: none;
+	border-radius: 2px;
 
 	transition: all .2s ease;
 }
 
 .button:hover,
 .button:focus {
-	background-color: #e74246;
+	background-color: #ca2c37;
 }
 
 .button:active {
-	color: rgba(255,255,255,.3);
-} 
-
-.btn-brown {
-	background-color: #766357;
+	background-color: #ba2732;
 }
-
-.btn-brown:hover,
-.btn-brown:focus {
-	background-color: #604e43;
-}
-
-.btn-brown:active {
-	background-color: #503e33;
-}
-
-.btn-blue {
-	background-color: #81b3d2;
-}
-
-.btn-blue:hover,
-.btn-blue:focus {
-	background-color: #669ec0;
-}
-
-.btn-blue:active {
-	background-color: #5496bd;
-}*/
 
 /*--- центровщик ---*/
 .container {
@@ -96,6 +74,14 @@ input[type="radio"].visually-hidden {
 
 	background-color: #ffffff;
 	box-shadow: 0px 5px 5px 0 rgba(0,0,0,.12);*/
+}
+
+section h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #32425c;
 }
 
 .yes-authorized {
@@ -196,8 +182,9 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-list h3 {
-	font-size: 24px;
+	font-size: 24px;	
 	line-height: 30px;
+	font-weight: 700;
 	color: #ffffff;
 }
 
@@ -225,4 +212,128 @@ input[type="radio"].visually-hidden {
 
 .promo-list .delivery {
 	background-color: #ffc047;
+}
+
+
+
+/*--- Slider ---*/
+.slider {
+	background-color: #755045;
+}
+
+.slide-list {
+	color: #ffffff;
+
+	list-style: none;
+}
+
+.slide-title {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	
+}
+
+.slide-tagline {
+	font-size: 18px;
+	line-height: 24px;
+
+}
+
+
+
+/*--- Популярные товары ---*/
+.popular {
+
+}
+
+.popular-list {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: 700;
+
+	list-style: none;
+}
+
+.popular-list h3 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.popular-list .old-price {
+	text-decoration: line-through;
+	color: #a9a9a9;
+}
+
+.popular-list .price {
+	color: #ffffff;
+
+	background-color: #ee3643;
+}
+
+.links	{
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;	
+}
+
+.links .link-buy {
+	display: inline-block;
+
+	width: 115px;
+	padding: 10px;
+
+	text-align: center;
+	color: #ffffff;
+
+	 background-color: #63a63e;
+	border-radius: 3px;
+	box-shadow: 0 -3px 0 0 #367315 inset;
+
+	transition: all .2s ease;	
+}
+
+.links .link-buy:hover,
+.links .link-buy:focus {
+	background-color: #5fbb2d;
+	box-shadow: 0 -3px 0 0 #367315 inset,
+				0 0 0 2px white, 
+				0 0 0 4px #fc0;
+}
+
+.links .link-buy:active {
+	background-color: #518534;
+	box-shadow: none;
+}
+
+.links .link-bookmark {
+	display: inline-block;
+
+	width: 115px;
+	padding: 10px;
+
+	text-align: center;
+	color: #32425c;
+	
+	border-radius: 3px;	
+	box-shadow: 0 0 0 3px #63a63e inset;
+
+	transition: all .2s ease;
+}
+
+.links .link-bookmark:hover,
+.links .link-bookmark:focus {
+	color: #32425c;
+
+	box-shadow: 0 0 0 3px #32425c inset,
+				0 0 0 2px white, 
+				0 0 0 4px #fc0;
+}
+
+.links .link-bookmark:active {
+	color: #32425c;
+		
+	box-shadow: 0 0 0 3px #32425c inset;
+	opacity: .3;				
 }
