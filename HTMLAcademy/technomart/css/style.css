@@ -534,8 +534,58 @@ main h1 {
 
 
 /*--- Фильтр ---*/
+.filters {
+	color: #000000;
+}
 
+.filter-title {
+	line-height: 18px;
+	text-transform: uppercase;
 
+	background-color: #f7f3ec;
+}
+
+.filter-form fieldset {
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+.filter-form legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	
+}
+
+.filter-producer-list {
+	list-style: none;
+}
+
+.filter-feed-list {
+	list-style: none;
+}
+
+.filter-button {
+	padding: 10px 40px;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.filter-button:hover,
+.filter-button:focus {	
+	border: 1px solid #bdc6ca;	
+}
+
+.filter-button:active {
+	background-color: #cccccc;	
+	border: 1px solid #cccccc;
+}
 
 
 
@@ -583,6 +633,12 @@ main h1 {
 .sort-item-current a {
 	color: #ee3643;
 	border-bottom: none;
+}
+
+.sort-item-current a:hover,
+.sort-item-current a:focus {
+	color: #ee3643;
+	border-bottom: none;	
 }
 
 
