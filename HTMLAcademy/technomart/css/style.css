@@ -133,15 +133,15 @@ section h2 {
 	transition: all .2s ease;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus {
+.main-header-logo[href]:hover,
+.main-header-logo[href]:focus {
 	background-color: #ca2c37;
 	box-shadow: 0 5px 0 0 #9a212a,
 				0 0 0 2px white, 
 				0 0 0 4px #fc0;	
 }
 
-.main-header-logo:active {
+.main-header-logo[href]:active {
 	background-color: #ba2732;
 	box-shadow: 0 5px 0 0 #8e1e26;
 }
@@ -198,7 +198,16 @@ section h2 {
 	color: #ffffff;
 }
 
+.site-navigation a[href]:hover,
+.site-navigation a[href]:focus {
+	background-color: #293449;
+}
 
+
+.site-navigation a[href]:active {
+	opacity: .5;
+	background-color: #1d2739;
+}
 
 /*--- Promo ---*/
 .promo {
@@ -575,8 +584,14 @@ section h2 {
 
 
 
+/*--- Модальные окна ---*/
+.modal {
 
+}
 
+.modal-message {
+	
+}
 
 
 
