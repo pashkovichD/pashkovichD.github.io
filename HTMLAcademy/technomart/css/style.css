@@ -84,6 +84,12 @@ section h2 {
 	color: #32425c;
 }
 
+.pt-sans {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
 .yes-authorized {
 	display: none;
 }
@@ -112,10 +118,32 @@ section h2 {
 }
 
 .main-header-logo {
+	display: block;
+	width: 200px;
+	padding: 9px 10px;
+
+	text-align: center;
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
-	
+
+	background-color: #ee3643;
+	box-shadow: 0 5px 0 0 #b52933;
+
+	transition: all .2s ease;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+	background-color: #ca2c37;
+	box-shadow: 0 5px 0 0 #9a212a,
+				0 0 0 2px white, 
+				0 0 0 4px #fc0;	
+}
+
+.main-header-logo:active {
+	background-color: #ba2732;
+	box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .main-header .search input {
@@ -337,3 +365,230 @@ section h2 {
 	box-shadow: 0 0 0 3px #32425c inset;
 	opacity: .3;				
 }
+
+
+
+/*--- Популярные производители ---*/
+.producers {
+
+}
+
+.producer-list {
+	list-style: none;
+}
+
+
+
+
+/*--- Сервисы ---*/
+.services {
+	color: #000000;	
+}
+
+.services h2 {
+	color: #000000;	
+}
+
+.services .desc {
+	
+}
+
+.tab-title {
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 700;
+
+	list-style: none;
+}
+
+.service-list {
+	list-style: none;
+}
+
+.service-list h3 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.service-list p {
+	
+}
+
+
+
+/*--- Презентация компании ---*/
+.presentation {
+	color: #000000;
+}
+
+.presentation h2 {
+	color: #000000;
+}
+
+.presentation .presentation-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.presentation p {
+	
+}
+
+.transport-company {
+	font-size: 18px;
+	line-height: 20px;
+
+	list-style: none;
+}
+
+
+
+/*--- Контакты ---*/
+.contacts {
+	color: #000000;
+}
+
+.contacts h2 {
+	color: #000000;
+}
+
+
+
+/*--- FOOTER ---*/
+.main-footer {
+	color: #ffffff;
+
+	background-color: #32425c;
+}
+
+.main-footer a {
+	color: #ffffff;
+}
+
+.footer-top .main-header-logo {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.footer-menu-main {
+	font-size: 18px;
+	line-height: 24px;
+
+	list-style: none;
+}
+
+.footer-menu-main a:hover,
+.footer-menu-main a:focus {
+	text-decoration: underline;
+}
+
+.footer-menu-main a:active {
+	text-decoration: none;
+	opacity: .5;
+}
+
+.footer-contacts {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-menu {
+	font-size: 18px;
+	line-height: 24px;
+
+	list-style: none;
+}
+
+.footer-menu a {
+	color: #ffd180;
+}
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+	text-decoration: underline;
+}
+
+.footer-menu a:active {
+	text-decoration: none;
+	opacity: .5;
+}
+
+.footer-bottom {
+	font-size: 16px;
+	line-height: 18px;
+
+	background-color: #293449;
+}
+
+.copyright {
+	
+}
+
+.social-buttons {
+	list-style: none;
+}
+
+.feedback {
+	
+}
+
+.feedback a {
+	color: #ffd180;
+}
+
+.feedback a:hover,
+.feedback a:focus {
+	text-decoration: underline;
+}
+
+.feedback a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+.development {
+
+}
+
+.development a {
+	color: #ffd180;
+}
+
+.development a:hover,
+.development a:focus {
+	text-decoration: underline;
+}
+
+.development a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
