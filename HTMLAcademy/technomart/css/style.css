@@ -636,6 +636,8 @@ main h1 {
 .two-columns-index {
 	display: flex;
 	justify-content: space-between;
+
+	margin-bottom: 86px;
 }
 
 
@@ -693,6 +695,8 @@ main h1 {
 .catalog-columns {
 	display: flex;
 	justify-content: space-between;
+
+	margin-bottom: 60px;
 }
 
 /*--- Хлебные крошки ---*/
@@ -784,6 +788,8 @@ main h1 {
 
 /*--- Сортировка ---*/
 .sort {
+	margin-bottom: 20px;
+
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #000000;
@@ -840,7 +846,8 @@ main h1 {
 
 /*--- Result ---*/
 .result {
-
+	/* demo */
+	min-height: 1162px;
 }
 
 .result-list {
@@ -873,6 +880,9 @@ main h1 {
 
 /*--- Пагинация ---*/
 .pagination-list {
+	margin: 0;
+	padding: 0;
+
 	display: flex;
 
 	font-size: 16px;
@@ -929,6 +939,9 @@ main h1 {
 	color: #000000;
 
 	background-color: #f2f6f8;
+
+	/* demo */
+	min-height: 260px;
 }
 
 .certificate-title {
@@ -942,8 +955,6 @@ main h1 {
 
 /*--- FOOTER ---*/
 .main-footer {
-	margin-top: 86px;
-
 	color: #ffffff;
 
 	background-color: #32425c;
