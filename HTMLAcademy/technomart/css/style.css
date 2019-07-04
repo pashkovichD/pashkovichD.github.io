@@ -128,6 +128,24 @@ section h2 {
 .top-menu a {
 	text-align: center;
 	color: #ffffff;
+
+	transition: all .2s ease;
+}
+
+.top-menu a:focus {
+	box-shadow: 
+		0 0 0 2px #293449, 
+		0 0 0 4px #fc0;
+}
+
+.top-menu a:hover::before,
+.top-menu a:focus::before {
+	opacity: 1;
+}
+
+.top-menu a:active {
+	background-color: #161d29;
+	opacity: .5;
 }
 
 .main-header-logo {
@@ -141,9 +159,7 @@ section h2 {
 	text-transform: uppercase;
 
 	background-color: #ee3643;
-	box-shadow: 0 5px 0 0 #b52933;
-
-	transition: all .2s ease;
+	box-shadow: 0 5px 0 0 #b52933;	
 }
 
 .main-header-logo[href]:hover,
@@ -177,6 +193,24 @@ section h2 {
 	box-sizing: border-box;
 }
 
+.search input:hover {
+	background-color: #212a3a;
+}
+
+.search input:focus {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.search input:focus + .search-button svg path {
+	fill: #ee3643;
+}
+
+.search input:focus + .search-button {
+	opacity: 1;	
+}
+
 .search input::-webkit-input-placeholder {
 	color: #ffffff;
 }
@@ -195,13 +229,15 @@ section h2 {
 	padding: 0;
 
 	background-color: transparent;
-	background-image: url('../img/icon-search.svg');
-	background-repeat: no-repeat;
-
 	border: none;
 
 	opacity: .3;
+	transition: all .2s ease;
 	cursor: pointer;
+}
+
+.search input:hover + .search-button {
+	opacity: 1;
 }
 
 .bookmarks {
@@ -255,7 +291,17 @@ section h2 {
 	padding: 12px 10px;
 
 	background-color: #63a63e;
+}
 
+.checkout:hover,
+.checkout:focus {
+	background-color: #5fbb2d;
+}
+
+.top-menu .checkout:active {
+	background-color: #518534;
+	color: rgba(255,255,255,.5);
+	opacity: 1;	
 }
 
 .center-menu {
