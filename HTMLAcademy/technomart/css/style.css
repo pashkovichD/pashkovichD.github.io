@@ -122,6 +122,7 @@ section h2 {
 
 .top-menu .container {
 	display: flex;
+	justify-content: flex-start;
 }
 
 .top-menu a {
@@ -130,7 +131,7 @@ section h2 {
 }
 
 .main-header-logo {
-	width: 220px;
+	width: 200px;
 	margin-right: 10px;
 	padding: 9px 10px;
 
@@ -250,8 +251,9 @@ section h2 {
 }
 
 .checkout {
-	width: 150px;
-	padding: 12px;
+	width: 130px;
+	margin-left: auto;
+	padding: 12px 10px;
 
 	background-color: #63a63e;
 
