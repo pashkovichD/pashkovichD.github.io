@@ -167,7 +167,7 @@ section h2 {
 
 .search input {
 	width: 100%;
-	padding: 12px 10px 12px 40px;
+	padding: 12px 10px 12px 37px;
 
 	line-height: 18px;
 	
@@ -207,8 +207,8 @@ section h2 {
 .bookmarks {
 	position: relative;
 
-	width: 150px;
-	padding: 12px;
+	width: 130px;
+	padding: 12px 10px;
 }
 
 .bookmarks::before {
@@ -230,8 +230,8 @@ section h2 {
 .cart {
 	position: relative;
 
-	width: 150px;
-	padding: 12px;
+	width: 130px;
+	padding: 12px 10px;
 }
 
 .cart::before {
@@ -252,7 +252,6 @@ section h2 {
 
 .checkout {
 	width: 130px;
-	margin-left: auto;
 	padding: 12px 10px;
 
 	background-color: #63a63e;
