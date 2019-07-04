@@ -8,14 +8,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<style>
-		:focus {
-			outline: none;
-			box-shadow: 
-				0 0 0 2px white, 
-				0 0 0 4px #fc0;
-		}
-	</style>
 </head>
 <body>
 
@@ -196,7 +188,7 @@
 
 				<section class="result">
 					<h2 class="visually-hidden">Выбранные товары</h2>
-					<ul class="result-list">
+					<ul class="result-list pt-sans">
 						<li tabindex="0">
 							<h3>Перфоратор BOSCH BFG 3000</h3>
 							<img src="img/product2.jpg" alt="Перфоратор BOSCH BFG 3000">
@@ -228,7 +220,7 @@
 							</div>
 						</li>
 					</ul>
-					<ul class="pagination-list">
+					<ul class="pagination-list pt-sans">
 						<li class="pagination-item pagination-item-current"><a>1</a></li>
 						<li class="pagination-item"><a href="#">2</a></li>
 						<li class="pagination-item"><a href="#">3</a></li>
@@ -241,7 +233,7 @@
 		<section class="product-certificate">
 			<h2 class="visually-hidden">Справка о товаре</h2>
 			<p class="certificate-title">Пара слов о перфораторах</p>
-			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			<p class="pt-sans">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</section>
 
 	</main>
@@ -290,10 +282,10 @@
 	<div class="modal modal-cart">
 		<p class="modal-cart-title">Товар добавлен в корзину!</p>
 		<div class="actions">
-			<a href="#">Оформить заказ</a>
-			<a href="#">Продолжить покупки</a>
+			<a href="#" class="button">Оформить заказ</a>
+			<a href="#" class="button modal-cart-continue">Продолжить покупки</a>
 		</div>
-		<button type="button">Закрыть окно</button>
+		<button type="button"><span class="visually-hidden">Закрыть окно</span></button>
 	</div>
 
 
