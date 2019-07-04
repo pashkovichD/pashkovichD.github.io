@@ -187,8 +187,8 @@ section h2 {
 
 .search-button {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 12px;
+	left: 7px;
 
 	width: 17px;
 	height: 17px;
@@ -228,13 +228,34 @@ section h2 {
 }
 
 .cart {
+	position: relative;
+
 	width: 150px;
 	padding: 12px;
+}
+
+.cart::before {
+	content: '';
+
+	position: absolute;
+	top: 12px;
+	left: 17px;
+
+	width: 15px;
+	height: 15px;
+
+	background-image: url('../img/cart-icon.svg');
+	background-repeat: no-repeat;
+
+	opacity: .3;
 }
 
 .checkout {
 	width: 150px;
 	padding: 12px;
+
+	background-color: #63a63e;
+	
 }
 
 .center-menu {
