@@ -111,9 +111,6 @@ section h2 {
 /*--- HEADER ---*/
 .main-header {
 	background-color: #f3f7f8;
-
-	/* demo */
-	min-height: 320px;
 }
 
 .top-menu {
@@ -311,24 +308,19 @@ section h2 {
 }
 
 .description-shop {
-	width: 300px;
+	width: 200px;
 	margin: 0;
 	padding: 0;
+	padding: 50px;
 
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
-	color: #ee3643;
-
-	/* demo */
-	min-height: 158px;
+	color: #ee3643;	
 }
 
 .center-menu-contacts {
 	width: 300px;
-
-	/* demo */
-	min-height: 158px;
 }
 
 .contacts-phone {
@@ -349,9 +341,6 @@ section h2 {
 	padding: 0;
 
 	list-style: none;
-
-	/* demo */
-	min-height: 158px;
 }
 
 .user-navigation a {
