@@ -130,8 +130,7 @@ section h2 {
 }
 
 .main-header-logo {
-	display: block;
-	width: 200px;
+	width: 220px;
 	margin-right: 10px;
 	padding: 9px 10px;
 
@@ -255,7 +254,7 @@ section h2 {
 	padding: 12px;
 
 	background-color: #63a63e;
-	
+
 }
 
 .center-menu {
