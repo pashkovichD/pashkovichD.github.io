@@ -112,8 +112,6 @@ section h2 {
 
 /*--- HEADER ---*/
 .main-header {
-	margin-bottom: 60px;
-
 	background-color: #f3f7f8;
 
 	/* demo */
@@ -273,7 +271,10 @@ section h2 {
 }
 
 main h1 {
-	padding: 30px;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	/*padding: 30px;*/
 
 	font-size: 30px;
 	line-height: 30px;
@@ -282,6 +283,9 @@ main h1 {
 	color: #32425c;
 
 	background-color: #f2f6f8;
+
+	/* demo */
+	min-height: 90px;
 }
 
 
@@ -290,6 +294,7 @@ main h1 {
 
 /*--- Promo ---*/
 .promo {
+	padding-top: 60px;
 	position: relative;
 
 	margin-bottom: 78px;
@@ -410,6 +415,8 @@ main h1 {
 
 /*--- Популярные товары ---*/
 .popular {
+	margin-bottom: 46px;
+
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -428,7 +435,7 @@ main h1 {
 .popular a {	
 	width: 300px;
 	margin-bottom: 46px;
-	
+
 	/* demo */
 	height: 38px;
 	box-sizing: border-box;
@@ -536,11 +543,41 @@ main h1 {
 
 /*--- Популярные производители ---*/
 .producers {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 
+	margin-bottom: 147px;
+}
+
+.producers h2 {
+	width: 620px;
+	margin: 0;
+	margin-bottom: 46px;
+	padding: 0;
+
+	/* demo */
+	min-height: 38px;
+}
+
+.producers a {	
+	width: 300px;
+	margin-bottom: 46px;
+
+	/* demo */
+	height: 38px;
+	box-sizing: border-box;
 }
 
 .producer-list {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/* demo */
+	min-height: 310px;
 }
 
 
@@ -548,7 +585,12 @@ main h1 {
 
 /*--- Сервисы ---*/
 .services {
-	color: #000000;	
+	margin-bottom: 77px;
+
+	color: #000000;
+
+	/* demo */
+	min-height: 460px;
 }
 
 .services h2 {
@@ -560,6 +602,9 @@ main h1 {
 }
 
 .tab-title {
+	margin: 0;
+	padding: 0;
+
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: 700;
@@ -568,6 +613,9 @@ main h1 {
 }
 
 .service-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -585,9 +633,20 @@ main h1 {
 
 
 
+.two-columns-index {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 /*--- Презентация компании ---*/
 .presentation {
+	width: 540px;
+
 	color: #000000;
+
+	/* demo */
+	min-height: 375px;
 }
 
 .presentation h2 {
@@ -617,7 +676,12 @@ main h1 {
 
 /*--- Контакты ---*/
 .contacts {
+	width: 300px;
+
 	color: #000000;
+
+	/* demo */
+	min-height: 375px;
 }
 
 .contacts h2 {
@@ -626,12 +690,23 @@ main h1 {
 
 
 
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
 /*--- Хлебные крошки ---*/
 .breadcrumbs {
+	margin: 0;
+	padding: 0;
+
 	line-height: 18px;
 	text-transform: uppercase;	
 
-	list-style: none;	
+	list-style: none;
+	
+	/* demo */
+	min-height: 60px;
 }
 
 .breadcrumbs a {
@@ -643,7 +718,12 @@ main h1 {
 
 /*--- Фильтр ---*/
 .filters {
+	width: 220px;
+
 	color: #000000;
+
+	/* demo */
+	min-height: 1220px;
 }
 
 .filter-title {
@@ -697,6 +777,11 @@ main h1 {
 
 
 
+.catalog-right {
+	width: 700px;
+}
+
+
 /*--- Сортировка ---*/
 .sort {
 	line-height: 18px;
@@ -704,6 +789,9 @@ main h1 {
 	color: #000000;
 
 	background-color: #f7f3ec;
+
+	/* demo */
+	min-height: 38px;
 }
 
 .sort-title {
@@ -854,13 +942,33 @@ main h1 {
 
 /*--- FOOTER ---*/
 .main-footer {
+	margin-top: 86px;
+
 	color: #ffffff;
 
 	background-color: #32425c;
+
+	/* demo */
+	min-height: 300px;
+}
+
+.main-footer .container{
+	/* demo */
+	min-height: 193px;
 }
 
 .main-footer a {
 	color: #ffffff;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 35px;
+
+	/* demo */
+	min-height: 63px;
 }
 
 .footer-top .main-header-logo {
@@ -869,10 +977,17 @@ main h1 {
 }
 
 .footer-menu-main {
+	width: 700px;
+	margin: 0;
+	padding: 0;
+
 	font-size: 18px;
 	line-height: 24px;
 
 	list-style: none;
+
+	/* demo */
+	min-height: 63px;
 }
 
 .footer-menu-main a:hover,
@@ -885,16 +1000,36 @@ main h1 {
 	opacity: .5;
 }
 
+.footer-center {
+	display: flex;
+	justify-content: space-between;
+}
+
 .footer-contacts {
+	width: 380px;
+
+	margin: 0;
+	padding: 0;
+
 	font-size: 18px;
 	line-height: 24px;
+
+	/* demo */
+	min-height: 95px;
 }
 
 .footer-menu {
+	width: 540px;
+	margin: 0;
+	padding: 0;
+
 	font-size: 18px;
 	line-height: 24px;
 
 	list-style: none;
+
+	/* demo */
+	min-height: 95px;
 }
 
 .footer-menu a {
@@ -911,23 +1046,49 @@ main h1 {
 	opacity: .5;
 }
 
-.footer-bottom {
+.footer-bottom {	
+	padding-top: 35px;
+
 	font-size: 16px;
 	line-height: 18px;
 
-	background-color: #293449;
+	background-color: #293449;	
+}
+
+.footer-bottom .container {
+	display: flex;
+	justify-content: space-between;
+
+	/* demo */
+	min-height: 72px;
 }
 
 .copyright {
-	
+	width: 300px;
+	margin: 0;
+	padding: 0;
+
+	/* demo */
+	min-height: 72px;	
 }
 
 .social-buttons {
+	width: 300px;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/* demo */
+	min-height: 72px;
 }
 
 .feedback {
-	
+	width: 140px;
+
+	/* demo */
+	min-height: 72px;
 }
 
 .feedback a {
@@ -945,7 +1106,10 @@ main h1 {
 }
 
 .development {
+	width: 140px;
 
+	/* demo */
+	min-height: 72px;
 }
 
 .development a {
