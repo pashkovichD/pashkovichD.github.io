@@ -414,18 +414,22 @@ section h2 {
 }
 
 .user-navigation .profile-link {
+	margin-bottom: 30px;
+}
+
+.user-navigation .profile-link a {
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: underline;
 	color: #32425c;
 }
 
-.user-navigation .profile-link:hover,
-.user-navigation .profile-link:focus {
+.user-navigation .profile-link a:hover,
+.user-navigation .profile-link a:focus {
 	color: #ee3643;
 }
 
-.user-navigation .profile-link:active {
+.user-navigation .profile-link a:active {
 	color: #32425c;
 }
 
