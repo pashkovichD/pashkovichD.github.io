@@ -1054,9 +1054,9 @@ main h1 {
 }
 
 .producers h2 {
-	width: 591px;
+	width: 596px;
 	margin: 0;
-	margin-left: 29px;
+	margin-left: 24px;
 	margin-bottom: 46px;
 	padding: 0;
 	padding-top: 5px;
@@ -1072,14 +1072,36 @@ main h1 {
 }
 
 .producer-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 	width: 100%;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+}
 
-	/* demo */
-	min-height: 310px;
+.producer-list li {
+	width: 220px;
+	margin-bottom: 20px;	
+
+	text-align: center;
+}
+
+.producer-list a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 145px;
+	margin: 0;
+	padding: 0;
+
+	background-color: #ffffff;
+	border: 1px solid #eaeaea;
 }
 
 
