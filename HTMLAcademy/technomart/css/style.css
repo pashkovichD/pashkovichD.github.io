@@ -1102,6 +1102,18 @@ main h1 {
 
 	background-color: #ffffff;
 	border: 1px solid #eaeaea;
+
+	transition: all .2s ease;
+}
+
+.producer-list a:hover {
+	box-shadow: 
+		0 0 0 2px white, 
+		0 0 0 4px #fc0;
+}
+
+.producer-list a:active {
+	opacity: .3;	
 }
 
 
