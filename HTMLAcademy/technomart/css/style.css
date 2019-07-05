@@ -691,6 +691,24 @@ main h1 {
 	background-position: right 31px center;
 }
 
+.new {
+	position: relative;
+}
+
+.new::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 60px;
+	height: 59px;
+
+	background-image: url('../img/new.png');
+	background-repeat: no-repeat;
+}
+
 
 
 
