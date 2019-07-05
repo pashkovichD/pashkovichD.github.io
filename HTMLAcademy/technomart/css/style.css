@@ -660,16 +660,25 @@ main h1 {
 
 .promo-list .instruments {
 	background-color: #3bbce3;
+	background-image: url('../img/icon-2.svg');
+	background-repeat: no-repeat;
+	background-position: right 28px center;
 }
 
 .promo-list .technics {
 	background-color: #dc91d8;
+	background-image: url('../img/icon-3.svg');
+	background-repeat: no-repeat;
+	background-position: right 31px center;
 }
 
 .promo-list .sales {
 	margin-left: 640px;
 
 	background-color: #8ed78f;
+	background-image: url('../img/icon-4.svg');
+	background-repeat: no-repeat;
+	background-position: right 45px center;
 }
 
 .promo-list .delivery {
@@ -677,6 +686,9 @@ main h1 {
 	margin-bottom: 0;
 
 	background-color: #ffc047;
+	background-image: url('../img/icon-5.svg');
+	background-repeat: no-repeat;
+	background-position: right 31px center;
 }
 
 
