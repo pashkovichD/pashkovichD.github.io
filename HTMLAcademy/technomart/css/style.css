@@ -885,12 +885,25 @@ main h1 {
 	background: #ffffff;
 	border: 1px solid #eaeaea;
 	box-sizing: border-box;
+
+	transition: all .2s ease;
 }
 
-.popular-list .links {
-	position: absolute;
+.popular-list li:hover,
+.popular-list li:focus {
+	box-shadow: 
+		0 0 0 2px white, 
+		0 0 0 4px #fc0;
+}
 
+.popular-list li:hover img,
+.popular-list li:focus img {
 	display: none;
+}
+
+.popular-list li:hover .links,
+.popular-list li:focus .links {
+	display: block;
 }
 
 .popular-list h3 {
@@ -902,6 +915,11 @@ main h1 {
 
 	font-size: 18px;
 	line-height: 20px;
+}
+
+.popular-list img {
+	width: 200px;
+	height: 200px;
 }
 
 .popular-list .price {	
@@ -935,8 +953,6 @@ main h1 {
 
 	background-color: #ee3643;
 	border-radius: 2px;
-
-	/*transform: translateX(-50%);*/
 }
 
 .popular-list .new-price::before {
@@ -951,23 +967,30 @@ main h1 {
 }
 
 .links	{
+	position: absolute;
+
+	display: none;
+	padding-top: 45px;
+
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 .links .link-buy {
 	display: inline-block;
 
 	width: 115px;
+	margin: 0;
+	margin-bottom: 7px;
 	padding: 10px;
 
 	text-align: center;
 	color: #ffffff;
 
-	 background-color: #63a63e;
+	background-color: #63a63e;
 	border-radius: 3px;
 	box-shadow: 0 -3px 0 0 #367315 inset;
 
@@ -991,6 +1014,7 @@ main h1 {
 	display: inline-block;
 
 	width: 115px;
+	margin: 0;
 	padding: 10px;
 
 	text-align: center;
@@ -1030,22 +1054,21 @@ main h1 {
 }
 
 .producers h2 {
-	width: 620px;
+	width: 591px;
 	margin: 0;
+	margin-left: 29px;
 	margin-bottom: 46px;
 	padding: 0;
-
-	/* demo */
-	min-height: 38px;
+	padding-top: 5px;
 }
 
-.producers a {	
-	width: 300px;
-	margin-bottom: 46px;
+.producers a {
+	width: 253px;
+	margin-right: 24px;
+	margin-bottom: 46px;	
+	padding: 10px 50px;
 
-	/* demo */
-	height: 38px;
-	box-sizing: border-box;
+	box-sizing: border-box;	
 }
 
 .producer-list {
