@@ -430,10 +430,11 @@ section h2 {
 .user-navigation .profile-link span {
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: -4px;
 
 	width: 4px;
 	height: 4px;
+	margin-top: -2px;
 
 	background-color: #32425c;
 	border-radius: 50%;
