@@ -382,7 +382,7 @@ section h2 {
 
 .user-navigation a {
 	display: block;
-	padding: 12px 25px;
+	padding: 10px 25px;
 
 	font-size: 21px;
 	line-height: 21px;
@@ -401,20 +401,9 @@ section h2 {
 	padding-left: 50px;
 }
 
-.user-navigation .login-link::before {
-	content: '';
-
+.user-navigation .login-link svg {
 	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 20px;
-	height: 17px;
-
-	background-image: url('../img/icon-login.svg');
-	background-repeat: no-repeat;
-
-	opacity: .3;
+	left: 15px;
 }
 
 .user-navigation .profile-link {
