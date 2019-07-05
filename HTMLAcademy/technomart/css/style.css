@@ -451,17 +451,40 @@ section h2 {
 }
 
 .yes-authorized .login-link {
-	
+	padding-left: 46px;
+
+	background-color: #ffffff;
 }
 
-.yes-authorized .deauthorization-link {
-	width: 45px;
+.yes-authorized .login-link:hover,
+.yes-authorized .login-link:focus {
+	color: #000000;
+}
+
+.yes-authorized .deauthorization-link {	
+	width: 40px;
 	height: 45px;
+	margin-left: auto;
 	padding: 0;	
 }
 
 .yes-authorized .deauthorization-link a {
-	background-color: none;
+	position: relative;
+
+	padding: 0;
+
+	height: 41px;
+}
+
+.yes-authorized .deauthorization-link a svg {
+	position: absolute;
+
+	top: 12px;
+	left: 8px;
+}
+
+.yes-authorized a {
+	background-color: transparent;
 }
 
 .site-navigation {
