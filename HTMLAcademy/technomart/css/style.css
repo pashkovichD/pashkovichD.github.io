@@ -417,13 +417,26 @@ section h2 {
 	vertical-align: top;
 }
 
+
 .user-navigation .profile-link a {
-	padding: 5px 15px;	
+	padding: 5px 15px 5px 17px;
 	
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: underline;
 	color: #32425c;
+}
+
+.user-navigation .profile-link span {
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	width: 4px;
+	height: 4px;
+
+	background-color: #32425c;
+	border-radius: 50%;
 }
 
 .user-navigation .profile-link a:hover,
@@ -454,6 +467,7 @@ section h2 {
 }
 
 .yes-authorized li {
+	position: relative;
 	display: inline-block;
 
 	vertical-align: top;
