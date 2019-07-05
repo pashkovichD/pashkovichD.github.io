@@ -516,6 +516,13 @@ section h2 {
 	left: 13px;
 }
 
+.yes-authorized .deauthorization-link a:hover svg polygon,
+.yes-authorized .deauthorization-link a:hover svg path,
+.yes-authorized .deauthorization-link a:focus svg polygon,
+.yes-authorized .deauthorization-link a:focus svg path {
+	fill: #32425c;
+}
+
 .yes-authorized a {
 	background-color: transparent;
 }
