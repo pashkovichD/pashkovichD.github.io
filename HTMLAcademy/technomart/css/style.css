@@ -94,17 +94,7 @@ section h2 {
 	line-height: 24px;
 }
 
-.yes-authorized {
-	display: none;
-}
 
-.authorized .no-authorized {
-	display: none;
-}
-
-.authorized .yes-authorized {
-	display: block;
-}
 
 
 
@@ -391,7 +381,14 @@ section h2 {
 	background-color: #ffffff;
 }
 
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #ee3643;
+}
+
 .user-navigation a:active {
+	color: #000000;
+
 	opacity: .3;
 }
 
@@ -403,7 +400,17 @@ section h2 {
 
 .user-navigation .login-link svg {
 	position: absolute;
-	left: 15px;
+	top: 10px;
+	left: 16px;
+}
+
+
+
+.user-navigation .login-link:hover svg polygon,
+.user-navigation .login-link:hover svg path,
+.user-navigation .login-link:focus svg polygon,
+.user-navigation .login-link:focus svg path {
+	fill: #32425c;
 }
 
 .user-navigation .profile-link {
@@ -422,7 +429,40 @@ section h2 {
 	color: #32425c;
 }
 
+.yes-authorized {
+	display: none;
+}
 
+.authorized .no-authorized {
+	display: none;
+}
+
+.authorized .yes-authorized {
+	display: flex;
+}
+
+.yes-authorized a {
+	padding: 10px 15px;
+}
+
+.yes-authorized li:first-child {
+	width: 255px;
+	margin: 0;
+}
+
+.yes-authorized .login-link {
+	
+}
+
+.yes-authorized .deauthorization-link {
+	width: 45px;
+	height: 45px;
+	padding: 0;	
+}
+
+.yes-authorized .deauthorization-link a {
+	background-color: none;
+}
 
 .site-navigation {
 	width: 100%;

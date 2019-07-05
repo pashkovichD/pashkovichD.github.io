@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<header class="main-header">
+	<header class="main-header authorized">
 		<div class="top-menu">
 			<div class="container">
 				<a class="main-header-logo">Техномарт</a>
@@ -42,7 +42,7 @@
 				</div>
 				
 				<!-- неавторизованный пользователь -->
-				<ul class="user-navigation no-authorized out-2">
+				<ul class="user-navigation no-authorized">
 					<li>
 						<a href="login.html" class="login-link">
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -66,17 +66,17 @@
 					<li>
 						<a href="profile.html" class="login-link">Равшан Джамшутович</a>
 					</li>
-					<li>
-						<a href="deauthorization.html" class="deauthorization-link">
-							
+					<li class="deauthorization-link">
+						<a href="deauthorization.html">
+
 							<span class="visually-hidden">Выход из личного кабинета</span>
 						</a>
 					</li>
-					<li>
-						<a href="orders.html" class="profile-link">Мои заказы</a>
+					<li class="profile-link">
+						<a href="orders.html">Мои заказы</a>
 					</li>
-					<li>
-						<a href="profile.html" class="profile-link">Личный кабинет</a>
+					<li class="profile-link">
+						<a href="profile.html">Личный кабинет</a>
 					</li>
 				</ul>
 
