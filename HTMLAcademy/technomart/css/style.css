@@ -725,9 +725,51 @@ main h1 {
 }
 
 .controls {
-	position: absolute;
+	/*position: absolute;
 	top: 50%;
 	bottom: 0;
+	z-index: 1;*/
+}
+
+.controls .back,
+.controls .next {
+	position: absolute;	
+	top: 50%;
+	left: 25px;
+	z-index: 1;
+
+	width: 22px;
+	height: 40px;
+	margin-top: -20px;
+	padding: 0;
+	
+	background-image: url('../img/icon-left.svg');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+
+	opacity: .5;
+}
+
+.controls .next {
+	left: auto;
+	right: 25px;
+
+	background-image: url('../img/icon-right.svg');
+}
+
+.controls .back:hover,
+.controls .next:hover,
+.controls .back:focus,
+.controls .next:focus {
+	opacity: 1;
+}
+
+.controls .back:focus,
+.controls .next:focus {
+	box-shadow: 
+		0 0 0 2px #8E7C6E,
+		0 0 0 4px #fc0;
 }
 
 .slide-list {
