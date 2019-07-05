@@ -525,6 +525,9 @@ section h2 {
 }
 
 .site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -533,18 +536,29 @@ section h2 {
 
 	background-color: #32425c;
 
+	box-shadow: 0 -5px 0 0 #293449 inset;
+
 	/* demo */
 	min-height: 60px;
 }
 
 .site-navigation a {
+	display: block;
+	padding: 21px;
+
 	line-height: 17px;
 	color: #ffffff;
+
+	transition: all .2s ease;
 }
 
 .site-navigation a[href]:hover,
 .site-navigation a[href]:focus {
 	background-color: #293449;
+
+	box-shadow: 
+		0 0 0 2px #293449, 
+		0 0 0 4px #fc0;
 }
 
 
