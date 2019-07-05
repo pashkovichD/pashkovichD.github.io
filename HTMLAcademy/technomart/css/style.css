@@ -723,13 +723,39 @@ main h1 {
 	background-color: #755045;
 }
 
+.controls {
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+}
+
 .slide-list {
+	margin: 0;
+	padding: 0;
+
 	color: #ffffff;
 
 	list-style: none;
 }
 
+.slide-item {
+	position: relative;
+
+	display: none;
+}
+
+.slide-item:nth-child(1) {
+	display: block;
+}
+
 .slide-title {
+	position: absolute;
+	top: 27px;
+	left: 24px;
+
+	margin: 0;
+	padding: 0;
+
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
@@ -737,9 +763,27 @@ main h1 {
 }
 
 .slide-tagline {
+	position: absolute;
+	top: 65px;
+	left: 24px;	
+
+	margin: 0;
+	padding: 0;
+
 	font-size: 18px;
 	line-height: 24px;
 
+}
+
+.slide-item img {
+	width: 620px;
+	height: 266px;
+}
+
+.slider-button {
+	position: absolute;
+	left: 25px;
+	bottom: 22px;
 }
 
 
@@ -767,8 +811,6 @@ main h1 {
 	width: 300px;
 	margin-bottom: 46px;
 
-	/* demo */
-	height: 38px;
 	box-sizing: border-box;
 }
 
