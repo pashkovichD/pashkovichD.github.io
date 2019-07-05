@@ -404,8 +404,6 @@ section h2 {
 	left: 16px;
 }
 
-
-
 .user-navigation .login-link:hover svg polygon,
 .user-navigation .login-link:hover svg path,
 .user-navigation .login-link:focus svg polygon,
@@ -511,7 +509,6 @@ section h2 {
 
 .yes-authorized .deauthorization-link a svg {
 	position: absolute;
-
 	top: 11px;
 	left: 13px;
 }
