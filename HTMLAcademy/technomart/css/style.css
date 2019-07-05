@@ -527,6 +527,7 @@ section h2 {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 
 	width: 100%;
 	margin: 0;
@@ -544,7 +545,7 @@ section h2 {
 
 .site-navigation a {
 	display: block;
-	padding: 21px;
+	padding: 21px 30px;
 
 	line-height: 17px;
 	color: #ffffff;
