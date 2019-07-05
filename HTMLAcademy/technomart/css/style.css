@@ -617,7 +617,7 @@ main h1 {
 
 .promo-list h3 {
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 9px;
 	padding: 0;
 
 	font-size: 24px;	
@@ -653,6 +653,9 @@ main h1 {
 
 .promo-list .materials {
 	background-color: #ffbf47;
+	background-image: url('../img/icon-1.svg');
+	background-repeat: no-repeat;
+	background-position: right 43px center;
 }
 
 .promo-list .instruments {
