@@ -610,14 +610,15 @@ main h1 {
 }
 
 .promo-list li {
-	width: 254px;
+	width: 258px;
 	margin-bottom: 20px;
-	padding: 23px;	
+	padding: 21px;	
 }
 
 .promo-list h3 {
 	margin: 0;
-	margin-bottom: 9px;
+	margin-left: 3px;
+	margin-bottom: 13px;
 	padding: 0;
 
 	font-size: 24px;	
