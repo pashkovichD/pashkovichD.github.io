@@ -750,7 +750,7 @@ main h1 {
 
 .slide-title {
 	position: absolute;
-	top: 27px;
+	top: 23px;
 	left: 24px;
 
 	margin: 0;
@@ -759,12 +759,12 @@ main h1 {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
-	
+	text-transform: uppercase;	
 }
 
 .slide-tagline {
 	position: absolute;
-	top: 65px;
+	top: 61px;
 	left: 24px;	
 
 	margin: 0;
@@ -772,7 +772,6 @@ main h1 {
 
 	font-size: 18px;
 	line-height: 24px;
-
 }
 
 .slide-item img {
@@ -784,6 +783,8 @@ main h1 {
 	position: absolute;
 	left: 25px;
 	bottom: 22px;
+
+	padding: 10px 50px;
 }
 
 
