@@ -414,7 +414,8 @@ section h2 {
 }
 
 .user-navigation .profile-link {
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
+	vertical-align: top;
 }
 
 .user-navigation .profile-link a {
@@ -442,11 +443,17 @@ section h2 {
 }
 
 .authorized .yes-authorized {
-	display: flex;
+	display: block;
 }
 
 .yes-authorized a {
 	padding: 10px 15px;
+}
+
+.yes-authorized li {
+	display: inline-block;
+
+	vertical-align: top;
 }
 
 .yes-authorized li:first-child {
