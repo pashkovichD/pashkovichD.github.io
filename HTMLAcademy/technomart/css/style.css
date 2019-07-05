@@ -345,7 +345,7 @@ section h2 {
 
 	position: absolute;
 	top: 0;
-	left: -40px;
+	left: -59px;
 
 	width: 19px;
 	height: 19px;
@@ -365,6 +365,9 @@ section h2 {
 }
 
 .user-navigation {
+	display: flex;
+	flex-wrap: wrap;
+
 	width: 300px;
 	margin: 0;
 	padding: 0;
@@ -372,14 +375,53 @@ section h2 {
 	list-style: none;
 }
 
+.user-navigation li:first-child {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
 .user-navigation a {
+	display: block;
+	padding: 12px 25px;
+
 	font-size: 21px;
 	line-height: 21px;
-	color: #000000;	
+	color: #000000;
+
+	background-color: #ffffff;
 }
 
 .user-navigation a:active {
 	opacity: .3;
+}
+
+.user-navigation .login-link {
+	position: relative;
+
+	padding-left: 50px;
+}
+
+.user-navigation .login-link::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 20px;
+	height: 17px;
+
+	background-image: url('../img/icon-login.svg');
+	background-repeat: no-repeat;
+
+	opacity: .3;
+}
+
+.user-navigation .profile-link {
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+	color: #32425c;
 }
 
 .user-navigation .profile-link:hover,
@@ -391,12 +433,7 @@ section h2 {
 	color: #32425c;
 }
 
-.user-navigation .profile-link {
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: underline;
-	color: #32425c;
-}
+
 
 .site-navigation {
 	width: 100%;
