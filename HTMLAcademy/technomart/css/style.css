@@ -1325,7 +1325,7 @@ main h1 {
 
 .transport-company {
 	margin: 0;
-	margin-bottom: 37px;
+	margin-bottom: 46px;
 	padding: 0;
 
 	font-size: 18px;
@@ -1355,6 +1355,9 @@ main h1 {
 	background-color: #ee3643;
 }
 
+.presentation-button {
+	padding: 10px 40px;
+}
 
 
 /*--- Контакты ---*/
@@ -1362,12 +1365,12 @@ main h1 {
 	width: 300px;
 
 	color: #000000;
-
-	/* demo */
-	min-height: 375px;
 }
 
 .contacts h2 {
+	margin: 0;
+	padding: 0;
+
 	color: #000000;
 }
 
