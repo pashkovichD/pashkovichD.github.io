@@ -1787,7 +1787,7 @@ main h1 {
 .social-buttons {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	/*justify-content: center;*/
 
 	width: 235px;
 	margin: 0;
