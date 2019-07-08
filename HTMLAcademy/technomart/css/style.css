@@ -1682,6 +1682,7 @@ main h1 {
 
 .footer-menu-main {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-end;
 
@@ -1714,6 +1715,8 @@ main h1 {
 .footer-center {
 	display: flex;
 	justify-content: space-between;
+
+	margin-bottom: 48px;
 }
 
 .footer-contacts {
@@ -1729,8 +1732,9 @@ main h1 {
 .footer-menu {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
-	width: 540px;
+	width: 525px;
 	margin: 0;
 	padding: 0;
 
