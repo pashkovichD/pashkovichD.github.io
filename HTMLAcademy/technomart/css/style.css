@@ -1121,7 +1121,7 @@ main h1 {
 
 /*--- Сервисы ---*/
 .services {	
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	padding-top: 60px;
 
 	color: #000000;
@@ -1203,9 +1203,9 @@ main h1 {
 				0 0 0 4px #fc0;
 }
 
-.tab-title-current button,
-.tab-title-current button:hover,
-.tab-title-current button:focus {
+.tab-title .tab-title-current,
+.tab-title .tab-title-current:hover,
+.tab-title .tab-title-current:focus {
 	color: #32425c;
 
 	background-color: #ffffff;
@@ -1215,6 +1215,7 @@ main h1 {
 
 .service-list {
 	width: 620px;
+	min-height: 285px;
 	margin: 0;
 	padding: 0;
 
@@ -1229,7 +1230,7 @@ main h1 {
 	background-position: right bottom;
 }
 
-.service-list li:nth-child(1) {
+.service-list .service-list-current {
 	display: block;
 }
 
@@ -1247,8 +1248,7 @@ main h1 {
 
 .service-list p {
 	width: 380px;
-	margin: 0;
-	margin-bottom: 30px;
+	margin: 0;	
 	padding: 0;	
 }
 
@@ -1265,8 +1265,19 @@ main h1 {
 }
 
 .servise-list-button {
+	display: inline-block;
+	margin-top: 30px;
 	padding: 10px 45px;
 }
+
+.service-list .service-show {	
+	display: block;
+}
+
+.service-list .service-hide {	
+	display: none;
+}
+
 
 
 
