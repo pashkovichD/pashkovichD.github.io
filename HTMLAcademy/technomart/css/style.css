@@ -1753,6 +1753,11 @@ main h1 {
 	text-decoration: underline;
 }
 
+.footer-menu a:focus {
+	box-shadow: 0 0 0 2px #32425c,
+				0 0 0 4px #fc0;
+}
+
 .footer-menu a:active {
 	text-decoration: none;
 	opacity: .5;
