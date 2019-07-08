@@ -1775,18 +1775,13 @@ main h1 {
 .footer-bottom .container {
 	display: flex;
 	justify-content: space-between;
-
-	/* demo */
-	min-height: 72px;
 }
 
 .copyright {
 	width: 300px;
 	margin: 0;
+	margin-bottom: 40px;
 	padding: 0;
-
-	/* demo */
-	min-height: 72px;	
 }
 
 .social-buttons {
@@ -1796,16 +1791,15 @@ main h1 {
 	padding: 0;
 
 	list-style: none;
-
-	/* demo */
-	min-height: 72px;
 }
 
 .feedback {
 	width: 140px;
+}
 
-	/* demo */
-	min-height: 72px;
+.feedback p {
+	margin: 0;
+	padding: 0;
 }
 
 .feedback a {
@@ -1824,9 +1818,11 @@ main h1 {
 
 .development {
 	width: 140px;
+}
 
-	/* demo */
-	min-height: 72px;
+.development p {
+	margin: 0;
+	padding: 0;
 }
 
 .development a {
