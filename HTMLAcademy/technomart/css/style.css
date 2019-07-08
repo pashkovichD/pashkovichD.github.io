@@ -1959,6 +1959,8 @@ main h1 {
 }
 
 .modal-map {	
+	display: none;	
+
 	left: 50%;
 	bottom: 360px;
 
@@ -2045,7 +2047,7 @@ main h1 {
 }
 
 .overlay {
-	/*display: none;*/
+	display: none;
 
 	position: fixed;
 	top: 0;
@@ -2057,6 +2059,30 @@ main h1 {
 	z-index: 1;	
 }
 
+.overlay-show {
+	display: block;
+}
+
+.modal-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: .6s;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 
 
 
