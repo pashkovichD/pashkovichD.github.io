@@ -1674,6 +1674,8 @@ main h1 {
 }
 
 .footer-top .main-header-logo {
+	padding: 16px 10px;
+
 	font-size: 30px;
 	line-height: 30px;
 }
@@ -1697,6 +1699,11 @@ main h1 {
 .footer-menu-main a:hover,
 .footer-menu-main a:focus {
 	text-decoration: underline;
+}
+
+.footer-menu-main a:focus {
+	box-shadow: 0 0 0 2px #32425c,
+				0 0 0 4px #fc0;
 }
 
 .footer-menu-main a:active {
