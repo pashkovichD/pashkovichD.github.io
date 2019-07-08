@@ -1121,7 +1121,7 @@ main h1 {
 
 /*--- Сервисы ---*/
 .services {	
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	padding-top: 60px;
 
 	color: #000000;
@@ -1295,9 +1295,6 @@ main h1 {
 	width: 540px;
 
 	color: #000000;
-
-	/* demo */
-	min-height: 375px;
 }
 
 .presentation h2 {
@@ -1305,6 +1302,9 @@ main h1 {
 }
 
 .presentation .presentation-title {
+	margin: 0;
+	padding: 0;
+
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
