@@ -1774,14 +1774,13 @@ main h1 {
 
 .footer-bottom .container {
 	display: flex;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
 }
 
 .copyright {
 	width: 300px;
 	margin: 0;
-	margin-bottom: 40px;
-	margin-right: 20px;
+	margin-bottom: 50px;
 	padding: 0;
 }
 
@@ -1789,7 +1788,6 @@ main h1 {
 	width: 300px;
 
 	margin: 0;
-	margin-right: 20px;
 	padding: 0;
 
 	list-style: none;
@@ -1797,7 +1795,6 @@ main h1 {
 
 .feedback {
 	width: 140px;
-	margin-right: 20px;
 }
 
 .feedback p {
