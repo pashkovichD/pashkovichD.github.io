@@ -1656,14 +1656,10 @@ main h1 {
 	color: #ffffff;
 
 	background-color: #32425c;
-
-	/* demo */
-	min-height: 300px;
 }
 
 .main-footer .container{
-	/* demo */
-	min-height: 193px;
+	
 }
 
 .main-footer a {
@@ -1675,9 +1671,6 @@ main h1 {
 	justify-content: space-between;
 
 	margin-bottom: 35px;
-
-	/* demo */
-	min-height: 63px;
 }
 
 .footer-top .main-header-logo {
@@ -1686,17 +1679,18 @@ main h1 {
 }
 
 .footer-menu-main {
-	width: 700px;
+	display: flex;
+	justify-content: space-between;
+
+	width: 550px;
 	margin: 0;
+	margin-left: auto;
 	padding: 0;
 
 	font-size: 18px;
 	line-height: 24px;
 
-	list-style: none;
-
-	/* demo */
-	min-height: 63px;
+	list-style: none;	
 }
 
 .footer-menu-main a:hover,
