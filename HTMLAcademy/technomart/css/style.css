@@ -1953,6 +1953,29 @@ main h1 {
 
 
 /*--- Товар добавлен в корзину ---*/
+.modal {
+	position: fixed;
+	/*z-index: 1;	*/
+}
+
+.modal-map {	
+	left: 50%;
+	bottom: 385px;
+
+	height: 446px;	
+	margin-left: -470px;
+
+	line-height: 0;
+
+	box-shadow: 0 0 7px 5px rgba(0,0,0,.1);
+}
+
+.modal-map img {
+	display: block;
+	width: 940px;
+	height: 446px;
+}
+
 .modal-cart {
 
 }
@@ -1980,9 +2003,46 @@ main h1 {
 				0 0 0 4px #fc0;
 }
 
+.modal-close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
 
+	width: 27px;
+	height: 27px;
+	margin: 0;
+	padding: 0;
 
+	background-color: transparent;
+	border: none;
+	opacity: .8;
+}
 
+.modal-close::before,
+.modal-close::after {
+	content: '';
+
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 27px;
+	height: 3px;
+
+	background-color: #ee3643;
+}
+
+ .modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+} 
+
+.modal-close:hover,
+.modal-close:focus {
+	opacity: 1;
+}
 
 
 
