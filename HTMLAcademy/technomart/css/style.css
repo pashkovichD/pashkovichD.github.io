@@ -1319,6 +1319,10 @@ main h1 {
 	padding: 0;
 }
 
+.presentation .mb20 {
+	margin-bottom: 20px;
+}
+
 .transport-company {
 	margin: 0;
 	padding: 0;
@@ -1327,6 +1331,10 @@ main h1 {
 	line-height: 20px;
 
 	list-style: none;
+}
+
+.transport-company li {
+	padding-left: 35px;
 }
 
 
