@@ -1325,6 +1325,7 @@ main h1 {
 
 .transport-company {
 	margin: 0;
+	margin-bottom: 37px;
 	padding: 0;
 
 	font-size: 18px;
@@ -1334,7 +1335,24 @@ main h1 {
 }
 
 .transport-company li {
+	position: relative;
+
 	padding-left: 35px;
+	margin-bottom: 20px;
+}
+
+.transport-company li::before {
+	content: '';
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	margin-top: -1px;
+	width: 25px;
+	height: 2px;
+
+	background-color: #ee3643;
 }
 
 
