@@ -1376,7 +1376,16 @@ main h1 {
 }
 
 .contacts p {
-	margin-bottom: 25px;
+	margin-bottom: 32px;
+}
+
+.contacts .map-link {
+	display: block;
+	margin-bottom: 45px;
+}
+
+.contacts .write-us {
+	display: block;	
 }
 
 
