@@ -1525,30 +1525,49 @@ main h1 {
 
 /*--- Сортировка ---*/
 .sort {
+	display: flex;
+	justify-content: space-between;
+
 	margin-bottom: 20px;
+	padding: 10px 0;
 
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #000000;
 
 	background-color: #f7f3ec;
-
-	/* demo */
-	min-height: 38px;
 }
 
-.sort-title {
-	
+.sort p {
+	margin: 0;
+	padding: 0;
 }
 
-.sort-list {
+.sort ul {
+	margin: 0;
+	padding: 0;
+}
+
+p.sort-title {
+	width: 120px;
+	padding-left: 20px;	
+}
+
+.sort-list {	
 	display: flex;
+	/*flex-wrap: wrap;*/
+
+	width: 460px;
 
 	list-style: none;
 }
 
 .sort-list li {
 	margin-right: 70px;	
+}
+
+.sort-list .icon-updown {
+	margin-right: 0;
 }
 
 .sort-list a {
