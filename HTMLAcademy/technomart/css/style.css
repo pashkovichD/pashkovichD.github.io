@@ -1473,7 +1473,8 @@ main h1 {
 	line-height: 18px;
 	text-transform: uppercase;
 
-	background-color: #f7f3ec;
+	background-color: #f7f3ec;	
+	border-radius: 5px;
 }
 
 .filter-form fieldset {
@@ -1490,7 +1491,7 @@ main h1 {
 }
 
 .filter-form .last-fieldset {
-	margin-bottom: 50px;
+	margin-bottom: 64px;
 
 	border: none;
 }
@@ -1503,11 +1504,77 @@ main h1 {
 	font-weight: 700;
 }
 
+.range-controls {
+	position: relative;
+
+	margin-bottom: 9px;
+	padding: 39px 20px;
+
+	background-color: #f7f3ec;
+	border-radius: 5px;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background: #d7dcde;
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+
+	background: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 0;
+
+	width: 4px;
+	height: 4px;
+	padding: 0;
+
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: 18px;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
+.price-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price-controls label {
+	width: 95px;
+}
+
+.price-controls input {
+	width: 100%;
+	padding: 10px;
+
+	text-align: center;
+
+	background-color: #f7f3ec;
+	border: none;	
+	box-sizing: border-box;	
+}
+
 .filter-form ul {
 	margin: 0;
 	padding: 0;
-
-	/*color: #000000;	*/
 
 	list-style: none;
 }
@@ -1635,6 +1702,7 @@ main h1 {
 	color: #000000;
 
 	background-color: #f7f3ec;
+	border-radius: 5px;
 }
 
 .sort p {
@@ -1654,7 +1722,6 @@ p.sort-title {
 
 .sort-list {	
 	display: flex;
-	/*flex-wrap: wrap;*/
 
 	width: 460px;
 
