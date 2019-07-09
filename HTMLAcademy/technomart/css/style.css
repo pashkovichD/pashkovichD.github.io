@@ -1465,6 +1465,10 @@ main h1 {
 }
 
 .filter-title {
+	margin: 0;
+	padding: 0;
+	padding: 10px;
+
 	line-height: 18px;
 	text-transform: uppercase;
 
