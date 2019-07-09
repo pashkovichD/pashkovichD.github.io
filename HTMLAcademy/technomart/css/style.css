@@ -1791,7 +1791,7 @@ p.sort-title {
 
 /*--- Справка о товаре ---*/
 .product-certificate {
-	padding-top: 60px;
+	padding-top: 66px;
 
 	color: #000000;
 
@@ -1800,14 +1800,14 @@ p.sort-title {
 
 .product-certificate p {
 	margin: 0;
-	margin-bottom: 75px;
+	margin-bottom: 68px;
 	padding: 0;
 }
 
 p.certificate-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 
 	font-size: 30px;
 	line-height: 30px;
