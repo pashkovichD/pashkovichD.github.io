@@ -3,15 +3,17 @@ var service = document.querySelectorAll('.service-list li');
 
 
 link.forEach(function(item, i, arr) {
-	
+
 	item.addEventListener('click', function(evt) {
 		evt.preventDefault();
 		var id = evt.target.id;
-		var number = id.toString().charAt(4);		
+		var number = id.toString().charAt(4);
 		
-		link.forEach(function(item, i, arr) {			
-			item.classList.remove('tab-title-current');
-		});		
+		var buttons = document.querySelectorAll('.tab-title button');
+		
+		for(var i = 0; i < buttons.length; i++) {		
+			buttons[i].classList.remove('tab-title-current');
+		}
 
 		item.classList.add('tab-title-current');		
 
