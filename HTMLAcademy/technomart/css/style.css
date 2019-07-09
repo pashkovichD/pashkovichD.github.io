@@ -1478,6 +1478,7 @@ main h1 {
 
 .filter-form fieldset {
 	margin: 0;
+	margin-bottom: 18px;
 	padding: 0;
 
 	font-size: 15px;
