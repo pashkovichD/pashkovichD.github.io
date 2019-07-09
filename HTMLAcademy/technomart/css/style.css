@@ -1501,6 +1501,8 @@ main h1 {
 	margin: 0;
 	padding: 0;
 
+	/*color: #000000;	*/
+
 	list-style: none;
 }
 
@@ -1509,12 +1511,20 @@ main h1 {
 	margin-bottom: 20px;
 }
 
+.filter-form li span {
+	opacity: .5;
+}
+
+.filter-form li:hover span {
+	opacity: .8;
+}
+
 .filter-producer-list {
 	position: relative;
 }
 
 .filter-producer-list .indicator-checkbox {
-	position: absolute;		
+	position: absolute;
 	left: 0;
 
 	width: 27px;
@@ -1522,6 +1532,22 @@ main h1 {
 
 	background-image: url('../img/checkbox-off.svg');
 	background-repeat: no-repeat;
+
+	opacity: .3;
+}
+
+.filter-producer-list input[type="checkbox"]:checked + .indicator-checkbox {
+	background-image: url('../img/checkbox-on.svg');
+}
+
+.filter-producer-list input[type="checkbox"]:focus ~ span {
+	opacity: .8;
+}
+
+.filter-producer-list input[type="checkbox"]:focus + .indicator-checkbox {
+	box-shadow: 
+		0 0 0 2px white, 
+		0 0 0 4px #fc0;
 }
 
 .filter-feed-list {
