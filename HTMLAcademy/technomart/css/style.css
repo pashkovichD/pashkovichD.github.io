@@ -1490,7 +1490,7 @@ main h1 {
 }
 
 .filter-form legend {
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 
 	font-size: 17px;
 	line-height: 30px;
@@ -1506,11 +1506,22 @@ main h1 {
 
 .filter-form li {
 	margin-left: 35px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .filter-producer-list {
-	
+	position: relative;
+}
+
+.filter-producer-list .indicator-checkbox {
+	position: absolute;		
+	left: 0;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url('../img/checkbox-off.svg');
+	background-repeat: no-repeat;
 }
 
 .filter-feed-list {
