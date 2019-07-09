@@ -1486,21 +1486,35 @@ main h1 {
 	text-transform: uppercase;
 
 	border: none;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .filter-form legend {
+	margin-bottom: 20px;
+
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: 700;
-	
+}
+
+.filter-form ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.filter-form li {
+	margin-left: 35px;
+	margin-bottom: 25px;
 }
 
 .filter-producer-list {
-	list-style: none;
+	
 }
 
 .filter-feed-list {
-	list-style: none;
+	
 }
 
 .filter-button {
