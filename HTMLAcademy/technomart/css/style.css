@@ -1955,21 +1955,21 @@ main h1 {
 /*--- Товар добавлен в корзину ---*/
 .modal {
 	position: fixed;
+	left: 50%;
 	z-index: 2;	
+
+	box-shadow: 0 0 7px 5px rgba(0,0,0,.1);
 }
 
 .modal-map {	
-	display: none;	
-
-	left: 50%;
+	display: none;
+	
 	bottom: 360px;
 
 	height: 446px;	
 	margin-left: -470px;
 
-	line-height: 0;
-
-	box-shadow: 0 0 7px 5px rgba(0,0,0,.1);
+	line-height: 0;	
 }
 
 .modal-map img {
@@ -2003,6 +2003,59 @@ main h1 {
 	box-shadow: 0 0 0 1px #ee3643 inset,
 				0 0 0 2px white, 
 				0 0 0 4px #fc0;
+}
+
+.modal-message {
+	bottom: 200px;
+
+	width: 460px;
+	margin-left: -310px;
+	padding: 45px 80px 0 80px;
+
+	background-color: #ffffff;
+	border-top: 7px solid #ff5257;
+
+	box-shadow: 0 -112px 0 0 #f4f4f4 inset,
+				0 0 7px 5px rgba(0,0,0,.1);
+}
+
+.message-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}
+
+.message-item {
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.message-item label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.message-item input {
+	width: 100%;	
+	padding: 8px 14px;
+
+	box-sizing: border-box;
+}
+
+.message-item textarea {
+	width: 100%;
+}
+
+.text-letter {
+	width: 100%;
+	margin-bottom: 74px;
+}
+
+.message-form-button {
+	width: 620px;
+	margin-bottom: 37px;
 }
 
 .modal-close {
