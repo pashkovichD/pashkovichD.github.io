@@ -1399,23 +1399,65 @@ main h1 {
 
 /*--- Хлебные крошки ---*/
 .breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	padding: 21px 0;
 
 	line-height: 18px;
 	text-transform: uppercase;	
 
-	list-style: none;
-	
-	/* demo */
-	min-height: 60px;
+	list-style: none;	
+}
+
+.breadcrumbs li {
+	margin-right: 40px;
+}
+
+.link-main {
+	display: inline-block;
+	width: 15px;
+	height: 12px;
+
+	background-image: url('../img/icon-home.svg');
+	background-repeat: no-repeat;
 }
 
 .breadcrumbs a {
+	position: relative;
+
 	color: #000000;
+
+	opacity: .5;
+
+	transition: all .2s ease;
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	opacity: 1;
+}
 
+.breadcrumbs span {
+	color: #000000;
+
+	opacity: .5;	
+}
+
+.breadcrumbs a::before {
+	content: '';
+
+	position: absolute;
+	top: 2px;
+	right: -25 px;
+	
+	width: 8px;
+	height: 12px;
+
+	background-image: url('../img/icon-right-small.svg');
+	background-repeat: no-repeat;
+}
 
 
 /*--- Фильтр ---*/
