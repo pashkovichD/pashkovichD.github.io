@@ -15,65 +15,97 @@
 
 	<header class="main-header authorized">
 		<div class="top-menu">
-			<div class="container out-2">
-				<!-- <a href="index.html" class="main-header-logo">Техномарт</a>
+			<div class="container">
+				<a href="index.html" class="main-header-logo">Техномарт</a>
 				<form action="https://echo.htmlacademy.ru" method="GET" class="search">
 					<label for="search-form" class="visually-hidden">Поиск по сайту</label>
-					<input type="text" id="search-form" name="search" placeholder="Поиск:">
-				</form>		
+					<input  type="text" id="search-form" name="search" placeholder="Поиск:">
+					<button type="submit" class="search-button" tabindex="-1">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" 	 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve"><g><path fill="#ffffff" d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5		C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2		C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/></g></svg>
+						<span class="visually-hidden">Найти</span>
+					</button>
+				</form>
 				<a href="bookmarks.html" class="bookmarks">Закладки: <span>0</span></a>
 				<a href="cart.html" class="cart">Корзина: <span>0</span></a>
-				<a href="checkout.html" class="checkout">Оформить заказ</a> -->
+				<a href="checkout.html" class="checkout">Оформить заказ</a>
 			</div>
-		</div>
+		</div>		
 
 		<nav class="main-navigation">
-			<!-- <h2 class="visually-hidden">Главная навигация по сайту</h2> -->
+			<h2 class="visually-hidden">Главная навигация по сайту</h2>
 			
-			<div class="center-menu container out-1">
-				<p class="description-shop out-2"><!-- Интернет-магазин строительных материалов и инструментов для ремонта --></p>
-				<div class="center-menu-contacts out-2">
-					<!-- <p class="contacts-phone">+7 (812) 555-05-05</p>
-					<p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> -->
+			<div class="center-menu container">
+				<p class="description-shop">Интернет-магазин строительных материалов <br>и инструментов для ремонта</p>
+				<div class="center-menu-contacts">
+					<p class="contacts-phone">+7 (812) 555-05-55</p>
+					<p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				
 				<!-- неавторизованный пользователь -->
-				<ul class="user-navigation no-authorized out-2">
-					<!-- <li>
-						<a href="login.html" class="login-link">Войти</a>
+				<ul class="user-navigation no-authorized">
+					<li>
+						<a href="login.html" class="login-link">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+								<g>
+									<polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+								</g>
+								<path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+								v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+							</svg>
+							<span>Войти</span>
+						</a>
 					</li>
 					<li>
 						<a href="registration.html" class="registration-link">Регистрация</a>
-					</li> -->
+					</li>
 				</ul>
 
 				<!-- авторизованный пользователь -->
-				<ul class="user-navigation yes-authorized out-2">
-					<!-- <li>
-						<a href="profile.html" class="login-link">Равшан Джамшутович</a>
-					</li>
+				<ul class="user-navigation yes-authorized">
 					<li>
-						<a href="deauthorization.html" class="deauthorization-link"><span class="visualli-hidden">Выход из личного кабинета</span></a>
+						<a href="profile.html" class="login-link">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
+							<path fill="#c5c5c5" d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
+								c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277
+								c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z"/>
+							</svg>
+							<span>Равшан Джамшутович</span>
+						</a>
 					</li>
-					<li>
-						<a href="orders.html" class="profile-link">Мои заказы</a>
+					<li class="deauthorization-link">
+						<a href="deauthorization.html">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+							<g>
+								<polygon fill="#c5c5c5" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
+								<path fill="#c5c5c5" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
+									v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+							</g>
+							</svg>
+							<span class="visually-hidden">Выход из личного кабинета</span>
+						</a>
 					</li>
-					<li>
-						<a href="profile.html" class="profile-link">Личный кабинет</a>
-					</li> -->
+					<li class="profile-link">
+						<a href="orders.html">Мои заказы</a>
+						<span></span>
+					</li>
+					<li class="profile-link">
+						<a href="profile.html">Личный кабинет</a>
+					</li>
 				</ul>
 
-				<ul class="site-navigation out-3">
-					<!-- <li><a href="index.html">Главная</a></li>
+				<ul class="site-navigation">
+					<li><a>Главная</a></li>
 					<li><a href="company.html">Компания</a></li>
 					<li><a>Каталог</a></li>
 					<li><a href="news.html">Новости</a></li>
 					<li><a href="special.html">Спецпредложения</a></li>
 					<li><a href="delivery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li> -->
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-
-			</div>
+			</div>		
 		</nav>
 	</header>
 
@@ -246,45 +278,45 @@
 	</main>
 
 	<footer class="main-footer">
-		<div class="container out-1">
-			<div class="footer-top out-2">
-				<a href="index.html" class="main-header-logo out-3">Техномарт</a>
-				<ul class="footer-menu-main out-3">
-					<!-- <li><a href="company.html">Компания</a></li>
+		<div class="container">
+			<div class="footer-top">
+				<a href="index.html" class="main-header-logo">Техномарт</a>
+				<ul class="footer-menu-main">
+					<li><a href="company.html">Компания</a></li>
 					<li><a href="news.html">Новости</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
+					<li><a>Каталог</a></li>
 					<li><a href="delivery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li> -->
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="footer-center">
-				<p class="footer-contacts out-3">
-					<!-- г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-					+7 (812) 555-05-05 -->
+				<p class="footer-contacts">
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+					+7 (812) 555-05-05
 				</p>
-				<ul class="footer-menu out-3">
-					<!-- <li><a href="materials.html">Материалы</a></li>
+				<ul class="footer-menu">
+					<li><a href="materials.html">Материалы</a></li>
 					<li><a href="technics.html">Техника</a></li>
 					<li><a href="instrument.html">Инструмент</a></li>
-					<li><a href="special.html">Спецпредложения</a></li> -->
+					<li><a href="special.html">Спецпредложения</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<div class="container out-1">
-				<p class="copyright out-2"><!-- &copy; 2010–2017 Компания «Техномарт» <br>Все права защищены --></p>
-				<ul class="social-buttons out-2">
-					<!-- <li><a href="#">Вконтакте</a></li>
-					<li><a href="#">Фейсбук</a></li>
-					<li><a href="#">Инстаграмм</a></li> -->
+			<div class="container">
+				<p class="copyright">&copy; 2010–2017 Компания «Техномарт» <br>Все права защищены</p>
+				<ul class="social-buttons">
+					<li><a href="#" class="icon-vk"><span class="visually-hidden">Вконтакте</span></a></li>
+					<li><a href="#" class="icon-fb"><span class="visually-hidden">Фейсбук</span></a></li>
+					<li><a href="#" class="icon-insta"><span class="visually-hidden">Инстаграмм</span></a></li>
 				</ul>
-				<div class="feedback out-2">
-					<!-- <p>Обратная связь:</p>
-					<a href="#">mail@htmlacademy.ru</a> -->
+				<div class="feedback">
+					<p>Обратная связь:</p>
+					<a href="#">mail@htmlacademy.ru</a>
 				</div>
-				<div class="development out-2">
-					<!-- <p>Разработано - </p>
-					<a href="#">htmlacademy.ru</a> -->
+				<div class="development">
+					<p>Разработано - </p>
+					<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 				</div>
 			</div>
 		</div>
