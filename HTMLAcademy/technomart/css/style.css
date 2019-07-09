@@ -1519,13 +1519,13 @@ main h1 {
 	opacity: .8;
 }
 
-.filter-producer-list {
+.filter-producer-list li {
 	position: relative;
 }
 
 .filter-producer-list .indicator-checkbox {
 	position: absolute;
-	left: 0;
+	left: -35px;
 
 	width: 27px;
 	height: 23px;
@@ -1550,8 +1550,25 @@ main h1 {
 		0 0 0 4px #fc0;
 }
 
-.filter-feed-list {
-	
+.filter-producer-list input[type="checkbox"]:disabled ~ span {
+	opacity: .16;
+}
+
+.filter-feed-list li {
+	position: relative;
+}
+
+.filter-feed-list .indicator-radio {
+	position: absolute;
+	left: -35px;
+
+	width: 25px;
+	height: 25px;
+
+	background-image: url('../img/radio-off.svg');
+	background-repeat: no-repeat;
+
+	opacity: .3;
 }
 
 .filter-button {
