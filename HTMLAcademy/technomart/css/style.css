@@ -1566,10 +1566,6 @@ p.sort-title {
 	margin-right: 70px;	
 }
 
-.sort-list .icon-updown {
-	margin-right: 20px;
-}
-
 .to-right {
 	margin-left: auto;
 }
@@ -1590,8 +1586,19 @@ p.sort-title {
 	border-bottom: 1px solid #ee3643;
 }
 
+.sort-list .icon-updown {
+	margin-right: 20px;
+}
+
 .sort-list .icon-updown a {
 	border-bottom: none;
+
+	opacity: .3;	
+}
+
+.sort-list .icon-updown a:hover,
+.sort-list .icon-updown a:focus {
+	opacity: 1;
 }
 
 .sort-item-current a {
@@ -1605,7 +1612,13 @@ p.sort-title {
 	border-bottom: none;	
 }
 
+.sort-list .icon-current a {
+	opacity: 1;
+}
 
+.sort-list .icon-current svg polygon {
+	fill: #ee3643;	
+}
 
 
 /*--- Result ---*/
