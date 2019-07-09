@@ -1753,7 +1753,11 @@ p.sort-title {
 }
 
 .pagination-list .next {
-	
+	text-transform: uppercase;	
+}
+
+.pagination-list .next a {
+	padding: 10px 30px;
 }
 
 .pagination-item a {
