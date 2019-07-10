@@ -20,14 +20,126 @@
 				<li>
 					<a href="#">Каталог</a>
 					<ul class="sub-menu">
-						
+						<li><a href="">Новинки</a></li>
+						<li><a href="">Сливочное</a></li>
+						<li><a href="">Щербеты</a></li>
+						<li><a href="">Фруктовый лед</a></li>
+						<li><a href="">Мелорин</a></li>
 					</ul>
 				</li>
 				<li><a href="delivery.html">Доставка и оплата</a></li>
 				<li><a href="company.html">О Компании</a></li>
 			</ul>
 		</nav>
-	</header>	
+		
+		<div class="main-header-right">
+			<form action="http://echo.htmlacademy.ru" method="POST" class="search-form">
+				<label for="search-input">Форма поиска</label>
+				<input type="text" id="search-input" name="search" placeholder="Что ищем?">
+				<button type="submit" class="search-form-button"><span class="visually-hidden">Найти</span></button>
+			</form>
+			<div class="user-navigation__wrapper">
+				<ul class="user-navigation">
+					<li><a href="login.html" class="login-link">Вход</a></li>
+				</ul>
+				<form action="http://echo.htmlacademy.ru" method="POST" class="login-form">
+					<p class="login-item">
+						<label for="login-email">Электронная почта</label>
+						<input type="email" name="email" id="login-email" placeholder="Электронная почта">
+					</p>
+					<p class="login-item">
+						<label for="login-password">Электронная почта</label>
+						<input type="password" name="password" id="login-password" placeholder="Пароль">
+					</p>
+					<a href="#" class="forgot">Забыли пароль?</a>
+					<a href="#" class="new-registration">Новая регистраиця</a>
+					<button type="submit" class="login-button">Войти</button>
+				</form>
+			</div>
+			<a href="cart.html" class="cart"><span class="visually-hidden">Корзина</span></a>
+		</div>
+		
+		<div class="contacts-info">
+			<p class="schedule">С 10 до 20, ежедневно</p>
+			<p class="phone">8 812 450-25-25</p>
+		</div>
+	</header>
+
+	<main>
+		
+		<h1 class="visually-hidden">Gllacy Shop - магазин по продаже мороженного</h1>
+
+		<section class="type-ice-cream">
+			<h2 class="visually-hidden">Виды мороженного</h2>
+			<ul class="type-list">
+				<li>
+					<h3>Крем-брюле и пломбир с малиновым джемом</h3>
+					<img src="img/type1.png" alt="Крем-брюле и пломбир с малиновым джемом">
+					<a href="#" class="type-list-button">Давайте оба</a>
+				</li>
+				<li>
+					<h3>Шоколадный пломбир и лимонный сорбет</h3>
+					<img src="img/type2.png" alt="Шоколадный пломбир и лимонный сорбет">
+					<a href="#" class="type-list-button">Давайте оба</a>
+				</li>
+				<li>
+					<h3>Пломбир с помадкой и клубничный щербет</h3>
+					<img src="img/type3.png" alt="Пломбир с помадкой и клубничный щербет">
+					<a href="#" class="type-list-button">Давайте оба</a>
+				</li>
+			</ul>
+			<p class="type-list-controls">
+				<button type="button" class="type-list-button"><span class="visually-hidden">Первый слайд</span></button>
+				<button type="button" class="type-list-button"><span class="visually-hidden">Второй слайд</span></button>
+				<button type="button" class="type-list-button"><span class="visually-hidden">Третий слайд</span></button>
+			</p>
+		</section>
+		
+		<section class="banners">
+			<h2 class="visually-hidden">Баннеры</h2>
+			<ul class="banners-list">
+				<li>
+					<h3>Малинка даром!</h3>
+					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<a href="#" class="banner-button">Хочу варенье!</a>
+				</li>
+
+				<li>
+					<h3>Шоколадки даром!</h3>
+					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<a href="#" class="banner-button">Хочу шоколадки!</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="hits">
+			<h2 class="visually-hidden">Хиты</h2>
+			<ul class="hits-list">
+				<li>
+					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+					<p class="hits-price">310<span class="kg">/кг</span></p>
+					<img src="img/hit1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+				</li>
+				<li>
+					<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+					<p class="hits-price">380<span class="kg">/кг</span></p>
+					<img src="img/hit2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+				</li>
+				<li>
+					<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+					<p class="hits-price">355<span class="kg">/кг</span></p>
+					<img src="img/hit3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+				</li>
+				<li>
+					<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+					<p class="hits-price">415<span class="kg">/кг</span></p>
+					<img src="img/hit4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+				</li>
+			</ul>
+		</section>
+
+
+	</main>
 
 	
 	<!-- JavaScript -->
