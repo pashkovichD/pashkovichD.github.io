@@ -21,11 +21,11 @@
 				<li>
 					<a href="#">Каталог</a>
 					<ul class="sub-menu">
-						<li><a href="">Новинки</a></li>
-						<li><a href="">Сливочное</a></li>
-						<li><a href="">Щербеты</a></li>
-						<li><a href="">Фруктовый лед</a></li>
-						<li><a href="">Мелорин</a></li>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="catalog.html">Сливочное</a></li>
+						<li><a href="#">Щербеты</a></li>
+						<li><a href="#">Фруктовый лед</a></li>
+						<li><a href="#">Мелорин</a></li>
 					</ul>
 				</li>
 				<li><a href="delivery.html">Доставка и оплата</a></li>
@@ -34,6 +34,7 @@
 		</nav>
 		
 		<div class="main-header-right">
+			<button type="button">Поиск</button>
 			<form action="http://echo.htmlacademy.ru" method="POST" class="search-form">
 				<label for="search-input">Форма поиска</label>
 				<input type="text" id="search-input" name="search" placeholder="Что ищем?">
@@ -58,6 +59,30 @@
 				</form>
 			</div>
 			<a href="cart.html" class="cart"><span class="visually-hidden">Корзина</span></a>
+			<div class="cart-products">
+				<ul class="cart-list">
+					<li>
+						<button type="button"><span class="visually-hidden">Удалить товар</span></button>
+						<img src="img/product1-thumbnail.jpg" alt="Пломбир с апельсиновым джемом">
+						<p class="product-title">Пломбир с апельсиновым джемом</p>
+						<p class="product-calculation">
+							<span class="weight">1,5</span> кг x <span class="price"><span>200</span> руб.</span>
+						</p>
+						<p class="product-cost"><span>300</span> руб.</p>
+					</li>
+					<li>
+						<button type="button"><span class="visually-hidden">Удалить товар</span></button>
+						<img src="img/product2-thumbnail.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+						<p class="product-title">Клубничный пломбир с присыпкой из белого шоколада</p>
+						<p class="product-calculation">
+							<span class="weight">1,5</span> кг x <span class="price"><span>300</span> руб.</span>
+						</p>
+						<p class="product-cost"><span>450</span> руб.</p>
+					</li>
+				</ul>
+				<p class="cart-total">Итого: <span>750</span> руб.</p>
+				<a href="#" class="cart-button">Оформить заказ</a>
+			</div>
 		</div>
 		
 		<div class="contacts-info">
