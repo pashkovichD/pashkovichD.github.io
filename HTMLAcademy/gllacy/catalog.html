@@ -103,6 +103,109 @@
 
 		<section class="filter">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form action="http://echo.htmlacademy.ru" method="POST">
+				<fieldset>
+					<legend>Сортировика:</legend>
+					<select name="sort" id="sort">
+						<option value="popular">по популярности</option>
+						<option value="cheap">сначала недорогие</option>
+						<option value="expensive">сначала дорогие</option>
+						<option value="fat">по жирности</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Цена:</legend>
+					<div class="price-controls">
+						<label class="min-price"><input type="text" name="min-price" value="100"> руб. - </label>
+						<label class="max-price"><input type="text" name="max-price" value="500"> руб.</label>
+					</div>
+					
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Жирность:</legend>
+					<ul class="filter-radio">
+						<li>
+							<label>
+								<input type="radio" class="visually-hidden" name="fat" value="0">
+								<span class="indicator-radio"></span>
+								<span>0%</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" class="visually-hidden" name="fat" value="<10" checked>
+								<span class="indicator-radio"></span>
+								<span>до 10%</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" class="visually-hidden" name="fat" value="<30">
+								<span class="indicator-radio"></span>
+								<span>до 30%</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" class="visually-hidden" name="fat" value=">30">
+								<span class="indicator-radio"></span>
+								<span>выше 30%</span>
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Наполнители:</legend>
+					<ul class="filter-checkbox">
+						<li>
+							<label>
+								<input type="checkbox" name="chocolate" class="visually-hidden" checked>
+								<span class="indicator-checkbox"></span>
+								<span>шоколадные</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="sugar" class="visually-hidden" checked>
+								<span class="indicator-checkbox"></span>
+								<span>сахарные присыпки</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="fruits" class="visually-hidden">
+								<span class="indicator-checkbox"></span>
+								<span>фрукты</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="syrups" class="visually-hidden">
+								<span class="indicator-checkbox"></span>
+								<span>сиропы</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="jams" class="visually-hidden">
+								<span class="indicator-checkbox"></span>
+								<span>джемы</span>
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="filter-button">Применить</button>
+			</form>
 		</section>
 
 	</main>
