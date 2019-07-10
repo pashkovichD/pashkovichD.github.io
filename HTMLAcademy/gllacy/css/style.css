@@ -354,3 +354,683 @@ input[type="radio"].visually-hidden {
 	font-size: 30px;
 	margin-left: 40px;
 }
+
+
+
+
+/*--- Продвижение ---*/
+.seo {
+	color: #323232;
+}
+
+.seo-promo {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.seo-list {
+	list-style: none;	
+}
+
+
+
+
+/*--- Новости блога ---*/
+.news {
+	color: #323232;
+}
+
+.news-promo {
+
+}
+
+.news-link {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #323232;
+	text-decoration: underline;
+}
+
+.news-link:hover,
+.news-link:focus {
+	text-decoration: none;
+}
+
+
+
+
+/*--- Подписка на рассылку ---*/
+.subscription {
+
+}
+
+.subscription-desc {
+	color: #5a5a5a;
+}
+
+.subscription-form input {
+	line-height: 24px;
+	color: #999999;
+}
+
+
+
+
+/*--- Контактная информация ---*/
+.contacts {
+
+}
+
+.contacts-information {
+	color: #323232;
+}
+
+.contacts-information .contacts-desc {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.contacts-information .contacts-address {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.contacts-information .contacts-phone {
+	font-size: 18px;	
+	font-weight: 700;
+}
+
+
+
+
+/*--- FOOTER ---*/
+.main-footer {
+
+}
+
+.social-buttons {
+	list-style: none;
+}
+
+.footer-menu-list {
+	font-size: 13px;
+	line-height: 18px;	
+
+	list-style: none;
+}
+
+.footer-menu-list a {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.footer-menu-list a:hover,
+.footer-menu-list a:focus {
+	text-decoration: none;
+}
+
+.copyright {
+
+}
+
+.copyright p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.copyright a {
+	color: #fefefe;
+	text-decoration: underline;
+}
+
+.copyright a:hover,
+.copyright a:focus {
+	text-decoration: none;
+}
+
+
+
+
+/*--- Модальные окна ---*/
+.modal {
+
+}
+
+.modal-subscription {
+	
+}
+
+.subscription-promo {
+	font-size: 24px;
+	line-height: 28px;
+	color: #323232;
+}
+
+.subscription-modal-form input,
+.subscription-modal-form textarea {
+	line-height: 24px;
+	color: #999999;
+
+	border: 1px solid #b2b2b2;
+	transition: all .2s ease;
+}
+
+.subscription-modal-form input:hover,
+.subscription-modal-form textarea:hover {
+	border: 1px solid #9a9a9a;
+}
+
+.subscription-modal-form input:focus,
+.subscription-modal-form textarea:focus {
+	border: 1px solid #2e88e4;
+}
+
+.modal-show {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

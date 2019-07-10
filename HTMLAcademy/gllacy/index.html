@@ -178,25 +178,27 @@
 			</ul>
 		</section>
 
-		<article class="news">
-			<h2 class="visually-hidden">Новости блога</h2>
-			<p class="news-promo">Новое в нашем блоге</p>
-			<a href="#" class="news-button">10 способов сервировки фруктовых щербетов к столу</a>
-		</article>
+		<div class="index-columns">
+			<article class="news">
+				<h2 class="visually-hidden">Новости блога</h2>
+				<p class="news-promo">Новое в нашем блоге</p>
+				<a href="#" class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
+			</article>
 
-		<section class="subscription">
-			<h2 class="visually-hidden">Подписка на рассылку</h2>
-			<div class="subscription__wrapper">
-				<p class="subscription-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-				<form action="http://echo.htmlacademy.ru" method="POST" class="subscription-form">
-					<p class="subscription-item">
-						<label for="subscription-email">Электронная почта</label>
-						<input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
-					</p>				
-					<button type="submit" class="subscription-button">Отправить</button>
-				</form>
-			</div>
-		</section>
+			<section class="subscription">
+				<h2 class="visually-hidden">Подписка на рассылку</h2>
+				<div class="subscription__wrapper">
+					<p class="subscription-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+					<form action="http://echo.htmlacademy.ru" method="POST" class="subscription-form">
+						<p class="subscription-item">
+							<label for="subscription-email">Электронная почта</label>
+							<input type="email" name="subscription-email" id="subscription-email" placeholder="Электронная почта">
+						</p>				
+						<button type="submit" class="button subscription-button">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</div>
 
 		<section class="contacts">
 			<h2 class="visually-hidden">Контактная информация</h2>
@@ -207,8 +209,8 @@
 				<p class="contacts-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
 				<p class="contacts-desc">Для заказов по телефону:</p>
 				<p class="contacts-phone">8 812 450-25-25</p>
-				<p class="contacts-schedule">(с 10 до 20 ежедневно)</p>
-				<a href="#" class="contacts-button">Форма обратной связи</a>
+				<p class="contacts-desc contacts-schedule">(с 10 до 20 ежедневно)</p>
+				<a href="#" class="button contacts-button">Форма обратной связи</a>
 			</div>
 		</section>
 
@@ -245,7 +247,7 @@
 	<section class="modal modal-subscription">
 		<h2 class="visually-hidden">Форма подписки</h2>
 		<p class="subscription-promo">Мы обязательно вам ответим!</p>
-		<form action="http://echo.htmlacademy.ru" method="POST">
+		<form action="http://echo.htmlacademy.ru" method="POST" class="subscription-modal-form">
 			<p class="sub-item">
 				<label for="sub-name">Ваше имя</label>
 				<input type="text" name="name" id="sub-name" placeholder="Как вас зовут?">
@@ -258,7 +260,7 @@
 				<label for="sub-message">Сообщение</label>
 				<textarea name="sub-message" id="sub-message" cols="30" rows="10">Напишите что-нибудь...</textarea>
 			</p>
-			<button type="submit" class="sub-button">Отправить</button>
+			<button type="submit" class="button sub-button">Отправить</button>
 		</form>
 		<button type="button" class="modal-close">Закрыть форму</button>
 	</section>
