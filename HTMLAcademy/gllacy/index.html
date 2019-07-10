@@ -193,7 +193,51 @@
 
 	<footer class="main-footer">
 		
+		<ul class="social-buttons">
+			<li><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+			<li><a href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+			<li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+			<li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+		</ul>
+
+		<div class="footer-menu">
+			<ul class="footer-menu-list">
+				<li><a href="#">Для поставщиков</a></li>
+				<li><a href="#">Наши документы</a></li>
+				<li><a href="#">О производстве</a></li>				
+				<li><a href="#">Экологические стандарты</a></li>
+			</ul>
+		</div>
+
+		<div class="copyright">
+			<a href="http://htmlacademy.ru"><img src="img/htmlacademy.svg" alt="HTML Academy"></a>
+			<p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &copy; 2017</p>
+		</div>
+
 	</footer>
+
+
+
+	<section class="modal modal-subscription">
+		<h2 class="visually-hidden">Форма подписки</h2>
+		<p class="subscription-promo">Мы обязательно вам ответим!</p>
+		<form action="http://echo.htmlacademy.ru" method="POST">
+			<p class="sub-item">
+				<label for="sub-name">Ваше имя</label>
+				<input type="text" name="name" id="sub-name" placeholder="Как вас зовут?">
+			</p>
+			<p class="sub-item">
+				<label for="sub-email">Электронная почта</label>
+				<input type="email" name="sub-email" id="sub-email" placeholder="Ваша почта для ответа?">
+			</p>
+			<p class="sub-item">
+				<label for="sub-message">Сообщение</label>
+				<textarea name="sub-message" id="sub-message" cols="30" rows="10">Напишите что-нибудь...</textarea>
+			</p>
+			<button type="submit" class="sub-button">Отправить</button>
+		</form>
+		<button type="button" class="modal-close">Закрыть форму</button>
+	</section>
 
 	
 	<!-- JavaScript -->
