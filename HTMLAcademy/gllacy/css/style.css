@@ -44,33 +44,42 @@ input[type="radio"].visually-hidden {
 		0 0 0 2px #849d8f,
 		0 0 0 4px #fc0;
 }
-/*
+
 .button {
-	padding: 10px 55px;
+	padding: 10px 25px;
 
 	font: inherit;
-	font-size: 14px;
-	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 24px;	
 
 	text-align: center;
 	vertical-align: middle;
-	color: #ffffff;
+	color: #ffffff;	
+	text-shadow: 0 2px 2px rgba(160,32,11,.76);;
 
-	background-color: #ee3643;
+	background-color: #e84d37;
+	background-image: linear-gradient(#f26843, #e74a35);
 	border: none;
-	border-radius: 2px;
+	border-radius: 20px;
+	box-shadow: 0 1px 2px 0 #ac1000;
 
 	transition: all .2s ease;
 }
 
 .button:hover,
 .button:focus {
-	background-color: #ca2c37;
+	background-image: linear-gradient(#f58669, #ec6f5e);
+	box-shadow: 0 1px 2px 0 #ac1000,
+				0 0 0 2px #849d8f,
+				0 0 0 4px #fc0;
 }
 
 .button:active {
-	background-color: #ba2732;
-}*/
+	background-image: linear-gradient(#e74a35, #f26843);
+	box-shadow: 0 1px 2px 0 #942718 inset,
+				0 0 0 2px #849d8f,
+				0 0 0 4px #fc0;
+}
 
 /*--- центровщик ---*/
 .container {
@@ -94,6 +103,11 @@ input[type="radio"].visually-hidden {
 } */
 
 
+
+
+
+/*--- HEADER ---*/
+
 .main-header-logo {
 	display: inline-block;
 }
@@ -106,21 +120,237 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-.site-navigation a {
-	color: #ffffff;
+.site-navigation > li > a {
+	position: relative;
 
-	border-bottom: 1px solid rgba(255,255,255,.2);
+	padding: 5px 10px;
+
+	color: #ffffff;
+}
+
+.site-navigation > li > a::before {
+	content: '';
+
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 5px;
+
+	height: 1px;
+
+	background-color: rgba(255,255,255,.2);
+
+
+}
+
+.site-navigation > li > a:hover,
+.site-navigation > li > a:focus {
+	color: #333333;
+
+	background-color: #ffffff;
+	border-radius: 20px;
+}
+
+.site-navigation > li > a:hover::before,
+.site-navigation > li > a:focus::before {
+	content: none;
+}
+
+.site-navigation > li > a:active {
+	background-color: #ededed;
+	box-shadow: 
+		0 0 0 2px #849d8f,
+		0 0 0 4px #fc0,
+		0 2px 1px 0 #696969 inset;
 }
 
 .sub-menu {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+
+	background-color: #ffffff;
+
 	list-style: none;
+}
+
+.sub-menu li:first-child {
+	font-weight: 700;
+
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.sub-menu a {
+	color: #323232;
+
+	transition: all .2s ease;
+}
+
+.sub-menu li a:hover,
+.sub-menu li a:focus {
+	background-color: #fbded7;
+}
+
+.sub-menu li a:active {
+	background-color: #f6b5a5;
+}
+
+.search-form input {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999999;
+}
+
+.user-navigation {
+	list-style: none;
+}
+
+.user-navigation a {
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #ffffff;
+}
+
+.login-form input {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999999;
+}
+
+.forgot {
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;
+}
+
+.new-registration {
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;
+}
+
+.login-form a {
+	text-decoration: underline;
+}
+
+.login-form a:hover,
+.login-form a:focus {
+	text-decoration: none;
+}
+
+.cart {
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #ffffff;
+}
+
+.cart-list {
+	font-size: 13px;
+	line-height: 16px;
+	color: #323232;
+
+	list-style: none;
+}
+
+.cart-list .price {
+	color: #999999;
+}
+
+.cart-total {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #323232;
+}
+
+.contacts-info .schedule {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.contacts-info .phone {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
 }
 
 
 
 
 
+/*--- Виды мороженого ---*/
+.type-ice-cream {
+
+}
+
+.type-list {
+	list-style: none;
+}
+
+.type-list h3 {
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.type-list-button {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+}
 
 
 
 
+/*--- Баннеры ---*/
+.banners {
+
+}
+
+.banners-list {
+	list-style: none;
+}
+
+.banners-list h3 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.banners-list p {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
+
+
+/*--- Хиты ---*/
+.hits {
+
+}
+
+.hits-list {
+	list-style: none;
+}
+
+.hits-list h3 {
+	font-size: 16px;
+	font-weight: 400;
+
+	text-decoration: underline;
+}
+
+.hits-price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+
+	text-shadow: 0 1px 3px rgba(49,50,53, .5);
+}
+
+.hits-price .kg {
+	font-size: 30px;
+	margin-left: 40px;
+}
