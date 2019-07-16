@@ -1150,6 +1150,10 @@ main h2 {
 		height: 300px;
 	}
 
+	.main-footer > .container {
+		background-position: bottom -55px center;
+	}
+
 	.footer-title {
 		font-size: 28px;
 		line-height: 32px;
