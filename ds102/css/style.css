@@ -721,7 +721,7 @@ main h2 {
 .main-footer > .container {
 	padding-bottom: 50px;
 
-	background-image: url('../img/logo-big.png');
+	background-image: url('../img/background-logo.svg');
 	background-repeat: no-repeat;
 	background-position: 0 20px;
 }
