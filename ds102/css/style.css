@@ -190,26 +190,23 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	padding-top: 10px;
-	padding-left: 160px;
+	padding-left: 140px;
 
 	font-size: 28px;
 	line-height: 30px;
 	font-weight: 600;
 	color: #e0a100;
-
-	
-	
 }
 
 .top-logo::before {
 	content: '';
 
 	position: absolute;
-	top: 7px;
+	top: 20px;
 	left: 0;
 	
-	width: 160px;
-	height: 70px;
+	width: 120px;
+	height: 50px;
 
 	background-image: url('../img/logo.svg');
 	background-repeat: no-repeat;
@@ -906,20 +903,6 @@ main h2 {
 		width: 940px;		
 	}
 
-	.top-logo {
-		padding-top: 20px;
-		padding-left: 120px;
-
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-	.top-logo::before {
-		background-image: url('../img/logo-micro.png');
-		top: 30px;
-		left: 0;
-	}
-
 	.header-address {
 		margin-bottom: 120px;
 
@@ -1167,16 +1150,6 @@ main h2 {
 		padding-bottom: 50px;
 	}
 
-	.top-logo {
-		padding-left: 100px;
-	}
-
-	.top-logo::before {
-		top: 38px;
-
-		background-image: url('../img/logo-extra-mini.png');
-	}
-
 	.top-schedule {
 		width: 100%;
 	}
@@ -1226,7 +1199,7 @@ main h2 {
 	}
 
 	.top-logo {
-		padding-top: 40px;
+		padding-top: 55px;
 		padding-left: 0;
 
 		text-align: center;
@@ -1236,7 +1209,7 @@ main h2 {
 		top: 0;
 		left: 50%;
 
-		margin-left: -40px;
+		margin-left: -60px;
 	}
 
 	.header-address span {
