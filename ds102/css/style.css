@@ -40,9 +40,6 @@ input[type="radio"].visually-hidden {
 
 :focus {
 	outline: none;
-	box-shadow: 
-		0 0 0 2px white, 
-		0 0 0 4px #fc0;
 }
 
 /*--- центровщик ---*/
@@ -410,10 +407,9 @@ main h2 {
 }
 
 .tariffs-table {
+	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 60px;
-
-	/*color: #ffffff;*/
 }
 
 
@@ -425,6 +421,8 @@ main h2 {
 }
 
 .duty-value {
+	width: 80%;
+	margin: 0 auto;	
 	margin-bottom: 30px;
 }
 
@@ -832,23 +830,38 @@ main h2 {
 	padding-left: 45px;
 }
 
-.work-mode svg {
+.work-mode h2 span::before {
+	content: '';
+
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	width: 35px;
+	height: 35px;
+
+	background-image: url('../img/schedule.svg');
+	background-repeat: no-repeat;
 }
 
-.footer-links span {
+.footer-links h2 span {
 	position: relative;
 
 	padding-left: 30px;
 }
 
-.footer-links svg {
-	position: absolute;
+.footer-links h2 span::before {
+	content: '';
 
+	position: absolute;
 	top: 0;
 	left: 0;
+
+	width: 20px;
+	height: 20px;
+
+	background-image: url('../img/link.svg');
+	background-repeat: no-repeat;
 }
 
 .links-list {
@@ -998,6 +1011,10 @@ main h2 {
 		width: 80%;
 	}
 
+	.tariffs-table {
+		width: 100%;
+	}
+
 	.payment-list {
 		padding: 0 30px;
 	}
@@ -1075,6 +1092,10 @@ main h2 {
 
 	.duty {
 		margin-bottom: 45px;
+	}
+
+	.duty-value {
+		width: 100%;
 	}
 
 	.duty .table td {
