@@ -884,7 +884,7 @@ main h2 {
 
 /*--- MEDIA ---*/
 @media only screen and (max-width: 1599px) {
-	body {
+	body {		
 		font-size: 16px;
 	}
 
