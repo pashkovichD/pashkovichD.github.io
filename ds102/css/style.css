@@ -686,13 +686,13 @@ main h2 {
 
 /*--- Карта ---*/
 .map {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 
 	line-height: 0;
 }
 
 
-.map iframe {	
+.map iframe {
 	display: block;
 	
 	width: 100%;
@@ -700,9 +700,29 @@ main h2 {
 	margin: 0;
 	padding: 0;
 
-
-
 	border: none;
+}
+
+.map-link {
+	display: block;
+	width: 100%;
+	height: 200px;
+	padding-left: -15px;
+	padding-right: -15px;
+
+	background-image: url('../img/map.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+	cursor: pointer;
+}
+
+.map-link:hover,
+.map-link:focus {
+	outline: none;
+	box-shadow: 
+		0 0 0 2px white,
+		0 0 0 4px #fc0;
 }
 
 
