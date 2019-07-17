@@ -800,10 +800,18 @@ main h2 {
 	padding-left: 45px;
 }
 
-.contacts svg {
+.contacts h2 span::before {
+	content: '';
+
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	width: 35px;
+	height: 35px;
+
+	background-image: url('../img/contact.svg');
+	background-repeat: no-repeat;
 }
 
 .footer-wrapper .contacts-address {
