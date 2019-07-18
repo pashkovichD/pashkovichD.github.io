@@ -107,17 +107,49 @@ input[type="radio"].visually-hidden {
 
 
 /*--- HEADER ---*/
+.main-header-absolute {
+	position: relative;	
+}
+
+.main-header {
+	position: absolute;
+	left: 0;
+	z-index: 2;
+}
+
+.main-header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	/* demo */
+	min-height: 72px;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: flex-end;
+}
 
 .main-header-logo {
 	display: inline-block;
+	width: 154px;
+	height: 64px;	
 }
 
 .site-navigation {
+	width: 700px;
+	margin: 0;
+	padding: 0;
+
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 
 	list-style: none;
+
+	/* demo */
+	min-height: 72px;
 }
 
 .site-navigation > li > a {
@@ -195,6 +227,13 @@ input[type="radio"].visually-hidden {
 	background-color: #f6b5a5;
 }
 
+.main-header-right {
+	width: 267px;
+
+	/* demo */
+	min-height: 72px;
+}
+
 .search-form input {
 	font-size: 14px;
 	line-height: 24px;
@@ -265,6 +304,14 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 }
 
+.contacts-info {
+	width: 267px;
+	margin-left: auto;
+
+	/* demo */
+	min-height: 50px;
+}
+
 .contacts-info .schedule {
 	font-size: 14px;
 	line-height: 16px;
@@ -282,11 +329,23 @@ input[type="radio"].visually-hidden {
 
 /*--- Виды мороженого ---*/
 .type-ice-cream {
+	position: relative;
 
+	margin-bottom: 40px;
 }
 
 .type-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/* demo */
+	min-height: 881px;
+}
+
+.type-list li {
+	text-align: center;
 }
 
 .type-list h3 {
@@ -305,11 +364,27 @@ input[type="radio"].visually-hidden {
 
 /*--- Баннеры ---*/
 .banners {
-
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .banners-list {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.banners-list li {
+	width: 560px;
+
+	/* demo */
+	min-height: 230px;
 }
 
 .banners-list h3 {
@@ -328,11 +403,17 @@ input[type="radio"].visually-hidden {
 
 /*--- Хиты ---*/
 .hits {
-
+	margin-bottom: 30px;
 }
 
 .hits-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/* demo */
+	min-height: 330px;
 }
 
 .hits-list h3 {
@@ -360,7 +441,12 @@ input[type="radio"].visually-hidden {
 
 /*--- Продвижение ---*/
 .seo {
+	margin-bottom: 40px;
+
 	color: #323232;
+
+	/* demo */
+	min-height: 305px;
 }
 
 .seo-promo {
@@ -369,15 +455,31 @@ input[type="radio"].visually-hidden {
 }
 
 .seo-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;	
 }
 
 
 
 
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 40px;
+}
+
 /*--- Новости блога ---*/
 .news {
+	width: 560px;
+
 	color: #323232;
+
+	/* demo */
+	min-height: 220px;
 }
 
 .news-promo {
@@ -402,7 +504,10 @@ input[type="radio"].visually-hidden {
 
 /*--- Подписка на рассылку ---*/
 .subscription {
+	width: 560px;
 
+	/* demo */
+	min-height: 220px;
 }
 
 .subscription-desc {
@@ -419,7 +524,13 @@ input[type="radio"].visually-hidden {
 
 /*--- Контактная информация ---*/
 .contacts {
+	text-align: center;
 
+	line-height: 0;
+}
+
+.contacts img {
+	
 }
 
 .contacts-information {
