@@ -163,6 +163,10 @@ main h1 {
 	list-style: none;
 }
 
+.site-navigation > li {
+	margin: 28px 0 26px 10px;
+}
+
 .site-navigation > li > a {
 	position: relative;
 
@@ -378,7 +382,7 @@ main h1 {
 /*--- Баннеры ---*/
 .banners {
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 	right: 0;
 }
