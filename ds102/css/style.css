@@ -691,6 +691,10 @@ main h2 {
 	line-height: 0;
 }
 
+.map .container {
+	padding: 0;
+}
+
 .map-link {
 	display: block;
 	width: 100%;
