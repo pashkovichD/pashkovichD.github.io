@@ -215,13 +215,13 @@ main h1 {
 }
 
 .site-navigation > li:hover > .sub-menu {
-	display: block;
+	/*display: block;*/
 }
 
 .sub-menu {
 	position: absolute;
 
-	display: none;
+	/*display: none;*/
 	width: 175%;
 	margin: 0;
 	margin-top: 12px;
