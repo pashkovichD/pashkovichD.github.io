@@ -164,7 +164,9 @@ main h1 {
 }
 
 .site-navigation > li {
-	margin: 28px 0 26px 10px;
+	position: relative;
+
+	margin: 30px 0 25px 10px;
 }
 
 .site-navigation > li > a {
@@ -190,6 +192,7 @@ main h1 {
 
 }
 
+.site-navigation > li:hover,
 .site-navigation > li > a:hover,
 .site-navigation > li > a:focus {
 	color: #333333;
@@ -211,16 +214,31 @@ main h1 {
 		0 2px 1px 0 #696969 inset;
 }
 
+.site-navigation > li:hover > .sub-menu {
+	display: block;
+}
+
 .sub-menu {
+	position: absolute;
+
 	display: none;
+	width: 175%;
+	margin: 0;
+	margin-top: 12px;
+	padding: 0;
 
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
 
 	background-color: #ffffff;
+	border-radius: 3px;
 
 	list-style: none;
+}
+
+.sub-menu li {
+	margin-bottom: 5px;
 }
 
 .sub-menu li:first-child {
@@ -230,6 +248,9 @@ main h1 {
 }
 
 .sub-menu a {
+	display: block;
+	padding: 5px 12px 7px 12px;
+
 	color: #323232;
 
 	transition: all .2s ease;
