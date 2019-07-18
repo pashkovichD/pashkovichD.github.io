@@ -20,7 +20,7 @@ img {
 	height: auto;
 }
 
-/*.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
 	position: absolute;
@@ -36,7 +36,7 @@ input[type="radio"].visually-hidden {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}*/
+}
 
 :focus {
 	outline: none;
@@ -102,7 +102,17 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 } */
 
+main h1 {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
 
+	font-size: 35px;
+	line-height: 41px;
+
+	/* demo */
+	min-height: 41px;
+}
 
 
 
@@ -117,13 +127,14 @@ input[type="radio"].visually-hidden {
 	z-index: 2;
 }
 
+.inner-page .main-header {
+	position: static;
+}
+
 .main-header-wrapper {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
-	/* demo */
-	min-height: 72px;
 }
 
 .main-navigation {
@@ -138,6 +149,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+
 	width: 700px;
 	margin: 0;
 	padding: 0;
@@ -147,9 +161,6 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 
 	list-style: none;
-
-	/* demo */
-	min-height: 72px;
 }
 
 .site-navigation > li > a {
@@ -197,6 +208,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-menu {
+	display: none;
+
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
@@ -530,7 +543,8 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts img {
-	
+	width: 1200px;
+	height: 430px;
 }
 
 .contacts-information {
@@ -556,20 +570,107 @@ input[type="radio"].visually-hidden {
 
 
 
+
+/*--- Хлебные крошки ---*/
+.breadcrumbs {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+
+	list-style: none;
+
+	/* demo */
+	min-height: 17px;
+}
+
+
+
+
+
+/*--- Фильтр ---*/
+.filter {
+	margin-bottom: 40px;
+
+	/*--- demo ---*/
+	min-height: 135px;
+}
+
+
+
+
+/*--- Result ---*/
+.result {
+	
+}
+
+.result-list {
+	margin: 0;
+	margin-bottom: 65px;
+	padding: 0;
+
+	list-style: none;
+
+	/* demo */
+	min-height: 1065px;
+}
+
+
+
+
+
+/*--- Pagination ---*/
+.pagination {
+	margin-bottom: 30px;
+
+	/* demo */
+	min-height: 30px;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+
+
 /*--- FOOTER ---*/
 .main-footer {
 
 }
 
+.main-footer > .container {
+	display: flex;
+	justify-content: space-between;
+}
+
 .social-buttons {
+	width: 267px;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/* demo */
+	min-height: 100px;
+}
+
+.footer-menu {
+	width: 560px;
 }
 
 .footer-menu-list {
+	margin: 0;
+	padding: 0;
+
 	font-size: 13px;
 	line-height: 18px;	
 
 	list-style: none;
+
+	/* demo */
+	min-height: 100px;
 }
 
 .footer-menu-list a {
@@ -583,7 +684,10 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright {
+	width: 267px;
 
+	/* demo */
+	min-height: 100px;
 }
 
 .copyright p {
