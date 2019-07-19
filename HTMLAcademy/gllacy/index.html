@@ -36,18 +36,31 @@
 						</ul>
 					</nav>
 					
-					<div class="main-header-right out-2">
-						<!-- <button type="button">Поиск</button>
-						<form action="http://echo.htmlacademy.ru" method="POST" class="search-form">
-							<label for="search-input">Форма поиска</label>
-							<input type="text" id="search-input" name="search" placeholder="Что ищем?">
-							<button type="submit" class="search-form-button"><span class="visually-hidden">Найти</span></button>
-						</form>
+					<div class="main-header-right">
+						<div class="search__wrapper">
+							<button type="button" class="button-top button-search">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+								<span class="visually-hidden">Поиск</span>
+							</button>
+							<form action="http://echo.htmlacademy.ru" method="POST" class="search-form">
+								<label for="search-input"><span class="visually-hidden">Форма поиска</span></label>
+								<input type="text" id="search-input" name="search" placeholder="Что ищем?">
+								<!-- <button type="submit" class="search-form-button"><span class="visually-hidden">Найти</span></button> -->
+							</form>
+						</div>
 						<div class="user-navigation__wrapper">
 							<ul class="user-navigation">
-								<li><a href="login.html" class="login-link">Вход</a></li>
+								<li>
+									<a href="login.html" class="button-top login-link">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve" fill="#ffffff">
+											<polygon points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959	"/>
+											<path d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
+									</svg>
+										Вход
+									</a>
+								</li>
 							</ul>
-							<form action="http://echo.htmlacademy.ru" method="POST" class="login-form">
+							<!-- <form action="http://echo.htmlacademy.ru" method="POST" class="login-form">
 								<p class="login-item">
 									<label for="login-email">Электронная почта</label>
 									<input type="email" name="email" id="login-email" placeholder="Электронная почта">
@@ -59,38 +72,48 @@
 								<a href="#" class="forgot">Забыли пароль?</a>
 								<a href="#" class="new-registration">Новая регистрация</a>
 								<button type="submit" class="button login-button">Войти</button>
-							</form>
+							</form> -->
 						</div>
-						<a href="cart.html" class="cart"><span class="visually-hidden">Корзина</span></a>
-						<div class="cart-products">
-							<ul class="cart-list">
-								<li>
-									<button type="button"><span class="visually-hidden">Удалить товар</span></button>
-									<img src="img/product1-thumbnail.jpg" alt="Пломбир с апельсиновым джемом">
-									<p class="product-title">Пломбир с апельсиновым джемом</p>
-									<p class="product-calculation">
-										<span class="weight">1,5</span> кг x <span class="price"><span>200</span> руб.</span>
-									</p>
-									<p class="product-cost"><span>300</span> руб.</p>
-								</li>
-								<li>
-									<button type="button"><span class="visually-hidden">Удалить товар</span></button>
-									<img src="img/product2-thumbnail.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
-									<p class="product-title">Клубничный пломбир с присыпкой из белого шоколада</p>
-									<p class="product-calculation">
-										<span class="weight">1,5</span> кг x <span class="price"><span>300</span> руб.</span>
-									</p>
-									<p class="product-cost"><span>450</span> руб.</p>
-								</li>
-							</ul>
-							<p class="cart-total">Итого: <span>750</span> руб.</p>
-							<a href="#" class="button cart-button">Оформить заказ</a>
-						</div> -->
+						<div class="cart__wrapper">
+							<a href="cart.html" class="button-top cart">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve" fill="#FFFFFF">
+									<path d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+										L17.372,13z"/>
+									<circle cx="6.984" cy="18" r="2"/>
+									<circle cx="15.984" cy="18" r="2"/>
+								</svg>
+								<span class="cart-empty">Пусто</span>
+							</a>
+							<!-- <div class="cart-products">
+								<ul class="cart-list">
+									<li>
+										<button type="button"><span class="visually-hidden">Удалить товар</span></button>
+										<img src="img/product1-thumbnail.jpg" alt="Пломбир с апельсиновым джемом">
+										<p class="product-title">Пломбир с апельсиновым джемом</p>
+										<p class="product-calculation">
+											<span class="weight">1,5</span> кг x <span class="price"><span>200</span> руб.</span>
+										</p>
+										<p class="product-cost"><span>300</span> руб.</p>
+									</li>
+									<li>
+										<button type="button"><span class="visually-hidden">Удалить товар</span></button>
+										<img src="img/product2-thumbnail.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+										<p class="product-title">Клубничный пломбир с присыпкой из белого шоколада</p>
+										<p class="product-calculation">
+											<span class="weight">1,5</span> кг x <span class="price"><span>300</span> руб.</span>
+										</p>
+										<p class="product-cost"><span>450</span> руб.</p>
+									</li>
+								</ul>
+								<p class="cart-total">Итого: <span>750</span> руб.</p>
+								<a href="#" class="button cart-button">Оформить заказ</a>
+							</div> -->
+						</div>
 					</div>
 
-					<div class="contacts-info out-3">
-						<!-- <p class="schedule">С 10 до 20, ежедневно</p>
-						<p class="phone">8 812 450-25-25</p> -->
+					<div class="contacts-info">
+						<p class="schedule">С 10 до 20, ежедневно</p>
+						<p class="phone">8 812 450-25-25</p>
 					</div>
 
 				</div>				
