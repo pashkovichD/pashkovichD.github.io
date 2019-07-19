@@ -220,7 +220,7 @@ main h1 {
 
 .sub-menu {
 	position: absolute;
-	
+	left: -7px;
 
 	/*display: none;*/
 	width: 175%;
