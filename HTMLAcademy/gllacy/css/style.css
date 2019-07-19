@@ -166,8 +166,10 @@ main h1 {
 .site-navigation > li {
 	position: relative;
 
-	margin: 30px 0 25px 10px;
+	padding: 30px 0 25px 10px;	
 	/*padding-bottom: 12px;*/
+
+
 }
 
 .site-navigation > li > a {
@@ -193,7 +195,7 @@ main h1 {
 
 }
 
-/*.site-navigation > li:hover,*/
+.site-navigation > li:hover > a,
 .site-navigation > li > a:hover,
 .site-navigation > li > a:focus {
 	color: #333333;
@@ -215,19 +217,19 @@ main h1 {
 		0 2px 1px 0 #696969 inset;
 }
 
-.site-navigation > li:hover > .sub-menu {
+.site-navigation > li a:hover + .sub-menu,
+.site-navigation > li a:focus + .sub-menu {
 	/*display: block;*/
 }
 
 .sub-menu {
 	position: absolute;
-	top: 40px;
+	top: 63px;
 	left: -7px;
 
 	/*display: none;*/
 	width: 175%;
-	margin: 0;
-	/*margin-top: 12px;*/
+	margin: 0;	
 	padding: 0;
 	padding-top: 6px;
 
@@ -240,6 +242,8 @@ main h1 {
 	box-shadow: 0 5px 5px 0 rgba(0,0,0,.3);
 
 	list-style: none;
+
+	/*box-sizing: content-box;*/
 }
 
 .sub-menu li {
