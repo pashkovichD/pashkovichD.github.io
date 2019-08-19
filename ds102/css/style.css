@@ -908,6 +908,7 @@ main h2 {
 }
 
 .copyright p {
+	display: inline-block;
 	margin: 0;
 	padding: 15px;
 
