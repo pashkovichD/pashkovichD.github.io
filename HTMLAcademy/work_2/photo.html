@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп «Бородинский»</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/outline.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="page-header">
+		<a class="page-header__logo page-header__logo--inner">
+			<img src="img/logotype-mobile.svg" alt="Барбершоп «Бородинский»" class="page-header__logo-image" width="226" height="30">
+		</a>		
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<h2 class="visually-hidden">Главное меню</h2>
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="site-list__item site-list__item--active">
+						<a>Наши фото</a>
+					</li>
+					<li class="site-list__item">
+						<a href="form.html">Записаться</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">Контакты</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#">HTML Academy</a>
+					</li>
+				</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-list__item">
+						<a href="login.html" class="user-list__login">
+							<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">		
+								<polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>
+								<polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+							</svg>
+							Войти
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="page-header__decoration">
+			<div class="page-header__decoration-wrapper">
+				<div class="page-header__decoration-left"></div>
+				<div class="page-header__decoration-right"></div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main page-main--inner">
+		
+		<h1 class="visually-hidden">Портфолио Барбершопа "Бородинский"</h1>
+		
+		<section class="works">
+			<div class="works__wrapper">
+				<header class="works__header">
+					<h2 class="works__total-title">Наши работы</h2>
+					<a href="#" class="works__on-main button">На главную</a>
+				</header>
+
+				<article class="works__best">
+					<div class="works__columns">
+						<div class="works__first">
+							<h3 class="works__best-flag">Работа месяца</h3>
+							<img src="img/photo-1-mobile.jpg" alt="Лжепётр Мчиславский" class="works__best-photo works__best-photo--mobile" width="280" height="480">
+							<img src="img/photo-1-tablet.jpg" alt="Лжепётр Мчиславский" class="works__best-photo works__best-photo--tablet" width="270" height="480">
+							<img src="img/photo-1-desktop.jpg" alt="Лжепётр Мчиславский" class="works__best-photo works__best-photo--desktop" width="480" height="480">
+						</div>
+						<div class="works__second">
+							<p class="works__title">Лжепётр Мчиславский</p>
+							<p class="works__desc">Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+							<ul class="works__services services-list services-list--three">
+								<li class="services-list__item services-list__item--haircut">стрижка</li>
+								<li class="services-list__item services-list__item--shaving">бритье</li>
+								<li class="services-list__item services-list__item--moustache">усы</li>
+							</ul>
+						</div>
+					</div>					
+				</article>
+
+				<ul class="works__list">
+					<li class="works__item">
+						<div class="works__columns works__columns--list">
+							<div class="works__first">
+								<img src="img/photo-2-mobile.jpg" alt="Саша Мальцев" class="works__photo works__photo--mobile" width="280px" height="176px">
+								<img src="img/photo-2-tablet.jpg" alt="Саша Мальцев" class="works__photo works__photo--tablet" width="270px" height="294px">
+								<img src="img/photo-2-desktop.jpg" alt="Саша Мальцев" class="works__photo works__photo--desktop" width="294px" height="294px">
+							</div>
+							<div class="works__second">
+								<h3 class="works__title">Саша Мальцев</h3>
+								<p class="works__desc">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+								<ul class="works__services services-list">
+									<li class="services-list__item services-list__item--haircut">стрижка</li>
+								</ul>		
+							</div>
+						</div>
+					</li>
+
+					<li class="works__item">
+						<div class="works__columns works__columns--list">
+							<div class="works__first">
+								<img src="img/photo-3-mobile.jpg" alt="Владимир Иваныч" class="works__photo works__photo--mobile" width="280px" height="176px">
+								<img src="img/photo-3-tablet.jpg" alt="Владимир Иваныч" class="works__photo works__photo--tablet" width="270px" height="294px">
+								<img src="img/photo-3-desktop.jpg" alt="Владимир Иваныч" class="works__photo works__photo--desktop" width="294px" height="294px">
+							</div>
+							<div class="works__second">
+								<h3 class="works__title">Владимир Иваныч</h3>
+								<p class="works__desc">К зимнему сезону — готов!</p>
+								<ul class="works__services services-list">
+									<li class="services-list__item services-list__item--shaving">борода</li>
+								<li class="services-list__item services-list__item--moustache">усы</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="works__item">
+						<div class="works__columns works__columns--list">
+							<div class="works__first">
+								<img src="img/photo-4-mobile.jpg" alt="Винстон Синий" class="works__photo works__photo--mobile" width="280px" height="176px">
+								<img src="img/photo-4-tablet.jpg" alt="Винстон Синий" class="works__photo works__photo--tablet" width="270px" height="294px">
+								<img src="img/photo-4-desktop.jpg" alt="Винстон Синий" class="works__photo works__photo--desktop" width="294px" height="294px">
+							</div>
+							<div class="works__second">
+								<h3 class="works__title">Винстон Синий</h3>
+								<p class="works__desc">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+								<ul class="works__services services-list">
+									<li class="services-list__item services-list__item--haircut">стрижка</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="pricelist">
+			<div class="pricelist__wrapper">
+				<h2 class="pricelist__title">Прейскурант</h2>
+				<div class="pricelist__list-wrapper">
+					<table class="pricelist__list">
+						<tr>
+							<td class="pricelist__number">1</td>
+							<td class="pricelist__field-1">Классическая стрижка <span>(с мытьём головы)</span></td>
+							<td class="pricelist__field-2">с мытьём головы</td>
+							<td class="pricelist__value">1 500 руб.</td>					
+						</tr>
+						<tr>
+						<td class="pricelist__number">2</td>							
+							<td class="pricelist__field-1">Современный вариант <span>(с мытьём головы)</span></td>
+							<td class="pricelist__field-2">с мытьём головы</td>
+							<td class="pricelist__value">1 500 руб.</td>					
+						</tr>
+						<tr>
+							<td class="pricelist__number">3</td>
+							<td class="pricelist__field-1">Индивидуальный подход <span>(с мытьём головы)</span></td>
+							<td class="pricelist__field-2">с мытьём головы</td>
+							<td class="pricelist__value">2 000 руб.</td>					
+						</tr>
+						<tr>
+							<td class="pricelist__number">4</td>
+							<td class="pricelist__field-1">Бритьё головы <span>(без мытья)</span></td>
+							<td class="pricelist__field-2">без мытья</td>
+							<td class="pricelist__value">500 руб.</td>					
+						</tr>
+						<tr>
+							<td class="pricelist__number">5</td>
+							<td class="pricelist__field-1">Бритьё головы <span>(с мытьём головы)</span></td>
+							<td class="pricelist__field-2">с мытьём головы</td>
+							<td class="pricelist__value">1 000 руб.</td>					
+						</tr>
+					</table>
+
+					<p class="pricelist__sale">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 141.67 139.54" width="56px" height="56px">
+							<defs><style>.cls-1{fill:#ffffff;}</style></defs><title>clock-icon</title>
+							<path class="cls-1" d="M72.76,21.53V1.06a1,1,0,0,0-2,0V21.53c.33,0,.66,0,1,0Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M46.69,28.5c.57-.35,1.15-.67,1.74-1L38.19,9.8a1,1,0,1,0-1.73,1Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M11.43,34.79a1,1,0,0,0,.36,1.37L29.47,46.43c.32-.59.65-1.17,1-1.73L12.79,34.43A1,1,0,0,0,11.43,34.79Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M107.34,8.58A1,1,0,0,0,106,9L95.17,27.54c.58.33,1.16.66,1.73,1L107.7,10A1,1,0,0,0,107.34,8.58Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M132.71,35.73a1,1,0,0,0-1-1.73L113.09,44.77c.35.57.68,1.15,1,1.73Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M23.43,69.83c0-.33,0-.66,0-1H1.93a1,1,0,1,0,0,2H23.45C23.44,70.5,23.43,70.17,23.43,69.83Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M141.59,68.83H120.07c0,.34,0,.67,0,1s0,.67,0,1h21.52a1,1,0,0,0,0-2Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M131.73,103.51,114.05,93.24c-.33.58-.66,1.16-1,1.73l17.67,10.27a1,1,0,0,0,.5.14,1,1,0,0,0,.51-1.87Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M10.81,103.94a1,1,0,0,0,.5,1.86,1,1,0,0,0,.5-.13L30.42,94.9c-.34-.57-.67-1.15-1-1.73Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M96.82,111.17c-.56.34-1.15.67-1.73,1l10.24,17.7a1,1,0,0,0,.87.5,1,1,0,0,0,.86-1.5Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M35.82,129.72a1,1,0,0,0,.36,1.36,1,1,0,0,0,.5.14,1,1,0,0,0,.87-.5l10.8-18.6c-.58-.32-1.16-.65-1.73-1Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M70.76,118.14V138.6a1,1,0,0,0,2,0V118.14l-1,0C71.42,118.17,71.09,118.15,70.76,118.14Z" transform="translate(-0.93 -0.06)"/>
+							<path class="cls-1" d="M105.67,52a1.5,1.5,0,0,0-1.5-2.6L75.74,65.8h0a5.67,5.67,0,0,0-7.95,0L47.45,54a1.5,1.5,0,1,0-1.51,2.6L66.28,68.39a5.67,5.67,0,1,0,11,0ZM76.27,66.41l-.06-.08Zm.39.59,0,0Zm-9.78,0,0,0Zm.43-.63,0,.07Zm4.45,6.17a2.67,2.67,0,1,1,2.67-2.67A2.68,2.68,0,0,1,71.76,72.5Z" transform="translate(-0.93 -0.06)"/>
+						</svg>
+						C 10:00 до 14:00 <span>скидка 20%</span>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+
+	</main>
+
+	<footer class="page-footer page-footer--grey">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contacts contacts">
+				<b class="contacts__title">Барбершоп Бородинский</b>
+				<p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+				<a href="tel:+78125556666" class="contacts__phone button-footer"><span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66</a>	
+			</div>
+			<div class="page-footer__social social">
+				<b class="social__title">Давайте дружить!</b>
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="http://vk.com/htmlacademy" class="social__link social__link--vkontakte button-footer">
+							<span class="visually-hidden">Мы в Вконтакте</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 303.96 380" width="23px" height="26px">
+								<defs><style>.cls-1{fill:#ffffff;fill-rule:evenodd;}</style></defs>
+								<path class="cls-1" d="M282.77,202q-21.18-22.83-56.4-30.24v-2a81.77,81.77,0,0,0,38.41-31.9q13.91-21.69,13.91-49.51,0-24-10.08-42.37t-30.5-29.34a121.78,121.78,0,0,0-40.45-13.4Q176.09,0,134.24,0H0V380H152.11q39.54,0,65.2-7.15a133.55,133.55,0,0,0,47.09-24,101.54,101.54,0,0,0,28.83-35.48q10.71-21.44,10.73-49.76,0-38.77-21.19-61.63ZM95,69.67h6.63q25.52,0,38.4.38t22.34,4.46a28.45,28.45,0,0,1,14.66,14,43,43,0,0,1,4.73,18.88,52.23,52.23,0,0,1-4.33,21.95q-4.35,9.47-15.83,14.81a55.25,55.25,0,0,1-20.29,5.36q-9.82.51-34.32.5H95V69.67ZM199.7,286.47q-6,10.83-19,16.45a80.2,80.2,0,0,1-29.09,6.89q-14.29.51-51.54.52H95v-95.2h17.6q25.53,0,40.7.39t23.86,3.7q14.31,5.11,21.44,15.05t7.16,27.57a50.05,50.05,0,0,1-6,24.63Z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="http://facebook.com/htmlacademy" class="social__link social__link--facebook button-footer">
+							<span class="visually-hidden">Мы в Фейсбуке</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 384" width="18px" height="39px">
+								<path d="M128,128V89.9c0-17.2,3.8-25.9,30.5-25.9H192V0H136.1C67.6,0,45,31.4,45,85.3V128H0v64H45V384h83V192h56.4l7.6-64Z" fill="#ffffff"/>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="http://instagram.com/htmlacademy" class="social__link social__link--instagram button-footer">
+							<span class="visually-hidden">Мы в Инстаграмме</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" width="36px" height="36px">
+								<path d="M459,0H51A51.15,51.15,0,0,0,0,51V459a51.15,51.15,0,0,0,51,51H459a51.15,51.15,0,0,0,51-51V51A51.15,51.15,0,0,0,459,0ZM255,153c56.1,0,102,45.9,102,102S311.1,357,255,357,153,311.1,153,255,198.9,153,255,153ZM63.75,459C56.1,459,51,453.9,51,446.25V229.5h53.55C102,237.15,102,247.35,102,255c0,84.15,68.85,153,153,153s153-68.85,153-153c0-7.65,0-17.85-2.55-25.5H459V446.25c0,7.65-5.1,12.75-12.75,12.75ZM459,114.75c0,7.65-5.1,12.75-12.75,12.75h-51c-7.65,0-12.75-5.1-12.75-12.75v-51c0-7.65,5.1-12.75,12.75-12.75h51C453.9,51,459,56.1,459,63.75Z" fill="#ffffff"/>	
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright copyright">
+				<p class="copyright__text">Разработано:</p>
+				<a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link button-footer">HTML Academy</a>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal-login modal">
+		<h2 class="modal-login__title">Личный кабинет</h2>
+		<form action="https://echo.htmlacademy.ru" method="POST" class="modal-login__form">
+			<p class="modal-login__comment">Введите свой логин и пароль, чтобы войти</p>
+			
+			<p class="modal-login__item modal-login__item--login">
+				<label for="modal-login__name" class="visually-hidden">Ваш логин:</label>
+				<input type="text" name="login" id="modal-login__name" placeholder="Логин" value="">
+			</p>
+			<p class="modal-login__item modal-login__item--password">
+				<label for="modal-login__password" class="visually-hidden">Ваш пароль:</label>
+				<input type="password" name="password" id="modal-login__password" placeholder="Пароль" value="">
+			</p>
+			<p class="modal-login__help">
+				<label class="modal-login__checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden">
+					<span class="modal-login__checkbox-indicator"></span>
+					Запомнить меня
+				</label>
+				<a class="modal-login__restore" href="#">Я забыл пароль!</a>	
+			</p>			
+			<div class="modal-login__button-wrapper">
+				<button type="submit" class="modal-login__submit button-brown">
+					<span class="modal-login__button-mobile">Войти</span>
+					<span class="modal-login__button-tablet">Войти в личный кабинет</span>
+				</button>
+				<button type="button" class="modal-login__button button close">Закрыть</button>
+			</div>
+		</form>
+		<button type="button" class="modal-login__close close" tabindex="0"><span class="visually-hidden">Закрыть форму</span></button>
+	</section>
+	<div class="overlay"></div>
+
+	<script src='js/menu.js'></script>
+	<script src='js/popup.js'></script>
+
+</body>
+</html>
