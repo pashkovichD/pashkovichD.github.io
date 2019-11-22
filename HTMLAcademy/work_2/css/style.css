@@ -2210,17 +2210,17 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 .services-list__item--haircut::before {
-  background-image: url(../../img/scissors.svg);
+  background-image: url(../img/scissors.svg);
 }
 .services-list__item--shaving::before {
   width: 23px;
-  background-image: url(../../img/beard.svg);
+  background-image: url(../img/beard.svg);
 }
 .services-list__item--moustache::before {
   top: 9px;
   width: 45px;
   margin-right: 12px;
-  background-image: url(../../img/moustache.svg);
+  background-image: url(../img/moustache.svg);
 }
 @media (min-width: 1200px) {
   .services-list--three .services-list__item {
