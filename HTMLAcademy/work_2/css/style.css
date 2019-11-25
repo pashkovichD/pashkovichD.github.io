@@ -365,6 +365,12 @@ input[type="radio"].visually-hidden {
     border-color: transparent transparent #ffffff transparent;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .page-header__logo {
+    background-image: url('../img/bg-header@2x.jpg');
+    background-size: 1200px auto;
+  }
+}
 @media (min-width: 1200px) {
   .page-header__logo {
     height: 650px;
@@ -2609,7 +2615,7 @@ input[type="radio"].visually-hidden {
 .modal-login__item {
   margin: 0;
   padding: 0;
-  background-image: url(../../img/login-icon.png);
+  background-image: url(../img/login-icon.png);
   background-repeat: no-repeat;
   background-position: right 15px top 13px;
 }
@@ -2638,7 +2644,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #d5c9bd;
 }
 .modal-login__item--password {
-  background-image: url(../../img/locked-icon.png);
+  background-image: url(../img/locked-icon.png);
 }
 .modal-login__help {
   display: -webkit-box;
@@ -2663,7 +2669,7 @@ input[type="radio"].visually-hidden {
   width: 22px;
   height: 16px;
   margin-left: -11px;
-  background-image: url(../../img/checkbox-ok.svg);
+  background-image: url(../img/checkbox-ok.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
