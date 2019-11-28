@@ -317,9 +317,15 @@ input[type="radio"].visually-hidden {
   height: 85px;
   text-align: center;
 }
-.page-header__logo img {
+.page-header__logo svg {
   width: 226px;
-  height: 85px;
+  height: 95px;
+}
+.page-header__logo-barbershop {
+  display: none;
+}
+.page-header__logo-mustache {
+  display: none;
 }
 @media (min-width: 768px) {
   .page-header {
@@ -336,12 +342,15 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: center -9px;
   }
-  .page-header__logo img {
+  .page-header__logo svg {
     display: block;
     width: 370px;
     height: auto;
     margin: 0 auto;
     margin-top: 40px;
+  }
+  .page-header__logo-barbershop {
+    display: inline-block;
   }
   .page-header__logo--inner {
     position: relative;
@@ -396,8 +405,11 @@ input[type="radio"].visually-hidden {
     background-position: center 0;
     background-size: cover;
   }
-  .page-header__logo img {
+  .page-header__logo svg {
     padding-top: 17px;
+  }
+  .page-header__logo-mustache {
+    display: inline-block;
   }
   .page-header__logo--inner {
     height: 310px;
@@ -679,8 +691,6 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 16px;
   opacity: 0.3;
-}
-.user-list__login-icon polygon {
   fill: #ffffff;
 }
 .user-list__item a:focus {
@@ -698,14 +708,10 @@ input[type="radio"].visually-hidden {
   }
   .user-list__login:hover .user-list__login-icon {
     opacity: 1;
-  }
-  .user-list__login:hover .user-list__login-icon polygon {
     fill: #826550;
   }
   .user-list__login:active .user-list__login-icon {
     opacity: 0.3;
-  }
-  .user-list__login:active .user-list__login-icon polygon {
     fill: #ffffff;
   }
   .user-list__login-icon {
@@ -744,9 +750,6 @@ input[type="radio"].visually-hidden {
   .user-list__login:hover .user-list__login-icon,
   .user-list__login:focus .user-list__login-icon {
     opacity: 0.3;
-  }
-  .user-list__login:hover .user-list__login-icon polygon,
-  .user-list__login:focus .user-list__login-icon polygon {
     fill: #000000;
   }
   .user-list__login:active .user-list__login-icon {
