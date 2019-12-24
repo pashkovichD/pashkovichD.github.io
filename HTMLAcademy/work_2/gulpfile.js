@@ -6,8 +6,6 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-
-
 // gulp.task("less", function() {
 // 	gulp.src("less/style.less")
 // 		.pipe(less())
