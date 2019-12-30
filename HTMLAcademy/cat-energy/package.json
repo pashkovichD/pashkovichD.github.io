@@ -1,15 +1,15 @@
 {
-  "name": "test",
+  "name": "Cat_Energy",
   "version": "1.0.0",
-  "description": "test",
-  "repository": "test",
+  "description": "Функциональное питание для котов",
+  "repository": "pashkovichD",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "termi",
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1"
