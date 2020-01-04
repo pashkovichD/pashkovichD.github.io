@@ -117,25 +117,23 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 /*--- index.html ---*/
-/* body {
-	background: @bg-darkgrey url(../img/bb-mobile.jpg) no-repeat 50% 0;
-	background-size: 320px auto;
-	min-height: 750px;
+body {
+  background: url(../img/cat-energy-index-mobile.jpg) no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;
 }
-
-@media (min-width: @tablet-width) {
-	body {
-		background: @bg-darkgrey url(../img/bb-tablet.jpg) no-repeat 50% 0;
-		background-size: 768px auto;		
-	}
+@media (min-width: 768px) {
+  body {
+    background: url(../img/cat-energy-index-tablet.jpg) no-repeat 50% 0;
+    background-size: 768px auto;
+  }
 }
-
-@media (min-width: @desktop-width) {
-	body {
-		background: @bg-darkgrey url(../img/bb-desktop.jpg) no-repeat 50% 0;
-		background-size: 1200px auto;		
-	}
-} */
+@media (min-width: 1200px) {
+  body {
+    background: url(../img/cat-energy-index-desktop.jpg) no-repeat 50% 0;
+    background-size: 1200px auto;
+  }
+}
 /*--- form.html ---*/
 /* body {
 	background: @bg-darkgrey url(../img/form-mobile.jpg) no-repeat 50% 0;
