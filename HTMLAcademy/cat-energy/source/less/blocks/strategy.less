@@ -1,6 +1,7 @@
 .strategy {
 	width: 320px;
 	margin: 0 auto;
+	margin-bottom: 35px;
 	padding: 0 20px;
 
 	box-sizing: border-box;
@@ -16,7 +17,10 @@
 
 .strategy__item	{
 	width: 280px;
-	margin-bottom: 20px;
+
+	&:first-child {
+		margin-bottom: 20px;	
+	}
 
 	/* demo */
 	min-height: 266px;
@@ -25,18 +29,45 @@
 @media (min-width: @tablet-width) {
 	.strategy {
 		width: 768px;
-		margin: 0 auto;
+		margin-bottom: 50px;		
 		padding: 0 30px;
+	}
+
+	.strategy__item	{
+		width: 708px;
+
+		&:first-child {
+			margin-bottom: 30px;
+		}
 
 		/* demo */
-		min-height: 820px;
+		min-height: 372px;
 	}
 }
 
 @media (min-width: @desktop-width) {
-	.promo {	
+	.strategy {
+		width: 1300px;
+		margin-bottom: 77px;
+		padding: 0 40px;
 
 		/* demo */
-		min-height: 697px;
+		min-height: 0;
+	}
+
+	.strategy__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.strategy__item {
+		width: 570px;
+		
+		&:first-child {
+			margin-bottom: 0;
+		}
+
+		/* demo */
+		min-height: 372px;
 	}
 }
