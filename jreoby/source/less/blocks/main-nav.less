@@ -1,0 +1,32 @@
+.main-nav {	
+	display: none;
+
+	/* demo */
+	min-height: 65px;
+}
+
+.main-nav__toggle {
+	
+	/* demo */
+	width: 25px;
+	height: 18px;
+	border: none;
+	background: transparent;
+}
+
+@media (min-width: @tablet-width) {
+	.main-nav {
+		display: block;
+		width: 500px;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.main-nav {
+		width: 610px;
+	}
+}

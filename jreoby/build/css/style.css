@@ -1,0 +1,276 @@
+/* Exo 2 */
+@font-face {
+  font-weight: 100;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/exo/exo2thin.woff2) format("woff2"), url(../fonts/exo/exo2thin.woff) format("woff");
+}
+@font-face {
+  font-weight: 100;
+  font-family: "Exo 2";
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/exo/exo2thinitalic.woff2) format("woff2"), url(../fonts/exo/exo2thinitalic.woff) format("woff");
+}
+@font-face {
+  font-weight: 300;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/exo/exo2light.woff2) format("woff2"), url(../fonts/exo/exo2light.woff) format("woff");
+}
+@font-face {
+  font-weight: 300;
+  font-family: "Exo 2";
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/exo/exo2lightitalic.woff2) format("woff2"), url(../fonts/exo/exo2lightitalic.woff) format("woff");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/exo/exo2.woff2) format("woff2"), url(../fonts/exo/exo2.woff) format("woff");
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Exo 2";
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/exo/exo2italic.woff2) format("woff2"), url(../fonts/exo/exo2italic.woff) format("woff");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/exo/exo2bold.woff2) format("woff2"), url(../fonts/exo/exo2bold.woff) format("woff");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Exo 2";
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/exo/exo2bolditalic.woff2) format("woff2"), url(../fonts/exo/exo2bolditalic.woff) format("woff");
+}
+@font-face {
+  font-weight: 900;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/exo/exo2black.woff2) format("woff2"), url(../fonts/exo/exo2black.woff) format("woff");
+}
+@font-face {
+  font-weight: 900;
+  font-family: "Exo 2";
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/exo/exo2blackitalic.woff2) format("woff2"), url(../fonts/exo/exo2blackitalic.woff) format("woff");
+}
+/* @font-face {
+	font-weight: normal;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/PTSansNarrow-Regular.woff2) format("woff2"),
+		url(../fonts/PTSansNarrow-Regular.woff) format("woff");
+}
+
+@font-face {
+	font-weight: bold;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/PTSansNarrow-Bold.woff2) format("woff2"),
+		url(../fonts/PTSansNarrow-Bold.woff) format("woff");
+} */
+/* @font-face {
+	font-weight: normal;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/ptsansnarrow.woff2) format("woff2"),
+		url(../fonts/ptsansnarrow.woff) format("woff");
+}
+
+@font-face {
+	font-weight: bold;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/ptsansnarrowbold.woff2) format("woff2"),
+		url(../fonts/ptsansnarrowbold.woff) format("woff");
+} */
+/* @font-face {
+	font-weight: normal;
+	font-family: "Exo+2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo2.woff2) format("woff2"),
+		url(../fonts/exo2.woff) format("woff");
+} */
+body {
+  font-family: 'Exo 2', Tahoma, Verdana, sans-serif;
+  color: #777777;
+  background-color: #f2f2f2;
+}
+body {
+  min-width: 320px;
+  /* demo */
+  min-height: 2000px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
+:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
+          box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px; 
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+} */
+.h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.button {
+  padding: 12px 30px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5ddd5;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.button:hover,
+.button:focus {
+  border: 1px solid #d5c9bd;
+}
+.button:active {
+  background-color: #d5c9bd;
+  color: rgba(0, 0, 0, 0.3);
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+/*--- index.html ---*/
+/*  body {
+	background: url(../img/cat-energy-index-mobile.jpg) no-repeat 50% 0;
+	background-size: 320px auto;
+	min-height: 750px;
+}
+
+@media (min-width: @tablet-width) {
+	body {
+		background: url(../img/cat-energy-index-tablet.jpg) no-repeat 50% 0;
+		background-size: 768px auto;		
+	}
+}
+
+@media (min-width: @desktop-width) {
+	body {
+		background: url(../img/cat-energy-index-desktop.jpg) no-repeat 50% 0;
+		background-size: 1440px auto;		
+	}
+}*/
+/*--- form.html ---*/
+body {
+  background: url(../img/cat-energy-form-mobile.jpg) no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 750px;
+}
+@media (min-width: 768px) {
+  body {
+    background: url(../img/cat-energy-form-tablet.jpg) no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+}
+@media (min-width: 1300px) {
+  body {
+    background: url(../img/cat-energy-form-desktop.jpg) no-repeat 50% 0;
+    background-size: 1440px auto;
+  }
+}
+/*--- catalog.html ---*/
+/* body {
+	background: url(../img/cat-energy-catalog-mobile.jpg) no-repeat 50% 0;
+	background-size: 320px auto;
+	min-height: 750px;
+}
+
+@media (min-width: @tablet-width) {
+	body {
+		background: url(../img/cat-energy-catalog-tablet.jpg) no-repeat 50% 0;
+		background-size: 768px auto;		
+	}
+}
+
+@media (min-width: @desktop-width) {
+	body {
+		background: url(../img/cat-energy-catalog-desktop.jpg) no-repeat 50% 0;
+		background-size: 1440px auto;		
+	}
+} */
+.out-1 {
+  background: rgba(0, 116, 1, 0.4);
+  outline: 2px solid #007401;
+  outline-offset: -2px;
+}
+.out-2 {
+  background: rgba(255, 39, 75, 0.4);
+  outline: 2px solid #FF274B;
+  outline-offset: -2px;
+}
+.out-3 {
+  background: rgba(235, 244, 54, 0.4);
+  outline: 2px solid #EBF436;
+  outline-offset: -2px;
+}
+.out-4 {
+  background: rgba(112, 16, 111, 0.4);
+  outline: 2px solid #70106F;
+  outline-offset: -2px;
+}

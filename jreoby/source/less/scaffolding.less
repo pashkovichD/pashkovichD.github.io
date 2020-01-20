@@ -1,0 +1,249 @@
+/* Exo 2 */
+@font-face {
+	font-weight: 100;
+	font-family: "Exo 2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo/exo2thin.woff2) format("woff2"),
+		url(../fonts/exo/exo2thin.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 100;
+	font-family: "Exo 2";
+	font-style: italic;
+	font-display: swap;
+	src: url(../fonts/exo/exo2thinitalic.woff2) format("woff2"),
+		url(../fonts/exo/exo2thinitalic.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: "Exo 2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo/exo2light.woff2) format("woff2"),
+		url(../fonts/exo/exo2light.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: "Exo 2";
+	font-style: italic;
+	font-display: swap;
+	src: url(../fonts/exo/exo2lightitalic.woff2) format("woff2"),
+		url(../fonts/exo/exo2lightitalic.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: "Exo 2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo/exo2.woff2) format("woff2"),
+		url(../fonts/exo/exo2.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: "Exo 2";
+	font-style: italic;
+	font-display: swap;
+	src: url(../fonts/exo/exo2italic.woff2) format("woff2"),
+		url(../fonts/exo/exo2italic.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: "Exo 2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo/exo2bold.woff2) format("woff2"),
+		url(../fonts/exo/exo2bold.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: "Exo 2";
+	font-style: italic;
+	font-display: swap;
+	src: url(../fonts/exo/exo2bolditalic.woff2) format("woff2"),
+		url(../fonts/exo/exo2bolditalic.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 900;
+	font-family: "Exo 2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo/exo2black.woff2) format("woff2"),
+		url(../fonts/exo/exo2black.woff) format("woff");
+}
+
+@font-face {
+	font-weight: 900;
+	font-family: "Exo 2";
+	font-style: italic;
+	font-display: swap;
+	src: url(../fonts/exo/exo2blackitalic.woff2) format("woff2"),
+		url(../fonts/exo/exo2blackitalic.woff) format("woff");
+}
+
+
+
+/* @font-face {
+	font-weight: normal;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/PTSansNarrow-Regular.woff2) format("woff2"),
+		url(../fonts/PTSansNarrow-Regular.woff) format("woff");
+}
+
+@font-face {
+	font-weight: bold;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/PTSansNarrow-Bold.woff2) format("woff2"),
+		url(../fonts/PTSansNarrow-Bold.woff) format("woff");
+} */
+
+/* @font-face {
+	font-weight: normal;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/ptsansnarrow.woff2) format("woff2"),
+		url(../fonts/ptsansnarrow.woff) format("woff");
+}
+
+@font-face {
+	font-weight: bold;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/ptsansnarrowbold.woff2) format("woff2"),
+		url(../fonts/ptsansnarrowbold.woff) format("woff");
+} */
+
+/* @font-face {
+	font-weight: normal;
+	font-family: "Exo+2";
+	font-style: normal;
+	font-display: swap;
+	src: url(../fonts/exo2.woff2) format("woff2"),
+		url(../fonts/exo2.woff) format("woff");
+} */
+
+body {
+	font-family: @ff;
+	color: @color;
+
+	background-color: @bg-color;
+}
+
+body {
+	min-width: 320px;
+	
+	/* demo */
+	min-height: 2000px;
+	
+	margin: 0;
+	padding: 0;
+
+	// font-family: "Exo+2", "Arial", sans-serif;
+	font-family: @ff;
+	font-size: 16px;
+	line-height: 27px;
+	// color: #f7f4f1;
+	font-weight: 400;
+
+	// background-color: @bg-darkgrey;
+}
+
+:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px white,
+				0 0 0 4px #fc0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px; 
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+} */
+
+.h3 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+.button {
+	padding: 12px 30px;
+
+	font: inherit;
+	font-size: 18px;
+	line-height: 24px;	
+
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	color: #000000;
+
+	background-color: #ffffff;
+	border: 1px solid #e5ddd5;
+
+	transition: all .2s ease;
+}
+
+.button:hover,
+.button:focus {
+	border: 1px solid #d5c9bd;
+}
+
+.button:active {	
+	background-color: #d5c9bd;
+	color: rgba(0,0,0,.3);
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+.overlay {
+	display: none;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0,0,0,.5);
+	z-index: 1;	
+}
+
