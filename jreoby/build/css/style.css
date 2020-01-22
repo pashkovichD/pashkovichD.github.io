@@ -118,8 +118,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Exo 2', Tahoma, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 25px;
   font-weight: 400;
   color: #777777;
   background-color: #eeeeee;
@@ -262,15 +262,37 @@ input[type="radio"].visually-hidden {
   height: 80px;
 }
 .page-header__address {
+  width: 100%;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   text-align: center;
 }
-@media (min-width: 600px) {
-  .page-header {
-    width: 768px;
-    padding: 0 30px;
-  }
+.page-header__wrapper-rigth {
+  position: relative;
+  padding-top: 10px;
+  border-top: 1px solid #eeeeee;
+}
+.page-header__toggle-search {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.page-header__search {
+  display: none;
+}
+.page-header__toggle-nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 @media (min-width: 768px) {
   .page-header {
@@ -283,4 +305,46 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     padding: 0 40px;
   }
+}
+.main-nav {
+  display: none;
+}
+.hamburger {
+  width: 25px;
+  height: 18px;
+}
+.hamburger__line {
+  position: relative;
+  top: 50%;
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-top: -1px;
+  background: #a0a1a3;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  -o-transition: transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+.hamburger__line::before,
+.hamburger__line::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #a0a1a3;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  -o-transition: transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate(0%, -7px);
+      -ms-transform: translate(0%, -7px);
+          transform: translate(0%, -7px);
+}
+.hamburger__line::after {
+  -webkit-transform: translate(0%, 5px);
+      -ms-transform: translate(0%, 5px);
+          transform: translate(0%, 5px);
 }

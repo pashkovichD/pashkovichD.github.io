@@ -62,13 +62,22 @@
 				<use xlink:href="#icon-logo"></use>
 			</svg>
 		</a>
-		<div class="page-header__wrappper-rigth">		
-			<p class="page-header__address">г. Новополоцк, ул. Молодежная, 102а</p>
+		<p class="page-header__address">г. Новополоцк, ул. Молодежная, 102а</p>
+		<div class="page-header__wrapper-rigth">
 			<form action="http://echo.htmlacademy.ru" class="page-header__search search" method="POST">
 				<input type="text" class="search__input">
 				<button type="submit" class="search__button">Найти</button>
 			</form>
-			<button class="main-nav__toggle out-2" type="button"><span class="visually-hidden">Открыть меню</span></button>
+			<button class="page-header__toggle-search" type="button">
+				<span class="visually-hidden">Открыть поиск</span>
+				<svg fill="#777777" width="20" height="20">
+					<use xlink:href="#icon-search"></use>
+				</svg>
+			</button>
+			<button class="page-header__toggle-nav hamburger" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+				<span class="hamburger__line"></span>
+			</button>
 			<nav class="main-nav">
 				<h2 class="visually-hidden">Главное меню</h2>
 				<svg fill="#777777" width="30" height="45">
@@ -89,9 +98,7 @@
 				<svg fill="#777777" width="7" height="10">
 					<use xlink:href="#icon-marker"></use>
 				</svg>
-				<svg fill="#777777" width="35" height="35">
-					<use xlink:href="#icon-search"></use>
-				</svg>
+				
 				<ul class="main-nav__list menu-list">
 					<li class="menu-list__item">
 						<a href="#">Для физических лиц</a>
