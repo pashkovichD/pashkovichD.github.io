@@ -294,24 +294,35 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
 }
+@media (min-width: 600px) {
+  .page-header {
+    width: 580px;
+  }
+}
 @media (min-width: 768px) {
   .page-header {
     width: 768px;
-    padding: 0 30px;
   }
 }
 @media (min-width: 1200px) {
   .page-header {
     width: 1200px;
-    padding: 0 40px;
   }
 }
 .main-nav {
-  display: none;
+  position: relative;
+}
+.main-nav__list {
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .main-nav__list {
+    position: static;
+  }
 }
 .hamburger {
   width: 25px;
-  height: 18px;
+  height: 20px;
 }
 .hamburger__line {
   position: relative;
@@ -347,4 +358,66 @@ input[type="radio"].visually-hidden {
   -webkit-transform: translate(0%, 5px);
       -ms-transform: translate(0%, 5px);
           transform: translate(0%, 5px);
+}
+.hamburger__click span {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: transparent;
+}
+.hamburger__click span:before {
+  -webkit-transform: translate(0%, 0px) rotate(45deg);
+      -ms-transform: translate(0%, 0px) rotate(45deg);
+          transform: translate(0%, 0px) rotate(45deg);
+}
+.hamburger__click span:after {
+  -webkit-transform: translate(0%, -2px) rotate(-45deg);
+      -ms-transform: translate(0%, -2px) rotate(-45deg);
+          transform: translate(0%, -2px) rotate(-45deg);
+}
+.short-click span {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: transparent;
+}
+.short-click span:before {
+  -webkit-transform: translate(0%, 3px) rotate(45deg);
+      -ms-transform: translate(0%, 3px) rotate(45deg);
+          transform: translate(0%, 3px) rotate(45deg);
+}
+.short-click span:after {
+  -webkit-transform: translate(0%, 1px) rotate(-45deg);
+      -ms-transform: translate(0%, 1px) rotate(-45deg);
+          transform: translate(0%, 1px) rotate(-45deg);
+}
+.menu-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: -100%;
+  list-style: none;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.menu-list__show {
+  left: 0;
+  opacity: 1;
+}
+.menu-list__item a {
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(28, 36, 44, 0.85);
+}
+@media (min-width: 768px) {
+  .menu-list {
+    opacity: 1;
+    left: 0;
+  }
 }

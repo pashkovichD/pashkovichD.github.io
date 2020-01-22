@@ -1,6 +1,6 @@
 .hamburger {
 	width: 25px;
-	height: 18px;
+	height: 20px;
 }
 
 .hamburger__line {
@@ -32,6 +32,36 @@
 		transform: translate(0%, 5px);	
 	}
 }
+
+.hamburger__click {
+	span {
+		transform: rotate(90deg);
+		background: transparent;
+	}                    
+	span:before {
+		// transform: translate(-0%, -3px) rotate(45deg) scaleX(0.7)
+		transform: translate(-0%, 0px) rotate(45deg);
+	}                    
+	span:after {
+		// transform: translate(-0%, 3px) rotate(-45deg) scaleX(0.7)
+		transform: translate(-0%, -2px) rotate(-45deg);
+	}                    
+}
+
+.short-click {
+        span {
+            transform: rotate(90deg);
+            background: transparent;
+        }                    
+        span:before {
+            // transform: translate(-0%, -3px) rotate(45deg) scaleX(0.7)
+            transform: translate(-0%, 3px) rotate(45deg);
+        }                    
+        span:after {
+            // transform: translate(-0%, 3px) rotate(-45deg) scaleX(0.7)
+            transform: translate(-0%, 1px) rotate(-45deg);
+        }                    
+    }
 
 
 @media (min-width: @custom-width) {

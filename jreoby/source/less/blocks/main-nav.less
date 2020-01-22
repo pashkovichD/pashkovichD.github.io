@@ -1,13 +1,15 @@
 .main-nav {	
-	display: none;	
+	position: relative;
 }
 
-.main-nav__toggle {
-		
+.main-nav__list {
+	position: absolute;
 }
 
 @media (min-width: @tablet-width) {
-	
+	.main-nav__list {
+		position: static;
+	}	
 }
 
 @media (min-width: @desktop-width) {
