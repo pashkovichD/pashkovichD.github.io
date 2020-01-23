@@ -395,17 +395,14 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin: 0;
   padding: 0;
-  top: 0;
-  left: -100%;
   list-style: none;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
 .menu-list__show {
   left: 0;
   opacity: 1;
+}
+.menu-list__item {
+  border-bottom: 1px dotted #d8d8d8;
 }
 .menu-list__item a {
   display: block;
@@ -414,6 +411,19 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #ffffff;
   background-color: rgba(28, 36, 44, 0.85);
+}
+.menu-list__item a span {
+  position: relative;
+}
+.menu-list__item a span svg {
+  position: absolute;
+  top: -5px;
+  left: -35px;
+  margin-right: 10px;
+}
+.menu-list__item--ur a span svg {
+  top: -11px;
+  left: -37px;
 }
 @media (min-width: 768px) {
   .menu-list {
