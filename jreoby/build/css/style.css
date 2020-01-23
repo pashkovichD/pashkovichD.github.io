@@ -398,6 +398,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: -100%;
   list-style: none;
+  font-size: 18px;
   opacity: 0;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -494,7 +495,7 @@ input[type="radio"].visually-hidden {
 }
 .menu-list__dropdown a {
   display: block;
-  padding: 5px 15px;
+  padding: 5px 20px;
   text-decoration: none;
   color: #777777;
   border-bottom: 1px dotted #d8d8d8;
