@@ -395,7 +395,13 @@ input[type="radio"].visually-hidden {
   width: 100%;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: -100%;
   list-style: none;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .menu-list__show {
   left: 0;

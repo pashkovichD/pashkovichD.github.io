@@ -29,13 +29,9 @@ search.addEventListener('click', function (e) {
 menuItem.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
 		// e.preventDefault();		
-		// hideDropdown();
-		parent = this;
 		
-		// parent.classList.toggle('menu-list__item--active');
-		// if(parent.classList.contains == 'menu-list__item--active') {
-		// 	alert('OK');
-		// }
+		parent = this;
+
 		dropdown.forEach(function(el) {
 			if(el.parentNode == parent) {
 				if(parent.classList.contains('menu-list__item--active')) {
@@ -46,16 +42,7 @@ menuItem.forEach(function(el) { // перебираем массив
 					hideDropdown();
 					parent.classList.add('menu-list__item--active');
 					el.style.height = el.scrollHeight + 'px';	
-				}
-				
-
-				/*if(parent.classList.contains == 'menu-list__item--active') {
-					el.style.height = 0 + 'px';
-					parent.classList.remove('menu-list__item--active');
-				} else {
-					parent.classList.add('menu-list__item--active');
-					el.style.height = el.scrollHeight + 'px';
-				}*/
+				}				
 			}			
 		});	
 	});
