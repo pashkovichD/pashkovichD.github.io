@@ -473,6 +473,18 @@ input[type="radio"].visually-hidden {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.menu-list__dropdown {
+  background-color: #ffffff;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.menu-list__dropdown a {
+  text-decoration: none;
+  color: #777777;
+}
 @media (min-width: 768px) {
   .menu-list {
     opacity: 1;
