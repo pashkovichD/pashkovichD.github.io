@@ -46,7 +46,8 @@
 			}	
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: #f39f18;
 
 			svg {
@@ -83,7 +84,8 @@
 			transition: @anim;
 		}
 
-		&:hover::after {
+		&:hover::after,
+		&:focus::after {
 			border-right: 1px solid #f39f18;
 			border-bottom: 1px solid #f39f18;
 		}
@@ -100,6 +102,16 @@
 				top: -11px;
 				left: -40px;
 			}
+		}
+	}
+}
+
+.menu-list__item--active {
+
+	& > a {
+		
+		&::after {
+			transform: rotate(45deg);
 		}
 	}
 }
