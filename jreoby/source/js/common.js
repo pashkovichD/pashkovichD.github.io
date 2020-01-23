@@ -40,9 +40,10 @@ menuItem.forEach(function(el) { // перебираем массив
 			if(el.parentNode == parent) {
 				if(parent.classList.contains('menu-list__item--active')) {
 					hideDropdown();
-					// el.style.height = 0 + 'px';
+					el.style.height = 0 + 'px';
 					parent.classList.remove('menu-list__item--active');
 				} else {
+					hideDropdown();
 					parent.classList.add('menu-list__item--active');
 					el.style.height = el.scrollHeight + 'px';	
 				}
@@ -63,5 +64,8 @@ menuItem.forEach(function(el) { // перебираем массив
 function hideDropdown() { //скрыть все подменю и убрать активный класс
 	dropdown.forEach(function(el) {
 		el.style.height = '0';			
-	});	
+	});
+	menuItem.forEach(function(el) {		
+		el.classList.remove('menu-list__item--active');
+	});
 }
