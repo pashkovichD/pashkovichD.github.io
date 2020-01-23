@@ -25,19 +25,15 @@ search.addEventListener('click', function (e) {
 	alert("OK");
 });
 
-/* show поиска */
+/* робота главного меню */
 menuItem.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
-		// e.preventDefault();		
-		
+		// e.preventDefault();
 		parent = this;
-
 		dropdown.forEach(function(el) {
 			if(el.parentNode == parent) {
 				if(parent.classList.contains('menu-list__item--active')) {
 					hideDropdown();
-					el.style.height = 0 + 'px';
-					parent.classList.remove('menu-list__item--active');
 				} else {
 					hideDropdown();
 					parent.classList.add('menu-list__item--active');

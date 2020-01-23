@@ -437,6 +437,8 @@ input[type="radio"].visually-hidden {
 .menu-list__item > a:hover,
 .menu-list__item > a:focus {
   color: #f39f18;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .menu-list__item > a:hover svg,
 .menu-list__item > a:focus svg {
@@ -480,6 +482,9 @@ input[type="radio"].visually-hidden {
           transform: rotate(45deg);
 }
 .menu-list__dropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #ffffff;
   height: 0;
   overflow: hidden;
@@ -488,8 +493,21 @@ input[type="radio"].visually-hidden {
   transition: all 0.2s ease-out;
 }
 .menu-list__dropdown a {
+  display: block;
+  padding: 5px 15px;
   text-decoration: none;
   color: #777777;
+  border-bottom: 1px dotted #d8d8d8;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.menu-list__dropdown a:hover,
+.menu-list__dropdown a:focus {
+  color: #000000;
+  background-color: #dddddd;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media (min-width: 768px) {
   .menu-list {

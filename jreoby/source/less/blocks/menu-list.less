@@ -49,6 +49,7 @@
 		&:hover,
 		&:focus {
 			color: #f39f18;
+			box-shadow: none;
 
 			svg {
 				fill: #f39f18;
@@ -117,7 +118,10 @@
 }
 
 .menu-list__dropdown {
-	
+	margin: 0;	
+	padding: 0;
+	list-style: none;
+
 	background-color: #ffffff;
 
 	height: 0;
@@ -125,8 +129,29 @@
 	transition: @anim;
 
 	a {
+		display: block;
+		padding: 5px 15px;
+
 		text-decoration: none;
 		color: @color;
+
+		border-bottom: 1px dotted #d8d8d8;
+		transition: all .3s ease-out;
+
+		&:hover,
+		&:focus {
+			color: #000000;
+			background-color: #dddddd;
+
+			box-shadow: none;
+		}
+	}
+}
+
+@media (min-width: @custom-width) {
+	.menu-list {
+		// left: -100%;
+		// opacity: 0;
 	}
 }
 
@@ -139,4 +164,4 @@
 
 @media (min-width: @desktop-width) {
 	
-}
+}	
