@@ -404,26 +404,65 @@ input[type="radio"].visually-hidden {
 .menu-list__item {
   border-bottom: 1px dotted #d8d8d8;
 }
-.menu-list__item a {
+.menu-list__item > a {
+  position: relative;
   display: block;
-  padding: 10px 10px;
+  padding: 12px 10px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
   background-color: rgba(28, 36, 44, 0.85);
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
-.menu-list__item a span {
+.menu-list__item > a span {
   position: relative;
 }
-.menu-list__item a span svg {
+.menu-list__item > a span svg {
   position: absolute;
   top: -5px;
   left: -35px;
   margin-right: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
-.menu-list__item--ur a span svg {
+.menu-list__item > a:hover {
+  color: #f39f18;
+}
+.menu-list__item > a:hover svg {
+  fill: #f39f18;
+}
+.menu-list__item:last-child {
+  border-bottom: none;
+}
+.menu-list__item--fiz > a::after,
+.menu-list__item--ur > a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.menu-list__item--fiz > a:hover::after,
+.menu-list__item--ur > a:hover::after {
+  border-right: 1px solid #f39f18;
+  border-bottom: 1px solid #f39f18;
+}
+.menu-list__item--ur > a span svg {
   top: -11px;
-  left: -37px;
+  left: -40px;
 }
 @media (min-width: 768px) {
   .menu-list {
