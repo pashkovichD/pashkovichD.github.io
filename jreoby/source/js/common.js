@@ -3,8 +3,11 @@ var search = document.querySelector('.page-header__toggle-search');
 
 
 var nav = document.querySelector('.main-nav__list');
+// var menuItem = document.querySelectorAll('.menu-list__item--fiz, .menu-list__item--ur'); // выбор конкретных пуктов (то же работает)
 var menuItem = document.querySelectorAll('.menu-list__item');
-var dropdown= document.querySelectorAll('.menu-list__dropdown');
+var dropdown = document.querySelectorAll('.menu-list__dropdown');
+var linkSeconddown = document.querySelector('.menu-list__seconddown-link');
+var listSeconddown = document.querySelector('.menu-list__seconddown');
 
 
 /* работа кнопки меню-гамбургера */
@@ -37,7 +40,8 @@ menuItem.forEach(function(el) { // перебираем массив
 				} else {
 					hideDropdown();
 					parent.classList.add('menu-list__item--active');
-					el.style.height = el.scrollHeight + 'px';	
+					// el.style.height = 'auto';
+					el.style.height = el.scrollHeight + 'px';
 				}				
 			}			
 		});	
@@ -52,3 +56,16 @@ function hideDropdown() { //скрыть все подменю и убрать �
 		el.classList.remove('menu-list__item--active');
 	});
 }
+
+linkSeconddown.addEventListener('click', function (e) {
+	e.stopPropagation(); // отменяет событие для родителя	
+	ul = this.parentNode.parentNode.style.height;
+
+	if(listSeconddown.style.height > 0) {
+		listSeconddown.style.height = '0';
+	} else {
+		listSeconddown.style.height = listSeconddown.scrollHeight + 'px';		
+		this.parentNode.parentNode.style.height = listSeconddown.style.height + ul;
+		
+	}
+});
