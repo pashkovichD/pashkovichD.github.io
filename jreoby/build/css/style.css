@@ -517,9 +517,9 @@ input[type="radio"].visually-hidden {
   background-color: #eaeaea;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 .menu-list__seconddown a {
   position: relative;
