@@ -20,6 +20,7 @@ hamburger.addEventListener('click', function (e) {
 		leftHamburger = true; // меню показано
 	} else {
 		nav.classList.remove('menu-list__show');
+		hideDropdown();
 	}
 	
 });
@@ -34,7 +35,7 @@ search.addEventListener('click', function (e) {
 /* робота главного меню */
 menuItem.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
-		// e.preventDefault();
+		// e.preventDefault(); // 
 		var parent = this;
 		dropdown.forEach(function(el) {
 			if(el.parentNode == parent) {
@@ -43,7 +44,6 @@ menuItem.forEach(function(el) { // перебираем массив
 				} else {
 					hideDropdown();
 					parent.classList.add('menu-list__item--active');
-					// el.style.height = 'auto';
 					el.style.height = el.scrollHeight + 'px';
 				}				
 			}			
@@ -51,13 +51,16 @@ menuItem.forEach(function(el) { // перебираем массив
 	});
 });
 
-function hideDropdown() { //скрыть все подменю и убрать активный класс
-	dropdown.forEach(function(el) {
+function hideDropdown() { 
+	dropdown.forEach(function(el) { //скрыть все подменю
 		el.style.height = '0';			
 	});
-	menuItem.forEach(function(el) {		
+	menuItem.forEach(function(el) { //убрать активный класс
 		el.classList.remove('menu-list__item--active');
 	});
+
+	listSeconddown.style.height = '0'; // скрываем подменю второго уровня
+
 }
 
 /* сделано из расчета одного такого меню, если их будет несколько, то нужно всё делать через querySelectorAll() и перебор массива */
@@ -84,13 +87,11 @@ linkSeconddown.addEventListener('click', function (e) {
 	}	
 });
 
-
-
-
 // действие по нажатию на ESC
 window.addEventListener('keydown', function (e) {
 	if (e.which == 27) {		
-		if(leftHamburger) {
+		if(leftHamburger) { // скрыть гланое меню
+			hideDropdown();
 			hamburger.classList.remove('hamburger__click');
 			nav.classList.remove('menu-list__show');
 			leftHamburger = false; // меню скрыто

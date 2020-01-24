@@ -18,11 +18,17 @@
 				<use xlink:href="#icon-logo"></use>
 			</svg>
 		</a>
-		<p class="page-header__address">г. Новополоцк, ул. Молодежная, 102а</p>
+		<p class="page-header__address">г. Новополоцк,<br> ул. Молодежная, 102а</p>
 		<div class="page-header__wrapper-rigth">
 			<form action="http://echo.htmlacademy.ru" class="page-header__search search" method="POST">
-				<input type="text" name="text-search" class="search__input">
-				<button type="submit" class="search__button">Найти</button>
+				<label for="search" class="visually-hidden">Форма поиска</label>
+				<input type="text" name="text-search" id="search" class="search__input" placeholder="Найти...">
+				<button type="submit" class="search__button">
+					<span class="visually-hidden">Найти</span>
+					<svg fill="#777777" width="23" height="23">
+						<use xlink:href="#icon-search"></use>
+					</svg>
+				</button>
 			</form>
 			<button class="page-header__toggle-search" type="button">
 				<span class="visually-hidden">Открыть поиск</span>

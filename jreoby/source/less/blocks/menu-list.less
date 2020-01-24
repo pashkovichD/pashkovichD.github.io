@@ -74,7 +74,7 @@
 
 			position: absolute;
 			top: 50%;
-			right: 20px;
+			right: 27px;
 
 			width: 8px;
 			height: 8px;
@@ -111,10 +111,17 @@
 
 .menu-list__item--active {
 
-	& > a {
-		
+	& > a {		
+		color: #f39f18;
+
+		svg {
+			fill: #f39f18;
+		}
+
 		&::after {
 			transform: rotate(45deg);
+			border-right: 1px solid #f39f18;
+			border-bottom: 1px solid #f39f18;
 		}
 	}
 }
@@ -164,12 +171,12 @@
 
 	a {
 		position: relative;
-		padding-left: 50px;
+		padding-left: 40px;
 
 		svg {
 			position: absolute;
 			top: 13px;
-			left: 28px;
+			left: 20px;
 		}
 	}
 }
