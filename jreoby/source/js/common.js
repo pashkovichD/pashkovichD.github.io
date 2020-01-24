@@ -1,6 +1,6 @@
 var hamburger = document.querySelector('.page-header__toggle-nav');
-var search = document.querySelector('.page-header__toggle-search');
-
+var searchButton = document.querySelector('.page-header__toggle-search');
+var searchForm = document.querySelector('.search');
 
 var nav = document.querySelector('.main-nav__list');
 // var menuItem = document.querySelectorAll('.menu-list__item--fiz, .menu-list__item--ur'); // выбор конкретных пуктов (то же работает)
@@ -10,7 +10,8 @@ var linkSeconddown = document.querySelector('.menu-list__seconddown-link');
 var listSeconddown = document.querySelector('.menu-list__seconddown');
 
 
-/* работа кнопки меню-гамбургера */
+
+/* работа кнопки меню-гамбургера и появление меню */
 hamburger.addEventListener('click', function (e) {
 	e.preventDefault();
 
@@ -26,10 +27,15 @@ hamburger.addEventListener('click', function (e) {
 });
 
 /* show поиска */
-search.addEventListener('click', function (e) {
+searchButton.addEventListener('click', function (e) {
 	e.preventDefault();
+	
 	// this.classList.toggle('hamburger__click');
-	alert("OK");
+	searchForm.classList.toggle('search__show');
+	if(searchForm.classList.contains('search__show')) {		
+		searchShow = true; // форма поиска показана
+	}
+	
 });
 
 /* робота главного меню */
@@ -89,12 +95,15 @@ linkSeconddown.addEventListener('click', function (e) {
 
 // действие по нажатию на ESC
 window.addEventListener('keydown', function (e) {
-	if (e.which == 27) {		
-		if(leftHamburger) { // скрыть гланое меню
-			hideDropdown();
-			hamburger.classList.remove('hamburger__click');
-			nav.classList.remove('menu-list__show');
-			leftHamburger = false; // меню скрыто
-		}
+	if (e.which == 27 && leftHamburger) { // скрыть меню
+		hideDropdown();
+		hamburger.classList.remove('hamburger__click');
+		nav.classList.remove('menu-list__show');
+		leftHamburger = false; // меню скрыто		
+	}
+
+	if (e.which == 27 && searchShow) { // скрыть форму поиска
+		searchForm.classList.remove('search__show');
+		searchShow = false; // форма поиска скрыта
 	}
 })

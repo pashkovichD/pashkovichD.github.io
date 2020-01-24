@@ -339,13 +339,22 @@ input[type="radio"].visually-hidden {
 }
 .search {
   position: fixed;
-  top: 0;
+  top: -300px;
   left: 0;
   right: 0;
   width: 320px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.search__show {
+  top: 0;
+  opacity: 1;
 }
 .search__input {
   position: relative;
@@ -389,6 +398,14 @@ input[type="radio"].visually-hidden {
 .search__button:hover,
 .search__button:focus {
   opacity: 1;
+}
+@media (min-width: 600px) {
+  .search {
+    width: 580px;
+  }
+  .search__button {
+    right: 38px;
+  }
 }
 .main-nav {
   position: relative;
