@@ -5,8 +5,6 @@
 	right: 0;
 	width: 320px;
 	margin: 0 auto;
-	
-	font-size: 18px;
 
 	background-color: rgba(255, 255, 255, 0.9);
 	z-index: 2;	
@@ -27,6 +25,7 @@
 	width: 90%;
 	margin: 20px auto 10px auto;
 	padding-left: 10px;
+	padding-right: 42px;
 
 	font-family: inherit;
 	font-size: 30px;
@@ -84,7 +83,37 @@
 }
 
 @media (min-width: @tablet-width) {
+	.search {
+		position: absolute;
+		top: -38px;
+		left: 50%;
 
+		width: 200px;
+		margin: 0;
+		margin-left: -10px;
+		
+		background-color: transparent;
+		opacity: 1;
+		transition: none;
+	}
+
+	.search__input {
+		margin: 0;
+		padding-right: 25px;
+		font-size: 18px;
+
+		border: 1px solid #e7e7e7;
+	}
+
+	.search__button {
+		top: 4px;
+		right: 25px;
+
+		svg {
+			width: 18px;
+			height: 18px;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {

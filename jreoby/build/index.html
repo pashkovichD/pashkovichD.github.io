@@ -57,97 +57,99 @@
 	</div>
 
 	<header class="page-header">
-		<a class="page-header__logo">
-			<svg width="300" height="100">
-				<use xlink:href="#icon-logo"></use>
-			</svg>
-		</a>
-		<p class="page-header__address">г. Новополоцк,<br> ул. Молодежная, 102а</p>
-		<div class="page-header__wrapper-rigth">
-			<form action="http://echo.htmlacademy.ru" class="page-header__search search" method="POST">
-				<label for="search" class="visually-hidden">Форма поиска</label>
-				<input type="text" name="text-search" id="search" class="search__input" placeholder="Найти...">
-				<button type="submit" class="search__button">
-					<span class="visually-hidden">Найти</span>
-					<svg fill="#777777" width="23" height="23">
+		<div class="page-header__wrapper">
+			<a class="page-header__logo">
+				<svg width="300" height="100">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+			</a>
+			<p class="page-header__address">г. Новополоцк,<br> ул. Молодежная, 102а</p>
+			<div class="page-header__wrapper-rigth">
+				<form action="http://echo.htmlacademy.ru" class="page-header__search search" method="POST">
+					<label for="search" class="visually-hidden">Форма поиска</label>
+					<input type="text" name="text-search" id="search" class="search__input" placeholder="Найти...">
+					<button type="submit" class="search__button">
+						<span class="visually-hidden">Найти</span>
+						<svg fill="#777777" width="23" height="23">
+							<use xlink:href="#icon-search"></use>
+						</svg>
+					</button>
+				</form>
+				<button class="page-header__toggle-search" type="button">
+					<span class="visually-hidden">Открыть поиск</span>
+					<svg fill="#777777" width="20" height="20">
 						<use xlink:href="#icon-search"></use>
 					</svg>
 				</button>
-			</form>
-			<button class="page-header__toggle-search" type="button">
-				<span class="visually-hidden">Открыть поиск</span>
-				<svg fill="#777777" width="20" height="20">
-					<use xlink:href="#icon-search"></use>
-				</svg>
-			</button>
-			<button class="page-header__toggle-nav hamburger" type="button">
-				<span class="visually-hidden">Открыть меню</span>
-				<span class="hamburger__line"></span>
-			</button>
-			<nav class="main-nav">
-				<h2 class="visually-hidden">Главное меню</h2>
-				<!-- <svg fill="#777777" width="35" height="45">
-					<use xlink:href="#icon-question2"></use>
-				</svg>
-				<svg fill="#777777" width="35" height="45">
-					<use xlink:href="#icon-question"></use>
-				</svg>
-				<svg fill="#777777" width="50" height="35">
-					<use xlink:href="#icon-contacts"></use>
-				</svg>-->
-				
-				<ul class="main-nav__list menu-list">
-					<li class="menu-list__item menu-list__item--fiz">
-						<a href="#">							
-							<span><svg fill="#ffffff" width="25" height="30">
-								<use xlink:href="#icon-fiz"></use>
-							</svg>Для физических лиц</span>
-						</a>
-						<ul class="menu-list__dropdown">
-							<li><a href="administration.html">Руководство</a></li>
-							<li><a href="aup.html">Управление КУП ЖРЭО</a></li>
-							<li><a href="#" class="menu-list__seconddown-link">Структура</a>
-								<ul class="menu-list__seconddown">
-									<li><a href="jes.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>ЖЭС №1-9</a></li>
-									<li><a href="transport.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Транспортная служба</a></li>
-									<li><a href="rss.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Ремонтно-строительная служба (РСС)</a></li>
-									<li><a href="station.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Диагностическая станция</a></li>
-									<li><a href="skits.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Служба котельных (СКиТС)</a></li>
-									<li><a href="ads.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Аварийно-диспетчерская служба (АДС)</a></li>
-								</ul>
-							</li>
-							<li><a href="profkom.html">Профком</a></li>
-							<li><a href="vacancies.html">Вакансии</a></li>
-							<li><a href="price-list.html">Прейскурант цен</a></li>
-							<li><a href="san-content.html">Сан. содержание</a></li>
-							<li><a href="auto-services.html">Автоуслуги</a></li>
-							<li><a href="laboratory.html">Лаборатория</a></li>
-							<li><a href="janovo.html">База отдыха "Яново"</a></li>
-							<li><a href="one-window.html">"Одно окно"</a></li>
-							<li><a href="photo.html">Фотогалерея</a></li>
-							<li><a href="video.html">Видео</a></li>
-						</ul>
-					</li>
-					<li class="menu-list__item menu-list__item--ur">
-						<a href="#">
-							<span><svg fill="#ffffff" width="30" height="45">
-								<use xlink:href="#icon-ur"></use>
-							</svg>Для юридических лиц</span>
-						</a>
-						<ul class="menu-list__dropdown">
-							<li><a href="tender.html">Тендеры</a></li>
-							<li><a href="information.html">Информация</a></li>
-							<li><a href="invoice.html">Счет-фактуры</a></li>
-						</ul>
-					</li>
-					<li class="menu-list__item">
-						<a href="question.html">Вопрос-ответ</a>
-					</li>
-					<li class="menu-list__item">
-						<a href="contacts.html">Контакты</a>
-					</li>
-				</ul>
-			</nav>
+				<button class="page-header__toggle-nav hamburger" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>
+				<nav class="main-nav">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<!-- <svg fill="#777777" width="35" height="45">
+						<use xlink:href="#icon-question2"></use>
+					</svg>
+					<svg fill="#777777" width="35" height="45">
+						<use xlink:href="#icon-question"></use>
+					</svg>
+					<svg fill="#777777" width="50" height="35">
+						<use xlink:href="#icon-contacts"></use>
+					</svg>-->
+					
+					<ul class="main-nav__list menu-list">
+						<li class="menu-list__item menu-list__item--fiz">
+							<a href="#">							
+								<span><svg fill="#ffffff" width="25" height="30">
+									<use xlink:href="#icon-fiz"></use>
+								</svg>Для физических лиц</span>
+							</a>
+							<ul class="menu-list__dropdown">
+								<li><a href="administration.html">Руководство</a></li>
+								<li><a href="aup.html">Управление КУП ЖРЭО</a></li>
+								<li><a href="#" class="menu-list__seconddown-link">Структура</a>
+									<ul class="menu-list__seconddown">
+										<li><a href="jes.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>ЖЭС №1-9</a></li>
+										<li><a href="transport.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Транспортная служба</a></li>
+										<li><a href="rss.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Ремонтно-строительная служба (РСС)</a></li>
+										<li><a href="station.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Диагностическая станция</a></li>
+										<li><a href="skits.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Служба котельных (СКиТС)</a></li>
+										<li><a href="ads.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Аварийно-диспетчерская служба (АДС)</a></li>
+									</ul>
+								</li>
+								<li><a href="profkom.html">Профком</a></li>
+								<li><a href="vacancies.html">Вакансии</a></li>
+								<li><a href="price-list.html">Прейскурант цен</a></li>
+								<li><a href="san-content.html">Сан. содержание</a></li>
+								<li><a href="auto-services.html">Автоуслуги</a></li>
+								<li><a href="laboratory.html">Лаборатория</a></li>
+								<li><a href="janovo.html">База отдыха "Яново"</a></li>
+								<li><a href="one-window.html">"Одно окно"</a></li>
+								<li><a href="photo.html">Фотогалерея</a></li>
+								<li><a href="video.html">Видео</a></li>
+							</ul>
+						</li>
+						<li class="menu-list__item menu-list__item--ur">
+							<a href="#">
+								<span><svg fill="#ffffff" width="30" height="45">
+									<use xlink:href="#icon-ur"></use>
+								</svg>Для юридических лиц</span>
+							</a>
+							<ul class="menu-list__dropdown">
+								<li><a href="tender.html">Тендеры</a></li>
+								<li><a href="information.html">Информация</a></li>
+								<li><a href="invoice.html">Счет-фактуры</a></li>
+							</ul>
+						</li>
+						<li class="menu-list__item">
+							<a href="question.html">Вопрос-ответ</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 

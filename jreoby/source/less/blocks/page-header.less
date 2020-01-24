@@ -1,7 +1,4 @@
-.page-header {	
-	// display: flex;
-	// flex-wrap: wrap;
-
+.page-header {
 	width: 320px;
 	margin: 0 auto;	
 	padding-top: 20px;
@@ -77,10 +74,13 @@
 
 @media (min-width: @custom-width) {
 	.page-header {		
+		width: 580px;
+	}
+
+	.page-header__wrapper {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		width: 580px;
 	}
 
 	.page-header__logo {
@@ -113,14 +113,34 @@
 
 @media (min-width: @tablet-width) {
 	.page-header {		
-		width: 768px;
+		width: 100%;
 		// padding: 0 30px;	
-	}	
+	}
+
+	.page-header__wrapper {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	.page-header__wrapper-rigth {
+		position: relative;
+		padding-top: 0;
+	}
+
+	.page-header__toggle-search {
+		display: none;		
+	}
+
+	.page-header__toggle-nav {
+		display: none;
+	}
+
+	
 }
 
 @media (min-width: @desktop-width) {
 	.page-header {		
-		width: 1200px;		
+		
 		// padding: 0 40px;
 	}
 	

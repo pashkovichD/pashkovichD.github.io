@@ -167,7 +167,7 @@
 
 	height: 0;
 	overflow: hidden;
-	transition: all 3s ease;
+	transition: all .5s ease;
 
 	a {
 		position: relative;
@@ -183,15 +183,41 @@
 
 @media (min-width: @custom-width) {
 	.menu-list {
-		// left: -100%;
-		// opacity: 0;
+		
 	}
 }
 
 @media (min-width: @tablet-width) {
 	.menu-list {
+		display: flex;
+		justify-content: space-between;
+
 		opacity: 1;
 		left: 0;
+	}
+
+	.menu-list__item--fiz,
+	.menu-list__item--ur {
+		width: 320px;
+
+		a {
+			&::after {
+				content: none;
+			}
+		}
+	}
+
+	.menu-list__item {		
+
+		& > a {
+			color: #555555;
+
+			background-color: transparent;
+
+			svg {
+				fill: #555555;
+			}
+		}
 	}
 }
 
