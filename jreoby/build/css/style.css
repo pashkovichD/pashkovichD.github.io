@@ -314,7 +314,7 @@ input[type="radio"].visually-hidden {
   }
   .page-header__address {
     width: 230px;
-    margin-top: 30px;
+    margin-top: 34px;
     margin-bottom: 0;
     padding-right: 20px;
     line-height: 20px;
@@ -598,9 +598,9 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .menu-list__dropdown a {
   display: block;
@@ -626,9 +626,9 @@ input[type="radio"].visually-hidden {
   background-color: #eaeaea;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.1s ease-out;
-  -o-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
+  -webkit-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
 }
 .menu-list__seconddown a {
   position: relative;

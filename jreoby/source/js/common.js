@@ -10,6 +10,12 @@ var linkSeconddown = document.querySelector('.menu-list__seconddown-link');
 var listSeconddown = document.querySelector('.menu-list__seconddown');
 
 
+/* действия при изменении ширины экрана */
+window.onresize = function(event) {
+	var widthBody = document.body.clientWidth;
+
+};
+
 
 /* работа кнопки меню-гамбургера и появление меню */
 hamburger.addEventListener('click', function (e) {
@@ -51,6 +57,7 @@ menuItem.forEach(function(el) { // перебираем массив
 					hideDropdown();
 					parent.classList.add('menu-list__item--active');
 					el.style.height = el.scrollHeight + 'px';
+					// el.style.height = 'auto';
 				}				
 			}			
 		});	
@@ -71,25 +78,16 @@ function hideDropdown() {
 
 /* сделано из расчета одного такого меню, если их будет несколько, то нужно всё делать через querySelectorAll() и перебор массива */
 linkSeconddown.addEventListener('click', function (e) {
-	e.stopPropagation(); // отменяет событие для родителя	
-	
-	var parent = this.parentNode.parentNode.style.height; // string
-	var heightParent = Number(parent.substr(0, parent.length - 2)); // высота родителя - число
+	e.stopPropagation(); // отменяет событие для родителя
 	var heightList = listSeconddown.style.height; // высота подменю - string
 
-	if(heightList.length > 1) {
-		heightList = Number(heightList.substr(0, heightList.length - 2)); // отрезаем px и делаем число
-	} else {
-		heightList = 0;
-	}	
-
-	if(heightList > 0) {
-		listSeconddown.style.height = '0';
-		this.parentNode.parentNode.style.height = heightParent - listSeconddown.scrollHeight + 'px';
+	if(heightList == 'auto') {
+		listSeconddown.style.height = '0';		
+		this.parentNode.parentNode.style.height = 'auto';
 
 	} else {
-		listSeconddown.style.height = listSeconddown.scrollHeight + 'px';
-		this.parentNode.parentNode.style.height = heightParent + listSeconddown.scrollHeight + 'px';
+		listSeconddown.style.height = 'auto';
+		this.parentNode.parentNode.style.height = 'auto';
 	}	
 });
 
