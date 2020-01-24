@@ -326,6 +326,9 @@ input[type="radio"].visually-hidden {
   .page-header__wrapper-rigth {
     width: 100%;
   }
+  .page-header__toggle-search {
+    margin-left: 20px;
+  }
 }
 @media (min-width: 768px) {
   .page-header {
