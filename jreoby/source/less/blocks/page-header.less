@@ -130,8 +130,24 @@
 	.page-header__toggle-nav {
 		display: none;
 	}
+}
 
-	
+@media (min-width: @custom940-width) {
+	.page-header__wrapper {
+		width: 100%;
+	}
+
+	.page-header__address {
+		margin-right: 25px;
+	}
+
+	.page-header__wrapper-rigth {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 30px;
+
+		box-sizing: border-box;
+	}
 }
 
 @media (min-width: @desktop-width) {
@@ -159,6 +175,7 @@
 
 		width: auto;
 		margin-top: 0;
+		margin-right: 0;
 
 		color: #aaaaaa;
 
@@ -169,7 +186,9 @@
 
 	.page-header__wrapper-rigth {
 		width: 820px;
+		margin: 0;
 		margin-bottom: 5px;
+		padding: 0;
 	}
 	
 }
