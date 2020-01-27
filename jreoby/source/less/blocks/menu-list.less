@@ -109,6 +109,18 @@
 	}
 }
 
+.menu-list__item--question,
+.menu-list__item--contacts {	
+	& > a {
+		span {
+			svg {
+				display: none;
+				// transition: @anim;
+			}
+		}		
+	}
+}
+
 .menu-list__item--active {
 
 	& > a {		
@@ -190,24 +202,13 @@
 @media (min-width: @tablet-width) {
 	.menu-list {
 		display: flex;
-		justify-content: space-between;
 
 		opacity: 1;
 		left: 0;
-	}
-
-	.menu-list__item--fiz,
-	.menu-list__item--ur {
-		width: 320px;
-
-		a {
-			&::after {
-				content: none;
-			}
-		}
-	}
+	}	
 
 	.menu-list__item {		
+		border-bottom: none;
 
 		& > a {
 			color: #555555;
@@ -216,6 +217,121 @@
 
 			svg {
 				fill: #555555;
+			}
+		}
+	}
+
+	.menu-list__item--fiz,
+	.menu-list__item--ur {
+		width: 280px;
+
+		a {
+			&::after {
+				content: none;
+			}
+		}
+		&:hover .menu-list__dropdown {
+			top: 48px;
+			opacity: 1;
+			visibility: visible;				
+		}
+	}
+
+	.menu-list__item--fiz {
+		a {
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 5px;
+				right: 20px;
+
+				width: 1px;
+				height: 40px;
+
+				background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(175,175,175,1) 50%, rgba(255,255,255,1) 100%);
+			}
+		}
+	}
+
+	.menu-list__item--question,
+	.menu-list__item--contacts {
+		width: 50px;
+		margin-left: auto;		
+
+		& > a {			
+			display: block;
+			width: 100%;			
+			span {
+				display: block;
+				width: 100%;
+				height: auto;
+				svg {
+					top: 0;
+					left: 0;
+
+					display: inline-block;
+					width: 80%;
+				}
+				.menu-list__item-text {
+					position: absolute;
+					bottom: 40px;
+					right: 20px;
+					min-width: 100px;
+					padding: 4px 10px;
+
+					font-size: 15px;
+					color: #ffffff;
+
+					border-radius: 3px;
+					background-color: @tooltip-color;
+
+					opacity: 0;
+					visibility: hidden;
+					transition: all .25s ease-out;
+
+					&::after {
+						position: absolute;
+						right: 3px;
+						bottom: -5px;
+						content: '';
+
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 10px 10px 0 10px;
+						border-color: @tooltip-color transparent transparent transparent;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			.menu-list__item-text {
+				bottom: 10px;
+				opacity: .9;
+				visibility: visible;
+			}
+		}
+	}	
+
+	.menu-list__item--contacts {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+	.menu-list__dropdown {
+		position: absolute;
+		top: 120px;
+		width: 260px;
+		height: auto !important; // не очень правильно, но это сделано для того, чтобы при изменении ширины экрана работал :hover без использования JS (чтобы JS-менять высоту с 0 на auto)
+
+		opacity: 0;
+		visibility: hidden;
+		transition: all .25s ease-out;
+		a {
+			&::before {
+				content: none;
 			}
 		}
 	}

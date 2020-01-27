@@ -88,7 +88,7 @@
 		top: -38px;
 		left: 50%;
 
-		width: 200px;
+		width: 175px;
 		margin: 0;
 		margin-left: -10px;
 		
@@ -98,6 +98,8 @@
 	}
 
 	.search__input {
+		width: 100%;
+
 		margin: 0;
 		padding-right: 25px;
 		font-size: 18px;
@@ -107,7 +109,7 @@
 
 	.search__button {
 		top: 4px;
-		right: 25px;
+		right: 5px;
 
 		svg {
 			width: 18px;
@@ -117,5 +119,23 @@
 }
 
 @media (min-width: @desktop-width) {
+	.search {
+		left: 10px;
 
+		width: 300px;
+	}
+
+	.search__input {
+		padding: 3px 30px 3px 10px;
+	}
+
+	.search__button {
+		top: 5px;
+		right: 5px;
+
+		svg {
+			width: 21px;
+			height: 21px;
+		}
+	}
 }
