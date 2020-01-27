@@ -122,7 +122,7 @@ body {
   line-height: 25px;
   font-weight: 400;
   color: #777777;
-  background-color: #ffffff;
+  background-color: #eeeeee;
 }
 :focus {
   outline: none;
@@ -172,6 +172,11 @@ input[type="radio"].visually-hidden {
 .button:active {
   background-color: #d5c9bd;
   color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 768px) {
+  body {
+    background-color: #ffffff;
+  }
 }
 .overlay {
   display: none;
@@ -903,9 +908,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: none;
 }
-.slider__item:nth-child(5) {
-  display: block;
-}
 .slider__item img {
   display: block;
 }
@@ -983,7 +985,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
   -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
@@ -993,9 +995,38 @@ input[type="radio"].visually-hidden {
 }
 .slider__toggle:hover,
 .slider__toggle:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.slider__toggle--active {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 0 2px #8E8B56, 0 0 0 4px #fc0;
           box-shadow: 0 0 0 2px #8E8B56, 0 0 0 4px #fc0;
+}
+.slider-show {
+  display: block;
+  -webkit-animation-name: slideShow;
+          animation-name: slideShow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@-webkit-keyframes slideShow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideShow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slider--nojs .slider__item:nth-child(1) {
+  display: block;
 }
 @media (min-width: 768px) {
   .slider {
@@ -1059,5 +1090,37 @@ input[type="radio"].visually-hidden {
   .slider__toggle {
     width: 10px;
     height: 10px;
+  }
+}
+.tabs__section {
+  display: none;
+}
+.tabs__section p {
+  margin: 0 0 5px;
+  line-height: 1.5;
+  color: #383838;
+  /* прикрутим анимацию */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

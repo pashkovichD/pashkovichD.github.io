@@ -1,8 +1,5 @@
-var toggles = document.querySelectorAll('.advantages__toggles .slider__toggle');
-var items = document.querySelectorAll('.advantages__list .slider__item');
-
-var togglesReview = document.querySelectorAll('.review__toggles .slider__toggle');
-var itemsReview = document.querySelectorAll('.review__item');
+var toggles = document.querySelectorAll('.slider__toggle');
+var items = document.querySelectorAll('.slider__item');
 
 var prev = document.querySelector('.slider__prev');
 var next = document.querySelector('.slider__next');
@@ -14,7 +11,7 @@ slider.forEach(function(el) {
 });
 
 function startSlider(toggles, items, prev, next) {
-	num = 0;	
+	num = 0;
 	items[num].classList.add('slider-show'); // показываем первый слайд
 
 	toggles.forEach(function(el) { // перебираем массив (список точек)    
@@ -23,7 +20,7 @@ function startSlider(toggles, items, prev, next) {
 			e.preventDefault();
 			removeStyle(); // удаляем стили видимости слайдов и активного button
 
-			num = this.textContent - 1; // получаем номер button, который прописан в span.visually-hidden и, уменьшая на 1, получаем номер соответствующего элемента массива (вернее, NodeList'а) item			
+			num = this.textContent - 1; // получаем номер button, который прописан в span.visually-hidden и, уменьшая на 1, получаем номер соответствующего элемента массива (вернее, NodeList'а) item
 			slideShow(); // показываем слайд и активный button
 	    });
 	});
@@ -34,7 +31,7 @@ function startSlider(toggles, items, prev, next) {
 			removeStyle(); // удаляем стили видимости слайдов и активного button
 
 			num--;
-			if(num == -1) {num = 2;}
+			if(num == -1) {num = 4;}
 			slideShow(); // показываем слайд и активный button
 		});
 
@@ -43,14 +40,14 @@ function startSlider(toggles, items, prev, next) {
 			removeStyle(); // удаляем стили видимости слайдов и активного button
 
 			num++;
-			if(num == 3) {num = 0;}
-			slideShow(); // показываем слайд и активный button			
+			if(num == 5) {num = 0;}
+			slideShow(); // показываем слайд и активный button
 		});
-	}	
+	}
 
 	function removeStyle() {		
 		// скрываем все слайды
-		items.forEach(function(item) {
+		items.forEach(function(item) {			
 			item.classList.remove('slider-show');
 		});
 
@@ -60,7 +57,7 @@ function startSlider(toggles, items, prev, next) {
 		});
 	}
 
-	function slideShow() {
+	function slideShow() {		
 		items[num].classList.add('slider-show');
 		toggles[num].classList.add('slider__toggle--active'); // делаем активной button
 	}
@@ -68,5 +65,5 @@ function startSlider(toggles, items, prev, next) {
 	return;
 }
 
-startSlider(toggles, items); // первый слайдер
-startSlider(togglesReview, itemsReview, prev, next); // второй слайдер
+// startSlider(toggles, items); // первый слайдер
+startSlider(toggles, items, prev, next); // второй слайдер
