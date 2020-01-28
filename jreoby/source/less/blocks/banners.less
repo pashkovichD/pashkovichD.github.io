@@ -22,22 +22,44 @@
 }	
 
 .banners__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	margin: 0;
-	padding: 0;
+	padding: 10px;	
 
 	list-style: none;
 }
 
-@media (min-width: @custom-width) {
+.banners__item {	
+	width: 48%;
+	margin-bottom: 10px;	
 
+	a {
+		display: block;	
+
+		img {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: @custom-width) {
+	.banners__item {
+		width: 24%;
+	}
 }
 
 @media (min-width: @tablet-width) {
-
+	.banners__item {
+		width: 18.5%;
+	}
 }
 
 @media (min-width: @custom940-width) {
-
+	.banners__item {
+		width: 48%;
+	}
 }
 
 @media (min-width: @desktop-width) {
