@@ -1,6 +1,8 @@
 .page-footer {
 	width: 320px;
-	margin: 0 auto;	
+	margin: 0 auto;
+
+	background-color: #3d4647;
 
 	box-sizing: border-box;
 }
@@ -9,6 +11,19 @@
 	padding: 0 20px;
 
 	box-sizing: border-box;
+}
+
+.page-footer__title {
+	margin: 0;
+	padding: 0;	
+	padding-bottom: 3px;
+	padding-top: 7px;
+
+	font-size: 20px;
+	font-weight: 300;
+	color: #fff;
+	border-bottom: 1px solid #bd7a1c;
+	background: #454b4c;
 }
 
 @media (min-width: @custom-width) {
@@ -30,12 +45,14 @@
 
 @media (min-width: @custom940-width) {
 	.page-footer__wrapper {
-		width: 95%;
+		width: 100%;
+		padding: 0 20px;
 	}
 }
 
 @media (min-width: @desktop-width) {
 	.page-footer__wrapper {
 		width: 1200px;
+		padding: 0;
 	}
 }
