@@ -113,8 +113,6 @@
 } */
 body {
   min-width: 320px;
-  /* demo */
-  min-height: 2000px;
   margin: 0;
   padding: 0;
   font-family: 'Exo 2', Tahoma, Verdana, sans-serif;
@@ -279,7 +277,9 @@ input[type="radio"].visually-hidden {
 .page-header__wrapper-rigth {
   position: relative;
   padding-top: 10px;
+  padding-bottom: 3px;
   border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .page-header__toggle-search {
   width: 20px;
@@ -349,6 +349,8 @@ input[type="radio"].visually-hidden {
   .page-header__wrapper-rigth {
     position: relative;
     padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
   }
   .page-header__toggle-search {
     display: none;
@@ -625,6 +627,7 @@ input[type="radio"].visually-hidden {
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  z-index: 2;
 }
 .menu-list__show {
   left: 0;
@@ -1095,17 +1098,22 @@ input[type="radio"].visually-hidden {
 .tabs__section {
   display: none;
 }
-.tabs__section p {
-  margin: 0 0 5px;
+.tabs__section {
   line-height: 1.5;
   color: #383838;
+}
+.tabs__section p {
+  margin: 0;
+  padding: 0;
+}
+.tabs__wrapper {
   /* прикрутим анимацию */
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+          animation-name: fadeIn;
 }
 /* Описываем анимацию свойства opacity */
 @-webkit-keyframes fadeIn {
@@ -1122,5 +1130,127 @@ input[type="radio"].visually-hidden {
   }
   to {
     opacity: 1;
+  }
+}
+.tabs__label {
+  display: inline-block;
+  color: #cccccc;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.tabs__label:hover {
+  color: #339B37;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs__input {
+  display: none;
+  position: absolute;
+}
+.tabs__input:checked + label {
+  color: #555555;
+  border-top: 2px solid #339B37;
+  background: #dddddd;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked ~ #tabs__content1,
+#tab2:checked ~ #tabs__content2,
+#tab3:checked ~ #tabs__content3 {
+  display: block;
+}
+.page-main__two-columns {
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px 20px 0 20px;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-main__label {
+  padding: 0px 10px 0px 10px;
+}
+.page-main__label span {
+  display: none;
+}
+.page-main__section {
+  padding-top: 10px;
+  border-top: 1px solid #dddddd;
+}
+@media (min-width: 600px) {
+  .page-main__two-columns {
+    width: 580px;
+  }
+}
+@media (min-width: 768px) {
+  .page-main__two-columns {
+    width: 768px;
+  }
+}
+@media (min-width: 940px) {
+  .page-main__two-columns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .page-main__one {
+    width: 70%;
+  }
+  .page-main__two {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-main__two-columns {
+    width: 1200px;
+    padding: 0;
+  }
+  .page-main__one {
+    width: 900px;
+  }
+  .page-main__two {
+    width: 300px;
+  }
+}
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-footer__wrapper {
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (min-width: 600px) {
+  .page-footer {
+    width: 580px;
+  }
+}
+@media (min-width: 768px) {
+  .page-footer {
+    width: 100%;
+  }
+  .page-footer__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 940px) {
+  .page-footer__wrapper {
+    width: 95%;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 1200px;
   }
 }
