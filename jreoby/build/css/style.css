@@ -1239,6 +1239,13 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.page-footer__top {
+  margin-bottom: 50px;
+}
+.page-footer__bottom {
+  position: relative;
+  border-top: 1px solid #bd7a1c;
+}
 .page-footer__wrapper {
   padding: 0 20px;
   -webkit-box-sizing: border-box;
@@ -1254,6 +1261,26 @@ input[type="radio"].visually-hidden {
   color: #fff;
   border-bottom: 1px solid #bd7a1c;
   background: #454b4c;
+}
+.page-footer__copyright {
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 23px;
+}
+.page-footer__counters {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page-footer__counter {
+  margin-right: 5px;
 }
 @media (min-width: 600px) {
   .page-footer {
