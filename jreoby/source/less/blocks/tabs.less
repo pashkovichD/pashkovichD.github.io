@@ -9,11 +9,6 @@
 .tabs__section {
 	line-height: 1.5;
 	color: #383838;
-
-	p {
-		margin: 0;
-		padding: 0;
-	}
 }
 
 .tabs__wrapper {
@@ -44,6 +39,8 @@
 .tabs__label {
 	display: inline-block;
 	color: #cccccc;
+
+	user-select: none;
 
 	transition: @anim;
 
@@ -78,7 +75,9 @@
 }
 
 @media (min-width: @tablet-width) {
-
+	.tabs__wrapper {
+		padding: 0 10px;
+	}
 }
 
 @media (min-width: @custom940-width) {
