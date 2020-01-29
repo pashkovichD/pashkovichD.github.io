@@ -14,6 +14,8 @@
 	position: relative;
 
 	margin: 0 auto;
+
+	box-sizing: border-box;
 }
 
 .slider__list {
@@ -66,11 +68,11 @@
 }
 
 .slider__prev {
-	left: 30px;
+	left: 50px;
 	transform: rotate(-45deg);
 }
 .slider__next {
-	right: 30px;
+	right: 50px;
 	transform: rotate(135deg);
 }
 .slider__prev:hover,
@@ -85,7 +87,7 @@
 
 .slider__toggles {
 	position: absolute;
-	right: 30px;
+	right: 50px;
 	bottom: 20px;
 
 	display: flex;
@@ -150,6 +152,7 @@
 
 	.slider__wrapper {
 		width: 768px;
+		padding: 0 20px;
 	}
 
 	.slider__description {
@@ -189,7 +192,7 @@
 
 	.slider__wrapper {
 		width: 1200px;
-		padding: 0;		
+		
 	}
 
 	.slider__description {
@@ -201,18 +204,9 @@
 		border-left: 2px solid #ffffff;
 		border-top: 2px solid #ffffff;
 	}
-
-	.slider__prev {
-		left: 40px;
-	}
-
-	.slider__next {
-		right: 40px;
-	}
-
+	
 	.slider__toggles {
-		width: 120px;
-		right: 30px;
+		width: 120px;	
 	}
 	.slider__toggle {
 		width: 10px;
