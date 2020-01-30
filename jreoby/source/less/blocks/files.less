@@ -28,6 +28,7 @@
 	list-style: none;
 
 	border-top: 1px solid #edd3ae;
+	border-bottom: 1px solid #edd3ae;
 }
 
 .files__item {
@@ -46,6 +47,10 @@
 		border-bottom: 1px dashed #e4eae2;
 
 		transition: @anim;
+
+		&:last-child {
+			border-bottom: none;
+		}
 
 		&::before {
 			position: absolute;
@@ -92,7 +97,7 @@
 	}
 
 	.files__description {
-		width: 400px;
+		width: 440px;
 
 		padding-left: 20px;
 		text-align: left;
