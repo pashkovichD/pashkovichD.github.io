@@ -9,6 +9,9 @@ var dropdown = document.querySelectorAll('.menu-list__dropdown');
 var linkSeconddown = document.querySelector('.menu-list__seconddown-link');
 var listSeconddown = document.querySelector('.menu-list__seconddown');
 
+var buttonMore = document.querySelector('.info__more-button');
+var more = document.querySelector('.info__more');
+
 
 /* действия при изменении ширины экрана */
 window.onresize = function(event) {
@@ -105,3 +108,15 @@ window.addEventListener('keydown', function (e) {
 		searchShow = false; // форма поиска скрыта
 	}
 })
+
+
+/* раскрытие блока на нажатию на кнопку MORE */
+buttonMore.addEventListener('click', function (e) {
+	e.preventDefault();	
+	if(this.style.display == 'block';) {
+		this.style.display = 'none';
+	} else {
+		this.style.display = 'block';	
+	}
+	
+});

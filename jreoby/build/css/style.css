@@ -1389,12 +1389,37 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
   padding: 0;
   font-size: 28px;
+  text-align: center;
 }
 .info__text {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  text-align: justify;
+}
+.info__more {
+  display: none;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .info__list {
   margin: 0;
@@ -1405,6 +1430,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 @media (min-width: 600px) {
+  .info__text-title {
+    text-align: left;
+  }
+  .info__text {
+    text-align: justify;
+  }
+  .info__more-button {
+    display: none;
+  }
+  .info__more {
+    display: block;
+  }
   .info__link-bottom {
     padding-left: 10px;
   }
