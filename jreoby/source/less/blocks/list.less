@@ -1,0 +1,111 @@
+/* .list {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+
+	list-style: none;
+
+	counter-reset: li;
+}
+
+.list__item {
+	a {
+		text-decoration: none;
+		color: red;
+	}
+} */
+
+/* список с 1-9 пунктов */
+.list {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+
+	list-style: none;
+
+	counter-reset: li;
+}
+
+.list__item {
+	position: relative;
+
+	margin-bottom: 10px;
+	
+
+	color: #231F20;
+
+	// background: red;
+	
+
+	a {
+		position: relative;
+
+		display: block;
+		padding: 5px 10px 5px 50px;
+
+		text-decoration: none;
+		color: #777777;
+
+		border: 1px solid #dddddd;
+		border-radius: 3px;
+
+		transition: @anim;
+
+		&::before {
+			counter-increment: li;
+			content: counter(li);
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 35px;
+			height: 100%;
+			padding-top: 6px;
+
+			text-align: center;
+			color: #aaaaaa;
+
+			background: #eeeeee;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+
+			box-sizing: border-box;
+			transition: @anim;
+		}
+
+		&:hover,
+		&:focus {
+			color: #000000;
+
+			border: 1px solid #329a00;
+			box-shadow: none;
+
+			&::before {
+				color: #ffffff;
+
+				background-color: #329a00;				
+			}	
+		}
+	}
+
+	
+
+
+}
+
+@media (min-width: @custom-width) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
