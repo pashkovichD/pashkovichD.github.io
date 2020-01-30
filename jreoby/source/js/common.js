@@ -9,8 +9,7 @@ var dropdown = document.querySelectorAll('.menu-list__dropdown');
 var linkSeconddown = document.querySelector('.menu-list__seconddown-link');
 var listSeconddown = document.querySelector('.menu-list__seconddown');
 
-var buttonMore = document.querySelector('.info__more-button');
-var more = document.querySelector('.info__more');
+var buttonMore = document.querySelectorAll('.more__button'); // в верстке за этой кнопкой ОБЯЗАТЕЛЬНО должен идти элемент, который нужно разворачивать с классом .more
 
 
 /* действия при изменении ширины экрана */
@@ -110,13 +109,12 @@ window.addEventListener('keydown', function (e) {
 })
 
 
-/* раскрытие блока на нажатию на кнопку MORE */
-buttonMore.addEventListener('click', function (e) {
-	e.preventDefault();	
-	if(this.style.display == 'block';) {
-		this.style.display = 'none';
-	} else {
-		this.style.display = 'block';	
-	}
-	
+/* раскрытие блока на нажатию на кнопку MORE --- может быть несколько в любом месте сайта, только после кнопки должен идти тот контейнер, 
+который нужно раскрывать. Достаточно кнопке присвоить класс .more__button, а контейнеру .more */
+buttonMore.forEach(function(el) { // перебираем массив
+	el.addEventListener('click', function (e) {
+		e.preventDefault();
+		this.nextSibling.nextSibling.style.display = 'block';
+		this.style.display = 'none';		
+	});
 });
