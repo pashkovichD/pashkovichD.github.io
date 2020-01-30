@@ -941,7 +941,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding: 10px 20px;
-  font-weight: 100;
+  font-weight: 400;
   color: #ffffff;
   text-shadow: 1px -1px 1px #000000;
   background-color: rgba(85, 85, 85, 0.5);
@@ -1189,6 +1189,7 @@ input[type="radio"].visually-hidden {
 }
 .page-main__label {
   padding: 0px 10px;
+  font-size: 18px;
 }
 .page-main__label span {
   display: none;
@@ -1212,7 +1213,6 @@ input[type="radio"].visually-hidden {
   }
   .page-main__label {
     padding: 4px 20px;
-    font-size: 18px;
   }
 }
 @media (min-width: 940px) {
@@ -1393,6 +1393,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   padding: 0;
   padding-top: 10px;
+  font-weight: 700;
   text-align: center;
 }
 .files__list {
@@ -1412,7 +1413,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #777;
   background-color: #f7f7f7;
-  border-bottom: 1px solid #e4eae2;
+  border-bottom: 1px dashed #e4eae2;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1467,6 +1468,7 @@ input[type="radio"].visually-hidden {
             order: 1;
   }
   .files__description {
+    width: 400px;
     padding-left: 20px;
     text-align: left;
     -webkit-box-ordinal-group: 3;
@@ -1475,20 +1477,26 @@ input[type="radio"].visually-hidden {
             order: 2;
   }
 }
+@media (min-width: 768px) {
+  .files__description {
+    width: 580px;
+  }
+}
 @media (min-width: 1200px) {
   .files__description-wrapper svg {
-    width: 76px;
-    height: 50px;
+    padding-top: 15px;
     padding-left: 10px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
+  .files__description {
+    width: 700px;
+  }
 }
 .for-information {
   margin-bottom: 20px;
-  background-color: #f2f2f2;
 }
 .for-information__title {
   position: relative;
@@ -1507,7 +1515,7 @@ input[type="radio"].visually-hidden {
 }
 .for-information__list {
   margin: 0;
-  padding: 10px 10px 5px 10px;
+  padding: 10px 0 5px 0;
   list-style: none;
 }
 .for-information__item {
@@ -1558,7 +1566,6 @@ input[type="radio"].visually-hidden {
 }
 .banners {
   padding-bottom: 10px;
-  background-color: #f2f2f2;
 }
 .banners__title {
   position: relative;
