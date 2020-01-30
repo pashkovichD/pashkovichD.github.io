@@ -29,12 +29,6 @@
 	position: relative;
 
 	margin-bottom: 10px;
-	
-
-	color: #231F20;
-
-	// background: red;
-	
 
 	a {
 		position: relative;
@@ -45,8 +39,9 @@
 		text-decoration: none;
 		color: #777777;
 
-		border: 1px solid #dddddd;
-		border-radius: 3px;
+		border-bottom: 1px dashed #dddddd;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
 
 		transition: @anim;
 
@@ -60,12 +55,13 @@
 
 			width: 35px;
 			height: 100%;
-			padding-top: 6px;
+			padding-top: 5px;
 
 			text-align: center;
 			color: #aaaaaa;
 
 			background: #eeeeee;
+			border-bottom: 1px solid #ffffff;
 			border-top-left-radius: 3px;
 			border-bottom-left-radius: 3px;
 
@@ -76,21 +72,20 @@
 		&:hover,
 		&:focus {
 			color: #000000;
+			
+			background-color: #f2f2f2;
 
-			border: 1px solid #e28605;
+			border-bottom: 1px solid #cccccc;
 			box-shadow: none;
 
 			&::before {
-				color: #ffffff;
+				color: #000000;
 
-				background-color: #e28605;
+				background-color: #cccccc;
 			}	
 		}
 	}
-
 	
-
-
 }
 
 @media (min-width: @custom-width) {

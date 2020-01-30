@@ -670,13 +670,13 @@ input[type="radio"].visually-hidden {
 }
 .menu-list__item > a:hover,
 .menu-list__item > a:focus {
-  color: #f39f18;
+  color: #e28605;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .menu-list__item > a:hover svg,
 .menu-list__item > a:focus svg {
-  fill: #f39f18;
+  fill: #e28605;
 }
 .menu-list__item:last-child {
   border-bottom: none;
@@ -1892,7 +1892,6 @@ input[type="radio"].visually-hidden {
 .ordered-list__item {
   position: relative;
   margin-bottom: 10px;
-  color: #231F20;
 }
 .ordered-list__item a {
   position: relative;
@@ -1900,8 +1899,9 @@ input[type="radio"].visually-hidden {
   padding: 5px 10px 5px 50px;
   text-decoration: none;
   color: #777777;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-bottom: 1px dashed #dddddd;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1914,10 +1914,11 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 35px;
   height: 100%;
-  padding-top: 6px;
+  padding-top: 5px;
   text-align: center;
   color: #aaaaaa;
   background: #eeeeee;
+  border-bottom: 1px solid #ffffff;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   -webkit-box-sizing: border-box;
@@ -1929,19 +1930,38 @@ input[type="radio"].visually-hidden {
 .ordered-list__item a:hover,
 .ordered-list__item a:focus {
   color: #000000;
-  border: 1px solid #e28605;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #cccccc;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .ordered-list__item a:hover::before,
 .ordered-list__item a:focus::before {
-  color: #ffffff;
-  background-color: #e28605;
+  color: #000000;
+  background-color: #cccccc;
 }
 .link {
+  position: relative;
   display: block;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: green;
+  color: #2d5674;
+  padding-bottom: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e28605), to(#e28605));
+  background-image: -o-linear-gradient(#e28605 0%, #e28605 100%);
+  background-image: linear-gradient(#e28605 0%, #e28605 100%);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  -webkit-transition: background-size 0.5s;
+  -o-transition: background-size 0.5s;
+  transition: background-size 0.5s;
+}
+.link:hover,
+.link:focus {
+  color: #000000;
+  background-size: 100% 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
