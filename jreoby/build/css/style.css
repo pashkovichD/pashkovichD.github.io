@@ -1882,20 +1882,19 @@ input[type="radio"].visually-hidden {
 		color: red;
 	}
 } */
-/* список с 1-9 пунктов */
-.list {
+.ordered-list {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
   list-style: none;
   counter-reset: li;
 }
-.list__item {
+.ordered-list__item {
   position: relative;
   margin-bottom: 10px;
   color: #231F20;
 }
-.list__item a {
+.ordered-list__item a {
   position: relative;
   display: block;
   padding: 5px 10px 5px 50px;
@@ -1907,7 +1906,7 @@ input[type="radio"].visually-hidden {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.list__item a::before {
+.ordered-list__item a::before {
   counter-increment: li;
   content: counter(li);
   position: absolute;
@@ -1927,17 +1926,17 @@ input[type="radio"].visually-hidden {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.list__item a:hover,
-.list__item a:focus {
+.ordered-list__item a:hover,
+.ordered-list__item a:focus {
   color: #000000;
-  border: 1px solid #329a00;
+  border: 1px solid #e28605;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.list__item a:hover::before,
-.list__item a:focus::before {
+.ordered-list__item a:hover::before,
+.ordered-list__item a:focus::before {
   color: #ffffff;
-  background-color: #329a00;
+  background-color: #e28605;
 }
 .link {
   display: block;
