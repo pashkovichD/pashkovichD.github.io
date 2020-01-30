@@ -1419,7 +1419,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .info__more-button {
-  width: 200px;
   margin-bottom: 15px;
   padding: 5px 25px;
 }
