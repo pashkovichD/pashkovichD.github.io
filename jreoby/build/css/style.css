@@ -252,22 +252,6 @@ input[type="radio"].visually-hidden {
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .page-header {
   width: 320px;
   margin: 0 auto;
