@@ -1500,21 +1500,11 @@ input[type="radio"].visually-hidden {
 }
 .news__date {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   font-size: 14px;
   color: #aaaaaa;
-}
-.news__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
-  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .news__img {
   width: 280px;
