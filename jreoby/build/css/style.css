@@ -1523,6 +1523,12 @@ input[type="radio"].visually-hidden {
 .news__img img {
   display: block;
 }
+.news__img--video {
+  height: 230px;
+  background-image: url('../img/icon-video.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .news__description-wrapper {
   display: none;
 }
