@@ -1518,11 +1518,10 @@ input[type="radio"].visually-hidden {
 }
 .news__img {
   width: 280px;
-  height: 200px;
   background-color: #eeeeee;
 }
 .news__img img {
-  display: none;
+  display: block;
 }
 .news__description-wrapper {
   display: none;
@@ -1589,7 +1588,6 @@ input[type="radio"].visually-hidden {
   }
   .news__img {
     width: 340px;
-    height: 230px;
   }
 }
 @media (min-width: 940px) {
