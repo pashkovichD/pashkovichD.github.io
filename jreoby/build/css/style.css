@@ -1618,6 +1618,58 @@ input[type="radio"].visually-hidden {
     width: 460px;
   }
 }
+.pagination__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pagination__item a {
+  display: block;
+  margin-right: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #eeeeee;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.pagination__item a:hover,
+.pagination__item a:focus {
+  background-color: #aaaaaa;
+}
+.pagination__item:last-child a {
+  margin-right: 0;
+}
+.pagination__item--current a {
+  color: #ffffff;
+  background-color: #329A00;
+}
+.pagination__item--current a:hover,
+.pagination__item--current a:focus {
+  color: #ffffff;
+  background-color: #329A00;
+}
+.pagination__item--next {
+  display: none;
+}
+.pagination__item--next a {
+  padding: 5px 30px;
+}
+@media (min-width: 768px) {
+  .pagination__item--next {
+    display: block;
+  }
+}
 .info {
   padding-top: 20px;
 }
