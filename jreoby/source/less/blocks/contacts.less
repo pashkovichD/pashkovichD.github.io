@@ -70,14 +70,48 @@
 	margin-bottom: 5px;
 	padding: 0;
 
-	color: #3d00c4;
+	color: #e28605;
+}
+
+.contacts__web {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.contacts__web-vk {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	margin-right: 15px;
+
+	line-height: 0;
+
+	border: 1px solid #003553;
+	border-radius: 3px;
+
+	opacity: .7;
+	transition: @anim;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+
+.contacts__web-email {
+	margin: 0;
+	padding: 0;
+
+	color: #e28605;
 }
 
 .contacts__table {
 	width: 280px;
 	padding: 0;
 
-	border: 1px solid #3d4647;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -106,21 +140,26 @@
 }
 
 .contacts__tbody {
-	text-align: center;
+	text-align: right;
 
 	tr {
 		display: block;
+		margin-bottom: 15px;
 
-		border-bottom: 1px dashed #aaaaaa;
+		// border-bottom: 1px dashed #aaaaaa;
 	}
 
 	td {
-		display: block;
+		position: relative;
 
+		display: block;
 		padding: 5px 10px;
 
-		&::after {
+		&::before {
 			content: attr(data-label);
+
+			position: absolute;
+			left: 0;
 
 			text-transform: uppercase;
 			font-size: 14px;
@@ -130,7 +169,7 @@
 		}
 
 		&.contacts__table-department {
-			&::after {
+			&::before {
 				content: none;
 			}
 		}
@@ -138,13 +177,18 @@
 }
 
 .contacts__table-department {
-	text-align: left;
+	text-align: center;
+
+	background-color: #eaeaea;
+	border-bottom: 3px solid #dddddd;
 }
 
 
 @media (min-width: @custom-width) {
 	.contacts__table {
 		width: 100%;
+
+		border: 1px solid #3d4647;
 	}
 
 	.contacts__thead {
@@ -154,15 +198,20 @@
 	.contacts__tbody {
 		tr {
 			display: table-row;
+			margin-bottom: 0;
 		}
 
 		td {
 			display: table-cell;
 
-			&::after {
+			&::before {
 				content: none;
 			}
 		}
+	}
+
+	.contacts__table-department {
+		background-color: #eeeeee;
 	}
 }
 
