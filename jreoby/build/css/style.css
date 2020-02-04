@@ -2386,6 +2386,9 @@ input[type="radio"].visually-hidden {
   .contacts__thead {
     display: table-header-group;
   }
+  .contacts__tbody {
+    text-align: center;
+  }
   .contacts__tbody tr {
     display: table-row;
     margin-bottom: 0;
@@ -2542,7 +2545,7 @@ input[type="radio"].visually-hidden {
 }
 .developer {
   margin-bottom: 50px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .developer svg {
   display: block;
@@ -2574,5 +2577,10 @@ input[type="radio"].visually-hidden {
   }
   .developer__text {
     margin: 0 0 5px 20px;
+  }
+}
+@media (min-width: 940px) {
+  .developer {
+    padding-top: 30px;
   }
 }
