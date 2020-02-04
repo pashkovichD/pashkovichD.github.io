@@ -2194,8 +2194,7 @@ input[type="radio"].visually-hidden {
 }
 .contacts__department {
   margin-bottom: 15px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px dashed #cccccc;
 }
 .contacts__name {
   margin: 0;
@@ -2205,6 +2204,7 @@ input[type="radio"].visually-hidden {
 .contacts__phone {
   position: relative;
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
   padding-left: 33px;
   font-weight: 700;
@@ -2223,6 +2223,7 @@ input[type="radio"].visually-hidden {
 .contacts__fax {
   position: relative;
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
   padding-left: 33px;
   font-weight: 700;
@@ -2240,7 +2241,9 @@ input[type="radio"].visually-hidden {
 }
 .contacts__email {
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
+  color: #3d00c4;
 }
 .text-border {
   padding: 5px 15px;
