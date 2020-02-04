@@ -745,6 +745,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.2);
   height: 0;
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
@@ -2244,6 +2246,40 @@ input[type="radio"].visually-hidden {
   margin-bottom: 5px;
   padding: 0;
   color: #3d00c4;
+}
+.contacts__table {
+  width: 100%;
+  padding: 0;
+  border: 1px solid #3d4647;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.contacts__thead {
+  background-color: #3d4647;
+}
+.contacts__thead th {
+  padding: 4px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.contacts__thead th:first-child {
+  border-left: none;
+}
+.contacts__thead th:last-child {
+  border-right: none;
+}
+.contacts__tbody {
+  text-align: center;
+}
+.contacts__tbody tr {
+  border-bottom: 1px dashed #aaaaaa;
+}
+.contacts__tbody td {
+  padding: 5px 10px;
+}
+.contacts__table-department {
+  text-align: left;
 }
 .text-border {
   padding: 5px 15px;
