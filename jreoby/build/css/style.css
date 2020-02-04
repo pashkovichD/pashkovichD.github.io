@@ -2378,6 +2378,9 @@ input[type="radio"].visually-hidden {
   background-color: #eaeaea;
   border-bottom: 1px solid #dddddd;
 }
+.contacts__table-master--none {
+  display: none;
+}
 @media (min-width: 600px) {
   .contacts__table {
     width: 100%;
