@@ -146,7 +146,7 @@
 		display: block;
 		margin-bottom: 15px;
 
-		// border-bottom: 1px dashed #aaaaaa;
+		background-color: #f2f2f2;
 	}
 
 	td {
@@ -155,16 +155,17 @@
 		display: block;
 		padding: 5px 10px;
 
+		border-bottom: 1px dotted #dddddd;
+
 		&::before {
 			content: attr(data-label);
 
 			position: absolute;
 			left: 0;
-
-			text-transform: uppercase;
-			font-size: 14px;
+				
 			margin-right: 20px;
 			padding: 0 5px;
+			
 			color: #aaa;
 		}
 
@@ -183,10 +184,6 @@
 	border-bottom: 1px solid #dddddd;
 }
 
-.contacts__table-master--none {
-	display: none;
-}
-
 
 @media (min-width: @custom-width) {
 	.contacts__table {
@@ -203,10 +200,15 @@
 		tr {
 			display: table-row;
 			margin-bottom: 0;
+
+			background-color: transparent;
+			border-bottom: 1px dashed #cccccc;
 		}
 
 		td {
 			display: table-cell;
+
+			border-bottom: none;
 
 			&::before {
 				content: none;

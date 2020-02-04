@@ -1184,7 +1184,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2354,18 +2354,18 @@ input[type="radio"].visually-hidden {
 .contacts__tbody tr {
   display: block;
   margin-bottom: 15px;
+  background-color: #f2f2f2;
 }
 .contacts__tbody td {
   position: relative;
   display: block;
   padding: 5px 10px;
+  border-bottom: 1px dotted #dddddd;
 }
 .contacts__tbody td::before {
   content: attr(data-label);
   position: absolute;
   left: 0;
-  text-transform: uppercase;
-  font-size: 14px;
   margin-right: 20px;
   padding: 0 5px;
   color: #aaa;
@@ -2378,9 +2378,6 @@ input[type="radio"].visually-hidden {
   background-color: #eaeaea;
   border-bottom: 1px solid #dddddd;
 }
-.contacts__table-master--none {
-  display: none;
-}
 @media (min-width: 600px) {
   .contacts__table {
     width: 100%;
@@ -2392,9 +2389,12 @@ input[type="radio"].visually-hidden {
   .contacts__tbody tr {
     display: table-row;
     margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 1px dashed #cccccc;
   }
   .contacts__tbody td {
     display: table-cell;
+    border-bottom: none;
   }
   .contacts__tbody td::before {
     content: none;
