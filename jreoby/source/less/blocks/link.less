@@ -2,12 +2,11 @@
 	position: relative;
 
 	display: block;
-	padding-right: 40px;
+	padding: 10px 40px 10px 0;	
 
 	text-decoration: none;
 	
-	color: #0a5993; 
-	padding-bottom: 5px; 
+	color: #0a5993;
 
 	background-image: linear-gradient(#e28605 0%, #e28605 100%);
 	background-position: left bottom;
@@ -15,6 +14,10 @@
 	background-size: 0 1px;
 
 	transition: background-size .5s;
+
+	svg {
+		fill: #053152;
+	}
 
 	&::after {
 		content: '';
@@ -25,7 +28,7 @@
 
 		width: 20px;
 		height: 20px;
-		margin-top: -20px;
+		margin-top: -10px;
 		
 		background-image: url(../img/icon-link-download.svg);
 		background-size: 20px 20px;
@@ -41,6 +44,10 @@
 
 		box-shadow: none;
 
+		svg {
+			fill: #00243f;
+		}
+
 		&::after {
 			opacity: 1;
 		}
@@ -50,12 +57,6 @@
 @media (min-width: @custom-width) {
 	.link {
 		padding-right: 50px;
-
-		&::after {
-			top: 4px;
-
-			margin-top: 0;
-		}
 	}
 }
 

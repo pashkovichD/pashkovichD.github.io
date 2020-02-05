@@ -3,12 +3,35 @@
 }
 
 .tenders__link {
+	position: relative;
+
 	display: block;
 	margin: 0;
-	margin-bottom: 20px;
-	padding: 0;
+	margin-bottom: 20px;	
+	padding-left: 45px;
 	
 	text-decoration: none;
+
+	&::before {
+		position: absolute;
+		top: 5px;
+		bottom: 5px;
+		left: 35px;
+
+		content: '';
+
+		width: 1px;		
+
+		background-color: #e2e2e2;
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		
+		margin-top: -15px;
+	}
 }
 
 .tenders__label {
