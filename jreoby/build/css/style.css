@@ -1187,6 +1187,7 @@ input[type="radio"].visually-hidden {
   font-size: 23px;
   line-height: 30px;
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
   color: #135275;
 }
@@ -1213,6 +1214,9 @@ input[type="radio"].visually-hidden {
   border-top: 1px solid #dddddd;
 }
 @media (min-width: 600px) {
+  .page-main__title {
+    text-align: left;
+  }
   .page-main__two-columns {
     width: 580px;
   }
@@ -2370,10 +2374,14 @@ input[type="radio"].visually-hidden {
   padding: 0 5px;
   color: #aaa;
 }
+.contacts__tbody td.contacts__table-department {
+  border-bottom: 1px solid #dddddd;
+}
 .contacts__tbody td.contacts__table-department::before {
   content: none;
 }
 .contacts__table-department {
+  font-weight: 700;
   text-align: center;
   background-color: #eaeaea;
   border-bottom: 1px solid #dddddd;
@@ -2399,10 +2407,85 @@ input[type="radio"].visually-hidden {
     display: table-cell;
     border-bottom: none;
   }
+  .contacts__tbody td.contacts__table-department {
+    border-bottom: none;
+  }
   .contacts__tbody td::before {
     content: none;
   }
   .contacts__table-department {
+    background-color: #eeeeee;
+  }
+}
+.aup__table {
+  width: 280px;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.aup__thead {
+  display: none;
+  background-color: #3d4647;
+}
+.aup__thead th {
+  padding: 4px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.aup__thead th:first-child {
+  border-left: none;
+}
+.aup__thead th:last-child {
+  border-right: none;
+}
+.aup__tbody {
+  text-align: center;
+}
+.aup__tbody tr {
+  display: block;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+}
+.aup__tbody td {
+  display: block;
+  padding: 5px 10px;
+  border-bottom: 1px dotted #dddddd;
+}
+.aup__tbody td.aup__department {
+  border-bottom: 1px solid #dddddd;
+}
+.aup__department {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #eaeaea;
+}
+@media (min-width: 600px) {
+  .aup__table {
+    width: 100%;
+    border: 1px solid #3d4647;
+  }
+  .aup__thead {
+    display: table-header-group;
+  }
+  .aup__tbody {
+    text-align: center;
+  }
+  .aup__tbody tr {
+    display: table-row;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 1px dashed #cccccc;
+  }
+  .aup__tbody td {
+    display: table-cell;
+    border-bottom: none;
+  }
+  .aup__tbody td::before {
+    content: none;
+  }
+  .aup__department {
+    border-bottom: none;
     background-color: #eeeeee;
   }
 }

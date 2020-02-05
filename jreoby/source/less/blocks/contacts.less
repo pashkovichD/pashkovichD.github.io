@@ -170,6 +170,8 @@
 		}
 
 		&.contacts__table-department {
+			border-bottom: 1px solid #dddddd;
+
 			&::before {
 				content: none;
 			}
@@ -178,6 +180,7 @@
 }
 
 .contacts__table-department {
+	font-weight: 700;
 	text-align: center;
 
 	background-color: #eaeaea;
@@ -211,6 +214,10 @@
 			display: table-cell;
 
 			border-bottom: none;
+			
+			&.contacts__table-department {
+				border-bottom: none;
+			}
 
 			&::before {
 				content: none;
