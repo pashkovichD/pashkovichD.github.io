@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Официальный сайт КУП ЖРЭО г. Новополоцка - Аварийная служба</title>
+	<title>Официальный сайт КУП ЖРЭО г. Новополоцка - Тендеры</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -62,7 +62,7 @@
 										<li><a href="rss.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Ремонтно-строительная служба (РСС)</a></li>
 										<li><a href="station.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Диагностическая станция</a></li>
 										<li><a href="skits.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Служба котельных (СКиТС)</a></li>
-										<li><a><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Аварийная служба</a></li>
+										<li><a href="emergency.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Аварийная служба</a></li>
 									</ul>
 								</li>
 								<li><a href="profkom.html">Профком</a></li>
@@ -84,7 +84,7 @@
 								</svg>Для юридических лиц</span>
 							</a>
 							<ul class="menu-list__dropdown">
-								<li><a href="tenders.html">Тендеры</a></li>
+								<li><a>Тендеры</a></li>
 								<li><a href="information.html">Информация</a></li>
 								<li><a href="invoice.html">Счет-фактуры</a></li>
 							</ul>
@@ -115,16 +115,62 @@
 		
 		<div class="page-main__two-columns">
 			<div class="page-main__one">				
-				<h1 class="page-main__title">Аварийная служба (АС)</h1>
+				<h1 class="page-main__title">Тендеры</h1>
 				
-				<section class="emergency">
-					<h2 class="visually-hidden">Информация о службе</h2>
-					<p class="emergency__text">Аварийная служба КУП ЖРЭО работает круглосуточно. Возглавляет ее начальник <strong>Колоцей Александр Николаевич.</strong></p>
+				<section class="tenders">
+					<h2 class="visually-hidden">Размещение переговоров и протоколов</h2>
 					
-					<p class="emergency__text">За аварийной службой закреплены <u>2 единицы транспортной техники.</u></p>
+					<a href="docs/sample-application.doc" class="tenders__link link">Образец заявки на получение конкурсной документации</a>
+					<div class="tenders__tabs tabs">
+						<input id="tab1" type="radio" name="tabs" class="tabs__input" checked>
+						<label for="tab1" title="Новости" class="tenders__label tabs__label">Переговоры</label>
 
-					<p class="emergency__text emergency__text--border">АС выполняет аварийные заявки по всему фонду г. Новополоцка. За месяц в среднем бывает 550-600 аварийных выездов. В основном это аварии, связанные с затоплениями квартир, прорывами трубопроводов холодного и горячеговодоснабжения, отопления в подвалах и квартирах, засорами канализационных стояков, отсутствие электричества в квартирах и многое другое.</p>
+						<input id="tab2" type="radio" name="tabs" class="tabs__input">
+						<label for="tab2" title="Информация" class="tenders__label tabs__label">Протоколы</span></label>
+						
+						<section id="tabs__content1" class="tenders__section tabs__section">
+							<div class="tabs__wrapper">
+								<ul class="tenders__list">
+									<li class="tenders__item"><a href="docs/tenders/sto.doc">Переговоры (текущий ремонт СТО)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/dzer17k1_molniezaschita.doc">Переговоры (Дзержинского, 17, к. 1 - молниезащита)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/dzer17k1_krovlya.doc">Переговоры (Дзержинского, 17, к. 1 - кровля)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/dzer17k1_others.doc">Переговоры (Дзержинского, 17 - разное (+ проект договора))</a></li>
+									<li class="tenders__item"><a href="docs/tenders/dzer17k1_doors.doc">Переговоры (Дзержинского, 17 - двери (+ проект договора))</a></li>
+									<li class="tenders__item"><a href="docs/tenders/dzer17k1.doc">Переговоры (Дзержинского, 17 к.1 - сантехника)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/mol110_profil.doc">Переговоры (Молодежная, 110 - профиль)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/mol110.doc">Переговоры (Молодежная, 110 - молниезащита)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/teploobmennik_pl.doc">Переговоры (Теплообменник +)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/priglas_dv190904.doc">Переговоры (Молодежная 110, двери, сентябрь, с проектом договора)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/priglas_razn190903.doc">Переговоры (Молодежная 110, разное, сентябрь, с проектом договора)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/priglas_kp190903.doc">Переговоры (Кап.ремонт, Молодежная 110 (разное))</a></li>
+									<li class="tenders__item"><a href="docs/tenders/sad55a_profil.doc">Переговоры (Садовая, 55а - профиль)</a></li>
+								</ul>
+							</div>
+						</section>
 
+						<section id="tabs__content2" class="tenders__section tabs__section">
+							<div class="tabs__wrapper">
+								<ul class="tenders__list">
+									<li class="tenders__item"><a href="docs/tenders/protocol_itogi_sto.doc">Протокол ИТОГИ (Текущий ремонт СТО)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_open_sto.doc">Протокол ВСКРЫТИЯ КОНВЕРТОВ (Текущий ремонт СТО)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_itogi_dzer17_molniezaschita.doc">Протокол ИТОГИ (Дзержинского, 17, к.1 - молниезащита)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_open_dzer17_molniezaschita.doc">Протокол ВСКРЫТИЯ КОНВЕРТОВ (Дзержинского, 17, к.1 - молниезащита)</a>								</li>
+
+									<li class="tenders__item"><a href="docs/tenders/protocol_itogi_dzer17_krovlya.doc">Протокол ИТОГИ (Дзержинского, 17 - кровля)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_open_dzer17_krovlya.doc">Протокол ВСКРЫТИЯ КОНВЕРТОВ (Дзержинского, 17 - кровля)</a></li>
+
+									<li class="tenders__item"><a href="docs/tenders/protocol_itogi_dzer17_others.doc">Протокол ИТОГИ (Дзержинского, 17 - разное)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_open_dzer17_others.doc">Протокол ВСКРЫТИЯ КОНВЕРТОВ (Дзержинского, 17 - разное)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_itogi_dzer17_doors.doc">Протокол ИТОГИ (Дзержинского, 17 - двери)</a></li>
+									<li class="tenders__item"><a href="docs/tenders/protocol_open_dzer17_doors.doc">Протокол ВСКРЫТИЯ КОНВЕРТОВ (Дзержинского, 17 - двери)</a></li>
+								</ul>
+
+								
+									
+								
+							</div>
+						</section>						
+					</div>
 				</section>
 
 			</div>
@@ -233,7 +279,7 @@
 					<ul class="footer-structure__list">
 						<li class="footer-structure__item"><a href="administration.html">Руководство</a></li>
 						<li class="footer-structure__item"><a href="aup.html">Административно-управленческий персонал (АУП)</a></li>
-						<li class="footer-structure__item"><a>Аварийная служба</a></li>
+						<li class="footer-structure__item"><a href="emergency.html">Аварийная служба</a></li>
 						<li class="footer-structure__item"><a href="jes.html">ЖЭС №1-9</a></li>
 						<li class="footer-structure__item"><a href="transport.html">Транспортная служба</a></li>
 						<li class="footer-structure__item"><a href="rss.html">Ремонтно-строительная служба (РСС)</a></li>
