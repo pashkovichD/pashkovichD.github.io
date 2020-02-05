@@ -2412,7 +2412,7 @@ input[type="radio"].visually-hidden {
 .contacts__tbody tr {
   display: block;
   margin-bottom: 15px;
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
 }
 .contacts__tbody td {
   position: relative;
@@ -2619,6 +2619,14 @@ input[type="radio"].visually-hidden {
 }
 .tenders__section {
   border-top: 1px solid #dddddd;
+}
+.tenders__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tenders__item a {
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .tenders__label {
