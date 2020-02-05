@@ -2623,10 +2623,23 @@ input[type="radio"].visually-hidden {
 .tenders__list {
   margin: 0;
   padding: 0;
+  padding-top: 10px;
   list-style: none;
 }
 .tenders__item a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px 10px;
   text-decoration: none;
+  color: #777777;
+  border-bottom: 1px dashed #dddddd;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.tenders__item a:hover,
+.tenders__item a:focus {
+  color: #000000;
 }
 @media (min-width: 768px) {
   .tenders__label {
