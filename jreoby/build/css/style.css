@@ -2524,10 +2524,17 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   padding: 0;
 }
-@media (min-width: 600px) {
-  .about-us__text {
-    text-align: justify;
-  }
+.emergency__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.emergency__text--border {
+  padding: 5px 10px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 .text-border {
   padding: 5px 15px;
