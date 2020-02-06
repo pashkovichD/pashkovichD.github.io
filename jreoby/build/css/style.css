@@ -2977,6 +2977,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
   padding: 0;
 }
+.station__schedule {
+  margin-bottom: 30px;
+}
 .station__phone {
   margin-bottom: 30px;
 }
@@ -2990,6 +2993,7 @@ input[type="radio"].visually-hidden {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 10px;
   }
   .station__img {
     width: 350px;
@@ -3010,12 +3014,31 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1200px) {
+  .station__wrapper {
+    margin-bottom: 20px;
+  }
   .station__img {
     width: 400px;
   }
   .station__description {
     width: 380px;
   }
+}
+.schedule {
+  position: relative;
+  padding-left: 50px;
+}
+.schedule::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  left: 5px;
+  width: 30px;
+  background-image: url('../img/stopwatch.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  border-right: 1px solid #e28605;
 }
 .schedule__item {
   margin: 0;

@@ -1,4 +1,22 @@
 .schedule {
+	position: relative;
+	padding-left: 50px;
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: -7px;
+		bottom: -7px;
+		left: 5px;
+
+		width: 30px;
+
+		background-image: url('../img/stopwatch.svg');
+		background-repeat: no-repeat;
+		background-position: 0 center;
+		border-right: 1px solid #e28605;
+	}
 	
 }
 
