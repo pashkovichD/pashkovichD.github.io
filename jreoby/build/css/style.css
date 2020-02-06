@@ -2929,6 +2929,44 @@ input[type="radio"].visually-hidden {
     width: 25%;
   }
 }
+.one-window__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.one-window__list {
+  border-bottom: none;
+}
+.one-window__list span {
+  font-weight: 700;
+  color: #555555;
+}
+.one-window__list a {
+  display: block;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #999999;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.one-window__list a:hover,
+.one-window__list a:focus {
+  color: #000000;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+}
+.one-window__list a:hover span,
+.one-window__list a:focus span {
+  color: #7a3f00;
+}
+@media (min-width: 768px) {
+  .one-window__text {
+    text-align: justify;
+  }
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;

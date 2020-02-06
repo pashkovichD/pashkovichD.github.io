@@ -1,0 +1,60 @@
+.one-window {
+	
+}
+
+.one-window__text {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.one-window__list {
+	border-bottom: none;
+
+	span {
+		font-weight: 700;
+		color: #555555;
+	}
+
+	a {
+		display: block;
+		padding: 0 5px;
+		text-decoration: none;
+		color: #999999;
+
+		background-color: transparent;
+		border: 1px solid transparent;
+
+		transition: @anim;
+
+		&:hover,
+		&:focus {
+			color: #000000;
+
+			background-color: #eeeeee;
+			border: 1px solid #cccccc;
+
+			span {
+				color: #7a3f00;
+			}
+		}
+	}
+}
+
+@media (min-width: @custom-width) {
+
+}
+
+@media (min-width: @tablet-width) {
+	.one-window__text {
+		text-align: justify;
+	}
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
