@@ -467,7 +467,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   padding-top: 5px;
   color: #135275;
-  border-top: 1px solid #dbdbdb;
   /* &::after {
 		content: '';
 	
@@ -489,9 +488,13 @@ input[type="radio"].visually-hidden {
 }
 .services-list__item span {
   display: block;
+  padding-left: 20px;
   font-size: 18px;
   font-weight: 700;
   color: #d56e00;
+}
+.services-list__item span:first-child {
+  border-top: 1px dashed #d56e00;
 }
 .page-header {
   width: 320px;
