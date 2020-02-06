@@ -306,6 +306,36 @@ input[type="radio"].visually-hidden {
     padding-right: 50px;
   }
 }
+.phone {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  font-size: 20px;
+}
+.phone span {
+  opacity: 0.5;
+}
+.phone::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  left: 5px;
+  width: 30px;
+  background-image: url('../img/phone-color.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  border-right: 1px solid #f4d8ba;
+}
+.department {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #f4d8ba;
+}
 .page-header {
   width: 320px;
   margin: 0 auto;
@@ -2648,6 +2678,12 @@ input[type="radio"].visually-hidden {
   .tenders__label {
     padding: 4px 20px;
   }
+}
+.rent__link {
+  margin-bottom: 15px;
+}
+.rent__department {
+  margin-bottom: 15px;
 }
 .text-border {
   padding: 5px 15px;

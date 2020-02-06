@@ -1,0 +1,48 @@
+.phone {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	padding-left: 45px;
+
+	font-size: 20px;
+
+	span {
+		opacity: .5;
+	}
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: -7px;
+		bottom: -7px;
+		left: 5px;
+
+		width: 30px;
+		// height: 20px;
+
+		background-image: url('../img/phone-color.svg');
+		background-repeat: no-repeat;
+		background-position: 0 center;
+		border-right: 1px solid #f4d8ba;
+
+	}
+}
+
+
+@media (min-width: @custom-width) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Официальный сайт КУП ЖРЭО г. Новополоцка - Профком</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">
+		<div class="page-header__wrapper">
+			<a href="index.html" class="page-header__logo">
+				<svg width="300" height="100">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+			</a>
+			<p class="page-header__address">г. Новополоцк,<br> ул. Молодежная, 102а</p>
+			<div class="page-header__wrapper-rigth">
+				<form action="http://echo.htmlacademy.ru" class="page-header__search search" method="POST">
+					<label for="search" class="visually-hidden">Форма поиска</label>
+					<input type="text" name="text-search" id="search" class="search__input" placeholder="Найти...">
+					<button type="submit" class="search__button">
+						<span class="visually-hidden">Найти</span>
+						<svg fill="#777777" width="23" height="23">
+							<use xlink:href="#icon-search"></use>
+						</svg>
+					</button>
+				</form>
+				<button class="page-header__toggle-search" type="button">
+					<span class="visually-hidden">Открыть поиск</span>
+					<svg fill="#777777" width="20" height="20">
+						<use xlink:href="#icon-search"></use>
+					</svg>
+				</button>
+				<button class="page-header__toggle-nav hamburger" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>
+				<nav class="main-nav">
+					<h2 class="visually-hidden">Главное меню</h2>
+					
+					<ul class="main-nav__list menu-list">
+						<li class="menu-list__item menu-list__item--fiz">
+							<a>							
+								<span><svg fill="#ffffff" width="25" height="30">
+									<use xlink:href="#icon-fiz"></use>
+								</svg>Для физических лиц</span>
+							</a>
+							<ul class="menu-list__dropdown">
+								<li><a href="about_us.html">О предприятии</a></li>
+								<li><a href="administration.html">Руководство</a></li>
+								<li><a href="aup.html">Управление КУП ЖРЭО</a></li>
+								<li><a class="menu-list__seconddown-link">Структура</a>
+									<ul class="menu-list__seconddown">
+										<li><a href="jes.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>ЖЭС №1-9</a></li>
+										<li><a href="transport.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Транспортная служба</a></li>
+										<li><a href="rss.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Ремонтно-строительная служба (РСС)</a></li>
+										<li><a href="skits.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Служба котельных (СКиТС)</a></li>
+										<li><a href="emergency.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Аварийная служба</a></li>
+										<li><a href="station.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Диагностическая станция</a></li>
+										<li><a href="laboratory.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>Лаборатория</a></li>										
+										<li><a href="janovo.html"><svg fill="#aeaeae" width="5" height="10"><use xlink:href="#icon-marker"></use></svg>База отдыха "Яново"</a></li>
+									</ul>
+								</li>
+								<li><a>Профком</a></li>
+								<li><a href="vacancies.html">Вакансии</a></li>
+								<li><a href="price-list.html">Прейскурант цен</a></li>
+								<li><a href="san-content.html">Сан. содержание</a></li>								
+								<li><a href="auto-services.html">Автоуслуги</a></li>
+								<li><a href="one-window.html">"Одно окно"</a></li>
+								<li><a href="employment-contract.html">Договор найма</a></li>
+								<li><a href="appeal.html">Обращения граждан и юр. лиц</a></li>
+								<li><a href="rent.html">Аренда</a></li>
+								<li><a href="photo.html">Фото</a></li>
+								<li><a href="video.html">Видео</a></li>
+							</ul>
+						</li>
+						<li class="menu-list__item menu-list__item--ur">
+							<a>
+								<span><svg fill="#ffffff" width="30" height="45">
+									<use xlink:href="#icon-ur"></use>
+								</svg>Для юридических лиц</span>
+							</a>
+							<ul class="menu-list__dropdown">
+								<li><a href="tenders.html">Тендеры</a></li>
+								<li><a href="information.html">Информация</a></li>
+								<li><a href="invoice.html">Счет-фактуры</a></li>
+							</ul>
+						</li>
+						<li class="menu-list__item menu-list__item--question">
+							<a href="question.html">
+								<span>
+									<svg fill="#777777" width="23" height="28"><use xlink:href="#icon-question2"></use></svg>
+									<span class="menu-list__item-text">Вопрос-ответ</span>
+								</span>
+							</a>
+						</li>
+						<li class="menu-list__item menu-list__item--contacts">
+							<a href="contacts.html">
+								<span>
+									<svg fill="#777777" width="35" height="28"><use xlink:href="#icon-contacts"></use></svg>
+									<span class="menu-list__item-text">Контакты</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main page-main--inner">
+		
+		<div class="page-main__two-columns">
+			<div class="page-main__one">				
+				<h1 class="page-main__title">Профком</h1>
+				
+				<section class="emergency">
+					<h2 class="visually-hidden">Информация о профкоме</h2>
+					
+					<div class="developer">
+						<svg fill="#e28605" width="73" height="65">
+							<use xlink:href="#icon-developer"></use>
+						</svg>
+						<p class="developer__text">Страница находится в разработке</p>
+					</div>
+
+				</section>
+
+			</div>
+
+			<aside class="page-main__two">
+				<h2 class="visually-hidden">Дополнительная информация</h2>
+				<section class="for-information">
+					<h3 class="for-information__title"><svg fill="#ffffff" width="20" height="20"><use xlink:href="#icon-for-information"></use></svg>К сведению</h3>
+					<ul class="for-information__list">
+						<li class="for-information__item">
+							<a href="http://www.pravo.by/main.aspx?guid=3871&amp;p0=Hk1200428&amp;p1=1" target="_blank">Жилищный кодекс</a>	
+						</li>
+						<li class="for-information__item">
+							<a href="http://www.pravo.by/document/?guid=3871&amp;p0=C21300399" target="_blank">Правила пользования жилыми помещениями</a>
+						</li>
+						<li class="for-information__item">
+							<a href="docs/dogs.doc">Перечень мест выгула собак</a>
+						</li>
+						<li class="for-information__item">
+							<a href="docs/houses.doc">Дома, обслуживаемые КУП ЖРЭО</a>
+						</li>
+						<li class="for-information__item">
+							<a href="telefon.php">Телефоны первой необходимости</a>
+						</li>
+					</ul>
+				</section>
+				<section class="banners">
+					<h3 class="banners__title"><svg fill="#ffffff" width="20" height="20"><use xlink:href="#icon-links"></use></svg>Полезные ссылки</h3>
+					<ul class="banners__list">
+						<li class="banners__item">
+							<a href="http://jreo.by/ds102/" target="_blank" title="Пройти техосмотр в Новополоцке"><img src="img/banners/ds102.png" alt="Пройти техосмотр в Новополоцке"></a>
+						</li>
+						<li class="banners__item">
+							<a href="avtouslugi.php" title="аренда вышек, погрузчиков, спецтехники, откачка канализации"><img src="img/banners/auto.jpg" alt="аренда вышек, погрузчиков, спецтехники, откачка канализации"/></a>
+						</li>
+	                    <li class="banners__item">
+	                    	<a href="domophon.php" title="ТО с входной дверью, кабельные сети в подъезде, ремонт домофонных трубок в подъездах"><img src="img/banners/domophon.jpg" alt="ТО с входной дверью, кабельные сети в подъезде, ремонт домофонных трубок в подъездах"/></a>
+	                    </li>
+	                    <li class="banners__item">
+	                    	<a href="videonabludenie.php" title="Системы видеонаблюдения"><img src="img/banners/video.jpg" alt="Системы видеонаблюдения"/></a>
+	                    </li>
+	                    <li class="banners__item">
+	                    	<a href="http://www.novopolotsk.by/" target="_blank" title="Официальный сайт г. Новополоцка"><img src="img/banners/novopolotsk.jpg" alt="Официальный сайт г. Новополоцка"/></a>
+	                    </li>
+	                    <li class="banners__item">
+	                    	<a href="http://www.vitebsk-region.gov.by/" target="_blank" title="Витебский областной исполнительный комитет"><img src="img/banners/vitebsk.jpg" alt="Витебский областной исполнительный комитет"/></a>
+	                    </li>
+	                    <li class="banners__item">
+	                    	<a href="http://www.pravo.by/" target="_blank" title="Национальный правовой Интернет-портал Республики Беларусь"><img src="img/banners/pravo.jpg" alt="Национальный правовой Интернет-портал Республики Беларусь"/></a>
+	                    </li>
+	                    <li class="banners__item">
+                    		<a href="http://kupnuc.vitebsk.by/" target="_blank" title="Новополоцкая управляющая компания г. Новополоцка"><img src="img/banners/nuc.jpg" alt="Новополоцкая управляющая компания г. Новополоцка"/></a>
+                    	</li>
+	                    <li class="banners__item">
+	                    	<a href="http://www.gkhmag.by/home/" target="_blank" title="ЖКХ - живи как хозяин"><img src="img/banners/gkh.jpg" alt="ЖКХ - живи как хозяин"/></a>
+	                    </li>
+	                    <li class="banners__item">
+	                    	<a href="http://gkx.by/" target="_blank" title="Портал коммунальной грамотности населения"><img src="img/banners/portal.jpg" alt="Портал коммунальной грамотности населения"/></a>
+	                    </li>	                    
+                    </ul>
+				</section>
+			</aside>
+		</div>
+		
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__top">
+				<section class="footer-info">
+					<h2 class="visually-hidden">Краткая справочная информация</h2>
+					<p class="footer-info__title page-footer__title"><svg fill="#ffffff" width="18" height="18"><use xlink:href="#icon-info"></use></svg>Информация</p>
+					<div class="footer-info__two-columns">
+						<div class="footer-info__one">
+							<p class="footer-info__description">Режим работы:</p>
+							<div class="footer-info__mode">
+								<p>08:00 - 17:00</p>
+								<p>13:00 - 14:00 (обед)</p>
+								<p>Сб, Вс (выходные)</p>
+							</div>							
+						</div>
+						<div class="footer-info__two">
+							<p class="footer-info__description">Телефон "горячей линии":</p>
+							<p class="footer-info__content"><svg fill="#e28605" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>34-82-72</p>
+							<p class="footer-info__description">Аварино-диспетчерская служба:</p>
+							<p class="footer-info__content"><svg fill="#e28605" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>115</p>							
+						</div>
+						
+						<div class="footer-info__web">
+							<a href="https://vk.com/jreo_by" class="footer-info__vk" target="_blank">
+								<svg fill="#ffffff" width="25" height="16">
+									<use xlink:href="#icon-vk"></use>
+								</svg>
+								<span class="visually-hidden">Мы в Вконтакте</span>
+							</a>
+							<p class="footer-info__email">jreo@tut.by</p>
+						</div>
+						
+					</div>
+						
+				</section>
+
+				<section class="footer-structure">
+					<h2 class="visually-hidden">Структура организации</h2>
+					<p class="footer-structure__title page-footer__title"><svg fill="#ffffff" width="25" height="19"><use xlink:href="#icon-structure"></use></svg>Структура</p>
+					<ul class="footer-structure__list">
+						<li class="footer-structure__item"><a href="administration.html">Руководство</a></li>
+						<li class="footer-structure__item"><a href="aup.html">Административно-управленческий персонал (АУП)</a></li>
+						<li class="footer-structure__item"><a href="jes.html">ЖЭС №1-9</a></li>
+						<li class="footer-structure__item"><a href="transport.html">Транспортная служба</a></li>
+						<li class="footer-structure__item"><a href="rss.html">Ремонтно-строительная служба (РСС)</a></li>
+						<li class="footer-structure__item"><a href="skits.html">Служба котельных (СКиТС)</a></li>
+						<li class="footer-structure__item"><a href="emergency.html">Аварийная служба</a></li>
+						<li class="footer-structure__item"><a href="station.html">Диагностическая станция</a></li>
+						<li class="footer-structure__item"><a href="laboratory.html">Лаборатория</a></li>
+						<li class="footer-structure__item"><a href="janovo.html">База отдыха "Яново"</a></li>
+					</ul>
+				</section>
+
+				<section class="footer-address">
+					<h2 class="visually-hidden">Адрес организации</h2>
+					<p class="footer-address__title page-footer__title"><svg fill="#ffffff" width="18" height="25"><use xlink:href="#icon-map"></use></svg>Как нас найти</p>
+					<a href="https://yandex.by/maps/-/CKEc5Ymz" class="footer-address__map">
+						<img src="img/map.jpg" alt="Мы находимя по адресу: г.Новополоцк, ул.Молодежная,102а" width="280" height="200" class="visually-hidden">
+					</a>
+					<p class="footer-address__description">Адрес:</p>
+					<p class="footer-address__content">г. Новополоцк, ул. Молодежная, 102а</p>
+				</section>
+			</div>
+
+			<div class="page-footer__bottom">
+				<!-- <a class="page-footer__logo">
+					<svg width="100" height="33">
+						<use xlink:href="#icon-logo"></use>
+					</svg>
+				</a> -->
+				<p class="page-footer__copyright">КУП ЖРЭО г. Новополоцка<br> &copy; 2013-2020</p>
+				<div class="page-footer__counters">
+					<div class="page-footer__counter"><img src="img/counters/liveinternet.jpg" alt="счетчик LiveInternet"/></div>
+					<div class="page-footer__counter"><img src="img/counters/yandex.jpg" alt="счетчик Yandex"/></div>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+	<!-- <script src="js/popup.min.js"></script>
+	<script src="js/map.min.js"></script> -->
+	<script src="js/common.min.js"></script>
+	<script src="js/slider.min.js"></script>
+
+</body>
+</html>
