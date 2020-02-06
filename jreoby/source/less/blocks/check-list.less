@@ -1,0 +1,54 @@
+.check-list {
+	margin: 0;
+	padding: 0;
+	padding-left: 25px;
+	
+	list-style: none;
+}
+
+.check-list__item {
+	position: relative;
+
+	margin-bottom: 5px;
+	padding: 3px 10px;
+
+	color: #135275;
+
+	border: 1px dashed #f5dabf;
+	border-radius: 5px;
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: 10px;
+		left: -25px;
+
+		width: 10px;
+		height: 5px;
+
+		// background-color: green;
+		border-left: 1px solid #135275;
+		border-bottom: 1px solid #135275;
+		transform: rotate(-45deg);
+	}
+}
+
+
+@media (min-width: @custom-width) {
+	.check-list {
+		padding-left: 30px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

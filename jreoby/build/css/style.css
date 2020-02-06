@@ -423,6 +423,76 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #cccccc;
 }
+.check-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  list-style: none;
+}
+.check-list__item {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 3px 10px;
+  color: #135275;
+  border: 1px dashed #f5dabf;
+  border-radius: 5px;
+}
+.check-list__item::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  width: 10px;
+  height: 5px;
+  border-left: 1px solid #135275;
+  border-bottom: 1px solid #135275;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@media (min-width: 600px) {
+  .check-list {
+    padding-left: 30px;
+  }
+}
+.services-list {
+  margin: 0;
+  padding: 10px 15px;
+  list-style: none;
+  border: 1px solid #e0a100;
+  border-radius: 5px;
+}
+.services-list__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  color: #135275;
+  border-top: 1px solid #dbdbdb;
+  /* &::after {
+		content: '';
+	
+		position: absolute;
+		top: 10px;
+		left: -25px;
+	
+		width: 10px;
+		height: 5px;
+	
+		// background-color: green;
+		border-left: 1px solid #135275;
+		border-bottom: 1px solid #135275;
+		transform: rotate(-45deg);
+	} */
+}
+.services-list__item:first-child {
+  border-top: none;
+}
+.services-list__item span {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #d56e00;
+}
 .page-header {
   width: 320px;
   margin: 0 auto;
@@ -3065,6 +3135,34 @@ input[type="radio"].visually-hidden {
   .schedule__item span {
     display: inline;
   }
+}
+.transport__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.transport__list {
+  margin-bottom: 25px;
+}
+.transport__list--second {
+  padding-left: 25px;
+  color: #777777;
+  border: none;
+}
+.transport__schedule {
+  margin-bottom: 25px;
+}
+.transport__slogan {
+  margin: 0;
+  padding: 3px 0;
+  font-size: 18px;
+  text-align: center;
+  color: #e28605;
+  border-top: 1px solid #d56e00;
+  border-bottom: 1px solid #d56e00;
 }
 .text-border {
   padding: 5px 15px;
