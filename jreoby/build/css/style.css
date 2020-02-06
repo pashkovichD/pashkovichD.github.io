@@ -2985,8 +2985,12 @@ input[type="radio"].visually-hidden {
 }
 .station__banner {
   display: inline-block;
-  margin: 0 auto;
   line-height: 0;
+}
+@media (min-width: 600px) {
+  .station__banner {
+    margin-left: 10px;
+  }
 }
 @media (min-width: 768px) {
   .station__wrapper {
@@ -3008,6 +3012,9 @@ input[type="radio"].visually-hidden {
   .station__description {
     width: 348px;
     margin-left: 30px;
+  }
+  .station__banner {
+    margin-left: 0;
   }
 }
 @media (min-width: 940px) {

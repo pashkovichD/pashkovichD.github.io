@@ -21,14 +21,15 @@
 }
 
 .station__banner {
-	display: inline-block;
-	margin: 0 auto;
+	display: inline-block;	
 
 	line-height: 0;
 }
 
 @media (min-width: @custom-width) {
-
+	.station__banner {
+		margin-left: 10px;
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -48,6 +49,10 @@
 	.station__description {
 		width: 348px;
 		margin-left: 30px;
+	}
+
+	.station__banner {
+		margin-left: 0;
 	}
 }
 
