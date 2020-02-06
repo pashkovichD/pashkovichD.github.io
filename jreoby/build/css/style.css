@@ -3017,6 +3017,14 @@ input[type="radio"].visually-hidden {
     width: 380px;
   }
 }
+.schedule__item {
+  margin: 0;
+  padding: 0;
+}
+.schedule__item span {
+  font-weight: 700;
+  color: #333333;
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;
