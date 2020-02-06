@@ -25,13 +25,19 @@
 	padding: 0;
 
 	span {
+		display: block;
+
 		font-weight: 700;
 		color: #333333;
 	}
 }
 
 @media (min-width: @custom-width) {
-
+	.schedule__item {	
+		span {
+			display: inline;
+		}
+	}
 }
 
 @media (min-width: @tablet-width) {

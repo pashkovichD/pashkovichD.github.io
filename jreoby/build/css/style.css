@@ -2983,6 +2983,11 @@ input[type="radio"].visually-hidden {
 .station__phone {
   margin-bottom: 30px;
 }
+.station__banner {
+  display: inline-block;
+  margin: 0 auto;
+  line-height: 0;
+}
 @media (min-width: 768px) {
   .station__wrapper {
     display: -webkit-box;
@@ -3045,8 +3050,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .schedule__item span {
+  display: block;
   font-weight: 700;
   color: #333333;
+}
+@media (min-width: 600px) {
+  .schedule__item span {
+    display: inline;
+  }
 }
 .text-border {
   padding: 5px 15px;
