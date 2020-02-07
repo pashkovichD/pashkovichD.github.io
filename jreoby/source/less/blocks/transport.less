@@ -13,7 +13,17 @@
 }
 
 .transport__text--list {
-	margin-bottom: 30px;
+	position: relative;
+
+	padding-right: 75px;
+
+	svg {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+
+		margin-top: -25px;
+	}
 }
 
 .transport__list {
@@ -40,12 +50,14 @@
 	text-align: center;
 	color: #e28605;	
 
-	border-top: 1px solid #d56e00;
-	border-bottom: 1px solid #d56e00;
+	border-top: 1px dashed #d56e00;
+	border-bottom: 1px dashed #d56e00;
 }
 
 @media (min-width: @custom-width) {
-
+	.transport__list--second {
+		padding-left: 50px;
+	}
 }
 
 @media (min-width: @tablet-width) {

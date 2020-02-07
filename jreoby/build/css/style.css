@@ -3162,7 +3162,14 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .transport__text--list {
-  margin-bottom: 30px;
+  position: relative;
+  padding-right: 75px;
+}
+.transport__text--list svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -25px;
 }
 .transport__list {
   margin-bottom: 25px;
@@ -3181,8 +3188,13 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   text-align: center;
   color: #e28605;
-  border-top: 1px solid #d56e00;
-  border-bottom: 1px solid #d56e00;
+  border-top: 1px dashed #d56e00;
+  border-bottom: 1px dashed #d56e00;
+}
+@media (min-width: 600px) {
+  .transport__list--second {
+    padding-left: 50px;
+  }
 }
 .text-border {
   padding: 5px 15px;
