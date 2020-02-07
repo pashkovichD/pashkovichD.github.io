@@ -1,11 +1,24 @@
 .services-list {
+	position: relative;
+
 	margin: 0;
-	padding: 10px 15px;	
+	padding: 10px 15px 10px 20px;
 	
 	list-style: none;
 
-	border: 1px solid #e0a100;
 	border-radius: 5px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 0;
+		bottom: 0;
+		width: 4px;
+		background-color: #e0a100;
+		background: repeating-linear-gradient(-45deg,#e0a100,#e0a100 20px,#1c244a 20px,#1c244a 40px);	
+	}
+	
 }
 
 .services-list__item {
@@ -14,7 +27,7 @@
 	margin-bottom: 10px;
 	padding-top: 5px;
 
-	color: #135275;	
+	color: #135275;
 
 	&:first-child {
 		border-top: none;
@@ -26,10 +39,12 @@
 
 		font-size: 18px;
 		font-weight: 700;
-		color: #d56e00;		
+		color: #3d4647;
 
 		&:first-child {
-			border-top: 1px dashed #d56e00;
+			margin-top: 3px;
+
+			border-top: 1px dashed #dddddd;
 		}
 	}
 
