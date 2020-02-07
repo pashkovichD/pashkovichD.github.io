@@ -3455,6 +3455,39 @@ input[type="radio"].visually-hidden {
 .skits__person {
   padding-bottom: 0;
 }
+.jes__person {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+.jes__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3d4647;
+  background-color: #f2f2f2;
+  border-bottom: 1px dashed #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.jes__title-tablet {
+  display: none;
+}
+@media (min-width: 600px) {
+  .jes__title {
+    text-align: left;
+  }
+  .jes__title-mobile {
+    display: none;
+  }
+  .jes__title-tablet {
+    display: block;
+  }
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;
