@@ -542,7 +542,7 @@ input[type="radio"].visually-hidden {
   }
   .person__name {
     padding-bottom: 10px;
-    margin-bottom: auto;
+    margin-top: auto;
     text-align: left;
   }
   .person__name br {
@@ -560,6 +560,9 @@ input[type="radio"].visually-hidden {
   }
   .person__time-time {
     margin-left: 20px;
+  }
+  .person__time-time br {
+    display: none;
   }
 }
 @media (min-width: 768px) {
