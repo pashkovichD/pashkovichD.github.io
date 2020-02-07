@@ -369,6 +369,50 @@ input[type="radio"].visually-hidden {
   background-position: 0 center;
   border-right: 1px solid #e28605;
 }
+.fax {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  font-size: 20px;
+}
+.fax span {
+  opacity: 0.5;
+}
+.fax::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  left: 5px;
+  width: 30px;
+  background-image: url('../img/fax-color.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  border-right: 1px solid #e28605;
+}
+.address {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  font-size: 20px;
+}
+.address span {
+  opacity: 0.5;
+}
+.address::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  left: 5px;
+  width: 30px;
+  background-image: url('../img/map-color.svg');
+  background-repeat: no-repeat;
+  background-position: 3px center;
+  border-right: 1px solid #e28605;
+}
 .department {
   display: inline-block;
   margin: 0;
@@ -377,9 +421,173 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   border-bottom: 1px dashed #f4d8ba;
 }
+.person {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.person:hover,
+.person:focus {
+  border: 1px solid #ffcc00;
+}
+.person__img {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 .person__name {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.person__name span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #000000;
+}
+.person__phone {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding-left: 40px;
+}
+.person__phone::after {
+  border-right: none;
+}
+.person__phone span {
+  font-size: 15px;
+  font-style: italic;
+}
+.person__fax {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding-left: 40px;
+}
+.person__fax::after {
+  border-right: none;
+}
+.person__address {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.person__address span {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.5;
+}
+.person__time {
+  padding-top: 5px;
+  text-align: center;
+  border-top: 1px dashed #e0a100;
+}
+.person__time-title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  color: #000000;
+}
+.person__time-time {
+  margin: 0;
+  padding: 0;
+}
+.person__time-time span {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.5;
+}
+.person__comment {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #329a00;
+}
+@media (min-width: 600px) {
+  .person {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .person__img {
+    width: 150px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .person__description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+  }
+  .person__name {
+    padding-bottom: 10px;
+    margin-bottom: auto;
+    text-align: left;
+  }
+  .person__name br {
+    display: none;
+  }
+  .person__phone {
+    margin-left: 0;
+  }
+  .person__fax {
+    margin-left: 0;
+  }
+  .person__time {
+    width: 100%;
+    text-align: left;
+  }
+  .person__time-time {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .person__img {
+    width: 200px;
+  }
+  .person__description {
+    width: 480px;
+  }
+  .person__name {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 940px) {
+  .person__img {
+    width: 30%;
+  }
+  .person__description {
+    width: 67%;
+  }
+}
+@media (min-width: 1200px) {
+  .person__img {
+    width: 200px;
+  }
+  .person__description {
+    width: 560px;
+  }
 }
 .list {
   margin: 0;
@@ -3240,6 +3448,9 @@ input[type="radio"].visually-hidden {
   .transport__list--second {
     padding-left: 50px;
   }
+}
+.administration__person {
+  margin-bottom: 20px;
 }
 .text-border {
   padding: 5px 15px;

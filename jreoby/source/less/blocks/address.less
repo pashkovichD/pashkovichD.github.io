@@ -1,0 +1,46 @@
+.address {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	padding-left: 45px;
+
+	font-size: 20px;
+
+	span {
+		opacity: .5;
+	}
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: -7px;
+		bottom: -7px;
+		left: 5px;
+
+		width: 30px;
+
+		background-image: url('../img/map-color.svg');
+		background-repeat: no-repeat;
+		background-position: 3px center;
+		border-right: 1px solid #e28605;
+	}
+}
+
+
+@media (min-width: @custom-width) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
