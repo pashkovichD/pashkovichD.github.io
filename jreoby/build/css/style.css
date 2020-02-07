@@ -453,7 +453,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .person__phone {
-  margin-left: 20px;
   margin-bottom: 5px;
   padding-left: 40px;
 }
@@ -465,7 +464,6 @@ input[type="radio"].visually-hidden {
   font-style: italic;
 }
 .person__fax {
-  margin-left: 20px;
   margin-bottom: 5px;
   padding-left: 40px;
 }
@@ -476,6 +474,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+  text-align: center;
 }
 .person__address span {
   font-size: 15px;
@@ -483,6 +482,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 .person__time {
+  margin-top: 10px;
   padding-top: 5px;
   text-align: center;
   border-top: 1px dashed #e0a100;
@@ -548,11 +548,8 @@ input[type="radio"].visually-hidden {
   .person__name br {
     display: none;
   }
-  .person__phone {
-    margin-left: 0;
-  }
-  .person__fax {
-    margin-left: 0;
+  .person__address {
+    text-align: left;
   }
   .person__time {
     width: 100%;
@@ -3454,6 +3451,9 @@ input[type="radio"].visually-hidden {
 }
 .administration__person {
   margin-bottom: 20px;
+}
+.skits__person {
+  padding-bottom: 0;
 }
 .text-border {
   padding: 5px 15px;
