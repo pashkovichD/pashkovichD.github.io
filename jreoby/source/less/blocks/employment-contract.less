@@ -18,6 +18,16 @@
 	margin: 0;
 	margin-bottom: 10px;
 	padding: 0;
+
+	span {
+		font-size: 15px;
+		font-style: italic;
+		color: #aaaaaa;
+	}
+}
+
+.employment-contract__text--black {
+	color: #000000;
 }
 
 .employment-contract__text--privileges {
@@ -26,12 +36,74 @@
 	font-size: 16px;
 	line-height: 23px;
 
-	background-color: #fcf4eb;
+	background-color: #fdf7f1;
 	border: 3px double #e0a100;
+}
+
+.employment-contract__text--important {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.employment-contract__text--schedule {
+	margin-bottom: 20px;	
+	color: #000000;
+}
+
+.employment-contract__schedule {
+	margin-bottom: 25px;
+}
+
+.employment-contract__phone {
+	margin-bottom: 25px;
+}
+
+.employment-contract__schedule {
+	margin-bottom: 25px;
+}
+
+.employment-contract__address {
+	margin-bottom: 25px;
 }
 
 .employment-contract__list {
 	margin-bottom: 15px;
+}
+
+.employment-contract__links {
+	margin-bottom: 15px;
+}
+
+.employment-contract__links--dark {
+	position: relative;
+
+	margin-bottom: 5px;
+	padding: 12px 10px 14px 55px;
+	
+	text-align: left;
+	text-transform: none;
+
+	span {
+		font-weight: 400;
+		font-size: 15px;
+		font-style: italic;
+	}	
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+
+		margin-top: -15px;
+
+		fill: #ffffff;
+	}
+}
+
+.employment-contract__links--light {
+	margin-bottom: 5px;
+
+	text-transform: none;
 }
 
 
@@ -47,10 +119,24 @@
 	.employment-contract__text {
 		text-align: justify;
 	}
+
+	.employment-contract__text--important {
+		text-align: center;
+	}
 }
 
 @media (min-width: @custom940-width) {
+	.employment-contract__links--dark {
+		margin: 0;
+		margin-bottom: 5px;
+		width: 63%;
+	}
 
+	.employment-contract__links--light {
+		margin: 0;
+		margin-bottom: 5px;
+		width: 63%;
+	}
 }
 
 @media (min-width: @desktop-width) {

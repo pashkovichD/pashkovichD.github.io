@@ -278,7 +278,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   font-weight: 400;
   color: #ffffff;
-  background-color: #a5c720;
+  background-color: #319202;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -288,7 +288,7 @@ input[type="radio"].visually-hidden {
 }
 .button:hover,
 .button:focus {
-  background: #e09107;
+  background: #226104;
 }
 .button:active {
   color: rgba(0, 0, 0, 0.3);
@@ -760,6 +760,25 @@ input[type="radio"].visually-hidden {
 .services-list__item span:first-child {
   margin-top: 3px;
   border-top: 1px dashed #dddddd;
+}
+.comment {
+  position: relative;
+  margin: 0;
+  padding: 5px 10px 5px 55px;
+  color: #3D4647;
+  border-top: 1px solid #329a00;
+  border-bottom: 1px solid #eeeeee;
+}
+.comment::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  background-image: url('../img/comment.svg');
+  background-repeat: no-repeat;
+  background-position: center 11px;
 }
 .page-header {
   width: 320px;
@@ -2203,7 +2222,6 @@ input[type="radio"].visually-hidden {
 }
 .info__more-button {
   margin-bottom: 15px;
-  padding: 5px 25px;
 }
 .info__more {
   padding-bottom: 10px;
@@ -3565,15 +3583,69 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   padding: 0;
 }
+.employment-contract__text span {
+  font-size: 15px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+.employment-contract__text--black {
+  color: #000000;
+}
 .employment-contract__text--privileges {
   padding: 5px 10px;
   font-size: 16px;
   line-height: 23px;
-  background-color: #fcf4eb;
+  background-color: #fdf7f1;
   border: 3px double #e0a100;
+}
+.employment-contract__text--important {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.employment-contract__text--schedule {
+  margin-bottom: 20px;
+  color: #000000;
+}
+.employment-contract__schedule {
+  margin-bottom: 25px;
+}
+.employment-contract__phone {
+  margin-bottom: 25px;
+}
+.employment-contract__schedule {
+  margin-bottom: 25px;
+}
+.employment-contract__address {
+  margin-bottom: 25px;
 }
 .employment-contract__list {
   margin-bottom: 15px;
+}
+.employment-contract__links {
+  margin-bottom: 15px;
+}
+.employment-contract__links--dark {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 12px 10px 14px 55px;
+  text-align: left;
+  text-transform: none;
+}
+.employment-contract__links--dark span {
+  font-weight: 400;
+  font-size: 15px;
+  font-style: italic;
+}
+.employment-contract__links--dark svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -15px;
+  fill: #ffffff;
+}
+.employment-contract__links--light {
+  margin-bottom: 5px;
+  text-transform: none;
 }
 @media (min-width: 768px) {
   .employment-contract__title {
@@ -3581,6 +3653,21 @@ input[type="radio"].visually-hidden {
   }
   .employment-contract__text {
     text-align: justify;
+  }
+  .employment-contract__text--important {
+    text-align: center;
+  }
+}
+@media (min-width: 940px) {
+  .employment-contract__links--dark {
+    margin: 0;
+    margin-bottom: 5px;
+    width: 63%;
+  }
+  .employment-contract__links--light {
+    margin: 0;
+    margin-bottom: 5px;
+    width: 63%;
   }
 }
 .text-border {
