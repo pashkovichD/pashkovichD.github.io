@@ -3618,6 +3618,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
 }
 .employment-contract__list a {
+  font-size: 15px;
+  font-style: italic;
   color: #d56e00;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
