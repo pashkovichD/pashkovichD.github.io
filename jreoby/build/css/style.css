@@ -3617,6 +3617,16 @@ input[type="radio"].visually-hidden {
 .employment-contract__list {
   margin-bottom: 15px;
 }
+.employment-contract__list a {
+  color: #d56e00;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.employment-contract__list a:hover,
+.employment-contract__list a:focus {
+  color: #329a00;
+}
 .employment-contract__links {
   margin-bottom: 15px;
 }
@@ -3640,12 +3650,39 @@ input[type="radio"].visually-hidden {
   fill: #ffffff;
 }
 .employment-contract__links--light {
+  position: relative;
   margin-bottom: 5px;
+  padding: 7px 10px 7px 55px;
+  text-align: left;
   text-transform: none;
+  color: #2c8004;
+  background-color: #e6e3af;
+  border: 1px solid #319202;
+}
+.employment-contract__links--light span {
+  font-weight: 400;
+  font-size: 15px;
+  font-style: italic;
+}
+.employment-contract__links--light svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -15px;
+  fill: #2c8004;
+}
+.employment-contract__links--light:hover,
+.employment-contract__links--light:focus {
+  color: #205807;
+  background-color: #deda92;
+}
+.employment-contract__links--light:hover svg,
+.employment-contract__links--light:focus svg {
+  fill: #205807;
 }
 @media (min-width: 600px) {
   .employment-contract__links--dark {
-    padding: 10px 10px 10px 55px;
+    padding: 12px 10px 14px 55px;
   }
 }
 @media (min-width: 768px) {

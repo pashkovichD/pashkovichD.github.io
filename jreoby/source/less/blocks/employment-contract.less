@@ -64,6 +64,16 @@
 
 .employment-contract__list {
 	margin-bottom: 15px;
+
+	a {
+		color: #d56e00;
+		transition: @anim;
+
+		&:hover,
+		&:focus {
+			color: #329a00;
+		}
+	}
 }
 
 .employment-contract__links {
@@ -97,15 +107,50 @@
 }
 
 .employment-contract__links--light {
-	margin-bottom: 5px;
+	position: relative;
 
+	margin-bottom: 5px;
+	padding: 7px 10px 7px 55px;
+	
+	text-align: left;
 	text-transform: none;
+	color: #2c8004;
+
+	background-color: #e6e3af;
+	border: 1px solid #319202;
+
+	span {
+		font-weight: 400;
+		font-size: 15px;
+		font-style: italic;
+	}	
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+
+		margin-top: -15px;
+
+		fill: #2c8004;
+	}
+
+	&:hover,
+	&:focus {
+		color: #205807;
+
+		background-color: #deda92;
+
+		svg {
+			fill: #205807;
+		}
+	}
 }
 
 
 @media (min-width: @custom-width) {
 	.employment-contract__links--dark {
-		padding: 10px 10px 10px 55px;
+		padding: 12px 10px 14px 55px;
 	}
 }
 
