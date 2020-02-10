@@ -1,0 +1,200 @@
+.profkom {
+	
+}
+
+.profkom__title {
+	display: none;
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.profkom__person {
+	margin-bottom: 15px;
+	padding-bottom: 0;
+
+	border-bottom: 1px solid #ffcc00;
+}
+
+.profkom__schedule {
+	margin-bottom: 20px;
+}
+
+.profkom__coll-agreement {
+	position: relative;
+
+	margin-bottom: 5px;
+	padding: 7px 50px 7px 55px;
+	// padding: 12px 50px 14px 55px;
+	
+	text-align: left;
+	text-transform: none;
+
+	// background-image: url(../img/icon-link-download.svg);
+	// background-size: 20px 20px;
+	// background-repeat: no-repeat;
+	// background-position: right 20px center;
+
+	.svg-left,
+	.svg-right {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+
+		margin-top: -15px;
+
+		fill: #ffffff;
+	}
+
+	.svg-right {
+		left: auto;
+		right: 20px;
+
+		margin-top: -11px;
+	}
+}
+
+.profkom__table-title {
+	margin-bottom: 10px;
+
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #165427;
+}
+
+.profkom__table {
+	display: none;
+	width: 280px;
+	padding: 0;
+
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.profkom__thead {
+	display: none;
+
+	background-color: #3d4647;
+
+	th {
+		padding: 4px 10px;
+
+		font-weight: 400;
+		color: #ffffff;	
+
+		border: 1px solid #ffffff;
+		
+		&:first-child {
+			border-left: none;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.profkom__tbody {
+	text-align: center;
+
+	tr {
+		display: block;
+		margin-bottom: 15px;
+
+		background-color: #f5f5f5;
+	}
+
+	td {
+		display: block;
+		padding: 5px 10px;
+
+		border-bottom: 1px dotted #dddddd;
+
+		&.profkom__name {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #3d4647;
+
+			background-color: #eaeaea;
+			border-bottom: 1px solid #3d4647;
+		}
+	}
+}
+	
+
+@media (min-width: @custom-width) {
+	.profkom__schedule {
+		margin-left: 30px;
+	}
+
+	.profkom__coll-agreement {
+		padding: 12px 50px 14px 55px;
+	}
+
+	.profkom__table {
+		width: 100%;
+
+		border: 1px solid #3d4647;
+	}
+
+	.profkom__thead {
+		display: table-header-group;
+
+		th {
+			padding: 8px 10px;
+		}
+	}
+
+	.profkom__tbody {
+		text-align: center;
+
+		tr {
+			display: table-row;
+			margin-bottom: 0;
+
+			background-color: transparent;
+			border-bottom: 1px dashed #cccccc;
+			transition: @anim;
+
+			&:hover {
+				color: #000000;
+				background-color: #eeeeee;
+			}
+		}
+
+		td {
+			display: table-cell;
+
+			border-bottom: none;
+
+			&.profkom__name {
+				font-weight: 400;
+				text-align: left;
+				text-transform: none;
+				color: #000;
+				border-bottom: none;	
+				background-color: transparent;
+			}		
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.profkom__title {
+		display: block;
+	}
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
