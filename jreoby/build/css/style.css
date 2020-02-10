@@ -3392,6 +3392,13 @@ input[type="radio"].visually-hidden {
   background-position: 0 center;
   border-right: 1px solid #e28605;
 }
+.schedule__text {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #000000;
+}
 .schedule__item {
   margin: 0;
   padding: 0;
@@ -3455,6 +3462,28 @@ input[type="radio"].visually-hidden {
 .skits__person {
   padding-bottom: 0;
 }
+.jes__reception-title {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.jes__reception-title span {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: #aaaaaa;
+  border-bottom: 1px dashed #aaaaaa;
+}
+.jes__reception-schedule {
+  margin-bottom: 30px;
+}
+.jes__reception-schedule span {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: #aaaaaa;
+}
 .jes__person {
   margin-bottom: 20px;
   padding-bottom: 0;
@@ -3478,6 +3507,9 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 @media (min-width: 600px) {
+  .jes__reception-title {
+    text-align: left;
+  }
   .jes__title {
     text-align: left;
   }
