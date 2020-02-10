@@ -3520,6 +3520,36 @@ input[type="radio"].visually-hidden {
     display: block;
   }
 }
+.rss__person {
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ffcc00;
+}
+.rss__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.rss__text--list {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.rss__list {
+  margin-bottom: 15px;
+}
+.rss__list span {
+  font-size: 15px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+@media (min-width: 600px) {
+  .rss__text {
+    text-align: justify;
+  }
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;
