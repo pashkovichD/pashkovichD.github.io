@@ -396,7 +396,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-left: 45px;
-  font-size: 20px;
 }
 .address span {
   opacity: 0.5;
@@ -3612,9 +3611,6 @@ input[type="radio"].visually-hidden {
 .employment-contract__phone {
   margin-bottom: 25px;
 }
-.employment-contract__schedule {
-  margin-bottom: 25px;
-}
 .employment-contract__address {
   margin-bottom: 25px;
 }
@@ -3627,7 +3623,7 @@ input[type="radio"].visually-hidden {
 .employment-contract__links--dark {
   position: relative;
   margin-bottom: 5px;
-  padding: 12px 10px 14px 55px;
+  padding: 7px 10px 7px 55px;
   text-align: left;
   text-transform: none;
 }
@@ -3647,6 +3643,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 5px;
   text-transform: none;
 }
+@media (min-width: 600px) {
+  .employment-contract__links--dark {
+    padding: 10px 10px 10px 55px;
+  }
+}
 @media (min-width: 768px) {
   .employment-contract__title {
     text-align: left;
@@ -3656,6 +3657,15 @@ input[type="radio"].visually-hidden {
   }
   .employment-contract__text--important {
     text-align: center;
+  }
+  .employment-contract__schedule {
+    margin-left: 30px;
+  }
+  .employment-contract__phone {
+    margin-left: 30px;
+  }
+  .employment-contract__address {
+    margin-left: 30px;
   }
 }
 @media (min-width: 940px) {
