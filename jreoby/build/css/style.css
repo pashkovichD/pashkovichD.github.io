@@ -411,10 +411,26 @@ input[type="radio"].visually-hidden {
 .person:focus {
   border: 1px solid #ffcc00;
 }
+.person__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3d4647;
+  background-color: #f2f2f2;
+  border-bottom: 1px dashed #dddddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .person__img {
   width: 200px;
   margin: 0 auto;
   margin-bottom: 10px;
+  line-height: 0;
 }
 .person__name {
   margin: 0;
@@ -448,7 +464,7 @@ input[type="radio"].visually-hidden {
   border-right: none;
 }
 .person__email {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-left: 40px;
 }
 .person__email::after {
@@ -456,7 +472,7 @@ input[type="radio"].visually-hidden {
 }
 .person__address {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0;
   text-align: center;
 }
@@ -464,6 +480,15 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   font-style: italic;
   opacity: 0.5;
+}
+.person__website {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+}
+.person__website a {
+  color: #066599;
 }
 .person__time {
   margin-top: 10px;
@@ -507,10 +532,12 @@ input[type="radio"].visually-hidden {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
+  .person__title {
+    text-align: left;
+  }
   .person__img {
     width: 150px;
     margin: 0;
-    margin-bottom: 5px;
   }
   .person__description {
     display: -webkit-box;
@@ -525,14 +552,18 @@ input[type="radio"].visually-hidden {
     width: 350px;
   }
   .person__name {
-    padding-bottom: 10px;
     margin-top: auto;
+    padding-top: 0;
+    margin-bottom: 10px;
     text-align: left;
   }
   .person__name br {
     display: none;
   }
   .person__address {
+    text-align: left;
+  }
+  .person__website {
     text-align: left;
   }
   .person__time {
@@ -552,9 +583,6 @@ input[type="radio"].visually-hidden {
   }
   .person__description {
     width: 480px;
-  }
-  .person__name {
-    padding-top: 20px;
   }
 }
 @media (min-width: 940px) {
@@ -3527,9 +3555,6 @@ input[type="radio"].visually-hidden {
 .administration__person {
   margin-bottom: 20px;
 }
-.skits__person {
-  padding-bottom: 0;
-}
 .jes__reception-title {
   font-size: 20px;
   line-height: 26px;
@@ -3554,31 +3579,12 @@ input[type="radio"].visually-hidden {
 }
 .jes__person {
   margin-bottom: 20px;
-  padding-bottom: 0;
-}
-.jes__title {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  font-size: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #3d4647;
-  background-color: #f2f2f2;
-  border-bottom: 1px dashed #dddddd;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .jes__title-tablet {
   display: none;
 }
 @media (min-width: 600px) {
   .jes__reception-title {
-    text-align: left;
-  }
-  .jes__title {
     text-align: left;
   }
   .jes__title-mobile {
@@ -3590,7 +3596,6 @@ input[type="radio"].visually-hidden {
 }
 .rss__person {
   margin-bottom: 15px;
-  padding-bottom: 0;
   border-bottom: 1px solid #ffcc00;
 }
 .rss__text {
@@ -3774,17 +3779,16 @@ input[type="radio"].visually-hidden {
   display: none;
   margin: 0;
   margin-bottom: 15px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #3d4647;
   background-color: #eeeeee;
   border-left: 3px solid #cccccc;
 }
 .profkom__person {
   margin-bottom: 15px;
-  padding-bottom: 0;
   border-bottom: 1px solid #ffcc00;
 }
 .profkom__schedule {
@@ -3933,6 +3937,21 @@ input[type="radio"].visually-hidden {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.profkom__commission--last {
+  position: relative;
+  margin-bottom: 30px;
+}
+.profkom__commission--last:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #e0a100;
+  background: -o-repeating-linear-gradient(135deg, #e0a100, #e0a100 20px, #1c244a 20px, #1c244a 40px);
+  background: repeating-linear-gradient(-45deg, #e0a100, #e0a100 20px, #1c244a 20px, #1c244a 40px);
+}
 .profkom__commission-thead {
   display: none;
   background-color: #3d4647;
@@ -4064,6 +4083,9 @@ input[type="radio"].visually-hidden {
     display: table;
     width: 100%;
     border: 1px solid #3d4647;
+  }
+  .profkom__commission--last::before {
+    content: none;
   }
   .profkom__commission-thead {
     display: table-header-group;

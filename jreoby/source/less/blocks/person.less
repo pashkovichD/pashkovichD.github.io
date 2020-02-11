@@ -12,10 +12,30 @@
 	}
 }
 
+.person__title {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #3d4647;
+
+	background-color: #f2f2f2;
+	border-bottom: 1px dashed #dddddd;
+
+	box-sizing: border-box;
+}
+
 .person__img {
 	width: 200px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+
+	line-height: 0;
 }
 
 .person__description {
@@ -24,7 +44,7 @@
 
 .person__name {
 	margin: 0;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 	padding: 0;
 
 	font-size: 20px;
@@ -63,7 +83,7 @@
 }
 
 .person__email {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	padding-left: 40px;
 
 	&::after {
@@ -73,7 +93,7 @@
 
 .person__address {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	padding: 0;
 
 	text-align: center;
@@ -82,6 +102,18 @@
 		font-size: 15px;
 		font-style: italic;
 		opacity: .5;
+	}
+}
+
+.person__website {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+
+	text-align: center;
+
+	a {
+		color: #066599;
 	}
 }
 
@@ -134,10 +166,13 @@
 		flex-wrap: wrap;
 	}
 
+	.person__title {
+		text-align: left;
+	}
+
 	.person__img {
 		width: 150px;
 		margin: 0;
-		margin-bottom: 5px;
 	}
 
 	.person__description {
@@ -147,8 +182,10 @@
 	}
 
 	.person__name {
-		padding-bottom: 10px;
+		// padding-bottom: 10px;
 		margin-top: auto;
+		padding-top: 0;
+		margin-bottom: 10px;
 
 		text-align: left;
 
@@ -158,6 +195,10 @@
 	}
 
 	.person__address {
+		text-align: left;
+	}
+
+	.person__website {
 		text-align: left;
 	}
 
@@ -186,7 +227,7 @@
 	}
 
 	.person__name {
-		padding-top: 20px;
+		// padding-top: 20px;
 	}
 }
 

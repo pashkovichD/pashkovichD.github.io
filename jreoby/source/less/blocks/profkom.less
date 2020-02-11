@@ -6,12 +6,12 @@
 	display: none;
 	margin: 0;
 	margin-bottom: 15px;
-	padding: 5px 10px;
+	padding: 5px 15px;
 
 	font-size: 20px;
 	line-height: 26px;
 	font-weight: 700;
-	color: #000000;
+	color: #3d4647;
 
 	background-color: #eeeeee;
 	border-left: 3px solid #cccccc;
@@ -19,7 +19,6 @@
 
 .profkom__person {
 	margin-bottom: 15px;
-	padding-bottom: 0;
 
 	border-bottom: 1px solid #ffcc00;
 }
@@ -33,15 +32,9 @@
 
 	margin-bottom: 15px;
 	padding: 7px 50px 7px 55px;
-	// padding: 12px 50px 14px 55px;
 	
 	text-align: left;
-	text-transform: none;
-
-	// background-image: url(../img/icon-link-download.svg);
-	// background-size: 20px 20px;
-	// background-repeat: no-repeat;
-	// background-position: right 20px center;
+	text-transform: none;	
 
 	.svg-left,
 	.svg-right {
@@ -220,6 +213,23 @@
 	border-spacing: 0;
 }
 
+.profkom__commission--last {
+	position: relative;
+
+	margin-bottom: 30px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		right: 0;
+		height: 4px;
+		background-color: #e0a100;
+		background: repeating-linear-gradient(-45deg,#e0a100,#e0a100 20px,#1c244a 20px,#1c244a 40px);
+	}
+}
+
 .profkom__commission-thead {
 	display: none;
 
@@ -387,6 +397,12 @@
 		width: 100%;
 
 		border: 1px solid #3d4647;
+	}
+
+	.profkom__commission--last {
+		&::before {
+			content: none;
+		}
 	}
 
 	.profkom__commission-thead {
