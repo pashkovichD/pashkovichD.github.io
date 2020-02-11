@@ -3910,10 +3910,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   text-align: center;
   color: #3d4647;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .profkom__commission-title svg {
   display: block;
@@ -4053,6 +4055,9 @@ input[type="radio"].visually-hidden {
   }
   .profkom__commission-title span {
     width: 450px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .profkom__commission {
     display: table;
@@ -4108,7 +4113,7 @@ input[type="radio"].visually-hidden {
     padding-right: 15px;
   }
   .profkom__commission-title span {
-    width: 86%;
+    width: 85%;
   }
 }
 @media (min-width: 1200px) {
