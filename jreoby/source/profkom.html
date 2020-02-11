@@ -144,7 +144,8 @@
 					<a href="docs/profkom/collective_agreement.doc" class="profkom__coll-agreement button"><svg width="30" height="30" class="svg-left"><use xlink:href="#icon-sample-app"></use></svg>Коллективный договор<svg width="23" height="23" class="svg-right"><use xlink:href="#icon-link-download"></use></svg></a>
 					
 					<p class="profkom__table-title">СОСТАВ профсоюзного комитета</p>
-					<table class="profkom__table">
+					<button type="button" class="profkom__button-more button more__button">Смотреть список...</button>
+					<table class="profkom__table more">
 						<thead class="profkom__thead">
 							<tr>
 								<th>Ф.И.О.</th>
@@ -216,7 +217,8 @@
 					</table>
 
 					<p class="profkom__table-title">Ревизионная комиссия</p>
-					<table class="profkom__table">
+					<button type="button" class="profkom__button-more button more__button">Смотреть список...</button>
+					<table class="profkom__table more">
 						<thead class="profkom__thead">
 							<tr>
 								<th>Ф.И.О.</th>
@@ -237,72 +239,58 @@
 								<td class="vacancies__position">член комиссии</td>
 							</tr>
 						</tbody>
-					</table>		
-					
+					</table>
 
-					<div id="profkom">
+					<div class="profkom__tabs tabs">
+				
+						<input id="tab1" type="radio" name="tabs" class="profkom__tabs-input tabs__input" checked>
+						<label for="tab1" title="Новости" class="profkom__tabs-label tabs__label">Положения</label>
 
-						<div class="container">
+						<input id="tab2" type="radio" name="tabs" class="profkom__tabs-input tabs__input">
+						<label for="tab2" title="Информация" class="profkom__tabs-label tabs__label">Планы</label>
 
-							<div class="tab-wrap">
+						<section id="tabs__content1" class="profkom__tabs-section tabs__section">
+							<ul class="profkom__list list">
+								<li class="list__item"><a href="docs/profkom/positions/mat_pomosch.doc">Положение о выплате материальной помощи членам профсоюзной организации</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/hud_samodeyatelnocti.doc">Положение о конкурсе художественной самодеятельности</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/bytovye_pomescheniya.doc">положение о смотре-конкурсе бытовых помещений</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/ekonomiya_energo.doc">Положение о смотре конкурсе экономии энергоресурсов</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/structur_podrazdelenie.doc">Положение о смотре-конкурсе на лучшее структурное подразделение</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/ruchnaya_rabota.doc">Положение о творчестве ручной работы</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/rybalka.doc">Положение о летней рыбалке</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/turnir.doc">Положение о турнире (зимняя рыбалка)</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/turslet.doc">Положение о проведении туристического слета</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/moda.doc">Положение о конкурсе моды</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/gribnik.doc">Положение о турнире "Грибник"</a></li>
+								<li class="list__item"><a href="docs/profkom/positions/s_godom_petuha.doc">Положение о конкурсе ручного творчества "С годом Петуха!"</a></li>
+							</ul>
+						</section>
 
-								<input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-								<label for="tab1">Положения</label>
+						<section id="tabs__content2" class="profkom__tabs-section tabs__section">
+							<ul class="profkom__list list">
+								<li class="list__item"><a href="docs/profkom/plans/2019.doc">План работы на 2019 год</a></li>
+								<li class="list__item"><a href="docs/profkom/plans/profactive.doc">План обучения профактива</a></li>
+								<li class="list__item"><a href="docs/profkom/plans/km_fo.doc">План работы КМ и ФО комиссии профкома на 2019 год</a></li>
+								<li class="list__item"><a href="docs/profkom/plans/molodezh.doc">План работы молодежной комиссии</a></li>
+								<li class="list__item"><a href="docs/profkom/plans/obshchest.doc">План работы общественной комиссии</a></li>				
+								<li class="list__item"><a href="docs/profkom/plans/trud.doc">План работы комиссии по труду</a></li>
+							</ul>
+						</section>
 
-								<input type="radio" id="tab2" name="tabGroup1" class="tab">
-								<label for="tab2">Планы</label>
+					</div>		
 
-								<div class="tab__content">
-									<ul class="with_check-box check-box_mini" style="margin-bottom: 15px;">
-										<li><a href="docs/profkom/polozhenie_mat_pomosch.doc">Положение о выплате материальной помощи членам профсоюзной организации</a></li>
-										<li><a href="docs/profkom/polozhenie_hud_samodeyatelnocti.doc">Положение о конкурсе художественной самодеятельности</a></li>
-										<li><a href="docs/profkom/polozhenie_bytovye_pomescheniya.doc">положение о смотре-конкурсе бытовых помещений</a></li>
-										<li><a href="docs/profkom/polozhenie_ekonomiya_energo.doc">Положение о смотре конкурсе экономии энергоресурсов</a></li>
-										<li><a href="docs/profkom/polozhenie_structur_podrazdelenie.doc">Положение о смотре-конкурсе на лучшее структурное подразделение</a></li>
-										<li><a href="docs/profkom/polozhenie_ruchnaya_rabota.doc">Положение о творчестве ручной работы</a></li>
-										<li><a href="docs/profkom/polozhenie_rybalka.doc">Положение о летней рыбалке</a></li>
-										<li><a href="docs/profkom/polozhenie_turnir.doc">Положение о турнире (зимняя рыбалка)</a></li>
-										<li><a href="docs/profkom/polozhenie_turslet.doc">Положение о проведении туристического слета</a></li>
-										<li><a href="docs/profkom/polozhenie_moda.doc">Положение о конкурсе моды</a></li>
-										<li><a href="docs/profkom/polozhenie_gribnik.doc">Положение о турнире "Грибник"</a></li>
-										<li><a href="docs/profkom/polozhenie_s_godom_petuha.doc">Положение о конкурсе ручного творчества "С годом Петуха!"</a></li>
-									</ul>
-								</div>
-
-								<div class="tab__content">									
-									<ul class="with_check-box check-box_mini" style="margin-bottom: 15px;">
-										<!-- <li><a href="docs/profkom/plan_1_2016.doc">План работы на 1 полугодие 2016 года</a></li>
-										<li><a href="docs/profkom/plan_2_2016.doc">План работы на 2 полугодие 2016 года</a></li>
-										<li><a href="docs/profkom/plan_ob_kom.doc">План работы комиссии по общественному контролю за соблюдением законодательства о труде и об охране труда</a></li>										
-										<li><a href="docs/profkom/plan_kult_sport_kom.doc">Комиссия по культурно-массовой и физкультурно-оздоровительной работе</a></li>
-										<li><a href="docs/profkom/plan_prav_kom.doc">План работы комиссии по заработной плате и занятости</a></li> -->
-										<li><a href="docs/profkom/plan_2019.doc">План работы на 2019 год</a></li>
-										<li><a href="docs/profkom/plan_profactive.doc">План обучения профактива</a></li>
-										<li><a href="docs/profkom/plan_km_fo.doc">План работы КМ и ФО комиссии профкома на 2019 год</a></li>
-										<li><a href="docs/profkom/plan_molodezh.doc">План работы молодежной комиссии</a></li>
-										<li><a href="docs/profkom/plan_obshchest.doc">План работы общественной комиссии</a></li>				
-										<li><a href="docs/profkom/plan_trud.doc">План работы комиссии по труду</a></li>
-									</ul>
-								</div>
-
-								
-							</div>  
-
-						</div>
-
-						<p class="prof_title">Комиссии профсоюзного комитета</p>
-						<table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" class="t_line">
-							<tr>
-								<td bgcolor="#FFDD93" class="border-tab"><p class="text-aup"><strong>Комиссия по общественному контролю за соблюдением законодательства о труде и об охране труда</strong></p></td>								
-							</tr>
-							<tr>
-								<td class="border-tab"><p class="text-otdel"><span>Председатель комиссии:</span> Ткаченко Елена Владимировна (АУП)</p></td>								
-							</tr>							
-							<tr>
-								<td class="border"><p class="text-otdel chl_kom"><span>Члены комиссии:</span> Федорова Елена Александровна (тр. служба)<br>
-								                                  												Родик Елена Дмитриевна (ЖЭС-1)</p></td>
-							</tr>		
-						</table>						
+					<p class="profkom__table-title">Комиссии профсоюзного комитета</p>						
+					<table>
+						<tr>
+							<td><strong>Комиссия по общественному контролю за соблюдением законодательства о труде и об охране труда</strong></td>								
+						</tr>
+						<tr>
+							<td><span>Председатель комиссии:</span> Ткаченко Елена Владимировна (АУП)</td>
+						</tr>							
+						<tr>
+							<td><span>Члены комиссии:</span> Федорова Елена Александровна (тр. служба) Родик Елена Дмитриевна (ЖЭС-1)</td>
+						</tr>		
+					</table>						
 
 						<table width="95%" border="0" cellspacing="0" cellpadding="0" align="center" class="t_line">
 							<tr>
@@ -404,7 +392,6 @@
 								</td>								
 							</tr>		
 						</table>
-					</div>
 
 				</section>
 

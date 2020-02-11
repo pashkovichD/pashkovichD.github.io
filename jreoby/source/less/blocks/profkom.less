@@ -6,12 +6,15 @@
 	display: none;
 	margin: 0;
 	margin-bottom: 15px;
-	padding: 0;
+	padding: 5px 10px;
 
 	font-size: 20px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+
+	background-color: #eeeeee;
+	border-left: 3px solid #cccccc;
 }
 
 .profkom__person {
@@ -28,7 +31,7 @@
 .profkom__coll-agreement {
 	position: relative;
 
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	padding: 7px 50px 7px 55px;
 	// padding: 12px 50px 14px 55px;
 	
@@ -60,7 +63,9 @@
 }
 
 .profkom__table-title {
+	margin: 0;
 	margin-bottom: 10px;
+	padding: 0;
 
 	font-size: 20px;
 	line-height: 26px;
@@ -71,6 +76,7 @@
 .profkom__table {
 	display: none;
 	width: 280px;
+	margin-bottom: 15px;
 	padding: 0;
 
 	border-collapse: collapse;
@@ -126,6 +132,22 @@
 		}
 	}
 }
+
+.profkom__button-more {
+	margin-bottom: 20px;
+	padding: 5px 10px;
+
+	text-transform: none;
+	color: #000000;
+
+	background-color: #e5e5e5;
+	border-bottom: 1px solid #d5d5d5;
+
+	&:hover,
+	&:focus {
+		background-color: #cccccc;
+	}
+}
 	
 
 @media (min-width: @custom-width) {
@@ -134,10 +156,12 @@
 	}
 
 	.profkom__coll-agreement {
+		margin-bottom: 30px;
 		padding: 12px 50px 14px 55px;
 	}
 
 	.profkom__table {
+		display: table;
 		width: 100%;
 
 		border: 1px solid #3d4647;
@@ -182,6 +206,10 @@
 				background-color: transparent;
 			}		
 		}
+	}
+
+	.profkom__button-more {
+		display: none;
 	}
 }
 

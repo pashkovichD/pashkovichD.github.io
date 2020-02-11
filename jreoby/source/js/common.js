@@ -114,7 +114,13 @@ window.addEventListener('keydown', function (e) {
 buttonMore.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
 		e.preventDefault();
-		this.nextSibling.nextSibling.style.display = 'block';
-		this.style.display = 'none';		
+		/* если скрыта таблица, то для её корректного показана нужно display: table; В остальных случаях display: block;*/
+		if(this.nextSibling.nextSibling.tagName == 'TABLE') {
+			this.nextSibling.nextSibling.style.display = 'table';
+		} else {
+			this.nextSibling.nextSibling.style.display = 'block';
+		}
+
+		this.style.display = 'none';
 	});
 });
