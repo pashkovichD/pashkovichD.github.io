@@ -173,10 +173,97 @@
 
 		&:hover,
 		&:focus {
-			// text-decoration: underline;
 			background-color: #e5e5e5;
 			color: #000000;
 		}
+	}
+}
+
+.profkom__commission-title {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	color: #3d4647;
+
+	svg {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		padding: 0 50px 5px 50px;
+
+		border-bottom: 1px dashed #cccccc;
+
+		fill: #e28605;
+	}
+}
+
+.profkom__commission {
+	// display: none;
+	width: 280px;
+	margin-bottom: 30px;
+	padding: 0;
+
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.profkom__commission-thead {
+	display: none;
+
+	background-color: #3d4647;
+
+	th {
+		padding: 4px 10px;
+
+		font-weight: 400;
+		color: #ffffff;	
+
+		border: 1px solid #ffffff;
+		
+		&:first-child {
+			border-left: none;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.profkom__commission-tbody {
+	text-align: center;
+
+	tr {
+		display: block;
+		margin-bottom: 15px;
+
+		background-color: #f5f5f5;
+	}
+
+	td {
+		display: block;
+		padding: 5px 10px;
+
+		border-bottom: 1px dotted #dddddd;
+
+		span {
+			font-size: 15px;
+			font-style: italic;
+			color: #bbbbbb;
+		}
+
+		// &.profkom__name {
+		// 	font-weight: 700;
+		// 	text-transform: uppercase;
+		// 	color: #3d4647;
+
+		// 	background-color: #eaeaea;
+		// 	border-bottom: 1px solid #3d4647;
+		// }
 	}
 }
 	
@@ -241,6 +328,54 @@
 
 	.profkom__button-more {
 		display: none;
+	}
+
+	.profkom__commission {
+		display: table;
+		width: 100%;
+
+		border: 1px solid #3d4647;
+	}
+
+	.profkom__commission-thead {
+		display: table-header-group;
+
+		th {
+			padding: 8px 10px;
+		}
+	}
+
+	.profkom__commission-tbody {
+		text-align: center;
+
+		tr {
+			display: table-row;
+			margin-bottom: 0;
+
+			background-color: transparent;
+			border-bottom: 1px dashed #cccccc;
+			transition: @anim;
+
+			&:hover {
+				color: #000000;
+				background-color: #eeeeee;
+			}
+		}
+
+		td {
+			display: table-cell;
+
+			border-bottom: none;
+
+			// &.profkom__name {
+			// 	font-weight: 400;
+			// 	text-align: left;
+			// 	text-transform: none;
+			// 	color: #000;
+			// 	border-bottom: none;	
+			// 	background-color: transparent;
+			// }
+		}
 	}
 }
 
