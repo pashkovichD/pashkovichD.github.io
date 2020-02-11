@@ -3817,6 +3817,7 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #165427;
 }
 .profkom__table-title--commission {
