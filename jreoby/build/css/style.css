@@ -3819,6 +3819,9 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #165427;
 }
+.profkom__table-title--commission {
+  margin-bottom: 20px;
+}
 .profkom__table {
   display: none;
   width: 280px;
@@ -3878,12 +3881,14 @@ input[type="radio"].visually-hidden {
 .profkom__button-more--last {
   margin-bottom: 30px;
 }
+.profkom__tabs {
+  margin-bottom: 30px;
+}
 .profkom__tabs-label {
   padding: 2px 10px;
   font-size: 18px;
 }
 .profkom__list {
-  margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 5px;
 }
@@ -3950,14 +3955,27 @@ input[type="radio"].visually-hidden {
   background-color: #f5f5f5;
 }
 .profkom__commission-tbody td {
+  position: relative;
   display: block;
-  padding: 5px 10px;
+  padding: 40px 10px 5px 10px;
   border-bottom: 1px dotted #dddddd;
 }
 .profkom__commission-tbody td span {
   font-size: 15px;
   font-style: italic;
   color: #bbbbbb;
+}
+.profkom__commission-tbody td::before {
+  content: attr(data-label);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  font-weight: 700;
+  color: #1c244a;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #aaaaaa;
 }
 @media (min-width: 600px) {
   .profkom__schedule {
@@ -4009,6 +4027,32 @@ input[type="radio"].visually-hidden {
   .profkom__button-more {
     display: none;
   }
+  .profkom__commission-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .profkom__commission-title svg {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    border-bottom: none;
+    border-right: 1px dashed #cccccc;
+  }
+  .profkom__commission-title span {
+    width: 450px;
+  }
   .profkom__commission {
     display: table;
     width: 100%;
@@ -4038,12 +4082,40 @@ input[type="radio"].visually-hidden {
   }
   .profkom__commission-tbody td {
     display: table-cell;
+    padding-top: 5px;
     border-bottom: none;
+  }
+  .profkom__commission-tbody td::before {
+    content: none;
+  }
+  .profkom__commission-president {
+    border-right: 1px dotted #dddddd;
   }
 }
 @media (min-width: 768px) {
   .profkom__title {
     display: block;
+  }
+  .profkom__commission-title span {
+    width: 640px;
+  }
+}
+@media (min-width: 940px) {
+  .profkom__commission-title svg {
+    width: 10%;
+    height: auto;
+    padding-right: 15px;
+  }
+  .profkom__commission-title span {
+    width: 86%;
+  }
+}
+@media (min-width: 1200px) {
+  .profkom__commission-title svg {
+    width: 60px;
+  }
+  .profkom__commission-title span {
+    width: 715px;
   }
 }
 .text-border {

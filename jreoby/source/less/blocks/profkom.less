@@ -73,6 +73,10 @@
 	color: #165427;
 }
 
+.profkom__table-title--commission {
+	margin-bottom: 20px;
+}
+
 .profkom__table {
 	display: none;
 	width: 280px;
@@ -154,13 +158,16 @@
 }
 
 
+.profkom__tabs {
+	margin-bottom: 30px;
+}
+
 .profkom__tabs-label {
 	padding: 2px 10px;
 	font-size: 18px;
 }
 
-.profkom__list {
-	margin-bottom: 20px;
+.profkom__list {	
 	padding-top: 10px;
 	padding-bottom: 5px;
 	a {
@@ -182,7 +189,7 @@
 .profkom__commission-title {
 	margin: 0;
 	margin-bottom: 15px;
-	padding: 0;
+	padding: 0;	
 
 	font-size: 18px;
 	font-weight: 700;
@@ -202,7 +209,6 @@
 }
 
 .profkom__commission {
-	// display: none;
 	width: 280px;
 	margin-bottom: 30px;
 	padding: 0;
@@ -245,8 +251,9 @@
 	}
 
 	td {
+		position: relative;
 		display: block;
-		padding: 5px 10px;
+		padding: 40px 10px 5px 10px;
 
 		border-bottom: 1px dotted #dddddd;
 
@@ -254,6 +261,23 @@
 			font-size: 15px;
 			font-style: italic;
 			color: #bbbbbb;
+		}
+
+		&::before {
+			content: attr(data-label);
+
+			position: absolute;
+			top: 0;
+			left: 0;
+				
+			width: 100%;			
+			padding: 5px;
+			
+			font-weight: 700;
+			color: #1c244a;
+
+			background-color: #eeeeee;
+			border-bottom: 1px solid #aaaaaa
 		}
 
 		// &.profkom__name {
@@ -330,6 +354,28 @@
 		display: none;
 	}
 
+	.profkom__commission-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;		
+
+		text-align: left;
+
+		svg {
+			width: 60px;
+			margin: 0;			
+			padding: 0;
+			padding-right: 10px;
+
+			border-bottom: none;
+			border-right: 1px dashed #cccccc;
+		}
+
+		span {
+			width: 450px;
+		}
+	}
+
 	.profkom__commission {
 		display: table;
 		width: 100%;
@@ -364,18 +410,18 @@
 
 		td {
 			display: table-cell;
+			padding-top: 5px;
 
 			border-bottom: none;
 
-			// &.profkom__name {
-			// 	font-weight: 400;
-			// 	text-align: left;
-			// 	text-transform: none;
-			// 	color: #000;
-			// 	border-bottom: none;	
-			// 	background-color: transparent;
-			// }
+			&::before {
+				content: none;
+			}
 		}
+	}
+
+	.profkom__commission-president {
+		border-right: 1px dotted #dddddd;
 	}
 }
 
@@ -383,12 +429,37 @@
 	.profkom__title {
 		display: block;
 	}
+
+	.profkom__commission-title {
+		span {
+			width: 640px;
+		}
+	}
 }
 
 @media (min-width: @custom940-width) {
+	.profkom__commission-title {
+		svg {
+			width: 10%;
+			height: auto;
 
+			padding-right: 15px;
+		}
+
+		span {
+			width: 86%;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
+	.profkom__commission-title {
+		svg {
+			width: 60px;
+		}
 
+		span {
+			width: 715px;
+		}
+	}
 }
