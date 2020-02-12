@@ -3974,7 +3974,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin-bottom: 30px;
 }
-.profkom__commission--last:before {
+.profkom__commission--last::before {
   content: '';
   position: absolute;
   bottom: -15px;
@@ -4183,23 +4183,34 @@ input[type="radio"].visually-hidden {
     width: 715px;
   }
 }
-.question__title {
-  margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-}
 .question__rules {
+  position: relative;
   margin-bottom: 30px;
-  padding: 5px 15px;
+  padding: 10px 15px 5px 15px;
   font-size: 15px;
   line-height: 22px;
-  border: 1px solid #e0a100;
-  border-radius: 2px;
+}
+.question__rules::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #e0a100;
+  background: -o-repeating-linear-gradient(135deg, #e0a100, #e0a100 20px, #1c244a 20px, #1c244a 40px);
+  background: repeating-linear-gradient(-45deg, #e0a100, #e0a100 20px, #1c244a 20px, #1c244a 40px);
+}
+.question__rules::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #e0a100;
+  background: -o-repeating-linear-gradient(135deg, #e0a100, #e0a100 20px, #1c244a 20px, #1c244a 40px);
+  background: repeating-linear-gradient(-45deg, #e0a100, #e0a100 20px, #1c244a 20px, #1c244a 40px);
 }
 .question__rules-title {
   display: -webkit-box;
@@ -4288,7 +4299,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   background-color: #f7f7f7;
-  border-bottom: 1px dashed #cccccc;
+  border-bottom: 1px dashed #aaaaaa;
   cursor: pointer;
   opacity: 0.5;
   -webkit-transition: all 0.2s ease-out;
@@ -4305,9 +4316,6 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
 }
 @media (min-width: 600px) {
-  .question__title {
-    text-align: left;
-  }
   .question__button-more {
     width: 220px;
   }

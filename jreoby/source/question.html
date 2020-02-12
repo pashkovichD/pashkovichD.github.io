@@ -121,9 +121,7 @@
 				<h1 class="page-main__title">Вопрос - ответ</h1>
 				
 				<section class="question">
-					<h2 class="visually-hidden">Здесь Вы можете задать вопрос руководству КУП ЖРЭО</h2>
-					
-					<p class="question__title">Здесь Вы можете задать свой вопрос</p>
+					<h2 class="visually-hidden">Здесь Вы можете задать вопрос руководству КУП ЖРЭО</h2>					
 
 					<div class="developer">
 						<svg fill="#e28605" width="73" height="65">
@@ -132,8 +130,20 @@
 						<p class="developer__text">Форма находится в разработке</p>
 					</div>
 					
-					<!-- <form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form">
+					<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form">
 						<p class="form__comment">* Все поля (кроме <b>Прикрепить файл</b>) ОБЯЗАТЕЛЬНЫ для заполнения</p>
+					
+						<p class="form__item">
+							<label class="form__label" for="form__fio">Фамилия, имя, отчество</label>
+							<input class="form__input" type="text" name="fio" id="form__fio" placeholder="Логин" value="">
+						</p>
+						<!-- <p class="modal-login__item modal-login__item--password">
+						<label for="modal-login__password" class="visually-hidden">Ваш пароль:</label>
+						<input type="password" name="password" id="modal-login__password" placeholder="Пароль" value="">
+						</p> -->
+
+
+<!-- 
 						<div class="f_name">
 						<input type="text" size="50" name="contactname" id="contactname" value="<?php echo $name; ?>" class="required" placeholder="Фамилия, имя, отчество">
 						</div>
@@ -168,8 +178,8 @@
 						<p class="form__succesfull">E-mail успешно отправлен!</p>
 						<p class="form__succesfull-sub">Также продублирован на Ваш e-mail: <strong><?php echo $email; ?></strong></p>
 						<?php } ?>
-					
-					</form> -->
+					 -->
+					</form>
 
 					<!-- <script type="text/javascript">
 						$(document).ready(function(){
@@ -196,9 +206,7 @@
 							<li class="check-list__item">адрес электронной почты заявителя.</li>
 						</ul>
 						<p class="question__text">Отзыв электронного обращения осуществляется путем подачи письменного заявления либо направляется в электронной форме.</p>	
-					</div>
-
-					
+					</div>					
 
 					<section class="question__accordeon accordeon">						
 						<h2 class="question__comment comment">Ответы на некоторые задаваемые вопросы</h2>
