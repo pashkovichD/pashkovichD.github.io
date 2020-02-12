@@ -397,6 +397,49 @@ input[type="radio"].visually-hidden {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.form__item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.red {
+  border: 1px solid red;
+}
+.form__input {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 5px 10px 5px 15px;
+  font-size: 20px;
+  line-height: 26px;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.form__input:hover,
+.form__input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #329a00;
+}
+.form__label {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  display: block;
+  padding: 0 5px;
+  font-size: 15px;
+  color: #c3c3c3;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .department {
   display: inline-block;
   margin: 0;
