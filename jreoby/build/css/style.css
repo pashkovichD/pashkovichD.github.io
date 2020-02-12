@@ -421,7 +421,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-weight: 700;
   color: #3d4647;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   border-bottom: 1px dashed #dddddd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -431,6 +431,9 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 10px;
   line-height: 0;
+}
+.person__description {
+  text-align: center;
 }
 .person__name {
   margin: 0;
@@ -446,17 +449,21 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .person__phone {
+  display: inline-block;
+  margin: 0 auto;
   margin-bottom: 5px;
   padding-left: 40px;
 }
 .person__phone::after {
   border-right: none;
 }
-.person__phone span {
+.person__phone span.second {
   font-size: 15px;
   font-style: italic;
 }
 .person__fax {
+  display: inline-block;
+  margin: 0 auto;
   margin-bottom: 5px;
   padding-left: 40px;
 }
@@ -464,6 +471,8 @@ input[type="radio"].visually-hidden {
   border-right: none;
 }
 .person__email {
+  display: inline-block;
+  margin: 0 auto;
   margin-bottom: 5px;
   padding-left: 40px;
 }
@@ -550,15 +559,31 @@ input[type="radio"].visually-hidden {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 350px;
+    text-align: left;
   }
   .person__name {
     margin-top: auto;
     padding-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: auto;
     text-align: left;
   }
   .person__name br {
     display: none;
+  }
+  .person__phone {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .person__fax {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .person__email {
+    display: block;
+    margin: 0;
+    margin-bottom: 5px;
   }
   .person__address {
     text-align: left;
@@ -3783,7 +3808,7 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #3d4647;
+  color: #165427;
   background-color: #eeeeee;
   border-left: 3px solid #cccccc;
 }
@@ -3896,6 +3921,7 @@ input[type="radio"].visually-hidden {
 .profkom__list {
   padding-top: 10px;
   padding-bottom: 5px;
+  line-height: 22px;
 }
 .profkom__list a {
   display: block;
@@ -3973,7 +3999,7 @@ input[type="radio"].visually-hidden {
 }
 .profkom__commission-tbody tr {
   display: block;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 .profkom__commission-tbody td {
   position: relative;
@@ -4127,6 +4153,9 @@ input[type="radio"].visually-hidden {
   }
   .profkom__commission-title span {
     width: 640px;
+  }
+  .profkom__list {
+    line-height: 25px;
   }
 }
 @media (min-width: 940px) {

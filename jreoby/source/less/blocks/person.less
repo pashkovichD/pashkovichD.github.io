@@ -24,7 +24,7 @@
 	font-weight: 700;
 	color: #3d4647;
 
-	background-color: #f2f2f2;
+	background-color: #fafafa;
 	border-bottom: 1px dashed #dddddd;
 
 	box-sizing: border-box;
@@ -39,7 +39,7 @@
 }
 
 .person__description {
-	
+	text-align: center;
 }
 
 .person__name {
@@ -60,6 +60,8 @@
 }
 
 .person__phone {
+	display: inline-block;
+	margin: 0 auto;
 	margin-bottom: 5px;
 	padding-left: 40px;
 
@@ -74,6 +76,8 @@
 }
 
 .person__fax {
+	display: inline-block;
+	margin: 0 auto;
 	margin-bottom: 5px;
 	padding-left: 40px;
 
@@ -83,6 +87,8 @@
 }
 
 .person__email {
+	display: inline-block;
+	margin: 0 auto;
 	margin-bottom: 5px;
 	padding-left: 40px;
 
@@ -179,19 +185,38 @@
 		display: flex;
 		flex-direction: column;
 		width: 350px;
+
+		text-align: left;
 	}
 
 	.person__name {
-		// padding-bottom: 10px;
-		margin-top: auto;
+		margin-top: auto;		
 		padding-top: 0;
-		margin-bottom: 10px;
+		margin-bottom: auto;
 
 		text-align: left;
 
 		br {
 			display: none;
 		}
+	}
+
+	.person__phone {
+		display: block;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	.person__fax {
+		display:block;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	.person__email {
+		display: block;
+		margin: 0;
+		margin-bottom: 5px;
 	}
 
 	.person__address {
@@ -224,10 +249,6 @@
 
 	.person__description {
 		width: 480px;
-	}
-
-	.person__name {
-		// padding-top: 20px;
 	}
 }
 
