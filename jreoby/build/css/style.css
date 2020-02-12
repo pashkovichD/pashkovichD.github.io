@@ -4176,12 +4176,25 @@ input[type="radio"].visually-hidden {
     width: 715px;
   }
 }
+.question__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
 .question__rules {
   padding: 5px 15px;
+  font-size: 15px;
+  line-height: 22px;
   border: 1px solid #e0a100;
+  border-radius: 2px;
 }
 .question__rules-title {
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 .question__text {
@@ -4190,13 +4203,34 @@ input[type="radio"].visually-hidden {
 }
 .question__important {
   margin: 0;
-  padding: 0;
+  margin-bottom: 5px;
+  padding: 2px 10px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #dadada;
 }
 .question__list-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0;
   color: #000000;
+}
+.question__list {
+  margin-bottom: 10px;
+}
+.question__list--check li {
+  border: none;
+}
+.question__list--check li::after {
+  left: -16px;
+}
+@media (min-width: 600px) {
+  .question__title {
+    text-align: left;
+  }
+  .question__list--check {
+    padding-left: 50px;
+  }
 }
 .text-border {
   padding: 5px 15px;
