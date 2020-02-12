@@ -4176,6 +4176,28 @@ input[type="radio"].visually-hidden {
     width: 715px;
   }
 }
+.question__rules {
+  padding: 5px 15px;
+  border: 1px solid #e0a100;
+}
+.question__rules-title {
+  margin: 0;
+  padding: 0;
+}
+.question__text {
+  margin: 0;
+  padding: 0;
+}
+.question__important {
+  margin: 0;
+  padding: 0;
+}
+.question__list-title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  color: #000000;
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;
