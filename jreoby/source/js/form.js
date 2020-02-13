@@ -1,6 +1,8 @@
 var inputs = document.querySelectorAll('.form__input');
 var labels = document.querySelectorAll('.form__label');
 
+var attach = document.querySelector('.form__attach-input');
+
 // удаляем стили для отображения формы, на случай, когда не работает JS
 var form = document.querySelectorAll('.form'); // на странице таких форм может быть несколько
 form.forEach(function(el) {
@@ -37,3 +39,19 @@ inputs.forEach(function(el) {
 		}
 	});
 });
+
+attach.addEventListener('change', function (e) { // слушаем событие изменения input file
+	str = this.value; // полное имя выбранного файла	
+	// находим инденкс элемента, после которого начинается имя файла
+	if (str.lastIndexOf('\\')){
+		var i = str.lastIndexOf('\\')+1;
+	}
+	else{
+		var i = str.lastIndexOf('/')+1;
+	}
+
+	var filename = str.slice(i); // получаем имя файла
+	
+	var uploaded = document.getElementById("fileformlabel");
+	uploaded.innerHTML = filename;
+});			

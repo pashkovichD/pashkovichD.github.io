@@ -165,14 +165,7 @@
 				<h1 class="page-main__title">Вопрос - ответ</h1>
 				
 				<section class="question">
-					<h2 class="visually-hidden">Здесь Вы можете задать вопрос руководству КУП ЖРЭО</h2>					
-
-					<div class="developer">
-						<svg fill="#e28605" width="73" height="65">
-							<use xlink:href="#icon-developer"></use>
-						</svg>
-						<p class="developer__text">Форма находится в разработке</p>
-					</div>
+					<h2 class="visually-hidden">Здесь Вы можете задать вопрос руководству КУП ЖРЭО</h2>
 					
 					<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form form--nojs">
 						<p class="form__comment">* Все поля (кроме <b>Прикрепить файл</b>) ОБЯЗАТЕЛЬНЫ для заполнения</p>
@@ -201,10 +194,11 @@
 							<textarea class="form__input form__input--textarea" rows="5" cols="50" name="message" id="form__message"></textarea>
 							<label class="form__label" for="form__message">Сообщение</label>
 						</p>
-						<p class="form__item">
-							<label for="file_mail" class="file_mail"><strong>Прикрепить файл</strong> ( < 2 Мб):</label>
-							<input type="file" name="file_mail" multiple="" id="file_mail">
-							</p><p class="form__comment">* Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
+						<p class="form__item">							
+							<input type="file" name="attach" multiple="" id="form__attach" class="form__attach-input">
+							<label for="form__attach" class="form__attach">Загрузить файл</label>
+							</p><p id="fileformlabel"></p>
+							<p class="form__comment">* Размер файла: <b>< 2 Mb</b> <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
 						<p></p>
 
 						<button type="submit" class="form__submit button">Отправить</button>
