@@ -157,12 +157,11 @@
 							<textarea class="form__input form__input--textarea" rows="5" cols="50" name="message" id="form__message"></textarea>
 							<label class="form__label" for="form__message">Сообщение</label>
 						</p>
-						<!-- <p class="modal-login__item modal-login__item--password">
-						<label for="modal-login__password" class="visually-hidden">Ваш пароль:</label>
-						<input type="password" name="password" id="modal-login__password" placeholder="Пароль" value="">
-						</p> -->
-
-
+						<p class="form__item">
+							<label for="file_mail" class="file_mail"><strong>Прикрепить файл</strong> ( < 2 Мб):</label>
+							<input type="file" name="file_mail" multiple id="file_mail">
+							<p class="form__comment">* Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
+						</p>
 <!-- 
 						<div class="f_name">
 						<input type="text" size="50" name="contactname" id="contactname" value="<?php echo $name; ?>" class="required" placeholder="Фамилия, имя, отчество">
@@ -389,11 +388,6 @@
 			</div>
 
 			<div class="page-footer__bottom">
-				<!-- <a class="page-footer__logo">
-					<svg width="100" height="33">
-						<use xlink:href="#icon-logo"></use>
-					</svg>
-				</a> -->
 				<p class="page-footer__copyright">КУП ЖРЭО г. Новополоцка<br> &copy; 2013-2020</p>
 				<div class="page-footer__counters">
 					<div class="page-footer__counter"><img src="img/counters/liveinternet.jpg" alt="счетчик LiveInternet"/></div>
