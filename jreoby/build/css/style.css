@@ -414,7 +414,7 @@ input[type="radio"].visually-hidden {
 .form__item {
   position: relative;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 0;
 }
 .red {
@@ -4264,6 +4264,9 @@ input[type="radio"].visually-hidden {
   .profkom__commission-title span {
     width: 715px;
   }
+}
+.question__form {
+  margin-bottom: 30px;
 }
 .question__rules {
   position: relative;
