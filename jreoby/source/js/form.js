@@ -52,17 +52,38 @@
 
 // var inputs = document.querySelectorAll('.form__input');
 var inputs = document.querySelectorAll('.form__input');
+var labels = document.querySelectorAll('.form__label');
 
-inputs.forEach(function(el) {
-	el.addEventListener('click', function (e) {
-		if(this.value == '') {
-			// alert('OK');
-		}
+// удаляем стили для отображения формы, на случай, когда не работает JS
+var form = document.querySelectorAll('.form'); // на странице таких форм может быть несколько
+form.forEach(function(el) {
+	el.classList.remove('form--nojs');
+});
+
+labels.forEach(function(el) {
+	el.classList.add('form__label--start'); // все label'ы в исходное состояние
+});
+
+inputs.forEach(function(el) {	
+	// el.addEventListener('mouseover', function (e) {
+	el.addEventListener('focus', function (e) {
+	if(this.nextSibling.classList.contains('form__label--start')) {
+		// this.nextSibling.classList.remove('form__label--start');
+		alert('OK');
+	}
+		// if(this.value == '') {
+		// 	alert('OK');
+		// }
 	});
+
+	// el.onfocus = function() {		
+	// 	// if(this.nextSibling.classList.contains('form__label--start')) {
+	// 	// 	this.nextSibling.classList.remove('form__label--start')
+	// 	// }
+	// }
 	
 	// el.addEventListener('focus', function (e) {
-	// 	// e.classList.add('red');
-
+	// 	e.classList.add('red');
 	// });
 });
 

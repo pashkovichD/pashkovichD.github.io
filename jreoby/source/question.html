@@ -130,28 +130,32 @@
 						<p class="developer__text">Форма находится в разработке</p>
 					</div>
 					
-					<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form">
+					<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form form--nojs">
 						<p class="form__comment">* Все поля (кроме <b>Прикрепить файл</b>) ОБЯЗАТЕЛЬНЫ для заполнения</p>
 					
 						<p class="form__item">
 							<input class="form__input" type="text" name="fio" id="form__fio"  value="">
 							<label class="form__label" for="form__fio">Фамилия, имя, отчество</label>
 						</p>
-						<p class="form__item">							
+						<p class="form__item">
 							<input class="form__input" type="email" name="email" id="form__email" value="">
 							<label class="form__label" for="form__email">E-mail</label>
 						</p>
-						<p class="form__item">							
+						<p class="form__item">
 							<input class="form__input" type="text" name="address" id="form__address" value="">
 							<label class="form__label" for="form__address">Почтовый адрес /юр. адрес/</label>
 						</p>
-						<p class="form__item">							
+						<p class="form__item">
 							<input class="form__input" type="text" name="phone" id="form__phone" value="">
 							<label class="form__label" for="form__phone">Контактный телефон</label>
 						</p>
-						<p class="form__item">							
+						<p class="form__item">
 							<input class="form__input" type="text" name="theme" id="form__theme" value="">
 							<label class="form__label" for="form__theme">Тема</label>
+						</p>
+						<p class="form__item">
+							<textarea class="form__input form__input--textarea" rows="5" cols="50" name="message" id="form__message"></textarea>
+							<label class="form__label" for="form__message">Сообщение</label>
 						</p>
 						<!-- <p class="modal-login__item modal-login__item--password">
 						<label for="modal-login__password" class="visually-hidden">Ваш пароль:</label>
