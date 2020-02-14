@@ -170,11 +170,11 @@
 					<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form form--nojs">
 						<p class="form__comment">* Все поля (кроме <b>Прикрепить файл</b>) ОБЯЗАТЕЛЬНЫ для заполнения</p>
 					
-						<p class="form__item">
+						<p class="form__item form__item--person">
 							<input class="form__input" type="text" name="fio" id="form__fio" value="">
 							<label class="form__label" for="form__fio">Фамилия, имя, отчество</label>
 						</p>
-						<p class="form__item">
+						<p class="form__item form__item--email">
 							<input class="form__input" type="email" name="email" id="form__email" value="">
 							<label class="form__label" for="form__email">E-mail</label>
 						</p>
@@ -182,7 +182,7 @@
 							<input class="form__input" type="text" name="address" id="form__address" value="">
 							<label class="form__label" for="form__address">Почтовый адрес /юр. адрес/</label>
 						</p>
-						<p class="form__item">
+						<p class="form__item form__item--phone">
 							<input class="form__input" type="text" name="phone" id="form__phone" value="">
 							<label class="form__label" for="form__phone">Контактный телефон</label>
 						</p>
@@ -194,12 +194,12 @@
 							<textarea class="form__input form__input--textarea" rows="5" cols="50" name="message" id="form__message"></textarea>
 							<label class="form__label" for="form__message">Сообщение</label>
 						</p>
-						<p class="form__item">							
-							<input type="file" name="attach" multiple="" id="form__attach" class="form__attach-input">
-							<label for="form__attach" class="form__attach">Загрузить файл</label>
-							</p><p id="fileformlabel"></p>
-							<p class="form__comment">* Размер файла: <b>< 2 Mb</b> <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
-						<p></p>
+						<div class="form__item form__item--attach">
+							<input type="file" name="attach" multiple="" id="form__attach1" class="form__attach-input">
+							<label for="form__attach1" class="form__attach">Загрузить файл</label>
+							<p class="form__filename"></p>
+							<p class="form__comment form__comment--file">* Размер файла: <b>< 2 Mb</b> <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
+						</div>
 
 						<button type="submit" class="form__submit button">Отправить</button>
 <!-- 
