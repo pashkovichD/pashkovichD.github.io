@@ -75,11 +75,19 @@ attach.forEach(function(el) {
 
 form.addEventListener('submit', function (e) {
 	e.preventDefault(); // запрещаем отправку формы
-	i = 0;
+	error = false;
 	inputs.forEach(function(el) {
 		console.log(el.value);
 		if(el.value != '') {
-			alert('OK');
+			if(el.getAttribute('type') == 'email') {
+				mailRegExp = /^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/;
+				if(!mailRegExp.test(el.value)) {
+					alert('OK');
+					// error = true;
+				}
+			}
+		} else {
+			error = true;
 		}		
 	});
 
