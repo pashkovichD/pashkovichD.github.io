@@ -76,20 +76,23 @@ attach.forEach(function(el) {
 form.addEventListener('submit', function (e) {
 	e.preventDefault(); // запрещаем отправку формы
 	error = false;
+
 	inputs.forEach(function(el) {
 		console.log(el.value);
 		if(el.value != '') {
 			if(el.getAttribute('type') == 'email') {
 				mailRegExp = /^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/;
 				if(!mailRegExp.test(el.value)) {
-					alert('OK');
-					// error = true;
+					error = true;
+
 				}
 			}
 		} else {
 			error = true;
-		}		
+		}
 	});
+
+	alert(error);
 
 	// alert(i);
 

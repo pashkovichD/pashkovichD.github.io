@@ -411,6 +411,38 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #329a00;
 }
+.form__error {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  padding: 3px 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: red;
+}
+.form__error svg {
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  height: 43px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  fill: red;
+}
 .form__comment--file {
   padding-top: 20px;
 }
@@ -586,6 +618,21 @@ input[type="radio"].visually-hidden {
   .form__comment {
     width: 100%;
     text-align: left;
+  }
+  .form__error {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form__error svg {
+    width: 25px;
+    height: 25px;
+    fill: #ffffff;
+  }
+  .form__error span {
+    width: 200px;
   }
 }
 @media (min-width: 768px) {

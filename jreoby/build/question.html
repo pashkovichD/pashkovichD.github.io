@@ -170,33 +170,35 @@
 					<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="question__form form form--nojs">
 						<p class="form__comment">* Все поля (кроме <b>Прикрепить файл</b>) ОБЯЗАТЕЛЬНЫ для заполнения</p>
 					
+						<p class="form__error"><svg fill="#ffffff" width="28" height="24"><use xlink:href="#icon-attention"></use></svg><span>Проверьте, пожалуйста, правильность заполения всех полей</span></p>
+
 						<p class="form__item form__item--person">
-							<input class="form__input" type="text" name="fio" id="form__fio" value="">
-							<label class="form__label" for="form__fio">Фамилия, имя, отчество</label>
+							<input class="form__input" type="text" name="question__fio" id="question__fio" value="">
+							<label class="form__label" for="question__fio">Фамилия, имя, отчество</label>
 						</p>
 						<p class="form__item form__item--email">
-							<input class="form__input" type="email" name="email" id="form__email" value="">
-							<label class="form__label" for="form__email">E-mail</label>
+							<input class="form__input" type="email" name="question__email" id="question__email" value="">
+							<label class="form__label" for="question__email">E-mail</label>
 						</p>
 						<p class="form__item">
-							<input class="form__input" type="text" name="address" id="form__address" value="">
-							<label class="form__label" for="form__address">Почтовый адрес /юр. адрес/</label>
+							<input class="form__input" type="text" name="question__address" id="question__address" value="">
+							<label class="form__label" for="question__address">Почтовый адрес /юр. адрес/</label>
 						</p>
 						<p class="form__item form__item--phone">
-							<input class="form__input" type="text" name="phone" id="form__phone" value="">
-							<label class="form__label" for="form__phone">Контактный телефон</label>
+							<input class="form__input" type="text" name="question__phone" id="question__phone" value="">
+							<label class="form__label" for="question__phone">Контактный телефон</label>
 						</p>
 						<p class="form__item">
-							<input class="form__input" type="text" name="theme" id="form__theme" value="">
-							<label class="form__label" for="form__theme">Тема</label>
+							<input class="form__input" type="text" name="question__theme" id="question__theme" value="">
+							<label class="form__label" for="question__theme">Тема</label>
 						</p>
 						<p class="form__item">
-							<textarea class="form__input form__input--textarea" rows="5" cols="50" name="message" id="form__message"></textarea>
-							<label class="form__label" for="form__message">Сообщение</label>
+							<textarea class="form__input form__input--textarea" rows="5" cols="50" name="question__message" id="question__message"></textarea>
+							<label class="form__label" for="question__message">Сообщение</label>
 						</p>
 						<div class="form__item form__item--attach">
-							<input type="file" name="attach" multiple="" id="form__attach1" class="form__attach-input">
-							<label for="form__attach1" class="form__attach">Загрузить файл</label>
+							<input type="file" name="question__attach" multiple="" id="question__attach" class="form__attach-input">
+							<label for="question__attach" class="form__attach">Загрузить файл</label>
 							<p class="form__filename"></p>
 							<p class="form__comment form__comment--file">* Размер файла: <b>< 2 Mb</b> <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
 						</div>
