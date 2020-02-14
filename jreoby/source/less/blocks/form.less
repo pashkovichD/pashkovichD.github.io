@@ -19,11 +19,10 @@
 	color: #329a00;
 }
 
-.form__error,
-.form__succesfull {
+.form__notice {
 	position: relative;
 
-	display: flex;	
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
@@ -54,7 +53,7 @@
 	}
 }
 
-.form__succesfull {
+.form__notice--succesfull {
 	background-color: #329a00;
 
 	svg {
@@ -68,6 +67,21 @@
 
 		background-color: #ffffff;
 		border-bottom: 1px solid #a3de86;
+	}
+}
+
+.form__notice--show {
+	display: flex;
+	animation-name: noticeShow;
+	animation-duration: 1s;
+}
+
+@keyframes noticeShow {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -286,8 +300,7 @@
 		text-align: left;
 	}
 
-	.form__error,
-	.form__succesfull {
+	.form__notice {
 		flex-direction: row;
 		
 		margin-top: 25px;
@@ -309,7 +322,7 @@
 		}
 	}
 
-	.form__succesfull {
+	.form__notice--succesfull {
 		.second {
 			width: 100%;
 		}
@@ -321,8 +334,7 @@
 		width: 480px;
 	}
 
-	.form__error,
-	.form__succesfull {
+	.form__notice {
 		span {
 			width: 650px;
 		}
@@ -334,8 +346,7 @@
 		width: 55%;
 	}
 
-	.form__error,
-	.form__succesfull {
+	.form__notice {
 		span {
 			width: 90%;
 		}
@@ -347,8 +358,7 @@
 		width: 560px;
 	}
 
-	.form__error,
-	.form__succesfull {
+	.form__notice {
 		span {
 			width: 740px;
 		}

@@ -411,13 +411,9 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #329a00;
 }
-.form__error,
-.form__succesfull {
+.form__notice {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -438,8 +434,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: red;
 }
-.form__error svg,
-.form__succesfull svg {
+.form__notice svg {
   position: absolute;
   top: -50px;
   width: 50px;
@@ -447,21 +442,46 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   fill: red;
 }
-.form__error span,
-.form__succesfull span {
+.form__notice span {
   padding: 3px 10px;
 }
-.form__succesfull {
+.form__notice--succesfull {
   background-color: #329a00;
 }
-.form__succesfull svg {
+.form__notice--succesfull svg {
   fill: #329a00;
 }
-.form__succesfull .second {
+.form__notice--succesfull .second {
   padding: 1px 10px;
   color: #000000;
   background-color: #ffffff;
   border-bottom: 1px solid #a3de86;
+}
+.form__notice--show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: noticeShow;
+          animation-name: noticeShow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+@-webkit-keyframes noticeShow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes noticeShow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .form__comment--file {
   padding-top: 20px;
@@ -639,8 +659,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     text-align: left;
   }
-  .form__error,
-  .form__succesfull {
+  .form__notice {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -649,19 +668,17 @@ input[type="radio"].visually-hidden {
     margin-top: 25px;
     text-align: left;
   }
-  .form__error svg,
-  .form__succesfull svg {
+  .form__notice svg {
     position: static;
     width: 23px;
     height: 23px;
     margin: 0 0 0 10px;
     fill: #ffffff;
   }
-  .form__error span,
-  .form__succesfull span {
+  .form__notice span {
     width: 470px;
   }
-  .form__succesfull .second {
+  .form__notice--succesfull .second {
     width: 100%;
   }
 }
@@ -669,8 +686,7 @@ input[type="radio"].visually-hidden {
   .form__filename {
     width: 480px;
   }
-  .form__error span,
-  .form__succesfull span {
+  .form__notice span {
     width: 650px;
   }
 }
@@ -678,8 +694,7 @@ input[type="radio"].visually-hidden {
   .form__filename {
     width: 55%;
   }
-  .form__error span,
-  .form__succesfull span {
+  .form__notice span {
     width: 90%;
   }
 }
@@ -687,8 +702,7 @@ input[type="radio"].visually-hidden {
   .form__filename {
     width: 560px;
   }
-  .form__error span,
-  .form__succesfull span {
+  .form__notice span {
     width: 740px;
   }
 }

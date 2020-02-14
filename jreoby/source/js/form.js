@@ -6,6 +6,9 @@ var formFilename = document.querySelectorAll('.form__filename'); // аналог
 
 var form = document.querySelector('.form');
 // var form = getElementsByClassName('.form');
+var formNotice = document.querySelectorAll('.form__notice');
+var formError = document.querySelector('.form__notice--error');
+var formSuccesfull = document.querySelector('.form__notice--succesfull');
 
 
 
@@ -75,7 +78,17 @@ attach.forEach(function(el) {
 
 form.addEventListener('submit', function (e) {
 	e.preventDefault(); // запрещаем отправку формы
+	formNotice.forEach(function(el) {		
+		if(el.classList.contains('form__notice--show')) {
+			el.classList.delete('form__notice--show');
+		}
+	});
+
+	// formError.classList.delete('form__notice--show');
+	// formSuccesfull.classList.delete('form__notice--show');
+
 	error = false;
+	// alert('OK');
 
 	inputs.forEach(function(el) {
 		console.log(el.value);
@@ -84,7 +97,6 @@ form.addEventListener('submit', function (e) {
 				mailRegExp = /^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/;
 				if(!mailRegExp.test(el.value)) {
 					error = true;
-
 				}
 			}
 		} else {
@@ -92,11 +104,26 @@ form.addEventListener('submit', function (e) {
 		}
 	});
 
-	alert(error);
+	// alert(error);
+
+	if(error) {
+		// hideNotice();
+		formError.classList.add('form__notice--show');
+	}	else {
+		// hideNotice();
+		formSuccesfull.classList.add('form__notice--show');
+		form.submit();
+	}
 
 	// alert(i);
 
 });
+
+function hideNotice() {
+	formNotice.forEach(function(el) {		
+		el.classList.delete('form__notice--show');
+	});	
+}
 
 // var el_field = new Array("el_firstname", "el_name", "el_secondname", "el_address", "el_email", "el_message");//поля обязательные 
 
