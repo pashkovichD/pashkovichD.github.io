@@ -19,17 +19,19 @@
 	color: #329a00;
 }
 
-.form__error {
+.form__error,
+.form__succesfull {
 	position: relative;
 
-	display: flex;
+	display: flex;	
 	flex-direction: column;
 	align-items: center;
+	flex-wrap: wrap;
 
 	margin: 0;
 	margin-top: 75px;
 	margin-bottom: 30px;
-	padding: 3px 10px;
+	padding: 0;
 	
 	text-align: center;
 	color: #ffffff;
@@ -42,13 +44,31 @@
 
 		width: 50px;
 		height: 43px;
-		margin-right: 10px;
 		margin-bottom: 10px;
 
 		fill: red;
 	}
 
-	
+	span {
+		padding: 3px 10px;
+	}
+}
+
+.form__succesfull {
+	background-color: #329a00;
+
+	svg {
+		fill: #329a00;
+	}
+
+	.second {
+		padding: 1px 10px;
+		
+		color: #000000;
+
+		background-color: #ffffff;
+		border-bottom: 1px solid #a3de86;
+	}
 }
 
 .form__comment--file {
@@ -266,18 +286,32 @@
 		text-align: left;
 	}
 
-	.form__error {
+	.form__error,
+	.form__succesfull {
 		flex-direction: row;
+		
+		margin-top: 25px;
+
+		text-align: left;
 
 		svg {
-			width: 25px;
-			height: 25px;
+			position: static;
+
+			width: 23px;
+			height: 23px;
+			margin: 0 0 0 10px;
 
 			fill: #ffffff;
 		}
 
 		span {
-			width: 200px;
+			width: 470px;
+		}
+	}
+
+	.form__succesfull {
+		.second {
+			width: 100%;
 		}
 	}
 }
@@ -286,16 +320,37 @@
 	.form__filename {
 		width: 480px;
 	}
+
+	.form__error,
+	.form__succesfull {
+		span {
+			width: 650px;
+		}
+	}
 }
 
 @media (min-width: @custom940-width) {
 	.form__filename {
 		width: 55%;
 	}
+
+	.form__error,
+	.form__succesfull {
+		span {
+			width: 90%;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
 	.form__filename {
 		width: 560px;
+	}
+
+	.form__error,
+	.form__succesfull {
+		span {
+			width: 740px;
+		}
 	}
 }

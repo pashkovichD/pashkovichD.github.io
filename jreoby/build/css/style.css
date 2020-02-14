@@ -411,7 +411,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #329a00;
 }
-.form__error {
+.form__error,
+.form__succesfull {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -426,22 +427,41 @@ input[type="radio"].visually-hidden {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 0;
   margin-top: 75px;
   margin-bottom: 30px;
-  padding: 3px 10px;
+  padding: 0;
   text-align: center;
   color: #ffffff;
   background-color: red;
 }
-.form__error svg {
+.form__error svg,
+.form__succesfull svg {
   position: absolute;
   top: -50px;
   width: 50px;
   height: 43px;
-  margin-right: 10px;
   margin-bottom: 10px;
   fill: red;
+}
+.form__error span,
+.form__succesfull span {
+  padding: 3px 10px;
+}
+.form__succesfull {
+  background-color: #329a00;
+}
+.form__succesfull svg {
+  fill: #329a00;
+}
+.form__succesfull .second {
+  padding: 1px 10px;
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #a3de86;
 }
 .form__comment--file {
   padding-top: 20px;
@@ -619,35 +639,57 @@ input[type="radio"].visually-hidden {
     width: 100%;
     text-align: left;
   }
-  .form__error {
+  .form__error,
+  .form__succesfull {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 25px;
+    text-align: left;
   }
-  .form__error svg {
-    width: 25px;
-    height: 25px;
+  .form__error svg,
+  .form__succesfull svg {
+    position: static;
+    width: 23px;
+    height: 23px;
+    margin: 0 0 0 10px;
     fill: #ffffff;
   }
-  .form__error span {
-    width: 200px;
+  .form__error span,
+  .form__succesfull span {
+    width: 470px;
+  }
+  .form__succesfull .second {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
   .form__filename {
     width: 480px;
   }
+  .form__error span,
+  .form__succesfull span {
+    width: 650px;
+  }
 }
 @media (min-width: 940px) {
   .form__filename {
     width: 55%;
   }
+  .form__error span,
+  .form__succesfull span {
+    width: 90%;
+  }
 }
 @media (min-width: 1200px) {
   .form__filename {
     width: 560px;
+  }
+  .form__error span,
+  .form__succesfull span {
+    width: 740px;
   }
 }
 .department {
