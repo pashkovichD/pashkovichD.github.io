@@ -26,6 +26,14 @@ inputs[0].focus(); // ставим фокус в первый input
 inputs[0].nextSibling.nextSibling.classList.remove('form__label--start'); // состояние фокуса в первом input'е
 
 inputs.forEach(function(el) {
+	
+	alert(el.value);
+
+	if(el.value != '') {
+		lab = this.nextSibling.nextSibling;
+		lab.classList.remove('form__label--start');
+	}
+
 	el.addEventListener('focus', function (e) {
 		lab = this.nextSibling.nextSibling;
 		if(lab.classList.contains('form__label--start')) {
@@ -78,20 +86,10 @@ attach.forEach(function(el) {
 
 form.addEventListener('submit', function (e) {
 	e.preventDefault(); // запрещаем отправку формы
-	formNotice.forEach(function(el) {		
-		if(el.classList.contains('form__notice--show')) {
-			el.classList.delete('form__notice--show');
-		}
-	});
-
-	// formError.classList.delete('form__notice--show');
-	// formSuccesfull.classList.delete('form__notice--show');
-
+	hideNotice();
 	error = false;
-	// alert('OK');
 
 	inputs.forEach(function(el) {
-		console.log(el.value);
 		if(el.value != '') {
 			if(el.getAttribute('type') == 'email') {
 				mailRegExp = /^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/;
@@ -104,25 +102,18 @@ form.addEventListener('submit', function (e) {
 		}
 	});
 
-	// alert(error);
-
-	if(error) {
-		// hideNotice();
+	if(error) {		
 		formError.classList.add('form__notice--show');
-	}	else {
-		// hideNotice();
+	}	else {		
 		formSuccesfull.classList.add('form__notice--show');
 		form.submit();
 	}
-
-	// alert(i);
-
 });
 
 function hideNotice() {
 	formNotice.forEach(function(el) {		
-		el.classList.delete('form__notice--show');
-	});	
+		el.classList.remove('form__notice--show');
+	});
 }
 
 // var el_field = new Array("el_firstname", "el_name", "el_secondname", "el_address", "el_email", "el_message");//поля обязательные 
