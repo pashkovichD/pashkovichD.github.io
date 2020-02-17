@@ -404,7 +404,7 @@ input[type="radio"].visually-hidden {
 }
 .form__comment {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
@@ -502,12 +502,14 @@ input[type="radio"].visually-hidden {
 }
 .form__item--person,
 .form__item--email,
-.form__item--phone {
+.form__item--phone,
+.form__item--record {
   position: relative;
 }
 .form__item--person::after,
 .form__item--email::after,
-.form__item--phone::after {
+.form__item--phone::after,
+.form__item--record::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -530,6 +532,12 @@ input[type="radio"].visually-hidden {
   height: 23px;
   margin-top: -12px;
   background-image: url('../img/telephone.svg');
+}
+.form__item--record::after {
+  width: 23px;
+  height: 23px;
+  margin-top: -10px;
+  background-image: url('../img/record.svg');
 }
 .form__input {
   width: 100%;
@@ -631,9 +639,10 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .form__submit {
-  padding: 12px 30px;
+  padding: 10px 30px;
   font-size: 19px;
-  background-color: #329a00;
+  line-height: 26px;
+  background-color: #3d4647;
 }
 @media (min-width: 600px) {
   .form__item--attach {
@@ -4713,6 +4722,31 @@ input[type="radio"].visually-hidden {
   }
   .question__rules-title span {
     width: 650px;
+  }
+}
+.invoice__rules {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  text-align: center;
+  color: red;
+  border: 1px dashed red;
+  border-radius: 3px;
+}
+.invoice__form {
+  margin-bottom: 50px;
+}
+@media (min-width: 600px) {
+  .invoice__rules {
+    text-align: left;
+  }
+  .invoice__button br {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .invoice__button {
+    width: 55%;
   }
 }
 .text-border {

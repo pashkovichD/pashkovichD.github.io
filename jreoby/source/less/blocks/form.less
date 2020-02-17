@@ -10,7 +10,7 @@
 
 .form__comment {
 	margin: 0;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	padding: 0;
 
 	font-size: 14px;
@@ -110,7 +110,8 @@
 
 .form__item--person,
 .form__item--email,
-.form__item--phone {
+.form__item--phone,
+.form__item--record {
 	position: relative;
 
 	&::after {
@@ -147,6 +148,16 @@
 		margin-top: -12px;
 
 		background-image: url('../img/telephone.svg');
+	}
+}
+
+.form__item--record {
+	&::after {
+		width: 23px;
+		height: 23px;
+		margin-top: -10px;
+
+		background-image: url('../img/record.svg');
 	}
 }
 
@@ -274,12 +285,12 @@
 }
 
 .form__submit {
-	padding: 12px 30px;
+	padding: 10px 30px;
 
 	font-size: 19px;
-	// color: #329a00;
+	line-height: 26px;
 
-	background-color: #329a00;
+	background-color: #3d4647;
 }
 
 @media (min-width: @custom-width) {	

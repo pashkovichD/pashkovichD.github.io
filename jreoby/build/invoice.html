@@ -164,15 +164,28 @@
 			<div class="page-main__one">				
 				<h1 class="page-main__title">Счет-фактуры</h1>
 				
-				<section class="emergency">
+				<section class="invoice">
 					<h2 class="visually-hidden">Скачивание счет-фактур</h2>
-					
-					<div class="developer">
-						<svg fill="#e28605" width="73" height="65">
-							<use xlink:href="#icon-developer"></use>
-						</svg>
-						<p class="developer__text">Страница находится в разработке</p>
-					</div>
+					<p class="invoice__rules">Для получения счет-фактуры необходимо указать номер счета и УНП Вашей организации</p>
+										
+					<form method="POST" action="https://echo.htmlacademy.ru" class="invoice__form form form--nojs">						
+						
+						<p class="form__notice form__notice--error"><svg fill="#ffffff" width="28" height="24"><use xlink:href="#icon-attention"></use></svg><span>Проверьте правильность заполения всех полей</span></p>
+
+						<p class="form__notice form__notice--succesfull"><svg fill="#ffffff" width="28" height="24"><use xlink:href="#icon-check"></use></svg><span>E-mail успешно отправлен!</span></p>
+
+						<p class="form__comment">* Все поля ОБЯЗАТЕЛЬНЫ для заполнения</p>
+
+						<p class="form__item form__item--record">
+							<input class="form__input" type="text" name="invoice__account-number" id="invoice__account-number" value="">
+							<label class="form__label" for="invoice__account-number">Номер счета</label>
+						</p>
+						<p class="form__item form__item--record">
+							<input class="form__input" type="text" name="invoice__unp" id="invoice__unp" value="">
+							<label class="form__label" for="invoice__unp">УНП организации</label>
+						</p>						
+						<button type="submit" class="invoice__button form__submit button">Получить <br>счет-фактуру</button>
+					</form>					
 
 				</section>
 
@@ -324,6 +337,7 @@
 	<script src="js/map.min.js"></script> -->
 	<script src="js/common.min.js"></script>
 	<script src="js/slider.min.js"></script>
+	<script src="js/form.min.js"></script>
 
 </body>
 </html>
