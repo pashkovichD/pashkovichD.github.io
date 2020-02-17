@@ -252,7 +252,7 @@ input[type="radio"].visually-hidden {
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
-.link {
+.link-download {
   position: relative;
   display: block;
   padding: 10px 40px 10px 0;
@@ -268,10 +268,10 @@ input[type="radio"].visually-hidden {
   -o-transition: background-size 0.5s;
   transition: background-size 0.5s;
 }
-.link svg {
+.link-download svg {
   fill: #053152;
 }
-.link::after {
+.link-download::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -286,23 +286,23 @@ input[type="radio"].visually-hidden {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.link:hover,
-.link:focus {
+.link-download:hover,
+.link-download:focus {
   color: #00243f;
   background-size: 100% 1px;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.link:hover svg,
-.link:focus svg {
+.link-download:hover svg,
+.link-download:focus svg {
   fill: #00243f;
 }
-.link:hover::after,
-.link:focus::after {
+.link-download:hover::after,
+.link-download:focus::after {
   opacity: 1;
 }
 @media (min-width: 600px) {
-  .link {
+  .link-download {
     padding-right: 50px;
   }
 }
