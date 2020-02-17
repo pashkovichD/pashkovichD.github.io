@@ -17,6 +17,8 @@
 	line-height: 20px;
 	text-align: center;
 	color: #329a00;
+
+	box-sizing: border-box;
 }
 
 .form__notice {
@@ -86,7 +88,12 @@
 }
 
 .form__comment--file {
-	padding-top: 20px;
+	padding: 5px 10px;
+	
+	color: #d56e00;
+	
+	border: 1px dashed #e0a100;
+	border-radius: 3px;
 }
 
 .form__item {
@@ -214,8 +221,7 @@
 .form__attach {
 	position: relative;
 
-	display: inline-block;	
-	margin-bottom: 10px;
+	display: inline-block;
 	padding: 10px 20px 13px 65px;
 
 	font-size: 18px;
@@ -268,9 +274,12 @@
 }
 
 .form__submit {
-	padding: 15px 30px;
+	padding: 12px 30px;
 
 	font-size: 19px;
+	// color: #329a00;
+
+	background-color: #329a00;
 }
 
 @media (min-width: @custom-width) {	
@@ -338,6 +347,24 @@
 		span {
 			width: 650px;
 		}
+	}
+
+	.form__two-columns {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.form__first-column {
+		width: 48%;
+	}
+
+	.form__second-column {
+		width: 48%;
+	}
+
+	.form__submit {
+		margin: 0;
+		width: 42%;
 	}
 }
 

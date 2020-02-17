@@ -130,22 +130,28 @@
 
 						<p class="form__notice form__notice--succesfull"><svg fill="#ffffff" width="28" height="24"><use xlink:href="#icon-check"></use></svg><span>E-mail успешно отправлен!</span> <span class="second">Также продублирован на Ваш e-mail: <strong>email@mail.ru</strong></span></p>
 
-						<p class="form__item form__item--person">
-							<input class="form__input" type="text" name="question__fio" id="question__fio"  value="">
-							<label class="form__label" for="question__fio">Фамилия, имя, отчество</label>
-						</p>
-						<p class="form__item form__item--email">
-							<input class="form__input" type="email" name="question__email" id="question__email" value="">
-							<label class="form__label" for="question__email">E-mail</label>
-						</p>
-						<p class="form__item">
-							<input class="form__input" type="text" name="question__address" id="question__address" value="">
-							<label class="form__label" for="question__address">Почтовый адрес /юр. адрес/</label>
-						</p>
-						<p class="form__item form__item--phone">
-							<input class="form__input" type="text" name="question__phone" id="question__phone" value="">
-							<label class="form__label" for="question__phone">Контактный телефон</label>
-						</p>
+						<div class="form__two-columns">
+							<div class="form__first-column">
+								<p class="form__item form__item--person">
+									<input class="form__input" type="text" name="question__fio" id="question__fio"  value="">
+									<label class="form__label" for="question__fio">Фамилия, имя, отчество</label>
+								</p>
+								<p class="form__item form__item--email">
+									<input class="form__input" type="email" name="question__email" id="question__email" value="">
+									<label class="form__label" for="question__email">E-mail</label>
+								</p>								
+							</div>
+							<div class="form__second-column">
+								<p class="form__item">
+									<input class="form__input" type="text" name="question__address" id="question__address" value="">
+									<label class="form__label" for="question__address">Почтовый адрес /юр. адрес/</label>
+								</p>
+								<p class="form__item form__item--phone">
+									<input class="form__input" type="text" name="question__phone" id="question__phone" value="">
+									<label class="form__label" for="question__phone">Контактный телефон</label>
+								</p>								
+							</div>
+						</div>
 						<p class="form__item">
 							<input class="form__input" type="text" name="question__theme" id="question__theme" value="">
 							<label class="form__label" for="question__theme">Тема</label>
@@ -157,56 +163,12 @@
 						<div class="form__item form__item--attach">
 							<input type="file" name="question__attach" multiple id="question__attach" class="form__attach-input">
 							<label for="question__attach" class="form__attach">Загрузить файл</label>
-							<p class="form__filename"></p>
-							<p class="form__comment form__comment--file">* Размер файла: <b>< 2 Mb</b> <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
+							<p class="form__filename"></p>							
 						</div>
+						<p class="form__comment form__comment--file">* Размер файла: <b>< 2 Mb</b> <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b></p>
 
 						<button type="submit" class="form__submit button">Отправить</button>
-<!-- 
-						<div class="f_name">
-						<input type="text" size="50" name="contactname" id="contactname" value="<?php echo $name; ?>" class="required" placeholder="Фамилия, имя, отчество">
-						</div>
-						<div class="f_email">
-						<input type="text" size="50" name="email" id="email" value="<?php echo $email; ?>" class="required email" placeholder="E-mail">
-						</div>
-						<input type="text" size="50" name="adres" id="adres" value="<?php echo $adres; ?>" class="required email" placeholder="Почтовый адрес /юридический адрес/">
-						<div class="f_tel">
-						<input type="text" size="50" name="telefon" id="telefon" value="<?php echo $telefon; ?>" class="required email" placeholder="Контактный телефон">
-						</div>									
-						<input type="text" size="50" name="subject" id="subject" value="<?php echo $subject; ?>" class="required" placeholder="Тема">
-					
-						<label for="file_mail" class="file_mail"><strong>Прикрепить файл</strong> ( < 2 Мб):</label>
-						<input type="file" name="file_mail" multiple id="file_mail">
-						<p class="f_comment">* Допустимые форматы: .jpg, .jpeg, .bmp, .png, .gif</p>
-					
-						<label for="message" class="input_label">Сообщение:</label>
-						<div class="f_mess">
-						<textarea rows="5" cols="50" name="message" id="message"><?php echo $comments; ?></textarea>	
-						</div>
-						<input type="submit" value="Отправить" name="submit">
-					
-						<?php if($error_file) { ?>
-						<p class="form__error">Файл слишком большого размера или не того формата.</p>
-						<?php } ?>
-					
-						<?php if($er) { //Если найдены ошибки ?>
-						<p class="form__error">Проверьте, пожалуйста, правильность заполения всех полей.</p>
-						<?php } ?>
-					
-						<?php if(isset($emailSent) && $emailSent == true) { //Если письмо отправлено ?>
-						<p class="form__succesfull">E-mail успешно отправлен!</p>
-						<p class="form__succesfull-sub">Также продублирован на Ваш e-mail: <strong><?php echo $email; ?></strong></p>
-						<?php } ?>
-					 -->
 					</form>
-
-					<!-- <script type="text/javascript">
-						$(document).ready(function(){
-						$("#contactform").validate();
-						});
-					</script> -->
-
-					
 
 					<p class="question__rules-title"><svg fill="#e28605" width="28" height="24"><use xlink:href="#icon-attention"></use></svg><span>Правила отправки сообщений</span></p>
 					<button type="button" class="question__button-more button more__button">Посмотреть...</button>					
