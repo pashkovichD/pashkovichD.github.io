@@ -586,6 +586,9 @@ input[type="radio"].visually-hidden {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+.form__label span {
+  opacity: 0.5;
+}
 .form__label--start {
   top: 12px;
   left: 16px;
@@ -601,6 +604,7 @@ input[type="radio"].visually-hidden {
 .form__attach {
   position: relative;
   display: inline-block;
+  margin-bottom: 5px;
   padding: 10px 20px 13px 65px;
   font-size: 18px;
   color: #ffffff;
@@ -4760,31 +4764,31 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0;
   margin-bottom: 20px;
-  padding: 2px 10px 2px 35px;
+  padding: 4px 10px 4px 35px;
   font-size: 19px;
   line-height: 26px;
+  font-weight: 400;
   text-decoration: none;
-  color: #974e00;
-  background-color: #f2f2f2;
-  border: 1px solid #e7e7e7;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  color: #0e6176;
+  background-color: #ffefcb;
+  border: 1px solid #ffefcb;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.appeal__link::before {
-  content: '';
+.appeal__link svg {
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 10px;
-  width: 14px;
-  height: 19px;
-  background-image: url(../img/appeal-link.svg);
-  background-repeat: no-repeat;
+  fill: #d56e00;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .appeal__link:hover,
 .appeal__link:focus {
-  color: #135275;
-  border: 1px solid #a5c720;
+  color: #974e00;
+  border: 1px solid #d56e00;
 }
 .appeal__target {
   margin: 0;
@@ -4794,6 +4798,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  color: #165427;
   border-bottom: 1px dashed #f4d8ba;
 }
 .appeal__target--a {
@@ -4814,6 +4819,45 @@ input[type="radio"].visually-hidden {
 .appeal__department:focus {
   text-decoration: underline;
 }
+.appeal__demand {
+  display: block;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #1c244a;
+  border: 1px dashed #1c244a;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.appeal__demand:hover,
+.appeal__demand:focus {
+  color: red;
+  border: 1px dashed red;
+}
+.appeal__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #964e00;
+}
+.appeal__title span {
+  opacity: 0.5;
+}
+.appeal__text-wrapper {
+  margin-bottom: 5px;
+}
+.appeal__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
 .appeal__address {
   margin-bottom: 25px;
 }
@@ -4828,8 +4872,18 @@ input[type="radio"].visually-hidden {
 .appeal__schedule {
   margin-bottom: 25px;
 }
+.appeal__accordeon-text {
+  margin: 0;
+  padding: 0;
+}
+.appeal__form-citizen {
+  margin-bottom: 25px;
+}
 @media (min-width: 600px) {
   .appeal__target {
+    text-align: left;
+  }
+  .appeal__demand {
     text-align: left;
   }
 }
