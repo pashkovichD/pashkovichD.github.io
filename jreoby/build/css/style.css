@@ -491,10 +491,14 @@ input[type="radio"].visually-hidden {
   }
 }
 .form__comment--file {
+  margin-bottom: 25px;
   padding: 5px 10px;
   color: #d56e00;
   border: 1px dashed #e0a100;
   border-radius: 3px;
+}
+.form__comment--textarea {
+  margin-bottom: 20px;
 }
 .form__item {
   position: relative;
@@ -543,6 +547,9 @@ input[type="radio"].visually-hidden {
   height: 23px;
   margin-top: -10px;
   background-image: url('../img/record.svg');
+}
+.form__item--comment {
+  margin-bottom: 0;
 }
 .form__input {
   width: 100%;
@@ -4759,44 +4766,15 @@ input[type="radio"].visually-hidden {
     width: 55%;
   }
 }
-.appeal__link {
-  position: relative;
-  display: block;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 4px 10px 4px 35px;
-  font-size: 19px;
-  line-height: 26px;
-  font-weight: 400;
-  text-decoration: none;
-  color: #0e6176;
-  background-color: #ffefcb;
-  border: 1px solid #ffefcb;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.appeal__link svg {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  fill: #d56e00;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.appeal__link:hover,
-.appeal__link:focus {
-  color: #974e00;
-  border: 1px solid #d56e00;
-}
 .appeal__target {
+  display: block;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
   padding-bottom: 5px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   color: #165427;
   border-bottom: 1px dashed #f4d8ba;
@@ -4872,12 +4850,43 @@ input[type="radio"].visually-hidden {
 .appeal__schedule {
   margin-bottom: 25px;
 }
+.appeal__accordeon-title {
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 4px 10px 4px 35px;
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #0e6176;
+  background-color: #ffefcb;
+  border: 1px solid #ffefcb;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.appeal__accordeon-title svg {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  fill: #d56e00;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.appeal__accordeon-title:hover,
+.appeal__accordeon-title:focus {
+  color: #974e00;
+  border: 1px solid #d56e00;
+}
 .appeal__accordeon-text {
   margin: 0;
   padding: 0;
 }
 .appeal__form-citizen {
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 @media (min-width: 600px) {
   .appeal__target {

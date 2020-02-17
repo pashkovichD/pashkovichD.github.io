@@ -46,7 +46,7 @@ searchButton.addEventListener('click', function (e) {
 	
 });
 
-/* робота главного меню */
+/* работа главного меню */
 menuItem.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
 		// e.preventDefault(); // 
