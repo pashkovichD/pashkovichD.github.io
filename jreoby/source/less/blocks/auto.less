@@ -1,0 +1,169 @@
+.auto {
+	
+}
+
+
+.auto__services {
+	margin-bottom: 25px;
+}
+
+.auto__phone {
+	margin-bottom: 25px;
+}
+
+.auto__address {
+	margin-bottom: 25px;
+}
+
+.auto__comment {
+	margin-bottom: 30px;
+
+	font-size: 16px;
+	color: #329a00;
+}
+
+.auto__list {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.auto__item {
+	text-align: center;
+
+	border: 1px solid #ffc02e;
+}
+
+.auto__item-title {
+	margin: 0;
+	padding: 2px 10px;
+
+	text-transform: uppercase;
+	color: #000000;
+
+	background-color: #ffc02e;
+
+	span {
+		display: block;
+
+		font-size: 16px;
+		font-weight: 400;
+		font-style: italic;
+		text-transform: none;
+		opacity: .7;
+	}
+}
+
+.auto__item-img {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.auto__tariffs {
+	width: 90%;
+	margin: 0 auto;
+
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.auto__table {
+	margin-bottom: 15px;
+	padding: 0;
+
+	text-align: left;
+
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	td {
+		border-bottom: 1px dotted #dddddd;
+
+		span {
+			font-size: 14px;
+			font-style: italic;
+			color: #aaaaaa;
+		}
+	}
+
+	td.auto__table-name {
+		border-bottom: 1px dashed #aaaaaa;
+	}
+}
+
+.auto__table-name {
+	padding-bottom: 3px;	
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+
+	span {
+		display: none;
+	}
+
+	span.second {
+		display: inline;
+		
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: none;
+		font-style: italic;
+		color: #777777;
+
+		opacity: .7;
+	}
+}
+
+.auto__field {
+	width: 80%;
+	padding: 3px 5px;
+}
+
+.auto__value {
+	padding: 3px 5px 3px 10px;
+
+	font-weight: 700;
+	text-align: right;
+	color: #000000;
+}
+
+@media (min-width: @custom-width) {
+	.auto__item-title {
+		padding: 4px 15px;
+
+		// text-align: left;
+		line-height: normal;
+
+		span {
+			display: inline;
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.auto__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.auto__item {
+		width: 48%;
+	}
+
+	.auto__item-title {
+		span {
+			display: block;
+		}
+	}
+}
+
+@media (min-width: @custom940-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

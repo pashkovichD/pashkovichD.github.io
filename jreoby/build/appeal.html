@@ -167,7 +167,7 @@
 				<section class="appeal">
 					<h2 class="visually-hidden">Форма подачи обращения</h2>
 					
-					<a href="administration.html" class="appeal__target">Личный прием для устных обращений</a>
+					<a href="administration.html" class="appeal__target-link">Личный прием для устных обращений</a>
 					<p class="appeal__target">Адрес для письменных обращений:</p>
 					<p class="appeal__address address"><b>211440</b>, Витебская обл., г.Новополоцк, ул. Молодежная,102А <br>Новополоцкое КУП ЖРЭО</p>
 					<a href="docs/demand-written.pdf" target="_blank" class="appeal__demand">Требования, предъявляемые к письменным обращениям</a>
@@ -218,20 +218,66 @@
 									<p class="form__comment form__comment--textarea">* Введите Ваше обращение (до 2000 символов) / Увядзiце тэкст Вашага звароту (да 2000 сiмвалаў)</p>
 
 									<div class="form__item form__item--attach">
-										<input type="file" name="question__attach" multiple="" id="question__attach" class="form__attach-input">
-										<label for="question__attach" class="form__attach">Загрузить файл</label>
+										<input type="file" name="citizen__attach" multiple="" id="citizen__attach" class="form__attach-input">
+										<label for="citizen__attach" class="form__attach">Загрузить файл</label>
 										<p class="form__filename"></p>							
 									</div>
 									<p class="form__comment form__comment--file">* Вы можете приложить дополнительные документы или материалы в электронной форме, более полно раскрывающие суть Вашего обращения. <br>Размер файла: <b>&lt; 2 Mb</b>. <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b>. <br><b><u>ВАЖНО:</u></b> Если у Вас 2 и более файлов, то всё упаковываем в архив. Допустимые форматы: <b>zip, rar.</b>
 									</p>
 
 									<button type="submit" class="form__submit button">Отправить</button>
-								</form>	
+								</form>
 							</div>
 						</div>
 						<div class="appeal__accordeon-item accordeon__item">
 							<h3 class="appeal__accordeon-title accordeon__title"><svg fill="#aeaeae" width="14" height="19"><use xlink:href="#icon-appeal-link"></use></svg>для юридических лиц и индивидуальных предпринимателей</h3>
-							<div class="appeal__accordeon-content accordeon__content">		<p class="appeal__accordeon-text">силуэт диких страна, букв толку!</p>	
+							<div class="appeal__accordeon-content accordeon__content">
+								<form enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru" class="appeal__form-lawyer form form--nojs">
+					
+									<p class="form__notice form__notice--error"><svg fill="#ffffff" width="28" height="24"><use xlink:href="#icon-attention"></use></svg><span>Проверьте правильность заполения всех полей</span></p>
+
+									<p class="form__notice form__notice--succesfull"><svg fill="#ffffff" width="28" height="24"><use xlink:href="#icon-check"></use></svg><span>E-mail успешно отправлен!</span> <span class="second">Также продублирован на Ваш e-mail: <strong>email@mail.ru</strong></span></p>
+
+									<p class="form__comment">* Все поля (кроме <b>Прикрепить файл</b>) ОБЯЗАТЕЛЬНЫ для заполнения</p>
+
+									<div class="form__two-columns">
+										<div class="form__first-column">
+											<p class="form__item">
+												<input class="form__input" type="text" name="lawyer__name" id="lawyer__name" value="">
+												<label class="form__label" for="lawyer__name">Наименование <span>/ Найменне</span></label>
+											</p>
+											<p class="form__item form__item--person">
+												<input class="form__input" type="text" name="lawyer__fio" id="lawyer__fio" value="">
+												<label class="form__label" for="lawyer__fio">Ф.И.О. <span>/ П.І.І.</span></label>
+											</p>
+										</div>
+										<div class="form__second-column">
+											<p class="form__item">
+												<input class="form__input" type="text" name="lawyer__address" id="lawyer__address" value="">
+												<label class="form__label" for="lawyer__address">Адрес <span>/ Адрас</span></label>
+											</p>
+											<p class="form__item form__item--email">
+												<input class="form__input" type="email" name="lawyer__email" id="lawyer__email" value="">
+												<label class="form__label" for="lawyer__email">E-mail</label>
+											</p>
+										</div>
+									</div>									
+									<p class="form__item form__item--comment">
+										<textarea class="form__input form__input--textarea" rows="5" cols="50" name="lawyer__message" id="lawyer__message"></textarea>
+										<label class="form__label" for="lawyer__message">Обращение <span>/ Зварот</span></label>
+									</p>
+									<p class="form__comment form__comment--textarea">* Введите Ваше обращение (до 2000 символов) / Увядзiце тэкст Вашага звароту (да 2000 сiмвалаў)</p>
+
+									<div class="form__item form__item--attach">
+										<input type="file" name="lawyer__attach" multiple="" id="lawyer__attach" class="form__attach-input">
+										<label for="lawyer__attach" class="form__attach">Загрузить файл</label>
+										<p class="form__filename"></p>							
+									</div>
+									<p class="form__comment form__comment--file">* Вы можете приложить дополнительные документы или материалы в электронной форме, более полно раскрывающие суть Вашего обращения. <br>Размер файла: <b>&lt; 2 Mb</b>. <br>Допустимые форматы: <b>doc, docx, rtf, jpg, jpeg, bmp, png, pdf, txt, zip, rar</b>. <br><b><u>ВАЖНО:</u></b> Если у Вас 2 и более файлов, то всё упаковываем в архив. Допустимые форматы: <b>zip, rar.</b>
+									</p>
+
+									<button type="submit" class="form__submit button">Отправить</button>
+								</form>
 							</div>
 						</div>
 					</section>
