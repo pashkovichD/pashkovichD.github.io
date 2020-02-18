@@ -5134,6 +5134,58 @@ input[type="radio"].visually-hidden {
     height: 250px;
   }
 }
+.janovo__img {
+  margin-bottom: 15px;
+}
+.janovo__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.janovo__phone {
+  margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+  .janovo__text {
+    text-align: justify;
+  }
+}
+@media (min-width: 768px) {
+  .janovo__img {
+    width: 50%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding-top: 5px;
+    float: left;
+  }
+}
+.laboratory__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.laboratory__text--last {
+  margin-bottom: 20px;
+}
+.laboratory__title {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.laboratory__list {
+  margin-bottom: 20px;
+}
+.laboratory__list > li {
+  color: #1c244a;
+}
+@media (min-width: 600px) {
+  .laboratory__text {
+    text-align: justify;
+  }
+  .laboratory__title {
+    text-align: left;
+  }
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;
