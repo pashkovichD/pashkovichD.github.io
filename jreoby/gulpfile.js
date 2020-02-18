@@ -90,7 +90,8 @@ gulp.task("copy", function() {
 	return gulp.src([
 			"source/fonts/**/*.{woff,woff2}",
 			"source/docs/**/*",
-			"source/img/**"			
+			"source/img/**",
+			"source/plugins/**/*"
 		], {
 			base: "source" // указываем для того, чтобы Gulp не "терял" нужные нам папки (fonts/, img, js/)
 		})

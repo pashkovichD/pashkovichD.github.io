@@ -2154,6 +2154,7 @@ input[type="radio"].visually-hidden {
 .tabs__label {
   display: inline-block;
   color: #cccccc;
+  border-top: 2px solid transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -5185,6 +5186,70 @@ input[type="radio"].visually-hidden {
     text-align: justify;
   }
   .laboratory__title {
+    text-align: left;
+  }
+}
+.photo__img {
+  width: 25%;
+}
+.photo__tabs {
+  text-align: center;
+}
+.photo__tabs-label {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 5px 15px;
+  background-color: #f2f2f2;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+}
+.photo__tabs-label:hover {
+  color: #332f2e;
+  background-color: #d7d7d7;
+  border: 1px solid #c7c7c7;
+}
+.photo__tabs-input:checked + label {
+  color: #ffffff;
+  background-color: #daa12c;
+  border: 1px solid #daa12c;
+}
+.photo__tabs-section {
+  padding-top: 10px;
+  text-align: left;
+  border-top: 1px dashed #cccccc;
+}
+.photo__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.photo__list li {
+  width: 48%;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+.photo__list a {
+  display: inline-block;
+  line-height: 0;
+}
+@media (min-width: 600px) {
+  .photo__list li {
+    width: 24%;
+  }
+}
+@media (min-width: 768px) {
+  .photo__tabs {
     text-align: left;
   }
 }
