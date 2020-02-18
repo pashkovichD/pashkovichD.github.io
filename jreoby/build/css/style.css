@@ -5115,6 +5115,29 @@ input[type="radio"].visually-hidden {
     width: 55%;
   }
 }
+.video__promo {
+  width: 100%;
+  height: 200px;
+}
+.video__iframe {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 600px) {
+  .video__promo {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .video__promo {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .video__promo {
+    height: 450px;
+  }
+}
 .text-border {
   padding: 5px 15px;
   border-left: 3px solid #329a00;
