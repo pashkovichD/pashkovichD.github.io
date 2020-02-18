@@ -2179,7 +2179,9 @@ input[type="radio"].visually-hidden {
 /* Активация секций с помощью псевдокласса :checked */
 #tab1:checked ~ #tabs__content1,
 #tab2:checked ~ #tabs__content2,
-#tab3:checked ~ #tabs__content3 {
+#tab3:checked ~ #tabs__content3,
+#tab4:checked ~ #tabs__content4,
+#tab5:checked ~ #tabs__content5 {
   display: block;
 }
 @media (min-width: 768px) {
