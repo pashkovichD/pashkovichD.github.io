@@ -241,6 +241,7 @@ input[type="radio"].visually-hidden {
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -405,6 +406,9 @@ input[type="radio"].visually-hidden {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.accordeon__content--nojs {
+  height: auto;
 }
 .form--nojs .form__label {
   top: -12px;
@@ -4939,8 +4943,20 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .auto__item {
+  margin-bottom: 20px;
   text-align: center;
   border: 1px solid #ffc02e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.auto__item:hover {
+  border: 1px solid #ffb200;
+}
+.auto__item:hover .auto__item-title {
+  background: #ffb200;
 }
 .auto__item-title {
   margin: 0;
@@ -4948,6 +4964,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffc02e;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .auto__item-title span {
   display: block;
@@ -4961,6 +4980,29 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   margin-bottom: 10px;
 }
+.auto__tariffs-button {
+  width: 80%;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+  font-size: 19px;
+  text-transform: none;
+  color: #333333;
+  background-color: #eeeeee;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 2px;
+}
+.auto__tariffs-button svg {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+.auto__tariffs-button:hover,
+.auto__tariffs-button:focus {
+  background-color: #dddddd;
+  border-bottom: 1px solid #cccccc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .auto__tariffs {
   width: 90%;
   margin: 0 auto;
@@ -4968,6 +5010,7 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
 }
 .auto__table {
+  width: 100%;
   margin-bottom: 15px;
   padding: 0;
   text-align: left;
@@ -5013,6 +5056,20 @@ input[type="radio"].visually-hidden {
   text-align: right;
   color: #000000;
 }
+.auto__table--custom tr:first-child {
+  border-bottom: 1px dashed #aaaaaa;
+}
+.auto__table--custom tr:first-child .auto__table-name--mini {
+  font-weight: 400;
+  text-transform: none;
+  text-align: right;
+}
+.auto__table--custom td.auto__table-name {
+  border-bottom: none;
+}
+.auto__table--custom .auto__field {
+  width: 50%;
+}
 @media (min-width: 600px) {
   .auto__item-title {
     padding: 4px 15px;
@@ -5020,6 +5077,12 @@ input[type="radio"].visually-hidden {
   }
   .auto__item-title span {
     display: inline;
+  }
+  .auto__tariffs-button {
+    width: 50%;
+  }
+  .auto__table--custom .auto__field {
+    width: 70%;
   }
 }
 @media (min-width: 768px) {
@@ -5041,6 +5104,15 @@ input[type="radio"].visually-hidden {
   }
   .auto__item-title span {
     display: block;
+  }
+  .auto__tariffs-button {
+    display: none;
+  }
+  .auto__tariffs {
+    height: auto !important;
+  }
+  .auto__table--custom .auto__field {
+    width: 55%;
   }
 }
 .text-border {

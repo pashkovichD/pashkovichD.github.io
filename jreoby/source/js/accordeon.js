@@ -1,6 +1,9 @@
 var titles = document.querySelectorAll('.accordeon__title');
 var contents = document.querySelectorAll('.accordeon__content');
 
+contents.forEach(function(el) {
+	el.classList.remove('accordeon__content--nojs');
+});
 
 titles.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {		
