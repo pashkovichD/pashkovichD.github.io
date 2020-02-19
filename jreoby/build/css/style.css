@@ -5214,8 +5214,18 @@ input[type="radio"].visually-hidden {
 .laboratory__list {
   margin-bottom: 20px;
 }
-.laboratory__list > li {
+.laboratory__list li {
+  font-weight: 700;
   color: #1c244a;
+}
+.laboratory__list li > .list {
+  margin-top: 7px;
+}
+.laboratory__list li > .list li {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #777777;
 }
 .laboratory__list-slider {
   display: -webkit-box;
