@@ -5197,10 +5197,11 @@ input[type="radio"].visually-hidden {
 .laboratory__list-slider li {
   margin-right: 10px;
   margin-bottom: 10px;
+  line-height: 0;
+  border: 1px solid #e2e2e2;
 }
 .laboratory__list-slider a {
   display: inline-block;
-  line-height: 0;
 }
 @media (min-width: 600px) {
   .laboratory__text {
@@ -5208,6 +5209,10 @@ input[type="radio"].visually-hidden {
   }
   .laboratory__title {
     text-align: left;
+  }
+  .laboratory__list-slider li {
+    margin-right: 7px;
+    margin-bottom: 7px;
   }
 }
 .photo__img {
