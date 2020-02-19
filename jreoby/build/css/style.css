@@ -5181,6 +5181,27 @@ input[type="radio"].visually-hidden {
 .laboratory__list > li {
   color: #1c244a;
 }
+.laboratory__list-slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: none;
+}
+.laboratory__list-slider li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.laboratory__list-slider a {
+  display: inline-block;
+  line-height: 0;
+}
 @media (min-width: 600px) {
   .laboratory__text {
     text-align: justify;
