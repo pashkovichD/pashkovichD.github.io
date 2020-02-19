@@ -5267,7 +5267,6 @@ input[type="radio"].visually-hidden {
 }
 .photo__list a {
   display: inline-block;
-  line-height: 0;
 }
 @media (min-width: 600px) {
   .photo__list li {
