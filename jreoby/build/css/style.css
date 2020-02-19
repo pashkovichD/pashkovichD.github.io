@@ -4079,7 +4079,7 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #165427;
+  color: #1c244a;
   background-color: #eeeeee;
   border-left: 3px solid #cccccc;
 }
@@ -4837,6 +4837,10 @@ input[type="radio"].visually-hidden {
 }
 .auto__services {
   margin-bottom: 25px;
+  color: #1c244a;
+}
+.auto__services li::after {
+  top: 12px;
 }
 .auto__phone {
   margin-bottom: 25px;
