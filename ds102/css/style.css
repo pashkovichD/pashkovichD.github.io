@@ -468,27 +468,38 @@ main h2 {
 .payment-list {
 	display: flex;
 	justify-content: space-between;
+	
 	margin: 0;
-	padding: 0 200px;
+	padding: 0 30px;
 
 	list-style: none;
 }
 
-.payment-list li {
+.payment-list > li {
 	position: relative;
 
-	width: 230px;	
+	width: 48%;
 	padding-left: 70px;
+
+	box-sizing: border-box;
 }
 
-.payment-list p {
+/*.payment-list > p {
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 .payment-list .what {
+	margin: 0;
+	padding: 0;
+
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.payment-list .how {
+	margin: 0;
+	padding: 0;
 }
 
 .how span {
@@ -496,7 +507,9 @@ main h2 {
 }
 
 .belarusbank {
-	margin-right: 20px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	padding-left: 70px;
 }
 
 .belarusbank::before {
@@ -514,8 +527,7 @@ main h2 {
 
 }
 
-.payment-list .ds102 {
-	width: 180px;
+.payment-list .ds102 {	
 	padding-left: 100px;
 }
 
@@ -532,6 +544,102 @@ main h2 {
 	background-image: url('../img/logo-mini.svg');
 	background-repeat: no-repeat;
 }
+
+.img-erip {
+	position: relative;
+
+	display: inline-block;
+	width: 43px;
+}
+
+.img-erip img {
+	position: absolute;
+	top: -20px;
+	left: 3px;
+
+	display: inline-block;
+	width: 43px;
+	height: 30px;
+}
+
+.erip {
+	margin-top: 20px;
+	margin-left: -100px;
+	/*padding: 5px 10px;*/
+
+	text-align: left;
+
+	border: 1px dashed #e0a100;
+	border-radius: 5px;
+}
+
+.erip .first {
+	font-weight: 600;	
+	color: #000000;
+}
+
+.erip .second a {
+	font-size: 14px;
+	font-style: italic;
+	color: #aaaaaa;
+
+	transition: all .3s ease-out;
+}
+
+.erip .second a:hover {
+	border-bottom: 1px dashed #999999;
+}
+
+.erip__title {
+	margin: 2px;
+	padding: 2px 10px;	
+
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 600;
+	
+	background-color: #e0a100;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.erip__list {
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+
+	counter-reset: li;
+}
+
+.erip__item {
+	position: relative;
+
+	width: 100%;
+	padding-left: 40px;
+
+	box-sizing: border-box;
+}
+
+.erip__item::before {
+	counter-increment: li;
+	content: counter(li);
+
+	position: absolute;
+	top: -4px;
+	left: 0;
+	
+	width: 35px;
+	height: 100%;
+	padding-top: 5px;
+	
+	font-weight: 600;
+	text-align: center;
+	color: #000000;	
+	
+	box-sizing: border-box;
+}
+
 
 
 
@@ -960,10 +1068,6 @@ main h2 {
 		font-size: 18px;
 	}
 
-	.payment-list {
-		padding: 0 130px;
-	}
-
 	.services-list {
 		width: 65%;
 	}
@@ -1029,7 +1133,20 @@ main h2 {
 	}
 
 	.payment-list {
-		padding: 0 30px;
+		flex-wrap: wrap;
+	}
+
+	.payment-list li {
+		width: 100%;
+	}
+
+	.payment-list li.belarusbank {
+		margin-right: 0;
+		padding-left: 100px;
+	}
+
+	.payment-list li.belarusbank::before {
+		left: 30px;
 	}
 
 	.services-list {
@@ -1122,22 +1239,6 @@ main h2 {
 
 	.payment h2 {
 		margin-bottom: 30px;
-	}
-
-	.payment-list {
-		flex-wrap: wrap;
-
-		padding: 0 120px;
-	}	
-
-	.payment-list li {
-		width: 100%;
-	}
-
-	.payment-list .belarusbank {
-		margin-right: 0;
-		margin-bottom: 35px;
-		padding-left: 100px;
 	}
 
 	.belarusbank::before {
@@ -1315,18 +1416,18 @@ main h2 {
 		padding: 0 10px;		
 	}
 
-	.payment-list li {
+	.payment-list > li {
 		padding-top: 60px;
 
 		text-align: center;
 	}
 
-	.payment-list .belarusbank {
+	.payment-list li.belarusbank {
 		padding-top: 70px;
 		padding-left: 0;
 	}
 
-	.belarusbank::before {
+	.payment-list li.belarusbank::before {
 		left: 50%;
 
 		margin-left: -25px;
@@ -1340,6 +1441,14 @@ main h2 {
 		left: 50%;
 
 		margin-left: -40px;
+	}
+
+	.erip {
+		margin-left: 0;
+	}
+
+	.erip__item {
+		padding-top: 0;
 	}
 
 	.gallery {
