@@ -484,11 +484,6 @@ main h2 {
 	box-sizing: border-box;
 }
 
-/*.payment-list > p {
-	margin: 0;
-	padding: 0;
-}*/
-
 .payment-list .what {
 	margin: 0;
 	padding: 0;
@@ -605,7 +600,7 @@ main h2 {
 
 .erip__list {
 	margin: 0;
-	padding: 0;
+	padding: 5px 10px;
 	
 	list-style: none;
 
@@ -616,18 +611,18 @@ main h2 {
 	position: relative;
 
 	width: 100%;
-	padding-left: 40px;
+	padding-left: 30px;
 
 	box-sizing: border-box;
 }
 
 .erip__item::before {
 	counter-increment: li;
-	content: counter(li);
+	content: counter(li)'.';
 
 	position: absolute;
 	top: -4px;
-	left: 0;
+	left: -8px;
 	
 	width: 35px;
 	height: 100%;
