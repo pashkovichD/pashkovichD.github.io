@@ -55,8 +55,8 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("html", function() {
-	// return gulp.src("source/*.html")
-	return gulp.src("source/*.{html,ico}")
+	return gulp.src("source/*.html")
+	// return gulp.src("source/*.{html,ico}")
 		.pipe(posthtml([
 			include()
 		]))
@@ -92,7 +92,8 @@ gulp.task("copy", function() {
 			"source/fonts/**/*.{woff,woff2}",
 			"source/docs/**/*",
 			"source/img/**",
-			"source/plugins/**/*"
+			"source/plugins/**/*",
+			"source/*.ico"
 		], {
 			base: "source" // указываем для того, чтобы Gulp не "терял" нужные нам папки (fonts/, img, js/)
 		})
