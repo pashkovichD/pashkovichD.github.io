@@ -94,7 +94,7 @@ gulp.task("copy", function() {
 			"source/img/**",
 			"source/plugins/**/*",
 			"source/*.ico",
-			"source/*.htaccess"
+			"source/.htaccess"
 		], {
 			base: "source" // указываем для того, чтобы Gulp не "терял" нужные нам папки (fonts/, img, js/)
 		})
