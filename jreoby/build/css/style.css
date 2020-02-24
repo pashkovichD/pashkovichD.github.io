@@ -55,20 +55,6 @@
   font-display: swap;
   src: url(../fonts/exo/exo2bolditalic.woff2) format("woff2"), url(../fonts/exo/exo2bolditalic.woff) format("woff");
 }
-@font-face {
-  font-weight: 900;
-  font-family: "Exo 2";
-  font-style: normal;
-  font-display: swap;
-  src: url(../fonts/exo/exo2black.woff2) format("woff2"), url(../fonts/exo/exo2black.woff) format("woff");
-}
-@font-face {
-  font-weight: 900;
-  font-family: "Exo 2";
-  font-style: italic;
-  font-display: swap;
-  src: url(../fonts/exo/exo2blackitalic.woff2) format("woff2"), url(../fonts/exo/exo2blackitalic.woff) format("woff");
-}
 /* @font-face {
 	font-weight: normal;
 	font-family: "PT Sans Narrow";
