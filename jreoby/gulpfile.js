@@ -55,7 +55,8 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("html", function() {
-	return gulp.src("source/*.html")
+	// return gulp.src("source/*.html")
+	return gulp.src("source/*.{html,ico}")
 		.pipe(posthtml([
 			include()
 		]))
