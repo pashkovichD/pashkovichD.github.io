@@ -5341,8 +5341,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .intercom__text--title {
+  margin-bottom: 5px;
   font-size: 20px;
-  font-weight: 300;
   line-height: 26px;
   color: #000000;
 }
@@ -5354,6 +5354,7 @@ input[type="radio"].visually-hidden {
 }
 .intercom__list {
   margin-bottom: 15px;
+  color: #777777;
 }
 .intercom__underline {
   display: inline-block;
@@ -5366,6 +5367,9 @@ input[type="radio"].visually-hidden {
 .intercom__gray {
   font-style: italic;
   color: #aaaaaa;
+}
+.intercom__comment {
+  margin-bottom: 15px;
 }
 .cctv__title {
   display: -webkit-box;
