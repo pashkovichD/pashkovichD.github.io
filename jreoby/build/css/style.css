@@ -351,6 +351,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-left: 45px;
+  color: #777777;
 }
 .address span {
   opacity: 0.5;
@@ -761,6 +762,7 @@ input[type="radio"].visually-hidden {
 }
 .person {
   padding: 10px;
+  color: #777777;
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -814,6 +816,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 5px;
   padding-left: 40px;
+  color: #000000;
 }
 .person__phone::after {
   border-right: none;
@@ -823,6 +826,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 5px;
   padding-left: 40px;
+  color: #000000;
 }
 .person__fax::after {
   border-right: none;
