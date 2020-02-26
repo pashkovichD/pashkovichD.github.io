@@ -4893,6 +4893,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+  color: #777777;
   list-style: none;
 }
 .auto__item {
