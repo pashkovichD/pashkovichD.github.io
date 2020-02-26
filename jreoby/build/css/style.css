@@ -4091,6 +4091,9 @@ input[type="radio"].visually-hidden {
     width: 63%;
   }
 }
+.profkom {
+  color: #777777;
+}
 .profkom__title {
   display: none;
   margin: 0;
