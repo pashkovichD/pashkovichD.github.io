@@ -3578,11 +3578,24 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   padding: 0;
 }
-.price-list__list {
+.price-list__list-title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 26px;
   color: #000000;
+}
+.price-list__list {
+  font-weight: 700;
+  color: #000000;
+}
+.price-list__list span {
+  font-weight: 400;
 }
 .price-list__list--ordered {
   font-size: 17px;
+  font-weight: 400;
   font-style: normal;
 }
 @media (min-width: 600px) {
