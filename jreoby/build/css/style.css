@@ -3825,6 +3825,9 @@ input[type="radio"].visually-hidden {
     display: inline;
   }
 }
+.transport {
+  color: #777777;
+}
 .transport__text {
   margin: 0;
   margin-bottom: 10px;
