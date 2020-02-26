@@ -3335,6 +3335,9 @@ input[type="radio"].visually-hidden {
     background-color: #eeeeee;
   }
 }
+.aup {
+  color: #777777;
+}
 .aup__table {
   width: 280px;
   padding: 0;
