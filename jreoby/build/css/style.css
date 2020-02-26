@@ -3791,6 +3791,7 @@ input[type="radio"].visually-hidden {
 .schedule {
   position: relative;
   padding-left: 50px;
+  color: #777777;
 }
 .schedule::after {
   content: '';
