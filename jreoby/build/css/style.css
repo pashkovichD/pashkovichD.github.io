@@ -3931,6 +3931,7 @@ input[type="radio"].visually-hidden {
 }
 .rss__list {
   margin-bottom: 15px;
+  color: #777777;
 }
 @media (min-width: 600px) {
   .rss__text {
