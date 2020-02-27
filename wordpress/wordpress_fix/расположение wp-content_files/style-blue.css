@@ -1,0 +1,43 @@
+﻿#main-nav,
+.cat-box-content,
+#sidebar .widget-container,
+.post-listing {
+	border-bottom-color: #37b8eb;
+}
+
+.search-block .search-button,
+#topcontrol,
+#main-nav ul li.current-menu-item a,
+#main-nav ul li.current-menu-item a:hover,
+#main-nav ul li.current-menu-parent a,
+#main-nav ul li.current-menu-parent a:hover,
+#main-nav ul li.current-page-ancestor a,
+#main-nav ul li.current-page-ancestor a:hover,
+.pagination span.current,
+.share-post span.share-text,
+.flex-control-paging li a.flex-active,
+.ei-slider-thumbs li.ei-slider-element,
+#main-nav ul li.current-menu-item ul,
+#main-nav ul li.current-menu-parent ul, #main-nav ul li.current-page-ancestor ul   ,
+.review-percentage .review-item span span,.review-final-score  {
+	background-color:#37b8eb !important;
+}
+
+#main-nav ul li.current-menu-item ul li, #main-nav ul li.current-menu-item ul li:first-child,
+#main-nav ul li.current-menu-parent ul li, #main-nav ul li.current-menu-parent ul li:first-child,
+#main-nav ul li.current-page-ancestor ul li, #main-nav ul li.current-page-ancestor ul li:first-child {
+	border-bottom: 1px solid #43c3f2;
+	border-top: 1px solid #00a6dd;
+}
+
+#topcontrol:hover {
+	background-color:#57c4ee !important;	
+}
+
+footer, .top-nav, .top-nav ul li.current-menu-item:after  {
+	border-top-color: #37b8eb;			
+}
+
+.search-block::after {
+	border-right-color:#37b8eb;
+}
