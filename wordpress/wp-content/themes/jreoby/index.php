@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Официальный сайт КУП ЖРЭО г. Новополоцка</title>
+
+	<?php wp_head(); ?>
+
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -38,16 +41,18 @@
 </head>
 <body>
 	<div class="page__wrapper">
-		<h1 class="page__title">Официальный сайт КУП ЖРЭО г. Новополоцка (Project)</h1>
+		<h1 class="page__title">Официальный сайт КУП ЖРЭО г. Новополоцка (Project WEB)</h1>
 		<p class="page__text"><strong>Новополоцкое КУП «ЖРЭО»</strong> является Предприятием, основанным на государственной (коммунальной) форме собственности (выделено на самостоятельный баланс из городского производственного объединения <b>'ЖКХ'</b> в <i>1995 г.</i>).</p>
 
-		<img src="<?php bloginfo('template_url') ?>/img/janovo.jpg" alt="База отдыха 'Яново'">
-
+		<!-- <img src="<?php bloginfo('template_url'); ?>/img/janovo.jpg" alt="База отдыха 'Яново'"> -->
+		<img src="<?php echo get_template_directory_uri(); ?>/img/janovo.jpg" alt="База отдыха 'Яново'">
+		
 		<?php
 			// echo '<pre>';
 			// print_r($_SERVER);
 			// echo '</pre>';
 		?>
 	</div>
+	<?php wp_footer(); ?>
 </body>
 </html>
