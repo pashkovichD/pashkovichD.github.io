@@ -3201,6 +3201,17 @@ input[type="radio"].visually-hidden {
   background-image: url('../img/fax.svg');
   background-repeat: no-repeat;
 }
+.contacts__address {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  color: #e28605;
+}
+.contacts__address span {
+  font-size: 15px;
+  font-style: italic;
+  color: #aaaaaa;
+}
 .contacts__email {
   margin: 0;
   margin-bottom: 5px;

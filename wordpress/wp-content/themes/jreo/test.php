@@ -38,16 +38,9 @@
 </head>
 <body>
 	<div class="page__wrapper">
-		<h1 class="page__title">Официальный сайт КУП ЖРЭО г. Новополоцка (Project)</h1>
-		<p class="page__text"><strong>Новополоцкое КУП «ЖРЭО»</strong> является Предприятием, основанным на государственной (коммунальной) форме собственности (выделено на самостоятельный баланс из городского производственного объединения <b>'ЖКХ'</b> в <i>1995 г.</i>).</p>
+		<h1 class="page__title">!!!!!!!!!!!---TEST</h1>
 
 		<img src="<?php bloginfo('template_url') ?>/img/janovo.jpg" alt="База отдыха 'Яново'">
-
-		<?php
-			// echo '<pre>';
-			// print_r($_SERVER);
-			// echo '</pre>';
-		?>
 	</div>
 </body>
 </html>
