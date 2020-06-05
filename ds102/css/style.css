@@ -466,9 +466,6 @@ main h2 {
 }
 
 .payment-list {
-	display: flex;
-	justify-content: space-between;
-	
 	margin: 0;
 	padding: 0 30px;
 
@@ -477,8 +474,7 @@ main h2 {
 
 .payment-list > li {
 	position: relative;
-
-	width: 48%;
+	
 	padding-left: 70px;
 
 	box-sizing: border-box;
@@ -502,7 +498,7 @@ main h2 {
 }
 
 .belarusbank {
-	margin-right: 50px;
+	/*margin-right: 50px;*/
 	margin-bottom: 50px;
 	padding-left: 70px;
 }
@@ -511,7 +507,7 @@ main h2 {
 	content: '';
 
 	position: absolute;
-	top: 5px;
+	top: 0;
 	left: 0;
 
 	width: 50px;
@@ -530,7 +526,7 @@ main h2 {
 	content: '';
 
 	position: absolute;
-	top: 5px;
+	top: 0;
 	left: 0;
 
 	width: 80px;
@@ -560,12 +556,17 @@ main h2 {
 .erip {
 	margin-top: 20px;
 	margin-left: -100px;
-	/*padding: 5px 10px;*/
 
+	font-size: 14px;
+	line-height: 20px;
 	text-align: left;
 
 	border: 1px dashed #e0a100;
 	border-radius: 5px;
+}
+
+.belarusbank .erip {
+	margin-left: -70px;
 }
 
 .erip .first {
@@ -1125,15 +1126,7 @@ main h2 {
 
 	.tariffs-table {
 		width: 100%;
-	}
-
-	.payment-list {
-		flex-wrap: wrap;
-	}
-
-	.payment-list li {
-		width: 100%;
-	}
+	}	
 
 	.payment-list li.belarusbank {
 		margin-right: 0;
@@ -1141,7 +1134,12 @@ main h2 {
 	}
 
 	.payment-list li.belarusbank::before {
+		top: 5px;
 		left: 30px;
+	}
+
+	.belarusbank .erip {
+		margin-left: -100px;
 	}
 
 	.services-list {
