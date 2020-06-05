@@ -1434,7 +1434,8 @@ main h2 {
 		margin-left: -40px;
 	}
 
-	.erip {
+	.erip,
+	.belarusbank .erip {
 		margin-left: 0;
 	}
 
