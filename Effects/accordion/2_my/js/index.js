@@ -1,20 +1,20 @@
 (function($) {
-    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+    
+	$('.accordeon__content').removeClass('accordeon__content--nojs');
+	
 
-    $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('p');
+    $('.accordeon__title').click(function(e) {
+        // делаем все title'ы неактивными
+        $('.accordeon__title').removeClass('accordeon__title--active');
+        // делаем выбранный элемент активным (для дальнейшей стилизации)
+        $(this).addClass('accordeon__title--active');
 
-        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+        // находим контент, который следует сразу же за нашим click'нутым элементом
+        var dropDown = $(this).closest('.accordeon__item').find('.accordeon__content');
 
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).closest('.accordion').find('a.active').removeClass('active');
-            $(this).addClass('active');
-        }
-
+        // свернуть все контенты, кроме click'нутого элемента
+        $(this).closest('.accordeon').find('.accordeon__content').not(dropDown).slideUp();        
         dropDown.stop(false, true).slideToggle();
-
-        j.preventDefault();
-    });
+        e.preventDefault();
+    });    
 })(jQuery);
