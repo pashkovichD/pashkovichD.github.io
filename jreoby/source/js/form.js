@@ -4,14 +4,7 @@ var labels = document.querySelectorAll('.form__label');
 var attach = document.querySelectorAll('.form__attach-input'); // на странице input file может быть несколько
 var formFilename = document.querySelectorAll('.form__filename'); // аналогично, на странице form__filename может быть несколько
 
-// var form = document.querySelector('.form');
-// var form = document.querySelectorAll('.form');
-// var form = getElementsByClassName('.form');
 var formNotice = document.querySelectorAll('.form__notice');
-
-// var formError = document.querySelector('.form__notice--error');
-// var formSuccesfull = document.querySelector('.form__notice--succesfull');
-
 var formError = document.querySelectorAll('.form__notice--error');
 var formSuccesfull = document.querySelectorAll('.form__notice--succesfull');
 
@@ -19,6 +12,7 @@ var files_error = false;
 
 // удаляем стили для отображения формы, на случай, когда не работает JS
 var forms = document.querySelectorAll('.form'); // на странице таких форм может быть несколько
+
 forms.forEach(function(el) {
 	el.classList.remove('form--nojs');
 });
@@ -104,12 +98,12 @@ attach.forEach(function(el) {
 
 forms.forEach(function(el) {
 	el.addEventListener('submit', function (e) {		
-		e.preventDefault(); // запрещаем отправку формы
+		// e.preventDefault(); // запрещаем отправку формы
 		hideNotice();
 		error = false;
 
 		inputs.forEach(function(el) {
-			if(el.value != '') {
+			if(el.value != '' || el.getAttribute('name') == 'invoice__unp') {
 				if(el.getAttribute('type') == 'email') {
 					mailRegExp = /^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/;
 					if(!mailRegExp.test(el.value)) {
@@ -127,46 +121,16 @@ forms.forEach(function(el) {
 
 		if(error) {
 			formError.forEach(function(el) {
-				el.classList.add('form__notice--show');	
+				e.preventDefault(); // запрещаем отправку формы
+				el.classList.add('form__notice--show');
 			});			
-		}	else {		
+		} else {
 			formSuccesfull.forEach(function(el) {
 				el.classList.add('form__notice--show');
-				forms.submit();
 			});
 		}
 	});	
 });
-
-/*form.addEventListener('submit', function (e) {
-	e.preventDefault(); // запрещаем отправку формы
-	hideNotice();
-	error = false;
-
-	inputs.forEach(function(el) {
-		if(el.value != '') {
-			if(el.getAttribute('type') == 'email') {
-				mailRegExp = /^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-zA-Z]{2,6}$/;
-				if(!mailRegExp.test(el.value)) {
-					error = true;
-				}
-			}
-		} else {
-			error = true;
-		}
-	});
-
-	if(files_error) {
-		error = true;
-	}
-
-	if(error) {
-		formError.classList.add('form__notice--show');
-	}	else {		
-		formSuccesfull.classList.add('form__notice--show');
-		form.submit();
-	}
-});*/
 
 function hideNotice() {
 	formNotice.forEach(function(el) {		
