@@ -1,0 +1,52 @@
+@import 'variables.less';
+
+@import 'blocks/header.less';
+
+
+body {
+	font-family: @ff;
+	color: @color;
+
+	background-color: @bg-color;
+}
+
+h1 {		
+	position: relative;
+
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 20px;
+
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: green;
+
+	border-bottom: 1px dotted lighten(@color, 40%);
+
+	svg {
+		position: absolute;
+		bottom: -25px;		
+		left: 10%;
+
+		width: 30px;
+		height: 30px;
+	}
+
+	#icon-dot-arrow {
+		circle {
+			fill: #ff8000;
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	h1 {
+		svg {
+			bottom: -40px;
+
+			width: 50px;
+			height: 50px;
+		}
+	}	
+}
