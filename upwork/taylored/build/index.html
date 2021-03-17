@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Taylored Wellness</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Taylored Wellness official website">
+	<meta name="keywords" content="taylored, wellness, treatments, infrared sauna, massage, foot baths, supplements, essential oils">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -112,12 +115,91 @@
 				<source type="image/webp" srcset="img/slider/photo1.webp 1x, img/slider/photo1@2x.webp 2x">
 				<img src="img/slider/photo1.jpg" srcset="img/slider/photo1@2x.jpg 2x" alt="Программа-2020">
 			</picture> -->
-			<h1 class="banner__title"><span>Custom Taylored</span>Health and Wellness</h1>
-
+			<div class="banner__img-wrapper">
+				<img src="img/banner_home.jpg" alt="">
+				<!-- <img src="img/banner_oils.jpg" alt=""> -->
+				<h1 class="banner__title"><span>Custom Taylored</span>Health and Wellness</h1>
+			</div>
 		</section>
+
+		<section class="services">
+			<!-- <h2 class="visually-hidden">Services</h2> -->			
+			<ul class="services__list">
+				<li class="services__item"><a href="#">Treatments</a></li>
+				<li class="services__item"><a href="#">Supplements</a></li>
+				<li class="services__item"><a href="#">Massage</a></li>
+			</ul>
+		</section>
+
+		<section class="search">
+			<!-- <h2 class="visually-hidden">Search</h2> -->			
+			<form action="https://echo.htmlacademy.ru" class="search" method="POST">
+				<label for="search" class="visually-hidden">Search Our Website</label>
+				<input type="text" name="text-search" id="search" class="search__input" placeholder="Search">
+				<!-- <button type="submit" class="search__button">
+					<span class="visually-hidden">Найти</span>
+					<svg fill="#777777" width="23" height="23">
+						<use xlink:href="#icon-search"></use>
+					</svg>
+				</button> -->
+			</form>
+		</section>
+
+		<section class="products">
+			<!-- <h2 class="visually-hidden">Products</h2> -->
+			<ul class="products__list">
+				<li class="products__item"><img src="#" alt=""><span class="visually-hidden">Immuno Ven</span></li>
+				<li class="products__item"><img src="#" alt=""><span class="visually-hidden">Cordyceps Extract</span></li>
+				<li class="products__item"><img src="#" alt=""><span class="visually-hidden">doTERRA</span></li>
+			</ul>
+		</section>
+
+		<section class="welcome">
+			<h2 class="welcome__title">Welcome to Taylored Wellness</h2>
+			<p class="welcome__list-title list__title">The services we offer are:</p>
+			<ul class="welcome__list list">
+				<li class="list__item">Whole body scans usiing galvanic skin testing and bioresonance</li>
+				<li class="list__item">Infrared Sauna</li>
+				<li class="list__item">Massage Therapy</li>
+				<li class="list__item">Rife Machine Technologies</li>
+				<li class="list__item">Detox Foot Baths</li>
+			</ul>
+			<p class="welcome__text text">We also carry professionlal grade supplements and tools for pain relief and other conditions.</p>
+			<p class="welcome__text text">These services provide diagnostics and healing treatments.</p>
+			<p class="welcome__text text">We look forward to helping to achieve and maintain optimial health.</p>
+		</section>
+
 	</main>
 
 	<footer class="page-footer">
+		<div class="page-footer__top">
+			<a class="page-footer__logo">			
+				<svg width="300" height="100">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<span>Taylored Wellness</span>
+			</a>
+			<div class="page-footer__social">
+				<a href="https://facebook.com" class="page-footer__fb" rel="noopener nofollow" target="_blank">
+					<svg fill="#ffffff" width="25" height="16">
+						<use xlink:href="#icon-vk"></use>
+					</svg>
+					<span class="visually-hidden">Facebook</span>
+				</a>
+				<a href="https://instagram.com" class="page-footer__insta" rel="noopener nofollow" target="_blank">
+					<svg fill="#ffffff" width="25" height="16">
+						<use xlink:href="#icon-vk"></use>
+					</svg>
+					<span class="visually-hidden">Instagram</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="page-footer__bottom">
+			<p class="page-footer__address"><b>2277</b> Townsgate Road Suite 210<br> Westlake Village, <b>CA 91361</b><br> 805.823.5849</p>
+			<p class="page-footer__developer"><a href="https://computaid.com/" rel="noopener nofollow" target="_blank">Web Design</a> by <a href="https://computaid.com/" rel="noopener nofollow" target="_blank">Computaid</a></p>
+		</div>
+
 	</footer>
 	<!-- <svg>
 		<use xlink:href="#icon-clock"></use>

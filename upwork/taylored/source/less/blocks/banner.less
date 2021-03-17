@@ -1,16 +1,16 @@
 .banner {
 	margin: 0;
-	padding: 50px 0;
+	padding: 0;
 
-	background-image: url(../../img/banner_home.jpg);
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	// background-image: url(../../img/banner_home.jpg);
+	// background-position: center center;
+ //    background-repeat: no-repeat;
+ //    background-size: cover;
 }
 
 .banner__title {
 	width: 500px;
-	margin: 0 auto;
+	margin: 80px auto;
 	padding: 50px;
 
 	background-color: #ffffff;
@@ -19,6 +19,20 @@
 
 	span {
 		display: block;
+	}
+}
+
+.banner__img-wrapper {
+	position: relative;
+	border: 1px solid transparent;
+	overflow: hidden;
+	box-sizing: border-box;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
 	}
 }
 

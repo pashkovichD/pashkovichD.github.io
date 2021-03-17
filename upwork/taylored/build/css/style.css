@@ -24,15 +24,11 @@ p:first-child {
 }
 .banner {
   margin: 0;
-  padding: 50px 0;
-  background-image: url(../../img/banner_home.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 0;
 }
 .banner__title {
   width: 500px;
-  margin: 0 auto;
+  margin: 80px auto;
   padding: 50px;
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
@@ -41,7 +37,25 @@ p:first-child {
 .banner__title span {
   display: block;
 }
+.banner__img-wrapper {
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.banner__img-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Open Sans', Arial, Verdana, sans-serif;
   color: #777777;
   background-color: #f2f2f2;
