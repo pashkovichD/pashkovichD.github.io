@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Taylored Wellness</title>
 	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Taylored Wellness official website">
 	<meta name="keywords" content="taylored, wellness, treatments, infrared sauna, massage, foot baths, supplements, essential oils">
@@ -66,49 +67,50 @@
 	</div>
 
 	<header class="header-page">
+		<div class="header-page__wrapper container">
+			<div class="page-header__top">
+				<div class="page-header__nav-wrapper">
+					<button class="page-header__toggle-nav-first hamburger" type="button">
+						<span class="visually-hidden">Открыть меню</span>
+						<span class="hamburger__line"></span>
+					</button>
+					<nav class="main-nav menu">
+						<h2 class="visually-hidden">Main menu</h2>
+						<ul class="main-nav__list list">
+							<li class="list__item"><a href="#">Home</a></li>
+							<li class="list__item"><a href="#">Services</a></li>
+							<li class="list__item"><a href="#">Products</a></li>
+							<li class="list__item"><a href="#">About us</a></li>
+							<li class="list__item"><a href="#">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<p class="page-header__phone">805-275-2555</p>
+			</div>
 
-		<div class="page-header__top">
-			<div class="page-header__nav-wrapper">
-				<button class="page-header__toggle-nav-first hamburger" type="button">
+			<a class="page-header__logo">
+				<span>Taylored</span>
+				<svg width="300" height="100">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<span>Wellness</span>
+			</a>
+
+			<div class="page-header__bottom">
+				<button class="page-header__toggle-nav-second hamburger" type="button">
 					<span class="visually-hidden">Открыть меню</span>
 					<span class="hamburger__line"></span>
 				</button>
-				<nav class="main-nav menu">
-					<h2 class="visually-hidden">Main menu</h2>
-					<ul class="main-nav__list menu-list">
-						<li class="menu-list__item"><a href="#">Home</a></li>
-						<li class="menu-list__item"><a href="#">Services</a></li>
-						<li class="menu-list__item"><a href="#">Products</a></li>
-						<li class="menu-list__item"><a href="#">About us</a></li>
-						<li class="menu-list__item"><a href="#">Contact Us</a></li>
-					</ul>
-				</nav>
+				<ul class="second-nav__list list">
+					<li class="list__item"><a href="#">Sensitive Audit Treatments</a></li>
+					<li class="list__item"><a href="#">Infrared Sauna</a></li>
+					<li class="list__item"><a href="#">Frequency Treatments</a></li>
+					<li class="list__item"><a href="#">Massage</a></li>
+					<li class="list__item"><a href="#">Foot Baths</a></li>
+					<li class="list__item"><a href="#">Supplements</a></li>
+					<li class="list__item"><a href="#">Essential Oils</a></li>
+				</ul>
 			</div>
-			<p class="page-header__phone">805-275-2555</p>
-		</div>
-
-		<a class="page-header__logo">
-			<span>Taylored</span>
-			<svg width="300" height="100">
-				<use xlink:href="#icon-logo"></use>
-			</svg>
-			<span>Wellness</span>
-		</a>
-
-		<div class="page-header__bottom">
-			<button class="page-header__toggle-nav-second hamburger" type="button">
-				<span class="visually-hidden">Открыть меню</span>
-				<span class="hamburger__line"></span>
-			</button>
-			<ul class="second-nav__list menu-list">
-				<li class="menu-list__item"><a href="#">Sensitive Audit Treatments</a></li>
-				<li class="menu-list__item"><a href="#">Infrared Sauna</a></li>
-				<li class="menu-list__item"><a href="#">Frequency Treatments</a></li>
-				<li class="menu-list__item"><a href="#">Massage</a></li>
-				<li class="menu-list__item"><a href="#">Foot Baths</a></li>
-				<li class="menu-list__item"><a href="#">Supplements</a></li>
-				<li class="menu-list__item"><a href="#">Essential Oils</a></li>
-			</ul>
 		</div>
 	</header>
 
@@ -128,7 +130,7 @@
 			</div>
 		</section>
 
-		<section class="services">
+		<section class="services container">
 			<h2 class="visually-hidden">Services</h2>			
 			<ul class="services__list">
 				<li class="services__item"><h3><a href="#">Treatments</a></h3></li>
@@ -137,7 +139,7 @@
 			</ul>
 		</section>
 
-		<section class="search">
+		<section class="search container">
 			<h2 class="visually-hidden">Search</h2>			
 			<form action="https://echo.htmlacademy.ru" class="search" method="POST">
 				<label for="search" class="visually-hidden">Search Our Website</label>
@@ -151,7 +153,7 @@
 			</form>
 		</section>
 
-		<section class="products">
+		<section class="products container">
 			<h2 class="visually-hidden">Products</h2>
 			<ul class="products__list">
 				<li class="products__item"><img src="#" alt=""><span class="visually-hidden">Immuno Ven</span></li>
@@ -160,7 +162,7 @@
 			</ul>
 		</section>
 
-		<section class="welcome">
+		<section class="welcome container">
 			<h2 class="welcome__title">Welcome to Taylored Wellness</h2>
 			<p class="welcome__list-title list__title">The services we offer are:</p>
 			<ul class="welcome__list list">
@@ -178,7 +180,7 @@
 	</main>
 
 	<footer class="page-footer">
-		<div class="page-footer__top">
+		<div class="page-footer__top container">
 			<a class="page-footer__logo">			
 				<svg width="300" height="100">
 					<use xlink:href="#icon-logo"></use>

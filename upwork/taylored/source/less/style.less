@@ -1,5 +1,7 @@
 @import 'variables.less';
 
+@import 'blocks/list.less';
+
 @import 'blocks/header.less';
 @import 'blocks/banner.less';
 
@@ -101,6 +103,15 @@ img {
 p {	
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	transition: all 0.3s ease;
+}
+
+.container {
+	max-width: @container-center-max;
+	margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
