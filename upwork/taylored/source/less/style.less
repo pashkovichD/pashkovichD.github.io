@@ -1,6 +1,7 @@
 @import 'variables.less';
 
 @import 'blocks/header.less';
+@import 'blocks/banner.less';
 
 
 body {
@@ -14,15 +15,14 @@ h1 {
 	position: relative;
 
 	margin: 0;
-	margin-bottom: 20px;
-	padding: 20px;
+	padding: 0;
 
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	color: green;
+	// font-weight: 700;
+	// text-align: center;
+	// text-transform: uppercase;
+	// color: green;
 
-	border-bottom: 1px dotted lighten(@color, 40%);
+	// border-bottom: 1px dotted lighten(@color, 40%);
 
 	svg {
 		position: absolute;
@@ -31,22 +31,16 @@ h1 {
 
 		width: 30px;
 		height: 30px;
-	}
-
-	#icon-dot-arrow {
-		circle {
-			fill: #ff8000;
-		}
-	}
+	}	
 }
 
 @media (min-width: @tablet-width) {
 	h1 {
-		svg {
-			bottom: -40px;
+		// svg {
+		// 	bottom: -40px;
 
-			width: 50px;
-			height: 50px;
-		}
+		// 	width: 50px;
+		// 	height: 50px;
+		// }
 	}	
 }
