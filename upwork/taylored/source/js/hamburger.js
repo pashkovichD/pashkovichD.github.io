@@ -8,6 +8,10 @@ hamburgerFirst.addEventListener('click', function (e) {
 
 	this.classList.toggle('hamburger__click');
 	if(this.classList.contains('hamburger__click')) {
+		if(secondNav.classList.contains('second-nav--show')) {
+			secondNav.classList.remove('second-nav--show');
+			hamburgerSecond.classList.remove('hamburger__click');
+		}
 		mainNav.classList.add('main-nav--show');
 		// leftHamburger = true; // menu show
 	} else {
@@ -21,9 +25,9 @@ hamburgerSecond.addEventListener('click', function (e) {
 
 	this.classList.toggle('hamburger__click');
 	if(this.classList.contains('hamburger__click')) {
-		secondNav.classList.add('main-nav--show');
+		secondNav.classList.add('second-nav--show');
 		// leftHamburger = true; // menu show
 	} else {
-		secondNav.classList.remove('main-nav--show');		
+		secondNav.classList.remove('second-nav--show');		
 	}	
 });
