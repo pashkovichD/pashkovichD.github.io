@@ -96,19 +96,15 @@
 		<section class="search container">
 			<h2 class="visually-hidden">Search</h2>			
 			<form action="https://echo.htmlacademy.ru" class="search" method="POST">
-				<label for="search" class="visually-hidden">Search Our Website</label>
-				<input type="text" name="text-search" id="search" class="search__input" placeholder="Search">
-				<!-- <button type="submit" class="search__button">
-					<span class="visually-hidden">Найти</span>
-					<svg fill="#777777" width="23" height="23">
-						<use xlink:href="#icon-search"></use>
-					</svg>
-				</button> -->
+				<div class="search__wrapper">
+					<label for="search">Search Our Website</label>
+					<input type="text" name="text-search" id="search" class="search__input" placeholder="Search">	
+				</div>				
 			</form>
 		</section>
 
 		<section class="products container">
-			<h2 class="visually-hidden">Products</h2>
+			<h2 class="products__title"><span>Featured</span> Products</h2>
 			<ul class="products__list">
 				<li class="products__item"><img src="#" alt=""><h3 class="visually-hidden">Immuno Ven</h3></li>
 				<li class="products__item"><img src="#" alt=""><h3 class="visually-hidden">Cordyceps Extract</h3></li>
