@@ -598,6 +598,35 @@
   margin-bottom: 30px;
   line-height: 0;
 }
+@media (min-width: 480px) {
+  .products {
+    padding: 0 75px;
+  }
+}
+@media (min-width: 600px) {
+  .products {
+    padding: 0 125px;
+  }
+}
+@media (min-width: 768px) {
+  .products {
+    padding: 0 30px;
+  }
+  .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products__item {
+    margin-right: 20px;
+  }
+  .products__item:last-child {
+    margin-right: 0;
+  }
+}
 .footer-page {
   margin: 0;
   padding: 0;
