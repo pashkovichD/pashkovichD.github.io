@@ -261,9 +261,11 @@
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    width: 70%;
+    margin: 0 auto;
   }
   .developer svg {
-    margin: 0 20px 0 150px;
+    margin: 0 20px 0 0;
   }
   .developer__text {
     width: auto;
