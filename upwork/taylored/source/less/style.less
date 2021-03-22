@@ -3,6 +3,7 @@
 @import 'blocks/container.less';
 @import 'blocks/common.less';
 @import 'blocks/menu-list.less';
+@import 'blocks/list.less';
 @import 'blocks/hamburger.less';
 
 @import 'blocks/header.less';
@@ -12,6 +13,8 @@
 @import 'blocks/products.less';
 @import 'blocks/welcome.less';
 @import 'blocks/footer.less';
+
+@import 'blocks/audit.less';
 
 
 /*--- Exo 2 ---*/
@@ -121,13 +124,34 @@ img {
 	height: auto;
 }
 
-p {	
+p, ul {	
 	margin: 0;
+	margin-bottom: 10px;
 	padding: 0;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;	
 }
 
-a {
+p, a {
 	transition: all 0.3s ease;
+}
+
+h2 {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 38px;
+	line-height: normal;
+	font-weight: 600;
+	text-align: center;
+	color: #333333;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 @media (min-width: @tablet-width) {
