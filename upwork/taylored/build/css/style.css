@@ -1256,6 +1256,16 @@ ul {
 .audit__list {
   border-bottom: none;
 }
+.treatments__list-title {
+  font-size: 18px;
+  line-height: 32px;
+}
+.treatments__list {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  border-bottom: none;
+}
 .massage__title {
   margin-bottom: 30px;
 }
@@ -1353,16 +1363,6 @@ ul {
     margin-bottom: 20px;
   }
 }
-.treatments__list-title {
-  font-size: 18px;
-  line-height: 32px;
-}
-.treatments__list {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 32px;
-  border-bottom: none;
-}
 .foot-baths__title {
   font-size: 50px;
   line-height: 65px;
@@ -1399,4 +1399,7 @@ ul {
 }
 .foot-baths__list {
   margin-bottom: 20px;
+}
+.p404 {
+  background-color: red;
 }
