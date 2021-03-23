@@ -741,20 +741,20 @@
     margin-bottom: 50px;
   }
 }
-.services {
+.services-section {
   margin-bottom: 40px;
   padding: 0 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.services__list {
+.services-section__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.services__item {
+.services-section__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +776,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.services__item a {
+.services-section__item a {
   display: inline-block;
   margin: 0;
   padding: 12px 24px;
@@ -794,23 +794,23 @@
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-.services__item a:hover,
-.services__item a:focus {
+.services-section__item a:hover,
+.services-section__item a:focus {
   background-color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.services__item--treatments {
+.services-section__item--treatments {
   background-image: url(../img/services/treatments.jpg);
 }
-.services__item--supplements {
+.services-section__item--supplements {
   background-image: url(../img/services/supplements.jpg);
 }
-.services__item--massage {
+.services-section__item--massage {
   background-image: url(../img/services/massage.jpg);
 }
 @media (min-width: 600px) {
-  .services__list {
+  .services-section__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -820,25 +820,25 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .services__item {
+  .services-section__item {
     width: 48%;
     margin-bottom: 20px;
   }
-  .services__item:first-child {
+  .services-section__item:first-child {
     margin-right: 20px;
   }
 }
 @media (min-width: 991px) {
-  .services__list {
+  .services-section__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .services__item {
+  .services-section__item {
     width: 33%;
     margin-right: 20px;
     margin-bottom: 0;
   }
-  .services__item:last-child {
+  .services-section__item:last-child {
     margin-right: 0;
   }
 }
@@ -901,13 +901,13 @@
     width: 250px;
   }
 }
-.products {
+.products-section {
   margin-bottom: 50px;
   padding: 0 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.products__title {
+.products-section__title {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -918,37 +918,37 @@
   text-align: center;
   color: #7a7a7a;
 }
-.products__title span {
+.products-section__title span {
   display: block;
   font-family: 'Courgette', 'Exo 2', Tahoma, Verdana, sans-serif;
   font-size: 35px;
   line-height: 24px;
   text-transform: none;
 }
-.products__list {
+.products-section__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.products__item {
+.products-section__item {
   margin-bottom: 30px;
   line-height: 0;
 }
 @media (min-width: 480px) {
-  .products {
+  .products-section {
     padding: 0 75px;
   }
 }
 @media (min-width: 600px) {
-  .products {
+  .products-section {
     padding: 0 125px;
   }
 }
 @media (min-width: 768px) {
-  .products {
+  .products-section {
     padding: 0 30px;
   }
-  .products__list {
+  .products-section__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -956,10 +956,10 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .products__item {
+  .products-section__item {
     margin-right: 20px;
   }
-  .products__item:last-child {
+  .products-section__item:last-child {
     margin-right: 0;
   }
 }
@@ -1137,8 +1137,14 @@
     padding-right: 50px;
   }
 }
-.audit__list {
-  border-bottom: none;
+.services__list-title {
+  font-size: 18px;
+  line-height: 32px;
+}
+.services__list {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 32px;
 }
 .contact {
   text-align: center;
@@ -1177,6 +1183,9 @@
 .contact__map iframe {
   width: 100%;
   height: 250px;
+}
+.audit__list {
+  border-bottom: none;
 }
 .massage__title {
   margin-bottom: 30px;
