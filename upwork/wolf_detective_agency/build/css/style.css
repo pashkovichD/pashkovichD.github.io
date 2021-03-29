@@ -686,8 +686,6 @@ ul {
 .services__list {
   margin: 0 auto;
   list-style-type: none;
-  font-size: 20px;
-  line-height: 26px;
 }
 .services__list-item {
   display: -webkit-box;
@@ -698,6 +696,8 @@ ul {
           align-items: center;
   margin-bottom: 30px;
   padding: 5px 15px 5px 0;
+  font-size: 20px;
+  line-height: 26px;
   background-color: #eaeaea;
 }
 .services__list-item svg {
