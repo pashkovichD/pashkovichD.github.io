@@ -1,0 +1,92 @@
+.banner {
+	position: relative;	
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;	
+	// background-color: #f4c01c;
+	background-color: #4c4f70;
+	// background-image: url(../img/banner_home.png);
+	background-image: url(../img/banner_city.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: top center;
+	box-sizing: border-box;
+}
+
+.banner__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 0 auto;
+	overflow: hidden;	
+	&::after {
+		position: absolute;
+		content: '';		
+		top: 0;
+		bottom: 0;
+		left: 100%;		
+		width: 3000px;
+		background-color: #f4c01c;
+	}
+}
+
+.banner__img--men {
+	width: 90%;
+	margin-top: 100px;
+	z-index: 1;
+}
+
+.banner__border {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 75%;		
+	margin-top: 50px;
+	margin-bottom: 50px;	
+	border: 7px solid rgba(255,255,255, .1);
+}
+
+.banner__svg {
+	position: absolute;	
+	right: -300px;
+	bottom: 0;
+	width: 750px;
+	height: 400px;
+}
+
+@media (min-width: @mobile-width) {
+	.banner__svg {
+		right: -100px;
+	}
+}
+
+@media (min-width: 600px) {
+	.banner__img--men {
+		width: 560px;
+		margin-top: 50px;
+	}
+
+	.banner__border {	
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.banner__img--men {
+		width: auto;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.banner__wrapper {
+		overflow: visible;
+	}
+
+	.banner__svg {
+		width: 918px;
+		height: 490px;
+		right: 0;
+	}
+}
