@@ -204,7 +204,7 @@ ul {
           box-sizing: border-box;
 }
 .plug__text {
-  max-width: 320px;
+  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 10px;
   font-size: 20px;
@@ -216,9 +216,15 @@ ul {
   display: block;
   font-weight: 600;
 }
+.plug__text--thank {
+  font-size: 28px;
+  line-height: 34px;
+}
 .plug__text--black {
   margin-bottom: 5px;
   padding-top: 5px;
+  font-size: 28px;
+  line-height: 34px;
   color: #333333;
   border-top: 1px dashed #aaaaaa;
 }
@@ -398,6 +404,7 @@ ul {
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
+  font-style: italic;
   text-align: center;
   color: #414260;
 }
@@ -412,11 +419,17 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
   padding: 10px 15px;
   font-size: 20px;
   line-height: 26px;
-  background-color: #eaeaea;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 1px dashed #ad8a18;
+  border-radius: 3px;
 }
 .services__list-item svg {
   width: 50px;
@@ -488,6 +501,9 @@ ul {
 .contact__text--title {
   color: #414260;
   border-bottom: 1px dashed #414260;
+}
+.contact__text--title strong {
+  display: block;
 }
 .contact__text--phone {
   font-size: 23px;
