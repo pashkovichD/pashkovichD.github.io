@@ -1,0 +1,41 @@
+.banner {
+	min-height: 680px;
+	margin: 0;
+	padding: 106px 0 100px 0;	
+	background-image: url(../../img/banner_bg--tablet.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.4);
+	}
+}
+
+
+@media (min-width: @desktop-width) {
+	
+}
+
+
+@media (min-width: 400px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.banner {
+		background-image: url(../../img/banner_bg.jpg);
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.banner {
+		min-height: 810px;
+	}
+}
