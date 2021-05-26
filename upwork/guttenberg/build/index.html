@@ -67,32 +67,277 @@
 	</div>
 
 	<header class="header-page">
-		
+		<div class="header__wrapper">
+			<a href="/" title="ArcelorMittal" class="header__logo">
+				<svg viewBox="0 0 1183 487" width="1183" height="487" xmlns="http://www.w3.org/2000/svg" class="header__logo-svg">
+					<g>
+						<path d="M801.62 4.59c8.81-2.96 18.11-4.37 27.4-4.52 17.67-.14 35.32 2.22 52.5 6.33 28.94 6.38 56.87 16.64 84.15 28.1 56.95 24.58 111.27 55.2 162.23 90.52 13.81 9.82 27.6 19.72 40.45 30.78 5.65 5.38 11.34 11.34 13.38 19.11 1.48 7.76-1.16 16.39-7.27 21.54-5.81 5.72-14.72 7.25-22.47 5.52-7.68-1.06-14.36-5.2-21.15-8.63-28.49-14.12-57.98-26.27-88.37-35.64-13.47-4.37-27.19-7.89-40.9-11.39-33.67-7.63-68.01-12.72-102.54-13.76-14.91-.96-29.89-.33-44.74 1.22 19.83 31.22 42.24 60.71 65.68 89.29 4.85 5.63 6.47 14.03 3.48 20.91-4.66 10-16.93 15.93-27.58 12.43-5.04-1.5-8.43-5.72-11.96-9.32-9.33-11.04-18.45-22.28-27-33.94-11.61-14.8-22.25-30.33-32.98-45.78-5.72-8.84-12.06-17.32-16.96-26.65-54.54 10.23-106.5 31.44-155.09 57.87-16.33 9.18-32.54 18.62-47.99 29.25-11.04 7.13-21.2 15.49-31.87 23.14-4.89 3.84-11.52 4.56-17.52 3.81-7.88-2.22-15.16-8.19-16.87-16.48-1.39-4.44-.62-9.24 1.14-13.46 2.12-4 5.43-7.22 8.87-10.11 28.76-23.86 60.32-44.23 93.34-61.67 66.06-34.29 138.4-58.32 213-62.96 16.96-.04 33.97-.68 50.89.76 34.46 2.23 68.62 8.18 102.03 16.81 27.59 7.48 54.44 17.43 80.97 28.01-36.28-21.09-73.42-40.87-112.15-57.13-26.46-11.34-53.68-21.02-81.62-28.01-18.7-4.44-37.86-7.69-57.14-6.92-3.35.16-6.62.92-9.84 1.75-3.36.81-5.82 3.37-8.6 5.21-3.83 4.87-3.3 11.65-1.64 17.25 1.56 4.53 3.63 8.89 6.05 13.03.74 1.1.79 2.44 1 3.72-14.54 1.08-28.88 4-43.08 7.16-5.11-10.34-9.95-21.15-10.85-32.79-.51-8.89-.74-18.1 2.43-26.56 4.41-13.33 16.07-23.44 29.19-27.8z" class="header__logo-logo"></path>
+						<path d="M50.96 347.89c4.99-4.18 13.31-3.4 17.45 1.62 2.8 3.59 4.2 7.98 5.75 12.2 13.67 36.69 27.33 73.38 40.98 110.07 1.29 3.67 3.29 8.28.33 11.73-3.32 3.18-9.26 3.88-12.86.78-2.29-2.33-3.09-5.62-4.23-8.58-3.32-9.56-6.9-19.02-10.14-28.6-15.43-.24-30.85-.05-46.28-.11-4.31.07-8.65-.25-12.93.38-3.34 11.23-7.74 22.14-11.64 33.2-1.91 6.47-11.54 7.69-15.4 2.44-2.52-3.49-.66-7.92.59-11.53 14.38-38.34 28.66-76.71 43.02-115.05l5.36-8.55zm7.78 16.26l-23.76 67.63c15.4 0 30.79.01 46.19.01 1.6.51 1.23-1.06.88-1.83-7.73-21.95-15.8-43.79-23.31-65.81zm323.79-18.41c3.46-1.19 7.81-.46 10.05 2.65 1.9 2.04 1.7 4.99 1.81 7.58-.03 40.33.02 80.66-.03 121 .16 3.43-1.32 7.3-4.69 8.68-3.46 1.22-7.9.93-10.43-2.01-1.9-2.05-2.14-5-2.18-7.65.01-40.34-.01-80.68.01-121.01-.11-3.75 1.51-8.14 5.46-9.24zm220.86 2.77c3.44-3.5 8.97-3.95 13.47-2.52 4.45 1.53 7.43 5.7 8.69 10.08 6.23 21.89 12.53 43.76 18.73 65.66 3.61 12.02 6.88 24.14 9.85 36.34 4.21-18.8 10.12-37.15 15.3-55.69 4.24-14.98 8.59-29.93 12.85-44.9.96-3.32 2.16-6.83 4.9-9.12 4.96-4.67 13.97-4.15 18.15 1.32 2.49 3.43 3.42 7.69 3.98 11.83 6.12 37.18 12.43 74.32 18.58 111.49.31 3.56 1.28 7.83-1.32 10.8-2.42 3.02-6.94 2.84-10.26 1.71-3.41-1.39-4.14-5.46-4.82-8.65-5.6-36.33-11.75-72.58-16.95-108.96-1.86 10.12-5 19.94-7.75 29.85-8.07 27.36-15.85 54.82-23.98 82.17-1.57 6.86-11.01 8.45-15.81 4.06-1.42-1.54-1.98-3.62-2.61-5.55-5.31-18.17-10.55-36.36-15.88-54.52-5.07-18.64-11.48-36.93-15.36-55.87-5.08 35.76-11.25 71.36-16.7 107.06-.58 3.72-1.2 8.15-4.78 10.23-3.53 1.51-8.66 1.6-10.97-1.99-2.15-2.98-1.38-6.87-.95-10.24 6.37-38.1 12.7-76.2 19.06-114.29.72-3.7 1.8-7.59 4.58-10.3zm410.94-2.95c5.47-1.97 11.69 2.5 11.25 8.37.1 40.33-.01 80.67.06 121.01-.09 2.93.13 6.37-2.13 8.63-3.65 4.35-11.99 3.55-14.26-1.84-.89-1.77-.91-3.79-.95-5.71-.01-39.68.02-79.37-.01-119.06-.37-4.49.85-10.39 6.04-11.4zm-258.22 4.65c6.53-1.9 13.88 3.9 13.12 10.74.02 6.76-7.59 11.79-13.84 9.48-6.05-1.72-9.1-9.45-5.99-14.88 1.29-2.67 3.98-4.4 6.71-5.34zm41.48 6.48c.69-6.39 9.12-8.7 13.87-5.14 2.68 1.87 3.28 5.4 3.25 8.46-.01 7.12-.05 14.24.02 21.36 3.93-.01 8.04-.3 11.8 1.09 5.39 2.47 4.78 11.36-.72 13.37-3.65.95-7.47.47-11.19.68.11 27.15.13 54.3 0 81.45.26 5.99-6.17 9.89-11.59 8.05-3.79-1.17-5.86-5.21-5.64-9.01-.02-26.82-.05-53.64.03-80.46-3.73-.31-7.6.25-11.2-.95-4.81-2.55-5.04-10.89.07-13.25 3.57-1.19 7.4-.97 11.12-.99.09-8.21-.35-16.46.18-24.66zm54.44.31c.45-6.92 10.29-9.48 14.68-4.63 2.41 2.57 2.43 6.28 2.36 9.59-.05 6.48-.02 12.96.04 19.45 4.14-.02 8.52-.4 12.45 1.22 4.28 2.75 4.24 10.33-.37 12.72-3.81 1.67-8.07.95-12.09 1.09-.15 26.87.01 53.74-.08 80.61-.01 2.4-.6 4.92-2.12 6.82-3.9 3.75-11.5 3.32-14.08-1.77-1.37-3.19-.93-6.76-1-10.13-.01-25.17.08-50.34-.04-75.51-4.4-.24-9.5.89-13.08-2.38-2.69-2.91-1.97-7.33-.17-10.51 3.91-2.61 8.77-2.15 13.25-2.19.24-8.13-.25-16.28.25-24.38zm-718.75 31.16c-.14-7.98 11.8-10.75 15.73-4.24 2.44 4.51 1.06 9.95 1.53 14.87 3.17-6.2 7.99-11.57 13.87-15.3 4.2-2.56 9.54-4.16 14.33-2.38 5.15 2.16 5.84 9.88 1.86 13.44-2.57 2.63-6.32 3.28-9.64 4.48-6.21 2-12.28 5.4-15.96 10.96-3.39 5.3-4.41 11.74-4.44 17.94-.03 16.02 0 32.04-.01 48.07-.02 3.05-.37 6.61-3.08 8.55-5.13 4.37-14.52.62-14.21-6.48-.11-29.97-.15-59.94.02-89.91zm93.26-7.52c7.53-.66 15.31-.22 22.49 2.33 3.66 1.39 7.31 3.33 9.73 6.5 2.97 3.9.16 10.51-4.78 10.92-4.02.33-7.56-1.94-11.24-3.15-8.8-3.19-19.42-2.36-26.89 3.58-6.98 5.31-10.66 13.82-12.26 22.23-1.41 8.59-1.25 17.56 1.27 25.94 2.28 7.46 6.77 14.49 13.51 18.65 6.29 3.75 14 4.2 21.08 2.97 4.37-.75 8.15-3.3 12.42-4.36 3.29-.85 7.66.95 8.1 4.65.8 3.23-.84 6.6-3.49 8.44-7.62 5.42-17.24 7.31-26.46 6.94-12.4-.32-24.99-5.63-32.78-15.48-9.15-10.98-12.35-25.76-11.88-39.77.29-13.8 4.79-28.02 14.68-37.97 6.98-7.14 16.6-11.42 26.5-12.42zm299.84-.05c3.76-.97 8.36.43 9.99 4.19 1.68 4.44.64 9.31.93 13.92 5.08-8.87 13.56-18.29 24.73-18.35 5.27-.24 9.23 5.19 7.76 10.18-.96 4.73-5.92 6.52-9.95 7.88-7.03 2.06-14.31 5.49-18.23 11.98-3.51 5.5-4.25 12.19-4.29 18.57-.01 15.69-.01 31.37.01 47.05-.12 2.31-.07 4.88-1.48 6.85-2.92 4.41-10.06 4.61-13.62.92-1.95-2.07-2.18-5.06-2.24-7.74.03-28.68.01-57.37.02-86.06-.23-4.08 1.92-8.76 6.37-9.39zm230-.08c3.02-.38 6.69-.28 8.73 2.37 2.12 2.14 2.33 5.29 2.34 8.14-.06 28.66.01 57.32-.04 85.99.15 3.44-1.35 7.17-4.7 8.57-3.4 1.27-8.03 1.15-10.4-1.96-1.99-2.02-2.18-5.01-2.24-7.67v-79c.02-3.32-.2-6.66.27-9.95.45-3.15 2.94-5.82 6.04-6.49zm213.51 1.43c3.14-2.34 7.96-2.13 11.13.12 2.14 2.01 3.12 5.02 3 7.92-.06 29.01.01 58.02-.03 87.04 0 3.21-1.19 6.92-4.33 8.33-4.09 2.1-10.35.93-12.06-3.73-1.46-3.75-.74-7.85-.93-11.76-3.64 5.28-8.13 10.04-13.95 12.91-11.92 5.93-26.72 4.3-37.88-2.62-11.78-7.42-18.68-20.69-20.96-34.14-2.04-12.54-1.25-25.78 3.46-37.66 4.24-10.79 12.42-20.3 23.26-24.77 10.01-4.11 21.9-4.72 31.77.12 5.92 2.92 10.76 7.72 14.26 13.28.37-5.04-1.2-11.35 3.26-15.04zm-37.7 14.26c-6.65 1.67-12.45 6.19-15.9 12.08-5.22 8.56-6.41 18.91-6.02 28.75.62 9.59 3.25 19.66 10.15 26.7 7.15 7.68 19.32 9.62 28.76 5.31 5.21-2.33 9.29-6.68 12.13-11.56 5.27-9.82 6.36-21.41 5.02-32.33-1.17-8.17-3.9-16.6-10.04-22.41-6.09-6.25-15.69-8.87-24.1-6.54zm-648.11-4.17c8.98-8.45 21.64-12.65 33.89-11.53 10.64.62 20.77 5.84 27.81 13.78 9.15 10.22 13.68 24.18 13.23 37.81-.11 2.7-1.25 5.88-4 6.89-3.8 1.58-8.04.88-12.04 1.02-19.25.08-38.51-.18-57.76.15.48 7.54 2.58 15.26 7.62 21.08 5.17 6.22 13.21 9.84 21.26 9.93 7.35.15 15-.92 21.37-4.81 3.81-2.08 7.25-4.98 11.45-6.28 3.29-.65 7.47 1.31 8.04 4.87 1.42 4.84-2.59 9-6.22 11.57-11.97 8.54-27.47 11.05-41.86 9.21-11.8-1.47-22.85-8.21-29.41-18.14-8.4-12.37-10.76-28.05-9-42.69 1.45-12.26 6.69-24.21 15.62-32.86zm8.57 13.54c-4.94 5.98-6.9 13.8-7.38 21.4 18.85-.02 37.7.18 56.55-.1-.34-8.79-3.01-17.93-9.34-24.3-10.71-10.82-30.79-9.16-39.83 3zm152.82-23.85c11.43-2.76 24.08-1.62 34.3 4.45 10.41 6.06 17.4 16.83 20.62 28.26 3.71 13.64 3.4 28.41-1.22 41.8-3.61 9.67-9.91 18.66-18.9 23.98-10.78 6.52-24.34 7.8-36.35 4.29-11.66-3.3-21.4-12.1-26.45-23.05-7.04-14.97-7.65-32.59-3.09-48.37 4.28-14.72 15.84-27.76 31.09-31.36zm4.73 14.6c-6.54 1.78-12.09 6.4-15.42 12.26-5.29 9.18-6.43 20.15-5.62 30.55.81 8.69 3.39 17.68 9.51 24.17 7.53 8.2 20.82 10.41 30.54 4.91 6.09-3.13 10.37-8.94 12.9-15.18 3.76-10.24 4.28-21.56 2.11-32.2-1.69-7.96-5.51-15.81-12.18-20.72-6.19-4.57-14.48-5.78-21.84-3.79z" class="header__logo-text"></path>
+					</g>
+				</svg>
+			</a>
+
+			<div class="navigation__container">
+				<nav role="navigation" class="navigation">
+					<ul data-page="0" class="navigation__list">
+						<li class="navigation__list-item"><a href="/about-us/" title="About us" class="navigation__anchor">About us</a>
+							<!-- <ul data-page="1" class="navigation__list">
+								<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+								<li class="navigation__list-item-title"><p class="navigation__title">About us</p><a href="/about-us/" class="navigation__anchor">Go to About us page</a></li>
+								<li class="navigation__list-item"><a href="/about-us/our-values/" title="Our values" class="navigation__anchor">Our values</a></li>
+								<li class="navigation__list-item"><a href="/about-us/our-culture/" title="Our culture" class="navigation__anchor">Our culture <span class="navigation__list-item-count">(1)</span></a>
+									<ul data-page="2" class="navigation__list">
+										<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+										<li class="navigation__list-item"><a href="/about-us/our-culture/" title="Our culture" class="navigation__anchor navigation__anchor--with-line">Go to Our culture page</a></li>
+										<li class="navigation__list-item"><a href="/about-us/culture/history/" title="History" class="navigation__anchor">History</a></li>
+									</ul>
+								</li>
+								<li class="navigation__list-item"><a href="/about-us/strategy/" title="Strategy" class="navigation__anchor">Strategy</a></li>
+								<li class="navigation__list-item"><a href="/about-us/leadership/" title="Leadership" class="navigation__anchor">
+								Leadership <span class="navigation__list-item-count">(3)</span></a>
+									<ul data-page="2" class="navigation__list">
+										<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+										<li class="navigation__list-item"><a href="/about-us/leadership/" title="Leadership" class="navigation__anchor navigation__anchor--with-line">Go to Leadership page</a></li>
+										<li class="navigation__list-item"><a href="/about-us/leadership/board-of-directors/" title="Board of directors" class="navigation__anchor">Board of directors</a></li>
+										<li class="navigation__list-item"><a href="/about-us/leadership/executive-officers/" title="Executive officers" class="navigation__anchor">Executive officers</a></li>
+										<li class="navigation__list-item"><a href="/about-us/leadership/management-committee/" title="Management committee" class="navigation__anchor">Management committee</a></li>
+									</ul>
+								</li>
+								<li class="navigation__list-item"><a href="/about-us/research-and-development/" title="Research and development" class="navigation__anchor">Research and development <span class="navigation__list-item-count">(3)</span></a>
+									<ul data-page="2" class="navigation__list">
+										<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+										<li class="navigation__list-item"><a href="/about-us/research-and-development/" title="Research and development" class="navigation__anchor navigation__anchor--with-line">Go to Research and development page</a></li>
+										<li class="navigation__list-item"><a href="/about-us/research-and-development/advancing-products-processes-and-solutions/" title="Advancing products, processes and solutions" class="navigation__anchor">Advancing products, processes and solutions</a></li>
+										<li class="navigation__list-item"><a href="/about-us/research-and-development/solving-ecological-challenges/" title="Solving ecological challenges" class="navigation__anchor">Solving ecological challenges</a></li>
+										<li class="navigation__list-item"><a href="/about-us/research-and-development/leveraging-the-digital-economy/" title="Leveraging the digital economy" class="navigation__anchor">Leveraging the digital economy</a></li>
+									</ul>
+								</li>
+								<li class="navigation__list-item"><a href="/locations/" title="Global reach" class="navigation__anchor">Global reach</a></li>
+								<li class="navigation__list-item"><a href="/about-us/making-steel/" title="Making steel" class="navigation__anchor">Making steel</a></li>
+								<li class="navigation__list-item"><a href="/about-us/faq/" title="FAQ" class="navigation__anchor">FAQ</a></li>
+							</ul> -->
+						</li>
+
+						<li class="navigation__list-item"><a href="/smarter-future/" title="Smarter future" class="navigation__anchor">Smarter future</a>
+							<!-- <ul data-page="1" class="navigation__list">
+								<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+								<li class="navigation__list-item-title"><p class="navigation__title">Smarter future</p> <a href="/smarter-future/" class="navigation__anchor">Go to Smarter future page</a></li>
+								<li class="navigation__list-item"><a href="/smarter-future/steel-manufacturing/" title="Steel manufacturing" class="navigation__anchor">Steel manufacturing</a></li>
+								<li class="navigation__list-item"><a href="/smarter-future/construction/" title="Construction" class="navigation__anchor">Construction</a></li>
+								<li class="navigation__list-item"><a href="/smarter-future/mobility/" title="Mobility" class="navigation__anchor">Mobility</a></li>
+								<li class="navigation__list-item"><a href="/smarter-future/sustainability/" title="Sustainability" class="navigation__anchor">Sustainability</a></li>
+							</ul> -->
+	        			</li>
+
+	 					<li class="navigation__list-item"><a href="/industries/" title="Industries" class="navigation__anchor">Industries</a>
+	          				<!-- <ul data-page="1" class="navigation__list">
+					            <li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+					            <li class="navigation__list-item-title"><p class="navigation__title">Industries</p> <a href="/industries/" class="navigation__anchor">Go to Industries page</a></li>
+					            <li class="navigation__list-item"><a href="/industries/automotive-and-mobility/" title="Automotive and mobility" class="navigation__anchor">Automotive and mobility</a></li>
+					            <li class="navigation__list-item"><a href="/industries/construction/" title="Construction" class="navigation__anchor">Construction</a></li>
+					            <li class="navigation__list-item"><a href="/industries/energy/" title="Energy" class="navigation__anchor">Energy</a></li>
+					            <li class="navigation__list-item"><a href="/industries/packaging/" title="Packaging" class="navigation__anchor">Packaging</a></li>
+					            <li class="navigation__list-item"><a href="/industries/appliances/" title="Appliances" class="navigation__anchor">Appliances</a></li>
+					            <li class="navigation__list-item"><a href="/industries/transport/" title="Transport" class="navigation__anchor">Transport</a></li>
+					            <li class="navigation__list-item"><a href="/industries/mining/" title="Mining" class="navigation__anchor">Mining <span class="navigation__list-item-count">(3)</span></a>
+									<ul data-page="2" class="navigation__list">
+										<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+										<li class="navigation__list-item"><a href="/industries/mining/" title="Mining" class="navigation__anchor navigation__anchor--with-line">Go to Mining page</a></li>
+										<li class="navigation__list-item"><a href="/media/case-studies/sustainable-mining/" title="Sustainable mining" class="navigation__anchor">Sustainable mining</a></li>
+										<li class="navigation__list-item"><a href="/industries/tailings-management/" title="Tailings management" class="navigation__anchor">Tailings management</a></li>
+										<li class="navigation__list-item"><a href="/media/case-studies/always-innovating/" title="Innovation in mining" class="navigation__anchor">Innovation in mining</a></li>
+									</ul>
+								</li>
+	            				<li class="navigation__list-item"><a href="/industries/by-product/" title="By-products" class="navigation__anchor">By-products</a></li>
+	      					</ul> -->
+	        			</li>
+
+	        			<li class="navigation__list-item"><a href="/investors/" title="Investors" class="navigation__anchor">Investors</a>
+	          				<!-- <ul data-page="1" class="navigation__list">
+	            				<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+								<li class="navigation__list-item-title"><p class="navigation__title">Investors</p> <a href="/investors/" class="navigation__anchor">Go to Investors page</a></li>
+	        					<li class="navigation__list-item"><a href="/investors/investment-proposition/" title="Investment proposition" class="navigation__anchor">
+								Investment proposition</a></li>
+	        					<li class="navigation__list-item"><a href="/investors/results/" title="Results" class="navigation__anchor">Results <span class="navigation__list-item-count">(1)</span></a>
+	              					<ul data-page="2" class="navigation__list">
+	                					<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+	                					<li class="navigation__list-item"><a href="/investors/results/" title="Results" class="navigation__anchor navigation__anchor--with-line">Go to Results page</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/previous-results/" title="Previous results" class="navigation__anchor">Previous results</a></li>
+	              					</ul>
+								</li>
+	            				<li class="navigation__list-item"><a href="/investors/presentations/" title="Presentations" class="navigation__anchor">Presentations</a></li>
+	            				<li class="navigation__list-item"><a href="/investors/financial-reports/" title="Financial reports" class="navigation__anchor">Financial reports</a></li>
+	            				<li class="navigation__list-item"><a href="/investors/investor-toolkit/share-monitor/" title="Share monitor" class="navigation__anchor">	Share monitor</a></li>
+	            				<li class="navigation__list-item"><a href="/investors/financial-calendar/" title="Financial calendar" class="navigation__anchor">	Financial calendar</a></li>
+	            				<li class="navigation__list-item"><a href="/investors/equity-investors/" title="Equity investors" class="navigation__anchor">Equity investors <span class="navigation__list-item-count">(7)</span></a>
+	              					<ul data-page="2" class="navigation__list">
+	                					<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+	            						<li class="navigation__list-item"><a href="/investors/equity-investors/" title="Equity investors" class="navigation__anchor navigation__anchor--with-line">Go to Equity investors page</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/equity-investors/dividends/" title="Dividends" class="navigation__anchor">Dividends</a></li>
+	            						<li class="navigation__list-item"><a href="/investors/equity-investors/shareholders-events-agm-retail-investor-event/" title="Shareholders events - AGM" class="navigation__anchor">Shareholders events - AGM</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/equity-investors/equity-analysts/" title="Equity analysts" class="navigation__anchor">Equity analysts</a></li>
+	        							<li class="navigation__list-item"><a href="/investors/equity-investors/listings-and-listings-agents/" title="Listings and listings agents" class="navigation__anchor">Listings and listings agents</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/equity-investors/share-buyback-program/" title="Share buyback program" class="navigation__anchor">Share buyback program</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/equity-investors/ifrs-forms/" title="IFRS forms" class="navigation__anchor">IFRS forms</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/equity-investors/shares-and-mandatorily-convertible-subordinated-notes-offerings/" title="Shares and mandatorily convertible subordinated notes offerings" class="navigation__anchor">Shares and mandatorily convertible subordinated notes offerings</a></li>
+	              					</ul>
+	            				</li>
+	            				<li class="navigation__list-item"><a href="/investors/fixed-income-investors/" title="Fixed income investors" class="navigation__anchor">Fixed income investors <span class="navigation__list-item-count">(4)</span></a>
+	              					<ul data-page="2" class="navigation__list">
+	                					<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+	                					<li class="navigation__list-item"><a href="/investors/fixed-income-investors/" title="Fixed income investors" class="navigation__anchor navigation__anchor--with-line">Go to Fixed income investors page</a></li>
+	            						<li class="navigation__list-item"><a href="/investors/fixed-income-investors/bonds/" title="Bonds" class="navigation__anchor">Bonds</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/fixed-income-investors/emtn-programme/" title="EMTN programme" class="navigation__anchor">EMTN programme</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/fixed-income-investors/fcp-programme/" title="FCP programme" class="navigation__anchor">FCP programme</a></li>
+	                					<li class="navigation__list-item"><a href="/investors/fixed-income-investors/credit-ratings/" title="Credit ratings" class="navigation__anchor">Credit ratings</a></li>
+	              					</ul>
+	              				</li>
+	            				<li class="navigation__list-item"><a href="/investors/corporate-governance/" title="Corporate governance" class="navigation__anchor">	Corporate governance <span class="navigation__list-item-count">(10)</span></a>
+	              					<ul data-page="2" class="navigation__list">
+	                					<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+	            						<li class="navigation__list-item"><a href="/investors/corporate-governance/" title="Corporate governance" class="navigation__anchor navigation__anchor--with-line">Go to Corporate governance page</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/board-of-directors/" title="Board of directors" class="navigation__anchor">Board of directors</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/board-committees/" title="Board committees" class="navigation__anchor">Board committees</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/equity-incentive-plans/" title="Equity incentive plans" class="navigation__anchor">Equity incentive plans</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/share-transactions-by-management/" title="Share transactions by management" class="navigation__anchor">Share transactions by management</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/remuneration/" title="Remuneration" class="navigation__anchor">Remuneration</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/risk-management-and-audit/" title="Risk management and audit" class="navigation__anchor">Risk management and audit</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/shareholding-structure/" title="Shareholding structure" class="navigation__anchor">Shareholding structure</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/compliance-and-policies/" title="Compliance and policies" class="navigation__anchor">Compliance and policies</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/current-articles-of-association/" title="Current articles of association" class="navigation__anchor">Current articles of association</a></li>
+										<li class="navigation__list-item"><a href="/investors/corporate-governance/whistleblower/" title="Whistleblower" class="navigation__anchor">Whistleblower</a></li>
+									</ul>
+								</li>
+	            				<li class="navigation__list-item"><a href="/investors/contact/" title="Contact" class="navigation__anchor">Contact</a></li>
+	          				</ul> -->
+	        			</li>
+
+						<li class="navigation__list-item"><a href="/sustainability/" title="Sustainability" class="navigation__anchor">Sustainability</a>
+							<!-- <ul data-page="1" class="navigation__list">
+								<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+								<li class="navigation__list-item-title"><p class="navigation__title">Sustainability</p> <a href="/sustainability/" class="navigation__anchor">Go to Sustainability page</a></li>
+								<li class="navigation__list-item"><a href="/sustainability/our-10-sd-outcomes/" title="Our 10 SD outcomes" class="navigation__anchor">Our 10 SD outcomes</a></li>
+								<li class="navigation__list-item"><a href="/sustainability/approach/" title="Approach" class="navigation__anchor">Approach <span class="navigation__list-item-count">(6)</span></a>
+									<ul data-page="2" class="navigation__list">
+										<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/" title="Approach" class="navigation__anchor navigation__anchor--with-line">Go to Approach page</a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/safety/" title="Safety" class="navigation__anchor">Safety</a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/climate-change/" title="Climate change" class="navigation__anchor">Climate change</a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/environment/" title="Environment" class="navigation__anchor">Environment</a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/social/" title="Social" class="navigation__anchor">Social</a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/product-innovation/" title="Product innovation" class="navigation__anchor">Product innovation</a></li>
+										<li class="navigation__list-item"><a href="/sustainability/approach/customer-reassurance/" title="Customer reassurance" class="navigation__anchor">Customer reassurance</a></li>
+									</ul>
+								</li>
+								<li class="navigation__list-item"><a href="/sustainability/responsiblesteel/" title="ResponsibleSteel™" class="navigation__anchor">ResponsibleSteel™</a></li>
+								<li class="navigation__list-item"><a href="/sustainability/un-sustainable-development-goals/" title="UN Sustainable Development Goals" class="navigation__anchor">UN Sustainable Development Goals</a></li>
+								<li class="navigation__list-item"><a href="/sustainability/governance/" title="Governance" class="navigation__anchor">Governance</a></li>
+								<li class="navigation__list-item"><a href="https://corporate-media.arcelormittal.com/media/hs4nmyya/am_climateactionreport_1.pdf" title="Climate action report" class="navigation__anchor">Climate action report</a></li>
+								<li class="navigation__list-item"><a href="/sustainability/climate-action-in-europe/" title="Climate action in Europe" class="navigation__anchor">Climate action in Europe</a></li>
+								<li class="navigation__list-item"><a href="/sustainability/xcarb/" title="XCarb™" class="navigation__anchor">XCarb™</a></li>
+							</ul> -->
+						</li>
+
+						<li class="navigation__list-item"><a href="/careers/" title="Careers" class="navigation__anchor">Careers</a>
+							<!-- <ul data-page="1" class="navigation__list">
+								<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+								<li class="navigation__list-item-title"><p class="navigation__title">Careers</p> <a href="/careers/" class="navigation__anchor">Go to Careers page</a></li>
+								<li class="navigation__list-item"><a href="/careers/why-arcelormittal/" title="Why ArcelorMittal" class="navigation__anchor">Why ArcelorMittal <span class="navigation__list-item-count">(4)</span></a>
+									<ul data-page="2" class="navigation__list">
+										<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+										<li class="navigation__list-item"><a href="/careers/why-arcelormittal/" title="Why ArcelorMittal" class="navigation__anchor navigation__anchor--with-line">Go to Why ArcelorMittal page</a></li>
+										<li class="navigation__list-item"><a href="/locations/" title="Where we are" class="navigation__anchor">Where we are</a></li>
+										<li class="navigation__list-item"><a href="/careers/rewards-and-benefits/" title="Rewards and benefits" class="navigation__anchor">Rewards and benefits</a></li>
+										<li class="navigation__list-item"><a href="/careers/career-progression/" title="Career progression" class="navigation__anchor">Career progression</a></li>
+										<li class="navigation__list-item"><a href="/careers/arcelormittal-university/" title="ArcelorMittal University" class="navigation__anchor">ArcelorMittal University</a></li>
+									</ul>
+								</li>
+								<li class="navigation__list-item"><a href="/careers/search-our-jobs/" title="Search our jobs" class="navigation__anchor">Search our jobs</a></li>
+								<li class="navigation__list-item"><a href="/careers/graduates-and-students/" title="Graduates and students" class="navigation__anchor">Graduates and students</a></li>
+								<li class="navigation__list-item"><a href="/careers/experienced-professionals/" title="Experienced professionals" class="navigation__anchor">Experienced professionals</a></li>
+								<li class="navigation__list-item"><a href="/careers/ready-to-apply/" title="Ready to apply?" class="navigation__anchor">Ready to apply?</a></li>
+							</ul> -->
+						</li>
+
+						<li class="navigation__list-item"><a href="/media/" title="Media" class="navigation__anchor">Media</a>
+							<!-- <ul data-page="1" class="navigation__list">
+								<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
+								<li class="navigation__list-item-title"><p class="navigation__title">Media</p> <a href="/media/" class="navigation__anchor">Go to Media page</a></li>
+								<li class="navigation__list-item"><a href="/media/news-articles/" title="News articles" class="navigation__anchor">News articles</a></li>
+								<li class="navigation__list-item"><a href="/media/press-releases/" title="Press releases" class="navigation__anchor">Press releases</a></li>
+								<li class="navigation__list-item"><a href="/get-in-touch/" title="Get in touch" class="navigation__anchor">Get in touch</a></li>
+							</ul> -->
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__toolbar">
+				<a href="#" class="header__price-ticker">MT:NA ↗  €25.14</a>
+				<!-- <a href="#" class="stock-price-ticker"><p class="stock-price-ticker__display-ticker">MT:NA</p> <span class="stock-price-ticker__arrow">↗</span> <p class="stock-price-ticker__text"> €25.14</p></a> -->
+
+				<div class="header__toolbar-search">
+					<a href="#">
+						<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" aria-labelledby="Globe" role="presentation" class="header__toolbar-icon-globe">
+							<path d="M18.355 17.774A9.928 9.928 0 0021 11s0 0 0 0 0 0 0 0a9.924 9.924 0 00-2.232-6.298l-.005-.007-.01-.013a10.198 10.198 0 00-.507-.574s0 0 0 0a10.24 10.24 0 00-.173-.177l-.002-.002s0 0 0 0a10.017 10.017 0 00-.357-.34l-.01-.009a10.116 10.116 0 00-.176-.156l-.014-.012-.176-.149-.02-.015a10.013 10.013 0 00-.175-.14l-.025-.02a9.951 9.951 0 00-.389-.287l-.025-.017a9.693 9.693 0 00-.205-.14l-.01-.006a9.894 9.894 0 00-4.352-1.574l-.032-.003a10.058 10.058 0 00-.228-.023l-.058-.004a10.37 10.37 0 00-.205-.015l-.072-.004a10.587 10.587 0 00-.201-.009l-.072-.002a10.214 10.214 0 00-.538 0l-.07.002c-.068.003-.136.005-.203.009l-.07.004a10.4 10.4 0 00-.208.015l-.054.004a9.873 9.873 0 00-.234.023l-.026.003a9.899 9.899 0 00-5.022 2.054l-.08.065c-.04.03-.078.062-.116.093l-.121.102-.07.06a10.142 10.142 0 00-.33.299l-.043.04-.143.14-.012.012-.027.027-.14.145-.043.046a9.818 9.818 0 00-.132.14l-.083.094a10.138 10.138 0 00-.257.302l-.01.012-.005.007A9.924 9.924 0 001 11s0 0 0 0 0 0 0 0a9.928 9.928 0 002.871 7.012l.058.059.091.089.047.045.159.15.034.032a9.912 9.912 0 005.624 2.551l.01.001c.082.01.163.017.244.024l.045.004.212.014.067.004c.065.004.131.006.197.009l.075.002.242.004h.048c.081 0 .162-.002.242-.004l.077-.002.195-.009a10.202 10.202 0 00.277-.019 10.286 10.286 0 00.285-.027c.007 0 .015 0 .022-.002a9.896 9.896 0 004.763-1.85l.02-.015c.062-.045.123-.091.183-.138l.038-.028a10.195 10.195 0 00.311-.254l.089-.074.127-.113.067-.06c.04-.035.078-.072.117-.109l.076-.07.102-.1.056-.055.038-.04a9.637 9.637 0 00.204-.212l.042-.045zm-5.197 2.49a9.49 9.49 0 01-.214.047c.682-.506 1.303-1.282 1.828-2.301.3-.584.559-1.227.773-1.915.972.297 1.855.69 2.605 1.17a9.52 9.52 0 01-4.992 3zm-4.263.012a9.977 9.977 0 01-.248-.06l-.047-.012a8.94 8.94 0 01-.197-.053l-.01-.003a9.53 9.53 0 01-4.543-2.883c.75-.479 1.634-.873 2.606-1.17.213.688.472 1.331.773 1.915.525 1.019 1.146 1.795 1.827 2.301l-.012-.002-.15-.033zm-7.403-9.032H5.73c.019 1.55.222 3.043.588 4.383-1.04.317-1.984.742-2.784 1.26a9.464 9.464 0 01-2.043-5.643zm1.99-6.062c.805.53 1.759.965 2.811 1.289a17.649 17.649 0 00-.562 4.285H1.49a9.462 9.462 0 011.99-5.574zm5.367-3.448l.01-.002c.065-.016.131-.03.198-.044-.682.507-1.303 1.283-1.828 2.302-.315.61-.583 1.287-.803 2.012-.985-.305-1.878-.708-2.634-1.2a9.523 9.523 0 015.057-3.068zm11.66 9.022h-4.24a17.656 17.656 0 00-.562-4.285c1.053-.324 2.007-.758 2.812-1.29a9.462 9.462 0 011.99 5.575zm-9.753-4.098c-1.357-.02-2.668-.2-3.86-.52.21-.695.467-1.34.767-1.924C8.51 2.57 9.6 1.619 10.756 1.5v5.157zm0 .488v3.61H6.219c.02-1.468.206-2.879.543-4.15 1.237.334 2.592.52 3.994.54zm0 4.098v3.716c-1.39.02-2.738.203-3.967.532-.354-1.296-.55-2.742-.57-4.248h4.537zm0 4.205v5.05c-1.157-.118-2.247-1.07-3.093-2.713a11.39 11.39 0 01-.738-1.825 15.846 15.846 0 013.83-.512zm.488 0c1.346.019 2.646.196 3.83.511-.204.657-.45 1.27-.737 1.826-.846 1.642-1.936 2.595-3.093 2.713v-5.05h0zm0-.489v-3.716h4.537c-.02 1.506-.216 2.952-.57 4.248a16.333 16.333 0 00-3.967-.532zm0-4.204v-3.61a16.294 16.294 0 003.994-.54c.337 1.271.524 2.682.543 4.15h-4.537zm0-4.098V1.501c1.157.118 2.247 1.07 3.093 2.713.3.583.558 1.23.768 1.923a15.808 15.808 0 01-3.86.521zm6.964-1.857c-.756.493-1.649.897-2.634 1.201a11.965 11.965 0 00-.802-2.012c-.525-1.019-1.147-1.795-1.828-2.302a9.518 9.518 0 015.264 3.113zm-2.527 10.825c.366-1.34.57-2.831.588-4.382h4.24a9.464 9.464 0 01-2.044 5.643c-.8-.519-1.744-.943-2.784-1.26z" fill="#ffffff"></path>
+						</svg>
+					</a>
+					<svg viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="header__toolbar-search-toggle">
+						<title id="search" lang="en">Search icon</title>
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g transform="translate(-1255.000000, -42.000000)" fill="#ffffff">
+								<g transform="translate(1255.000000, 42.000000)">
+									<g><path d="M8.25148718,14.1943832 C11.7694359,14.1943832 14.6220855,11.3292585 14.6220855,7.79592517 C14.6220855,4.26139002 11.7694359,1.39746712 8.25148718,1.39746712 C4.73353846,1.39746712 1.87969231,4.26139002 1.87969231,7.79592517 C1.87969231,11.3292585 4.73353846,14.1943832 8.25148718,14.1943832 Z M8.25148718,0.0658571429 C12.5017436,0.0658571429 15.9467009,3.52708163 15.9467009,7.79592517 C15.9467009,12.0647687 12.5017436,15.5247914 8.25148718,15.5247914 C4.00123077,15.5247914 0.555076923,12.0647687 0.555076923,7.79592517 C0.555076923,3.52708163 4.00123077,0.0658571429 8.25148718,0.0658571429 Z M19.1843347,17.3698326 C19.5311477,17.7176441 19.5311477,18.2802187 19.1843347,18.6280303 C18.836474,18.9758418 18.272772,18.9758418 17.9259591,18.6280303 L13.8888889,14.5925786 L15.1472645,13.3333333 L19.1843347,17.3698326 Z"></path></g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<div class="sticky-header site-header-mobile">
+			<div class="site-header-mobile__container container">				
+				<!-- <div class="search-bar search-bar">
+					<svg viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="search-bar__icon"><title id="Search" lang="en">Search icon</title> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1255.000000, -42.000000)" fill="currentColor"><g transform="translate(1255.000000, 42.000000)"><g><path d="M8.25148718,14.1943832 C11.7694359,14.1943832 14.6220855,11.3292585 14.6220855,7.79592517 C14.6220855,4.26139002 11.7694359,1.39746712 8.25148718,1.39746712 C4.73353846,1.39746712 1.87969231,4.26139002 1.87969231,7.79592517 C1.87969231,11.3292585 4.73353846,14.1943832 8.25148718,14.1943832 Z M8.25148718,0.0658571429 C12.5017436,0.0658571429 15.9467009,3.52708163 15.9467009,7.79592517 C15.9467009,12.0647687 12.5017436,15.5247914 8.25148718,15.5247914 C4.00123077,15.5247914 0.555076923,12.0647687 0.555076923,7.79592517 C0.555076923,3.52708163 4.00123077,0.0658571429 8.25148718,0.0658571429 Z M19.1843347,17.3698326 C19.5311477,17.7176441 19.5311477,18.2802187 19.1843347,18.6280303 C18.836474,18.9758418 18.272772,18.9758418 17.9259591,18.6280303 L13.8888889,14.5925786 L15.1472645,13.3333333 L19.1843347,17.3698326 Z"></path></g></g></g></g></svg>
+					<input type="text" placeholder="Search Arcelormittal" class="search-bar__input">
+				</div> -->				
+			</div>
+		</div>
 	</header>
 
 	<section class="banner">
-		<div class="banner__wrapper-title">
-			<h1 class="banner__title">Inventing smarter steels for a better world </h1>
-			<p class="banner__subtitle">The world’s leading steel and mining company</p>
-		</div>
-		<!-- <div class="scroll-prompt">
-			<div class="hero__scroll-prompt">Scroll down to explore</div>
-			<div class="lottie scroll-prompt__line lottie--loaded">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 140" width="50" height="140" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_2"><rect width="50" height="140" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(1,0,0,0.944409191608429,103.125,66.63675689697266)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(255,55,0)" stroke-opacity="1" stroke-width="1" d=" M-78,-61.5 C-78,-61.5 -78,61 -78,61"></path></g></g></g></svg>
+		<video class="banner__video" autoplay="" loop=""><source src="mp4/video.mp4" type="video/mp4"></video>
+		<!-- <video class="banner__video" autoplay loop><source src="https://storagearcelormittaluat.blob.core.windows.net/media/ts0lbezm/the-future-of-steelb.mp4" type="video/mp4"></video> -->
+		<div class="banner__wrapper">
+			<div class="banner__container">
+				<div class="banner__wrapper-title">
+					<h1 class="banner__title">Inventing smarter steels for a better world </h1>
+					<p class="banner__subtitle">The world’s leading steel and mining company</p>
+				</div>				
 			</div>
-		</div> -->
+			<div class="banner__scroll">
+				<div class="banner__scroll-wrapper">
+					<div class="banner__scroll-title">Scroll down to explore</div>
+					<div class="banner__scroll-line"></div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<header role="banner">
+	<!-- <header role="banner"> -->
 
-		<div class="navigation-container">
+		<!-- <div class="navigation-container">
 			<nav role="navigation" data-menu-page="0" class="navigation">
 				<ul data-page="0" class="navigation__list">
 					<li class="navigation__list-item"><a href="/about-us/" title="About us" class="navigation__anchor">About us</a>
 						<ul data-page="1" class="navigation__list">
 							<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
 							<li class="navigation__list-item-title"><p class="navigation__title">About us</p><a href="/about-us/" class="navigation__anchor">Go to About us page</a></li>
-							<li class="navigation__list-item"><a href="/about-us/our-values/" title="Our values" class="navigation__anchor">Our values <!----></a></li>
+							<li class="navigation__list-item"><a href="/about-us/our-values/" title="Our values" class="navigation__anchor">Our values</a></li>
 							<li class="navigation__list-item"><a href="/about-us/our-culture/" title="Our culture" class="navigation__anchor">Our culture <span class="navigation__list-item-count">(1)</span></a>
 								<ul data-page="2" class="navigation__list">
 									<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
@@ -100,7 +345,7 @@
 									<li class="navigation__list-item"><a href="/about-us/culture/history/" title="History" class="navigation__anchor">History</a></li>
 								</ul>
 							</li>
-							<li class="navigation__list-item"><a href="/about-us/strategy/" title="Strategy" class="navigation__anchor">Strategy <!----></a></li>
+							<li class="navigation__list-item"><a href="/about-us/strategy/" title="Strategy" class="navigation__anchor">Strategy</a></li>
 							<li class="navigation__list-item"><a href="/about-us/leadership/" title="Leadership" class="navigation__anchor">
 							Leadership <span class="navigation__list-item-count">(3)</span></a>
 								<ul data-page="2" class="navigation__list">
@@ -120,9 +365,9 @@
 									<li class="navigation__list-item"><a href="/about-us/research-and-development/leveraging-the-digital-economy/" title="Leveraging the digital economy" class="navigation__anchor">Leveraging the digital economy</a></li>
 								</ul>
 							</li>
-							<li class="navigation__list-item"><a href="/locations/" title="Global reach" class="navigation__anchor">Global reach <!----></a></li>
-							<li class="navigation__list-item"><a href="/about-us/making-steel/" title="Making steel" class="navigation__anchor">Making steel <!----></a></li>
-							<li class="navigation__list-item"><a href="/about-us/faq/" title="FAQ" class="navigation__anchor">FAQ <!----></a></li>
+							<li class="navigation__list-item"><a href="/locations/" title="Global reach" class="navigation__anchor">Global reach</a></li>
+							<li class="navigation__list-item"><a href="/about-us/making-steel/" title="Making steel" class="navigation__anchor">Making steel</a></li>
+							<li class="navigation__list-item"><a href="/about-us/faq/" title="FAQ" class="navigation__anchor">FAQ</a></li>
 						</ul>
 					</li>
 
@@ -130,10 +375,10 @@
 						<ul data-page="1" class="navigation__list">
 							<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
 							<li class="navigation__list-item-title"><p class="navigation__title">Smarter future</p> <a href="/smarter-future/" class="navigation__anchor">Go to Smarter future page</a></li>
-							<li class="navigation__list-item"><a href="/smarter-future/steel-manufacturing/" title="Steel manufacturing" class="navigation__anchor">Steel manufacturing <!----></a></li>
-							<li class="navigation__list-item"><a href="/smarter-future/construction/" title="Construction" class="navigation__anchor">Construction <!----></a></li>
-							<li class="navigation__list-item"><a href="/smarter-future/mobility/" title="Mobility" class="navigation__anchor">Mobility <!----></a></li>
-							<li class="navigation__list-item"><a href="/smarter-future/sustainability/" title="Sustainability" class="navigation__anchor">Sustainability <!----></a></li>
+							<li class="navigation__list-item"><a href="/smarter-future/steel-manufacturing/" title="Steel manufacturing" class="navigation__anchor">Steel manufacturing</a></li>
+							<li class="navigation__list-item"><a href="/smarter-future/construction/" title="Construction" class="navigation__anchor">Construction</a></li>
+							<li class="navigation__list-item"><a href="/smarter-future/mobility/" title="Mobility" class="navigation__anchor">Mobility</a></li>
+							<li class="navigation__list-item"><a href="/smarter-future/sustainability/" title="Sustainability" class="navigation__anchor">Sustainability</a></li>
 						</ul>
         			</li>
 
@@ -141,12 +386,12 @@
           				<ul data-page="1" class="navigation__list">
 				            <li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
 				            <li class="navigation__list-item-title"><p class="navigation__title">Industries</p> <a href="/industries/" class="navigation__anchor">Go to Industries page</a></li>
-				            <li class="navigation__list-item"><a href="/industries/automotive-and-mobility/" title="Automotive and mobility" class="navigation__anchor">Automotive and mobility <!----></a></li>
-				            <li class="navigation__list-item"><a href="/industries/construction/" title="Construction" class="navigation__anchor">Construction <!----></a></li>
-				            <li class="navigation__list-item"><a href="/industries/energy/" title="Energy" class="navigation__anchor">Energy <!----></a></li>
-				            <li class="navigation__list-item"><a href="/industries/packaging/" title="Packaging" class="navigation__anchor">Packaging <!----></a></li>
-				            <li class="navigation__list-item"><a href="/industries/appliances/" title="Appliances" class="navigation__anchor">Appliances <!----></a></li>
-				            <li class="navigation__list-item"><a href="/industries/transport/" title="Transport" class="navigation__anchor">Transport <!----></a></li>
+				            <li class="navigation__list-item"><a href="/industries/automotive-and-mobility/" title="Automotive and mobility" class="navigation__anchor">Automotive and mobility</a></li>
+				            <li class="navigation__list-item"><a href="/industries/construction/" title="Construction" class="navigation__anchor">Construction</a></li>
+				            <li class="navigation__list-item"><a href="/industries/energy/" title="Energy" class="navigation__anchor">Energy</a></li>
+				            <li class="navigation__list-item"><a href="/industries/packaging/" title="Packaging" class="navigation__anchor">Packaging</a></li>
+				            <li class="navigation__list-item"><a href="/industries/appliances/" title="Appliances" class="navigation__anchor">Appliances</a></li>
+				            <li class="navigation__list-item"><a href="/industries/transport/" title="Transport" class="navigation__anchor">Transport</a></li>
 				            <li class="navigation__list-item"><a href="/industries/mining/" title="Mining" class="navigation__anchor">Mining <span class="navigation__list-item-count">(3)</span></a>
 								<ul data-page="2" class="navigation__list">
 									<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
@@ -156,7 +401,7 @@
 									<li class="navigation__list-item"><a href="/media/case-studies/always-innovating/" title="Innovation in mining" class="navigation__anchor">Innovation in mining</a></li>
 								</ul>
 							</li>
-            				<li class="navigation__list-item"><a href="/industries/by-product/" title="By-products" class="navigation__anchor">By-products <!----></a></li>
+            				<li class="navigation__list-item"><a href="/industries/by-product/" title="By-products" class="navigation__anchor">By-products</a></li>
       					</ul>
         			</li>
 
@@ -165,7 +410,7 @@
             				<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
 							<li class="navigation__list-item-title"><p class="navigation__title">Investors</p> <a href="/investors/" class="navigation__anchor">Go to Investors page</a></li>
         					<li class="navigation__list-item"><a href="/investors/investment-proposition/" title="Investment proposition" class="navigation__anchor">
-							Investment proposition <!----></a></li>
+							Investment proposition</a></li>
         					<li class="navigation__list-item"><a href="/investors/results/" title="Results" class="navigation__anchor">Results <span class="navigation__list-item-count">(1)</span></a>
               					<ul data-page="2" class="navigation__list">
                 					<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
@@ -173,10 +418,10 @@
                 					<li class="navigation__list-item"><a href="/investors/previous-results/" title="Previous results" class="navigation__anchor">Previous results</a></li>
               					</ul>
 							</li>
-            				<li class="navigation__list-item"><a href="/investors/presentations/" title="Presentations" class="navigation__anchor">Presentations <!----></a></li>
-            				<li class="navigation__list-item"><a href="/investors/financial-reports/" title="Financial reports" class="navigation__anchor">Financial reports <!----></a></li>
-            				<li class="navigation__list-item"><a href="/investors/investor-toolkit/share-monitor/" title="Share monitor" class="navigation__anchor">	Share monitor <!----></a></li>
-            				<li class="navigation__list-item"><a href="/investors/financial-calendar/" title="Financial calendar" class="navigation__anchor">	Financial calendar <!----></a> <!----></li>
+            				<li class="navigation__list-item"><a href="/investors/presentations/" title="Presentations" class="navigation__anchor">Presentations</a></li>
+            				<li class="navigation__list-item"><a href="/investors/financial-reports/" title="Financial reports" class="navigation__anchor">Financial reports</a></li>
+            				<li class="navigation__list-item"><a href="/investors/investor-toolkit/share-monitor/" title="Share monitor" class="navigation__anchor">	Share monitor</a></li>
+            				<li class="navigation__list-item"><a href="/investors/financial-calendar/" title="Financial calendar" class="navigation__anchor">	Financial calendar</a></li>
             				<li class="navigation__list-item"><a href="/investors/equity-investors/" title="Equity investors" class="navigation__anchor">Equity investors <span class="navigation__list-item-count">(7)</span></a>
               					<ul data-page="2" class="navigation__list">
                 					<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
@@ -216,7 +461,7 @@
 									<li class="navigation__list-item"><a href="/investors/corporate-governance/whistleblower/" title="Whistleblower" class="navigation__anchor">Whistleblower</a></li>
 								</ul>
 							</li>
-            				<li class="navigation__list-item"><a href="/investors/contact/" title="Contact" class="navigation__anchor">Contact <!----></a> <!----></li>
+            				<li class="navigation__list-item"><a href="/investors/contact/" title="Contact" class="navigation__anchor">Contact</a></li>
           				</ul>
         			</li>
 
@@ -224,7 +469,7 @@
 						<ul data-page="1" class="navigation__list">
 							<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
 							<li class="navigation__list-item-title"><p class="navigation__title">Sustainability</p> <a href="/sustainability/" class="navigation__anchor">Go to Sustainability page</a></li>
-							<li class="navigation__list-item"><a href="/sustainability/our-10-sd-outcomes/" title="Our 10 SD outcomes" class="navigation__anchor">Our 10 SD outcomes <!----></a> <!----></li>
+							<li class="navigation__list-item"><a href="/sustainability/our-10-sd-outcomes/" title="Our 10 SD outcomes" class="navigation__anchor">Our 10 SD outcomes</a></li>
 							<li class="navigation__list-item"><a href="/sustainability/approach/" title="Approach" class="navigation__anchor">Approach <span class="navigation__list-item-count">(6)</span></a>
 								<ul data-page="2" class="navigation__list">
 									<li class="navigation__list-item--back"><a href="" class="navigation__anchor"><span>Back</span></a></li>
@@ -237,12 +482,12 @@
 									<li class="navigation__list-item"><a href="/sustainability/approach/customer-reassurance/" title="Customer reassurance" class="navigation__anchor">Customer reassurance</a></li>
 								</ul>
 							</li>
-							<li class="navigation__list-item"><a href="/sustainability/responsiblesteel/" title="ResponsibleSteel™" class="navigation__anchor">ResponsibleSteel™ <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/sustainability/un-sustainable-development-goals/" title="UN Sustainable Development Goals" class="navigation__anchor">UN Sustainable Development Goals <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/sustainability/governance/" title="Governance" class="navigation__anchor">Governance <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="https://corporate-media.arcelormittal.com/media/hs4nmyya/am_climateactionreport_1.pdf" title="Climate action report" class="navigation__anchor">Climate action report <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/sustainability/climate-action-in-europe/" title="Climate action in Europe" class="navigation__anchor">Climate action in Europe <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/sustainability/xcarb/" title="XCarb™" class="navigation__anchor">XCarb™ <!----></a> <!----></li>
+							<li class="navigation__list-item"><a href="/sustainability/responsiblesteel/" title="ResponsibleSteel™" class="navigation__anchor">ResponsibleSteel™</a></li>
+							<li class="navigation__list-item"><a href="/sustainability/un-sustainable-development-goals/" title="UN Sustainable Development Goals" class="navigation__anchor">UN Sustainable Development Goals</a></li>
+							<li class="navigation__list-item"><a href="/sustainability/governance/" title="Governance" class="navigation__anchor">Governance </a></li>
+							<li class="navigation__list-item"><a href="https://corporate-media.arcelormittal.com/media/hs4nmyya/am_climateactionreport_1.pdf" title="Climate action report" class="navigation__anchor">Climate action report</a></li>
+							<li class="navigation__list-item"><a href="/sustainability/climate-action-in-europe/" title="Climate action in Europe" class="navigation__anchor">Climate action in Europe</a></li>
+							<li class="navigation__list-item"><a href="/sustainability/xcarb/" title="XCarb™" class="navigation__anchor">XCarb™</a></li>
 						</ul>
 					</li>
 
@@ -260,10 +505,10 @@
 									<li class="navigation__list-item"><a href="/careers/arcelormittal-university/" title="ArcelorMittal University" class="navigation__anchor">ArcelorMittal University</a></li>
 								</ul>
 							</li>
-							<li class="navigation__list-item"><a href="/careers/search-our-jobs/" title="Search our jobs" class="navigation__anchor">Search our jobs <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/careers/graduates-and-students/" title="Graduates and students" class="navigation__anchor">Graduates and students <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/careers/experienced-professionals/" title="Experienced professionals" class="navigation__anchor">Experienced professionals <!----></a> <!----></li>
-							<li class="navigation__list-item"><a href="/careers/ready-to-apply/" title="Ready to apply?" class="navigation__anchor">Ready to apply? <!----></a> <!----></li>
+							<li class="navigation__list-item"><a href="/careers/search-our-jobs/" title="Search our jobs" class="navigation__anchor">Search our jobs</a></li>
+							<li class="navigation__list-item"><a href="/careers/graduates-and-students/" title="Graduates and students" class="navigation__anchor">Graduates and students</a></li>
+							<li class="navigation__list-item"><a href="/careers/experienced-professionals/" title="Experienced professionals" class="navigation__anchor">Experienced professionals</a></li>
+							<li class="navigation__list-item"><a href="/careers/ready-to-apply/" title="Ready to apply?" class="navigation__anchor">Ready to apply?</a></li>
 						</ul>
 					</li>
 
@@ -279,7 +524,7 @@
 
 				</ul>
 			</nav>
-		</div>
+		</div> -->
 
 		<!-- <div class="sticky-header site-header-mobile">
 			<div class="site-header-mobile__container container">
@@ -307,32 +552,9 @@
 			</div>
 		</div> -->
 
-	</header>
+	<!-- </header> -->
 
-	<!-- <div class="hero hero--super hero--animations hero--has-background-video">
-		<div class="hero__background" style="background-image: url(&quot;/media/1gwhfcpk/inventing-smarter-steels-for-a-better-world.jpg?anchor=center&amp;mode=crop&amp;width=1400&amp;height=700&quot;);">
-			<div class="hero__wrapper">
-				<div class="scroll-prompt__container container">
-					<div class="scroll-prompt">
-						<div class="hero__scroll-prompt">Scroll down to explore</div>
-						<div class="lottie scroll-prompt__line lottie--loaded">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 140" width="50" height="140" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_2"><rect width="50" height="140" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(1,0,0,0.944409191608429,103.125,66.63675689697266)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(255,55,0)" stroke-opacity="1" stroke-width="1" d=" M-78,-61.5 C-78,-61.5 -78,61 -78,61"></path></g></g></g></svg>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="hero__container container">
-				<div class="row">
-					<div class="col-12 col-md-6 col-lg-7">
-						<h1 class="hero__title">Inventing smarter steels for a better world </h1>
-						<p class="hero__subtitle">The world’s leading steel and mining company</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-	<header class="header-page">
+	<!-- <header class="header-page">
 		<div class="header-page__wrapper container">
 			<div class="page-header__top">
 				<div class="page-header__nav-wrapper">
@@ -355,7 +577,7 @@
 			</div>
 
 			<a class="page-header__logo" href="index.html">
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="120" height="120"><defs><style>.logo-1{fill:none;}.logo-2{fill:url(#gr-circle);}.logo-3{fill:#519e77;}.logo-4{fill:#eff6f2;}.logo-5{fill:#bed3c3;}.logo-6{fill:#79b38c;}</style><radialGradient id="gr-circle" cx="-297.55" cy="170.08" fx="-394.24032413879013" r="111.91" gradientTransform="matrix(-0.65, -0.46, 0.49, -0.69, -184.85, 71.08)" gradientUnits="userSpaceOnUse"><stop offset="0.06" stop-color="#00e180"></stop><stop offset="0.15" stop-color="#68bc90"></stop><stop offset="0.54" stop-color="#80b494"></stop><stop offset="0.96" stop-color="#519e79"></stop></radialGradient></defs><title>Taylored Wellness</title><rect class="logo-1" width="200" height="200"></rect><circle class="logo-2" cx="101.44" cy="99.84" r="98.56"></circle><path class="logo-3" d="M169.36,28.4c-.4.72-1,1.6-1.36,2.32-9.92,16-26.8,34.56-46.48,46.88C47.92,123.76,16.17,109,3.05,94.16c-.16,1.84-.25,3.68-.25,5.6A98.6,98.6,0,1,0,169.36,28.4Z"></path><path class="logo-4" d="M174.24,49.76c-5.6-.64-8.24,1.76-13.36,1.68-4.08,0-8.48-.16-12.88.16-2.32.16-4.64,1-7,.88s-4.64-.72-7-.72c-2.64-.08-5.2.48-7.44.16-2.72-.32-4.56-1.2-6.88-1.6-7-1-11.92-2.16-11.92-4.4-.08-6.88,4.88-3.92,3.28-14.8-1.12-8-8.72-7.52-8.72-7.52a5.27,5.27,0,0,0-.16.72,5.27,5.27,0,0,0-.16-.72,8.35,8.35,0,0,0-8.72,7.52c-1.6,10.8,3.36,7.92,3.28,14.8,0,2.16-5,3.28-11.92,4.4-2.32.4-4.16,1.2-6.88,1.6-2.24.32-4.8-.24-7.44-.16-2.32.08-4.72.72-7,.72s-4.64-.72-7-.88c-4.48-.32-8.8-.16-12.88-.16-5.2,0-7.68-2.32-13.36-1.68-2.24.24-7.68,2.08-7.36,3.76.56,2.72,6.32,1.28,15.52,2.08,4.48.4,10.72,2.88,15.68,3.28,3.44.32,6.8.4,10,.48,3.92.16,6.8,1.12,9.68,1.28,4.08.16,6.64-1.2,7.84.16,6,6.8,8.32,17,4.24,43.44-1.84,12.24,1.28,47,4.24,68.72.32,2.32-2.32,6.16-3.92,9.92a14.23,14.23,0,0,0-1.2,6.64c.16,1.68,5,.56,7.36-1.68,1.84-1.84,2.72-4.08,4.16-6,1.6-2.16,3.44-3.36,3.36-4.56-.32-6.16-2.48-6.24-2.48-13.12,0-2.8,1-9,1-11.36-1-20.32-.56-28.08,3.6-36.24a.28.28,0,0,1,.08-.16.28.28,0,0,0,.08.16c4.16,8.24,4.56,16,3.6,36.24-.16,2.48,1,8.56,1,11.36,0,6.88-2.16,7-2.48,13.12-.08,1.2,1.68,2.48,3.36,4.56,1.44,1.92,2.4,4.16,4.16,6,2.32,2.16,7,3.36,7.36,1.68a14.23,14.23,0,0,0-1.2-6.64c-1.6-3.76-4.16-7.6-3.92-9.92,3-21.76,6.16-56.56,4.24-68.72-4.08-26.48-1.76-36.72,4.24-43.44,1.2-1.36,3.76,0,7.84-.16,2.88-.16,5.76-1,9.68-1.28,3.12-.16,6.48-.24,10-.48,5-.4,11.28-3,15.68-3.28,9.2-.72,15,.64,15.52-2.08C181.92,51.84,176.56,50,174.24,49.76Z"></path><path class="logo-5" d="M182.16,23C170.4,50,157,66.48,123.84,89.36,96,108.64,57.6,121.6,33.76,120.48c-22-1-30.32-15.28-30.88-16.88-4.48,16.4-4.16,29,4.4,40.4C19,159.44,70.4,160.16,123.84,123.12,172.08,89.6,193.28,54.64,182.16,23Z"></path><path class="logo-6" d="M194.24,41.84s3,47-73,94.8C35.84,190.4,7.76,148.72,7.76,148.72s16.64,64.88,126.4-3.92c19.68-12.32,37.92-31.44,47.52-45.12C205.2,66,194.24,41.84,194.24,41.84Z"></path></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="120" height="120"><defs><style>.logo-1{fill:none;}.logo-2{fill:url(#gr-circle);}.logo-3{fill:#519e77;}.logo-4{fill:#eff6f2;}.logo-5{fill:#bed3c3;}.logo-6{fill:#79b38c;}</style><radialGradient id="gr-circle" cx="-297.55" cy="170.08" fx="-394.24032413879013" r="111.91" gradientTransform="matrix(-0.65, -0.46, 0.49, -0.69, -184.85, 71.08)" gradientUnits="userSpaceOnUse"><stop offset="0.06" stop-color="#00e180"/><stop offset="0.15" stop-color="#68bc90"/><stop offset="0.54" stop-color="#80b494"/><stop offset="0.96" stop-color="#519e79"/></radialGradient></defs><title>Taylored Wellness</title><rect class="logo-1" width="200" height="200"/><circle class="logo-2" cx="101.44" cy="99.84" r="98.56"/><path class="logo-3" d="M169.36,28.4c-.4.72-1,1.6-1.36,2.32-9.92,16-26.8,34.56-46.48,46.88C47.92,123.76,16.17,109,3.05,94.16c-.16,1.84-.25,3.68-.25,5.6A98.6,98.6,0,1,0,169.36,28.4Z"/><path class="logo-4" d="M174.24,49.76c-5.6-.64-8.24,1.76-13.36,1.68-4.08,0-8.48-.16-12.88.16-2.32.16-4.64,1-7,.88s-4.64-.72-7-.72c-2.64-.08-5.2.48-7.44.16-2.72-.32-4.56-1.2-6.88-1.6-7-1-11.92-2.16-11.92-4.4-.08-6.88,4.88-3.92,3.28-14.8-1.12-8-8.72-7.52-8.72-7.52a5.27,5.27,0,0,0-.16.72,5.27,5.27,0,0,0-.16-.72,8.35,8.35,0,0,0-8.72,7.52c-1.6,10.8,3.36,7.92,3.28,14.8,0,2.16-5,3.28-11.92,4.4-2.32.4-4.16,1.2-6.88,1.6-2.24.32-4.8-.24-7.44-.16-2.32.08-4.72.72-7,.72s-4.64-.72-7-.88c-4.48-.32-8.8-.16-12.88-.16-5.2,0-7.68-2.32-13.36-1.68-2.24.24-7.68,2.08-7.36,3.76.56,2.72,6.32,1.28,15.52,2.08,4.48.4,10.72,2.88,15.68,3.28,3.44.32,6.8.4,10,.48,3.92.16,6.8,1.12,9.68,1.28,4.08.16,6.64-1.2,7.84.16,6,6.8,8.32,17,4.24,43.44-1.84,12.24,1.28,47,4.24,68.72.32,2.32-2.32,6.16-3.92,9.92a14.23,14.23,0,0,0-1.2,6.64c.16,1.68,5,.56,7.36-1.68,1.84-1.84,2.72-4.08,4.16-6,1.6-2.16,3.44-3.36,3.36-4.56-.32-6.16-2.48-6.24-2.48-13.12,0-2.8,1-9,1-11.36-1-20.32-.56-28.08,3.6-36.24a.28.28,0,0,1,.08-.16.28.28,0,0,0,.08.16c4.16,8.24,4.56,16,3.6,36.24-.16,2.48,1,8.56,1,11.36,0,6.88-2.16,7-2.48,13.12-.08,1.2,1.68,2.48,3.36,4.56,1.44,1.92,2.4,4.16,4.16,6,2.32,2.16,7,3.36,7.36,1.68a14.23,14.23,0,0,0-1.2-6.64c-1.6-3.76-4.16-7.6-3.92-9.92,3-21.76,6.16-56.56,4.24-68.72-4.08-26.48-1.76-36.72,4.24-43.44,1.2-1.36,3.76,0,7.84-.16,2.88-.16,5.76-1,9.68-1.28,3.12-.16,6.48-.24,10-.48,5-.4,11.28-3,15.68-3.28,9.2-.72,15,.64,15.52-2.08C181.92,51.84,176.56,50,174.24,49.76Z"/><path class="logo-5" d="M182.16,23C170.4,50,157,66.48,123.84,89.36,96,108.64,57.6,121.6,33.76,120.48c-22-1-30.32-15.28-30.88-16.88-4.48,16.4-4.16,29,4.4,40.4C19,159.44,70.4,160.16,123.84,123.12,172.08,89.6,193.28,54.64,182.16,23Z"/><path class="logo-6" d="M194.24,41.84s3,47-73,94.8C35.84,190.4,7.76,148.72,7.76,148.72s16.64,64.88,126.4-3.92c19.68-12.32,37.92-31.44,47.52-45.12C205.2,66,194.24,41.84,194.24,41.84Z"/></svg>
 				<span class="page-header__logo-tex-1">Taylored</span>
 				<span class="page-header__logo-tex-2">Wellness</span>
 			</a>
@@ -376,13 +598,13 @@
 				</ul>
 			</div>
 		</div>
-	</header>
+	</header> -->
 
 	<!-- <svg>
 		<use xlink:href="#icon-clock"></use>
 	</svg> -->
 
-	<script src="js/hamburger.min.js"></script>
+	<!-- <script src="js/common.min.js"></script> -->
 	<!-- <script src="js/map.min.js"></script> -->
 
 </body>
