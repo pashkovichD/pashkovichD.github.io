@@ -1,27 +1,31 @@
 .search {
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	position: absolute;
-	left: 0;
-	bottom: 0;	
+	
+	// left: 0;
+	// top: -20px;
+
+
+	left: 500%;
+	bottom: 0;
 	width: 100%;	
-	height: 100%;	
+	// height: 100%;	
 	padding-bottom: 11px;
-	transform: translate3d(100%,0,0);
+
+	transition: all .5s ease-out .6s;
+	// transition: left .25s ease-in-out .6s,
+	//  			opacity .25s ease-in-out .6s;
+	// transform: translate3d(100%,0,0);
 	
 	visibility: hidden;
 	opacity: 0;
-	transform: matrix(1, 0, 0, 1, 717, 0);
+	// transform: matrix(1, 0, 0, 1, 717, 0);
 
-	// visibility: inherit;
-	// opacity: 1;
-	// transform: translate3d(0px, 0px, 0.1px);
-
-	transition: transform .25s ease-in-out .5s;
-	// transition: background-color .2s ease-in-out,
-	// 			color .2s ease-in-out,
-	// 			transform .2s ease-in-out;
+	// transition: transform .25s ease-in-out .6s,
+	// 			opacity .25s ease-in-out .6s;
 }
 
 .search__icon {
@@ -47,16 +51,34 @@
 
 .header-page--light {
 	.search {
-		visibility: inherit;
+		visibility: visible;
 		opacity: 1;
-		transform: translate3d(0px, 0px, 0.1px);
+		// transform: translate3d(0px, 0px, 0.1px);
+		left: 0;
+	}
+}
+
+.header-page--dark {
+	.search {
+		// visibility: visible;
+		// opacity: 1;
+		visibility: hidden;
+		opacity: 0;
+		// left: -100px;
+		left: 500%;
+		// transform: matrix(1, 0, 0, 1, 717, 0);
+		// transition: transform .25s ease-in-out .6s,
+		// 			opacity .25s ease-in-out .6s;
+
+		// transition: left 5s ease-in-out .6s,
+	 // 			opacity 5s ease-in-out .6s;
+	 	transition: all .5s ease-out;
 	}
 }
 
 
-
-@media (min-width: @desktop-width) {
-
+@media (min-width: @desktop-full-width) {
+	
 }
 
 

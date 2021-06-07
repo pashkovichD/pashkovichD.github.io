@@ -1,0 +1,193 @@
+.banner {
+	position: relative;
+	margin: 0;
+	padding: 0;	
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.4);
+		z-index: 1;
+	}
+}
+
+.banner__container {
+	width: 100%;
+	z-index: 10;	
+}
+
+.banner__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.banner__wrapper {
+	display: flex;
+	align-items: center;
+	min-height: 680px;
+	padding: 106px 0 100px 0;
+	background-image: url(../../img/banner_bg--mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.banner__wrapper-title {
+	width: 100%;
+	max-width: 768px;
+	padding: 0 15px;
+	line-height: normal;
+	font-weight: 100;
+	color: #ffffff;
+}
+
+.banner__title {
+	margin: 20px 0;
+	padding: 0;
+	font-family: @ff-vag;
+	font-size: 50px;
+	line-height: 1.25;
+	font-weight: 300;
+}
+
+.banner__subtitle {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.banner__scroll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+	width: 100%;
+	max-width: 768px;
+	padding: 0 15px;	
+	margin: 0 auto;
+	color: #ffffff;
+	z-index: 3;
+}
+
+.banner__scroll-wrapper {
+	position: absolute;
+	right: 15px;
+	bottom: 1px;
+	display: flex;   
+    align-items: flex-start;
+    height: 80px;
+    padding: 0 15px;
+    line-height: 1.5;
+    background: transparent;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.banner__scroll-line {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 1px;
+	height: 140px;
+	background-color: transparent;
+	overflow: hidden;
+
+	&:after {
+		position: absolute;
+		top: -140px;
+		left: 0;
+		content: '';
+		width: 1px;
+		height: 140px;
+		background-color: rgba(255,55,0);
+		transition: all 1.5s ease;
+
+		display: block; 
+		animation-name: drive;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}	
+}
+
+@keyframes drive {
+  0% {top: -140px;}
+  50% {top: 0;}
+  51% {top: 0;}
+  100% {top: 140px;}
+}
+
+
+
+@media (min-width: 400px) {
+	
+}
+
+@media (min-width: @tablet-width) { // 768px
+	.banner__wrapper {
+		background-image: url(../../img/banner_bg--tablet.jpg);
+		background-position: 45% 100%;
+		height: 630px;
+	}
+
+	.banner__wrapper-title {
+		max-width: 50%;
+	}
+
+	.banner__title {
+		margin: 45px 0 20px 0;
+	}
+
+	.banner__scroll {
+		max-width: 1234px;
+	}
+}
+
+@media (min-width: @desktop-full-width) { // 1200px
+	.banner {
+		min-height: 810px;
+	}
+
+	.banner__container {
+		max-width: 1234px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.banner__video {
+		display: block;
+	}
+
+	.banner__wrapper {		
+		min-height: 810px;
+		background-image: url(../../img/banner_bg.jpg);
+		background-position: 40% 20%;
+
+	}
+
+	.banner__wrapper-title {
+		padding: 0;
+		max-width: 58%;
+	}
+
+	.banner__title {
+		font-size: 66px;
+	}
+}
+
+@media (min-width: 1280px) { // 1280px
+	.banner__scroll-wrapper {
+		right: 0;
+	}
+}
