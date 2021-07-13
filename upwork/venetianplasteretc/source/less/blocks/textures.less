@@ -1,0 +1,72 @@
+.textures {	
+	padding: 0 30px 10px 30px;
+	box-sizing: border-box;
+}
+
+.textures__title {
+	margin-bottom: 40px;
+	font-size: 25px;
+	text-transform: uppercase;	
+	letter-spacing: 1px;
+	span {		
+		display: inline-block;
+		padding: 0 7px;
+		font-family: 'Nicoletta';
+		font-size: 35px;
+	}
+}
+
+.textures__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.textures__item {
+	width: 45%;
+	margin-bottom: 20px;
+}
+
+.textures__item-title {
+	text-align: center;
+	line-height: normal;
+}
+
+.textures__line-color {
+	height: 16px;
+	margin-bottom: 60px;
+	background-color: #00E400;
+	background-image: url(../img/line-color.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+@media (min-width: @mobile-width) {
+	.textures__item {
+		width: 30%;	
+	}	
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+	.textures__title {	
+		font-size: 30px;
+		span {
+			font-size: 40px;
+		}
+	}
+
+	.textures__item {	
+		width: 17%;
+		margin-bottom: 30px;		
+	}
+}
+
+@media (min-width: @desktop-width) {
+
+}
