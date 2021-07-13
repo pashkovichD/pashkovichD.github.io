@@ -77,20 +77,20 @@
   src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_ObXXME.ttf) format('truetype');
 }
 /*--- Josefin Sans ---*/
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_ObXXME.ttf) format('truetype');
-}
 /*--- Courgette ---*/
 @font-face {
-  font-family: 'Courgette';
+  font-weight: 300;
+  font-family: "Nicoletta";
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/courgette/v8/wEO_EBrAnc9BLjLQAUkFUQ.ttf) format('truetype');
+  src: url(../fonts/Nicoletta.woff2) format("woff2"), url(../fonts/Nicoletta.woff) format("woff");
+}
+@font-face {
+  font-weight: 300;
+  font-family: "Nicoletta";
+  font-style: italic;
+  font-display: swap;
+  src: url(../fonts/Nicoletta.woff2) format("woff2"), url(../fonts/Nicoletta.woff) format("woff");
 }
 /*--- Exo 2 ---*/
 /*@font-face {
@@ -247,6 +247,9 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+.menu__list {
+  background-color: rgba(255, 255, 255, 0.9);
+}
 .menu__item a {
   display: block;
   padding: 15px 20px;
@@ -256,7 +259,6 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   color: #7a7a7a;
-  background-color: transparent;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -374,7 +376,7 @@ ul {
 /*--- LOGO ---*/
 .page-header__logo {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -387,7 +389,6 @@ ul {
 }
 @media (min-width: 768px) {
   .page-header__logo {
-    margin-bottom: 30px;
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -468,6 +469,92 @@ ul {
     position: static;
     opacity: 1;
     visibility: visible;
+  }
+}
+.banner {
+  margin-bottom: 40px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.banner__title-wrapper {
+  width: 100%;
+  padding: 5px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+.banner__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+.banner__title .banner__title-first {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner__title .banner__title-second {
+  font-family: 'Nicoletta';
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.banner__img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.banner__img-wrapper img {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .banner__img-wrapper {
+    height: 440px;
+  }
+  .banner__img-wrapper img {
+    height: 440px;
+  }
+  .banner__title .banner__title-first {
+    font-size: 35px;
+  }
+  .banner__title .banner__title-second {
+    font-size: 50px;
   }
 }
 .footer-page {
