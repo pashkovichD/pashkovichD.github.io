@@ -31,11 +31,26 @@
 	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 50px;
+	padding: 10px;
 	text-align: center;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all .25s ease-out;
 	svg {
 		width: 80px;
 		height: 80px;
-		margin-bottom: 20px;		
+		margin-bottom: 20px;
+		fill: #555555;
+		transition: all .25s ease-out;		
+	}
+	&:hover {
+		border: 1px solid #dcbd00;
+		svg {
+			fill: #000000;
+		}
+		.our-services__item-title {
+			color: #000000;
+		}
 	}
 }
 

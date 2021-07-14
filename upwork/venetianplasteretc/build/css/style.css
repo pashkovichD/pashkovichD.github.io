@@ -424,12 +424,15 @@ ul {
   font-weight: 400;
   line-height: 36px;
   text-align: right;
-  color: #af9702;
 }
 .page-header__phone svg {
   position: relative;
   top: 4px;
   margin-right: 7px;
+}
+.page-header__phone a {
+  color: #af9702;
+  text-decoration: none;
 }
 @media (min-width: 991px) {
   .page-header__toggle-nav {
@@ -572,14 +575,21 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 50px 70px;
+  padding: 30px 70px;
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 0;
 }
 .promo__text {
-  font-size: 20px;
-  line-height: 30px;
   color: #000000;
+}
+@media (min-width: 480px) {
+  .promo__box-second .promo__text-wrapper {
+    padding: 50px 70px;
+  }
+  .promo__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 @media (min-width: 768px) {
   .promo__box-first {
@@ -758,6 +768,9 @@ ul {
   height: 15px;
   background-image: url(../img/quotes.png);
   background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .testimonials__text {
   padding: 0 50px;
@@ -895,11 +908,14 @@ ul {
 }
 .footer-page__phone {
   text-align: center;
-  color: #ffffff;
   font-size: 20px;
 }
 .footer-page__phone span {
   opacity: 0.5;
+}
+.footer-page__phone a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .footer-page__logo {
   display: -webkit-box;

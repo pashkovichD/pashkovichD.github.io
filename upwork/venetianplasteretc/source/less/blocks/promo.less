@@ -29,7 +29,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding: 50px 70px;
+		padding: 30px 70px;
 
 		background-color: rgba(255,255,255,.7);
 		z-index: 0;
@@ -37,13 +37,20 @@
 }
 
 .promo__text {
-	font-size: 20px;
-	line-height: 30px;
 	color: #000000;		
 }
 
 @media (min-width: @mobile-width) {
-	
+	.promo__box-second {		
+		.promo__text-wrapper {
+			padding: 50px 70px;
+		}
+	}
+
+	.promo__text {
+		font-size: 20px;
+		line-height: 30px;		
+	}
 }
 
 @media (min-width: 600px) {
