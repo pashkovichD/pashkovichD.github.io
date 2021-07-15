@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Site maintenance!</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Exo 2';
+			background: repeating-linear-gradient(-60deg, rgba(235, 235, 235), rgba(235, 235, 235) 1px, rgba(250, 250, 250) 1px, rgba(250, 250, 250) 4px);
+		}
+
+		.plug {
+			min-width: 320px;
+			margin: 0 auto;
+			padding: 100px 20px 0 20px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.plug__svg {
+			width: 100%;
+			max-width: 500px;
+			height: auto;
+			margin: 0 auto;
+			margin-bottom: 100px;
+		}
+		.plug__info {
+			margin: 0 30px;
+			margin-bottom: 10px;
+			padding: 0;
+			padding-bottom: 20px;
+			font-size: 28px;
+			line-height: 36px;
+			font-weight: 400;
+			color: #e28605;
+			border-bottom: 1px dashed #e28605;
+		}
+		.plug__info svg {
+			display: block;
+			width: 120px;
+			height: auto;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		.plug__text-sorry {
+			display: block;
+			font-weight: 600;
+		}
+		.plug__hot {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			line-height: 25px;
+		}
+		.plug__hot span {
+			opacity: .3;
+		}
+		.plug__gear-one, .plug__gear-two {
+			-webkit-animation-name: rotationGearR;
+			   -moz-animation-name: rotationGearR;
+			     -o-animation-name: rotationGearR;
+					animation-name: rotationGearR;
+			-webkit-animation-duration: 3s;
+			   -moz-animation-duration: 3s;
+			     -o-animation-duration: 3s;
+					animation-duration: 3s;
+			-webkit-transform-origin: 50% 55.555555555555% 0;
+			   -moz-transform-origin: 50% 55.555555555555% 0;
+			     -o-transform-origin: 50% 55.555555555555% 0;
+					transform-origin: 50% 55.555555555555% 0;
+			-webkit-animation-iteration-count: infinite;
+			   -moz-animation-iteration-count: infinite;
+			     -o-animation-iteration-count: infinite;
+			        animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			   -moz-animation-timing-function: linear;
+			     -o-animation-timing-function: linear;
+			        animation-timing-function: linear;			
+		}
+		.plug__gear-two {
+		    -webkit-animation-name: rotationGearL;
+			   -moz-animation-name: rotationGearL;
+			     -o-animation-name: rotationGearL;
+					animation-name: rotationGearL;
+			-webkit-animation-duration: 7s;
+			   -moz-animation-duration: 7s;
+			     -o-animation-duration: 7s;
+					animation-duration: 7s;
+			-webkit-transform-origin: 20% 77.7777777777777777% 0;
+			   -moz-transform-origin: 20% 77.7777777777777777% 0;
+			     -o-transform-origin: 20% 77.7777777777777777% 0;
+					transform-origin: 20% 77.7777777777777777% 0;
+		}
+		@-webkit-keyframes rotationGearR {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(360deg);
+		    }		
+		}
+		@keyframes rotationGearR {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(360deg);
+		    }
+		}
+
+		@-webkit-keyframes rotationGearL {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(-360deg);
+		    }		
+		}
+		@keyframes rotationGearL {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(-360deg);
+		    }
+		}
+
+		@media (min-width: 480px) {
+		  .plug__hot br {
+		  	display: none;
+		  }
+		}
+
+		@media (min-width: 768px) {
+		  .plug__wrapper {
+		  	width: 65%;
+		  	margin: 0 auto;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<main class="plug">
+		<div class="plug__wrapper">
+			<p class="plug__info">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 72" width="160" height="144" fill="#e28605">
+					<path d="M79,57.2L46.4,3.3c-2.6-4.4-9-4.4-11.6,0L15.5,35.2l5.6-0.4L38.8,5.7c0.6-1,1.9-1.4,3-0.7c0.3,0.2,0.6,0.4,0.7,0.7 l32.6,53.9c0.6,1,0.3,2.4-0.7,3c-0.3,0.2-0.7,0.3-1.1,0.3H35.5l-2.4,4.6h40.1C78.5,67.5,81.7,61.8,79,57.2z"></path>
+					<path d="M40.3,32l-2.1,0.2l-0.3,1.2c-0.1,0.5-0.4,0.8-0.8,1.1l0,0c-0.4,0.2-0.9,0.3-1.3,0.1l-1.1-0.4l-1.4,1.7l0.6,1
+						c0.2,0.4,0.3,0.9,0.2,1.3l0,0c-0.1,0.4-0.5,0.8-0.9,1L32,39.7l0.2,2.1l1.2,0.3c0.5,0.1,0.8,0.4,1.1,0.8l0,0c0.2,0.4,0.3,0.9,0.1,1.3
+						l-0.4,1.1l1.7,1.4l1-0.6c0.4-0.2,0.9-0.3,1.3-0.2l0,0c0.4,0.1,0.8,0.5,1,0.9l0.5,1.1l2.1-0.2l0.3-1.2c0.1-0.5,0.4-0.8,0.8-1.1l0,0
+						c0.4-0.2,0.9-0.3,1.3-0.1l1.1,0.4l1.4-1.7l-0.6-1c-0.2-0.4-0.3-0.9-0.2-1.3l0,0c0.1-0.5,0.4-0.8,0.9-1l1.1-0.5l-0.2-2.1l-1.2-0.3
+						c-0.5-0.1-0.8-0.4-1.1-0.8l0,0c-0.2-0.4-0.3-0.9-0.1-1.3l0.4-1.2l-1.7-1.4l-1,0.6c-0.4,0.2-0.9,0.3-1.3,0.2l0,0
+						c-0.4-0.1-0.8-0.5-1-0.9L40.3,32z M42.9,39.7c0.2,1.6-1,3-2.6,3.2c-1.6,0.2-3-1-3.2-2.6c-0.2-1.6,1-3,2.6-3.2
+						C41.3,36.9,42.7,38.1,42.9,39.7L42.9,39.7z" class="plug__gear-one"></path>
+					<path d="M20.6,40.7L16.4,40l-1.2,2.1c-0.4,0.8-1.2,1.4-2.1,1.6l0,0c-0.9,0.2-1.9,0-2.6-0.5l-2-1.4L5,44.4l0.7,2.3
+						c0.3,0.9,0.1,1.9-0.4,2.7l0,0c-0.5,0.8-1.3,1.3-2.2,1.5l-2.4,0.4L0,55.6l2.1,1.2C3,57.2,3.6,58,3.8,58.9l0,0c0.2,0.9,0,1.9-0.5,2.6
+						l-1.4,2L4.4,67l2.3-0.7c0.9-0.3,1.9-0.1,2.7,0.4l0,0c0.8,0.5,1.3,1.3,1.5,2.2l0.4,2.4l4.2,0.7l1.2-2.1c0.4-0.8,1.2-1.4,2.1-1.6l0,0
+						c0.9-0.2,1.9,0,2.6,0.5l2,1.4l3.5-2.5l-0.7-2.3c-0.3-0.9-0.1-1.9,0.4-2.7l0,0c0.5-0.8,1.3-1.3,2.2-1.5l2.4-0.4l0.7-4.2l-2.1-1.2
+						c-0.8-0.4-1.4-1.2-1.6-2.1l0,0c-0.2-0.9,0-1.9,0.5-2.6l1.4-2L27.6,45l-2.3,0.7c-0.9,0.3-1.9,0.1-2.7-0.4l0,0
+						c-0.8-0.5-1.3-1.3-1.5-2.2L20.6,40.7z M21.8,56.9c-0.5,3.2-3.5,5.3-6.7,4.8c-3.2-0.5-5.3-3.5-4.8-6.7c0.5-3.2,3.5-5.3,6.7-4.8
+						C20.1,50.8,22.3,53.7,21.8,56.9C21.8,56.9,21.8,56.9,21.8,56.9z" class="plug__gear-two"></path>
+					</svg>
+				<span class="plug__text"><span class="plug__text-sorry">Sorry!</span> The site is under maintenance!</span>
+			</p>			
+		</div>
+		
+	</main>
+	
+</body>
+</html>
