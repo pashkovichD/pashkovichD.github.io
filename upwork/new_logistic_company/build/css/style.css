@@ -175,6 +175,8 @@ body {
 }
 :focus {
   outline: none;
+  -webkit-box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -255,18 +257,19 @@ ul {
   }
 }
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 480px;
-  padding: 15px 0;
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .logo svg {
+  display: block;
   width: 70px;
-  margin-right: 20px;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-bottom: 10px;
   fill: #480028;
 }
 .logo__text {
@@ -277,6 +280,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 10px;
   font-size: 17px;
   line-height: normal;
   color: #480028;
@@ -294,15 +298,36 @@ ul {
   line-height: normal;
   font-style: italic;
 }
+@media (min-width: 480px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+  .logo svg {
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+  }
+}
 .phone {
+  text-align: center;
   background-color: #ececec;
 }
 .phone__number {
-  margin-left: 20px;
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
   font-size: 18px;
   font-weight: 900;
   text-decoration: none;
   color: #000000;
+  border-bottom: 1px dashed #aaaaaa;
+}
+.phone__number:last-child {
+  border-bottom: none;
 }
 .phone__number svg {
   position: relative;
@@ -313,19 +338,28 @@ ul {
 .phone__number span {
   opacity: 0.5;
 }
+@media (min-width: 480px) {
+  .phone__number {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .phone__number::first-child {
+    margin-left: 0;
+  }
+}
 .menu {
   padding: 0;
   list-style-type: none;
-}
-.menu__list {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 .menu__item a {
   position: relative;
   display: block;
   padding: 15px 20px;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 20px;
   text-align: right;
   text-decoration: none;
   color: #7a7a7a;
@@ -559,50 +593,50 @@ ul {
 }
 .page-header {
   margin: 0;
-  padding: 0 30px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*--- LOGO ---*/
-.page-header__phone {
+.page-header__logo {
+  text-align: center;
+}
+.page-header__box {
   position: relative;
-  padding: 2px 20px 2px 50px;
 }
-.page-header__phone > svg {
-  position: absolute;
-  top: 0;
-  left: -50px;
-  bottom: 0;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .page-header__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media (min-width: 480px) {
+  .page-header__logo {
+    text-align: left;
   }
 }
-/*--- MAIN MENU & PHONE---*/
-.main-nav {
-  position: absolute;
-  top: 180%;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  z-index: 10;
+/*--- PHONE ---*/
+.page-header__phone {
+  position: relative;
+  padding: 5px 20px;
 }
-.main-nav--show {
-  top: 120%;
-  opacity: 1;
-  visibility: visible;
+.page-header__phone::before {
+  content: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -33px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 33px 33px;
+  border-color: transparent transparent #ececec transparent;
+}
+@media (min-width: 480px) {
+  .page-header__phone {
+    padding: 5px 5px;
+  }
+}
+/*--- MAIN MENU ---*/
+.page-header__nav-wrapper {
+  padding-top: 10px;
+}
+.page-header__toggle-nav {
+  display: none;
 }
 @media (min-width: 768px) {
 }

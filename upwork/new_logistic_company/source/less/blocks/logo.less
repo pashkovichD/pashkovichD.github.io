@@ -1,12 +1,15 @@
 .logo {
-	display: flex;
-	width: 480px;
-	padding: 15px 0;
+	display: block;
+	margin-bottom: 10px;
+	padding: 0;
 	text-decoration: none;
 	box-sizing: border-box;	
 	svg {
+		display: block;
 		width: 70px;
-		margin-right: 20px;
+		margin: 0 auto;
+		padding-top: 15px;
+		margin-bottom: 10px;
 		fill: #480028;
 	}
 }
@@ -14,6 +17,7 @@
 .logo__text {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 10px;
 	font-size: 17px;
 	line-height: normal;
 	color: #480028;	
@@ -36,7 +40,19 @@
 
 
 @media (min-width: @mobile-width) {
+	.logo {	
+		display: flex;
+		// width: 480px;
+		margin-bottom: 20px;
+		padding-top: 15px;
 
+		svg {		
+			margin: 0;
+			margin-right: 20px;
+			padding: 0;
+			
+		}
+	}
 }
 
 @media (min-width: @tablet-width) {
