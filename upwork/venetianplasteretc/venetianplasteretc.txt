@@ -18,7 +18,15 @@ ven_vpe
 
 
 
+localhost
 db
 venetianplasteretc_db
 ven_dev
+75AGzfWRAN69XOce
+
+
+на сервере
+db
+venetian_venetianplasteretc_db
+venetian_dev
 75AGzfWRAN69XOce
