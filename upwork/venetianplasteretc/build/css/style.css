@@ -1036,9 +1036,36 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.portfolio__item {
+  width: 45%;
+  line-height: 0;
+  margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+  .portfolio__item {
+    width: 30%;
+  }
+}
 @media (min-width: 768px) {
   .portfolio__title {
     font-size: 30px;
+  }
+  .portfolio__item {
+    width: 22%;
+  }
+}
+@media (min-width: 991px) {
+  .portfolio__item {
+    width: 18%;
   }
 }
 .contact {
