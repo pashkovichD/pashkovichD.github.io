@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Новополоцкая логистическая компания</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<h1 class="visually-hidden">Новополоцкая логистическая компания</h1>
+	<!-- <div style="display: none;">
+		<include src="source/img/sprite.svg"></include>
+	</div> -->
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">		
+		<div class="page-header__wrapper container">			
+			<a class="page-header__logo logo" href="index.html">
+				<svg width="70" height="70">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<span class="logo__text">
+					<span class="logo__name">Новополоцкая логистическая комп<b>А</b>ни<b>Я</b></span>
+					<span class="logo__slogan">Всё для клиента</span>
+				</span>
+			</a>
+			<div class="page-header__box">
+				<div class="page-header__phone phone">
+					<a class="phone__number" href="tel:+375214505070"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg><span>+375(214)</span> 50-50-70</a>
+					<!-- <a class="phone__number" href="tel:+375297116497"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-mts"></use></svg><span>+375(29)</span> 711-64-97</a> -->
+				</div>
+				
+				<button class="page-header__toggle-nav hamburger" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>
+				
+				<div class="page-header__nav-wrapper">
+				<nav class="page-header__nav menu">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<ul class="page-header__nav-list menu__list">
+						<li class="menu__item menu__item--active"><a href="index.html">Главная</a></li>
+						<li class="menu__item menu__item--dropdown">
+							<a href="#">Услуги</a>
+							<ul class="menu__dropdown">
+								<li><a href="auto.html">Автомобильные перевозки</a></li>
+								<li><a href="rw.html">Железнодорожные перевозки</a></li>
+								<li><a href="sea.html">Морские перевозки</a></li>
+								<li><a href="container.html">Контейнерные перевозки</a></li>
+								<li><a href="avia.html">Авиаперевозки</a></li>
+								<li><a href="groupage.html">Доставка сборных грузов</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="about.html">О компании</a></li>
+						<li class="menu__item"><a href="contact.html">Контакты</a></li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main">		
+		<h2 class="visually-hidden">Новополоцкая логистическая компания - Домашняя страница</h2>
+		
+		<section class="banner">			
+			<div class="banner__wrapper container">
+				<div class="banner__title-wrapper">
+					<h2 class="banner__title">Контейнерные перевозки <span>всеми видами транспорта</span></h2>
+					<p class="banner__slogan">Перевозим более 800 контейнеров в месяц</p>					
+				</div>				
+			</div>
+			<div class="banner__img">
+				<picture>
+					<source type="image/webp" srcset="img/banner-home.webp 1x, img/banner-home@2x.webp 2x">
+					<img src="img/banner-home.jpg" srcset="img/banner-home@2x.jpg 2x" alt="Контейнерные перевозки всеми видами транспорта">
+				</picture>
+			</div>
+			
+			<div class="promo">
+				<p class="promo__text">Предлагаем специальные условия <span>для крупных партий </span></p>
+			</div>			
+			<form method="POST" action="https://echo.htmlacademy.ru" class="banner__form form form--nojs">
+				<div class="form__item-wrapper">
+					<p class="form__item">
+						<input class="form__input" type="text" name="form__name" id="form__name"  value="">
+						<label class="form__label" for="form__name">Ваше имя</label>
+					</p>
+					<p class="form__item">
+						<input class="form__input" type="tel" name="form__phone" id="form__phone" value="">
+						<label class="form__label" for="form__phone">Телефон для связи</label>
+					</p>
+				</div>
+				<input type="submit" class="banner__button form__submit" value="Заказать перевозку">
+			</form>
+		</section>		
+
+		<section class="mission container">
+			<h2 class="mission__title">Наша миссия</h2>
+			<p class="mission__text">Оказание высококачественного, клиентоориентированного, интеллектуального и полного комплекса услуг в сфере ВЭД, опираясь на профессионализм наших сотрудников. Внедрение современных информационных технологий, умение меняться, подстраиваясь под изменяющиеся внешние условия, постоянное стремление к совершенствованию предоставляемых услуг и поиск новых оптимальных путей решения старых задач. Наша цель выполнять поставленные задачи оптимальным образом и в срок, что позволит нашим Клиентам быть уверенными в завтрашнем дне, легко планировать свой бизнес и развиваться.</p>
+		</section>
+
+		<section class="advantages container">
+			<h2 class="advantages__title">Почему именно мы?</h2>
+			<ul class="advantages__list">
+				<li class="advantages__item"><svg><use xlink:href="#icon-global"></use></svg>Работаем с транспортными компаниями во всех уголках мира от А до Я</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-delivery"></use></svg>Доставляем груз по всей России и Беларуси</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-transports"></use></svg>Используем доставки любыми видами транспорта</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-consultation"></use></svg>Держим клиентов в курсе ситуации на рынке перевозок</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-special-cargo"></use></svg>Доставляем грузы, требующие особых условий: <i>температурный режим, негабаритный груз</i></li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-size"></use></svg>Отправляем партии любых объемов: <i>от паллета до десятков контейнеров</i></li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-declaration"></use></svg> Предлагаем специальные условия для крупных партий</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-union"></use></svg>Объединяем груз и транспорт, чтобы предоставить лучшие ставки</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-best"></use></svg>Находим лучшие варианты отправки для каждого груза</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-container"></use></svg>Возможность отправки грузов в собственных контейнерах</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-structure"></use></svg>Собственная сеть агентов по всему миру</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-contract"></use></svg>Прямые договоры с терминалами в Санкт-Петербурге, Новороссийске, Владивостоке, Находке</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-ruble"></use></svg>Возможность предоставления отсрочек с момента доставки груза на склад клиента</li>
+				<li class="advantages__item"><svg><use xlink:href="#icon-warehouse"></use></svg>Возможность консолидации груза на собственных складах в портах ЮВА</li>
+			</ul>
+		</section>
+
+		<section class="services">
+			<div class="services__wrapper container">
+				<h2 class="services__title">Наши услуги</h2>
+				<p class="services__text">Мы предоставляем нашим клиентам все виды услуг в сфере внешнеэкономической деятельности.</p>
+				<ul class="services__list">
+					<li class="services__item">
+						<a href="auto.html">
+							<h3 class="services__item-title">Автомобильные перевозки</h3>
+							<picture>
+								<source type="image/webp" srcset="img/services/mini/auto-mini.webp 1x, img/services/mini/auto-mini@2x.webp 2x">
+								<img src="img/services/mini/auto-mini.jpg" srcset="img/services/mini/auto-mini@2x.jpg 2x" alt="Автомобильные перевозки" class="services__item-img">
+							</picture>
+							<!-- <img class="services__item-img" src="img/services/mini/auto-mini.jpg" alt="Автомобильные перевозки"> -->
+							<p class="services__item-text">В случае необходимости транспортировки груза на малые расстояния мы оказываем услуги по перевозке груза автомобильным транспортом. Мы организуем автоперевозки из стран как Западной, так и Восточной Европы, а также стран бывшего СНГ. Кроме этого оказываем услуги по экспорту в любую точку мира.</p>
+						</a>
+					</li>
+					<li class="services__item">
+						<a href="rw.html">
+							<h3 class="services__item-title">Железнодорожные перевозки</h3>
+							<picture>
+								<source type="image/webp" srcset="img/services/mini/rw-mini.webp 1x, img/services/mini/rw-mini@2x.webp 2x">
+								<img src="img/services/mini/rw-mini.jpg" srcset="img/services/mini/rw-mini@2x.jpg 2x" alt="Железнодорожные перевозки" class="services__item-img">
+							</picture>
+							<!-- <img class="services__item-img" src="img/services/mini/rw-mini.jpg" alt="Железнодорожные перевозки"> -->
+							<p class="services__item-text">Данный вид транспортных услуг сейчас становится наиболее актуальным и безопасным. Кроме этого он дает возможность транспортировки грузов большей массы и экономит время на доставку по основным маршрутам.</p>
+						</a>
+					</li>
+					<li class="services__item">
+						<a href="sea.html">
+							<h3 class="services__item-title">Морские перевозки</h3>
+							<picture>
+								<source type="image/webp" srcset="img/services/mini/sea-mini.webp 1x, img/services/mini/sea-mini@2x.webp 2x">
+								<img src="img/services/mini/sea-mini.jpg" srcset="img/services/mini/sea-mini@2x.jpg 2x" alt="Морские перевозки" class="services__item-img">
+							</picture>
+							<!-- <img class="services__item-img" src="img/services/mini/sea-mini.jpg" alt="Морские перевозки"> -->
+							<p class="services__item-text">Это один из самых эффективных и распространенных способов доставки груза. Морское судоходство играет ключевую роль в жизни мировой экономики, занимая центральное место в формирующейся единой системе глобальных транспортных перевозок.</p>
+						</a>
+					</li>
+					<li class="services__item">
+						<a href="container.html">
+							<h3 class="services__item-title">Контейнерные перевозки</h3>
+							<picture>
+								<source type="image/webp" srcset="img/services/mini/container-mini.webp 1x, img/services/mini/container-mini@2x.webp 2x">
+								<img src="img/services/mini/container-mini.jpg" srcset="img/services/mini/container-mini@2x.jpg 2x" alt="Контейнерные перевозки" class="services__item-img">
+							</picture>
+							<!-- <img class="services__item-img" src="img/services/mini/container-mini.jpg" alt="Контейнерные перевозки"> -->
+							<p class="services__item-text">Наша компания организует перевозку контейнеров из любой точки мира в любую точку России. Мы осуществляем доставку в основном через порты Санкт-Петербурга, Новороссийска, Владивостока, также через порты Прибалтики и Финляндии.</p>
+						</a>
+					</li>
+					<li class="services__item">
+						<a href="avia.html">
+							<h3 class="services__item-title">Авиаперевозки</h3>
+							<picture>
+								<source type="image/webp" srcset="img/services/mini/avia-mini.webp 1x, img/services/mini/avia-mini@2x.webp 2x">
+								<img src="img/services/mini/avia-mini.jpg" srcset="img/services/mini/avia-mini@2x.jpg 2x" alt="Авиаперевозки" class="services__item-img">
+							</picture>
+							<!-- <img class="services__item-img" src="img/services/mini/avia-mini.jpg" alt="Авиаперевозки"> -->
+							<p class="services__item-text">Международные Авиаперевозки – это самый быстрый способ доставки грузов. Мы осуществляем перевозку грузов воздушным транспортом, как в режиме экспорта, так и в режиме импорта. Мы легко сможем разработать и воплотить в жизнь наиболее удобные и экономически оправданные логистические схемы.</p>
+						</a>
+					</li>
+					<li class="services__item">
+						<a href="groupage.html">
+							<h3 class="services__item-title">Доставка сборных грузов</h3>
+							<picture>
+								<source type="image/webp" srcset="img/services/mini/groupage-mini.webp 1x, img/services/mini/groupage-mini@2x.webp 2x">
+								<img src="img/services/mini/groupage-mini.jpg" srcset="img/services/mini/groupage-mini@2x.jpg 2x" alt="Доставка сборных грузов" class="services__item-img">
+							</picture>
+							<!-- <img class="services__item-img" src="img/services/mini/groupage-mini.jpg" alt="Доставка сборных грузов"> -->
+							<p class="services__item-text">Наша компания оказывает услуги по перевозке малых партий грузов в составе сборных контейнеров или грузовых автомобилей. «Cборный груз» - это грузовые партии от нескольких отправителей, которые доставляются разным получателям, но перевозятся вместе.</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<section class="page-footer__top">
+			<h2 class="visually-hidden">Контактные данные</h2>
+			<div class="page-footer__top-wrapper container">
+				
+				<a class="page-footer__logo logo" href="index.html">
+					<svg width="70" height="70">
+						<use xlink:href="#icon-logo"></use>
+					</svg>
+					<span class="logo__text">
+						<span class="logo__name">Новополоцкая логистическая комп<b>А</b>ни<b>Я</b></span>
+						<span class="logo__slogan">Всё для клиента</span>
+					</span>
+				</a>
+				
+				<div class="page-footer__phone phone">
+					<a class="phone__number" href="tel:+375214505070"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg><span>+375(214)</span> 50-50-70</a>
+					<!-- <a class="phone__number" href="tel:+375297116497"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-mts"></use></svg><span>+375(29)</span> 711-64-97</a> -->
+				</div>
+
+				<div class="page-footer__schedule schedule">
+					<p class="schedule__item"><span>Пн - чт</span> 09.00 - 18.00</p>
+					<p class="schedule__item"><span>Пт</span> 09.00 - 16.45</p>
+					<p class="schedule__item"><span>Выходной -</span> суббота, воскресенье</p>
+				</div>
+				<svg width="70" height="70" class="page-footer__logo-bg">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+			</div>
+		</section>
+
+		<section class="page-footer__center container">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="page-footer__data">
+				<p class="page-footer__address"><b>211440,</b> Республика Беларусь, <br>г.Новополоцк, <br>ул.Молодежная, д. 134, пом. 178</p>
+				<p class="page-footer__email"><a href="mailto:stf.sergey@gmail.com">stf.sergey@gmail.com</a></p>
+			</div>
+			
+			<ul class="page-footer__menu">
+				<li class="page-footer__menu-item"><a href="index.html">Главная</a></li>
+				<li class="page-footer__menu-item"><a href="services.html">Услуги</a></li>
+				<li class="page-footer__menu-item"><a href="about.html">О компании</a></li>
+				<li class="page-footer__menu-item"><a href="contact.html">Контакты</a></li>
+			</ul>
+
+			<div class="page-footer__map">
+				<a href="https://yandex.by/maps/-/CCUiQRFD1A" title="Мы находимся по адресу г.Новополоцк, ул.Молодежная, д.134, пом.178" rel="noopener nofollow" target="_blank"></a>
+			</div>
+		</section>
+
+		<div class="page-footer__bottom">
+			<p class="page-footer__copyright container">Copyright &copy; 2021</p>
+		</div>
+		</div>
+	</footer>	
+
+	<script src="js/hamburger.min.js"></script>
+	<script src="js/form.min.js"></script>	
+
+</body>
+</html>
