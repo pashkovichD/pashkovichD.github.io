@@ -1,31 +1,18 @@
 .hamburger {
-	position: relative;
 	width: 25px;
 	height: 20px;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	background-color: transparent;
-	z-index: 10;
-	&::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 100px;
-		height: 100px;
-		margin-left: -50px;
-		margin-top: -50px;
-		z-index: -1;
-	}
 }
 .hamburger__line {
 	position: relative;
-	// top: 50%;
+	top: 50%;
 	display: block;
 	width: 25px;
 	height: 2px;
-	// margin-top: -11px;
+	margin-top: -11px;
 	background: #a0a1a3;
 	-webkit-transition: -webkit-transform 0.35s;
 	        transition: -webkit-transform 0.35s;
