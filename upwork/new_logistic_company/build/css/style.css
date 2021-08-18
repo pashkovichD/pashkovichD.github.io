@@ -433,10 +433,10 @@ ul {
 .menu__item:last-child {
   border-bottom: none;
 }
-.menu__item--dropdown > a {
+.menu__item--dropdown {
   position: relative;
 }
-.menu__item--dropdown > a::after {
+.menu__item--dropdown::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -457,6 +457,7 @@ ul {
   display: block;
   padding: 5px 20px;
   font-size: 18px;
+  line-height: normal;
   text-decoration: none;
   color: #777;
   border-bottom: 1px dotted #d8d8d8;
@@ -478,7 +479,7 @@ ul {
   .menu__item a {
     text-align: right;
   }
-  .menu__item--dropdown > a::after {
+  .menu__item--dropdown::after {
     right: auto;
     left: 27px;
   }
@@ -501,6 +502,11 @@ ul {
   .menu__item {
     border-bottom: none;
   }
+  .menu__item:hover > .menu__dropdown {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+  }
   .menu__item a {
     position: relative;
     display: block;
@@ -518,7 +524,7 @@ ul {
     right: 15px;
     bottom: 10px;
     height: 1px;
-    background-color: #000000;
+    background-color: #480028;
     -webkit-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
@@ -541,27 +547,20 @@ ul {
             box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
   }
   .menu__item--active a {
-    font-weight: bold;
-    color: #000000;
+    color: #480028;
   }
   .menu__item--active a::before {
     content: '';
   }
-  .menu__item--dropdown > a {
-    padding-right: 40px;
+  .menu__item--dropdown {
+    padding-right: 40px !important;
   }
-  .menu__item--dropdown > a::after {
+  .menu__item--dropdown::after {
     top: 27px;
     left: auto;
     right: 17px;
     border-right: 1px solid #7a7a7a;
     border-bottom: 1px solid #7a7a7a;
-  }
-  .menu__item--dropdown:hover .menu__dropdown,
-  .menu__item--dropdown:focus .menu__dropdown {
-    top: 60px;
-    opacity: 1;
-    visibility: visible;
   }
   .menu__dropdown {
     position: absolute;
@@ -977,7 +976,7 @@ ul {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 33px 33px;
+  border-width: 0 0 32px 33px;
   border-color: transparent transparent #ececec transparent;
 }
 @media (min-width: 480px) {
