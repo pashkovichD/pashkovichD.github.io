@@ -1,0 +1,24 @@
+1. Стандартный файл wp-login.php (страница входа) меняем, например, на jr-user.php... 
+И, соответсвенно, производим замены (всего 12) в самом файле (wp-login.php на jr-user.php)
+Точно такое же преобразование делаем в файле wp-includes/general-template.php (wp-login.php на jr-user.php)
+После этого все ссылки (входа и выхода) будут перенаправлять на jr-user.php
+!!!!!---НУЖНО ПОМНИТЬ, чтио при обновлении движка, все эти изменения нужно будет повторить.
+
+2. Также блокируем в файле .htaccess доступ к стандартной странице wp-login.php. вот так...
+
+<Files wp-login.php>
+Order Deny,Allow
+Deny from all
+</Files>
+
+3. Теперь нужно поменять адрес "админки" (wp-admin).
+Для начала просто пропишем редирект при переходе по ссылке сайт/wp-admin... на главную страницу (с учетом AJAX-запросов), т.е. просто по такому адресу мы не сможем зайти в админку. Но только для всех, кроме администратора...
+
+/* редирект с wp-admin */
+add_action('init', 'jreo_blockusers_init');
+function jreo_blockusers_init() {
+	if (is_admin() && !current_user_can('administrator') && !(defined('DOING_AJAX') && DOING_AJAX)) {
+		wp_redirect(home_url());
+		exit;
+	}
+}
