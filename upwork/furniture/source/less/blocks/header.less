@@ -1,35 +1,48 @@
-// @import 'variables.less';
+.page-header {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// background-color: rgba(255,255,255,.95);
+}
+
+.page-header__top {
+	display: none;
+	padding: 20px 0;
+	background-color: #292B2C;
+}
+
+.page-header__top-list {
+	display: flex;		
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+
+.page-header__top-item {
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: 400;
+	text-align: center;
+	color: #ffffff;
+}
 
 @media (min-width: @desktop-full-width) {
-	.page-header {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;		
-		// background-color: rgba(255,255,255,.95);
-	}
-
 	.page-header__top {
-		padding: 20px 0;
-		background-color: #292B2C;
-	}
-
-	.page-header__top-list {
-		display: flex;		
-		justify-content: space-between;
-		text-transform: uppercase;
-	}
-
-	.page-header__top-item {
-		font-size: 12px;
-		line-height: 17px;
-		text-align: center;
-		color: #ffffff;
+		display: block;		
 	}
 }
 
+.page-header__wrapper {
+	height: 96px;
+	// background-color: red;
+	/*--------------------*/
+
+	display: flex;
+	align-items: center;
+}
+
 /*--- LOGO ---*/
-/*.page-header__logo {
-	text-align: center;	
+.page-header__logo {
+	// text-align: center;	
 	&:focus {
 		box-shadow: none;
 	}
@@ -46,33 +59,33 @@
 }
 
 @media (min-width: 600px) {
-	.page-header__logo {
-		max-width: 430px;
-	}
+	// .page-header__logo {
+	// 	max-width: 430px;
+	// }
 }
 
 
 @media (min-width: @desktop-width) {
-	.page-header {
-		position: fixed;
-		width: 100%;
-		box-shadow: 0px 1px 3px 0px rgba(0,0,0,.3);
-		z-index: 10;
-	}
+	// .page-header {
+	// 	position: fixed;
+	// 	width: 100%;
+	// 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,.3);
+	// 	z-index: 10;
+	// }
 
-	.page-header__wrapper {
-		position: relative;
-		display: flex;		
-		padding: 0;
-	}
+	// .page-header__wrapper {
+	// 	position: relative;
+	// 	display: flex;		
+	// 	padding: 0;
+	// }
 
-	.page-header__box {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		margin-left: auto;	
-	}
-}*/
+	// .page-header__box {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: flex-end;
+	// 	margin-left: auto;	
+	// }
+}
 
 
 /*--- PHONE ---*/
@@ -115,6 +128,11 @@
 	}
 }*/
 
+
+.page-header__menu {
+	margin-top: 5px;
+	margin-left: 48px;
+}
 
 /*--- MAIN MENU ---*/
 /*.page-header__nav-wrapper {	
