@@ -43,10 +43,10 @@
 				</span>
 			</a>
 			<div class="page-header__menu">
-				<!-- <button class="page-header__toggle-nav hamburger" type="button">
+				<button class="page-header__toggle-nav hamburger" type="button">
 					<span class="visually-hidden">Open menu</span>
 					<span class="hamburger__line"></span>
-				</button> -->
+				</button>
 				<div class="page-header__nav-wrapper">
 					<nav class="page-header__nav menu">
 						<h2 class="visually-hidden">Main menu</h2>
@@ -69,47 +69,58 @@
 					</nav>
 				</div>
 			</div>
-			<div class="page-header__phone phone">
-				<a class="phone__number" href="tel:+3239309040"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>(323) 930-9040</a>
-			</div>
+			<div class="page-header__contacts">
+				<div class="page-header__phone phone"><a class="phone__number" href="tel:+3239309040">(323) 930-9040</a></div>	
+				<div class="page-header__email email"><a class="email__email"href="mailto:info@LosAngelesFurnitureInstallation.com">info@LosAngelesFurnitureInstallation.com</a></div>
+			</div>		
 		</div>
 	</header>
 
 	<main class="page-main">		
-		<h2 class="visually-hidden"></h2>
+		<h2 class="visually-hidden">Content</h2>
 		
-		<!-- <section class="banner">			
+		<section class="banner">			
 			<div class="banner__wrapper container">
-				<div class="banner__title-wrapper">
-					<h2 class="banner__title">Контейнерные перевозки <span>всеми видами транспорта</span></h2>
-					<p class="banner__slogan">Перевозим более 800 контейнеров в месяц</p>					
-				</div>				
-			</div>
-			<div class="banner__img">
-				<picture>
-					<source type="image/webp" srcset="img/banner-home.webp 1x, img/banner-home@2x.webp 2x">
-					<img src="img/banner-home.jpg" srcset="img/banner-home@2x.jpg 2x" alt="Контейнерные перевозки всеми видами транспорта">
-				</picture>
+				<h2 class="banner__title">Los Angeles Furniture Installation</h2>
+
+				<div class="banner__form-wrapper form__wrapper">
+					<p class="form__title">Contact Us</p>
+					<form method="POST" action="#" class="banner__form form form--nojs">
+						<div class="form__item-wrapper">
+							<p class="form__item">
+								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-user"></use></svg>
+								<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Full name">
+								<label class="visually-hidden" for="form__name">Full name</label>
+							</p>
+							<p class="form__item">
+								<svg width="15" height="15" fill="#1567BA"><use xlink:href="#icon-phone"></use></svg>
+								<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone Number">
+								<label class="visually-hidden" for="form__phone">Phone Number</label>
+							</p>
+							<p class="form__item form__item--mb20">
+								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-email"></use></svg>
+								<input class="form__input" type="email" name="form__email" id="form__email" value="" placeholder="Email Address">
+								<label class="visually-hidden" for="form__email">Email Address</label>
+							</p>
+							<div class="form__group">
+								<p class="form__item">
+									<svg width="11" height="15" fill="#1567BA"><use xlink:href="#icon-map-marker"></use></svg>
+									<input class="form__input" type="text" name="form__pickup-address" id="form__pickup-address" value="" placeholder="Pickup Address">
+									<label class="visually-hidden" for="form__pickup-address">Pickup Address</label>
+								</p>
+								<p class="form__item">									
+									<input class="form__input form__input--without-marker" type="text" name="form__pickup-access" id="form__pickup-access" value="" placeholder="Pickup Access">
+									<label class="visually-hidden" for="form__pickup-access">Pickup Access</label>
+								</p>
+							</div>
+						</div>
+						<input type="submit" class="banner__button form__submit" value="Get a Quite">				
+					</form>
+				</div>
 			</div>
 			
-			<div class="promo">
-				<p class="promo__text">Предлагаем специальные условия <span>для крупных партий </span></p>
-			</div>			
-			<form method="POST" action="https://echo.htmlacademy.ru" class="banner__form form form--nojs">
-				<div class="form__item-wrapper">
-					<p class="form__item">
-						<input class="form__input" type="text" name="form__name" id="form__name"  value="">
-						<label class="form__label" for="form__name">Ваше имя</label>
-					</p>
-					<p class="form__item">
-						<input class="form__input" type="tel" name="form__phone" id="form__phone" value="">
-						<label class="form__label" for="form__phone">Телефон для связи</label>
-					</p>
-				</div>
-				<input type="submit" class="banner__button form__submit" value="Заказать перевозку">
-				<div class="form__res form__res--succesfull" id="res"><b>Вы уже обращались!</b> <br>Оформлен новый заказ на перевозку</div>				
-			</form>
-		</section> -->		
+			<div class="banner__mask"></div>
+		</section>
 
 		<!-- <section class="mission container">
 			<h2 class="mission__title">Наша миссия</h2>
@@ -174,8 +185,8 @@
 		</div>
 	</footer> -->
 
-	<!-- <script src="js/hamburger.min.js"></script>
-	<script src="js/form.min.js"></script>	 -->
+	<script src="js/hamburger.min.js"></script>
+	<!-- <script src="js/form.min.js"></script>	 -->
 
 </body>
 </html>
