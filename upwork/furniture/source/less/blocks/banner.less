@@ -16,6 +16,10 @@
 	}
 }
 
+.banner__wrapper {
+	position: relative;
+}
+
 .banner__mask {	
 	content: '';
 	position: absolute;
@@ -57,7 +61,7 @@
 
 	.banner__title {
 		width: 550px;
-		margin: 0 auto;
+		margin: 0 auto 40px auto;
 	}
 }
 
@@ -76,10 +80,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
-}
-
-@media (min-width: @desktop-full-width) {
 	.banner {
 		padding: 0;
 	}
@@ -87,13 +87,30 @@
 	.banner__title {
 		width: 470px;
 		margin: 0;
-		top: 160px;		
-		font-size: 60px;
-		line-height: 78px;
+		top: 160px;
+		left: 20px;
+		font-size: 45px;
+		line-height: 58px;
 		text-align: left;
 	}
 
-	
+	.banner__form-wrapper {
+		position: absolute;
+		top: 60px;
+		right: 20px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.banner__title {
+		left: 0;		
+		font-size: 60px;
+		line-height: 78px;		
+	}
+
+	.banner__form-wrapper {		
+		right: 0;
+	}	
 }
 
 @media (min-width: 1040px) {

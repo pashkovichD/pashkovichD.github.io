@@ -1,0 +1,47 @@
+.slick-dots {
+	bottom: -25px;
+	li {
+		width: 5px;
+		height: 5px;
+		button {
+			width: 5px;
+			height: 5px;
+			padding: 0;
+			&::before {				
+				font-size: 5px;
+				line-height: 0;
+				width: 5px;
+				height: 5px;
+				content: '•';
+				text-align: center;
+				opacity: .25;				
+			}
+		}
+	}	
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+	color: #1567BA;
+}
+
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+	
+}
+
+@media (min-width: @desktop-full-width) {
+
+}

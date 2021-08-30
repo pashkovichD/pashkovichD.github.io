@@ -988,6 +988,9 @@ ul {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 70%;
     margin: 0 auto;
   }
@@ -1002,11 +1005,6 @@ ul {
   }
   .developer__text-sorry {
     display: inline;
-  }
-}
-@media (min-width: 1200px) {
-  .developer svg {
-    margin-left: 120px;
   }
 }
 .page-header {
