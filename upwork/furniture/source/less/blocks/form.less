@@ -197,7 +197,7 @@
 		align-items: center;
 		margin-bottom: 0;
 		.form__item {
-			width: 200px;			
+			width: 50%;			
 			&:first-child {
 				margin-right: 10px;
 			}
@@ -223,6 +223,9 @@
 }
 
 @media (min-width: @tablet-width) {
+	.form__wrapper {
+		width: auto;
+	}
 	// .form__item-wrapper {
 	// 	width: 60%;
 	// 	margin-bottom: 15px;
@@ -322,5 +325,7 @@
 }
 
 @media (min-width: @desktop-full-width) {
-
+	.form__wrapper {
+		width: 470px;
+	}
 }
