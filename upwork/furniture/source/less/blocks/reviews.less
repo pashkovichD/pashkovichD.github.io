@@ -1,6 +1,6 @@
 .reviews {	
 	position: relative;
-	margin-bottom: 75px;
+	margin-bottom: 80px;
 	padding: 0 15px;
 	&::before {
 		content: '';
@@ -142,30 +142,65 @@
 
 @media (min-width: @tablet-width) {
 	.reviews {
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		width: auto;
-		margin: 0 auto 75px auto;
+		width: 100%;		
+		margin: 0 auto 80px auto;
+		padding: 0 30px;
 		&::before {
 			top: auto;
-			bottom: -100px;
-			left: -50%;
+			bottom: 300px;
+			left: 0;
 			width: 100%;
 			height: 660px;
 			background-image: url('../img/reviews/reviews-bg.jpg');
 		}
 	}
 
-
 	.reviews__contacts {
-		width: 670px;
-		margin-bottom: 35px;
+		padding: 30px 70px;
 	}
 
-	.reviews__item {
-		max-width: 500px;
+	.reviews__phone-wrapper {
+		display: flex;
+		margin-bottom: 5px;
 	}
+
+	.reviews__phone-title {
+		margin-right: 10px;
+	}
+
+	.reviews__email-wrapper {
+		display: flex;
+	}
+
+	.reviews__email-title {	
+		margin-right: 5px;
+		font-size: 16px;
+		line-height: normal;		
+	}
+
+	.reviews__email {
+		line-height: normal;
+		a {
+			line-height: normal;
+			font-size: 16px;
+		}	
+	}
+
+	.reviews__item-text {
+		letter-spacing: .2px;
+	}
+
+	.reviews__item-photo {
+		margin-right: 20px;
+	}
+
+	.reviews__name-wrapper {	
+		margin-bottom: 5px;	
+	}	
+
+	.reviews__item-posted {
+		margin-bottom: 0;
+	}	
 }
 
 @media (min-width: @tablet-width) and (min-resolution: 144dpi), 
@@ -185,39 +220,31 @@
 
 @media (min-width: @desktop-full-width) {
 	.reviews {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: auto;		
+		margin: 0 auto 75px auto;
 		padding: 0;
+		&::before {
+			top: auto;
+			bottom: -100px;
+			left: -50%;
+			width: 100%;
+			height: 660px;
+			background-image: url('../img/reviews/reviews-bg.jpg');
+		}
 	}
 
-	.reviews__phone-wrapper {
-		display: flex;
+
+	.reviews__contacts {
+		width: 670px;
+		padding: 35px 70px;
+		margin-bottom: 35px;
 	}
 
-	.reviews__phone-title {
-		margin-right: 10px;
-	}
-
-	.reviews__email-wrapper {
-		display: flex;
-	}
-
-	.reviews__email-title {	
-		margin-right: 5px;
-		font-size: 16px;		
-	}
-
-	.reviews__email {
-		line-height: 20px;		
-		a {
-			line-height: 20px;
-			font-size: 16px;
-		}	
-	}
-
-	.reviews__item-text {
-		letter-spacing: .2px;
-	}
-
-	.reviews__item-photo {
-		margin-right: 20px;
-	}
+	.reviews__item {
+		max-width: 500px;
+		padding: 25px 30px;
+	}	
 }
