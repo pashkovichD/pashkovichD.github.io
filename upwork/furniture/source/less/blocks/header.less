@@ -17,11 +17,32 @@
 }
 
 .page-header__top-item {
-	font-size: 12px;
-	line-height: 17px;
-	font-weight: 400;
-	text-align: center;
-	color: #ffffff;
+	a {
+		position: relative;
+		font-size: 12px;
+		line-height: 17px;
+		font-weight: 400;
+		text-align: center;
+		text-decoration: none;
+		color: rgba(255,255,255,.85);
+		&::before {
+			content: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -4px;
+			height: 1px;
+			background-color: #1567BA;
+			transition: all .25s ease-out;
+		}
+		&:hover,
+		&:focus {
+			color: rgba(255,255,255,1);
+			&::before {
+				content: '';
+			}
+		}
+	}	
 }
 
 @media (min-width: @desktop-full-width) {

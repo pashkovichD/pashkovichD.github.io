@@ -1,0 +1,140 @@
+.finish-search {	
+	position: relative;
+	padding-top: 80px;
+	
+	background-image: url('../img/main--mobile.jpg');
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	.finish-search {
+		background-image: url('../img/main--mobile@2x.jpg');
+	}
+}
+
+.finish-search__wrapper {
+	position: relative;
+	padding: 80px 15px 60px 15px;
+}
+
+.finish-search__mask {	
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #1567BA;
+	opacity: 0.8;
+
+
+}
+
+.finish-search__title {
+	position: relative;
+	margin: 0;
+	margin-bottom: 40px;
+	font-size: 40px;
+	line-height: 52px;
+	text-transform: uppercase;
+	color: #ffffff;
+	z-index: 1;
+}
+
+.finish-search__form-wrapper {
+	position: relative;
+}
+
+
+@media (min-width: @mobile-width) {
+	.finish-search {
+		background-size: cover;
+	}
+
+	.finish-search__title {
+		width: 80%;
+		margin: 0 auto 40px auto;
+	}
+}
+
+@media (min-width: 600px) {
+	.finish-search {
+		height: 800px;
+	}
+
+	.finish-search__title {
+		width: 470px;		
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.finish-search {
+		height: 755px;
+		padding: 80px 30px 0;
+		background-image: url(../img/main.jpg);
+	}
+
+	.finish-search__title {
+		width: auto;
+		font-size: 50px;
+		line-height: 62px;
+	}
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 144dpi), 
+       (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+	.finish-search {
+		background-image: url('../img/main@2x.jpg');
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.finish-search {
+		padding: 0;
+	}
+
+	.finish-search__title {
+		width: 470px;
+		margin: 0;
+		top: 160px;
+		left: 20px;
+		font-size: 45px;
+		line-height: 58px;
+		text-align: left;
+	}
+
+	.finish-search__form-wrapper {
+		position: absolute;
+		top: 60px;
+		right: 20px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.finish-search {
+		height: 592px;
+	}
+	.finish-search__title {
+		left: 0;		
+		font-size: 60px;
+		line-height: 78px;		
+	}
+
+	.finish-search__form-wrapper {		
+		right: 0;
+	}	
+}
+
+@media (min-width: 1040px) {
+	
+}
+
+@media (min-width: 1100px) {
+	
+	
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

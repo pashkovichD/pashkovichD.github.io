@@ -1,0 +1,23 @@
+﻿Home (index.html)
+About US (about-us.html)
+Services (#)
+----------------------------------------------------------
+Furniture Assembly (furniture-assembly.html)
+Cubicles Installation (cubicles-installation.html)
+Modular Office Furniture Installation (modular-furniture.html)
+Receiving And Delivery (receiving-delivery.html)
+Moving and Storage Services (moving-storage.html)
+Crating And Shipping (crating-shipping.html)
+----------------------------------------------------------
+Contact Us (contact-us.html)
+Gallery (gallery.html)
+Blog (blog.html)
+
+Blog page (blog-page.html)
+
+services/furniture-assembly.html
+services/cubicles-installation.html
+services/modular-furniture.html
+services/receiving-delivery.html
+services/moving-storage.html
+services/crating-shipping.html
