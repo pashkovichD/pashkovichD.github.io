@@ -1,54 +1,57 @@
-.reviews {	
+.contacts {	
 	position: relative;
 	margin-bottom: 80px;
-	padding: 0 15px;
 	&::before {
 		content: '';
-		position: absolute;
-		top: -500px;
-		left: 0;
-		width: 375px;
-		height: 500px;
-		background-image: url('../img/reviews/reviews-bg--mobile.jpg');
+		position: absolute;		
+		top: -1000px;
+		width: 100%;
+		height: 1000px;		
+		background-image: url('../img/contacts/contacts-bg--mobile.jpg');
 		background-repeat: no-repeat;
-		background-position: bottom;
+		background-position: bottom -100px left;
 		z-index: -1;
-	}
+	}	
 }
+
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-	.reviews {
+	.contacts {
 		&::before {
-			background-image: url('../img/reviews/reviews-bg--mobile@2x.jpg');	
-		}		
+			background-image: url('../img/contacts/contacts-bg--mobile@2x.jpg');	
+		}
 	}
 }
 
-.reviews__contacts {
+.contacts__wrapper {
+	padding: 0 15px;
+}
+
+.contacts__contacts {
 	padding: 30px 20px 30px 30px;
 	background-color: #f2f2f2;
 }
 
-.reviews__phone-title {
+.contacts__phone-title {
 	margin-bottom: 0;
 	font-size: 30px;
 	line-height: 42px;
 	font-weight: 700;	
 }
 
-.reviews__phone {
+.contacts__phone {
 	margin-bottom: 0;
 	font-size: 30px;
 	line-height: 40px;
 	font-weight: 600;	
 }
 
-.reviews__email-title {
+.contacts__email-title {
 	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 20px;	
 }
-.reviews__email {
+.contacts__email {
 	line-height: 25px;		
 	a {
 		padding-left: 0;
@@ -65,42 +68,41 @@
 	}	
 }
 
-.reviews__item {
+.contacts__item {
 	padding: 30px;
 	padding-bottom: 25px;
 	background-color: #1567BA;
 }
 
-.reviews__item-text {
+.contacts__item-text {
 	font-size: 14px;
 	line-height: 28px;
 	color: #ffffff;
 }
 
-.reviews__people-data {	
+.contacts__people-data {	
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 }
 
-.reviews__people-wrapper {
+.contacts__people-wrapper {
 	display: flex;
 }
 
-.reviews__item-photo {
+.contacts__item-photo {
 	width: 80px;
 	height: 80px;
-	// margin-top: auto;
 	margin-right: 25px;	
 	border-radius: 50%;
 }
 
-.reviews__name-wrapper {
+.contacts__name-wrapper {
 	position: relative;
 	margin-top: 15px;	
 }
 
-.reviews__item-name {
+.contacts__item-name {
 	width: 100%;
 	margin-bottom: 0;
 	margin-right: 20px;
@@ -110,29 +112,28 @@
 	color: #ffffff;
 }
 
-.reviews__item-stars {
+.contacts__item-stars {
 	position: absolute;
 	top: 0;
 	right: -10px;
 	width: 125px;
 }
 
-.reviews__item-posted {
+.contacts__item-posted {
 	font-size: 12px;
 	line-height: 16px;
 	color: #ffffff;
 }
 
 @media (min-width: @mobile-width) {
-	.reviews {	
-		width: 375px;
+	.contacts {
 		&::before {
-			left: -50%;
-			right: -50%;
-			width: auto;
-			height: 800px;
 			background-size: cover;
 		}
+	}
+
+	.contacts__wrapper {	
+		width: 375px;
 	}	
 }
 
@@ -141,44 +142,43 @@
 }
 
 @media (min-width: @tablet-width) {
-	.reviews {
-		width: 100%;		
-		margin: 0 auto 80px auto;
-		padding: 0 30px;
+	.contacts {
 		&::before {
-			top: auto;
-			bottom: 300px;
-			left: 0;
-			width: 100%;
-			height: 660px;
-			background-image: url('../img/reviews/reviews-bg.jpg');
+			background-image: url('../img/contacts/contacts-bg.jpg');
+			background-size: auto;
 		}
 	}
 
-	.reviews__contacts {
+	.contacts__wrapper {
+		width: 100%;		
+		margin: 0 auto 80px auto;
+		padding: 0 30px;
+	}
+
+	.contacts__contacts {
 		padding: 30px 70px;
 	}
 
-	.reviews__phone-wrapper {
+	.contacts__phone-wrapper {
 		display: flex;
 		margin-bottom: 5px;
 	}
 
-	.reviews__phone-title {
+	.contacts__phone-title {
 		margin-right: 10px;
 	}
 
-	.reviews__email-wrapper {
+	.contacts__email-wrapper {
 		display: flex;
 	}
 
-	.reviews__email-title {	
+	.contacts__email-title {	
 		margin-right: 5px;
 		font-size: 16px;
 		line-height: normal;		
 	}
 
-	.reviews__email {
+	.contacts__email {
 		line-height: normal;
 		a {
 			line-height: normal;
@@ -186,64 +186,69 @@
 		}	
 	}
 
-	.reviews__item-text {
+	.contacts__item-text {
 		letter-spacing: .2px;
 	}
 
-	.reviews__item-photo {
+	.contacts__item-photo {
 		margin-right: 20px;
 	}
 
-	.reviews__name-wrapper {	
+	.contacts__name-wrapper {	
 		margin-bottom: 5px;	
 	}	
 
-	.reviews__item-posted {
+	.contacts__item-posted {
 		margin-bottom: 0;
 	}	
 }
 
+
 @media (min-width: @tablet-width) and (min-resolution: 144dpi), 
 	   (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
-	.reviews {
+	.contacts {
 		&::before {
-			background-image: url('../img/reviews/reviews-bg@2x.jpg');	
+			background-image: url('../img/contacts/contacts-bg@2x.jpg');	
 		}		
 	}
 }
 
 @media (min-width: @desktop-width) {
-	.reviews__contacts {
+	.contacts__contacts {
 		padding: 30px 70px;
 	}
 }
 
 @media (min-width: @desktop-full-width) {
-	.reviews {
+	.contacts {
+		margin-bottom: 75px;
+		&::before {
+			top: -490px;
+			height: 800px;
+		}
+	}
+
+	.contacts__wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
 		width: auto;		
-		margin: 0 auto 75px auto;
+		margin: 0 auto;
 		padding: 0;
-		&::before {
-			top: auto;
-			bottom: -100px;
-			left: -50%;
-			width: 100%;
-			height: 660px;
-			background-image: url('../img/reviews/reviews-bg.jpg');
-		}
 	}
 
 
-	.reviews__contacts {
+	.contacts__contacts {
 		width: 670px;
 		padding: 35px 70px;
-		margin-bottom: 35px;
+		margin-bottom: 30px;
 	}
 
-	.reviews__item {
+	.contacts__phone-wrapper {
+		margin-bottom: 0;
+	}
+
+	.contacts__item {
 		max-width: 500px;
 		padding: 25px 30px;
 	}	

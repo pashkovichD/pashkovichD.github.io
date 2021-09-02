@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 		dots: true,
 		slidesToShow: 2,
 		slidesToScroll: 2,
-		variableWidth: true		
+		variableWidth: true
 	});
 
 	$(window).resize(function(){	    
@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 	slickfy();
 
 	function slickfy() {
-		$('.works__list').slick({
+		$('.works__list').not('.slick-initialized').slick({
 			// autoplay: true,
 			infinite: true,
 			arrows: false,
@@ -37,6 +37,23 @@ jQuery(document).ready(function($) {
 		});	
 	}
 
-	
+	 $('.company__list--first').slick({
+		infinite: true,
+		arrows: false,
+		dots: false,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		variableWidth: true,
+		asNavFor: '.company__list--second'
+	});
+	$('.company__list--second').slick({
+		infinite: true,
+		arrows: false,
+		dots: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		variableWidth: true,
+		asNavFor: '.company__list--first'
+	});
 	
 });
