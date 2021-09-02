@@ -2207,19 +2207,20 @@ ul {
 }
 .finish-search {
   position: relative;
-  padding-top: 80px;
-  background-image: url('../img/main--mobile.jpg');
+  background-image: url('../img/services/furniture-assembly/finish--mobile.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .finish-search {
-    background-image: url('../img/main--mobile@2x.jpg');
+    background-image: url('../img/services/furniture-assembly/finish--mobile@2x.jpg');
   }
 }
 .finish-search__wrapper {
   position: relative;
+  margin: 0 auto;
   padding: 80px 15px 60px 15px;
 }
 .finish-search__mask {
@@ -2231,84 +2232,114 @@ ul {
   right: 0;
   background-color: #1567BA;
   opacity: 0.8;
+  z-index: 1;
 }
 .finish-search__title {
   position: relative;
-  margin: 0;
-  margin-bottom: 40px;
-  font-size: 40px;
-  line-height: 52px;
-  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
   color: #ffffff;
-  z-index: 1;
+  z-index: 2;
 }
-.finish-search__form-wrapper {
+.finish-search__title svg {
+  position: absolute;
+  top: -43px;
+  left: 50%;
+  margin-left: -100px;
+  fill: #ffffff;
+  z-index: -1;
+}
+.finish-search__text {
   position: relative;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+.finish-search__phone {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+.finish-search__phone:hover,
+.finish-search__phone:focus {
+  text-decoration: underline;
+}
+.finish-search__email {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+.finish-search__email:hover,
+.finish-search__email:focus {
+  text-decoration: underline;
+}
+.finish-search__button {
+  position: relative;
+  width: 200px;
+  font-weight: 400;
+  z-index: 2;
 }
 @media (min-width: 480px) {
   .finish-search {
     background-size: cover;
   }
-  .finish-search__title {
-    width: 80%;
-    margin: 0 auto 40px auto;
-  }
-}
-@media (min-width: 600px) {
-  .finish-search {
-    height: 800px;
-  }
-  .finish-search__title {
+  .finish-search__wrapper {
     width: 470px;
+  }
+  .finish-search__title {
+    margin: 0 auto 40px auto;
   }
 }
 @media (min-width: 768px) {
   .finish-search {
-    height: 755px;
-    padding: 80px 30px 0;
-    background-image: url(../img/main.jpg);
+    background-image: url('../img/services/furniture-assembly/finish--tablet.jpg');
+  }
+  .finish-search__wrapper {
+    width: auto;
+    padding: 80px 30px 60px 30px;
   }
   .finish-search__title {
-    width: auto;
-    font-size: 50px;
-    line-height: 62px;
+    margin-bottom: 20px;
+  }
+  .finish-search__text br.br {
+    display: none;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .finish-search {
-    background-image: url('../img/main@2x.jpg');
+    background-image: url('../img/services/furniture-assembly/finish--tablet@2x.jpg');
   }
 }
 @media (min-width: 991px) {
-  .finish-search {
-    padding: 0;
-  }
-  .finish-search__title {
-    width: 470px;
-    margin: 0;
-    top: 160px;
-    left: 20px;
-    font-size: 45px;
-    line-height: 58px;
-    text-align: left;
-  }
-  .finish-search__form-wrapper {
-    position: absolute;
-    top: 60px;
-    right: 20px;
+  .finish-search__wrapper {
+    width: 800px;
   }
 }
 @media (min-width: 1200px) {
   .finish-search {
-    height: 592px;
+    background-image: url('../img/services/furniture-assembly/finish.jpg');
+  }
+  .finish-search__wrapper {
+    padding: 160px 30px 130px 30px;
   }
   .finish-search__title {
-    left: 0;
-    font-size: 60px;
-    line-height: 78px;
+    font-size: 28px;
+    line-height: 40px;
   }
-  .finish-search__form-wrapper {
-    right: 0;
+  .finish-search__text br {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .finish-search {
+    background-image: url('../img/services/furniture-assembly/finish@2x.jpg');
   }
 }
 .page-footer {
