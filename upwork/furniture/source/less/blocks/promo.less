@@ -34,6 +34,36 @@
 
 .promo__text {
 	line-height: 28px;
+	font-weight: 400;
+}
+
+.promo__list-title {
+	margin-bottom: 10px;
+	padding-top: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.promo__list {
+	margin-bottom: 10px;
+	padding: 0 15px 0 20px;
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	li {		
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 11px;
+			left: -13px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: @color;
+		}
+	}
 }
 
 @media (min-width: @mobile-width) {
@@ -49,6 +79,16 @@
 @media (min-width: @tablet-width) {
 	.promo__title {
 		margin-bottom: 20px;
+	}
+
+	.promo__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.promo__item {
+		width: 46%;
 	}
 }
 
@@ -75,6 +115,10 @@
 	.promo__text-wrapper {
 		width: 600px;
 		margin-left: auto;
+	}
+
+	.promo__item {
+		width: 100%;
 	}
 }
 
