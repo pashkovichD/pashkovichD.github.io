@@ -50,6 +50,33 @@
 		}
 	}
 }
+
+.gallery__list {
+	.slick-slide {
+		margin-right: 30px;
+		div:first-child {
+			margin-bottom: 30px;
+		}
+	}
+	.slick-dots {
+		bottom: -30px;
+		li {
+			button {
+				&::before {
+					color: #000000;
+				}
+			}
+			&.slick-active {
+				button {
+					&:before {
+						opacity: 1;
+						color: #1567BA;
+					}
+				}
+			}
+		}
+	}
+}
 /*
 .company__list--first {
 	.slick-slide {
@@ -76,7 +103,11 @@
 }
 
 @media (min-width: @tablet-width) {
-
+	.gallery__list {
+		.slick-dots {
+			bottom: -20px;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
@@ -84,5 +115,5 @@
 }
 
 @media (min-width: @desktop-full-width) {
-
+	
 }

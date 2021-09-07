@@ -1,0 +1,56 @@
+.lines {
+	
+}
+
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	.lines {		
+		position: relative;
+		z-index: -20;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 1361px;
+			height: 885px;
+			background-image: url('../img/lines.svg');
+			background-repeat: no-repeat;
+			z-index: -10;
+		}
+	}
+
+	.lines--left {
+		position: relative;
+		z-index: -20;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 200px;
+			right: auto;
+			left: 0;
+			width: 1361px;
+			height: 885px;
+			background-image: url('../img/lines.svg');
+			background-repeat: no-repeat;
+			transform: scale(1, -1);
+			z-index: -10;
+		}	
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

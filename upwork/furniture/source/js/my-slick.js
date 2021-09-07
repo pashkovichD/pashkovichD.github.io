@@ -18,8 +18,7 @@ jQuery(document).ready(function($) {
 	slickfy();
 
 	function slickfy() {
-		$('.works__list').not('.slick-initialized').slick({
-			// autoplay: true,
+		$('.works__list').not('.slick-initialized').slick({			
 			infinite: true,
 			arrows: false,
 			dots: true,		
@@ -35,7 +34,7 @@ jQuery(document).ready(function($) {
 				}
 			}]
 		});	
-	}
+	}	
 
 	 $('.company__list--first').slick({
 		infinite: true,
@@ -55,5 +54,14 @@ jQuery(document).ready(function($) {
 		variableWidth: true,
 		asNavFor: '.company__list--first'
 	});
-	
+
+
+	$('.post__list--related').slick({
+		infinite: true,
+		arrows: false,
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		variableWidth: true
+	});	
 });

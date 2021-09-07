@@ -1,0 +1,156 @@
+.tabs {
+  
+}
+
+.tabs__tabs-wrapper {
+  
+}
+
+.tabs__label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.2s ease-out;
+}
+.tabs__label:hover {
+  color: #368FE9;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #368FE9;
+  cursor: pointer;  
+}
+
+.tabs__input {
+  display: none !important;
+  position: absolute;
+}
+
+.tabs__input--active + label {  
+  color: #1567BA;
+  border-bottom: 2px solid #1567BA;
+}
+
+.tabs__wrapper {
+  padding-top: 20px;
+  padding-right: 15px;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.tabs__section-wrapper {
+  
+}
+
+.tabs__section {
+  display: none;
+  line-height: 1.5;
+  color: #383838;
+}
+
+.tabs__section-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1567BA;
+}
+
+.tabs__section-text {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+@media (min-width: @mobile-width) {
+	.tabs__wrapper {  
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	.tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabs__tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .tabs__label {
+    border-bottom: none;    
+    border-left: 2px solid #dbdbdb;
+    
+  }
+  .tabs__label:hover {
+    border-bottom: none;
+    border-left: 2px solid #368FE9;    
+  }
+
+  .tabs__input {
+    display: none;
+    position: absolute;
+
+  }
+  .tabs__input:checked + label {
+    border-left: 2px solid #1567BA;
+  }
+
+  .tabs__input--active + label {
+    border-bottom: none;
+    border-left: 2px solid #1567BA;
+  }
+
+  .tabs__section-wrapper {
+    width: 75%;
+  }
+
+  .tabs__section-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;    
+  }  
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

@@ -21,3 +21,9 @@ services/modular-furniture.html
 services/receiving-delivery.html
 services/moving-storage.html
 services/crating-shipping.html
+
+
+*icon
+*tabs
+background lines
+more
