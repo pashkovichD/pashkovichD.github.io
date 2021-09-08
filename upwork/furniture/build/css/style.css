@@ -1103,6 +1103,9 @@ ul {
     border-bottom: none;
     border-left: 2px solid #1567BA;
   }
+  .tabs__wrapper {
+    padding-top: 40px;
+  }
   .tabs__section-wrapper {
     width: 75%;
   }
@@ -2376,7 +2379,7 @@ ul {
 }
 .description--about-us {
   margin-bottom: 80px;
-  padding: 0;
+  padding: 0 15px;
 }
 .description--mb {
   margin-bottom: 80px;

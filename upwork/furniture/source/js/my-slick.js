@@ -60,6 +60,7 @@ jQuery(document).ready(function($) {
 		infinite: true,
 		arrows: false,
 		dots: true,
+		rows: 0,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable: true,
