@@ -13,9 +13,10 @@ jQuery(document).ready(function($) {
 			infinite: true,
 			arrows: false,
 			dots: false,
-			slidesToShow: 1,
-			slidesToScroll: 1,
+			slidesToShow: 2,
+			slidesToScroll: 2,
 			draggable: true,
+			rows: 0,
 			variableWidth: true,
 			responsive: [{
 				breakpoint: 4000,
@@ -23,11 +24,11 @@ jQuery(document).ready(function($) {
 			}, {
 				breakpoint: 991,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
+					slidesToShow: 2,
+					slidesToScroll: 2
 				}
 			}]
-		});	
+		});
 	}
 	
 });

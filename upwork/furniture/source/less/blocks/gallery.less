@@ -2,11 +2,10 @@
 	position: relative;
 	margin-bottom: 80px;
 	padding: 0 15px;
-	// background-color: #1567BA;
-	// background-image: url('../img/works/works-bg.svg');
 	background-repeat: no-repeat;
 	background-position: bottom -280px center;	
 	overflow: hidden;
+	z-index: 1;
 }
 
 .gallery__title {
@@ -41,8 +40,7 @@
 
 @media (min-width: @tablet-width) {
 	.gallery {			
-		padding: 0 30px;
-		// background-position: bottom -255px center;
+		padding: 0 30px;	
 	}
 
 	.gallery__list {
@@ -76,7 +74,6 @@
 @media (min-width: @desktop-full-width) {
 	.gallery {		
 		padding: 0;
-		// background-position: bottom -235px right;
 	}
 
 	.gallery__title {
@@ -90,7 +87,6 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 55px !important;
-		// padding-bottom: 10px;
 	}
 
 	.gallery__item {

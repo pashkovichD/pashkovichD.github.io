@@ -869,9 +869,6 @@ ul {
 .gallery__list .slick-slide {
   margin-right: 30px;
 }
-.gallery__list .slick-slide div:first-child {
-  margin-bottom: 30px;
-}
 .gallery__list .slick-dots {
   bottom: -30px;
 }
@@ -986,6 +983,9 @@ ul {
   .more__item:nth-child(-n+6) {
     display: list-item;
   }
+}
+.tabs__tabs-wrapper p {
+  margin-bottom: 0;
 }
 .tabs__label {
   display: inline-block;
@@ -1120,31 +1120,12 @@ ul {
   .lines::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     right: 0;
-    width: 1361px;
-    height: 885px;
+    width: 1200px;
+    height: 540px;
     background-image: url('../img/lines.svg');
     background-repeat: no-repeat;
-    z-index: -10;
-  }
-  .lines--left {
-    position: relative;
-    z-index: -20;
-  }
-  .lines--left::after {
-    content: '';
-    position: absolute;
-    bottom: 200px;
-    right: auto;
-    left: 0;
-    width: 1361px;
-    height: 885px;
-    background-image: url('../img/lines.svg');
-    background-repeat: no-repeat;
-    -webkit-transform: scale(1, -1);
-        -ms-transform: scale(1, -1);
-            transform: scale(1, -1);
     z-index: -10;
   }
 }
@@ -2394,7 +2375,7 @@ ul {
   padding: 0 15px;
 }
 .description--about-us {
-  margin-bottom: 0;
+  margin-bottom: 80px;
   padding: 0;
 }
 .description--mb {
@@ -2482,10 +2463,8 @@ ul {
     margin-bottom: 40px;
   }
   .description--about-us {
+    margin-bottom: 80px;
     padding: 0 30px;
-  }
-  .description--about-us {
-    margin-bottom: 0;
   }
   .description__contacts--modular {
     margin-bottom: 50px;
@@ -2501,9 +2480,6 @@ ul {
     width: 100%;
     margin-bottom: 50px;
     padding: 0 30px;
-  }
-  .description--about-us {
-    margin-bottom: 0;
   }
   .description--about-us .description__data {
     padding-bottom: 0;
@@ -2568,6 +2544,9 @@ ul {
   .description__advantages {
     padding-top: 0;
   }
+  .description--about-us {
+    margin-bottom: 50px;
+  }
   .description__contacts--receiving {
     margin-bottom: 110px;
   }
@@ -2589,14 +2568,14 @@ ul {
   .description__data-title {
     margin-left: 450px;
   }
+  .description--about-us {
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 1200px) {
   .description {
     padding: 0;
     margin-bottom: 30px;
-  }
-  .description--about-us {
-    margin-bottom: 0;
   }
   .description__item {
     margin-bottom: 30px;
@@ -2640,6 +2619,9 @@ ul {
   .description__data-list li {
     width: 42%;
     margin-right: 30px;
+  }
+  .description--about-us {
+    margin-bottom: 80px;
   }
 }
 .finish-search {
@@ -3199,6 +3181,7 @@ ul {
   background-repeat: no-repeat;
   background-position: bottom -280px center;
   overflow: hidden;
+  z-index: 1;
 }
 .gallery__title {
   margin-bottom: 25px;
@@ -3309,7 +3292,6 @@ ul {
 }
 .about-us {
   position: relative;
-  margin-bottom: 80px;
   padding: 0 15px;
   background-repeat: no-repeat;
   background-position: bottom -280px center;
@@ -3326,6 +3308,9 @@ ul {
 }
 .about-us__order {
   margin-bottom: 80px;
+}
+.about-us__order-wrapper {
+  padding: 0 15px;
 }
 .about-us__order-img {
   margin-bottom: 10px;
@@ -3363,8 +3348,9 @@ ul {
   background-color: #292B2C;
 }
 @media (min-width: 480px) {
-  .about-us__order {
+  .about-us__order-wrapper {
     width: 470px;
+    margin: 0 auto;
     padding: 0 30px;
   }
   .about-us__order-img {
@@ -3376,11 +3362,9 @@ ul {
   .about-us {
     padding: 0 30px;
   }
-  .about-us__order {
+  .about-us__order-wrapper {
     width: 100%;
-  }
-  .about-us__presentation {
-    margin-bottom: 120px;
+    padding: 0 60px;
   }
 }
 @media (min-width: 991px) {
@@ -3394,6 +3378,13 @@ ul {
   }
   .about-us__presentation .presentation__img {
     top: 0;
+  }
+  .about-us__order {
+    padding: 80px 0;
+    background-color: #fafafa;
+  }
+  .about-us__order-wrapper {
+    padding: 0 30px;
   }
   .about-us__order-list {
     display: -webkit-box;
@@ -3415,6 +3406,9 @@ ul {
     margin-bottom: 45px;
     font-size: 45px;
     line-height: 62px;
+  }
+  .about-us__order-wrapper {
+    padding: 0;
   }
 }
 .post {

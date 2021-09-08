@@ -17,6 +17,6 @@ $(function () {
 		}
 		// $('html, body').animate({
 		// 	scrollTop: $(this).offset().top
-		// }, 1000);
+		// }, 1000);		
 	});
 });
