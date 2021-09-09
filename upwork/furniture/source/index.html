@@ -9,6 +9,7 @@
 	<meta name="keywords" content="">
 	<!-- slick.js -->	
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<script src="js/jquery-validation/dist/jquery.validate.js"></script>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
@@ -92,7 +93,7 @@
 
 				<div class="banner__form-wrapper form__wrapper">
 					<p class="form__title">Contact Us</p>
-					<form method="POST" action="#" class="banner__form form form--nojs">
+					<form id="contact-form" class="banner__form form form--nojs" role="form">
 						<div class="form__item-wrapper">
 							<p class="form__item">
 								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-user"></use></svg>
@@ -164,6 +165,18 @@
 						</div>
 						<input type="submit" class="form__submit button" value="Get a Quite">				
 					</form>
+
+					<!-- <form id="myForm" role="form" method="POST">
+						<div class="form-group">
+							<label for="inputEmail">Введите e-mail</label>
+							<input type="email" name="email" id="inputEmail" placeholder="введите email">
+						</div>
+						<div class="form-group">
+							<label for="inputName">Введите имя</label>
+							<input type="text" name="name" id="inputName" placeholder="введите имя">
+						</div>
+						<button type="submit">Отправить</button>
+					</form> -->
 				</div>
 			</div>
 			
@@ -637,9 +650,12 @@
 		</div>
 	</footer>
 
+	
 	<script src="js/hamburger.min.js"></script>
 	<script src="js/slick/slick.min.js"></script>
 	<script src="js/my-slick.min.js"></script>
+	<script src="js/form.min.js"></script>
+	
 
 </body>
 </html>
