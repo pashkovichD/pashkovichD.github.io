@@ -43,3 +43,16 @@ $('.tabs__tabs-wrapper').not('.slick-initialized').slick({
 });
 
 Теперь всё работает!
+
+
+5. Отправку почты организовал с помощью wp_mail() (из плагина). Чтобы всё работало, нужео !Обязательно устаносить плагин WP Mail SMTP и выбрать метод отправки почты (PHP), а также обязательно в настройках сайта указать почтовый ящик с нашим доменом (например, info@домен.by)
+Пример PHP-кода...
+
+$msg = "<div style='width: 230px; padding: 20px 0 0 20px;'><p style='margin: 0 0 7px 0; padding: 5px; border-bottom: 1px dashed #aaaaaa; font-weight: bold; background-color: #f2f2f2;'>" . $nl_array['form__name'] . "</p><p style='margin: 0; padding: 0;'>" . $nl_array['form__phone'] . "</p></div>";
+
+$headers = array(
+	'From: NL-Company',
+	'Content-type: text/html; charset=utf-8'
+);
+
+wp_mail('info@nlcompany.by', $nl_array['form__name'] . " (заявка)", $msg, $headers);
