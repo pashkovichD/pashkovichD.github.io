@@ -7,9 +7,41 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73021608-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-73021608-1');
+	</script>
+
+	<script type="application/ld+json" defer >
+		{
+			"@context" : "https://schema.org",
+			"@type" : "LocalBusiness",
+			"@id": "https://www.losangelesfurnitureinstallation.com/",
+			"name" : "Los Angeles Furniture Installation",
+			"image" : "https://losangelesfurnitureinstallation.com/img/services/modular.webp",
+			"telephone" : "323-930-9040",
+			"email" : "info@losangelesfurnitureinstallation.com",
+			"address" : {
+				"@type" : "PostalAddress",
+				"streetAddress" : "557 N Orlando Ave.",
+				"addressLocality" : "West Hollywood",
+				"addressRegion" : "CA",
+				"addressCountry" : "US",
+				"postalCode" : "90048"
+			}
+		}
+	</script>
+
 	<!-- slick.js -->	
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>	
-	<script src="js/jquery-validation/dist/jquery.validate.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
@@ -17,10 +49,7 @@
 	
 </head>
 <body>
-	<h1 class="visually-hidden">Furniture Installation</h1>
-	<!-- <div style="display: none;">
-		<include src="source/img/sprite.svg"></include>
-	</div> -->
+	<h1 class="visually-hidden">Furniture Installation</h1>	
 
 	<div style="display: none;">
 		<include src="build/img/sprite.svg"></include>
@@ -93,7 +122,7 @@
 
 				<div class="banner__form-wrapper form__wrapper">
 					<p class="form__title">Contact Us</p>
-					<form id="contact-form" class="banner__form form form--nojs" role="form">
+					<form id="contact-form" class="banner__form form form--nojs" action="/" method="POST">
 						<div class="form__item-wrapper">
 							<p class="form__item">
 								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-user"></use></svg>
@@ -113,35 +142,35 @@
 							<div class="form__group">
 								<p class="form__item">
 									<svg width="11" height="15" fill="#1567BA"><use xlink:href="#icon-map-marker"></use></svg>
-									<input class="form__input" type="text" name="form__pickup-address" id="form__pickup-address" value="" placeholder="Pickup Address">
-									<label class="visually-hidden" for="form__pickup-address">Pickup Address</label>
+									<input class="form__input" type="text" name="form__pickup_address" id="form__pickup_address" value="" placeholder="Pickup Address">
+									<label class="visually-hidden" for="form__pickup_address">Pickup Address</label>
 								</p>
 								<p class="form__item">									
-									<input class="form__input form__input--without-marker" type="text" name="form__pickup-access" id="form__pickup-access" value="" placeholder="Pickup Access">
-									<label class="visually-hidden" for="form__pickup-access">Pickup Access</label>
+									<input class="form__input form__input--without-marker" type="text" name="form__pickup_access" id="form__pickup_access" value="" placeholder="Pickup Access">
+									<label class="visually-hidden" for="form__pickup_access">Pickup Access</label>
 								</p>
 							</div>
 							<div class="form__group">
 								<p class="form__item">
 									<svg width="11" height="15" fill="#1567BA"><use xlink:href="#icon-map-marker"></use></svg>
-									<input class="form__input" type="text" name="form__destination-address" id="form__destination-address" value="" placeholder="Destination Address">
-									<label class="visually-hidden" for="form__destination-address">Destination Address</label>
+									<input class="form__input" type="text" name="form__destination_address" id="form__destination_address" value="" placeholder="Destination Address">
+									<label class="visually-hidden" for="form__destination_address">Destination Address</label>
 								</p>
 								<p class="form__item">									
-									<input class="form__input form__input--without-marker" type="text" name="form__destination-access" id="form__destination-access" value="" placeholder="Destination Access">
-									<label class="visually-hidden" for="form__destination-access">Destination Access</label>
+									<input class="form__input form__input--without-marker" type="text" name="form__destination_access" id="form__destination_access" value="" placeholder="Destination Access">
+									<label class="visually-hidden" for="form__destination_access">Destination Access</label>
 								</p>
 							</div>
 							<div class="form__group">
 								<p class="form__item">
 									<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-clock"></use></svg>
-									<input class="form__input" type="text" name="form__move-time" id="form__move-time" value="" placeholder="Move Time">
-									<label class="visually-hidden" for="form__move-time">Move Time</label>
+									<input class="form__input" type="text" name="form__move_time" id="form__move_time" value="" placeholder="Move Time">
+									<label class="visually-hidden" for="form__move_time">Move Time</label>
 								</p>
 								<p class="form__item">
 									<svg width="13" height="15" fill="#1567BA"><use xlink:href="#icon-calendar-plus"></use></svg>
-									<input class="form__input" type="text" name="form__move-date" id="form__move-date" value="" placeholder="Move Date">
-									<label class="visually-hidden" for="form__move-date">Move Date</label>
+									<input class="form__input" type="text" name="form__move_date" id="form__move_date" value="" placeholder="Move Date">
+									<label class="visually-hidden" for="form__move_date">Move Date</label>
 								</p>
 							</div>
 							<div class="form__group form__group--certificate">
@@ -163,7 +192,9 @@
 								<textarea name="form__description" cols="50" rows="5" class="form__input" id="form__description">Item List and Description</textarea>
 							</p>
 						</div>
-						<input type="submit" class="form__submit button" value="Get a Quite">				
+						<input type="submit" class="form__submit button" value="Get a Quite">
+						<!-- <p class="form__result"></p> -->
+						<p class="form__result">Successfully!</p>
 					</form>
 
 					<!-- <form id="myForm" role="form" method="POST">
@@ -652,10 +683,9 @@
 
 	
 	<script src="js/hamburger.min.js"></script>
-	<script src="js/slick/slick.min.js"></script>
-	<script src="js/my-slick.min.js"></script>
 	<script src="js/form.min.js"></script>
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/my-slick.min.js"></script>	
 	
-
 </body>
 </html>

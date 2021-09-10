@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {	
 	$('.clients__list').slick({
 		infinite: true,
 		arrows: false,

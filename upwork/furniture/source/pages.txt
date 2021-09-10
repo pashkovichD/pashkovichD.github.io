@@ -23,7 +23,3 @@ services/moving-storage.html
 services/crating-shipping.html
 
 
-*icon
-*tabs
-background lines
-more
