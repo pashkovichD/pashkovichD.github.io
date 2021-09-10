@@ -6,8 +6,15 @@ jQuery(document).ready(function($) {
 	});
 
 	$('input, textarea').focus(function() {
-		$('.form__result').text('').removeClass('form__result--show');
-	});	
+		$('.form__result').removeClass('form__result--show');
+	});
+
+	// click ESC
+	window.addEventListener('keydown', function (e) {
+		if (e.which == 27) {
+			$('.form__result').removeClass('form__result--show');
+		}
+	})
 
 	$.validator.addMethod(
 	    "validDate",
@@ -35,7 +42,18 @@ jQuery(document).ready(function($) {
 		},
 		submitHandler: function() {			
 			$('.form__result').text('Successfully!').addClass('form__result--show');
-			// setTimeout($('.form__result').text('').removeClass('form__result--show'), 5000);
+
+			$(document).mouseup(function (e){ // click on web document
+				var div = $('.form__result'); // ID or class element
+				if (!div.is(e.target) // if the click was not on the element
+				    && div.has(e.target).length === 0) { // and not by its children
+					div.removeClass('form__result--show');
+				}
+			});
 		}
 	});
+
+	
+
+	
 });
