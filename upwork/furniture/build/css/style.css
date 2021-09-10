@@ -3480,14 +3480,18 @@ label.error {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .post__item {
     width: 48%;
+    margin-left: 40px;
+  }
+  .post__item:nth-child(2n+1) {
+    margin-left: 0;
   }
 }
 @media (min-width: 991px) {
@@ -3508,11 +3512,6 @@ label.error {
     margin-bottom: 45px;
     font-size: 45px;
     line-height: 62px;
-  }
-  .post__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .post__item {
     width: 31%;

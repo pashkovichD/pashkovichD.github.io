@@ -93,16 +93,19 @@
 
 	.post__title {
 		margin-bottom: 40px;
-	}
-
+	}	
 	.post__list {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
 
 	.post__item {
 		width: 48%;
+		margin-left: 40px;
+		&:nth-child(2n+1) {
+			margin-left: 0;
+		}
 	}
 }
 
@@ -134,7 +137,7 @@
 	}
 
 	.post__list {
-		justify-content: center;
+		// justify-content: center;
 	}
 
 	.post__item {
