@@ -138,6 +138,17 @@
 	font-size: 12px;
 	line-height: 21px;
 	color: #828282;
+	a {
+		text-decoration: none;
+		color: #828282;
+		opacity: 0.5;
+		&:hover,
+		&:focus {
+			color: #ffffff;
+			opacity: 1;
+			text-decoration: underline;
+		}
+	}
 }
 
 @media (min-width: @mobile-width) {
@@ -180,6 +191,7 @@
 		position: relative;
 		top: -80px;
 		margin-bottom: -40px;
+		max-width: 300px
 	}
 
 	.page-footer__copyright {

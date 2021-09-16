@@ -73,6 +73,7 @@
 	margin: 0;	
 	// padding: 20px 15px 10px 46px;
 	padding-left: 45px;
+	padding-right: 15px;
 	font-family: @ff;
 	font-size: 14px;
 	line-height: 20px;
@@ -147,6 +148,16 @@
 	height: 8px;
 	background: #1567BA;
 	border-radius: 50%;
+}
+
+textarea {
+	#form__description {
+		overflow: auto;
+		resize: none;
+		width: 200px;
+		height: 200px;
+		padding: 10px;
+	}
 }
 
 .form__submit {
@@ -226,8 +237,7 @@
 	}
 
 	.form__group {
-		display: flex;
-		// align-items: center;
+		display: flex;		
 		margin-bottom: 0;
 		.form__item {
 			width: 50%;			
@@ -235,6 +245,10 @@
 				margin-right: 10px;
 			}
 		}
+	}
+
+	.form__group--receving {
+		align-items: center;	
 	}
 
 	.form__radio-label {
@@ -246,7 +260,7 @@
 		padding-left: 55px;
 	}
 
-	.form__group--certificate {
+	.form__group--receving {
 		margin-bottom: 15px;
 	}
 
