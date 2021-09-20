@@ -14,18 +14,36 @@
 	color: #1567BA;	
 }
 
-@media (min-width: @mobile-width) {
+.contact-us__form {
+	position: relative;
+	padding-bottom: 40px;
+}
 
+@media (min-width: @mobile-width) {
+	.contact-us__form {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 @media (min-width: 600px) {
-
+	.contact-us__form {
+		width: 470px;
+		padding-bottom: 50px;
+	}
 }
 
 @media (min-width: @tablet-width) {
 	.contact-us {			
 		padding: 0 30px;		
 	}	
+
+	.contact-us__form {
+		.form__result {
+			left: 70px;
+			right: 70px;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {

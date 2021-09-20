@@ -30,8 +30,6 @@
 
 .form__item {
 	position: relative;
-	// display: flex;
-	// align-items: center;
 	min-height: 52px;
 	margin: 0;
 	margin-bottom: 10px;
@@ -70,15 +68,13 @@
 .form__input {
 	width: 100%;
 	height: 50px;
-	margin: 0;	
-	// padding: 20px 15px 10px 46px;
+	margin: 0;
 	padding-left: 45px;
 	padding-right: 15px;
 	font-family: @ff;
 	font-size: 14px;
 	line-height: 20px;
 	color: #292B2C;
-	// border: 1px solid red;	
 	border: 1px solid #e0e0e0;	
 	box-sizing: border-box;	
 	&:hover,
@@ -100,13 +96,15 @@
 	margin-bottom: 20px;
 }
 
+.form__group--radio {
+	padding-top: 5px;	
+}
+
 .form__radio-label {
 	position: relative;
-	display: flex;
-	align-items: center;
-	height: 30px;
+	display: flex;	
 	margin: 0;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	padding: 0;	
 	padding-left: 45px;	
 	font-size: 14px;
@@ -114,9 +112,12 @@
 	color: #292B2C;
 	svg {
 		position: absolute;
-		top: 50%;
+		top: 10px;
 		left: 20px;
 		margin-top: -7px;
+	}
+	br {
+		display: none;
 	}
 }
 
@@ -179,8 +180,7 @@ textarea {
 	position: absolute;
 	left: 50px;
 	right: 50px;
-	bottom: 160px;	
-	// display: none;
+	bottom: 160px;
 	min-width: 200px;
 	visibility: hidden;
 	opacity: 0;
@@ -211,7 +211,6 @@ textarea {
 	visibility: visible;
 	opacity: 1;
 	bottom: 115px;
-	// display: block;
 }
 
 @media (min-width: @mobile-width) {	
@@ -247,25 +246,21 @@ textarea {
 		}
 	}
 
-	.form__group--receving {
-		align-items: center;	
+	.form__group--radio {
+		padding-top: 10px;
+		justify-content: space-between;
+		margin-bottom: 20px;
 	}
 
-	.form__radio-label {
-		height: 45px;
+	.form__radio-label {		
 		margin: 0;
+		br {
+			display: inline;
+		}
 	}
 
 	.form__radio-wrapper {
-		padding-left: 55px;
-	}
-
-	.form__group--receving {
-		margin-bottom: 15px;
-	}
-
-	.form__submit {
-		letter-spacing: 1.5px;
+		margin-right: 20px;
 	}
 
 	.form__result {
@@ -281,6 +276,15 @@ textarea {
 	.form__wrapper {
 		width: auto;
 	}
+
+	.form__group--radio {		
+		justify-content: flex-start;		
+	}
+
+	.form__radio-label {		
+		width: 225px;
+	}	
+
 	.form__result {
 		left: 200px;
 		right: 200px;
@@ -295,7 +299,9 @@ textarea {
 }
 
 @media (min-width: @desktop-width) {
-	
+	.form__radio-wrapper {
+		padding-left: 20px;
+	}
 }
 
 @media (min-width: @desktop-full-width) {

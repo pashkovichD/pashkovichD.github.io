@@ -248,3 +248,55 @@
 		line-height: 39px;
 	}
 }
+
+.request-quote {
+	position: absolute;
+	right: 15px;
+	bottom: -33px;
+	display: flex;
+	align-items: center;		
+	padding: 7px 5px 7px 7px;
+	text-decoration: none;
+	svg {
+		position: relative;
+		top: -2px;
+		width: 25px;
+		height: 23px;		
+		opacity: .8;
+	}
+	span {
+		display: none;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.request-quote {	
+		right: 30px;
+	}	
+}
+
+@media (min-width: 600px) {
+	.request-quote {
+	padding-right: 7px;		
+		svg {
+			margin-right: 5px;
+		}
+		span {
+			display: inline;
+		}
+	}	
+}
+
+@media (min-width: @tablet-width) {
+	.request-quote {
+		padding: 10px;
+		bottom: -50px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.request-quote {	
+		right: 0;
+	}	
+}
+

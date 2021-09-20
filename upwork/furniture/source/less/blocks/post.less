@@ -23,11 +23,18 @@
 }
 
 .post__item-title {
-	margin-bottom: 10px;
-	font-size: 18px;
-	line-height: 25px;
-	text-transform: uppercase;
-	color: #1567BA;	
+	a {
+		margin-bottom: 10px;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #1567BA;
+		&:hover,
+		&:focus {
+			color: #0a58a7;
+		}
+	}	
 }
 
 .post__item-date {

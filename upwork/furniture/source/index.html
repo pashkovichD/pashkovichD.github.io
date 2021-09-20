@@ -44,10 +44,12 @@
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-
+	<!-- datePicker -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- Jquery MaskedInput -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 
 	<link rel="stylesheet" href="css/style.min.css">	
 	
@@ -64,10 +66,10 @@
 			<ul class="page-header__top-list container">
 				<li class="page-header__top-item"><a href="services/furniture-assembly.html">Furniture Assembly</a></li>
 				<li class="page-header__top-item"><a href="services/cubicles-installation.html">Cubicle Installation</a></li>
-				<li class="page-header__top-item"><a href="services/modular-furniture.html">Modular Office Furniture Installation</a></li>
-				<li class="page-header__top-item"><a href="services/receiving-delivery.html">Receiving and Delivery</a></li>
-				<li class="page-header__top-item"><a href="services/moving-storage.html">Moving and Storage</a></li>
-				<li class="page-header__top-item"><a href="services/crating-shipping.html">Crating and Shipping</a></li>
+				<li class="page-header__top-item"><a href="services/modular-office-furniture-installation.html">Modular Office Furniture Installation</a></li>
+				<li class="page-header__top-item"><a href="services/receiving-and-delivery.html">Receiving and Delivery</a></li>
+				<li class="page-header__top-item"><a href="services/moving-and-storage.html">Moving and Storage</a></li>
+				<li class="page-header__top-item"><a href="services/crating-and-shipping.html">Crating and Shipping</a></li>
 			</ul>
 			                                   
 		</div>
@@ -97,10 +99,10 @@
 								<ul class="menu__dropdown">
 									<li><a href="services/furniture-assembly.html">Furniture Assembly</a></li>
 									<li><a href="services/cubicles-installation.html">Cubicles Installation</a></li>
-									<li><a href="services/modular-furniture.html">Modular Office Furniture Installation</a></li>
-									<li><a href="services/receiving-delivery.html">Receiving And Delivery</a></li>
-									<li><a href="services/moving-storage.html">Moving and Storage Services</a></li>
-									<li><a href="services/crating-shipping.html">Crating And Shipping</a></li>
+									<li><a href="services/modular-office-furniture-installation.html">Modular Office Furniture Installation</a></li>
+									<li><a href="services/receiving-and-delivery.html">Receiving And Delivery</a></li>
+									<li><a href="services/moving-and-storage.html">Moving and Storage Services</a></li>
+									<li><a href="services/crating-and-shipping.html">Crating And Shipping</a></li>
 								</ul>
 							</li>
 							<li class="menu__item"><a href="contact-us.html">Contact Us</a></li>
@@ -124,24 +126,24 @@
 			<div class="banner__wrapper container">
 				<h2 class="banner__title">Los Angeles Furniture Installation</h2>
 
-				<div class="banner__form-wrapper form__wrapper">
+				<div id="request-quote" class="banner__form-wrapper form__wrapper">
 					<p class="form__title">Contact Us</p>
-					<form id="contact-form" class="banner__form form form--nojs" action="https://echo.htmlacademy.ru/" method="POST">
+					<form id="contact-form" class="banner__form form form--nojs" action="" method="POST">
 						<div class="form__item-wrapper">
 							<p class="form__item">
 								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-user"></use></svg>
-								<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Full name (required)">
-								<label class="visually-hidden" for="form__name">Full name (required)</label>
+								<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Full Name (Required)">
+								<label class="visually-hidden" for="form__name">Full Name (Required)</label>
 							</p>
 							<p class="form__item">
 								<svg width="15" height="15" fill="#1567BA"><use xlink:href="#icon-phone"></use></svg>
-								<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone (required)">
-								<label class="visually-hidden" for="form__phone">Phone (required)</label>
+								<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone (Required)">
+								<label class="visually-hidden" for="form__phone">Phone (Required)</label>
 							</p>
 							<p class="form__item form__item--email">
 								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-email"></use></svg>
-								<input class="form__input" type="email" name="form__email" id="form__email" value="" placeholder="Email (required)">
-								<label class="visually-hidden" for="form__email">Email (required)</label>
+								<input class="form__input" type="email" name="form__email" id="form__email" value="" placeholder="Email (Required)">
+								<label class="visually-hidden" for="form__email">Email (Required)</label>
 							</p>
 							<div class="form__group">
 								<p class="form__item">
@@ -166,27 +168,42 @@
 								</p>
 							</div>
 							<div class="form__group">
-								<p class="form__item">
+								<p class="form__item" style="position: relative;">
 									<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-clock"></use></svg>
-									<input class="form__input" type="text" name="form__move_time" id="form__move_time" value="" placeholder="Move Time">
-									<label class="visually-hidden" for="form__move_time">Move Time</label>
+									<input class="form__input" type="text" name="form__project_time" id="form__project_time" placeholder="Project Time" value="">
+									<label class="visually-hidden" for="form__project_time">Project Time</label>
 								</p>
 								<p class="form__item">
 									<svg width="13" height="15" fill="#1567BA"><use xlink:href="#icon-calendar-plus"></use></svg>
-									<input class="form__input" type="text" name="form__move_date" id="form__move_date" value="" placeholder="Move Date" autocomplete="off">
-									<label class="visually-hidden" for="form__move_date">Move Date</label>
+									<input class="form__input" type="text" name="form__project_date" id="form__project_date" value="" placeholder="Project Date" autocomplete="off">
+									<label class="visually-hidden" for="form__project_date">Project Date</label>
 								</p>
 							</div>
-							<div class="form__group form__group--receving">
-								<div class="form__radio-label"><svg width="15" height="13" fill="#1567BA"><use xlink:href="#icon-tasks"></use></svg>Receving Required</div>
+							<div class="form__group form__group--radio">
+								<div class="form__radio-label"><svg width="15" height="13" fill="#1567BA"><use xlink:href="#icon-tasks"></use></svg>Receiving Needed</div>
 								<div class="form__radio-wrapper">
 									<label class="form__radio-item">
-										<input type="radio" class="visually-hidden" name="receving" value="yes" checked>
+										<input type="radio" class="visually-hidden" name="receving" value="yes">
 										<span class="form__radio-indicator"></span>
 										<span>Yes</span>
 									</label>							
 									<label class="form__radio-item">
-										<input type="radio" class="visually-hidden" name="receving" value="no">
+										<input type="radio" class="visually-hidden" name="receving" value="no" checked>
+										<span class="form__radio-indicator"></span>
+										<span>No</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__group form__group--radio">
+								<div class="form__radio-label"><svg width="15" height="13" fill="#1567BA"><use xlink:href="#icon-tasks"></use></svg>Certificate <br>of Insurance Needed</div>
+								<div class="form__radio-wrapper">
+									<label class="form__radio-item">
+										<input type="radio" class="visually-hidden" name="certificate" value="yes">
+										<span class="form__radio-indicator"></span>
+										<span>Yes</span>
+									</label>							
+									<label class="form__radio-item">
+										<input type="radio" class="visually-hidden" name="certificate" value="no" checked>
 										<span class="form__radio-indicator"></span>
 										<span>No</span>
 									</label>
@@ -197,9 +214,8 @@
 							</p>
 						</div>
 						<input type="submit" class="form__submit button" value="Get a Quote">
-						<!-- <p class="form__result"></p> -->
-						<p class="form__result">Successfully!</p>
-					</form>					
+						<p class="form__result"></p>
+					</form>
 				</div>
 			</div>
 			
@@ -207,10 +223,9 @@
 		</section>
 
 		<section class="presentation container">
-			<h2 class="visually-hidden">Presentation company</h2>			
-			<picture>
-				<source type="image/webp" srcset="img/presentation.webp 1x, img/presentation@2x.webp 2x">
-				<img src="img/presentation.jpg" srcset="img/presentation@2x.jpg 2x" alt="Cubicles and Office Furniture Installation" class="presentation__img">
+			<h2 class="visually-hidden">Presentation company</h2>
+			<picture>				
+				<img type="image/webp" src="img/presentation.webp" srcset="img/presentation@2x.webp 2x" alt="Cubicles and Office Furniture Installation" class="presentation__img">
 			</picture>
 			<div class="presentation__text-wrapper">
 				<p class="presentation__title">Cubicles and Office Furniture Installation in Los Angeles, San Bernardino, Ventura, Riverside and Orange County</p>
@@ -258,16 +273,14 @@
 				<div class="contacts__item">
 					<p class="contacts__item-text">Los Angeles Furniture Installation did an exquisite job helping me move my personal office from West Hollywood. Picked up the phone, set everything up over the phone, and there were no bumps in the road after that. Los Angeles Furniture Installation are professional installers, I recommend them for anyone who needs their stuff installed. Best office moving company!</p>				
 					<div class="contacts__people-wrapper">
-						<picture>
-							<source type="image/webp" srcset="img/reviews/mark.webp 1x, img/reviews/mark@2x.webp 2x">
-							<img src="img/reviews/mark.jpg" srcset="img/reviews/mark@2x.jpg 2x" alt="Mark" class="contacts__item-photo">
+						<picture>							
+							<img type="image/webp" src="img/reviews/mark-la.webp" srcset="img/reviews/mark-la@2x.webp 2x" alt="Mark" class="contacts__item-photo">
 						</picture>
 						<div class="contacts__people-data">
 							<div class="contacts__name-wrapper">
 								<p class="contacts__item-name">Mark</p>
-								<picture>
-									<source type="image/webp" srcset="img/reviews/stars.webp 1x, img/reviews/stars@2x.webp 2x">
-									<img src="img/reviews/stars.png" srcset="img/reviews/stars@2x.png 2x" alt="Mark" class="contacts__item-stars">
+								<picture>									
+									<img type="image/webp" src="img/reviews/la-stars.webp" srcset="img/reviews/la-stars@2x.webp 2x" alt="rating" class="contacts__item-stars">
 								</picture>
 							</div>
 							<p class="contacts__item-posted">posted on Yelp.com</p>
@@ -281,51 +294,43 @@
 			<h2 class="clients__title">Our Clients</h2>
 			<ul class="clients__list">
 				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>
+						<img type="image/webp" src="img/clients/boa-los-angeles.webp" srcset="img/clients/boa-los-angeles@2x.webp 2x" alt="Bank of America">
+					</picture>
+				</a></li>
+				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>						
-						<source type="image/webp" srcset="img/clients/bank-of-america.webp 1x, img/clients/bank-of-america@2x.webp 2x">
-						<img src="img/clients/bank-of-america.jpg" srcset="img/clients/bank-of-america@2x.jpg 2x" alt="Bank of America">
+						<img type="image/webp" src="img/clients/la-security.webp" srcset="img/clients/la-security@2x.webp 2x" alt="Security and Exchange Commission">
+					</picture>
+				</a></li>
+				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/clients/ced-furniture-installation.webp" srcset="img/clients/ced-furniture-installation@2x.webp 2x" alt="Cedars Sinai">
 					</picture>
 				</a></li>
 				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/clients/security.webp 1x, img/clients/security@2x.webp 2x">
-						<img src="img/clients/security.jpg" srcset="img/clients/security@2x.jpg 2x" alt="Security and Exchange Commission">
+						<img type="image/webp" src="img/clients/los-angeles-cbs.webp" srcset="img/clients/los-angeles-cbs@2x.webp 2x" alt="CBS Copporation">
+					</picture>
+				</a></li>
+				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/clients/la-sony.webp" srcset="img/clients/la-sony@2x.webp 2x" alt="SONY">
+					</picture>
+				</a></li>
+				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/clients/department-la.webp" srcset="img/clients/department-la@2x.webp 2x" alt="Justice Department">
 					</picture>
 				</a></li>
 				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/clients/cedars.webp 1x, img/clients/cedars@2x.webp 2x">
-						<img src="img/clients/cedars.jpg" srcset="img/clients/cedars@2x.jpg 2x" alt="Cedars Sinai">
+						<img type="image/webp" src="img/clients/vog-furniture-installation.webp" srcset="img/clients/vog-furniture-installation@2x.webp 2x" alt="Vogue">
 					</picture>
 				</a></li>
 				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/clients/cbs.webp 1x, img/clients/cbs@2x.webp 2x">
-						<img src="img/clients/cbs.jpg" srcset="img/clients/cbs@2x.jpg 2x" alt="CBS Copporation">
-					</picture>
-				</a></li>
-				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/clients/sony.webp 1x, img/clients/sony@2x.webp 2x">
-						<img src="img/clients/sony.jpg" srcset="img/clients/sony@2x.jpg 2x" alt="SONY">
-					</picture>
-				</a></li>
-				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/clients/department.webp 1x, img/clients/department@2x.webp 2x">
-						<img src="img/clients/department.jpg" srcset="img/clients/department@2x.jpg 2x" alt="Justice Department">
-					</picture>
-				</a></li>
-				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/clients/vogue.webp 1x, img/clients/vogue@2x.webp 2x">
-						<img src="img/clients/vogue.jpg" srcset="img/clients/vogue@2x.jpg 2x" alt="Vogue">
-					</picture>
-				</a></li>
-				<li class="clients__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/clients/fda.webp 1x, img/clients/fda@2x.webp 2x">
-						<img src="img/clients/fda.jpg" srcset="img/clients/fda@2x.jpg 2x" alt="FDA">
+					<picture>						
+						<img type="image/webp" src="img/clients/los-angeles-fda.webp" srcset="img/clients/los-angeles-fda@2x.webp 2x" alt="FDA">
 					</picture>
 				</a></li>
 			</ul>
@@ -336,51 +341,43 @@
 				<h2 class="works__title">Our Works Process</h2>
 				<ul class="works__list">
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-1.webp 1x, img/works/work-1@2x.webp 2x">
-							<img src="img/works/work-1.jpg" srcset="img/works/work-1@2x.jpg 2x" alt="work-1">
+						<picture>							
+							<img type="image/webp" src="img/works/work-la.webp" srcset="img/works/work-la@2x.webp 2x" alt="Work LA">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-2.webp 1x, img/works/work-2@2x.webp 2x">
-							<img src="img/works/work-2.jpg" srcset="img/works/work-2@2x.jpg 2x" alt="work-2">
+						<picture>							
+							<img type="image/webp" src="img/works/work-furniture-installation.webp" srcset="img/works/work-furniture-installation@2x.webp 2x" alt="Work Furniture Installation">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-3.webp 1x, img/works/work-3@2x.webp 2x">
-							<img src="img/works/work-3.jpg" srcset="img/works/work-3@2x.jpg 2x" alt="work-3">
+						<picture>							
+							<img type="image/webp" src="img/works/work-process.webp" srcset="img/works/work-process@2x.webp 2x" alt="Work process">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-4.webp 1x, img/works/work-4@2x.webp 2x">
-							<img src="img/works/work-4.jpg" srcset="img/works/work-4@2x.jpg 2x" alt="work-4">
+						<picture>							
+							<img type="image/webp" src="img/works/work-standart-installation.webp" srcset="img/works/work-standart-installation@2x.webp 2x" alt="Work Standart Installation">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-5.webp 1x, img/works/work-5@2x.webp 2x">
-							<img src="img/works/work-5.jpg" srcset="img/works/work-5@2x.jpg 2x" alt="work-5">
+						<picture>							
+							<img type="image/webp" src="img/works/work-los-angeles.webp" srcset="img/works/work-los-angeles@2x.webp 2x" alt="Work Los Angeles">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-6.webp 1x, img/works/work-6@2x.webp 2x">
-							<img src="img/works/work-6.jpg" srcset="img/works/work-6@2x.jpg 2x" alt="work-6">
+						<picture>							
+							<img type="image/webp" src="img/works/work-production.webp" srcset="img/works/work-production@2x.webp 2x" alt="Work Production">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-7.webp 1x, img/works/work-7@2x.webp 2x">
-							<img src="img/works/work-7.jpg" srcset="img/works/work-7@2x.jpg 2x" alt="work-7">
+						<picture>							
+							<img type="image/webp" src="img/works/work-office-furniture.webp" srcset="img/works/work-office-furniture@2x.webp 2x" alt="Work Office Furniture">
 						</picture>
 					</li>
 					<li class="works__item">
-						<picture>
-							<source type="image/webp" srcset="img/works/work-8.webp 1x, img/works/work-8@2x.webp 2x">
-							<img src="img/works/work-8.jpg" srcset="img/works/work-8@2x.jpg 2x" alt="work-8">
+						<picture>							
+							<img type="image/webp" src="img/works/work-la-installation.webp" srcset="img/works/work-la-installation@2x.webp 2x" alt="Work LA Installation">
 						</picture>
 					</li>
 				</ul>
@@ -392,9 +389,8 @@
 			<h2 class="services__title">Our Services</h2>
 			<ul class="services__list">
 				<li class="services__item">
-					<picture>
-						<source type="image/webp" srcset="img/services/furniture-assembly.webp 1x, img/services/furniture-assembly@2x.webp 2x">
-						<img src="img/services/furniture-assembly.jpg" srcset="img/services/furniture-assembly@2x.jpg 2x" alt="Furniture Assembly" class="services__img">
+					<picture>						
+						<img type="image/webp" src="img/services/furniture-assembly.webp" srcset="img/services/furniture-assembly@2x.webp 2x" alt="Furniture Assembly" class="services__img">
 					</picture>
 					<div class="services__data">
 						<h3 class="services__item-title"><svg width="200" height="82"><use xlink:href="#icon-dots"></use></svg>Furniture Assembly</h3>
@@ -414,8 +410,7 @@
 				</li>
 				<li class="services__item services__item--right">
 					<picture>
-						<source type="image/webp" srcset="img/services/cubicles-installation.webp 1x, img/services/cubicles-installation@2x.webp 2x">
-						<img src="img/services/cubicles-installation.jpg" srcset="img/services/cubicles-installation@2x.jpg 2x" alt="Cubicles Installation" class="services__img">
+						<img type="image/webp" src="img/services/cubicles-installation.webp" srcset="img/services/cubicles-installation@2x.webp 2x" alt="Cubicles Installation" class="services__img">
 					</picture>
 					<div class="services__data">
 						<h3 class="services__item-title"><svg width="200" height="82"><use xlink:href="#icon-dots"></use></svg>Cubicles Installation</h3>
@@ -435,8 +430,7 @@
 				</li>
 				<li class="services__item">
 					<picture>
-						<source type="image/webp" srcset="img/services/modular.webp 1x, img/services/modular@2x.webp 2x">
-						<img src="img/services/modular.jpg" srcset="img/services/modular@2x.jpg 2x" alt="Modular Office Furniture Installation" class="services__img">
+						<img type="image/webp" src="img/services/modular-office-furniture-installation.webp" srcset="img/services/modular-office-furniture-installation@2x.webp 2x" alt="Modular Office Furniture Installation" class="services__img">
 					</picture>
 					<div class="services__data">
 						<h3 class="services__item-title"><svg width="200" height="82"><use xlink:href="#icon-dots"></use></svg>Modular Office Furniture Installation</h3>
@@ -451,13 +445,12 @@
 							<li>Magnetic Glass Screen Desking.</li>
 							<li>Leader In Commercial Furniture Installers.</li>
 						</ul>
-						<a href="services/modular-furniture.html" class="services__button button">Modular Office Furniture Installation</a>
+						<a href="services/modular-office-furniture-installation.html" class="services__button button">Modular Office Furniture Installation</a>
 					</div>
 				</li>
 				<li class="services__item services__item--right">
 					<picture>
-						<source type="image/webp" srcset="img/services/receiving-delivery.webp 1x, img/services/receiving-delivery@2x.webp 2x">
-						<img src="img/services/receiving-delivery.jpg" srcset="img/services/receiving-delivery@2x.jpg 2x" alt="Receiving And Delivery" class="services__img">
+						<img type="image/webp" src="img/services/receiving-and-delivery.webp" srcset="img/services/receiving-and-delivery@2x.webp 2x" alt="Receiving And Delivery" class="services__img">
 					</picture>
 					<div class="services__data">
 						<h3 class="services__item-title"><svg width="200" height="82"><use xlink:href="#icon-dots"></use></svg>Receiving And Delivery</h3>
@@ -472,13 +465,12 @@
 							<li>Fair Prices.</li>
 							<li>Incredible Inspection Services.</li>
 						</ul>
-						<a href="services/receiving-delivery.html" class="services__button button">Receiving And Delivery</a>
+						<a href="services/receiving-and-delivery.html" class="services__button button">Receiving And Delivery</a>
 					</div>
 				</li>
 				<li class="services__item">
 					<picture>
-						<source type="image/webp" srcset="img/services/moving-storage.webp 1x, img/services/moving-storage@2x.webp 2x">
-						<img src="img/services/moving-storage.jpg" srcset="img/services/moving-storage@2x.jpg 2x" alt="Moving And Storage" class="services__img">
+						<img type="image/webp" src="img/services/moving-and-storage.webp" srcset="img/services/moving-and-storage@2x.webp 2x" alt="Moving And Storage" class="services__img">
 					</picture>
 					<div class="services__data">
 						<h3 class="services__item-title"><svg width="200" height="82"><use xlink:href="#icon-dots"></use></svg>Moving And Storage</h3>
@@ -493,13 +485,12 @@
 							<li>Courteous Service.</li>
 							<li>Highly Trained Staff.</li>
 						</ul>
-						<a href="services/moving-storage.html" class="services__button button">Moving And Storage</a>
+						<a href="services/moving-and-storage.html" class="services__button button">Moving And Storage</a>
 					</div>
 				</li>
 				<li class="services__item services__item--right">
 					<picture>
-						<source type="image/webp" srcset="img/services/crating-shipping.webp 1x, img/services/crating-shipping@2x.webp 2x">
-						<img src="img/services/crating-shipping.jpg" srcset="img/services/crating-shipping@2x.jpg 2x" alt="Crating And Shipping" class="services__img">
+						<img type="image/webp" src="img/services/crating-and-shipping.webp" srcset="img/services/crating-and-shipping@2x.webp 2x" alt="Crating And Shipping" class="services__img">
 					</picture>
 					<div class="services__data">
 						<h3 class="services__item-title"><svg width="200" height="82"><use xlink:href="#icon-dots"></use></svg>Crating And Shipping</h3>
@@ -514,7 +505,7 @@
 							<li>Crating Oversize, Heavy, and Fragile Items.</li>
 							<li>Specialty Crating.</li>
 						</ul>
-						<a href="services/crating-shipping.html" class="services__button button">Crating And Shipping</a>
+						<a href="services/crating-and-shipping.html" class="services__button button">Crating And Shipping</a>
 					</div>
 				</li>
 			</ul>			
@@ -524,77 +515,65 @@
 			<h2 class="visually-hidden">Сompany</h2>			
 			<ul class="company__list company__list--first">
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/company/haworth.webp 1x, img/company/haworth@2x.webp 2x">
-						<img src="img/company/haworth.jpg" srcset="img/company/haworth@2x.jpg 2x" alt="Haworth">
+					<picture>						
+						<img type="image/webp" src="img/company/la-haworth.webp" srcset="img/company/la-haworth@2x.webp 2x" alt="Haworth">
+					</picture>
+				</a></li>
+				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/company/hm-los-angeles.webp" srcset="img/company/hm-los-angeles@2x.webp 2x" alt="Herman Miller">
+					</picture>
+				</a></li>
+				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/company/company-kim.webp" srcset="img/company/company-kim@2x.webp 2x" alt="Kimball">
+					</picture>
+				</a></li>
+				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/company/kn-furniture-installation.webp" srcset="img/company/kn-furniture-installation@2x.webp 2x" alt="Knoll">
 					</picture>
 				</a></li>
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/company/herman-miller.webp 1x, img/company/herman-miller@2x.webp 2x">
-						<img src="img/company/herman-miller.jpg" srcset="img/company/herman-miller@2x.jpg 2x" alt="Herman Miller">
+						<img type="image/webp" src="img/company/st-case-la.webp" srcset="img/company/st-case-la@2x.webp 2x" alt="Steelcase">
 					</picture>
 				</a></li>
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/company/kimball.webp 1x, img/company/kimball@2x.webp 2x">
-						<img src="img/company/kimball.jpg" srcset="img/company/kimball@2x.jpg 2x" alt="Kimball">
-					</picture>
-				</a></li>
-				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/company/knoll.webp 1x, img/company/knoll@2x.webp 2x">
-						<img src="img/company/knoll.jpg" srcset="img/company/knoll@2x.jpg 2x" alt="Knoll">
-					</picture>
-				</a></li>
-				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/company/steelcase.webp 1x, img/company/steelcase@2x.webp 2x">
-						<img src="img/company/steelcase.jpg" srcset="img/company/steelcase@2x.jpg 2x" alt="Steelcase">
-					</picture>
-				</a></li>
-				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/company/allsteel.webp 1x, img/company/allsteel@2x.webp 2x">
-						<img src="img/company/allsteel.jpg" srcset="img/company/allsteel@2x.jpg 2x" alt="Allsteel">
+						<img type="image/webp" src="img/company/all-steel-company.webp" srcset="img/company/all-steel-company@2x.webp 2x" alt="Allsteel">
 					</picture>
 				</a></li>
 			</ul>
 			<ul class="company__list company__list--second">
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/company/office-source.webp 1x, img/company/office-source@2x.webp 2x">
-						<img src="img/company/office-source.jpg" srcset="img/company/office-source@2x.jpg 2x" alt="Office Source">
+					<picture>						
+						<img type="image/webp" src="img/company/office-la.webp" srcset="img/company/office-la@2x.webp 2x" alt="Office Source">
+					</picture>
+				</a></li>
+				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
+					<picture>						
+						<img type="image/webp" src="img/company/los-angeles-national.webp" srcset="img/company/los-angeles-national@2x.webp 2x" alt="National">
 					</picture>
 				</a></li>
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/company/national.webp 1x, img/company/national@2x.webp 2x">
-						<img src="img/company/national.jpg" srcset="img/company/national@2x.jpg 2x" alt="National">
+						<img type="image/webp" src="img/company/sit-seat-furniture.webp" srcset="img/company/sit-seat-furniture@2x.webp 2x" alt="Sitonit Seating">
 					</picture>
 				</a></li>
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/company/sitonit-seating.webp 1x, img/company/sitonit-seating@2x.webp 2x">
-						<img src="img/company/sitonit-seating.jpg" srcset="img/company/sitonit-seating@2x.jpg 2x" alt="Sitonit Seating">
+						<img type="image/webp" src="img/company/company-jsi.webp" srcset="img/company/company-jsi@2x.webp 2x" alt="JSI">
 					</picture>
 				</a></li>
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/company/jsi.webp 1x, img/company/jsi@2x.webp 2x">
-						<img src="img/company/jsi.jpg" srcset="img/company/jsi@2x.jpg 2x" alt="JSI">
+						<img type="image/webp" src="img/company/la-darran.webp" srcset="img/company/la-darran@2x.webp 2x" alt="Darran">
 					</picture>
 				</a></li>
 				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
 					<picture>
-						<source type="image/webp" srcset="img/company/darran.webp 1x, img/company/darran@2x.webp 2x">
-						<img src="img/company/darran.jpg" srcset="img/company/darran@2x.jpg 2x" alt="Darran">
-					</picture>
-				</a></li>
-				<li class="company__item"><a href="#" rel="noopener nofollow" target="_blank">
-					<picture>
-						<source type="image/webp" srcset="img/company/indiana-furniture.webp 1x, img/company/indiana-furniture@2x.webp 2x">
-						<img src="img/company/indiana-furniture.jpg" srcset="img/company/indiana-furniture@2x.jpg 2x" alt="Indiana Furniture">
+						<img type="image/webp" src="img/company/indiana-furniture-installation.webp" srcset="img/company/indiana-furniture-installation@2x.webp 2x" alt="Indiana Furniture">
 					</picture>
 				</a></li>
 			</ul>			
@@ -637,10 +616,10 @@
 					<ul class="page-footer__services-list">
 						<li class="page-footer__services-item"><a href="services/furniture-assembly.html">Furniture Assembly</a></li>
 						<li class="page-footer__services-item"><a href="services/cubicles-installation.html">Cubicle Installation</a></li>
-						<li class="page-footer__services-item"><a href="services/modular-furniture.html">Modular Office Furniture Installation</a></li>
-						<li class="page-footer__services-item"><a href="services/receiving-delivery.html">Receiving and Delivery</a></li>
-						<li class="page-footer__services-item"><a href="services/moving-storage.html">Moving and Storage</a></li>
-						<li class="page-footer__services-item"><a href="services/crating-shipping.html">Crating and Shipping</a></li>
+						<li class="page-footer__services-item"><a href="services/modular-office-furniture-installation.html">Modular Office Furniture Installation</a></li>
+						<li class="page-footer__services-item"><a href="services/receiving-and-delivery.html">Receiving and Delivery</a></li>
+						<li class="page-footer__services-item"><a href="services/moving-and-storage.html">Moving and Storage</a></li>
+						<li class="page-footer__services-item"><a href="services/crating-and-shipping.html">Crating and Shipping</a></li>
 					</ul>
 				</section>
 
@@ -678,6 +657,8 @@
 	<script src="js/form.min.js"></script>
 	<script src="js/slick/slick.min.js"></script>
 	<script src="js/my-slick.min.js"></script>
+	<!-- AJAX -->
+	<script src="js/ajax.min.js"></script>
 
 	<script type="text/javascript">
 		window._mfq = window._mfq || [];
