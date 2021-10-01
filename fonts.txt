@@ -1,0 +1,12 @@
+Хорошие шрифты:
+
+Gilroy
+Play
+Sansation
+Exo 2
+Open Sans
+Akrobat
+
+"GT Walsheim","Trebuchet MS",sans-serif
+
+Geometria
