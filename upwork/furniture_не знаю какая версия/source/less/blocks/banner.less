@@ -1,0 +1,140 @@
+.banner {	
+	position: relative;
+	height: 1048px;
+	//margin-bottom: 5px;
+	padding: 0 15px;
+	padding-top: 80px;
+	
+	background-image: url('../img/main--mobile.webp');
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	.banner {
+		background-image: url('../img/main--mobile@2x.webp');
+	}
+}
+
+.banner__wrapper {
+	position: relative;
+}
+
+.banner__mask {	
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(21, 103, 186, .5);
+
+}
+
+.banner__title {
+	position: relative;
+	margin: 0;
+	margin-bottom: 40px;
+	font-size: 40px;
+	line-height: 52px;
+	text-transform: uppercase;
+	color: #ffffff;
+	z-index: 1;
+}
+
+.banner__form-wrapper {
+	position: relative;
+}
+
+
+@media (min-width: @mobile-width) {
+	.banner {
+		background-size: cover;
+	}
+
+	.banner__title {
+		width: 80%;
+		margin: 0 auto 40px auto;
+	}
+}
+
+@media (min-width: 600px) {
+	.banner {
+		height: 800px;
+	}
+
+	.banner__title {
+		width: 470px;		
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.banner {
+		height: 755px;
+		padding: 80px 30px 0;
+		background-image: url(../img/main.webp);
+	}
+
+	.banner__title {
+		width: auto;
+		font-size: 50px;
+		line-height: 62px;
+	}
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 144dpi), 
+       (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+	.banner {
+		background-image: url('../img/main@2x.webp');
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.banner {
+		padding: 0;
+	}
+
+	.banner__title {
+		width: 470px;
+		margin: 0;
+		top: 160px;
+		left: 20px;
+		font-size: 45px;
+		line-height: 58px;
+		text-align: left;
+	}
+
+	.banner__form-wrapper {
+		position: absolute;
+		top: 60px;
+		right: 20px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.banner {
+		height: 592px;
+	}
+	.banner__title {
+		left: 0;		
+		font-size: 60px;
+		line-height: 78px;		
+	}
+
+	.banner__form-wrapper {		
+		right: 0;
+	}	
+}
+
+@media (min-width: 1040px) {
+	
+}
+
+@media (min-width: 1100px) {
+	
+	
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

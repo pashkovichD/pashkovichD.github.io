@@ -898,8 +898,7 @@ textarea #form__description {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 60px;
-  padding: 0 15px;
-  padding-right: 70px;
+  padding: 5px 70px 0 15px;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400;
@@ -940,8 +939,7 @@ textarea #form__description {
 }
 @media (min-width: 480px) {
   .breadcrumbs {
-    padding: 0 30px;
-    padding-right: 100px;
+    padding: 5px 100px 0 30px;
   }
 }
 @media (min-width: 600px) {
@@ -1142,8 +1140,11 @@ textarea #form__description {
   /*display: inline-block !important;*/
   border: 0;
   background-color: #fff;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 .ui-timepicker {
   border-spacing: 0;
@@ -1160,6 +1161,9 @@ textarea #form__description {
   background: #e9e9e9;
   border-radius: 3px;
 }
+.ui-timepicker .ui-state-default {
+  font-size: 12px;
+}
 .ui-state-default {
   display: block;
   padding: 1px 4px;
@@ -1174,7 +1178,7 @@ textarea #form__description {
 .periods {
   width: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 20px;
   font-weight: 700;
 }
@@ -1400,7 +1404,7 @@ textarea #form__description {
 .request-quote {
   position: absolute;
   right: 15px;
-  bottom: -33px;
+  bottom: -37px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1427,6 +1431,7 @@ textarea #form__description {
 }
 @media (min-width: 600px) {
   .request-quote {
+    bottom: -39px;
     padding-right: 7px;
   }
   .request-quote svg {

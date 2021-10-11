@@ -1,0 +1,37 @@
+.email {
+	margin: 0;
+	padding: 0;
+}
+
+.email__email {
+	position: relative;
+	padding-left: 26px;
+	font-size: 12px;
+	text-decoration: none;	
+	letter-spacing: .1px;
+	color: @color;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -2px;
+		left: 0;
+		width: 14px;
+		height: 15px;		
+		background-image: url(../img/email.svg);
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
+
+

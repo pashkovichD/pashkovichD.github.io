@@ -1,0 +1,38 @@
+.lines {
+	
+}
+
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	.lines {		
+		position: relative;
+		z-index: -20;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+			width: 1200px;
+			height: 540px;
+			background-image: url('../img/lines.svg');
+			background-repeat: no-repeat;
+			z-index: -10;
+		}
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

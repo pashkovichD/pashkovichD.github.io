@@ -14,20 +14,18 @@ jQuery(document).ready(function($) {
 			$('.form__result').removeClass('form__result--show');
 		}
 	})	
-	
-	// Mask Time
-	$.mask.definitions['f'] = "[0|1]";
-	$.mask.definitions['s'] = "[0|1|2|3|4|5]";
-	$.mask.definitions['p'] = "[a|p]";
-	$('#form__project_time').mask("f9:s9 pm" );
+
+	$('#form__project_time').timepicker({
+	    showPeriod: true,
+	    showLeadingZero: true
+	});
 
 	// DatePicker Jquery
 	$("#form__project_date").datepicker();
 	$.datepicker.regional['en'] = {		
-		dateFormat: 'dd.mm.yy'
+		dateFormat: 'mm.dd.yy'
 	};
 	$.datepicker.setDefaults($.datepicker.regional['en']);
-
 
 	// validate form
 	$.validator.addMethod(
@@ -48,7 +46,7 @@ jQuery(document).ready(function($) {
 		},
 		messages: {
 			form__project_time : {time12h: 'Format <b>12-hour am/pm</b>'},
-			form__project_date : {validDate: 'Format <b>dd.mm.yyyy</b>.'},
+			form__project_date : {validDate: 'Format <b>mm.dd.yyyy</b>.'},
 		},
 		submitHandler: function(form) {
 			sendAjaxForm('form__result', 'contact-form', 'action_ajax_form.php');

@@ -1,0 +1,337 @@
+.finish-search {
+	position: relative;
+	background-image: url('../img/services/furniture-assembly/finish--mobile.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+.finish-search--cubicles {
+	background-image: url('../img/services/cubicles-installation/finish--mobile.webp');
+}
+
+.finish-search--moving {
+	margin-bottom: 80px;
+	background-image: url('../img/services/moving-storage/finish--mobile.webp');
+}
+
+.finish-search--modular {
+	background-image: url('../img/services/modular-furniture/finish--mobile.webp');
+}
+
+.finish-search--blog {
+	margin-bottom: 80px;
+	background-image: url('../img/blog/finish--mobile.webp');
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	.finish-search {
+		background-image: url('../img/services/furniture-assembly/finish--mobile@2x.webp');
+	}
+
+	.finish-search--cubicles {
+		background-image: url('../img/services/cubicles-installation/finish--mobile@2x.webp');
+	}
+
+	.finish-search--moving {	
+		background-image: url('../img/services/moving-storage/finish--mobile@2x.webp');
+	}
+
+	.finish-search--modular {
+		background-image: url('../img/services/modular-furniture/finish--mobile@2x.webp');
+	}
+
+	.finish-search--blog {	
+		background-image: url('../img/blog/finish--mobile@2x.webp');
+	}
+}
+
+.finish-search__wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 80px 15px 60px 15px;
+}
+
+.finish-search__mask {	
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #1567BA;
+	opacity: 0.8;
+	z-index: 1;
+
+}
+
+.finish-search__title {
+	position: relative;
+	margin-bottom: 15px;	
+	padding: 0 15px;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	z-index: 2;
+	svg {
+		position: absolute;
+		top: -43px;
+		left: 50%;
+		margin-left: -100px;
+		fill: #ffffff;
+		z-index: -1;
+	}
+}
+
+.finish-search__text {
+	position: relative;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;	
+	color: #ffffff;
+	z-index: 2;	
+}
+
+.finish-search__text--mb20 {
+	margin-bottom: 20px;
+}
+
+.finish-search__phone {
+	font-weight: 600;
+	text-decoration: none;
+	color: #ffffff;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+.finish-search__email {
+	font-weight: 600;
+	text-decoration: none;
+	color: #ffffff;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+.finish-search__button {
+	position: relative;
+	width: 200px;
+	font-weight: 400;
+	z-index: 2;
+}
+
+.finish-search__list {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	z-index: 2;
+}
+
+.finish-search__item {
+	margin-bottom: 50px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.finish-search__list-title {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 15px;
+	padding-left: 105px;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
+	svg {
+		position: absolute;		
+		bottom: 0;
+		left: 15px;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: -10px;
+		bottom: 0;
+		left: 85px;
+		width: 1px;
+		background-color: #ffffff;
+	}
+}
+
+.finish-search__list-text {
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #ffffff;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.finish-search {
+		background-size: cover;
+	}	
+
+	.finish-search__wrapper {
+		width: 470px;		
+	}
+
+	.finish-search__title {		
+		margin: 0 auto 40px auto;
+	}
+}
+
+@media (min-width: 600px) {
+	.finish-search__wrapper {
+		
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.finish-search {		
+		background-image: url('../img/services/furniture-assembly/finish--tablet.webp');
+	}
+
+	.finish-search--cubicles {
+		background-image: url('../img/services/cubicles-installation/finish--tablet.webp');
+	}
+
+	.finish-search--moving {
+		background-image: url('../img/services/moving-storage/finish--tablet.webp');
+	}
+
+	.finish-search--modular {
+		background-image: url('../img/services/modular-furniture/finish--tablet.webp');
+	}
+
+	.finish-search--blog {	
+		background-image: url('../img/blog/finish--tablet.webp');
+	}
+
+	.finish-search__wrapper {
+		width: auto;
+		padding: 80px 30px 60px 30px;
+	}
+
+	.finish-search__title {
+		margin-bottom: 20px;
+	}
+
+	.finish-search__text {
+		br.br {
+			display: none;
+		}
+	}
+
+	.finish-search__list {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+	}
+
+	.finish-search__item {
+		width: 48%;
+	}
+}
+
+@media (min-width: @tablet-width) and (min-resolution: 144dpi), 
+       (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+	.finish-search {
+		background-image: url('../img/services/furniture-assembly/finish--tablet@2x.webp');
+	}
+
+	.finish-search--cubicles {
+		background-image: url('../img/services/cubicles-installation/finish--tablet@2x.webp');
+	}
+
+	.finish-search--moving {	
+		background-image: url('../img/services/moving-storage/finish--tablet@2x.webp');
+	}
+
+	.finish-search--modular {
+		background-image: url('../img/services/modular-furniture/finish--tablet@2x.webp');
+	}
+
+	.finish-search--blog {	
+		background-image: url('../img/blog/finish--tablet@2x.webp');
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.finish-search__wrapper {
+		width: 800px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.finish-search {		
+		background-image: url('../img/services/furniture-assembly/finish.webp');
+	}
+
+	.finish-search--cubicles {
+		background-image: url('../img/services/cubicles-installation/finish.webp');
+	}
+
+	.finish-search--moving {	
+		background-image: url('../img/services/moving-storage/finish.webp');
+	}
+
+	.finish-search--modular {
+		background-image: url('../img/services/modular-furniture/finish.webp');
+	}
+
+	.finish-search--blog {
+		background-image: url('../img/blog/finish.webp');
+	}
+
+	.finish-search__wrapper {
+		padding: 160px 30px 130px 30px;
+	}
+
+	.finish-search__title {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.finish-search__text {		
+		br {
+			display: none;
+		}
+	}
+
+	.finish-search__item {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: @desktop-full-width) and (min-resolution: 144dpi), 
+       (min-width: @desktop-full-width) and (min-resolution: 1.5dppx) {
+	.finish-search {
+		background-image: url('../img/services/furniture-assembly/finish@2x.webp');
+	}
+
+	.finish-search--cubicles {
+		background-image: url('../img/services/cubicles-installation/finish@2x.webp');
+	}
+
+	.finish-search--moving {	
+		background-image: url('../img/services/moving-storage/finish@2x.webp');
+	}
+
+	.finish-search--modular {
+		background-image: url('../img/services/modular-furniture/finish@2x.webp');
+	}
+
+	.finish-search--blog {	
+		background-image: url('../img/blog/finish@2x.webp');
+	}
+}

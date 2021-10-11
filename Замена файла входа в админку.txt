@@ -1,3 +1,6 @@
+598 786 214
+pfuvnps5
+
 1. Стандартный файл wp-login.php (страница входа) меняем, например, на jr-user.php... 
 И, соответсвенно, производим замены (всего 12) в самом файле (wp-login.php на jr-user.php)
 Точно такое же преобразование делаем в файле wp-includes/general-template.php (wp-login.php на jr-user.php)

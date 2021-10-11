@@ -1,0 +1,302 @@
+.page-header {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page-header__top {
+	display: none;
+	padding: 20px 0;
+	background-color: #292B2C;
+}
+
+.page-header__top-list {
+	display: flex;		
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+
+.page-header__top-item {
+	a {
+		position: relative;
+		font-size: 12px;
+		line-height: 17px;
+		font-weight: 400;
+		text-align: center;
+		text-decoration: none;
+		color: rgba(255,255,255,.85);
+		&::before {
+			content: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -4px;
+			height: 1px;
+			background-color: #1567BA;
+			transition: all .25s ease-out;
+		}
+		&:hover,
+		&:focus {
+			color: rgba(255,255,255,1);
+			&::before {
+				content: '';
+			}
+		}
+	}	
+}
+
+@media (min-width: @desktop-full-width) {
+	.page-header__top {
+		display: block;		
+	}
+}
+
+.page-header__wrapper {
+	height: 78px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0 15px;
+}
+
+/*--- LOGO ---*/
+.page-header__logo {	
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.page-header__box {
+	position: relative;	
+}
+
+@media (min-width: @mobile-width) {
+	.page-header__logo {
+		text-align: left;
+	}
+}
+
+@media (min-width: 600px) {
+
+}
+
+
+@media (min-width: @tablet-width) {
+	.page-header__wrapper {		
+		min-height: 89px;
+		padding: 0 30px;
+		padding-top: 15px;
+		align-items: flex-start;
+	}
+	.page-header__logo {
+		padding: 0;
+		padding-top: 5px;
+	}
+}
+
+@media (min-width: @desktop-width) {	
+
+}
+
+@media (min-width: @desktop-full-width) {
+	.page-header__wrapper {
+		align-items: center;
+		height: 96px;		
+		padding: 0;
+	}
+
+	.page-header__logo {
+		padding-top: 0;	
+	}
+}
+
+
+.page-header__menu {
+	margin-left: 48px;
+}
+
+/*--- MAIN MENU ---*/
+.page-header__nav-wrapper {	
+	padding-top: 10px;
+}
+
+.page-header__nav {	
+	width: 100%;
+	position: absolute;
+	top: 150%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease-out;
+	z-index: 10;
+}
+
+.page-header__nav--show {
+	top: 78px; 
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.page-header__toggle-nav {
+	position: absolute;	
+	top: 50%;
+	right: 15px;
+	margin-top: -10px;
+}
+
+@media (min-width: @mobile-width) {
+	.page-header__toggle-nav {
+		right: 30px;
+	}
+
+	.page-header__nav {
+		left: auto;
+		right: 0;
+	}
+}
+
+@media (min-width: 600px) {	
+
+	.page-header__nav {
+		width: 50%;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.page-header__menu {
+		order: 3;
+		margin-left: 95px;
+	}
+
+	.page-header__toggle-nav {
+		margin-top: -15px;
+	}
+
+	
+
+
+}
+
+@media (min-width: @desktop-full-width) {
+	.page-header__menu {
+		order: 2;
+		margin-left: 48px;
+	}
+
+	.page-header__toggle-nav {
+		display: none;
+	}
+
+	.page-header__nav {
+		width: auto;
+		position: static;
+		opacity: 1;
+		visibility: visible;
+	}
+	
+}
+
+
+
+/*--- CONTACTS ---*/
+.page-header__contacts {
+	display: none;
+	margin-left: auto;
+	text-align: right;
+}
+
+.page-header__phone {
+	// margin-bottom: 5px;	
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.page-header__contacts {
+		order: 2;
+		display: block;		
+		width: auto;
+		margin-left: auto;
+		padding: 0;
+	}
+
+	.page-header__phone {
+		margin-bottom: 5px;		
+		font-size: 28px;
+		line-height: 28px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	// .page-header__contacts {
+	// 	display: block;		
+	// 	width: auto;
+	// 	margin-left: auto;
+	// 	padding: 0;
+	// 	border-top: none;
+	// }
+
+	.page-header__contacts {
+		order: 3;
+	}
+
+	.page-header__phone {
+		// margin-bottom: 5px;
+		font-size: 28px;
+		line-height: 39px;
+	}
+}
+
+.request-quote {
+	position: absolute;
+	right: 15px;
+	bottom: -33px;
+	display: flex;
+	align-items: center;		
+	padding: 7px 5px 7px 7px;
+	text-decoration: none;
+	svg {
+		position: relative;
+		top: -2px;
+		width: 25px;
+		height: 23px;		
+		opacity: .8;
+	}
+	span {
+		display: none;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.request-quote {	
+		right: 30px;
+	}	
+}
+
+@media (min-width: 600px) {
+	.request-quote {
+	padding-right: 7px;		
+		svg {
+			margin-right: 5px;
+		}
+		span {
+			display: inline;
+		}
+	}	
+}
+
+@media (min-width: @tablet-width) {
+	.request-quote {
+		padding: 10px;
+		bottom: -50px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.request-quote {	
+		right: 0;
+	}	
+}
+
