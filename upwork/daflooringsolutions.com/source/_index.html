@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Разработка сайта!</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<style>
+		* {
+			box-sizing:  border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Exo 2';
+			background: repeating-linear-gradient(-60deg, rgba(235, 235, 235), rgba(235, 235, 235) 1px, rgba(250, 250, 250) 1px, rgba(250, 250, 250) 4px);
+		}
+
+		.logo {
+			max-width:  336px;
+			margin: 0 auto;
+			margin-bottom: 70px;
+			padding: 0;
+			text-decoration: none;
+			box-sizing: border-box;
+		}
+
+		.logo svg {
+			width: 100%;
+		}
+
+
+		@media (min-width: 480px) {
+			/*.logo {	
+				width: 100%;
+				display: flex;				
+			}
+			.logo svg {		
+				margin: 0;
+				margin-left: auto;
+				margin-right: 20px;
+				padding: 0;
+			}*/
+		}
+
+		.plug {
+			min-width: 320px;
+			margin: 0 auto;
+			padding: 100px 20px 0 20px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.plug__svg {
+			width: 100%;
+			max-width: 500px;
+			height: auto;
+			margin: 0 auto;
+			margin-bottom: 100px;
+		}
+		.plug__info {
+			margin: 0 30px;
+			margin-bottom: 10px;
+			padding: 0;
+			padding-bottom: 20px;
+			font-size: 28px;
+			line-height: 36px;
+			font-weight: 400;			
+			color: #AD8A18;
+			border-bottom: 1px dashed #AD8A18;
+		}
+		.plug__info svg {
+			display: block;
+			width: 100px;
+			height: auto;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		.plug__text-sorry {
+			display: block;
+			font-weight: 600;
+		}
+		.plug__hot {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			line-height: 25px;
+		}
+		.plug__hot span {
+			opacity: .3;
+		}
+		.plug__gear-one, .plug__gear-two {
+			-webkit-animation-name: rotationGearR;
+			   -moz-animation-name: rotationGearR;
+			     -o-animation-name: rotationGearR;
+					animation-name: rotationGearR;
+			-webkit-animation-duration: 3s;
+			   -moz-animation-duration: 3s;
+			     -o-animation-duration: 3s;
+					animation-duration: 3s;
+			-webkit-transform-origin: 50% 55.555555555555% 0;
+			   -moz-transform-origin: 50% 55.555555555555% 0;
+			     -o-transform-origin: 50% 55.555555555555% 0;
+					transform-origin: 50% 55.555555555555% 0;
+			-webkit-animation-iteration-count: infinite;
+			   -moz-animation-iteration-count: infinite;
+			     -o-animation-iteration-count: infinite;
+			        animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			   -moz-animation-timing-function: linear;
+			     -o-animation-timing-function: linear;
+			        animation-timing-function: linear;			
+		}
+		.plug__gear-two {
+		    -webkit-animation-name: rotationGearL;
+			   -moz-animation-name: rotationGearL;
+			     -o-animation-name: rotationGearL;
+					animation-name: rotationGearL;
+			-webkit-animation-duration: 7s;
+			   -moz-animation-duration: 7s;
+			     -o-animation-duration: 7s;
+					animation-duration: 7s;
+			-webkit-transform-origin: 20% 77.7777777777777777% 0;
+			   -moz-transform-origin: 20% 77.7777777777777777% 0;
+			     -o-transform-origin: 20% 77.7777777777777777% 0;
+					transform-origin: 20% 77.7777777777777777% 0;
+		}
+		@-webkit-keyframes rotationGearR {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(360deg);
+		    }		
+		}
+		@keyframes rotationGearR {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(360deg);
+		    }
+		}
+
+		@-webkit-keyframes rotationGearL {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(-360deg);
+		    }		
+		}
+		@keyframes rotationGearL {
+			0% {
+		        transform:rotate(0deg);
+		    }
+		    100% {
+		        transform:rotate(-360deg);
+		    }
+		}
+
+		@media (min-width: 480px) {
+		  .plug__hot br {
+		  	display: none;
+		  }
+		}
+
+		@media (min-width: 768px) {
+		  .plug__wrapper {
+		  	width: 65%;
+		  	margin: 0 auto;
+		  }
+		}
+		@media (min-width: 991px) {
+		  .plug__wrapper {
+		  	width: 480px;		  	
+		  }
+		}
+	</style>
+</head>
+<body>
+	<main class="plug">
+		<!-- <h1 class="visually-hidden"></h1> -->
+		<div class="logo">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.25 49.05" width="336" height="40">
+				<defs><style>.exp{fill:#d24a43;}.rail{fill:#201600;}</style></defs>
+				<path class="exp" d="M26.56,47.78H0V1.13H26.56V11.25H12.13v8H25.77V29.33H12.13v8.34H26.56Z"/><path class="exp" d="M79.09,47.78H64.46l-10-15.17L44,47.78H29.36L47.61,22.9,32.68,1.13H47.61l6.94,12.1L61.8,1.13H76.7L61.49,22.9Z"/><path class="exp" d="M119.49,16.49a17.45,17.45,0,0,1-3,10.45q-3.87,5.36-12.82,5.36H96.11V47.78H84V1.13h19.31q8.24,0,12.51,4.81A15.25,15.25,0,0,1,119.49,16.49Zm-12.58.14a5.69,5.69,0,0,0-1.52-4.17q-1.53-1.56-5.2-1.56H96.11V22.52h4c2.63,0,4.43-.57,5.42-1.71A6.17,6.17,0,0,0,106.91,16.63Z"/><path class="exp" d="M164.71,47.78H149.64L138.05,29.87V47.78H125.92V1.13h18.87q8.27,0,12.23,5a14.57,14.57,0,0,1,3.21,9.4q0,6.19-3.69,9.88a12.86,12.86,0,0,1-6.49,3.28ZM147.66,16.15A5.51,5.51,0,0,0,145.84,12q-1.72-1.61-5.52-1.6h-2.27V22h2.27c2.56,0,4.4-.54,5.52-1.6A5.64,5.64,0,0,0,147.66,16.15Z"/><path class="exp" d="M196.36,47.78H169.8V1.13h26.56V11.25H181.94v8h13.64V29.33H181.94v8.34h14.42Z"/><path class="exp" d="M236.39,32.35q0,11.84-10.39,15.43a23.37,23.37,0,0,1-7.8,1.27A27.54,27.54,0,0,1,202,43.75L207.16,34q5.49,5,10.72,5a7.08,7.08,0,0,0,4-1.1,4,4,0,0,0,1.92-3.53,4,4,0,0,0-2.12-3.45,20.71,20.71,0,0,0-5.31-2.1c-3-.89-4.91-1.51-5.68-1.85a12.82,12.82,0,0,1-3.15-1.84q-3.74-3.07-3.74-9.29A15.39,15.39,0,0,1,207.68,5q4.5-5,12-5a31.57,31.57,0,0,1,14.8,3.79l-4.86,9.44a12.92,12.92,0,0,0-8-3.11,6.32,6.32,0,0,0-3.49,1,3.45,3.45,0,0,0-1.75,3c0,1.24.77,2.3,2.3,3.19a38.36,38.36,0,0,0,6.16,2.13q6.43,1.88,9.17,5.34A11.67,11.67,0,0,1,236.39,32.35Z"/><path class="exp" d="M276.38,32.35q0,11.84-10.39,15.43a23.37,23.37,0,0,1-7.8,1.27A27.54,27.54,0,0,1,242,43.75L247.15,34q5.49,5,10.72,5a7.08,7.08,0,0,0,4-1.1,4,4,0,0,0,1.92-3.53,4,4,0,0,0-2.12-3.45,20.71,20.71,0,0,0-5.31-2.1c-3-.89-4.91-1.51-5.68-1.85a12.82,12.82,0,0,1-3.15-1.84q-3.73-3.07-3.74-9.29A15.39,15.39,0,0,1,247.67,5q4.5-5,12-5a31.57,31.57,0,0,1,14.8,3.79l-4.86,9.44a12.92,12.92,0,0,0-8-3.11,6.33,6.33,0,0,0-3.5,1,3.45,3.45,0,0,0-1.75,3c0,1.24.77,2.3,2.3,3.19a38.77,38.77,0,0,0,6.16,2.13q6.44,1.88,9.17,5.34A11.67,11.67,0,0,1,276.38,32.35Z"/><path class="rail" d="M322.83,47.78H307.75L296.17,29.87V47.78H284V1.13H302.9q8.27,0,12.24,5a14.57,14.57,0,0,1,3.21,9.4q0,6.19-3.69,9.88a12.89,12.89,0,0,1-6.5,3.28ZM305.77,16.15A5.48,5.48,0,0,0,304,12q-1.71-1.61-5.52-1.6h-2.26V22h2.26c2.56,0,4.4-.54,5.52-1.6A5.61,5.61,0,0,0,305.77,16.15Z"/><path class="rail" d="M372.25,47.78H359.3l-3-8.13H339.54l-3.21,8.13H323.51L341.46,1.13h13.22ZM353,30.42l-5-14.87-5.09,14.87Z"/><path class="rail" d="M389.75,47.78H377.62V1.13h12.13Z"/><path class="exp" d="M377.62,12.59V1.13h12.13V6.86Z"/><path class="rail" d="M426.25,47.78H399.56V1.13h12.13V37.67h14.56Z"/>
+			</svg>
+		</div>
+
+		<div class="plug__wrapper">
+			<p class="plug__info">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 72" width="160" height="144" fill="#AD8A18">
+					<path d="M79,57.2L46.4,3.3c-2.6-4.4-9-4.4-11.6,0L15.5,35.2l5.6-0.4L38.8,5.7c0.6-1,1.9-1.4,3-0.7c0.3,0.2,0.6,0.4,0.7,0.7 l32.6,53.9c0.6,1,0.3,2.4-0.7,3c-0.3,0.2-0.7,0.3-1.1,0.3H35.5l-2.4,4.6h40.1C78.5,67.5,81.7,61.8,79,57.2z"/>
+					<path d="M40.3,32l-2.1,0.2l-0.3,1.2c-0.1,0.5-0.4,0.8-0.8,1.1l0,0c-0.4,0.2-0.9,0.3-1.3,0.1l-1.1-0.4l-1.4,1.7l0.6,1
+						c0.2,0.4,0.3,0.9,0.2,1.3l0,0c-0.1,0.4-0.5,0.8-0.9,1L32,39.7l0.2,2.1l1.2,0.3c0.5,0.1,0.8,0.4,1.1,0.8l0,0c0.2,0.4,0.3,0.9,0.1,1.3
+						l-0.4,1.1l1.7,1.4l1-0.6c0.4-0.2,0.9-0.3,1.3-0.2l0,0c0.4,0.1,0.8,0.5,1,0.9l0.5,1.1l2.1-0.2l0.3-1.2c0.1-0.5,0.4-0.8,0.8-1.1l0,0
+						c0.4-0.2,0.9-0.3,1.3-0.1l1.1,0.4l1.4-1.7l-0.6-1c-0.2-0.4-0.3-0.9-0.2-1.3l0,0c0.1-0.5,0.4-0.8,0.9-1l1.1-0.5l-0.2-2.1l-1.2-0.3
+						c-0.5-0.1-0.8-0.4-1.1-0.8l0,0c-0.2-0.4-0.3-0.9-0.1-1.3l0.4-1.2l-1.7-1.4l-1,0.6c-0.4,0.2-0.9,0.3-1.3,0.2l0,0
+						c-0.4-0.1-0.8-0.5-1-0.9L40.3,32z M42.9,39.7c0.2,1.6-1,3-2.6,3.2c-1.6,0.2-3-1-3.2-2.6c-0.2-1.6,1-3,2.6-3.2
+						C41.3,36.9,42.7,38.1,42.9,39.7L42.9,39.7z" class="plug__gear-one"/>
+					<path d="M20.6,40.7L16.4,40l-1.2,2.1c-0.4,0.8-1.2,1.4-2.1,1.6l0,0c-0.9,0.2-1.9,0-2.6-0.5l-2-1.4L5,44.4l0.7,2.3
+						c0.3,0.9,0.1,1.9-0.4,2.7l0,0c-0.5,0.8-1.3,1.3-2.2,1.5l-2.4,0.4L0,55.6l2.1,1.2C3,57.2,3.6,58,3.8,58.9l0,0c0.2,0.9,0,1.9-0.5,2.6
+						l-1.4,2L4.4,67l2.3-0.7c0.9-0.3,1.9-0.1,2.7,0.4l0,0c0.8,0.5,1.3,1.3,1.5,2.2l0.4,2.4l4.2,0.7l1.2-2.1c0.4-0.8,1.2-1.4,2.1-1.6l0,0
+						c0.9-0.2,1.9,0,2.6,0.5l2,1.4l3.5-2.5l-0.7-2.3c-0.3-0.9-0.1-1.9,0.4-2.7l0,0c0.5-0.8,1.3-1.3,2.2-1.5l2.4-0.4l0.7-4.2l-2.1-1.2
+						c-0.8-0.4-1.4-1.2-1.6-2.1l0,0c-0.2-0.9,0-1.9,0.5-2.6l1.4-2L27.6,45l-2.3,0.7c-0.9,0.3-1.9,0.1-2.7-0.4l0,0
+						c-0.8-0.5-1.3-1.3-1.5-2.2L20.6,40.7z M21.8,56.9c-0.5,3.2-3.5,5.3-6.7,4.8c-3.2-0.5-5.3-3.5-4.8-6.7c0.5-3.2,3.5-5.3,6.7-4.8
+						C20.1,50.8,22.3,53.7,21.8,56.9C21.8,56.9,21.8,56.9,21.8,56.9z" class="plug__gear-two"/>
+					</svg>
+				<span class="plug__text"><span class="plug__text-sorry">Извините!</span> В данный момент идет разработка сайта!</span>
+			</p>
+			<p class="plug__hot">Телефон для справок:<br> <b><span>+*(***)</span> **-**-**</b></p>
+		</div>
+		
+	</main>
+	
+</body>
+</html>

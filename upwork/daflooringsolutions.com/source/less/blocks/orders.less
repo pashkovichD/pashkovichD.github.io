@@ -1,0 +1,167 @@
+.orders {
+	min-height: 330px;
+	margin: 50px auto;
+	color: #777777;
+	// padding: 20px;
+	// text-align: center;
+	// color: #ad8a18;	
+	// border: 1px dashed #ad8a18;
+	// border-radius: 3px;
+}
+
+.orders__title {
+	padding: 0 30px;
+}
+.orders__table {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.orders__thead {
+	display: none;
+	background-color: #3d4647;
+}
+.orders__thead th {
+	padding: 4px 10px;
+	font-weight: 400;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.orders__thead th:first-child {
+	border-left: none;
+}
+.orders__thead th:last-child {
+	border-right: none;
+}
+.orders__tbody {
+	text-align: center;
+}
+.orders__tbody tr {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	background-color: #f5f5f5;
+	&:hover {
+		.orders__links {
+			display: block;
+		}
+	}
+}
+.orders__tbody td {
+	display: block;
+	padding: 5px 10px;
+	border-bottom: 1px dotted #dddddd;
+}
+.orders__tbody td.orders__name {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #3d4647;
+	background-color: #eaeaea;
+	border-bottom: 1px solid #3d4647;
+}
+.orders__date-span {
+	display: block;
+	margin: 0 auto;
+	font-size: 14px;
+	border-bottom: 1px solid #cccccc;
+}
+.orders__links {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: none;
+	margin-bottom: 0;
+}
+.orders__link {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 23px;
+	width: 23px;
+	text-decoration: none;	
+	background: #23282d;
+	border-radius: 4px;
+	box-sizing: content-box;
+	svg {
+		width: 10px;
+		height: 10px;		
+		fill: #ffffff;
+	}
+}
+.orders__link--delete {
+	&:hover {
+		svg {
+			fill: #d54e21;			
+		}
+	}
+}
+
+    
+@media (min-width: 600px) {
+	.orders__table {
+		width: 90%;
+		border: 1px solid #3d4647;
+	}
+	.orders__thead {
+		display: table-header-group;
+	}
+	.orders__thead th {
+		padding: 8px 10px;
+	}
+	.orders__tbody {
+		text-align: center;
+	}
+	.orders__tbody tr {
+		display: table-row;
+		margin-bottom: 0;
+		background-color: transparent;
+		border-bottom: 1px dashed #cccccc;    
+		transition: all 0.2s ease-out;
+	}
+	.orders__tbody tr:hover {
+		color: #000000;
+		background-color: #eeeeee;		
+	}
+	.orders__tbody td {
+		display: table-cell;
+		border-bottom: none;
+	}
+	.orders__tbody td.orders__name {
+		width: 40%;
+		font-weight: 400;    
+		text-transform: none;
+		color: #000000;
+		border-bottom: none;
+		background-color: transparent;
+		transition: all 0.2s ease-out;
+	}
+	.orders__tbody td.orders__date {
+		width: 25%;
+	}
+	.orders__links {
+	
+		top: 50%;
+		right: 10px;
+		margin-top: -12px;
+	}
+}
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	.orders__top {
+		height: 100px;
+	}
+}

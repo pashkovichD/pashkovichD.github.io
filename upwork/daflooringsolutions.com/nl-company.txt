@@ -1,0 +1,24 @@
+nlc_db
+nlc_termi
+NfBvnGAVkd0TouQ7
+
+wp-admin
+nlc_newc
+pAMQfOR!LsSdZOtJ3K
+
+
+/*--------------- test на zyabki.by ------------------*/
+http://nl-company.zyabki.by
+zyabkiby_nlcdb
+zyabkiby_nlc-termi
+NfBvnGAVkd0TouQ7
+
+http://nl-company.zyabki.by/wp-admin
+wp-admin
+nlc_newc
+pAMQfOR!LsSdZOtJ3K
+
+
+/*--------------- contact data ------------------*/
+nl-compamy@yandex.by
+qG$MFZ4iGKvwkNUS3iGkL6nA

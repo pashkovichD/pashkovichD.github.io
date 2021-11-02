@@ -1,0 +1,54 @@
+.phone {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	padding: 0 5px;
+	font-family: @ff-f;
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;	
+	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	svg {
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+		fill: @color-red;
+		// opacity: 0.3;
+	}
+	span {
+		margin-right: 5px;
+		font-weight: 400;
+		opacity: 0.5;
+	}
+	&:focus {
+		-webkit-box-shadow: 0 0 0 2px #4c565d, 0 0 0 4px #ffcc00;
+      			box-shadow: 0 0 0 2px #4c565d, 0 0 0 4px #ffcc00;
+	}
+}
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+	.phone {
+		margin-right: 0;
+		font-size: 23px;
+		color: #000000;
+		text-shadow: none;
+		svg {
+			display: none;
+		}
+		&:focus {
+		-webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #ffcc00;
+      			box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #ffcc00;
+	}
+	}
+}
+
+
