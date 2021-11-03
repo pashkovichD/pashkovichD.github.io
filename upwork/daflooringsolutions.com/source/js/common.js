@@ -17,7 +17,11 @@ jQuery(document).ready(function($) {
 
 	
 
-	var h = $('.page-header').height();	
+	// var h = $('.page-header').css('height');
+	// var h = $('.page-header').outerHeight();
+	var h = $('.page-header').height();
+	// var h = $('.page-header').innerHeight();
+	// alert(h);
 	
 	$('.page-main').css('paddingTop', h + 'px');
 });
