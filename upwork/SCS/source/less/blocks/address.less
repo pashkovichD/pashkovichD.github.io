@@ -18,6 +18,10 @@
 	br {
 		display: none;
 	}
+	&:hover,	
+	&:focus {
+		color: #e76e1a;
+	}
 }
 
 @media (min-width: @mobile-width) {
@@ -35,6 +39,12 @@
 }
 
 @media (min-width: 600px) {
+	.address {
+		br {
+			display: inline;
+		}
+	}
+	
 	// .address {
 	// 	flex-direction: column;
 	// 	width: 45%;
@@ -55,11 +65,11 @@
 }
 
 @media (min-width: @tablet-width) {
-	.address {
-		br {
-			display: inline;
-		}
-	}
+	// .address {
+	// 	br {
+	// 		display: inline;
+	// 	}
+	// }
 
 	// .address__item {
 	// 	margin-right: 30px;	

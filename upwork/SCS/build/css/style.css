@@ -213,6 +213,11 @@ ul {
     padding: 0 30px;
   }
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 .address {
   position: relative;
   margin-bottom: 10px;
@@ -233,14 +238,18 @@ ul {
 .address br {
   display: none;
 }
+.address:hover,
+.address:focus {
+  color: #e76e1a;
+}
 @media (min-width: 480px) {
 }
 @media (min-width: 600px) {
-}
-@media (min-width: 768px) {
   .address br {
     display: inline;
   }
+}
+@media (min-width: 768px) {
 }
 @media (min-width: 991px) {
 }
@@ -313,6 +322,19 @@ ul {
 .menu__item--active a:hover,
 .menu__item--active a:focus {
   background-color: rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 991px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .menu__item a {
+    padding: 10px 15px;
+  }
 }
 .hamburger {
   margin: 0;
@@ -520,13 +542,15 @@ ul {
   }
   .page-header__box {
     top: 152px;
-    padding-left: 150px;
-    padding-right: 150px;
   }
   .page-header__nav {
+    width: 75%;
+    margin: 0 auto;
     margin-bottom: 35px;
   }
   .page-header__contacts {
+    width: 475px;
+    margin: 0 auto;
     padding-left: 30px;
     padding-right: 0;
   }
@@ -588,6 +612,54 @@ ul {
   }
 }
 @media (min-width: 991px) {
+  .page-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page-header__logo {
+    width: 170px;
+    height: 124px;
+  }
+  .page-header__menu {
+    position: static;
+  }
+  .page-header__toggle-nav {
+    display: none;
+  }
+  .page-header__box {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    top: auto;
+    background-color: transparent;
+  }
+  .page-header__nav {
+    width: auto;
+    margin: 0;
+    margin-top: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .page-header__contacts {
+    width: auto;
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .page-header__address {
+    display: none;
+  }
 }
 .services {
   padding: 60px 30px;
