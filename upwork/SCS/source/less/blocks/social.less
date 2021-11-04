@@ -1,0 +1,53 @@
+.social {
+	display: flex;
+}
+
+.social__item {
+	margin-right: 10px;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		
+		border-radius: 6px;
+		background: linear-gradient(157.07deg, #FE8C27 -17.61%, #F26210 87.18%);		
+		line-height: 0;		
+		transition: all 2s ease;
+		svg {
+			fill: white;
+		}
+		
+		&:hover,
+		&:focus {
+			background: linear-gradient(157.07deg, #FFB472 -17.61%, #F26210 87.18%);			
+		}
+		&:active {
+			background: #e76e1a;
+		}
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	
+	
+	
+}
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
