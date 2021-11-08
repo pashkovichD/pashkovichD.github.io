@@ -16,6 +16,10 @@
 	span {
 		opacity: 0.8;
 	}
+	&:hover,	
+	&:focus {
+		color: #000000;
+	}
 }
 
 @media (min-width: @mobile-width) {
@@ -27,7 +31,11 @@
 }
 
 @media (min-width: @desktop-width) {
-	
+	.email {
+		span {
+			opacity: 1;
+		}
+	}
 }
 
 

@@ -9,6 +9,13 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
+	<!-- slick.js -->	
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+
 	<!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script> -->
 	<link rel="stylesheet" href="css/style.min.css">
@@ -42,11 +49,11 @@
 						<h2 class="visually-hidden">Main menu</h2>
 						<ul class="page-header__nav-list menu__list">
 							<li class="menu__item menu__item--active"><a href="#">Home</a></li>
-							<li class="menu__item"><a href="#">About Us</a></li>
-							<li class="menu__item"><a href="#">Stay clean & win clean</a></li>
-							<li class="menu__item"><a href="#">Contact Us</a></li>
-							<li class="menu__item"><a href="#">SCS cycling</a></li>
-							<li class="menu__item"><a href="#">Join Us - take the pledge</a></li>
+							<li class="menu__item"><a href="about-us.html">About Us</a></li>
+							<li class="menu__item"><a href="stay-clean-and-win-clean.html">Stay clean & win clean</a></li>
+							<li class="menu__item"><a href="contact-us.html">Contact Us</a></li>
+							<li class="menu__item"><a href="scs-cycling.html">SCS cycling</a></li>
+							<li class="menu__item"><a href="join-us-take-the-pledge.html">Join Us - take the pledge</a></li>
 						</ul>
 					</nav>
 
@@ -66,151 +73,226 @@
 
 		</div>
 
-		<!-- <div class="page-header__menu">
-			<div class="page-header__menu-wrapper container">
-				<button class="page-header__toggle-nav hamburger" type="button">
-					<span class="visually-hidden">Открыть меню</span>
-					<span class="hamburger__line"></span>
-				</button>
-				
-				<nav class="page-header__nav menu">
-					<h2 class="visually-hidden">Главное меню</h2>
-					<ul class="page-header__nav-list menu__list">
-						<li class="menu__item menu__item--active"><a href="#">О нас</a></li>
-						<li class="menu__item"><a href="#services">Услуги</a></li>
-						<li class="menu__item"><a href="#directions">Направления перевозок</a></li>
-						<li class="menu__item"><a href="#peculiarities">Особенности</a></li>
-						<li class="menu__item"><a href="#contacts">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div> -->
 	</header>
 
 	<main class="page-main">		
-		<h2 class="visually-hidden"></h2>
+		<h2 class="visually-hidden">SCS - Support Clean Sport - Home</h2>
 		
-		<!-- <section class="banner">			
-			<div class="banner__wrapper container">				
-				<div class="banner__title-wrapper">					
-					<h2 class="banner__title">Компания <br>«Экспресс Рейл Транс»</h2>
-					<p class="banner__slogan">предлагает оптимальные маршруты железнодорожных перевозок и гарантирует лучшие сроки доставки</p>
-					<svg><use xlink:href="#icon-corner"></use></svg>
+		<section class="promo">
+			<div class="promo__wrapper container">
+				<h2 class="promo__title">Clean sport <br>is real sport</h2>
+				<a class="promo__button button button--green" href="join-us-take-the-pledge.html">Join Us - take the pledge</a>
+				<div class="promo__img">
+					<picture>
+						<source media="(min-width: 1200px)" type="image/webp" srcset="img/clean-sport-la.webp 1x, img/clean-sport-la@2x.webp 2x">
+						<source media="(min-width: 768px)" type="image/webp" srcset="img/clean-sport-la--tablet.webp 1x, img/clean-sport-la--tablet@2x.webp 2x">
+						<img type="image/webp" src="img/clean-sport-la--mobile.webp" srcset="img/clean-sport-la--mobile@2x.webp 2x" alt="Clean sport is real sport">
+					</picture>	
+					<svg class="promo__circle" width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<filter id="glare" x="0" y="0" width="192" height="192" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+								<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+								<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_25:18"/>
+							</filter>
+							<linearGradient id="gr-circle" x1="25.1351" y1="-20.2595" x2="106.476" y2="172" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FE8C27"/>
+								<stop offset="1" stop-color="#F26210"/>
+							</linearGradient>
+						</defs>
+						<g filter="url(#glare)">
+							<circle cx="96" cy="96" r="76" fill="url(#gr-circle)"/>
+						</g>	
+					</svg>
+				</div>
+
+				<div class="consortium">
+					<div class="consortium__title">Our Consortium:</div>
+					<ul class="consortium__list">
+						<li class="consortium__item">
+							<picture>
+								<img type="image/webp" src="img/consortium/anti-doping-sciences-institute.webp" srcset="img/consortium/anti-doping-sciences-institute@2x.webp 2x" alt="Anti-Doping Sciences Institute" class="consortium__img">
+							</picture>
+						</li>
+						<li class="consortium__item">
+							<picture>
+								<img type="image/webp" src="img/consortium/caltin-consortium.webp" srcset="img/consortium/caltin-consortium@2x.webp 2x" alt="The Caltin Consortium" class="consortium__img">
+							</picture>
+						</li>
+						<li class="consortium__item">
+							<picture>
+								<img type="image/webp" src="img/consortium/anti-doping-researsh-institute.webp" srcset="img/consortium/anti-doping-researsh-institute@2x.webp 2x" alt="Anti-Doping Researsh Institute" class="consortium__img">
+							</picture>
+						</li>
+						<li class="consortium__item">
+							<picture>
+								<img type="image/webp" src="img/consortium/bscg-los-angeles.webp" srcset="img/consortium/bscg-los-angeles@2x.webp 2x" alt="BSCG" class="consortium__img">
+							</picture>
+						</li>							
+					</ul>
 				</div>				
 			</div>
-		</section> -->
+		</section>
 
-		<!-- <section id="services" class="services container">
-			<h2 class="services__title">Услуги<svg fill="#d24a43" width="150" height="62"><use xlink:href="#icon-pointes"></use></svg></h2>
-			<p class="services__text"><strong>Железнодорожные перевозки</strong> – один из самых востребованных способов доставки грузов, иногда - единственно возможный.</p>
-			<p class="services__text">Развитая железнодорожная сеть позволяет выполнять перевозки почти всех видов грузов круглый год.</p>
-		</section> -->
-
-		<!-- <section id="directions" class="directions">
-			<div class="directions__wrapper container">
-				<h2 class="directions__title">Направления <span>перевозок</span><svg fill="#d24a43" width="150" height="62"><use xlink:href="#icon-pointes"></use></svg></h2>						
-				<div class="directions__tabs tabs">
-					<div class="tabs__tabs-wrapper">					
-						<p>
-							<input id="tab1" type="radio" name="tabs" class="directions__input tabs__input tabs__input--active" checked>
-							<label for="tab1" title="по России" class="directions__label tabs__label">по России</label>
-						</p>
-						<p>
-							<input id="tab2" type="radio" name="tabs" class="directions__input tabs__input">
-							<label for="tab2" title="Китай-Рссия" class="directions__label tabs__label">Китай - Россия</label>
-						</p>						
-					</div>
-
-					<div class="tabs__section-wrapper">
-						<section id="tabs__content1" class="directions__section tabs__section">
-							<h2 class="visually-hidden">по России</h2>
-							<div class="tabs__wrapper">
-								<picture>
-									<img src="img/map-ru.webp" srcset="img/map-ru@2x.webp 2x" alt="Маршруты по России" class="directions__map-ru">
-								</picture>
-							</div>
-						</section>
-
-						<section id="tabs__content2" class="directions__section tabs__section">
-							<h2 class="visually-hidden">Китай - России</h2>
-							<div class="tabs__wrapper">
-								<picture>
-									<img src="img/map-ru-ch.webp" srcset="img/map-ru-ch@2x.webp 2x" alt="Маршрут Китай - Россия" class="directions__map-ru-ch">
-								</picture>
-							</div>
-						</section>						
-					</div>
-					
+		<section class="about-us">
+			<div class="about-us__wrapper container">
+				<div class="about-us__img">
+					<picture>
+						<img type="image/webp" src="img/about-us/about-us-football.webp" srcset="img/about-us/about-us-football@2x.webp 2x" alt="About Us Football" class="about-us__img-1">
+					</picture>
+					<picture>
+						<img type="image/webp" src="img/about-us/about-us-medal.webp" srcset="img/about-us/about-us-medal@2x.webp 2x" alt="About Us Medal" class="about-us__img-2">
+					</picture>
+					<p class="about-us__label"><span class="first">SCS</span><span>Proactive Grassroots Movement</span></p>
 				</div>
+				<div class="about-us__wrapper-text">
+					<h2 class="about-us__title">About Us</h2>
+					<p class="about-us__text">SUPPORT CLEAN SPORT is a proactive grassroots movement to build support for athletes at all levels to compete without using performance-enhancing drugs. SCS was inspired by the work of the nonprofit Anti-Doping Research (ADR) in conjunction with the supplement certification provider Banned Substances Control Group (BSCG), both led by world-renowned sports drug-testing pioneer Dr. Don Catlin and his son, industry executive Oliver Catlin. For more than three decades, the Catlins have been at the forefront of the fight for clean sport via drug testing and scientific research.</p>
+					<p class="about-us__text">SCS changes the paradigm giving all people the ability to take part in a grassroots event and e-community based effort for fostering Clean Sport. We envision a world where athletes, coaches, nutrition profe ssionals, and valued sponsors can work together to create a new movement to promote and endorse Clean Sport.</p>
+				</div>			
 			</div>
-		</section> -->
-		
+		</section>
 
-		<!-- <section id="peculiarities" class="peculiarities">
-			<div class="peculiarities__wrapper container">
-				<h2 class="visually-hidden">Особенности нашей компании</h2>
-				<ul class="peculiarities__list">
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-offices"></use></svg>
-						<p>Два филиала</p>
-					</li>
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-container"></use></svg>
-						<p>Собственные контейнеры</p>
-					</li>
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-worker"></use></svg>
-						<p>Квалифицированные сотрудники</p>
-					</li>
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-insure"></use></svg>
-						<p>Ответственность застрахована</p>
-					</li>
-				</ul>
-			</div>
-		</section> -->
-
-		<!-- <section id="contacts" class="contacts">
-			<div class="contacts__wrapper container">
-				<h2 class="visually-hidden">Контактные данные офисов компании</h2>
-				<picture>
-					<source type="image/webp" srcset="img/contacts-img.webp 1x, img/contacts-img@2x.webp 2x">
-					<img src="img/contacts-img.jpg" srcset="img/contacts-img@2x.jpg 2x" alt="Контакты компании" class="contacts__img">
+		<section class="mission">
+			<div class="mission__wrapper container">
+				<div class="mission__wrapper-text">
+					<h2 class="mission__title">Our Mission</h2>
+					<p class="mission__text mission__text--last">SCS aims to build a community environment where athletes, coaches, doctors, the nutrition industry, drug testing professionals, brand partners and the public can come together to demonstrate, teach and foster a culture of clean sport that enables Real Athletes to win by dedication to proper training, nutrition and hard work.</p>
+				</div>
+				<picture class="mission__img">
+					<img type="image/webp" src="img/our-mission/our-mission-bg.webp" srcset="img/our-mission/our-mission-bg@2x.webp 2x" alt="Our mission">
 				</picture>
-				<ul class="contacts__list">
-					<li class="contacts__item">
-						<p class="contacts__name">Санкт-Петербург</p>
-						<p class="contacts__address"><span>г. Санкт-Петербург,</span> пр. Стачек, 47</p>
-						<a class="contacts__phone phone" href="tel:88001017814"><svg fill="#f8ba18" width="25" height="25"><use xlink:href="#icon-tel"></use></svg><span>8(800)</span> 101-78-14</a>
+			</div>
+		</section>
+
+		<section class="goals">
+			<div class="goals__wrapper container">				
+				<h2 class="goals__title">Our Goals</h2>	
+				<ul class="goals__list">
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Stay Clean & Win Clean</span>Provide real solutions for athletes so they can Stay Clean & Win Clean</p>
 					</li>
-					<li class="contacts__item contacts__item--dark">
-						<p class="contacts__name">Владивосток</p>
-						<p class="contacts__address"><span>г. Владивосток,</span> ул. Батарейная, 3а</p>
-						<a class="contacts__phone phone" href="tel:88001017814"><svg fill="#f8ba18" width="25" height="25"><use xlink:href="#icon-tel"></use></svg><span>8(800)</span> 101-78-14</a>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Grassroots community of world-class experts</span>Develop a grassroots community of world-class experts to maintain and build clean athletes</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>New paradigm for the future of clean sport</span>Create a New paradigm for the future of clean sport, involve the athletes don’t isolate them</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Build trust</span>Listen to athletes’ concerns and help them find solutions, build trust</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Draw a bright line</span>Draw a bright line between REAL ATHLETES and those who chose an easier path</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Real solutions for athletes</span>Provide real solutions for athletes so they can Stay Clean & Win Clean</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Next generation of athletes</span>Focus on the next generation of athletes and give them ways to celebrate being clean</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Support of Clean Sport</span>Bring athletes, companies, and individuals together in Support of Clean Sport</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Bright line</span>Draw a bright line between clean and dirty athletes</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Level the playing field</span>Level the playing field through grassroots efforts</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Personal achievement</span>Demonstrate that personal achievement and dedication can beat drugs</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>Victory to be Celebrated</span>Allow Victory to be Celebrated, Not Suspected!</p>
+					</li>
+					<li class="goals__item">
+						<svg width="20" height="21"><use xlink:href="#icon-shield-check"></use></svg>
+						<p><span>New technology and approaches</span>Develop resources and generate new technology and approaches to keep sport clean</p>
 					</li>
 				</ul>
-				<a class="contacts__email email" href="mailto:sales@expressrail.ru"><svg fill="#d24a43" width="23" height="17"><use xlink:href="#icon-email"></use></svg><span>sales@expressrail.ru</span></a>
+				
+				
+				<!-- <picture class="mission__img">
+					<img type="image/webp" src="img/our-mission/our-mission-bg.webp" srcset="img/our-mission/our-mission-bg@2x.webp 2x" alt="Our mission">
+				</picture> -->
 			</div>
-		</section> -->
+		</section>
 
 	</main>
 
-	<!-- <footer class="page-footer">
-		<div class="page-footer__wrapper container">
-			<a class="page-footer__logo" href="index.html">
-				<svg width="300" height="65">
-					<use xlink:href="#icon-logo"></use>
-				</svg>
-			</a>			
-			<div class="page-footer__copyright">
-				<p>&copy; 2021 Компания «Экспресс Рейл Транс»</p>
-				<p>Все права защищены.</p>
-			</div>
-		</div>
-	</footer> -->
+	<footer class="page-footer">
+		<div class="page-footer__wrapper container">			
+			<section class="page-footer__tools footer-menu">
+				<h2 class="footer-menu__title">The Tools</h2>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item"><a href="#">Stay CleanWin</a></li>
+					<li class="footer-menu__item"><a href="#">CleanReal</a></li>
+					<li class="footer-menu__item"><a href="#">Questions and Answers</a></li>
+				</ul>
+			</section>
+			<section class="page-footer__purpose footer-menu">
+				<h2 class="footer-menu__title">Our purpose</h2>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item"><a href="#">Who We Are</a></li>
+					<li class="footer-menu__item"><a href="#">Our Goals</a></li>
+					<li class="footer-menu__item"><a href="#">Our Purpose</a></li>
+				</ul>
+			</section>
+			<section class="page-footer__page footer-menu">
+				<h2 class="footer-menu__title">Our page</h2>
+				<ul class="footer-menu__list">
+					<li class="footer-menu__item"><a href="index.html">Home</a></li>
+					<li class="footer-menu__item"><a href="contact-us.html">Contact Us</a></li>
+					<li class="footer-menu__item"><a href="blog.html">Blog</a></li>
+					<li class="footer-menu__item"><a href="join-us-take-the-pledge.html">Join Us – Take the Pledge</a></li>
+				</ul>
+			</section>
+			<section class="page-footer__contact footer-menu">
+				<h2 class="footer-menu__title">Contact us</h2>
+				<div class="page-footer__address address"><svg fill="#5acf28" width="21" height="19"><use xlink:href="#icon-address"></use></svg><span>11301 W Olympic Blvd #685, <br>Los Angeles, CA 90064, USA</span></div>	
+				<div class="page-footer__contact-box">
+					<a class="page-footer__phone phone" href="tel:8009206605"><svg fill="#5acf28" width="21" height="19"><use xlink:href="#icon-mobile"></use></svg><span>800 - 920 - 6605</span></a>
+					<a class="page-footer__email email" href="mailto:info@supportcleansport.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span>info@supportcleansport.com</span></a>
+				</div>
+				<div class="page-footer__social">
+					<p class="page-footer__social-title">Follow Us:</p>
+					<ul class="page-footer__social-list social">
+						<li class="social__item"><a href="#" target="_blank"><svg width="8" height="15"><use xlink:href="#icon-facebook"></use></svg><span class="visually-hidden">Facebook</span></a></li>
+						<li class="social__item"><a href="" target="_blank"><svg width="17" height="14"><use xlink:href="#icon-twitter"></use></svg><span class="visually-hidden">Twitter</span></a></li>
+						<li class="social__item"><a href="" target="_blank"><svg width="16" height="16"><use xlink:href="#icon-insta"></use></svg><span class="visually-hidden">Instagram</span></a></li>				
+					</ul>
+				</div>
 
+				<div class="page-footer__donate donate">
+					<picture>
+						<img type="image/webp" src="img/donate.webp" srcset="img/donate@2x.webp 2x" alt="Donate" class="donate__img">
+					</picture>
+					<a class="donate__button" href="#" rel="noopener nofollow" target="_blank">Donate</a>
+				</div>
+			</section>			
+		</div>
+		<div class="page-footer__copyright container">
+			<p>Copyright 2021 All Rights Reserved | Support Clean Sport campaign brought to you by Anti-Doping Research, Inc. ©2021 a 501(c)(3) public charity under federal tax guidelines.Los Angeles, California Contact US: TOLL FREE TEL/FAX: 800.920.6605 Privacy Policy | Legal</p>
+		</div>
+	</footer>
+
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/my-slick.min.js"></script>
 
 	<script src="js/hamburger.min.js"></script>
+
 	<!-- <script src="js/form.min.js"></script> -->
 	<!-- <script src="js/form_submit.min.js"></script> -->
 	<!-- <script src="js/tabs.min.js"></script> -->

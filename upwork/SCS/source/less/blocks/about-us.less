@@ -1,5 +1,76 @@
 .about-us {
+	padding-bottom: 60px;
+}
 
+.about-us__img {	
+	position: relative;
+	margin-bottom: 35px;
+	picture {
+		display: block;
+	}
+
+}
+
+.about-us__img-1 {
+	position: absolute;
+	top: 37px;
+	left: -15px;
+	width: 197px;
+	height: 215px;
+	border-radius: 10px;
+	filter: drop-shadow(0px 20px 40px rgba(12, 24, 33, 0.1));
+}
+
+.about-us__img-2 {
+	position: relative;
+	left: 50px;
+	width: 263px;
+	height: 287px;
+	border-radius: 10px;
+	filter: drop-shadow(0px 20px 40px rgba(12, 24, 33, 0.1));
+}
+
+.about-us__label {
+	position: absolute;
+	bottom: 30px;
+	left: 45px;
+	margin: 0;
+	padding: 10px;
+	background-color: #ffffff;
+	box-shadow: 0px 20px 40px rgba(12, 24, 33, 0.1);
+	border-radius: 10px;
+	span.first {
+		display: inline-block;		
+		margin-right: 15px;
+		padding: 12px 10px;
+		font-size: 20px;
+		line-height: 36px;
+		font-weight: 600;
+		text-align: center;
+		color: #ffffff;
+		background-color: @color-green;
+		border-radius: 12px;
+	}
+	span {
+		font-size: 12px;
+		line-height: 180%;
+		font-weight: 600;
+		color: @color;	
+	}
+}
+
+.about-us__title {
+	font-size: 42px;
+	line-height: 140%;
+	font-weight: 400;
+	text-align: left;
+}
+
+.about-us__text {
+	font-size: 14px;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 @media (min-width: @mobile-width) {
@@ -7,13 +78,106 @@
 }
 
 @media (min-width: 600px) {
-	
+	.about-us__img-1 {		
+		top: 55px;
+		left: 0;
+		width: 250px;
+		height: 272px;
+		
+	}
+
+	.about-us__img-2 {		
+		left: 80px;
+		width: 330px;
+		height: 360px;		
+	}
+
+	.about-us__label {		
+		bottom: 30px;
+		left: 200px;
+		padding-right: 20px;
+	}
 }
 
 @media (min-width: @tablet-width) {
-	
+	.about-us {
+		padding-bottom: 80px;
+	}
+
+	.about-us__img-1 {		
+		width: 300px;
+		height: 328px;		
+	}
+
+	.about-us__img-2 {		
+		left: 100px;
+		width: 400px;
+		height: 436px;		
+	}
+
+	.about-us__label {		
+		bottom: 50px;
+		left: 270px;		
+	}
 }
 
 @media (min-width: @desktop-width) {
+	.about-us__wrapper {
+		display: flex;		
+	}
 
+	.about-us__img {
+		width: 410px;
+		margin-right: 70px;
+	}
+
+	.about-us__img-1 {
+		width: 250px;
+		height: 272px;
+		
+	}
+
+	.about-us__img-2 {		
+		left: 80px;
+		width: 330px;
+		height: 360px;		
+	}
+
+	.about-us__label {		
+		width: 305px;
+		bottom: auto;
+		top: 250px;
+		left: 130px;		
+	}
+
+	.about-us__wrapper-text {
+		width: 465px;
+	}
+}	
+
+@media (min-width: @desktop-full-width) {
+	.about-us {
+		padding-bottom: 120px;
+	}
+	.about-us__img {
+		width: 500px;
+		margin-right: 100px;
+	}
+
+	.about-us__img-1 {		
+		width: 300px;
+		height: 328px;		
+	}
+
+	.about-us__img-2 {		
+		left: 100px;
+		width: 400px;
+		height: 436px;		
+	}	
+
+	.about-us__label {		
+		top: 310px;
+		left: 270px;		
+	}
 }
+
