@@ -6,22 +6,23 @@ jQuery(document).ready(function($) {
 	});*/
 
 	// плавный scroll до нужной секции (#)
-	/*$(".menu__item a").on("click", function(e){		
+	$(".menu__item a").on("click", function(e){		
 		e.preventDefault();
 		var anchor = $(this).attr('href');
 		// alert(anchor);
 		$('html, body').stop().animate({
-		    scrollTop: $(anchor).offset().top - 0
+		    scrollTop: $(anchor).offset().top - 300
 		}, 800);
-	});*/
+	});
 
 	
 
 	// var h = $('.page-header').css('height');
 	// var h = $('.page-header').outerHeight();
-	var h = $('.page-header').height();
+	
 	// var h = $('.page-header').innerHeight();
 	// alert(h);
 	
-	$('.page-main').css('paddingTop', h + 'px');
+	/*var h = $('.page-header').height();
+	$('.page-main').css('paddingTop', h + 'px');*/
 });

@@ -9,8 +9,12 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
+	<!-- slick.js -->	
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<!-- <script src="js/jquery.maskedinput.min.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
 	<script src="js/common.min.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
@@ -33,19 +37,14 @@
 				</picture>
 			</a>
 
-			<div class="page-header__menu">			
-				<!-- <button class="page-header__toggle-nav hamburger" type="button">
-					<span class="visually-hidden">Open menu</span>
-					<span class="hamburger__line"></span>
-				</button> -->
-				
+			<div class="page-header__menu">
 				<nav class="page-header__nav menu">
-				<!-- <nav class="page-header__nav menu"> -->
 					<h2 class="visually-hidden">Main menu</h2>
 					<ul class="page-header__nav-list menu__list">
 						<li class="menu__item menu__item--active"><a href="#">Home</a></li>
-						<li class="menu__item"><a href="#">Why Us</a></li>
-						<li class="menu__item"><a href="#">Contact Us</a></li>
+						<li class="menu__item"><a href="#why">Why Us</a></li>
+						<li class="menu__item"><a href="contact-us.html">Contact Us</a></li>
+						<li class="menu__item"><a href="contact-us.html">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -58,177 +57,260 @@
 			</ul>
 
 			<a class="page-header__phone phone" href="tel:1310823344"><svg fill="#d24a43" width="23" height="23"><use xlink:href="#icon-phone"></use></svg>Call 310.821.3344</a>
-
-			<ul class="page-header__flooring flooring">
-				<li class="flooring__item"><a href="#">Hardwood <span>Flooring</span></a></li>
-				<li class="flooring__item"><a href="#">Vinyl <span>Flooring</span></a></li>
-				<li class="flooring__item"><a href="#">Carpet <span>Flooring</span></a></li>
-				<li class="flooring__item"><a href="#">Tile & Stone</a></li>
-				<li class="flooring__item"><a href="#">Hardwood Floor <span>Refinishing Services</span></a></li>
-				<li class="flooring__item"><a href="#">Concrete <span>Resurface & Sealing</span></a></li>
-			</ul>
-
-			<!-- <div class="page-header__address address">
-				<div class="address__item"><svg fill="#d24a43" width="25" height="25"><use xlink:href="#icon-map"></use></svg><p><span>г. Санкт - Петербург,</span> пр. Стачек, 47</p></div>
-				<div class="address__item"><svg fill="#d24a43" width="25" height="25"><use xlink:href="#icon-map"></use></svg><p><span>г. Владивосток,</span> ул. Батарейная, 3а</p></div>
-			</div>
-			<div class="page-header__contacts">
-				<a class="page-header__phone phone" href="tel:88001017814"><svg fill="#d24a43" width="23" height="23"><use xlink:href="#icon-phone"></use></svg><span>8(800)</span> 101-78-14</a>
-				<a class="page-header__email email" href="mailto:sales@expressrail.ru"><svg fill="#d24a43" width="23" height="17"><use xlink:href="#icon-email"></use></svg><span>sales@expressrail.ru</span></a>
-			</div> -->
-
-			
 		</div>
 
-		<!-- <div class="page-header__menu">
-			<div class="page-header__menu-wrapper container">
-				<button class="page-header__toggle-nav hamburger" type="button">
-					<span class="visually-hidden">Открыть меню</span>
-					<span class="hamburger__line"></span>
-				</button>
-				
-				<nav class="page-header__nav menu">
-					<h2 class="visually-hidden">Главное меню</h2>
-					<ul class="page-header__nav-list menu__list">
-						<li class="menu__item menu__item--active"><a href="#">О нас</a></li>
-						<li class="menu__item"><a href="#services">Услуги</a></li>
-						<li class="menu__item"><a href="#directions">Направления перевозок</a></li>
-						<li class="menu__item"><a href="#peculiarities">Особенности</a></li>
-						<li class="menu__item"><a href="#contacts">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div> -->
-	</header>
+		<div class="page-header__flooring-wrapper">
+			<button class="page-header__toggle-flooring hamburger" type="button">
+				<span class="visually-hidden">Open menu</span>
+				<span class="hamburger__line"></span>
+			</button>
+			<ul class="page-header__flooring flooring container">
+				<li class="flooring__item flooring__item--active"><a href="hardwood-flooring.html">Hardwood <span>Flooring</span></a></li>
+				<li class="flooring__item"><a href="vinyl-flooring.html">Vinyl <span>Flooring</span></a></li>
+				<li class="flooring__item"><a href="carpet-flooring.html">Carpet <span>Flooring</span></a></li>
+				<li class="flooring__item"><a href="tile-and-stone.html">Tile & Stone</a></li>
+				<li class="flooring__item"><a href="hardwood-floor-refinishing-services.html">Hardwood Floor <span>Refinishing Services</span></a></li>
+				<li class="flooring__item"><a href="concrete-resurface-and-sealing.html">Concrete <span>Resurface & Sealing</span></a></li>
+			</ul>
+		</div>	</header>
 
 	<main class="page-main">		
 		<h2 class="visually-hidden">DA Flooring Solutions</h2>
 		
 		<section class="banner">			
-			<div class="banner__wrapper container">				
-				<div class="banner__title-wrapper">					
-					<!-- <h2 class="banner__title">Компания <br>«Экспресс Рейл Транс»</h2>
-					<p class="banner__slogan">предлагает оптимальные маршруты железнодорожных перевозок и гарантирует лучшие сроки доставки</p>
-					<svg><use xlink:href="#icon-corner"></use></svg> -->
-				</div>				
+			<h2 class="visually-hidden">Completed works</h2>
+			<div class="banner__wrapper container">
+				<ul class="banner__list">
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/1-hardwood-floor.webp" srcset="img/banner/1-hardwood-floor@2x.webp 2x" alt="Hardwood Floor" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/2-carpet.webp" srcset="img/banner/2-carpet@2x.webp 2x" alt="Carpet" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/3-tile-stone.webp" srcset="img/banner/3-tile-stone@2x.webp 2x" alt="Tile Stone" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/4-carrera-marble-countertop-subway-tile-shower-porcelain-tile-floor1.webp" srcset="img/banner/4-carrera-marble-countertop-subway-tile-shower-porcelain-tile-floor1@2x.webp 2x" alt="Carrera Marble Countertop Subway Tile Shower Porcelain Tile Floor" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-5.webp" srcset="img/banner/banner-5@2x.webp 2x" alt="banner-5" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-6.webp" srcset="img/banner/banner-6@2x.webp 2x" alt="banner-6" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-7.webp" srcset="img/banner/banner-7@2x.webp 2x" alt="banner-7" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-8.webp" srcset="img/banner/banner-8@2x.webp 2x" alt="banner-8" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-9.webp" srcset="img/banner/banner-9@2x.webp 2x" alt="banner-9" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-10.webp" srcset="img/banner/banner-10@2x.webp 2x" alt="banner-10" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-11.webp" srcset="img/banner/banner-11@2x.webp 2x" alt="banner-11" class="banner__img">
+						</picture>
+					</li>
+					<li class="banner__item">
+						<picture>
+							<img type="image/webp" src="img/banner/banner-12.webp" srcset="img/banner/banner-12@2x.webp 2x" alt="banner-12" class="banner__img">
+						</picture>
+					</li>
+				</ul>
 			</div>
 		</section>		
 
-		<section id="services" class="services container">
-			<!-- <h2 class="services__title">Услуги<svg fill="#d24a43" width="150" height="62"><use xlink:href="#icon-pointes"></use></svg></h2>
-			<p class="services__text"><strong>Железнодорожные перевозки</strong> – один из самых востребованных способов доставки грузов, иногда - единственно возможный.</p>
-			<p class="services__text">Развитая железнодорожная сеть позволяет выполнять перевозки почти всех видов грузов круглый год.</p> -->
-		</section>			
-
-		<!-- <section id="directions" class="directions">
-			<div class="directions__wrapper container">
-				<h2 class="directions__title">Направления <span>перевозок</span><svg fill="#d24a43" width="150" height="62"><use xlink:href="#icon-pointes"></use></svg></h2>						
-				<div class="directions__tabs tabs">
-					<div class="tabs__tabs-wrapper">					
-						<p>
-							<input id="tab1" type="radio" name="tabs" class="directions__input tabs__input tabs__input--active" checked>
-							<label for="tab1" title="по России" class="directions__label tabs__label">по России</label>
-						</p>
-						<p>
-							<input id="tab2" type="radio" name="tabs" class="directions__input tabs__input">
-							<label for="tab2" title="Китай-Рссия" class="directions__label tabs__label">Китай - Россия</label>
-						</p>						
-					</div>
-
-					<div class="tabs__section-wrapper">
-						<section id="tabs__content1" class="directions__section tabs__section">
-							<h2 class="visually-hidden">по России</h2>
-							<div class="tabs__wrapper">
-								<picture>
-									<img src="img/map-ru.webp" srcset="img/map-ru@2x.webp 2x" alt="Маршруты по России" class="directions__map-ru">
-								</picture>
-							</div>
-						</section>
-
-						<section id="tabs__content2" class="directions__section tabs__section">
-							<h2 class="visually-hidden">Китай - России</h2>
-							<div class="tabs__wrapper">
-								<picture>
-									<img src="img/map-ru-ch.webp" srcset="img/map-ru-ch@2x.webp 2x" alt="Маршрут Китай - Россия" class="directions__map-ru-ch">
-								</picture>
-							</div>
-						</section>						
-					</div>
-					
-				</div>
+		<section class="services">
+			<h2 class="visually-hidden">Services</h2>
+			<div class="services__wrapper container">
+				<ul class="services__list">
+					<li class="services__item">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Hardwood Flooring</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/hardwood-flooring.webp" srcset="img/services/hardwood-flooring@2x.webp 2x" alt="Hardwood Flooring">
+							</picture>
+							<p class="services__item-text">Great hardwood flooring increases the value of your home, makes it look better and is easier to maintain. We are hardwood flooring experts and we're near you in Los Angeles.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/hardwood-flooring.webp" srcset="img/services/hardwood-flooring@2x.webp 2x" alt="Hardwood Flooring">
+						</picture>
+					</li>
+					<li class="services__item services__item--right">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Vinyl Flooring</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/vinyl-flooring.webp" srcset="img/services/vinyl-flooring@2x.webp 2x" alt="Vinyl Flooring">
+							</picture>
+							<p class="services__item-text">Better style and technology with Vinyl Flooring and DA Flooring Solutions can help you make it happen. Vinyl Flooring is stylish and more affordable. We have more selection of Vinyl flooring than anyone in Los Angeles.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/vinyl-flooring.webp" srcset="img/services/vinyl-flooring@2x.webp 2x" alt="Vinyl Flooring">
+						</picture>
+					</li>
+					<li class="services__item">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Carpet</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/carpet.webp" srcset="img/services/carpet@2x.webp 2x" alt="Carpet">
+							</picture>
+							<p class="services__item-text">Experts in Los Angeles Carpets and we have a large selection of carpet you can choose from. Carpet isn't only warmer, it insulates 17 times more than other flooring. Make us your Los Angeles carpet experts and call us today.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/carpet.webp" srcset="img/services/carpet@2x.webp 2x" alt="Carpet">
+						</picture>
+					</li>
+					<li class="services__item services__item--right">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Tile & Stone</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/tile-and-stone.webp" srcset="img/services/tile-and-stone@2x.webp 2x" alt="Tile & Stone">
+							</picture>
+							<p class="services__item-text">Tile & Stone adds a beautiful interior design element to any home and we're local Los Angeles experts at tile and stone so give us a ring today.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/tile-and-stone.webp" srcset="img/services/tile-and-stone@2x.webp 2x" alt="Tile & Stone">
+						</picture>
+					</li>
+					<li class="services__item">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Hardwood Floor Refinishing Services</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/hardwood-floor-refinishing-services.webp" srcset="img/services/hardwood-floor-refinishing-services@2x.webp 2x" alt="Hardwood Floor Refinishing Services">
+							</picture>
+							<p class="services__item-text">If you’ve had your hardwood floors for 7+ years, it may be time to sand and refinish. Scratches, fading, and discoloration can be completely remedied with a good sand and refinish from you local Los Angeles experts at DA Flooring Solutions.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/hardwood-floor-refinishing-services.webp" srcset="img/services/hardwood-floor-refinishing-services@2x.webp 2x" alt="Hardwood Floor Refinishing Services">
+						</picture>
+					</li>
+					<li class="services__item services__item--right">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Concrete Resurface & Sealing</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/concrete-resurface-sealing.webp" srcset="img/services/concrete-resurface-sealing@2x.webp 2x" alt="Concrete Resurface & Sealing">
+							</picture>
+							<p class="services__item-text">Give your home an industrial chic look with concrete flooring. Other than it’s clean, urban, and polished look, concrete flooring is low maintenance and can withstand heavy impact. Allow us to be your Los Angeles concrete installation experts and call us today.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/concrete-resurface-sealing.webp" srcset="img/services/concrete-resurface-sealing@2x.webp 2x" alt="Concrete Resurface & Sealing">
+						</picture>
+					</li>
+					<li class="services__item">
+						<div class="services__item-wrapper">
+							<div class="services__item-title">Coutertops Refinishing Services</div>
+							<picture class="services__img">
+								<img type="image/webp" src="img/services/coutertops-refinishing-services.webp" srcset="img/services/coutertops-refinishing-services@2x.webp 2x" alt="Coutertops Refinishing Services">
+							</picture>
+							<p class="services__item-text">If you’ve had your hardwood floors for 7+ years, it may be time to sand and refinish. Scratches, fading, and discoloration can be completely remedied with a good sand and refinish from you local Los Angeles experts at DA Flooring Solutions.</p>
+							<a class="services__item-link" href="#">See our selection</a>
+						</div>
+						<picture class="services__img--desktop">
+							<img type="image/webp" src="img/services/coutertops-refinishing-services.webp" srcset="img/services/coutertops-refinishing-services@2x.webp 2x" alt="Coutertops Refinishing Services">
+						</picture>
+					</li>
+				</ul>				
 			</div>
-		</section> -->
-		
+		</section>
 
-		<!-- <section id="peculiarities" class="peculiarities">
-			<div class="peculiarities__wrapper container">
-				<h2 class="visually-hidden">Особенности нашей компании</h2>
-				<ul class="peculiarities__list">
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-offices"></use></svg>
-						<p>Два филиала</p>
+		<section id="why" class="why">
+			<h2 class="visually-hidden">Why Us?</h2>
+			<div class="why__wrapper container">
+				<ul class="why__list">
+					<li class="why__item">
+						<div class="why__icon"><svg width="70" height="80"><use xlink:href="#icon-why"></use></svg></div>
+						<div class="why__item-wrapper">
+							<p class="why__item-title">Why Us?</p>
+							<p class="why__item-text">Our reputation in the Los Angeles flooring industry is unrivaled. We have the experience, selection, and quality that you need. From hardwood to carpet, we’re the best and we give only our best to our customers.</p>	
+						</div>
 					</li>
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-container"></use></svg>
-						<p>Собственные контейнеры</p>
+					<li class="why__item">
+						<div class="why__icon"><svg width="76" height="80"><use xlink:href="#icon-area"></use></svg></div>
+						<div class="why__item-wrapper">
+							<p class="why__item-title">Service Areas</p>
+							<p class="why__item-text">DA Flooring Solutions serves the entire Los Angeles area, including: Hardwood Flooring in Santa Monica, Venice Beach, Glendale, Pasadena, East Los Angeles, South Los Angeles, Hollywood, Long Beach, and more!</p>	
+						</div>
 					</li>
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-worker"></use></svg>
-						<p>Квалифицированные сотрудники</p>
-					</li>
-					<li class="peculiarities__item">
-						<svg width="80" height="86"><use xlink:href="#icon-insure"></use></svg>
-						<p>Ответственность застрахована</p>
-					</li>
-				</ul>
+				</ul>				
 			</div>
-		</section> -->
-
-		<!-- <section id="contacts" class="contacts">
-			<div class="contacts__wrapper container">
-				<h2 class="visually-hidden">Контактные данные офисов компании</h2>
-				<picture>
-					<source type="image/webp" srcset="img/contacts-img.webp 1x, img/contacts-img@2x.webp 2x">
-					<img src="img/contacts-img.jpg" srcset="img/contacts-img@2x.jpg 2x" alt="Контакты компании" class="contacts__img">
-				</picture>
-				<ul class="contacts__list">
-					<li class="contacts__item">
-						<p class="contacts__name">Санкт-Петербург</p>
-						<p class="contacts__address"><span>г. Санкт-Петербург,</span> пр. Стачек, 47</p>
-						<a class="contacts__phone phone" href="tel:88001017814"><svg fill="#f8ba18" width="25" height="25"><use xlink:href="#icon-tel"></use></svg><span>8(800)</span> 101-78-14</a>
-					</li>
-					<li class="contacts__item contacts__item--dark">
-						<p class="contacts__name">Владивосток</p>
-						<p class="contacts__address"><span>г. Владивосток,</span> ул. Батарейная, 3а</p>
-						<a class="contacts__phone phone" href="tel:88001017814"><svg fill="#f8ba18" width="25" height="25"><use xlink:href="#icon-tel"></use></svg><span>8(800)</span> 101-78-14</a>
-					</li>
-				</ul>
-				<a class="contacts__email email" href="mailto:sales@expressrail.ru"><svg fill="#d24a43" width="23" height="17"><use xlink:href="#icon-email"></use></svg><span>sales@expressrail.ru</span></a>
-			</div>
-		</section> -->
+		</section>
 
 	</main>
 
 	<footer class="page-footer">
-		<!-- <div class="page-footer__wrapper container">
-			<a class="page-footer__logo" href="index.html">
-				<svg width="300" height="65">
-					<use xlink:href="#icon-logo"></use>
-				</svg>
-			</a>			
-			<div class="page-footer__copyright">
-				<p>&copy; 2021 Компания «Экспресс Рейл Транс»</p>
-				<p>Все права защищены.</p>
+		<div class="page-footer__wrapper container">
+			<div class="page-footer__info">
+				<p class="page-footer__title">Info</p>
+				<p class="page-footer__address">5440 W Washington Bl <br>Los Angeles, California 90016</p>
+				<a class="page-footer__phone phone" href="tel:1310823344"><svg fill="#d24a43" width="23" height="23"><use xlink:href="#icon-phone"></use></svg>Call 310.821.3344</a>
+				<ul class="page-footer__social social">
+					<li class="social__item"><a href="https://plus.google.com/113634460504422362242/posts" target="_blank"><svg width="64" height="52"><use xlink:href="#icon-google"></use></svg><span class="visually-hidden">Google</span></a></li>
+					<li class="social__item"><a href="https://www.youtube.com/watch?v=NaRrtsiwmRU" target="_blank"><svg width="58" height="52"><use xlink:href="#icon-youtube"></use></svg><span class="visually-hidden">YouTube</span></a></li>
+					<li class="social__item"><a href="https://www.facebook.com/DA-Flooring-Solutions-Los-Angeles-187958817900218/timeline/" target="_blank"><svg width="27" height="52"><use xlink:href="#icon-facebook"></use></svg><span class="visually-hidden">Facebool</span></a></li>
+					<li class="social__item"><a href="https://www.pinterest.com/dafloorings/hardwood-flooring-malibu/?lp=true" target="_blank"><svg width="39" height="52"><use xlink:href="#icon-pinterest"></use></svg><span class="visually-hidden">Pinterest</span></a></li>
+				</ul>
 			</div>
-		</div> -->
+			<a class="page-footer__logo" href="index.html">
+				<picture>
+					<img src="img/logo-footer.webp" srcset="img/logo-footer@2x.webp 2x" alt="DA Flooring Solutions - Los Angeles Vinyl, Hardwood, Carpet, Tile, Stone">
+				</picture>
+			</a>
+			<div class="page-footer__menu">
+				<p class="page-footer__title">Menu</p>
+				<ul class="page-footer__menu-list">
+					<li class="page-footer__menu-item"><a href="#">Home</a></li>
+					<li class="page-footer__menu-item"><a href="hardwood-flooring.html">Hardwood Flooring</a></li>
+					<li class="page-footer__menu-item"><a href="vinyl-flooring.html">Vinyl Flooring</a></li>
+					<li class="page-footer__menu-item"><a href="carpet-flooring.html">Carpet Flooring</a></li>
+					<li class="page-footer__menu-item"><a href="tile-and-stone.html">Tile & Stone</a></li>
+					<li class="page-footer__menu-item"><a href="hardwood-floor-refinishing-services.html">Hardwood Floor Refinishing Services</a></li>
+					<li class="page-footer__menu-item"><a href="concrete-resurface-and-sealing.html">Concrete Resurface & Sealing</a></li>
+					<li class="page-footer__menu-item"><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-footer__copyright container">Copyright &copy; 2021</div>
 	</footer>
 
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/my-slick.min.js"></script>
 
-	<!-- <script src="js/hamburger.min.js"></script> -->
+	<script src="js/hamburger.min.js"></script>
 	<!-- <script src="js/form.min.js"></script> -->
 	<!-- <script src="js/form_submit.min.js"></script> -->
 	<!-- <script src="js/tabs.min.js"></script> -->
-	<!-- <script src="js/common.min.js"></script> -->
+	<script src="js/common.min.js"></script>
 	<!-- <script src="js/ajax.min.js"></script> -->
 
 </body>
