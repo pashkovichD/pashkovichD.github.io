@@ -6,13 +6,15 @@ jQuery(document).ready(function($) {
 	});*/
 
 	// плавный scroll до нужной секции (#)
-	$(".menu__item a").on("click", function(e){		
-		e.preventDefault();
-		var anchor = $(this).attr('href');
-		// alert(anchor);
-		$('html, body').stop().animate({
-		    scrollTop: $(anchor).offset().top - 300
-		}, 800);
+	$(".menu__item a").on("click", function(e){
+		var anchor = $(this).attr('href');		
+		if(anchor.substr(0,1) == '#') {
+			e.preventDefault();
+			// alert(anchor);
+			$('html, body').stop().animate({
+			    scrollTop: $(anchor).offset().top - 0
+			}, 800);
+		}
 	});
 
 	

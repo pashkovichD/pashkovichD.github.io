@@ -1,0 +1,157 @@
+.tools {
+	padding-top: 60px;
+	padding-bottom: 30px;	
+	// overflow: hidden;
+	// background-color: green;
+}
+
+.tools__wrapper {
+	position: relative;
+}
+
+.tools__title {	
+	margin-bottom: 10px;
+	font-size: 42px;
+	line-height: 140%;
+	font-weight: 400;
+}
+
+.tools__list {
+	// margin-bottom: 40px;
+	padding: 0 40px;
+}
+
+.tools__item {
+	margin-bottom: 10px;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	background-color: rgba(255,255,255,.2);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.tools__icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border: 1px dashed #dee0e4;
+	border-radius: 100%;
+}
+
+.tools__icon-2 {
+	position: absolute;
+	bottom: 0;
+	left: -20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 62px;
+	height: 62px;
+	background-color: rgba(255,255,255,.3);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 12px;
+}
+
+.tools__item-title {
+	margin-bottom: 5px;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.tools__item-text {
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 400;
+	text-align: center;
+	color: #5f5f5f;
+}
+
+.tools__circle {
+	position: absolute;
+	top: 46%;
+	left: -60px;
+	width: 212px;
+	height: 212px;
+	z-index: -1;
+}
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+	.tools__wrapper {
+		width: 65%;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.tools {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		// background-color: green;
+	}
+
+	.tools__wrapper {
+		width: 100%;
+	}
+
+	.tools__title {	
+		margin-bottom: 30px;
+	}
+
+	.tools__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	.tools__item {	
+		width: 37%;
+		margin-bottom: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.tools__circle {
+		display: none;
+	}
+
+}
+
+@media (min-width: @desktop-width) {
+	.tools {
+		padding-top: 120px;
+		// padding-bottom: 95px;
+		// background-color: green;
+	}
+
+	.tools__item {	
+		width: 270px;
+		padding-bottom: 40px;
+	}
+
+	.tools__circle {
+		display: block;
+		top: auto;
+		bottom: -120px;
+		left: 240px;
+	}
+}	
+
+@media (min-width: @desktop-full-width) {
+	
+}
+

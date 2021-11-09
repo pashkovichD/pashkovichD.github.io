@@ -1,9 +1,11 @@
 .menu {	
-	list-style-type: none;
+	// list-style-type: none;
 	z-index: 2;
 }
 
 .menu__list {
+	display: flex;
+	justify-content: center;
 	width: 100%;
 }
 
@@ -23,8 +25,14 @@
 	}
 }
 
-@media (min-width: @mobile-width) {
+.menu__item--home {
+	display: none;
+}
 
+@media (min-width: @mobile-width) {
+	.menu__item--home {
+		display: block;
+	}
 }
 
 @media (min-width: 600px) {
