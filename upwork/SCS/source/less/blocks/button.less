@@ -21,7 +21,7 @@
 	// }
 }
 
-.button--green {	
+.button--green {
 	background: #5acf28;
 	&:hover,	
 	&:focus {
@@ -31,6 +31,37 @@
 		background-color: #56c626;
 	}
 }
+
+.button--orange {
+	background: linear-gradient(157.07deg, #FE8C27 -17.61%, #F26210 87.18%);
+	&:hover,	
+	&:focus {
+		background: linear-gradient(157.07deg, #FFB472 -17.61%, #F26210 87.18%);
+	}
+	&:active {
+		background: linear-gradient(157.07deg, #E76F1A -17.61%, #E76F1A 87.18%);
+	}
+}
+
+.button--border {
+	padding: 18px 20px;
+	text-transform: none;
+	background-color: #ffffff;
+	border: 2px solid #5ACF28;
+	box-sizing: border-box;
+	border-radius: 12px;
+	color: @color;
+	&:hover,	
+	&:focus {
+		color: #ffffff;
+		background-color: #5ACF28;
+	}
+	&:active {
+		background-color: #56C626;
+		border: 2px solid #56C626;
+	}
+}
+
 
 @media (min-width: @mobile-width) {
 

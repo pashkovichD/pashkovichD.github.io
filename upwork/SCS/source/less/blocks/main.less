@@ -6,6 +6,8 @@
 }
 
 
+
+
 @media (min-width: @mobile-width) {
 
 }
@@ -16,9 +18,19 @@
 
 
 @media (min-width: @tablet-width) {
-
+	.box__wrapper {
+		display: flex;
+		// justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 80px;		
+	}
 }
 
-@media (min-width: @desktop-width) {
-
+@media (min-width: @desktop-full-width) {
+	.box__wrapper {
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 160px;		
+		padding-bottom: 75px;
+	}
 }
