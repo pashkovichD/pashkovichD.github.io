@@ -17,6 +17,14 @@
 	text-align: left;
 }
 
+.page__h3 {
+	margin-bottom: 5px;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 600;
+	text-align: left;
+}
+
 .page__text {
 	margin-bottom: 20px;
 	font-size: 14px;
@@ -25,6 +33,10 @@
 	&:last-child {
 		margin-bottom: 0;
 	}	
+}
+
+.page__text--706 {
+	margin-bottom: 10px;
 }
 
 .page__img {
@@ -36,8 +48,16 @@
 	line-height: 0;
 	img {
 		width: 100%;
-		
+		border-radius: 10px;		
 	}
+}
+
+.page__img--team {
+	height: auto;
+}
+
+.page__img--team-men {
+	height: auto;
 }
 
 .page-stay__list {
@@ -82,6 +102,20 @@
 	}
 }
 
+.page-706__wrapper-img {
+	display: flex;
+	justify-content: space-between;
+	.page__img-1 {
+		width: 107px;
+		height: auto;
+	}
+
+	.page__img-2 {
+		width: 223px;
+		height: auto;
+	}
+}
+
 @media (min-width: @mobile-width) {
 
 }
@@ -90,6 +124,28 @@
 	.page__img {
 		height: 250px;
 	}
+
+	.page__img--team {
+		height: auto;
+	}
+
+	.page__img--team-men {
+		height: auto;
+	}
+
+	.page-706__wrapper-img {		
+		.page__img-1 {
+			width: 30%;
+			height: auto;
+			margin-bottom: 20px;			
+		}
+
+		.page__img-2 {
+			width: 65%;
+			height: auto;
+			margin-bottom: 20px;	
+		}
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -97,14 +153,36 @@
 		margin-bottom: 40px;		
 	}
 
+	.page__text--team {
+		margin-bottom: 20px;
+	}
+
+	.page__text--706 {
+		margin-bottom: 10px;
+	}
+
+	.page__text--706-20 {
+		margin-bottom: 20px;
+	}
+
 	.page__img {
 		height: 330px;
 		margin-bottom: 40px;
 	}
 
+	.page__img--team {
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.page__img--team-men {
+		height: auto;
+	}
+
 	.page-stay__list {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 0;
 	}
 
 	.page-stay__item {
@@ -115,13 +193,30 @@
 
 @media (min-width: @desktop-width) {
 	.page {
-		width: 708px;
+		width: 768px;
 	}
 }	
 
 @media (min-width: @desktop-full-width) {
 	.page {
 		width: auto;
+	}
+
+	.page__img {
+		height: 360px;
+		margin-bottom: 40px;
+	}
+
+	.page__img--team-men {
+		height: auto;
+	}
+
+	.page__img--team {
+		height: auto;
+	}
+
+	.page-stay__list {
+		// margin-bottom: 100px;
 	}
 }
 
