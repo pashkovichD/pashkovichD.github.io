@@ -1,14 +1,18 @@
 .formula {
-	// padding-top: 0;
-	// padding-bottom: 75px;
+	width: 375px;
+	margin: 0 auto;
+	padding: 0 15px;
+	padding-bottom: 60px;
+	box-sizing: border-box;
 }
 
-.formula__wrapper {
+.formula__wrapper {	
 	position: relative;
-	padding: 0 55px;
-	background-color: red;
+	width: 100%;
+	padding: 40px;
+	padding-bottom: 13px;	
 	border-radius: 10px;
-	// background-color: #f5f7fb;
+	background-color: #f5f7fb;
 }
 
 .formula__title {	
@@ -50,17 +54,20 @@
 }
 
 @media (min-width: 600px) {
-
+	.formula {
+		width: 100%;
+		padding: 0 30px;
+		padding-bottom: 60px;
+	}
 }
 
 @media (min-width: @tablet-width) {
-	.formula {
-		padding-top: 95px;
-		padding-bottom: 95px;
+	.formula {		
+		padding-bottom: 80px;
 	}
 
 	.formula__wrapper {	
-		padding: 0 70px;
+		// padding: 0 70px;
 	}
 
 	.formula__list {
@@ -80,8 +87,18 @@
 
 @media (min-width: @desktop-full-width) {
 	.formula {
+		width: 420px;
+		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	.formula__list {
+		display: block;
+	}
+
+	.formula__item {
+		width: 100%;
 	}
 }
 
