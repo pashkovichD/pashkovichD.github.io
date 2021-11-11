@@ -1,8 +1,8 @@
 .breadcrumbs {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 60px;
-	padding: 15px 70px 0 15px;
+	margin-bottom: 40px;
+	padding: 15px 15px 0 15px;
 	font-size: 14px;
 	line-height: 28px;
 	font-weight: 400;
@@ -40,27 +40,30 @@
 	
 }
 
-.breadcrumbs--page {
-	margin-bottom: 40px;
+.breadcrumbs--sidebar {
+	// padding-left: 0;
+	// padding-right: 0;
 }
 
+@media (min-width: @mobile-width) {	
 
-@media (min-width: @mobile-width) {
-	.breadcrumbs {
-		padding: 5px 100px 0 30px;
-	}
 }
 
 @media (min-width: 600px) {
-	.breadcrumbs {	
-		padding-right: 230px;
+	.breadcrumbs--sidebar {
+		padding-left: 30px;
 	}
 }
 
 @media (min-width: @tablet-width) {
 	.breadcrumbs {
-		margin-bottom: 40px;
-		padding-top: 20px;
+		padding-left: 30px;
+	}
+
+	.breadcrumbs--sidebar {		
+		// padding-left: 0;
+		// padding-right: 0;
+		margin-bottom: 35px;
 	}
 }
 
@@ -68,15 +71,10 @@
 
 }
 
-@media (min-width: 1100px) {
-	.breadcrumbs {
-		margin-bottom: 60px;
-	}
-}
-
 @media (min-width: @desktop-full-width) {
 	.breadcrumbs {
-		padding-left: 0;
+		padding-top: 25px;
+		padding-left: 15px;
 	}
 
 }

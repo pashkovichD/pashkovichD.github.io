@@ -1,12 +1,6 @@
 .page-main {	
-	// padding-top: @header-height;
-	// background: linear-gradient(#777777, green);
-	// background-color: rgba(0,128,0,1);
-	// height: 2000px;
+
 }
-
-
-
 
 @media (min-width: @mobile-width) {
 
@@ -18,6 +12,10 @@
 
 
 @media (min-width: @tablet-width) {
+	.page-main--sidebar {
+		padding-bottom: 80px;
+	}
+
 	.box__wrapper {
 		display: flex;
 		// justify-content: space-between;
@@ -27,6 +25,17 @@
 }
 
 @media (min-width: @desktop-full-width) {
+	.content__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	.page-main--sidebar {
+		width: 800px;
+	}
+
 	.box__wrapper {
 		width: 1200px;
 		margin: 0 auto;

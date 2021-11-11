@@ -1,0 +1,56 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination__item {
+	margin: 0 8px;
+	a {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 700;
+		color: @color-blue;
+		&:hover,
+		&:focus {
+			color: darken(@color-blue, 20%);
+			text-decoration: none;
+		}
+	}
+}
+
+.pagination__item--current {
+	margin: 0 10px;
+	a {
+		font-weight: 200;
+		color: @color;
+	}
+}
+
+.pagination__item--more {
+	margin: 0;
+	a {
+		font-weight: 200;		
+	}
+}
+
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+		
+}	
+
+@media (min-width: @desktop-full-width) {
+
+}
+
