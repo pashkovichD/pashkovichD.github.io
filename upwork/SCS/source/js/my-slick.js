@@ -1,12 +1,28 @@
 jQuery(document).ready(function($) {	
-	// $('.consortium__list').slick({
-	// 	infinite: true,
-	// 	arrows: false,
-	// 	dots: true,
-	// 	slidesToShow: 2,
-	// 	slidesToScroll: 2,
-	// 	variableWidth: true
-	// });
+	$('.articles__list').slick({
+		infinite: true,
+		arrows: true,
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		variableWidth: true,
+		appendArrows: $('.articles__arrows'),
+        prevArrow: '<svg class="articles__arrow--prev" width="31" height="8"><use xlink:href="#icon-arrow-prev"></use></svg>',
+        nextArrow: '<svg class="articles__arrow--next" width="49" height="8"><use xlink:href="#icon-arrow-next"></use></svg>',
+        // appendArrows: $('.your-class-arrow'),
+        // prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i> Туда</button>',
+        // nextArrow: '<button id="next" type="button" class="btn btn-juliet">Сюда <i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+        /*responsive: [{
+			breakpoint: 12000,
+			settings: "unslick"
+		}, {
+			breakpoint: 1200,
+			settings: {			
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}]*/
+	});
 
 	$(window).resize(function(){	    
 	    var $windowWidth = $(window).width();
@@ -39,6 +55,9 @@ jQuery(document).ready(function($) {
 			}]
 		});
 	}
+
+
+	$('.articles__list').append('<div>', {text: 'Кот в шляпе'});
 
 	/*$(window).resize(function(){	    
 	    var $windowWidth = $(window).width();
