@@ -17,4 +17,23 @@ jQuery(document).ready(function($) {
 
 	// var h = $('.page-header').height();
 	// $('.page-main').css('paddingTop', h + 'px');
+
+	/*$('.articles__youtube-video video').on('click', function(e) {
+		// alert();
+		// $('.video7')[0].play();
+		this.paused ? this.play() : this.pause();
+	});*/
+
+	// var video = $('.articles__youtube-video video');
+	// var video = $('.articles__youtube-video video, .recent-articles__youtube-video video');
+	
+	// $('.articles__youtube-video video').on('click', function(e) {		
+	// 	this.paused ? this.play() : this.pause();
+	// });
+
+	// document.onkeypress = function(e){
+	//     if((e || window.event).keyCode === 32){
+	//         video.paused ? video.play() : video.pause();
+	//     }
+	// };
 });
