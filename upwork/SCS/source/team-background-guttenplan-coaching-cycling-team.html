@@ -9,8 +9,10 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
-	<!-- slick.js -->	
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<!-- slick.js -->
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -186,11 +188,13 @@
 							<img src="img/recent-articles/recent-articles-bg--mobile.webp" srcset="img/recent-articles/recent-articles-bg--mobile@2x.webp 2x" alt="Recent Articles">
 						</picture>
 						<div class="recent-articles__youtube">
-							<picture class="recent-articles__youtube-img">
-								<img src="img/recent-articles/recent-articles-youtube.webp" srcset="img/recent-articles/recent-articles-youtube@2x.webp 2x" alt="Recent Articles">
-							</picture>
-							<div class="recent-articles__play">
-								<svg width="20" height="22"><use xlink:href="#icon-play"></use></svg>
+							<div class="recent-articles__youtube-video">
+								<video controls="controls" poster="img/recent-articles/recent-articles-youtube.webp">
+									<source src="video/insparation-for-athlets.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+									<source src = "video/insparation-for-athlets.ogv" type = 'video/ogg; codecs="theora, vorbis"'>
+	 								<source src="video/insparation-for-athlets.webm" type='video/webm; codecs="vp8, vorbis"'>
+									<a href="video/insparation-for-athlets.mp4">Download video</a>.
+								</video>
 							</div>
 						</div>
 						<div class="recent-articles__donate donate">
@@ -203,7 +207,7 @@
 
 					<div class="recent-articles__wrapper-list">
 						<h2 class="recent-articles__title">Recent Articles</h2>
-						<div class="recent-articles__arrows"><svg class="recent-articles__arrow--prev" width="31" height="8"><use xlink:href="#icon-arrow-prev"></use></svg><svg class="recent-articles__arrow--next" width="49" height="8"><use xlink:href="#icon-arrow-next"></use></svg></div>
+						<div class="recent-articles__arrows"></div>
 						<ul class="recent-articles__list">
 							<li class="recent-articles__item">
 								<div class="recent-articles__wrapper-text">
@@ -292,6 +296,8 @@
 		</div>
 	</footer>
 	
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/my-slick.min.js"></script>
 	<script src="js/hamburger.min.js"></script>
 
 </body>

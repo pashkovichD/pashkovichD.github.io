@@ -21,13 +21,18 @@ jQuery(document).ready(function($) {
 	    }
 
 	    if ($windowWidth <= 1200) {
-        	consortiumfy();
+        	// consortiumfy();
         	articlesfy();
+	    }
+
+	    if ($windowWidth <= 768) {
+        	recent_articlesfy();
 	    }
 	});
 
 	consortiumfy();
 	articlesfy()
+	recent_articlesfy()
 
 	function consortiumfy() {
 		$('.consortium__list').not('.slick-initialized').slick({			
@@ -100,6 +105,31 @@ jQuery(document).ready(function($) {
 		});
 	}
 
+	function recent_articlesfy() {
+		$('.recent-articles__list').not('.slick-initialized').slick({			
+			infinite: true,
+			arrows: true,
+			dots: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			draggable: true,
+			rows: 0,
+			variableWidth: true,
+			appendArrows: $('.recent-articles__arrows'),
+	        prevArrow: '<svg class="articles__arrow--prev" width="31" height="8"><use xlink:href="#icon-arrow-prev"></use></svg>',
+	        nextArrow: '<svg class="articles__arrow--next" width="49" height="8"><use xlink:href="#icon-arrow-next"></use></svg>',
+	        responsive: [{
+				breakpoint: 12000,
+				settings: "unslick"
+			}, {
+				breakpoint: 768,
+				settings: {			
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}]
+		});
+	}
 
 	// $('.articles__list').append('<div>', {text: 'Кот в шляпе'});
 
