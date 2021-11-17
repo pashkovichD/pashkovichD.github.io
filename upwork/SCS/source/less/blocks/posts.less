@@ -24,10 +24,19 @@
 }
 
 .posts__item-title {
-	margin-bottom: 5px;
-	font-size: 18px;
-	line-height: 25px;
-	text-transform: uppercase;
+	margin-bottom: 5px;	
+	a {
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: @color;
+		&:hover,
+		&:focus {
+			color: #000000;
+			text-decoration: underline;
+		}
+	}
 }
 
 .posts__item-text {

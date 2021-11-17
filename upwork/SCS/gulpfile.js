@@ -55,7 +55,8 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("html", function() {
-	return gulp.src("source/*.html")
+	return gulp.src("source/**/*.html")
+	// return gulp.src("source/*.html")
 		.pipe(posthtml([
 			include()
 		]))
@@ -111,7 +112,8 @@ gulp.task("serve", ["build"], function() {
 	});
 
 	gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload); // следим за изменением файлов .less и выполняем задачу "style"	
-	gulp.watch("source/*.html", ["html"]).on("change", server.reload); // следим за изменением html-файлов
+	gulp.watch("source/**/*.html", ["html"]).on("change", server.reload); // следим за изменением html-файлов
+	// gulp.watch("source/*.html", ["html"]).on("change", server.reload); // следим за изменением html-файлов
 	gulp.watch("source/js/**/*.js", ["js"]).on("change", server.reload); // следим за изменением js-файлов
 	gulp.watch("source/img/icon-*.svg", ["sprite", "html"]).on("change", server.reload); // следим за изменением SVG-файлов для спрайта
 

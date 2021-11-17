@@ -1,6 +1,6 @@
 .articles {
 	padding-top: 60px;
-	padding-bottom: 30px;	
+	padding-bottom: 55px;	
 	overflow: hidden;
 	background-color: #f5f7fb;
 }
@@ -127,24 +127,33 @@
 }
 
 .articles__item-img {
-	width: auto;
-	height: 230px;
 	margin-bottom: 20px;
 	background-color: #eceef1;
-	border-radius: 10px;
+	line-height: 0;
 	img {
-		display: none;
+		width: 100%;
+		border-radius: 10px;
 	}
 }
 
 .articles__item-title {
-	margin-bottom: 5px;
-	font-size: 18px;
-	line-height: 25px;
-	text-transform: uppercase;
+	margin-bottom: 5px;	
+	a {
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: @color;
+		&:hover,
+		&:focus {
+			color: #000000;
+			text-decoration: underline;
+		}
+	}
 }
 
 .articles__item-text {
+	margin-bottom: 0;
 	font-size: 12px;
 	line-height: 21px;
 	font-weight: 400;	
