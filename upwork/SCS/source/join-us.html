@@ -114,7 +114,8 @@
 
 				<div class="join-page__form-wrapper form__wrapper">
 					<p class="form__title">Join Us</p>
-					<form id="contact-form" class="join-paage__form form form--nojs" action="/" method="POST">
+					<form id="contact-form" class="join-paage__form form form--nojs" action="https://echo.htmlacademy.ru" method="POST">
+					<!-- <form id="contact-form" class="join-paage__form form form--nojs" action="/" method="POST"> -->
 						<div class="form__item-wrapper">
 							<p class="form__item">
 								<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Your Name *">
@@ -128,42 +129,46 @@
 								<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone Number">
 								<label class="visually-hidden" for="form__phone">Phone Number</label>
 							</p>
-							<p class="form__item">
+							<!-- <p class="form__item">
 								<svg width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
 								<input class="form__input form__input--svg" type="text" name="form__age" id="form__age" value="" placeholder="Age Range">
 								<label class="visually-hidden" for="form__age">Age Range</label>
-							</p>
-							<p class="form__item">
+							</p> -->
+							<!-- <p class="form__item">
 								<svg width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
-								<!-- <select name="form__age" id="form__age">
+								<select name="form__age" id="form__age">
 									<option value="-18">under 18</option>
 									<option value="18_25">18-25</option>
 									<option value="26_33">26-33</option>
 									<option value="34_40">34-40</option>
 									<option value="41_55">41-55</option>
 									<option value="56+">56+</option>
-								</select> -->
+								</select>
 								<input class="form__input form__input--svg" type="text" name="form__age" id="form__age" value="" placeholder="Age Range">
 								<label class="visually-hidden" for="form__age">Age Range</label>
-							</p>
+							</p> -->						
 
-							
-
-							<!-- <div class="select" data-state="">
-								<div class="select__title" data-default="Option 0">Option 0</div>
+							<div class="form__item form__item--select select" data-state="" tabindex="0">
+								<svg class="select__arrow" width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
+								<div class="select__title" data-default=""></div>
+								<div class="select__placeholder">Age Range</div>
 								<div class="select__content">
-									<input id="singleSelect0" class="select__input" type="radio" name="singleSelect" checked/>
-									<label for="singleSelect0" class="select__label">Option 0</label>
-									<input id="singleSelect1" class="select__input" type="radio" name="singleSelect"/>
-									<label for="singleSelect1" class="select__label">Option 1</label>
-									<input id="singleSelect2" class="select__input" type="radio" name="singleSelect" disabled/>
-									<label for="singleSelect2" class="select__label">Option 2 (disabled)</label>
-									<input id="singleSelect3" class="select__input" type="radio" name="singleSelect"/>
-									<label for="singleSelect3" class="select__label">Option 3</label>
-									<input id="singleSelect4" class="select__input" type="radio" name="singleSelect"/>
-									<label for="singleSelect4" class="select__label">Option 4</label>
+									<input id="form__age0" class="select__input" type="radio" name="form__age" value="age"/>
+									<label for="form__age0" class="select__label">age</label>
+									<input id="form__age1" class="select__input" type="radio" name="form__age" value="-18"/>
+									<label for="form__age1" class="select__label">under 18</label>
+									<input id="form__age2" class="select__input" type="radio" name="form__age" value="18-25"/>
+									<label for="form__age2" class="select__label">18-25</label>
+									<input id="form__age3" class="select__input" type="radio" name="form__age" value="26-33"/>
+									<label for="form__age3" class="select__label">26-33</label>
+									<input id="form__age4" class="select__input" type="radio" name="form__age" value="34-40"/>
+									<label for="form__age4" class="select__label">34-40</label>
+									<input id="form__age5" class="select__input" type="radio" name="form__age" value="41-55"/>
+									<label for="form__age5" class="select__label">41-55</label>
+									<input id="form__age6" class="select__input" type="radio" name="form__age" value="56+"/>
+									<label for="form__age6" class="select__label">56+</label>
 								</div>
-							</div> -->
+							</div>
 
 							<p class="form__item form__item--textarea">
 								<textarea name="form__message" cols="20" rows="5" class="form__input" id="form__message" placeholder="Why is clean sport important to you?"></textarea>
@@ -329,7 +334,7 @@
 	<script src="js/slick/slick.min.js"></script>
 	<script src="js/my-slick.min.js"></script>
 	<script src="js/hamburger.min.js"></script>
-	<script src="js/common.min.js"></script>
+	<script src="js/select.min.js"></script>
 
 </body>
 </html>

@@ -36,8 +36,9 @@
 	width: 70px;
 	height: 70px;
 	margin-right: 20px;
-	background-color: #dee0e4;
-	border-radius: 100%;
+	img {		
+		border-radius: 100%;
+	}
 }
 
 .purpose__person-text {
@@ -82,6 +83,10 @@
 	}
 }
 
+.purpose--inner {
+	padding-top: 0;
+}
+
 @media (min-width: @mobile-width) {
 
 }
@@ -95,6 +100,11 @@
 		padding-top: 100px;
 		padding-bottom: 80px;
 	}
+
+	.purpose--inner {
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
 }
 
 @media (min-width: @desktop-width) {
@@ -106,6 +116,11 @@
 		width: 730px;
 		padding-top: 40px;
 		padding-bottom: 0;
+	}
+
+	.purpose--inner {
+		padding-top: 0;
+		padding-bottom: 60px;
 	}
 }
 

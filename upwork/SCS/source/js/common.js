@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 	//     }
 	// };
 
-	const selectSingle = document.querySelector('.__select');
+	/*const selectSingle = document.querySelector('.__select');
 	const selectSingle_title = selectSingle.querySelector('.__select__title');
 	const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
 
@@ -62,6 +62,6 @@ jQuery(document).ready(function($) {
 	const reset = document.querySelector('.reset');
 	reset.addEventListener('click', () => {
 	  selectSingle_title.textContent = selectSingle_title.getAttribute('data-default');
-	});
+	});*/
 
 });
