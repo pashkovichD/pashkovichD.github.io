@@ -14,7 +14,7 @@ function sendAjaxForm(result_form, ajax_form, url) {
                 }
             });
 
-            $('.form__result').html('Successfully!').addClass('form__result--show');
+            $('.form__result').html('Thank You!').addClass('form__result--show');
         },
         error: function(response) {
             $('.form__result').html('Error');
