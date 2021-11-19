@@ -114,8 +114,8 @@
 
 				<div class="join-page__form-wrapper form__wrapper">
 					<p class="form__title">Join Us</p>
-					<form id="contact-form" class="join-paage__form form form--nojs" action="https://echo.htmlacademy.ru" method="POST">
-					<!-- <form id="contact-form" class="join-paage__form form form--nojs" action="/" method="POST"> -->
+					<!-- <form id="contact-form" class="join-page__form form form--nojs" action="https://echo.htmlacademy.ru" method="POST"> -->
+					<form id="contact-form" class="join-page__form form form--nojs" action="/" method="POST">
 						<div class="form__item-wrapper">
 							<p class="form__item">
 								<input class="form__input" type="text" name="form__name" id="form__name" value="" placeholder="Your Name *">
@@ -128,34 +128,16 @@
 							<p class="form__item">
 								<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone Number">
 								<label class="visually-hidden" for="form__phone">Phone Number</label>
-							</p>
-							<!-- <p class="form__item">
-								<svg width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
-								<input class="form__input form__input--svg" type="text" name="form__age" id="form__age" value="" placeholder="Age Range">
-								<label class="visually-hidden" for="form__age">Age Range</label>
-							</p> -->
-							<!-- <p class="form__item">
-								<svg width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
-								<select name="form__age" id="form__age">
-									<option value="-18">under 18</option>
-									<option value="18_25">18-25</option>
-									<option value="26_33">26-33</option>
-									<option value="34_40">34-40</option>
-									<option value="41_55">41-55</option>
-									<option value="56+">56+</option>
-								</select>
-								<input class="form__input form__input--svg" type="text" name="form__age" id="form__age" value="" placeholder="Age Range">
-								<label class="visually-hidden" for="form__age">Age Range</label>
-							</p> -->						
+							</p>												
 
-							<div class="form__item form__item--select select" data-state="" tabindex="0">
-								<svg class="select__arrow" width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
+							<div class="form__item form__item--select select select--close" data-state="" tabindex="0">
+								<svg class="select__arrow select__arrow--down" width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
 								<div class="select__title" data-default=""></div>
 								<div class="select__placeholder">Age Range</div>
 								<div class="select__content">
-									<input id="form__age0" class="select__input" type="radio" name="form__age" value="age">
-									<label for="form__age0" class="select__label">age</label>
-									<input id="form__age1" class="select__input" type="radio" name="form__age" value="-18">
+									<!-- <input id="form__age0" class="select__input" type="radio" name="form__age" value="age"/>
+									<label for="form__age0" class="select__label">age</label> -->
+									<input id="form__age1" class="select__input" type="radio" name="form__age" value="under 18">
 									<label for="form__age1" class="select__label">under 18</label>
 									<input id="form__age2" class="select__input" type="radio" name="form__age" value="18-25">
 									<label for="form__age2" class="select__label">18-25</label>
@@ -167,26 +149,209 @@
 									<label for="form__age5" class="select__label">41-55</label>
 									<input id="form__age6" class="select__input" type="radio" name="form__age" value="56+">
 									<label for="form__age6" class="select__label">56+</label>
+									<!-- <label for="form__age6" class="select__label select__label--last">56+</label> -->
 								</div>
 							</div>
 
 							<p class="form__item form__item--textarea">
 								<textarea name="form__message" cols="20" rows="5" class="form__input" id="form__message" placeholder="Why is clean sport important to you?"></textarea>
 							</p>
-							<p class="form__item">
-								<svg width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
-								<input class="form__input form__input--svg" type="text" name="form__commitment" id="form__commitment" value="" placeholder="How Would You Define Your Commitment?">
-								<label class="visually-hidden" for="form__commitment">How Would You Define Your Commitment?</label>
-							</p>
-							<p class="form__item">
-								<svg width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
-								<input class="form__input form__input--svg" type="text" name="form__sport" id="form__sport" value="" placeholder="What Sport Do You Play for Competition?">
-								<label class="visually-hidden" for="form__sport">What Sport Do You Play for Competition?</label>
-							</p>
+							
+							<div class="form__item form__item--select select select--close" data-state="" tabindex="0">
+								<svg class="select__arrow select__arrow--down" width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
+								<div class="select__title" data-default=""></div>
+								<div class="select__placeholder">How Would You Define Your Commitment?</div>
+								<div class="select__content">
+									<!-- <input id="form__age0" class="select__input" type="radio" name="form__age" value="age"/>
+									<label for="form__age0" class="select__label">age</label> -->
+									<input id="form__commitment1" class="select__input" type="radio" name="form__commitment" value="Recreational (less than 5 hours a week)">
+									<label for="form__commitment1" class="select__label">Recreational (less than 5 hours a week)</label>
+									<!-- <label for="form__commitment1" class="select__label">Recreational (less than 5 hours a week) Recreational (less than 5 hours a week)Recreational (less than 5 hours a week)</label> -->
+									<input id="form__commitment2" class="select__input" type="radio" name="form__commitment" value="Endurance (greater than 5 hours a week)">
+									<label for="form__commitment2" class="select__label">Endurance (greater than 5 hours a week)</label>
+									<input id="form__commitment3" class="select__input" type="radio" name="form__commitment" value="Played in College (Recreational or NCAA)">
+									<label for="form__commitment3" class="select__label">Played in College (Recreational or NCAA)</label>
+									<input id="form__commitment4" class="select__input" type="radio" name="form__commitment" value="Professional (NBA, NFL, MLB, PGA, etc.)">
+									<label for="form__commitment4" class="select__label">Professional (NBA, NFL, MLB, PGA, etc.)</label>
+									<input id="form__commitment5" class="select__input" type="radio" name="form__commitment" value="Olympian">
+									<label for="form__commitment5" class="select__label select__label--last">Olympian</label>									
+								</div>
+							</div>						
+
+							<div class="form__item form__item--select select select--close" data-state="" tabindex="0">
+								<svg class="select__arrow select__arrow--down" width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg>
+								<div class="select__title" data-default=""></div>
+								<div class="select__placeholder">What Sport Do You Play for Competition?</div>
+								<div class="select__content">
+									<!-- <input id="form__age0" class="select__input" type="radio" name="form__age" value="age"/>
+									<label for="form__age0" class="select__label">age</label> -->
+									<input id="form__sport1" class="select__input" type="radio" name="form__sport" value="Airsports">
+									<label for="form__sport1" class="select__label">Airsports</label>
+									<input id="form__sport2" class="select__input" type="radio" name="form__sport" value="Archery">
+									<label for="form__sport2" class="select__label">Archery</label>
+									<input id="form__sport3" class="select__input" type="radio" name="form__sport" value="Badminton">
+									<label for="form__sport3" class="select__label">Badminton</label>
+									<input id="form__sport4" class="select__input" type="radio" name="form__sport" value="Baseball">
+									<label for="form__sport4" class="select__label">Baseball</label>
+									<input id="form__sport5" class="select__input" type="radio" name="form__sport" value="Basketball">
+									<label for="form__sport5" class="select__label">Basketball</label>
+									<input id="form__sport6" class="select__input" type="radio" name="form__sport" value="Biathlon">
+									<label for="form__sport6" class="select__label">Biathlon</label>
+									<input id="form__sport7" class="select__input" type="radio" name="form__sport" value="Bobsled">
+									<label for="form__sport7" class="select__label">Bobsled</label>
+									<input id="form__sport8" class="select__input" type="radio" name="form__sport" value="Boccia">
+									<label for="form__sport8" class="select__label">Boccia</label>
+									<input id="form__sport9" class="select__input" type="radio" name="form__sport" value="Bowling">
+									<label for="form__sport9" class="select__label">Bowling</label>
+									<input id="form__sport10" class="select__input" type="radio" name="form__sport" value="Boxing">
+									<label for="form__sport10" class="select__label">Boxing</label>
+									<input id="form__sport11" class="select__input" type="radio" name="form__sport" value="Canoe & Kayak">
+									<label for="form__sport11" class="select__label">Canoe & Kayak</label>
+									<input id="form__sport12" class="select__input" type="radio" name="form__sport" value="Curling">
+									<label for="form__sport12" class="select__label">Curling</label>
+									<input id="form__sport13" class="select__input" type="radio" name="form__sport" value="Cycling">
+									<label for="form__sport13" class="select__label">Cycling</label>
+									<input id="form__sport14" class="select__input" type="radio" name="form__sport" value="Diving">
+									<label for="form__sport14" class="select__label">Diving</label>
+									<input id="form__sport15" class="select__input" type="radio" name="form__sport" value="Equestrian">
+									<label for="form__sport15" class="select__label">Equestrian</label>
+									<input id="form__sport16" class="select__input" type="radio" name="form__sport" value="Fencing">
+									<label for="form__sport16" class="select__label">Fencing</label>
+									<input id="form__sport17" class="select__input" type="radio" name="form__sport" value="Field Hockey">
+									<label for="form__sport17" class="select__label">Field Hockey</label>
+									<input id="form__sport18" class="select__input" type="radio" name="form__sport" value="Football">
+									<label for="form__sport18" class="select__label">Football</label>
+									<input id="form__sport19" class="select__input" type="radio" name="form__sport" value="Goalball">
+									<label for="form__sport19" class="select__label">Goalball</label>
+									<input id="form__sport20" class="select__input" type="radio" name="form__sport" value="Golf">
+									<label for="form__sport20" class="select__label">Golf</label>
+									<input id="form__sport21" class="select__input" type="radio" name="form__sport" value="Gymnastics">
+									<label for="form__sport21" class="select__label">Gymnastics</label>
+									<input id="form__sport22" class="select__input" type="radio" name="form__sport" value="Hockey">
+									<label for="form__sport22" class="select__label">Hockey</label>
+									<input id="form__sport23" class="select__input" type="radio" name="form__sport" value="Ice Hockey">
+									<label for="form__sport23" class="select__label">Ice Hockey</label>
+									<input id="form__sport24" class="select__input" type="radio" name="form__sport" value="Judo">
+									<label for="form__sport24" class="select__label">Judo</label>
+									<input id="form__sport25" class="select__input" type="radio" name="form__sport" value="Karate">
+									<label for="form__sport25" class="select__label">Karate</label>
+									<input id="form__sport26" class="select__input" type="radio" name="form__sport" value="Luge">
+									<label for="form__sport26" class="select__label">Luge</label>
+									<input id="form__sport27" class="select__input" type="radio" name="form__sport" value="Modern Pentathlon">
+									<label for="form__sport27" class="select__label">Modern Pentathlon</label>
+									<input id="form__sport28" class="select__input" type="radio" name="form__sport" value="Motocross">
+									<label for="form__sport28" class="select__label">Motocross</label>
+									<input id="form__sport29" class="select__input" type="radio" name="form__sport" value="Nordic Combined">
+									<label for="form__sport29" class="select__label">Nordic Combined</label>
+									<input id="form__sport30" class="select__input" type="radio" name="form__sport" value="Paralympic Alpine Skiing">
+									<label for="form__sport30" class="select__label">Paralympic Alpine Skiing</label>
+									<input id="form__sport31" class="select__input" type="radio" name="form__sport" value="Paralympic Archery">
+									<label for="form__sport31" class="select__label">Paralympic Archery</label>
+									<input id="form__sport32" class="select__input" type="radio" name="form__sport" value="Paralympic Basketball">
+									<label for="form__sport32" class="select__label">Paralympic Basketball</label>
+									<input id="form__sport33" class="select__input" type="radio" name="form__sport" value="Paralympic Boccia">
+									<label for="form__sport33" class="select__label">Paralympic Boccia</label>
+									<input id="form__sport34" class="select__input" type="radio" name="form__sport" value="Paralympic Curling">
+									<label for="form__sport34" class="select__label">Paralympic Curling</label>
+									<input id="form__sport35" class="select__input" type="radio" name="form__sport" value="Paralympic Cycling">
+									<label for="form__sport35" class="select__label">Paralympic Cycling</label>
+									<input id="form__sport36" class="select__input" type="radio" name="form__sport" value="Paralympic Fencing">
+									<label for="form__sport36" class="select__label">Paralympic Fencing</label>
+									<input id="form__sport37" class="select__input" type="radio" name="form__sport" value="Paralympic Goalball">
+									<label for="form__sport37" class="select__label">Paralympic Goalball</label>
+									<input id="form__sport38" class="select__input" type="radio" name="form__sport" value="Paralympic Nordic Skiing">
+									<label for="form__sport38" class="select__label">Paralympic Nordic Skiing</label>
+									<input id="form__sport39" class="select__input" type="radio" name="form__sport" value="Paralympic Powerlifting">
+									<label for="form__sport39" class="select__label">Paralympic Powerlifting</label>
+									<input id="form__sport40" class="select__input" type="radio" name="form__sport" value="Paralympic Rugby">
+									<label for="form__sport40" class="select__label">Paralympic Rugby</label>
+									<input id="form__sport41" class="select__input" type="radio" name="form__sport" value="Paralympic Shooting">
+									<label for="form__sport41" class="select__label">Paralympic Shooting</label>
+									<input id="form__sport42" class="select__input" type="radio" name="form__sport" value="Paralympic Sled Hockey">
+									<label for="form__sport42" class="select__label">Paralympic Sled Hockey</label>
+									<input id="form__sport43" class="select__input" type="radio" name="form__sport" value="Paralympic Soccer">
+									<label for="form__sport43" class="select__label">Paralympic Soccer</label>
+									<input id="form__sport44" class="select__input" type="radio" name="form__sport" value="Paralympic Swimming">
+									<label for="form__sport44" class="select__label">Paralympic Swimming</label>
+									<input id="form__sport45" class="select__input" type="radio" name="form__sport" value="Paralympic Table Tennis">
+									<label for="form__sport45" class="select__label">Paralympic Table Tennis</label>
+									<input id="form__sport46" class="select__input" type="radio" name="form__sport" value="Paralympic Tennis">
+									<label for="form__sport46" class="select__label">Paralympic Tennis</label>
+									<input id="form__sport47" class="select__input" type="radio" name="form__sport" value="Paralympic Track and Field">
+									<label for="form__sport47" class="select__label">Paralympic Track and Field</label>
+									<input id="form__sport48" class="select__input" type="radio" name="form__sport" value="Paralympic Volleyball">
+									<label for="form__sport48" class="select__label">Paralympic Volleyball</label>
+									<input id="form__sport49" class="select__input" type="radio" name="form__sport" value="Raquetball">
+									<label for="form__sport49" class="select__label">Raquetball</label>
+									<input id="form__sport50" class="select__input" type="radio" name="form__sport" value="Roller Sports">
+									<label for="form__sport50" class="select__label">Roller Sports</label>
+									<input id="form__sport51" class="select__input" type="radio" name="form__sport" value="Rowing">
+									<label for="form__sport51" class="select__label">Rowing</label>
+									<input id="form__sport52" class="select__input" type="radio" name="form__sport" value="Rugby">
+									<label for="form__sport52" class="select__label">Rugby</label>
+									<input id="form__sport53" class="select__input" type="radio" name="form__sport" value="Sailing">
+									<label for="form__sport53" class="select__label">Sailing</label>
+									<input id="form__sport54" class="select__input" type="radio" name="form__sport" value="Shooting">
+									<label for="form__sport54" class="select__label">Shooting</label>
+									<input id="form__sport55" class="select__input" type="radio" name="form__sport" value="Skeleton">
+									<label for="form__sport55" class="select__label">Skeleton</label>
+									<input id="form__sport56" class="select__input" type="radio" name="form__sport" value="Ski (Cross-Country)">
+									<label for="form__sport56" class="select__label">Ski (Cross-Country)</label>
+									<input id="form__sport57" class="select__input" type="radio" name="form__sport" value="Ski (Freestyle)">
+									<label for="form__sport57" class="select__label">Ski (Freestyle)</label>
+									<input id="form__sport58" class="select__input" type="radio" name="form__sport" value="Ski (Jumping)">
+									<label for="form__sport58" class="select__label">Ski (Jumping)</label>
+									<input id="form__sport59" class="select__input" type="radio" name="form__sport" value="Skiing">
+									<label for="form__sport59" class="select__label">Skiing</label>
+									<input id="form__sport60" class="select__input" type="radio" name="form__sport" value="Sled Hockey">
+									<label for="form__sport60" class="select__label">Sled Hockey</label>
+									<input id="form__sport61" class="select__input" type="radio" name="form__sport" value="Snowboard">
+									<label for="form__sport61" class="select__label">Snowboard</label>
+									<input id="form__sport62" class="select__input" type="radio" name="form__sport" value="Soccer">
+									<label for="form__sport62" class="select__label">Soccer</label>
+									<input id="form__sport63" class="select__input" type="radio" name="form__sport" value="Softball">
+									<label for="form__sport63" class="select__label">Softball</label>
+									<input id="form__sport64" class="select__input" type="radio" name="form__sport" value="Speedskating">
+									<label for="form__sport64" class="select__label">Speedskating</label>
+									<input id="form__sport65" class="select__input" type="radio" name="form__sport" value="Squash">
+									<label for="form__sport65" class="select__label">Squash</label>
+									<input id="form__sport66" class="select__input" type="radio" name="form__sport" value="Swimming">
+									<label for="form__sport66" class="select__label">Swimming</label>
+									<input id="form__sport67" class="select__input" type="radio" name="form__sport" value="Synchronized Swimming">
+									<label for="form__sport67" class="select__label">Synchronized Swimming</label>
+									<input id="form__sport68" class="select__input" type="radio" name="form__sport" value="Table Tennis">
+									<label for="form__sport68" class="select__label">Table Tennis</label>
+									<input id="form__sport69" class="select__input" type="radio" name="form__sport" value="Taekwondo">
+									<label for="form__sport69" class="select__label">Taekwondo</label>
+									<input id="form__sport70" class="select__input" type="radio" name="form__sport" value="Team Handball">
+									<label for="form__sport70" class="select__label">Team Handball</label>
+									<input id="form__sport71" class="select__input" type="radio" name="form__sport" value="Tennis">
+									<label for="form__sport71" class="select__label">Tennis</label>
+									<input id="form__sport72" class="select__input" type="radio" name="form__sport" value="Track & Field">
+									<label for="form__sport72" class="select__label">Track & Field</label>
+									<input id="form__sport73" class="select__input" type="radio" name="form__sport" value="Triathlon">
+									<label for="form__sport73" class="select__label">Triathlon</label>
+									<input id="form__sport74" class="select__input" type="radio" name="form__sport" value="UFC">
+									<label for="form__sport74" class="select__label">UFC</label>
+									<input id="form__sport75" class="select__input" type="radio" name="form__sport" value="Volleyball">
+									<label for="form__sport75" class="select__label">Volleyball</label>
+									<input id="form__sport76" class="select__input" type="radio" name="form__sport" value="Water Polo">
+									<label for="form__sport76" class="select__label">Water Polo</label>
+									<input id="form__sport77" class="select__input" type="radio" name="form__sport" value="Water Skiing">
+									<label for="form__sport77" class="select__label">Water Skiing</label>
+									<input id="form__sport78" class="select__input" type="radio" name="form__sport" value="Weightlifting">
+									<label for="form__sport78" class="select__label">Weightlifting</label>
+									<input id="form__sport79" class="select__input" type="radio" name="form__sport" value="Wrestling">
+									<label for="form__sport79" class="select__label">Wrestling</label>
+									<input id="form__sport80" class="select__input" type="radio" name="form__sport" value="Other">
+									<label for="form__sport80" class="select__label">Other</label>
+								</div>
+							</div>
 						</div>
 						<input type="submit" class="form__submit button button--green" value="I Pledge to Support Clean Sport">
 						<p class="form__result"></p>
 					</form>
+
 					<svg class="form__circle" width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<defs>
 							<filter id="glare" x="0" y="0" width="192" height="192" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -335,6 +500,8 @@
 	<script src="js/my-slick.min.js"></script>
 	<script src="js/hamburger.min.js"></script>
 	<script src="js/select.min.js"></script>
+	<script src="js/ajax.min.js"></script>
+	<script src="js/form.min.js"></script>
 
 </body>
 </html>
