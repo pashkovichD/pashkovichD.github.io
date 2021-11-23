@@ -3,7 +3,7 @@
 }
 
 .page__wrapper {
-	padding: 40px 30px;
+	padding: 40px 30px 60px 30px;
 }
 
 .page__banner {
@@ -38,7 +38,7 @@
 	font-weight: 300;
 	text-align: center;
 	letter-spacing: 1px;
-	color: #6c7d96;	
+	color: #6c7d96;
 }
 
 .page__title-text {
@@ -207,6 +207,22 @@
 	border-radius: 100%;
 }
 
+.page__contact-us {
+	.page__address {
+		text-align: center;
+		font-size: 18px;
+		color: @color;
+	}
+
+	.page__phone {
+		margin-bottom: 15px;
+	}
+
+	.page__social {
+		justify-content: center;
+	}
+}
+
 
 @media (min-width: @mobile-width) {
 	.page__text--phone {
@@ -233,6 +249,11 @@
 		width: 100%;
 		margin: 0;
 		margin-bottom: 20px;
+	}
+
+	.page__contact-us {
+		width: 60%;
+		margin: 0 auto;
 	}
 }
 
@@ -290,6 +311,11 @@
 		.page__sample {
 			width: 100%;
 		}
+	}
+
+	.page__contact-us {
+		width: 40%;
+		margin: 0 auto;
 	}
 }
 
@@ -381,6 +407,24 @@
 			}
 		}
 	}
+
+	.page__contact-us {
+		width: 100%;
+		margin: 0;
+		.page__address {
+			text-align: left;
+		}
+
+		.page__phone {
+			width: 250px;
+			justify-content: flex-start;
+		}
+
+		.page__social {
+			justify-content: flex-start;
+		}
+	}
+
 }
 
 @media (min-width: 900px) {

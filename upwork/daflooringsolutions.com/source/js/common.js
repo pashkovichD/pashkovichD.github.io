@@ -16,9 +16,7 @@ jQuery(document).ready(function($) {
 			}, 800);
 		}
 	});
-
 	
-
 	// var h = $('.page-header').css('height');
 	// var h = $('.page-header').outerHeight();
 	
