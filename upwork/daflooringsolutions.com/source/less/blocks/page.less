@@ -8,11 +8,17 @@
 
 .page__banner {
 	position: relative;
-	height: 350px;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
 	overflow: hidden;
 	box-sizing: border-box;
+	
+}
+
+.page__banner-img {
+	position: relative;
+	height: 350px;
+	display: block;
 	img {
 		position: absolute;
 		top: 50%;
@@ -45,6 +51,24 @@
 
 .page__text-wrapper {
 	margin-bottom: 25px;
+}
+
+.page__text--phone {
+	padding-top: 20px;
+}
+
+.page__icon {
+	margin-bottom: 20px;
+}
+
+.page__icon-text {
+	margin-bottom: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.page__phone {
+	justify-content: center;
 }
 
 .page__list {
@@ -116,6 +140,14 @@
 .page__sample {
 	margin-bottom: 20px;
 	text-align: center;
+	
+}
+
+.page__sample-img {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	line-height: 0;
 	img {
 		width: 100%;
 	}
@@ -126,8 +158,62 @@
 	color: #000000;
 }
 
+.page__carpets {
+	margin-bottom: 50px;
+	padding-top: 30px;
+}
+
+.page__carpet {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.page__carpet-img {
+	display: block;
+	line-height: 0;
+	img {
+		width: 100%;
+	}
+}
+
+.page__carpet-box {
+	
+}
+
+.page__carpet-title {
+	margin-bottom: 0;
+	font-size: 20px;
+	line-height: 28px;	
+	font-weight: 600;
+	color: #000000;
+}
+
+.page__carpet-colors {
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: normal;
+	color: #999999;
+}
+
+.page__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px dashed #cccccc;
+	border-radius: 100%;
+}
+
 
 @media (min-width: @mobile-width) {
+	.page__text--phone {
+		width: 60%;
+		margin: 0 auto;
+	}
+
 	.page__youtube {	
 		height: 300px;
 	}
@@ -136,12 +222,48 @@
 		width: 60%;
 		margin: 0 auto;
 	}
+
+	.page__carpet {
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.page__samples--concrete {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 }
 
 @media (min-width: 600px) {
 	.page__title {
 		font-size: 52px;
 		line-height: 62px;		
+	}
+
+	.page__banner-img {	
+		img {			
+			max-width: 150%;
+		}
+	}
+
+	.page__text--phone {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin: 0;
+	}
+
+	.page__icon {
+		width: 130px;
+		height: 130px;
+		margin: 0;
+		margin-right: 30px;
+	}
+
+	.page__phone-box {
+		width: 50%;
 	}
 
 	.page__youtube {
@@ -159,6 +281,16 @@
 	.page__sample {
 		width: 47%;
 	}
+
+	.page__samples--concrete {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		.page__sample {
+			width: 100%;
+		}
+	}
 }
 
 @media (min-width: @tablet-width) {
@@ -166,8 +298,12 @@
 		text-align: left;		
 	}
 
-	.page__banner {	
+	.page__banner-img {	
 		height: 450px;
+	}
+
+	.page__phone-box {
+		width: 300px;
 	}
 
 	.page__list {
@@ -194,28 +330,72 @@
 
 	.page__samples {		
 		width: 100%;
-		// position: relative;
-		// left: -15px;
-		// right: -15px;
-		// justify-content: space-evenly;
-		justify-content: flex-start;
-		// justify-content: center;
-		// margin-left: -15px;
-		// margin-right: -15px;
+		justify-content: flex-start;		
 		box-sizing: border-box;
 	}
 
 	.page__sample {
-		width: 29%;
-		// flex-basis: 30%;
+		width: 29%;		
 		margin-right: 30px;
-		// &:nth-child(3n) {
-		// 	margin-right: 0;
-		// }
+	}
+
+	.page__carpets {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.page__carpet {
+		width: 45%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.page__carpet-box {
+		display: flex;
+		align-items: center;
+	}
+
+	.page__carpet-title {
+		width: 60%;
+		margin-left: 20px;
+		text-align: left;
+	}
+
+	.page__carpet-colors {
+		width: 30%;
+		margin-left: auto;
+		margin-right: 20px;
+		text-align: right;
+	}
+
+	.page__samples--concrete {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+		.page__sample {
+			width: 47%;
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.page__carpet {
+		width: 40%;		
 	}
 }
 
 @media (min-width: @desktop-width) {
+	.page__banner-img {	
+		img {			
+			max-width: 100%;
+		}
+	}
+
 	.page__item {
 		width: 30%;		
 	}
@@ -228,6 +408,10 @@
 @media (min-width: 1100px) {
 	.page__sample {
 		width: 22%;
+	}
+
+	.page__carpet {
+		width: 29%;
 	}	
 }
 
