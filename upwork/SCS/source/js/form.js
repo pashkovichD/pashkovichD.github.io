@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {	
 	
-	$('#contact-form').submit(function() {
+	$('#join-form, #contact-form').submit(function() {
 		return false;
 	});
 
@@ -43,6 +43,24 @@ jQuery(document).ready(function($) {
 	//     }
 	// );
 
+	$('#join-form').validate({
+		rules: {
+			form__name                : {required: true, minlength: 3},
+			form__email               : {required: true, email : true}
+			// form__phone               : {required: true},
+			// form__project_time        : {required: false, time12h: true},
+			// form__project_date        : {required: false, validDate: true}
+		},
+		messages: {
+			// form__project_time : {time12h: 'Format <b>12-hour am/pm</b>'},
+			// form__project_date : {validDate: 'Format <b>mm.dd.yyyy</b>.'},
+		},
+		submitHandler: function(form) {
+			sendAjaxForm('form__result', '#join-form', 'action_ajax_form.php');
+			// sendAjaxForm('form__result', 'join-form', 'action_ajax_form.php');
+		}
+	});
+
 	$('#contact-form').validate({
 		rules: {
 			form__name                : {required: true, minlength: 3},
@@ -56,7 +74,8 @@ jQuery(document).ready(function($) {
 			// form__project_date : {validDate: 'Format <b>mm.dd.yyyy</b>.'},
 		},
 		submitHandler: function(form) {
-			sendAjaxForm('form__result', 'contact-form', 'action_ajax_form.php');
+			sendAjaxForm('form__result', '#contact-form', 'action_ajax_form.php');
+			// sendAjaxForm('form__result', 'join-form', 'action_ajax_form.php');
 		}
 	});
 

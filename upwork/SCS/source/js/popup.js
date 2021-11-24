@@ -17,7 +17,7 @@ link.addEventListener('click', function(evt) {
 	popup.classList.remove('modal-hide');
 	popup.classList.add('modal-show');
 	overlay.classList.add('overlay-show');
-	login.focus();
+	// login.focus();
 });
 
 close.addEventListener('click', function(evt) {
@@ -50,7 +50,7 @@ window.addEventListener('keydown', function(evt) {
 	}
 });
 
-form.addEventListener('submit', function(evt) {
+/*form.addEventListener('submit', function(evt) {
 
 	if(!login.value || !password.value) {
 		evt.preventDefault();
@@ -62,18 +62,10 @@ form.addEventListener('submit', function(evt) {
 			// popup.classList.add('modal-repeat-error');
 		} else {
 			popup.classList.add('modal-error');
-		}
-
-		/*if(popup.classList.contains('modal-double-error')) {
-			popup.classList.add('modal-error');
-			popup.classList.remove('modal-double-error');
-		} else {
-
-		}*/
-		
+		}		
 	}
 
-});
+});*/
 
 
 	

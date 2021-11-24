@@ -116,9 +116,9 @@
 
 				<div class="join-page__form-wrapper form__wrapper">
 					<p class="form__title">Join Us</p>
-					<!-- <form id="contact-form" class="join-page__form form form--nojs" action="https://echo.htmlacademy.ru" method="POST"> -->
-					<form id="contact-form" class="join-page__form form form--nojs" action="/" method="POST">
+					<form id="join-form" class="join-page__form form form--nojs" action="/" method="POST">
 						<div class="form__item-wrapper">
+							<input type="hidden" name="form__id" value="join-form">
 							<p class="form__item">
 								<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Your Name *">
 								<label class="visually-hidden" for="form__name">Your Name *</label>
@@ -151,7 +151,6 @@
 									<label for="form__age5" class="select__label">41-55</label>
 									<input id="form__age6" class="select__input" type="radio" name="form__age" value="56+"/>
 									<label for="form__age6" class="select__label">56+</label>
-									<!-- <label for="form__age6" class="select__label select__label--last">56+</label> -->
 								</div>
 							</div>
 
@@ -398,8 +397,8 @@
 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 								<input type="hidden" name="cmd" value="_s-xclick">
 								<input type="hidden" name="hosted_button_id" value="XE3YQES6DHKCU">
-								<input class="donate__img" type="image" src="img/donate.webp" border="1" name="submit" alt="PayPal - The safer, easier way to pay online! width=" 50"="" height="50">
-								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="lazyloaded" data-ll-status="loaded"><noscript><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></noscript>
+								<input class="donate__img" type="image" src="img/donate.webp" name="submit" alt="PayPal - The safer, easier way to pay online!" width="50" height="50">
+								<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="lazyloaded" data-ll-status="loaded"><noscript><img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></noscript>
 							</form>
 						</div>
 					</div>
@@ -486,10 +485,9 @@
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="XE3YQES6DHKCU">
-						<input class="donate__img" type="image" src="img/donate.webp" border="1" name="submit" alt="PayPal - The safer, easier way to pay online! width=" 50"="" height="50">						
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="lazyloaded" data-ll-status="loaded"><noscript><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></noscript>
+						<input class="donate__img" type="image" src="img/donate.webp" name="submit" alt="PayPal - The safer, easier way to pay online!" width="50" height="50">
+						<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="lazyloaded" data-ll-status="loaded"><noscript><img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></noscript>
 					</form>
-
 				</div>
 			</section>			
 		</div>

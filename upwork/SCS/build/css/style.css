@@ -1015,6 +1015,10 @@ picture {
     left: 200px;
     right: 200px;
   }
+  .modal .form__result {
+    left: 70px;
+    right: 70px;
+  }
 }
 @media (min-width: 991px) {
   .form__result {
@@ -1037,6 +1041,10 @@ picture {
   }
   .modal .form__item--phone {
     margin-bottom: 0;
+  }
+  .modal .form__result {
+    left: 200px;
+    right: 200px;
   }
 }
 @media (min-width: 1200px) {

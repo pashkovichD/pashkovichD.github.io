@@ -3,7 +3,8 @@ function sendAjaxForm(result_form, ajax_form, url) {
         url:     url, //url (action_ajax_form.php)
         type:     "POST",
         dataType: "html",
-        data: $("#"+'contact-form').serialize(),
+        data: $(ajax_form).serialize(),
+        // data: $("#"+'join-form').serialize(),
         success: function(response) {
             result = $.parseJSON(response);         
             $(document).mouseup(function (e){ // click on web document

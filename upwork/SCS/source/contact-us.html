@@ -11,6 +11,8 @@
 
 	<!-- slick.js -->	
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -155,10 +157,9 @@
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="XE3YQES6DHKCU">
-						<input class="donate__img" type="image" src="img/donate.webp" border="1" name="submit" alt="PayPal - The safer, easier way to pay online! width=" 50"="" height="50">						
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="lazyloaded" data-ll-status="loaded"><noscript><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></noscript>
+						<input class="donate__img" type="image" src="img/donate.webp" name="submit" alt="PayPal - The safer, easier way to pay online!" width="50" height="50">
+						<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" class="lazyloaded" data-ll-status="loaded"><noscript><img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></noscript>
 					</form>
-
 				</div>
 			</section>			
 		</div>
@@ -169,10 +170,10 @@
 
 	<section class="modal-contact modal">
 		<h2 class="modal-contact__title">Contact Us</h2>
-
 		<form id="contact-form" class="join-paage__form form form--nojs" action="/" method="POST">
 			<div class="form__item-wrapper">
 				<div class="form__box">
+					<input type="hidden" name="form__id" value="contact-form">
 					<p class="form__item">
 						<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Name">
 						<label class="visually-hidden" for="form__name">Name</label>
@@ -188,8 +189,8 @@
 				</div>
 				<div class="form__box">
 					<p class="form__item">
-						<input class="form__input form__input--svg" type="text" name="form__Subject" id="form__Subject" value="" placeholder="Subject">
-						<label class="visually-hidden" for="form__Subject">Subject</label>
+						<input class="form__input form__input--svg" type="text" name="form__subject" id="form__subject" value="" placeholder="Subject">
+						<label class="visually-hidden" for="form__subject">Subject</label>
 					</p>
 					<p class="form__item form__item--textarea">
 						<textarea name="form__message" cols="20" rows="5" class="form__input" id="form__message" placeholder="Message"></textarea>
@@ -202,46 +203,12 @@
 		<button type="button" class="modal-contact__close close" tabindex="0"><span class="visually-hidden">Close form</span></button>
 
 	</section>
-
-	<!-- <section class="modal-login modal">
-		<h2 class="modal-login__title">Contact Us</h2>
-
-		<form id="contact-form" class="join-paage__form form form--nojs" action="/" method="POST">
-			<div class="form__item-wrapper">
-				<div class="form__box">
-					<p class="form__item">
-						<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Name">
-						<label class="visually-hidden" for="form__name">Name</label>
-					</p>
-					<p class="form__item">								
-						<input class="form__input" type="email" name="form__email" id="form__email" value="" placeholder="Email">
-						<label class="visually-hidden" for="form__email">Email</label>
-					</p>
-					<p class="form__item form__item--phone">
-						<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone no.">
-						<label class="visually-hidden" for="form__phone">Phone no.</label>
-					</p>
-				</div>
-				<div class="form__box">
-					<p class="form__item">
-						<input class="form__input form__input--svg" type="text" name="form__Subject" id="form__Subject" value="" placeholder="Subject">
-						<label class="visually-hidden" for="form__Subject">Subject</label>
-					</p>
-					<p class="form__item form__item--textarea">
-						<textarea name="form__message" cols="20" rows="5" class="form__input" id="form__message" placeholder="Message"></textarea>
-					</p>
-				</div>
-			</div>
-			<input type="submit" class="form__submit button button--green" value="Send Message">
-			<p class="form__result"></p>
-		</form>	
-		<button type="button" class="modal-login__close close" tabindex="0"><span class="visually-hidden">Close form</span></button>
-
-	</section> -->
+	
 	<div class="overlay"></div>
 
 	<script src="js/hamburger.min.js"></script>
 	<script src="js/popup.min.js"></script>	
-
+	<script src="js/ajax.min.js"></script>
+	<script src="js/form.min.js"></script>
 </body>
 </html>
