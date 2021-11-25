@@ -23,15 +23,16 @@
 			color: #202f64;
 		}
 	}
-}
-
-.menu__item--home {
-	display: none;
+	&:first-child {
+		display: none;
+	}
 }
 
 @media (min-width: @mobile-width) {
-	.menu__item--home {
-		display: block;
+	.menu__item {		
+		&:first-child {
+			display: block;
+		}
 	}
 }
 
