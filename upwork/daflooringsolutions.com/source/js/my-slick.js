@@ -11,7 +11,8 @@ jQuery(document).ready(function($) {
 
 	$('.gallery__list').slick({
 		autoplay: true,
-		infinite: true,
+		autoplaySpeed: 4000,
+		infinite: true,		
 		arrows: true,
 		dots: false,
 		slidesToShow: 1,

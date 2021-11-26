@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 	/* Apply fancybox to multiple items */
 	
 	$(".gallery__list li a").fancybox({
-		'loop'          :   true,		
-		'zoomOpacity'			: true		
+		'loop'          : true,		
+		'zoomOpacity'	: true		
 	});
 });
