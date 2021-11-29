@@ -1422,6 +1422,7 @@ ul {
   width: 100%;
   height: 200px;
   margin-bottom: 20px;
+  border: 0;
 }
 .page__footnote {
   display: block;
