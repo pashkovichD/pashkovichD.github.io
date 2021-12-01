@@ -6,7 +6,11 @@ jQuery(document).ready(function($) {
 		dots: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		variableWidth: true
+		variableWidth: true,
+
+		focusOnSelect: true,
+		centerMode: true,
+		centerPadding: 0
 	});
 
 	$('.gallery__list').slick({
