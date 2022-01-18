@@ -104,7 +104,7 @@
 	
     function send_mail($message, $name, $email) {
         // e-mail to which the letter will come        
-        $mail_to = "d.pashkovich@gmail.com";
+        $mail_to = "info@supportcleansport.com";
         // $mail_to = "info@losangelesfurnitureinstallation.com";
         // theme
         $subject = "Clean Sport (" . $name . ")";        
