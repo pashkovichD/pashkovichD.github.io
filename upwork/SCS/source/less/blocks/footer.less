@@ -17,17 +17,21 @@
 .page-footer__address {
 	margin-bottom: 20px;
 	padding-left: 50px;
-	color: #dee0e4;
+	a {
+		text-decoration: none;
+		color: #dee0e4 !important;			
+		&:hover,
+		&:focus {
+			color: #ffffff;
+		}
+	}	
 	br {
 		display: inline;
 	}
 	svg {
 		left: 17px;
 	}
-	&:hover,
-	&:focus {
-		color: #ffffff;
-	}
+	
 }
 
 .page-footer__contact {
@@ -79,7 +83,7 @@
 		font-size: 12px;
 		line-height: 180%;
 		text-align: center;
-		color: #5F5F5F;
+		color: rgba(255,255,255,.7);
 	}
 	&::after {
 		content: '';
@@ -93,11 +97,11 @@
 }
 
 .page-footer__sitemap {
-	color: rgba(255,255,255,.5);
+	color: rgba(255,255,255,.8);
 	text-decoration: none;
 	&:hover,
 	&:focus {
-		color: rgba(255,255,255,.7);
+		color: rgba(255,255,255,1);
 		text-decoration: underline;
 	}
 }

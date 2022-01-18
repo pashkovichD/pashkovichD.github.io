@@ -4,55 +4,55 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUQjIg1_i6t8kCHKm45_QpRyS7j.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_aZA3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_c5H3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_epG3gnD-w.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v21/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Playfair Display';
@@ -288,7 +288,6 @@ picture {
   font-size: 14px;
   line-height: 25px;
   font-weight: 600;
-  color: #292b2c;
   cursor: pointer;
 }
 .address svg {
@@ -299,12 +298,16 @@ picture {
 .address span {
   opacity: 0.8;
 }
+.address span a {
+  text-decoration: none;
+  color: #292b2c;
+}
+.address span a:hover,
+.address span a:focus {
+  color: #000000;
+}
 .address br {
   display: none;
-}
-.address:hover,
-.address:focus {
-  color: #000000;
 }
 @media (min-width: 480px) {
 }
@@ -6005,17 +6008,20 @@ label.error {
 .page-footer__address {
   margin-bottom: 20px;
   padding-left: 50px;
-  color: #dee0e4;
+}
+.page-footer__address a {
+  text-decoration: none;
+  color: #dee0e4 !important;
+}
+.page-footer__address a:hover,
+.page-footer__address a:focus {
+  color: #ffffff;
 }
 .page-footer__address br {
   display: inline;
 }
 .page-footer__address svg {
   left: 17px;
-}
-.page-footer__address:hover,
-.page-footer__address:focus {
-  color: #ffffff;
 }
 .page-footer__contact {
   margin-bottom: 40px;
@@ -6064,7 +6070,7 @@ label.error {
   font-size: 12px;
   line-height: 180%;
   text-align: center;
-  color: #5F5F5F;
+  color: rgba(255, 255, 255, 0.7);
 }
 .page-footer__copyright::after {
   content: '';
@@ -6076,12 +6082,12 @@ label.error {
   background-color: rgba(95, 95, 95, 0.25);
 }
 .page-footer__sitemap {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
 .page-footer__sitemap:hover,
 .page-footer__sitemap:focus {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   text-decoration: underline;
 }
 @media (min-width: 600px) {
