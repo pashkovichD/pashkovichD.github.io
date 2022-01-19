@@ -6071,31 +6071,50 @@ label.error {
 }
 .page-footer__copyright {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  /*&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
+		height: 1px;
+		background-color: rgba(95,95,95,.25);
+	}*/
 }
 .page-footer__copyright p {
+  margin-bottom: 0;
+  padding: 10px;
+  padding-top: 10px;
   font-size: 12px;
   line-height: 180%;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(95, 95, 95, 0.45);
 }
-.page-footer__copyright::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 15px;
-  right: 15px;
-  height: 1px;
-  background-color: rgba(95, 95, 95, 0.25);
+.page-footer__copyright p.page-footer__web {
+  padding: 0;
+  padding-top: 5px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.page-footer__copyright p.page-footer__web a {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f5850d;
+}
+.page-footer__copyright p.page-footer__web a:hover,
+.page-footer__copyright p.page-footer__web a:focus {
+  color: #d36f05;
+  text-decoration: underline;
 }
 .page-footer__sitemap {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-decoration: none;
 }
 .page-footer__sitemap:hover,
 .page-footer__sitemap:focus {
-  color: #ffffff;
   text-decoration: underline;
 }
 @media (min-width: 600px) {
@@ -6156,10 +6175,6 @@ label.error {
   .page-footer__social {
     padding-left: 15px;
   }
-  .page-footer__copyright::after {
-    left: 30px;
-    right: 30px;
-  }
 }
 @media (min-width: 991px) {
   .page-footer__wrapper {
@@ -6197,7 +6212,8 @@ label.error {
     padding-left: 0;
   }
   .page-footer__copyright p {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -6222,12 +6238,5 @@ label.error {
   }
   .page-footer__phone {
     margin-bottom: 0;
-  }
-  .page-footer__copyright p {
-    padding: 0 10px;
-  }
-  .page-footer__copyright::after {
-    left: 15px;
-    right: 15px;
   }
 }
