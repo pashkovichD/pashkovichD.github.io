@@ -355,7 +355,8 @@ a {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-h2 {
+h2,
+h3 {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -368,7 +369,9 @@ h2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-h3 {
+h3,
+h4,
+h5 {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -3401,6 +3404,7 @@ label.error {
 }
 .recent-articles__item-title {
   margin-bottom: 5px;
+  font-size: 18px;
 }
 .recent-articles__item-title a {
   font-size: 18px;
@@ -6320,7 +6324,7 @@ label.error {
   .page-footer__contact {
     width: 67%;
   }
-  .page-footer__contact h2 {
+  .page-footer__contact h3 {
     margin-bottom: 25px;
   }
   .page-footer__address {
@@ -6379,7 +6383,7 @@ label.error {
     width: 35%;
     margin-left: auto;
   }
-  .page-footer__contact h2 {
+  .page-footer__contact h3 {
     margin-bottom: 25px;
   }
   .page-footer__address {
