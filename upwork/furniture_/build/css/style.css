@@ -1193,12 +1193,6 @@ textarea #form__description {
   font-weight: normal;
   color: #ffffff;
 }
-.ui-timepicker-minutes .ui-timepicker-title {
-  padding: 5px;
-}
-.ui-timepicker-minutes .ui-timepicker {
-  padding: 0 5px;
-}
 .page-header {
   margin: 0;
   padding: 0;

@@ -861,7 +861,7 @@ textarea #form__description {
   margin-right: 30px;
 }
 .gallery__list .slick-dots {
-  bottom: -30px;
+  bottom: -10px;
 }
 .gallery__list .slick-dots li button::before {
   color: #000000;
@@ -1192,6 +1192,12 @@ textarea #form__description {
   background: #007fff;
   font-weight: normal;
   color: #ffffff;
+}
+.ui-timepicker-minutes .ui-timepicker-title {
+  padding: 5px;
+}
+.ui-timepicker-minutes .ui-timepicker {
+  padding: 0 5px;
 }
 .page-header {
   margin: 0;
@@ -2527,6 +2533,11 @@ textarea #form__description {
   left: 0;
   z-index: -1;
 }
+.description__data-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
 .description__data-text {
   font-size: 14px;
   line-height: 28px;
@@ -2574,6 +2585,14 @@ textarea #form__description {
 .description__advantages {
   padding-top: 30px;
   padding-bottom: 45px;
+}
+.description__email {
+  text-decoration: none;
+  color: #1567ba;
+}
+.description__email:hover,
+.description__email:focus {
+  text-decoration: underline;
 }
 @media (min-width: 480px) {
   .description {
@@ -3333,6 +3352,7 @@ label.error {
   margin-bottom: 60px !important;
 }
 .gallery__item {
+  margin-bottom: 30px;
   display: block !important;
   width: 270px;
   height: 270px;

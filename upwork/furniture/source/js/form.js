@@ -17,7 +17,14 @@ jQuery(document).ready(function($) {
 
 	$('#form__project_time').timepicker({
 	    showPeriod: true,
-	    showLeadingZero: true
+	    showLeadingZero: true,
+	    minuteText: 'm',         // Define the locale text for "Minute"
+	    minutes: {
+	        starts: 0,                // First displayed minute
+	        ends: 45,                 // Last displayed minute
+	        interval: 15,              // Interval of displayed minutes
+	        manual: []                // Optional extra entries for minutes
+	    }
 	});
 
 	// DatePicker Jquery
