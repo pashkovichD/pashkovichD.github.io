@@ -2,6 +2,12 @@
 	position: relative;
 	padding-top: 80px;
 	padding-bottom: 35px;
+	&:hover {
+		.promo__circle {
+			bottom: 80px;
+			right: 270px;
+		}
+	}
 }
 .promo__wrapper {
 	position: relative;
@@ -33,8 +39,10 @@
 
 .promo__circle {
 	position: absolute;
-	bottom: 20px;
-	right: 255px;
+	bottom: 50px;
+	right: 300px;
+	width: 112px;
+	transition: all .6s ease;
 }
 
 @media (min-width: @mobile-width) {
@@ -44,6 +52,12 @@
 @media (min-width: 600px) {
 	.promo {
 		overflow: hidden;
+		&:hover {
+			.promo__circle {
+				bottom: 60px;
+				right: 30px;
+			}
+		}
 	}
 
 	.promo__wrapper {	
@@ -72,12 +86,20 @@
 }
 
 @media (min-width: 700px) {
+	.promo {
+		&:hover {
+			.promo__circle {
+				bottom: 65px;
+				right: 50px;
+			}
+		}
+	}
 	.promo__img {
 		width: 400px;
 	}
 
 	.promo__circle {
-		right: 95px;
+		right: 85px;
 	}
 }
 
@@ -112,6 +134,15 @@
 }
 
 @media (min-width: @desktop-width) {
+	.promo {
+		&:hover {
+			.promo__circle {
+				bottom: 65px;
+				right: 65px;
+			}
+		}
+	}
+
 	.promo__wrapper {	
 		padding: 0 30px;
 	}
@@ -126,8 +157,8 @@
 		display: block;
 		width: 152px;
 		height: 152px;
-		right: 95px;
-		bottom: 65px;
+		right: 110px;
+		bottom: 15px;
 	}
 }
 
@@ -135,6 +166,12 @@
 	.promo {
 		padding-top: 130px;
 		padding-bottom: 170px;
+		&:hover {
+			.promo__circle {
+				bottom: 95px;
+				right: 65px;
+			}
+		}
 	}
 
 	.promo__wrapper {	
@@ -150,12 +187,11 @@
 		right: -125px;
 	}
 
-	.promo__circle {
-		display: block;
+	.promo__circle {		
 		width: 192px;
 		height: 192px;
-		right: 65px;
-		bottom: 95px;
+		right: 120px;
+		bottom: 40px;
 	}
 	
 }

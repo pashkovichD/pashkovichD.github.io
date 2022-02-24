@@ -3,6 +3,11 @@
 	padding-bottom: 30px;	
 	// overflow: hidden;
 	// background-color: green;
+	&:hover {
+		.tools__circle {
+			top: 46%;
+		}
+	}
 }
 
 .tools__wrapper {
@@ -88,11 +93,12 @@
 
 .tools__circle {
 	position: absolute;
-	top: 46%;
+	top: 70%;
 	left: -60px;
-	width: 212px;
-	height: 212px;
+	width: 172px;
+	height: auto;
 	z-index: -1;
+	transition: all .6s ease;
 }
 
 @media (min-width: @mobile-width) {
@@ -148,6 +154,11 @@
 		padding-top: 120px;
 		// padding-bottom: 95px;
 		// background-color: green;
+		&:hover {
+			.tools__circle {
+				top: 66%;
+			}
+		}
 	}
 
 	.tools__item {	
@@ -157,8 +168,8 @@
 
 	.tools__circle {
 		display: block;
-		top: auto;
-		bottom: -120px;
+		top: 97%;
+		// bottom: -120px;
 		left: 240px;
 	}
 }	

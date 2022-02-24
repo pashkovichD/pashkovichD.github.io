@@ -64,15 +64,33 @@
 		width: 343px;
 		height: 520px;
 		border-radius: 10px;
-	}	
-}
+		&.goals__dumbbell {
+			position: absolute;
+			top: 440px;			
+			left: -140px;			
+			width: 200px;
+			height: auto;
+			transition: all .6s ease;
+		}
+		&.goals__circle {
+			position: absolute;
+			top: 125px;
+			left: auto;
+			right: 35px;
+			width: 112px;
+			height: auto;
+			transition: all .6s ease;
+		}
+	}
+	&:hover {
+		.goals__dumbbell {
+			top: -55px;
+		}
+		.goals__circle {
+			top: 380px;
+		}
+	}
 
-.goals__circle {
-	position: absolute;
-	bottom: 65px;
-	right: -25px;
-	width: 212px;
-	height: 212px;
 }
 
 
@@ -90,20 +108,38 @@
 	.goals__img {		
 		img {
 			left: 50%;
-			margin-left: -230px;	
+			margin-left: -230px;
+			&.goals__dumbbell {			
+				top: 430px;			
+				left: -7%;			
+				width: 230px;
+				margin-left: auto;
+			}
+			&.goals__circle {				
+				top: 90px;
+				left: auto;
+				right: 21%;
+				width: 132px;
+				margin-left: auto;
+			}
+		}
+		&:hover {			
+			.goals__circle {
+				top: 360px;
+			}
 		}
 		
 	}
 
 	.goals__circle {
-		right: auto;
-		left: 50%;
+		// right: auto;
+		// left: 50%;
 	}
 }
 
 @media (min-width: @tablet-width) {
 	.goals {
-		padding-top: 15px;
+		// padding-top: 15px;
 	}
 
 	.goals__list {
@@ -126,6 +162,17 @@
 			height: 520px;
 			left: 0;
 			margin: 0 auto;
+			&.goals__dumbbell {			
+				top: 350px;			
+				left: -15%;			
+				width: 350px;			
+			}
+			&.goals__circle {				
+				top: 50px;
+				left: auto;
+				right: -5%;
+				width: 152px;
+			}
 		}
 	}
 
@@ -136,10 +183,31 @@
 	}
 }
 
+@media (min-width: 900px) {
+	.goals__img {
+		img {
+			&.goals__dumbbell {
+				left: -5%;
+			}
+			&.goals__circle {
+				right: 2%;
+			}
+		}
+	}
+}
+
 @media (min-width: @desktop-width) {
 	.goals {
 		min-height: 880px;
 		padding-top: 40px;
+		&:hover {
+			.goals__dumbbell {
+				top: -55px;
+			}
+			.goals__circle {
+				top: 680px;
+			}
+		}
 	}
 	.goals__wrapper {
 		// display: flex;
@@ -163,14 +231,24 @@
 		img {
 			width: 580px;
 			height: 880px;
-		}		
+			&.goals__dumbbell {			
+				top: 730px;
+				left: -20%;				
+			}
+			&.goals__circle {				
+				top: 170px;
+				left: auto;
+				right: -10%;
+				width: 172px;
+			}
+		}
 	}
 
-	.goals__circle {		
+	.goals__circle {
 		bottom: auto;
 		left: auto;
 		right: -65px;		
-		top: 230px;
+		top: 630px;
 		margin-left: 0;
 	}
 }	

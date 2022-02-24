@@ -6,6 +6,11 @@
 	border-radius: 4px;
 	box-sizing: border-box;	
 	z-index: 1;
+	&:hover + picture > .form__circle {
+		
+			top: 56%;
+		
+	}
 }
 
 .form--nojs .form__label {
@@ -113,10 +118,11 @@
 
 .form__circle {
 	position: absolute;
-	top: 56%;
-	left: -120px;
-	width: 212px;
-	height: 212px;
+	top: 40%;
+	left: -80px;
+	width: 152px;
+	height: 152px;
+	transition: all .6s ease;
 }
 
 .form__result {	
