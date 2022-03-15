@@ -3709,9 +3709,14 @@ label.error {
     font-size: 45px;
     line-height: 62px;
   }
+  .post__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .post__item {
     width: 31%;
-    margin-left: 40px;
+    margin-left: 0;
   }
   .post__item:nth-child(3n+1) {
     margin-left: 0;
