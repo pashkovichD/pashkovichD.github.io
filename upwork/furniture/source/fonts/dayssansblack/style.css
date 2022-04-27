@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Days Sans';
+    src: local('TT Days Sans Black'), local('TT-Days-Sans-Black'),
+        url('TTDaysSans-Black.woff2') format('woff2'),
+        url('TTDaysSans-Black.woff') format('woff'),
+        url('TTDaysSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
