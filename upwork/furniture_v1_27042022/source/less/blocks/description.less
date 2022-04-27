@@ -1,0 +1,335 @@
+.description {
+	position: relative;
+	margin-bottom: 40px;
+	padding: 0 15px;
+}
+
+.description--about-us {
+	margin-bottom: 80px;
+	padding: 0 15px;
+}
+
+.description--mb {
+	margin-bottom: 80px;
+}
+
+.description__list {
+	
+}
+
+.description__item {	
+	margin-bottom: 40px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.description__img {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.description__data {
+	margin-bottom: 5px;
+}
+
+.description__data-title {
+	position: relative;
+	margin-bottom: 15px;	
+	padding-left: 20px;
+	font-size: 24px;
+	line-height: 33px;
+	font-weight: 700;	
+	svg {
+		position: absolute;
+		top: -40px;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.description__data-subtitle {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+.description__data-text {
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.description__data-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 0 15px 0 30px;
+	li {
+		width: 45%;
+		position: relative;		
+		line-height: 28px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 14px;
+			left: -15px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: @color;
+		}
+	}
+}
+
+.description__contacts {
+	margin-bottom: 35px;
+}
+
+.description__contacts--receiving {
+	margin-bottom: 70px;
+}
+
+.description__contacts--modular {
+	margin-bottom: 30px;
+}
+
+.description__advantages {
+	padding-top: 30px;
+	padding-bottom: 45px;
+}
+
+.description__email {
+	text-decoration: none;
+	color: #1567ba;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.description {
+		width: 470px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.description--about-us {
+		margin-bottom: 80px;
+		padding: 0 30px;
+	}
+
+	.description__contacts--modular {
+		margin-bottom: 50px;
+	}
+
+}
+
+@media (min-width: 600px) {
+	.description__contacts--modular {
+		margin-bottom: 65px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.description {			
+		width: 100%;
+		margin-bottom: 50px;
+		padding: 0 30px;
+	}
+
+	.description--about-us {
+		.description__data {
+			padding-bottom: 0;
+		}
+	}
+
+	.description--about-us {
+		.description__data-list {
+			width: 100%;
+			max-width: 800px;
+			li {
+				width: 28%;
+			}
+		}
+	}
+
+	.description__item {		
+		clear: both;
+		margin-bottom: 50px;
+		picture {
+			width: 48%;
+		}
+	}	
+
+	.description__img {
+		width: 340px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+		float: left;
+	}
+
+	.description__data {
+		margin: 0;		
+		padding-top: 40px;
+		padding-left: 0;
+		padding-bottom: 30px;
+	}
+
+	.description__data-title {
+		margin-left: 370px;
+	}	
+
+	.description__data-list {	
+		width: 50%;
+		margin: 0 0 20px auto;
+		padding-top: 10px;
+		padding-right: 30px;
+		li {
+			width: 43%;
+		}
+	}
+
+	.description__item--right {
+		.description__img {		
+			margin-right: 0;
+			margin-left: 30px;
+			float: right;
+		}
+
+		.description__data-title {
+			margin-left: 0;
+		}
+
+		.description__data {
+			padding-top: 40px;
+			padding-left: 45px;
+			padding-left: 0;
+		}
+
+		.description__data-list {
+			margin: 0 auto 20px 0;
+		}
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.description__advantages {
+		padding-top: 0;		
+	}
+
+	.description--about-us {
+		margin-bottom: 50px;
+	}
+
+	.description__contacts--receiving {
+		margin-bottom: 110px;
+	}
+
+	.description__contacts--modular {
+		.contacts__wrapper {
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+@media (min-width: @desktop-width) {
+	.description__title {
+		font-size: 48px;
+		line-height: 67px;
+	}
+
+	.description__contacts {
+		margin-bottom: 80px;
+	}
+
+	.description__img {
+		width: 420px;
+	}
+
+	.description__data-title {
+		margin-left: 450px;
+	}
+
+	.description--about-us {
+		margin-bottom: 50px;
+	}
+
+}
+
+
+
+@media (min-width: @desktop-full-width) {
+	.description {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+
+	.description--about-us {
+		
+	}
+
+	.description__item {
+		margin-bottom: 30px;
+		picture {
+			width: 470px;
+		}
+	}
+
+	.description__img {
+		width: 470px;
+		margin-right: 100px;
+		margin-bottom: 50px;
+	}
+
+	.description__data {
+		padding-bottom: 50px;
+	}
+
+	.description__data-title {
+		margin-left: 570px;
+		margin-bottom: 20px;
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.description__item-title {
+		margin-bottom: 20px;
+		font-size: 28px;
+		line-height: 39px;		
+	}
+
+	.description__item--right {
+		picture {
+			margin-left: auto;
+		}		
+
+		.description__img {
+			margin-right: 0;
+			margin-left: 100px;
+		}			
+	}
+
+	.description__data-list {
+		width: 50%;
+		margin-left: auto;
+		justify-content: flex-start;
+		li {
+			width: 42%;
+			margin-right: 30px;
+		}
+	}
+
+	.description--about-us {
+		margin-bottom: 80px;		
+	}
+
+}
