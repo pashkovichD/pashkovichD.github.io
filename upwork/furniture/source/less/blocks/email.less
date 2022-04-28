@@ -9,8 +9,14 @@
 	font-size: 12px;
 	text-decoration: none;	
 	letter-spacing: .1px;
-	color: #ffffff;
-	&::before {
+	color: #292b2c;
+	svg {
+		position: relative;
+		top: 1px;
+		margin-right: 10px;
+		fill: #1567ba;
+	}
+	/*&::before {
 		content: '';
 		position: absolute;
 		top: -2px;
@@ -19,7 +25,7 @@
 		height: 15px;		
 		background-image: url(../img/email.svg);
 		background-repeat: no-repeat;
-	}
+	}*/
 }
 
 @media (min-width: @mobile-width) {
@@ -32,6 +38,15 @@
 
 @media (min-width: @desktop-width) {
 
+}
+
+@media (min-width: @desktop-full-width) {
+	.email__email {
+		color: #ffffff;
+		svg {			
+			fill: #ffffff;
+		}
+	}
 }
 
 
