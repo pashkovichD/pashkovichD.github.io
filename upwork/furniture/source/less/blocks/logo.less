@@ -20,7 +20,12 @@
 		margin-left: -161px;
 		// margin-right: 10px;
 		// width: 100%;
-
+		.logo__blue-rhomb {
+			fill: #2571B8;
+		}
+		.logo__orange-rectangle {
+			fill: #ED702A;
+		}
 	}
 }
 
@@ -67,7 +72,14 @@
 }
 
 @media (min-width: @desktop-width) {
-	// .logo {
-	// 	margin-bottom: 15px;
-	// }
+	.logo {		
+		svg {
+			.logo__blue-rhomb {
+				fill: url(#filter_blue-rhomb);
+			}
+			.logo__orange-rectangle {
+				fill: url(#filter_orange-rectangle);
+			}
+		}
+	}
 }
