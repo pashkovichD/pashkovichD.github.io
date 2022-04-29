@@ -6,8 +6,10 @@
 
 .services__title {
 	margin-bottom: 40px;
+	font-family: @ff-d;
 	font-size: 32px;
 	line-height: 44px;
+	text-transform: uppercase;
 	color: #1567BA;	
 }
 
@@ -22,9 +24,46 @@
 	}
 }
 
+.services__img-wrapper {
+	position: relative;	
+}
+
+.services__watermark {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 78px;
+}
+
+.services__contacts {
+	position: absolute;
+	// top: 0;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	padding-bottom: 15px;
+	
+	background-color: rgba(255,255,255, .7);
+	backdrop-filter: blur(8px);
+	border-radius: 1px 1px 8px 8px;
+}
+
+.services__contacts-title {
+	margin-bottom: 5px;
+	font-family: @ff-d;
+	text-transform: uppercase;
+	color: #1567ba;
+}
+
 .services__img {
-	width: 100%;
-	margin-bottom: 50px;
+	display: block;
+	line-height: 0;
+	img {
+		width: 100%;
+		// margin-bottom: 50px;
+		border-radius: 8px;	
+	}
 }
 
 .services__data {
@@ -33,13 +72,16 @@
 
 .services__item-title {
 	position: relative;
-	margin-bottom: 10px;	
-	font-size: 24px;
-	line-height: 33px;
-	font-weight: 700;	
+	margin-bottom: 10px;
+	padding-top: 50px;
+	font-family: @ff-d;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 700;
+	text-transform: uppercase;	
 	svg {
 		position: absolute;
-		top: -40px;
+		top: 15px;
 		left: -20px;
 		z-index: -1;
 	}
@@ -93,13 +135,14 @@
 	}
 	.services__item {
 		display: flex;
-		picture {
+		align-items: flex-start;
+		.services__img-wrapper {
 			width: 48%;
 		}
 	}
 
 	.services__item--right {
-		picture {
+		.services__img-wrapper {
 			order: 2;
 		}
 		.services__data {
@@ -109,20 +152,27 @@
 	}
 
 	.services__img {
-		margin-bottom: 0;
+		// margin-bottom: 0;
 	}
 
 	.services__data {
 		width: 52%;
-		padding-top: 40px;
+		// padding-top: 40px;
 		padding-left: 45px;
-	}	
+	}
+
+	.services__item-title {		
+		padding-top: 40px;		
+		svg {
+			top: 5px;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
 	.services__title {
-		font-size: 48px;
-		line-height: 67px;
+		font-size: 42px;
+		line-height: 59px;
 	}
 }
 
@@ -136,7 +186,7 @@
 	}
 
 	.services__item {
-		picture {
+		.services__img-wrapper {
 			width: 470px;
 		}
 	}
@@ -147,12 +197,10 @@
 
 	.services__item-title {
 		margin-bottom: 20px;
-		font-size: 28px;
-		line-height: 39px;		
 	}
 
 	.services__item--right {
-		picture {
+		.services__img-wrapper {
 			margin-left: auto;
 		}
 		.services__data {
