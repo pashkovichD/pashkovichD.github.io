@@ -2551,9 +2551,11 @@ textarea #form__description {
 }
 .promo__title {
   margin-bottom: 25px;
+  font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
   font-size: 32px;
   line-height: 44px;
   text-align: left;
+  text-transform: uppercase;
   color: #1567BA;
 }
 .promo__date {
@@ -2724,8 +2726,8 @@ textarea #form__description {
     padding: 0;
   }
   .promo__title {
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 42px;
+    line-height: 59px;
   }
   .promo__title-wrapper {
     width: 500px;
@@ -3587,8 +3589,10 @@ label.error {
 }
 .gallery__title {
   margin-bottom: 25px;
+  font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
   font-size: 32px;
   line-height: 44px;
+  text-transform: uppercase;
   color: #1567BA;
 }
 .gallery__list {
@@ -3618,12 +3622,13 @@ label.error {
   .gallery__item img {
     width: 216px;
     height: 216px;
+    border-radius: 8px;
   }
 }
 @media (min-width: 991px) {
   .gallery__title {
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 42px;
+    line-height: 59px;
     margin-bottom: 40px;
   }
 }
@@ -3633,8 +3638,6 @@ label.error {
   }
   .gallery__title {
     margin-bottom: 45px;
-    font-size: 45px;
-    line-height: 62px;
   }
   .gallery__list {
     display: -webkit-box;
@@ -3667,8 +3670,10 @@ label.error {
 }
 .contact-us__title {
   margin-bottom: 25px;
+  font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
   font-size: 32px;
   line-height: 44px;
+  text-transform: uppercase;
   color: #1567BA;
 }
 .contact-us__form {
@@ -3698,8 +3703,8 @@ label.error {
 }
 @media (min-width: 991px) {
   .contact-us__title {
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 42px;
+    line-height: 59px;
     margin-bottom: 40px;
   }
 }
@@ -3709,8 +3714,6 @@ label.error {
   }
   .contact-us__title {
     margin-bottom: 45px;
-    font-size: 45px;
-    line-height: 62px;
   }
 }
 .about-us {
@@ -3845,8 +3848,10 @@ label.error {
 }
 .post__title {
   margin-bottom: 25px;
+  font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
   font-size: 32px;
   line-height: 44px;
+  text-transform: uppercase;
   color: #1567BA;
 }
 .post__item {
@@ -3854,11 +3859,13 @@ label.error {
 }
 .post__item-img {
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 .post__item-title a {
   margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 25px;
+  font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
   text-transform: uppercase;
   text-decoration: none;
   color: #1567BA;
@@ -3939,9 +3946,14 @@ label.error {
     font-size: 48px;
     line-height: 67px;
   }
-  .post__item-title {
-    font-size: 20px;
-    line-height: 28px;
+  .post__title {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 59px;
+  }
+  .post__item-title a {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -3950,8 +3962,6 @@ label.error {
   }
   .post__title {
     margin-bottom: 45px;
-    font-size: 45px;
-    line-height: 62px;
   }
   .post__list {
     -webkit-box-pack: justify;
@@ -3983,8 +3993,10 @@ label.error {
 }
 .sitemap__title {
   margin-bottom: 25px;
+  font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
   font-size: 32px;
   line-height: 44px;
+  text-transform: uppercase;
   color: #1567BA;
 }
 .sitemap__list li a {
@@ -4043,8 +4055,8 @@ label.error {
     width: 520px;
   }
   .sitemap__title {
-    font-size: 48px;
-    line-height: 67px;
+    font-size: 42px;
+    line-height: 59px;
     margin-bottom: 40px;
   }
 }
@@ -4054,8 +4066,6 @@ label.error {
   }
   .sitemap__title {
     margin-bottom: 45px;
-    font-size: 45px;
-    line-height: 62px;
   }
 }
 .page-footer {
