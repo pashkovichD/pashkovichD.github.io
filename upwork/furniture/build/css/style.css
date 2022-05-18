@@ -1440,6 +1440,8 @@ textarea #form__description {
     top: -10px;
     background-color: #ffffff;
     border-radius: 1px 1px 8px 8px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
   }
 }
 .page-header__menu {
