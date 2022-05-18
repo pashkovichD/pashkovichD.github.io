@@ -625,6 +625,8 @@ ul {
   padding: 40px 15px;
   background-color: #ffffff;
   border-radius: 8px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
   -webkit-box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.12);
   z-index: 1;
@@ -672,6 +674,10 @@ ul {
   background-image: url('../img/icon-align-left.svg');
   background-repeat: no-repeat;
 }
+.form__item--file {
+  width: 100%;
+  margin-bottom: 20px;
+}
 .form__input {
   width: 100%;
   height: 50px;
@@ -695,6 +701,11 @@ ul {
 }
 .form__input--without-marker {
   padding-left: 20px;
+}
+.form__input--file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 .form__group {
   margin-bottom: 20px;
@@ -756,6 +767,34 @@ textarea #form__description {
   width: 200px;
   height: 200px;
   padding: 10px;
+}
+.form__file-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 10px;
+  border: 1px dashed #e0e0e0;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+.form__file-label svg {
+  position: relative;
+  top: 2px;
+  left: auto;
+  margin-right: 10px;
+}
+.form__file-label:hover,
+.form__file-label:focus {
+  border: 1px dashed #cccccc;
 }
 .form__submit {
   display: block;
@@ -868,6 +907,9 @@ textarea #form__description {
   .form__wrapper {
     width: auto;
   }
+  .form__title {
+    margin-bottom: 20px;
+  }
   .form__group--radio {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -882,19 +924,34 @@ textarea #form__description {
   }
 }
 @media (min-width: 991px) {
-  .form__result {
-    left: 100px;
-    right: 100px;
+  .form__group-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-}
-@media (min-width: 991px) {
+  .form__group-1 {
+    width: 49%;
+  }
+  .form__group-2 {
+    width: 49%;
+  }
+  .form__group-3 {
+    width: 49%;
+  }
+  .form__group-4 {
+    width: 49%;
+  }
   .form__radio-wrapper {
     padding-left: 20px;
   }
-}
-@media (min-width: 1200px) {
-  .form__wrapper {
-    width: 470px;
+  .form__result {
+    left: 100px;
+    right: 100px;
   }
 }
 .slick-dots {
@@ -1656,7 +1713,7 @@ textarea #form__description {
 }
 @media (min-width: 600px) {
   .banner {
-    height: 800px;
+    height: 940px;
   }
   .banner__title {
     width: 470px;
@@ -1664,7 +1721,6 @@ textarea #form__description {
 }
 @media (min-width: 768px) {
   .banner {
-    height: 755px;
     padding: 80px 30px 0;
     background-image: url(../img/main.webp);
   }
@@ -1681,45 +1737,35 @@ textarea #form__description {
 }
 @media (min-width: 991px) {
   .banner {
-    padding: 0;
+    height: 730px;
   }
   .banner__title {
-    width: 470px;
-    margin: 0;
-    top: 230px;
-    left: 20px;
-    font-size: 45px;
-    line-height: 58px;
-    text-align: left;
-  }
-  .banner__form-wrapper {
-    position: absolute;
-    top: 60px;
-    right: 20px;
+    /*font-size: 45px;
+		line-height: 58px;*/
   }
 }
 @media (min-width: 1200px) {
   .banner {
-    height: 680px;
+    padding: 190px 0 0 0;
+  }
+  .banner__wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
   }
   .banner__title {
-    left: 0;
     font-size: 55px;
     line-height: 75px;
-  }
-  .banner__form-wrapper {
-    right: 0;
-    top: 200px;
   }
 }
 .presentation {
   position: relative;
   margin-bottom: 45px;
-  padding: 380px 15px 15px 15px;
+  padding: 410px 15px 15px 15px;
 }
 .presentation__img {
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 .presentation__title {
   margin-bottom: 20px;
@@ -1745,13 +1791,13 @@ textarea #form__description {
   .presentation {
     width: 470px;
     margin: 0 auto 65px auto;
-    padding: 380px 0 15px 0;
+    padding: 290px 0 15px 0;
   }
 }
 @media (min-width: 768px) {
   .presentation {
     width: 100%;
-    padding: 450px 30px 0 30px;
+    padding: 340px 30px 0 30px;
   }
   .presentation__text {
     letter-spacing: 0;
@@ -1759,11 +1805,11 @@ textarea #form__description {
 }
 @media (min-width: 991px) {
   .presentation {
-    padding-top: 230px;
+    padding-top: 260px;
   }
   .presentation__img {
     position: absolute;
-    top: 170px;
+    top: 200px;
     left: -200px;
     width: 770px;
     margin-bottom: 0;
@@ -1780,13 +1826,13 @@ textarea #form__description {
 }
 @media (min-width: 1200px) {
   .presentation {
-    padding-top: 360px;
+    padding-top: 390px;
     padding-bottom: 0;
     padding-right: 0;
     margin-bottom: 60px;
   }
   .presentation__img {
-    top: 250px;
+    top: 330px;
   }
   .presentation__text-wrapper {
     padding: 70px 0 0 70px;

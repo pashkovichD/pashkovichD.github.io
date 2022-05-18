@@ -133,6 +133,115 @@
 					<p class="form__title">Contact Us</p>
 					<form id="contact-form" class="banner__form form form--nojs" action="" method="POST">
 						<div class="form__item-wrapper">
+							<div class="form__group-wrapper">
+								<div class="form__group-1">
+									<p class="form__item">
+										<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-user"></use></svg>
+										<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Full Name (Required)">
+										<label class="visually-hidden" for="form__name">Full Name (Required)</label>
+									</p>
+									<p class="form__item">
+										<svg width="15" height="15" fill="#1567BA"><use xlink:href="#icon-phone"></use></svg>
+										<input class="form__input" type="tel" name="form__phone" id="form__phone" value="" placeholder="Phone (Required)">
+										<label class="visually-hidden" for="form__phone">Phone (Required)</label>
+									</p>
+									<p class="form__item form__item--email">
+										<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-email"></use></svg>
+										<input class="form__input" type="email" name="form__email" id="form__email" value="" placeholder="Email (Required)">
+										<label class="visually-hidden" for="form__email">Email (Required)</label>
+									</p>	
+								</div>
+								
+
+								<div class="form__group-1">								
+									<div class="form__group">
+										<p class="form__item">
+											<svg width="11" height="15" fill="#1567BA"><use xlink:href="#icon-map-marker"></use></svg>
+											<input class="form__input" type="text" name="form__pickup_address" id="form__pickup_address" value="" placeholder="Pickup Address">
+											<label class="visually-hidden" for="form__pickup_address">Pickup Address</label>
+										</p>
+										<p class="form__item">									
+											<input class="form__input form__input--without-marker" type="text" name="form__pickup_address_access" id="form__pickup_address_access" value="" placeholder="Pickup Address Access">
+											<label class="visually-hidden" for="form__pickup_address_access">Pickup Address Access</label>
+										</p>
+									</div>
+									<div class="form__group">
+										<p class="form__item">
+											<svg width="11" height="15" fill="#1567BA"><use xlink:href="#icon-map-marker"></use></svg>
+											<input class="form__input" type="text" name="form__install_address" id="form__install_address" value="" placeholder="Install Address">
+											<label class="visually-hidden" for="form__install_address">Install Address</label>
+										</p>
+										<p class="form__item">									
+											<input class="form__input form__input--without-marker" type="text" name="form__install_address_access" id="form__install_address_access" value="" placeholder="Install Address Access">
+											<label class="visually-hidden" for="form__install_address_access">Install Address Access</label>
+										</p>
+									</div>
+									<div class="form__group">								
+										<p class="form__item">
+											<svg width="13" height="15" fill="#1567BA"><use xlink:href="#icon-calendar-plus"></use></svg>
+											<input class="form__input" type="text" name="form__project_date" id="form__project_date" value="" placeholder="Project Date" autocomplete="off">
+											<label class="visually-hidden" for="form__project_date">Project Date</label>
+										</p>
+
+										<p class="form__item" style="position: relative;">
+											<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-clock"></use></svg>
+											<input type="text" id="form__project_time" class="form__input" name="form__project_time" placeholder="Project Time" autocomplete="off">
+											<label class="visually-hidden" for="form__project_time">Project Time</label>
+										</p>
+									</div>
+								</div>
+
+								<div class="form__group-3">
+									<div class="form__group form__group--radio">
+										<div class="form__radio-label"><svg width="15" height="13" fill="#1567BA"><use xlink:href="#icon-tasks"></use></svg>Receiving Needed</div>
+										<div class="form__radio-wrapper">
+											<label class="form__radio-item">
+												<input type="radio" class="visually-hidden" name="receving" value="Yes">
+												<span class="form__radio-indicator"></span>
+												<span>Yes</span>
+											</label>							
+											<label class="form__radio-item">
+												<input type="radio" class="visually-hidden" name="receving" value="No" checked>
+												<span class="form__radio-indicator"></span>
+												<span>No</span>
+											</label>
+										</div>
+									</div>
+									<div class="form__group form__group--radio">
+										<div class="form__radio-label"><svg width="15" height="13" fill="#1567BA"><use xlink:href="#icon-tasks"></use></svg>Certificate <br>of Insurance Needed</div>
+										<div class="form__radio-wrapper">
+											<label class="form__radio-item">
+												<input type="radio" class="visually-hidden" name="certificate" value="Yes">
+												<span class="form__radio-indicator"></span>
+												<span>Yes</span>
+											</label>							
+											<label class="form__radio-item">
+												<input type="radio" class="visually-hidden" name="certificate" value="No" checked>
+												<span class="form__radio-indicator"></span>
+												<span>No</span>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__group-4">
+									<p class="form__item form__item--textarea">
+										<textarea name="form__description" cols="50" rows="5" class="form__input" id="form__description" placeholder="Item List and Description"></textarea>
+									</p>			
+								</div>
+
+								<p class="form__item form__item--file">
+									<input class="form__input form__input--file" type="file" name="form__file" id="form__file" value="">
+									<label class="form__file-label"for="form__file"><svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-file"></use></svg>Add photos</label>
+								</p>
+
+							</div>
+						</div>
+						<input type="submit" class="form__submit button" value="Get a Quote">
+						<p class="form__result"></p>
+					</form>
+					<!-- <form id="contact-form" class="banner__form form form--nojs" action="" method="POST">
+						<div class="form__item-wrapper">
 							<p class="form__item">
 								<svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-user"></use></svg>
 								<input class="form__input" type="text" name="form__name" id="form__name"  value="" placeholder="Full Name (Required)">
@@ -216,10 +325,14 @@
 							<p class="form__item form__item--textarea">
 								<textarea name="form__description" cols="50" rows="5" class="form__input" id="form__description" placeholder="Item List and Description"></textarea>
 							</p>
+							<p class="form__item form__item--file">
+								<input class="form__input form__input--file" type="file" name="form__file" id="form__file" value="">
+								<label class="form__file-label"for="form__file"><svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-file"></use></svg>Add photos</label>
+							</p>
 						</div>
 						<input type="submit" class="form__submit button" value="Get a Quote">
 						<p class="form__result"></p>
-					</form>
+					</form> -->
 				</div>
 			</div>
 			
@@ -367,7 +480,7 @@
 				<ul class="works__list">
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>
 							<img src="img/works/work-la.webp" srcset="img/works/work-la@2x.webp 2x" alt="Work LA" class="works__img">
@@ -375,7 +488,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-furniture-installation.webp" srcset="img/works/work-furniture-installation@2x.webp 2x" alt="Work Furniture Installation" class="works__img">
@@ -383,7 +496,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-process.webp" srcset="img/works/work-process@2x.webp 2x" alt="Work process" class="works__img">
@@ -391,7 +504,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-standart-installation.webp" srcset="img/works/work-standart-installation@2x.webp 2x" alt="Work Standart Installation" class="works__img">
@@ -399,7 +512,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-los-angeles.webp" srcset="img/works/work-los-angeles@2x.webp 2x" alt="Work Los Angeles" class="works__img">
@@ -407,7 +520,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-production.webp" srcset="img/works/work-production@2x.webp 2x" alt="Work Production" class="works__img">
@@ -415,7 +528,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-office-furniture.webp" srcset="img/works/work-office-furniture@2x.webp 2x" alt="Work Office Furniture" class="works__img">
@@ -423,7 +536,7 @@
 					</li>
 					<li class="works__item">
 						<picture class="works__watermark">
-							<img src="img/logo-white.webp" srcset="img/logo-white@2x.webp 2x" alt="Watermark">
+							<img src="img/logo-watermark.webp" srcset="img/logo-watermark@2x.webp 2x" alt="Watermark">
 						</picture>
 						<picture>							
 							<img src="img/works/work-la-installation.webp" srcset="img/works/work-la-installation@2x.webp 2x" alt="Work LA Installation" class="works__img">
