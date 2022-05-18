@@ -276,63 +276,28 @@ ul {
   background-color: #C54801;
 }
 .logo {
-  position: relative;
-  padding: 0;
-  width: 202px;
-  height: 146px;
   text-align: center;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #ffffff;
-  border-radius: 1px 1px 8px 8px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   z-index: 1;
+  /*svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -73px;
+		margin-left: -161px;
+		.logo__blue-rhomb {
+			fill: #2571B8;
+		}
+		.logo__orange-rectangle {
+			fill: #ED702A;
+		}
+	}*/
 }
-.logo svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -73px;
-  margin-left: -161px;
-}
-.logo svg .logo__blue-rhomb {
-  fill: #2571B8;
-}
-.logo svg .logo__orange-rectangle {
-  fill: #ED702A;
-}
-/*.logo__text {
-	display: flex;
-	flex-direction: column;	
-	color: #1567BA;
-}
-
-.logo__name {
-	display: block;	
-	// margin-top: auto;
-	font-size: 18px;
-	line-height: 25px;
-	font-weight: 700;
-}
-
-.logo__slogan {
-	display: block;
-	font-size: 12px;
-	line-height: 9px;
-	color: #292B2C;
-}*/
-@media (min-width: 480px) {
-}
-@media (min-width: 991px) {
-  .logo svg .logo__blue-rhomb {
-    fill: url(#filter_blue-rhomb);
-  }
-  .logo svg .logo__orange-rectangle {
-    fill: url(#filter_orange-rectangle);
-  }
+.logo picture {
+  display: block;
 }
 .menu {
   padding: 0;
@@ -545,7 +510,7 @@ ul {
 .phone__number {
   font-family: 'Days Sans', 'Gotham Pro', 'Exo 2', Tahoma, Verdana, sans-serif;
   text-decoration: none;
-  color: #EF8C34;
+  color: #F87023;
 }
 .email {
   margin: 0;
@@ -1326,6 +1291,9 @@ textarea #form__description {
   padding: 10px 0 10px 20px;
   background-color: #292B2C;
 }
+.page-header__top-wrapper {
+  position: relative;
+}
 .page-header__top-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1334,7 +1302,7 @@ textarea #form__description {
       flex-wrap: wrap;
 }
 .page-header__top-item {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .page-header__top-item a {
   position: relative;
@@ -1423,7 +1391,10 @@ textarea #form__description {
 }
 /*--- LOGO ---*/
 .page-header__logo {
-  display: none;
+  position: absolute;
+  bottom: -83px;
+  padding: 0;
+  width: 185px;
 }
 .page-header__logo:focus {
   -webkit-box-shadow: none;
@@ -1434,7 +1405,7 @@ textarea #form__description {
 }
 @media (min-width: 768px) {
   .page-header__wrapper {
-    min-height: 89px;
+    min-height: 99px;
     padding: 0 30px;
     padding-top: 15px;
     -webkit-box-align: start;
@@ -1442,14 +1413,14 @@ textarea #form__description {
             align-items: flex-start;
   }
   .page-header__logo {
-    padding: 0;
+    bottom: -101px;
+    width: 238px;
   }
-}
-@media (min-width: 991px) {
-  .page-header__logo {
-    position: absolute;
-    display: block;
-    bottom: -156px;
+  .page-header__top-item {
+    margin-right: 15px;
+  }
+  .page-header__top-item:last-child {
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -1463,8 +1434,12 @@ textarea #form__description {
     background-color: transparent;
   }
   .page-header__logo {
+    width: 220px;
+    padding: 16px 7px 10px 7px;
     bottom: auto;
     top: -10px;
+    background-color: #ffffff;
+    border-radius: 1px 1px 8px 8px;
   }
 }
 .page-header__menu {
@@ -1517,8 +1492,8 @@ textarea #form__description {
             order: 3;
     margin-left: 95px;
   }
-  .page-header__toggle-nav {
-    margin-top: -15px;
+  .page-header__nav--show {
+    top: 99px;
   }
 }
 @media (min-width: 1200px) {
@@ -1555,9 +1530,8 @@ textarea #form__description {
     padding: 0;
   }
   .page-header__phone {
-    margin-bottom: 5px;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 42px;
   }
 }
 @media (min-width: 1200px) {
@@ -2265,8 +2239,8 @@ textarea #form__description {
   position: absolute;
   bottom: 15px;
   left: 50%;
-  width: 78px;
-  margin-left: -36px;
+  width: 135px;
+  margin-left: -65px;
 }
 .works__button {
   width: 200px;
@@ -2348,7 +2322,7 @@ textarea #form__description {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 78px;
+  width: 150px;
 }
 .services__contacts {
   position: absolute;
@@ -4069,7 +4043,7 @@ label.error {
   }
 }
 .page-footer {
-  padding: 50px 0 30px 0;
+  padding: 60px 0 30px 0;
   background-color: #292B2C;
 }
 .page-footer__wrapper {
@@ -4088,7 +4062,7 @@ label.error {
 }
 .page-footer__logo {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
