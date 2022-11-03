@@ -216,7 +216,8 @@
 
 				<div id="request-quote" class="banner__form-wrapper form__wrapper">
 					<p class="form__title">Contact Us</p>
-					<form id="contact-form" class="banner__form form form--nojs" action="" method="POST">
+					<form id="contact-form" class="banner__form form form--nojs" action="" method="POST" enctype="multipart/form-data">
+					<!-- <form id="contact-form" class="banner__form form form--nojs" action="" method="POST" enctype="multipart/form-data"> -->
 						<div class="form__item-wrapper">
 							<div class="form__group-wrapper">
 								<div class="form__group-1">
@@ -316,7 +317,7 @@
 								</div>
 
 								<p class="form__item form__item--file">
-									<input class="form__input form__input--file" type="file" name="form__file" id="form__file" value="">
+									<input class="form__input form__input--file" type="file" name="form__file[]" id="form__file" value="" multiple="">
 									<label class="form__file-label" for="form__file"><svg width="14" height="15" fill="#1567BA"><use xlink:href="#icon-file"></use></svg>Add photos</label>
 								</p>
 
