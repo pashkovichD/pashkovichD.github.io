@@ -1,0 +1,243 @@
+.form {
+	// padding: 30px;
+	font-family: @ff;
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.form--nojs .form__label {
+	top: -15px;
+	left: 10px;
+	font-size: 16px;
+}
+
+.form__item {
+	position: relative;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.form__input {
+	width: 100%;
+	height: 50px;
+	margin: 0;	
+	padding: 5px 10px 5px 15px;	
+	font-family: @ff;
+	font-size: 18px;
+	line-height: 26px;
+	border: 1px solid #acacac;
+	border-radius: 4px;	
+	box-sizing: border-box;	
+	&:hover,
+	&:focus {
+		box-shadow: none;
+		border: 1px solid #e28605;
+	}
+
+	&:hover + .form__label,
+	&:focus + .form__label {
+		top: -15px;		
+		font-size: 16px;
+		// color: #329a00 !important; // нужно только, чтобы не писать много кола на JS
+		color: #e28605 !important; // нужно только, чтобы не писать много кола на JS
+
+	}
+}
+
+.form__label {
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	font-size: 16px;
+
+	display: block;
+	padding: 0 5px;
+	font-family: @ff;
+	color: #c7c7c7;
+
+	background-color: #ffffff;
+	text-shadow: none;
+	transition: all .25s ease-out;
+	span {
+		opacity: .5;
+	}
+}
+
+.form__label--start {
+	top: 10px;
+	left: 10px;
+	font-size: 18px;
+}
+
+.form__submit {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	font-family: @ff;
+	font-size: 18px;	
+	line-height: 24px;
+	font-weight: 600;
+	letter-spacing: .3px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	background-color: #E0A100;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	cursor: pointer;
+}
+
+#res {
+	// display: none;
+}
+
+.form__res {
+	// display: block !important;	
+	position: relative;	
+	font-size: 18px;
+	font-weight: 300;
+	color: #ffffff;
+	transition: none;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 8px;
+		left: 10px;
+	}
+}
+
+.form__res--succesfull {	
+	padding: 7px 10px 7px 45px;
+	background-color: #329a00;
+	&::before {
+		width: 50px;
+		height: 44px;
+		background-image: url(../img/succesfull.svg);
+		background-repeat: no-repeat;
+	}
+}
+
+.form__res--error {
+	padding: 7px 10px 7px 45px;
+	background-color: red;
+	&::before {
+		top: 10px;
+		width: 50px;
+		height: 44px;
+		background-image: url(../img/attention.svg);
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @mobile-width) {	
+
+	
+}
+
+@media (min-width: @tablet-width) {
+	.form__item-wrapper {
+		width: 60%;
+		margin-bottom: 15px;
+	}
+
+	.form__item {
+		margin-bottom: 0;
+	}
+	.form__res {
+		width: 100%;
+		margin: 0 20%;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.form__item-wrapper {
+		width: auto;
+		margin-bottom: 0;
+	}
+
+	.form__item {
+		margin-bottom: 20px;
+	}
+
+	.form__res {
+		position: absolute;
+		left: -120%;
+		margin: 0;
+		margin-top: -15px;
+		background-color: #fff;
+		&::after {
+			position: absolute;
+			top: 15px;
+			right: -7px;
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 7px 0 7px 7px;
+		}		
+		border-radius: 3px;
+		background-color: #333;
+		opacity: 0;
+		visibility: hidden;
+		transition: left .25s ease-out;
+	}
+	.form__res--succesfull {
+		background-color: rgba(50, 154, 0, .7);
+		&::after {
+			border-color: transparent transparent transparent rgba(50, 154, 0, .7);
+		}
+	}
+	.form__res--error {
+		background-color: rgba(255, 0, 0, .7);
+		&::after {
+			border-color: transparent transparent transparent rgba(255, 0, 0, .7);
+		}
+	}
+
+	// .form__submit {
+	// 	&:hover {	
+	// 		& + .form__res {
+	// 			left: -110%;
+	// 			opacity: 1;
+	// 			visibility: visible;
+	// 		}
+	// 	}
+	// }
+
+	.form__res--visible {
+		left: -110%;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.banner__form--inner {
+		.form__res {
+			margin-top: -42px;					
+		}
+		.form__res--succesfull {
+			background-color: rgba(50, 154, 0, 1);
+			&::after {
+				border-color: transparent transparent transparent rgba(50, 154, 0, 1);
+			}
+		}
+		.form__res--error {
+			background-color: rgba(255, 0, 0, 1);
+			&::after {
+				border-color: transparent transparent transparent rgba(255, 0, 0, 1);
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	
+}

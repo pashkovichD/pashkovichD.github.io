@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Новополоцкая логистическая компания - Автомобильные перевозки</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<h1 class="visually-hidden">Новополоцкая логистическая компания</h1>
+	<!-- <div style="display: none;">
+		<include src="source/img/sprite.svg"></include>
+	</div> -->
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">		
+		<div class="page-header__wrapper container">			
+			<a class="page-header__logo logo" href="index.html">
+				<svg width="70" height="70">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<span class="logo__text">
+					<span class="logo__name">Новополоцкая логистическая комп<b>А</b>ни<b>Я</b></span>
+					<span class="logo__slogan">Всё для клиента</span>
+				</span>
+			</a>
+			<div class="page-header__box">
+				<div class="page-header__phone phone">
+					<a class="phone__number" href="tel:+375214505070"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg><span>+375(214)</span> 50-50-70</a>
+					<!-- <a class="phone__number" href="tel:+375297116497"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-mts"></use></svg><span>+375(29)</span> 711-64-97</a> -->
+				</div>
+				
+				<button class="page-header__toggle-nav hamburger" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>
+				
+				<div class="page-header__nav-wrapper">
+				<nav class="page-header__nav menu">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<ul class="page-header__nav-list menu__list">
+						<li class="menu__item"><a href="index.html">Главная</a></li>
+						<li class="menu__item">
+							<a class="menu__item--dropdown" href="#">Услуги</a>
+							<ul class="menu__dropdown">
+								<li><a href="auto.html">Автомобильные перевозки</a></li>
+								<li><a href="rw.html">Железнодорожные перевозки</a></li>
+								<li><a href="sea.html">Морские перевозки</a></li>
+								<li><a href="container.html">Контейнерные перевозки</a></li>
+								<li><a href="avia.html">Авиаперевозки</a></li>
+								<li><a href="groupage.html">Доставка сборных грузов</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="about.html">О компании</a></li>
+						<li class="menu__item"><a href="contact.html">Контакты</a></li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main">		
+		<h2 class="visually-hidden">Описание автомобильных перевозок</h2>
+		
+		<section class="banner">			
+			<div class="banner__wrapper container">
+				<div class="banner__title-wrapper">
+					<h2 class="banner__title">Автомобильные перевозки</h2>
+					<p class="banner__slogan">Автотранспортные перевозки из Европы и СНГ</p>
+				</div>				
+			</div>
+			<div class="banner__img">
+				<picture>
+					<source type="image/webp" srcset="img/services/auto.webp 1x, img/services/auto@2x.webp 2x">
+					<img src="img/services/auto.jpg" srcset="img/services/auto@2x.jpg 2x" alt="Автомобильные перевозки">
+				</picture>
+			</div>
+			
+			<div class="promo">
+				<p class="promo__text">Возможность отправки грузов  <span>в собственных контейнерах</span></p>
+			</div>			
+			<form method="POST" action="https://echo.htmlacademy.ru" class="banner__form banner__form--inner form form--nojs">
+				<div class="form__item-wrapper">
+					<p class="form__item">
+						<input class="form__input" type="text" name="form__name" id="form__name"  value="">
+						<label class="form__label" for="form__name">Ваше имя</label>
+					</p>
+					<p class="form__item">
+						<input class="form__input" type="tel" name="form__phone" id="form__phone" value="">
+						<label class="form__label" for="form__phone">Телефон для связи</label>
+					</p>
+				</div>
+				<input type="submit" class="banner__button form__submit" value="Заказать перевозку">
+				<!-- <div class="form__res form__res--succesfull" id="res"><b>Вы уже обращались!</b> <br>Оформлен новый заказ на перевозку</div> -->
+				<!-- <div class="form__res form__res--error" id="res">Заполните все поля!</div> -->
+				<div class="form__res form__res--succesfull" id="res">Заказ принят!</div>
+			</form>
+		</section>		
+
+		<section class="inner container">
+			<h2 class="visually-hidden">Описание автомобильных перевозок</h2>
+			<div class="inner__wrapper">
+				<div class="inner__plug"></div>
+				<p class="inner__text">В случае необходимости транспортировки груза на малые расстояния мы оказываем услуги по перевозке груза автомобильным транспортом. Мы организуем автоперевозки из стран как Западной, так и Восточной Европы, а также стран бывшего СНГ. Кроме этого оказываем услуги по экспорту в любую точку мира.</p>
+				
+				<h2 class="inner__list-title">Преимущества автомобильных грузоперевозок:</h2>
+				<ul class="inner__list">
+					<li class="inner__item">Широкая сеть автодорог позволяет организовать доставку груза по принципу «от двери до двери»</li>
+					<li class="inner__item">Возможность точно спрогнозировать сроки доставки</li>
+					<li class="inner__item">Вариативность – мгновенное изменение маршрута следования в зависимости от обстоятельств</li>
+					<li class="inner__item">Простота в отслеживании груза на всем пути следования посредством новейших технологий</li>
+				</ul>
+
+				<h2 class="inner__list-title">В наш комплекс услуг по доставке автомобильным транспортом входит:</h2>
+				<ul class="inner__list">
+					<li class="inner__item"><strong>Построение маршрута</strong> — мы предлагаем как проверенные на практике логистические маршруты, так и разработанные впервые</li>
+					<li class="inner__item"><strong>Получение всех необходимых разрешений</strong> на перевозку, плюс оформление сопроводительной документации</li>
+					<li class="inner__item"><strong>Подбор автотранспорта</strong>, соответствующего требованиям по доставке груза</li>
+					<li class="inner__item"><strong>Проверка количества груза</strong> и качества его упаковки, как перед отправкой так и после выгрузки</li>
+					<li class="inner__item"><strong>Погрузочно-разгрузочные работы</strong></li>
+					<li class="inner__item"><strong>Экспедирование</strong> в различных портах</li>
+					<li class="inner__item"><strong>Таможенное оформление</strong> <i>(при международных перевозках)</i></li>
+				</ul>
+
+				<h2 class="inner__list-title">Наши преимущества:</h2>
+				<ul class="inner__list">
+					<li class="inner__item">Развитая партнерская сеть автоперевозчиков по всему миру</li>
+					<li class="inner__item">Точный и строгий контроль движения груза на всём пути следования</li>
+					<li class="inner__item">Перевозка любых видов груза</li>
+					<li class="inner__item">Собственные склады консолидации груза в Финляндии, Латвии, Польше и Германии</li>
+					<li class="inner__item">Короткие сроки доставки</li>
+				</ul>
+
+				<p class="inner__text inner__text--border">Как правило, доставка груза из стран Европы, таких как Германия, Франция, Италия занимает <b>от 7 до 12 дней</b>. Доставка сборных грузов – <b>от 14 до 18 дней</b>. Со складов консолидации машины уходят <b>каждую неделю</b>. Время в пути примерно <b>2-5 дней.</b></p>
+
+				<h2 class="visually-hidden">Преимущества наших автомобильных перевозок</h2>
+				<ul class="inner__advantages">
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Построение маршрута</h3>
+						<p class="inner__advantages-text">Построение маршрута — мы предлагаем как проверенные на практике логистические маршруты, так и разработанные впервые</p>
+					</li>
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Разрешения и документация</h3>
+						<p class="inner__advantages-text">Получение всех необходимых разрешений на перевозку плюс оформление сопроводительной документации</p>
+					</li>
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Подбор автотранспорта</h3>
+						<p class="inner__advantages-text">Подбор автотранспорта, соответствующего требованиям по доставке груза</p>
+					</li>
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Погрузка и разгрузка</h3>
+						<p class="inner__advantages-text">Погрузочно-разгрузочные работы</p>
+					</li>
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Проверка груза</h3>
+						<p class="inner__advantages-text">Проверка количества груза и качества его упаковки, как перед отправкой так и после выгрузки</p>
+					</li>
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Экспедирование</h3>
+						<p class="inner__advantages-text">Экспедирование в различных портах</p>
+					</li>
+					<li class="inner__advantages-item">
+						<svg width="30" height="30"><use xlink:href="#icon-star"></use></svg>
+						<h3 class="inner__advantages-title">Таможенное оформление</h3>
+						<p class="inner__advantages-text">Таможенное оформление (при международных перевозках) </p>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+		
+
+		
+	</main>
+
+	<footer class="page-footer">
+		<section class="page-footer__top">
+			<h2 class="visually-hidden">Контактные данные</h2>
+			<div class="page-footer__top-wrapper container">
+				
+				<a class="page-footer__logo logo" href="index.html">
+					<svg width="70" height="70">
+						<use xlink:href="#icon-logo"></use>
+					</svg>
+					<span class="logo__text">
+						<span class="logo__name">Новополоцкая логистическая комп<b>А</b>ни<b>Я</b></span>
+						<span class="logo__slogan">Всё для клиента</span>
+					</span>
+				</a>
+				
+				<div class="page-footer__phone phone">
+					<a class="phone__number" href="tel:+375214505070"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg><span>+375(214)</span> 50-50-70</a>
+					<!-- <a class="phone__number" href="tel:+375297116497"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-mts"></use></svg><span>+375(29)</span> 711-64-97</a> -->
+				</div>
+
+				<div class="page-footer__schedule schedule">
+					<p class="schedule__item"><span>Пн - чт</span> 09.00 - 18.00</p>
+					<p class="schedule__item"><span>Пт</span> 09.00 - 16.45</p>
+					<p class="schedule__item"><span>Выходной -</span> суббота, воскресенье</p>
+				</div>
+				<svg width="70" height="70" class="page-footer__logo-bg">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+			</div>
+		</section>
+
+		<section class="page-footer__center container">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="page-footer__data">
+				<p class="page-footer__address"><b>211440,</b> Республика Беларусь, <br>г.Новополоцк, <br>ул.Молодежная, д. 134, пом. 178</p>
+				<p class="page-footer__email"><a href="mailto:stf.sergey@gmail.com">stf.sergey@gmail.com</a></p>
+				<p class="page-footer__order"><a href="orders.html">Заказы</a></p>
+			</div>
+			
+			<ul class="page-footer__menu">
+				<li class="page-footer__menu-item"><a href="index.html">Главная</a></li>
+				<li class="page-footer__menu-item"><a href="services.html">Услуги</a></li>
+				<li class="page-footer__menu-item"><a href="about.html">О компании</a></li>
+				<li class="page-footer__menu-item"><a href="contact.html">Контакты</a></li>
+			</ul>
+
+			<div class="page-footer__map">
+				<a href="https://yandex.by/maps/-/CCUiQRFD1A" title="Мы находимся по адресу г.Новополоцк, ул.Молодежная, д.134, пом.178" rel="noopener nofollow" target="_blank"></a>
+			</div>
+		</section>
+
+		<div class="page-footer__bottom">
+			<p class="page-footer__copyright container">Copyright &copy; 2021</p>
+		</div>
+		</div>
+	</footer>	
+
+	<script src="js/hamburger.min.js"></script>
+	<script src="js/form.min.js"></script>	
+
+</body>
+</html>
