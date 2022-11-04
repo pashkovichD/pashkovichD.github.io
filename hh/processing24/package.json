@@ -11,13 +11,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "gulp": "^3.9.1",
     "gulp-csso": "^4.0.1",
     "gulp-ext-replace": "^0.3.0",
     "gulp-imagemin": "^6.2.0",

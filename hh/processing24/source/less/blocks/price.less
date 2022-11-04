@@ -1,0 +1,160 @@
+.price {	
+}
+
+.price__title {
+	margin-bottom: 0;
+}
+
+.price__table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.price__thead {
+	display: none;
+	background-color: @dark-blue;
+}
+
+.price__thead th {	
+	text-align: left;
+	font-weight: 600;
+	color: #ffffff;	
+}
+.price__tbody {
+	vertical-align: top;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 600;
+	color: #000000;
+}
+.price__tbody tr {
+	position: relative;
+	display: block;
+	border: 1px solid #e7e7e7;
+	border-top: none;
+	&.price__separator {
+		border: none;
+		td {
+			padding: 10px;
+			border: none;
+			// border-bottom: 1px solid #e7e7e7;
+		}
+	}	
+}
+.price__tbody td {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	border: 1px solid #e7e7e7;
+	box-sizing: border-box;
+	&.price__grade {
+		padding: 10px 20px;
+		background-color: @blue;
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: 700;	
+		text-align: center;
+		color: #ffffff;
+		border: 1px solid @blue;
+	}
+	&.price__eco-class {
+		background-color: #eeeeee;
+		border-top: 3px solid @blue;
+	}
+	&.price__producer {
+		font-weight: 700;
+		color: @dark-blue;
+	}
+	&.price__producer,
+	&.price__cash,
+	&.price__non-cash {
+		border: none;		
+	}
+
+	&.price__cash::before,
+	&.price__non-cash::before {
+		content: attr(data-label);
+		position: absolute;
+		right: 0;		
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
+		padding-right: 5px;
+		font-size: 12px;
+		font-weight: 400;		
+		color: #999999;				
+		box-sizing: border-box;
+	}
+}
+
+    
+@media (min-width: @tablet-width) {
+	.price__title {
+		margin-bottom: 20px;
+	}
+
+	.price__table {
+		
+	}
+	.price__thead {
+		display: table-header-group;
+	}
+	.price__thead th {
+		padding: 20px;
+	}	
+	.price__tbody tr {
+		display: table-row;
+		margin-bottom: 0;
+		background-color: transparent;
+		border-top: 1px solid #e7e7e7;
+		transition: all 0.2s ease-out;
+	}	
+	.price__tbody td {
+		display: table-cell;
+		padding: 15px 30px;
+		&.price__grade {
+			padding: 15px 20px;
+			text-align: left;			
+		}
+		&.price__eco-class {
+			background-color: #ffffff;
+			border-top: none;
+		}
+		&.price__producer {
+			font-weight: 600;
+			color: #000000;
+		}
+		&.price__cash::before,
+		&.price__non-cash::before {
+			content: '';
+		}
+	}	
+}
+
+@media (min-width: @desktop-width) {	
+	
+}
+
+@media (min-width: @desktop-full-width) {
+	.price {
+		margin-bottom: 100px;
+	}
+
+	.price__title {
+		margin-bottom: 45px;
+	}
+
+	.price__tbody td {
+		&.price__grade {
+			width: 160px;
+		}
+		&.price__eco-class {
+			width: 290px;
+		}
+		&.price__producer {
+			width: 290px;
+		}
+	}
+}

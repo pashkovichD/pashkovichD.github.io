@@ -1,5 +1,5 @@
 .form {
-	// padding: 30px;
+	/*padding: 30px;*/
 	font-family: @ff;
 	background-color: #ffffff;
 	border-radius: 4px;
@@ -7,9 +7,9 @@
 }
 
 .form--nojs .form__label {
-	top: -15px;
+	/*top: -15px;
 	left: 10px;
-	font-size: 16px;
+	font-size: 16px;*/
 }
 
 .form__item {
@@ -21,122 +21,156 @@
 
 .form__input {
 	width: 100%;
-	height: 50px;
+	height: 45px;
 	margin: 0;	
 	padding: 5px 10px 5px 15px;	
 	font-family: @ff;
-	font-size: 18px;
-	line-height: 26px;
-	border: 1px solid #acacac;
-	border-radius: 4px;	
-	box-sizing: border-box;	
+	font-size: 14px;
+	line-height: 17px;
+	border: 1px solid #d5d5d5;
+	box-sizing: border-box;
+	transition: @animation;
 	&:hover,
 	&:focus {
 		box-shadow: none;
-		border: 1px solid #e28605;
+		border: 1px solid @dark-blue;
 	}
 
 	&:hover + .form__label,
 	&:focus + .form__label {
 		top: -15px;		
 		font-size: 16px;
-		// color: #329a00 !important; // нужно только, чтобы не писать много кола на JS
+		/*color: #329a00 !important; // нужно только, чтобы не писать много кола на JS*/
 		color: #e28605 !important; // нужно только, чтобы не писать много кола на JS
 
 	}
 }
 
 .form__label {
-	position: absolute;
-	top: -15px;
-	left: 10px;
-	font-size: 16px;
-
 	display: block;
-	padding: 0 5px;
-	font-family: @ff;
-	color: #c7c7c7;
-
-	background-color: #ffffff;
-	text-shadow: none;
-	transition: all .25s ease-out;
-	span {
-		opacity: .5;
-	}
+	margin-bottom: 10px;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 500;
 }
 
-.form__label--start {
-	top: 10px;
-	left: 10px;
-	font-size: 18px;
+.form__checkbox-item {
+	position: relative;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 15px;	
 }
 
-.form__submit {
-	display: flex;
-	justify-content: center;
+.form__checkbox-text {
+	display: block;
+	padding-left: 35px;
+}
+
+.form input[type=checkbox]:disabled,
+.form input[type=checkbox]:disabled ~ span {
+	color: #6a6a6a;
+	opacity: .7;
+}
+
+.form input[type=checkbox] + .form__checkbox-indicator {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	margin-top: -12px;
+	border: 1px solid #d5d5d5;
+	background-color: #f9f9f9;	
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.form input[type=checkbox]:checked + .form__checkbox-indicator {
+	background-image: url('../img/icon-check.svg');
+	background-position: center center;
+}
+
+.form input[type=checkbox]:disabled + .form__checkbox-indicator {
+	background-image: url('../img/icon-check.svg');	
+	opacity: 0.5;
+}
+
+.form input[type=checkbox]:focus ~ span {
+	opacity: 1;
+}
+
+/*--- RANGE ---*/
+input[type=range] {
+	-webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+	width: 100%; /* Указание параметра ширины требуется для Firefox. */
+}
+ 
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+ 
+input[type=range]:focus {
+	outline: none; /* Убирает голубую границу у элемента.*/
+}
+ 
+input[type=range]::-ms-track {
 	width: 100%;
-	margin-bottom: 15px;
-	padding: 10px 20px;
-	font-family: @ff;
-	font-size: 18px;	
-	line-height: 24px;
-	font-weight: 600;
-	letter-spacing: .3px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #ffffff;
-	border: none;
-	border-radius: 4px;
-	background-color: #E0A100;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	cursor: pointer;
+	background: transparent; // Скрывает слайдер, чтобы можно было добавить собственные стили.
+	border-color: transparent;
+	color: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    // width: 300px;
+    height: 1px;
+    background: #ddd;
+    border: none;    
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+/*--- СТИЛИЗАЦИЯ ПОЛЗУНКА ---*/
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;	
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: @blue;
+	cursor: pointer;
+	margin-top: -8px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+	box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
+}
+ 
+/* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+	box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);	
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: @blue;
+	cursor: pointer;
+}
+ 
+/* Тоже самое для IE */
+input[type=range]::-ms-thumb {
+	box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);	
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: @blue;
 	cursor: pointer;
 }
 
-#res {
-	// display: none;
+.form__submit {
+	width: 100%;
+	height: 45px;
 }
 
-.form__res {
-	// display: block !important;	
-	position: relative;	
-	font-size: 18px;
-	font-weight: 300;
-	color: #ffffff;
-	transition: none;
-	&::before {
-		content: '';
-		position: absolute;
-		top: 8px;
-		left: 10px;
-	}
-}
-
-.form__res--succesfull {	
-	padding: 7px 10px 7px 45px;
-	background-color: #329a00;
-	&::before {
-		width: 50px;
-		height: 44px;
-		background-image: url(../img/succesfull.svg);
-		background-repeat: no-repeat;
-	}
-}
-
-.form__res--error {
-	padding: 7px 10px 7px 45px;
-	background-color: red;
-	&::before {
-		top: 10px;
-		width: 50px;
-		height: 44px;
-		background-image: url(../img/attention.svg);
-		background-repeat: no-repeat;
-	}
-}
-
-@media (min-width: 600px) {
-
-}
 
 @media (min-width: @mobile-width) {	
 
@@ -144,98 +178,19 @@
 }
 
 @media (min-width: @tablet-width) {
-	.form__item-wrapper {
-		width: 60%;
-		margin-bottom: 15px;
+	.form__checkbox-item {
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 17px;
 	}
 
-	.form__item {
-		margin-bottom: 0;
-	}
-	.form__res {
-		width: 100%;
-		margin: 0 20%;
+	.form__checkbox-text {	
+		padding-left: 45px;
 	}
 }
 
 @media (min-width: @desktop-width) {
-	.form__item-wrapper {
-		width: auto;
-		margin-bottom: 0;
-	}
-
-	.form__item {
-		margin-bottom: 20px;
-	}
-
-	.form__res {
-		position: absolute;
-		left: -120%;
-		margin: 0;
-		margin-top: -15px;
-		background-color: #fff;
-		&::after {
-			position: absolute;
-			top: 15px;
-			right: -7px;
-			content: '';
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 7px 0 7px 7px;
-		}		
-		border-radius: 3px;
-		background-color: #333;
-		opacity: 0;
-		visibility: hidden;
-		transition: left .25s ease-out;
-	}
-	.form__res--succesfull {
-		background-color: rgba(50, 154, 0, .7);
-		&::after {
-			border-color: transparent transparent transparent rgba(50, 154, 0, .7);
-		}
-	}
-	.form__res--error {
-		background-color: rgba(255, 0, 0, .7);
-		&::after {
-			border-color: transparent transparent transparent rgba(255, 0, 0, .7);
-		}
-	}
-
-	// .form__submit {
-	// 	&:hover {	
-	// 		& + .form__res {
-	// 			left: -110%;
-	// 			opacity: 1;
-	// 			visibility: visible;
-	// 		}
-	// 	}
-	// }
-
-	.form__res--visible {
-		left: -110%;
-		opacity: 1;
-		visibility: visible;
-	}
-
-	.banner__form--inner {
-		.form__res {
-			margin-top: -42px;					
-		}
-		.form__res--succesfull {
-			background-color: rgba(50, 154, 0, 1);
-			&::after {
-				border-color: transparent transparent transparent rgba(50, 154, 0, 1);
-			}
-		}
-		.form__res--error {
-			background-color: rgba(255, 0, 0, 1);
-			&::after {
-				border-color: transparent transparent transparent rgba(255, 0, 0, 1);
-			}
-		}
-	}
+	
 }
 
 @media (min-width: @desktop-width) {

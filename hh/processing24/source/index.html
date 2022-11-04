@@ -8,10 +8,14 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<h1 class="visually-hidden">Процессинг24 - компания по реализации топлива</h1>
+	<!-- <h1 class="visually-hidden">Процессинг24 - компания по реализации топлива</h1> -->
 	<!-- <div style="display: none;">
 		<include src="source/img/sprite.svg"></include>
 	</div> -->
@@ -86,68 +90,192 @@
 				</nav>
 			</div>
 		</div>
-	</header>
+	</header>	
 
-	<main class="page-main">		
-		<!-- <h2>Доставка топлива</h2> -->
+	<main class="page-main">
+		<h1 class="page-main__title container">Доставка топлива</h1>
 		
-		<!-- <section class="banner">			
-			<div class="banner__wrapper container">
-				<div class="banner__title-wrapper">
-					<h2 class="banner__title">Контейнерные перевозки <span>всеми видами транспорта</span></h2>
-					<p class="banner__slogan">Перевозим более 800 контейнеров в месяц</p>					
-				</div>				
-			</div>
-			<div class="banner__img">
-				<picture>
-					<source type="image/webp" srcset="img/banner-home.webp 1x, img/banner-home@2x.webp 2x">
-					<img src="img/banner-home.jpg" srcset="img/banner-home@2x.jpg 2x" alt="Контейнерные перевозки всеми видами транспорта">
-				</picture>
-			</div>
-			
-			<div class="promo">
-				<p class="promo__text">Предлагаем специальные условия <span>для крупных партий </span></p>
-			</div>			
-			<form method="POST" action="https://echo.htmlacademy.ru" class="banner__form form form--nojs">
-				<div class="form__item-wrapper">
-					<p class="form__item">
-						<input class="form__input" type="text" name="form__name" id="form__name"  value="">
-						<label class="form__label" for="form__name">Ваше имя</label>
+		<section class="order container">
+			<h2 class="order__title">Быстрый <span>заказ топлива</span></h2>			
+			<form method="POST" action="/" class="order__form form form--nojs">
+				<div class="order__items">
+					<p class="order__item form__item">
+						<label class="form__label" for="order__name">Ваше имя</label>
+						<input class="form__input" type="text" name="order__name" id="order__name"  value=""
+						placeholder="Иван">
 					</p>
-					<p class="form__item">
-						<input class="form__input" type="tel" name="form__phone" id="form__phone" value="">
-						<label class="form__label" for="form__phone">Телефон для связи</label>
+					<p class="order__item form__item">
+						<label class="form__label" for="order__phone">Номер телефона</label>
+						<input class="form__input" type="tel" name="order__phone" id="order__phone" value="" placeholder="+7 (___) ___-__-__">
 					</p>
+					<label class="order__checkbox form__checkbox-item">
+						<input type="checkbox" class="visually-hidden" name="agreement" value="agree">
+						<span class="form__checkbox-indicator"></span>
+						<span class="form__checkbox-text">Я согласен с условиями обработки данных</span>
+					</label>
 				</div>
-				<input type="submit" class="banner__button form__submit" value="Заказать перевозку">
-				<div class="form__res form__res--succesfull" id="res"><b>Вы уже обращались!</b> <br>Оформлен новый заказ на перевозку</div>
+				<input type="submit" class="order__submit button form__submit" value="Заказать топливо">	
 			</form>
-		</section> -->		
+		</section>		
 
-<!-- 		<section class="mission container">
-			<h2 class="mission__title">Наша миссия</h2>
-			<p class="mission__text">Оказание высококачественного, клиентоориентированного, интеллектуального и полного комплекса услуг в сфере ВЭД, опираясь на профессионализм наших сотрудников. Внедрение современных информационных технологий, умение меняться, подстраиваясь под изменяющиеся внешние условия, постоянное стремление к совершенствованию предоставляемых услуг и поиск новых оптимальных путей решения старых задач. Наша цель выполнять поставленные задачи оптимальным образом и в срок, что позволит нашим Клиентам быть уверенными в завтрашнем дне, легко планировать свой бизнес и развиваться.</p>
-		</section> -->
+		<section class="price container">
+			<h2 class="price__title">Стоимость топлива</h2>
+			<table class="price__table">
+				<thead class="price__thead">
+					<tr>
+						<th>Сорт топлива</th>
+						<th>Экологический класс</th>
+						<th>Производитель</th>
+						<th>Наличный расчет</th>
+						<th>Безналичный расчет</th>
+					</tr>
+				</thead>
+				<tbody class="price__tbody">
 
-		<!-- <section class="advantages container">
-			<h2 class="advantages__title">Почему именно мы?</h2>
-			<ul class="advantages__list">
-				<li class="advantages__item"><svg><use xlink:href="#icon-global"></use></svg>Работаем с транспортными компаниями во всех уголках мира от А до Я</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-delivery"></use></svg>Доставляем груз по всей России и Беларуси</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-transports"></use></svg>Используем доставки любыми видами транспорта</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-consultation"></use></svg>Держим клиентов в курсе ситуации на рынке перевозок</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-special-cargo"></use></svg>Доставляем грузы, требующие особых условий: <i>температурный режим, негабаритный груз</i></li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-size"></use></svg>Отправляем партии любых объемов: <i>от паллета до десятков контейнеров</i></li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-declaration"></use></svg> Предлагаем специальные условия для крупных партий</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-union"></use></svg>Объединяем груз и транспорт, чтобы предоставить лучшие ставки</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-best"></use></svg>Находим лучшие варианты отправки для каждого груза</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-container"></use></svg>Возможность отправки грузов в собственных контейнерах</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-structure"></use></svg>Собственная сеть агентов по всему миру</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-contract"></use></svg>Прямые договоры с терминалами в Санкт-Петербурге, Новороссийске, Владивостоке, Находке</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-ruble"></use></svg>Возможность предоставления отсрочек с момента доставки груза на склад клиента</li>
-				<li class="advantages__item"><svg><use xlink:href="#icon-warehouse"></use></svg>Возможность консолидации груза на собственных складах в портах ЮВА</li>
-			</ul>
-		</section> -->
+					<tr class="price__separator"><td colspan="5"></td></tr>
+
+					<tr>
+						<td class="price__grade" rowspan="5">ДТ</td>
+						<td class="price__eco-class" rowspan="3">ЕВРО-5</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,43 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">44,43 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Роснефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
+					</tr>
+					<tr>
+						<td class="price__eco-class" rowspan="2">ЕВРО-4</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">-</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">41,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">40,67 р.</td>
+					</tr>
+
+					<tr class="price__separator"><td colspan="5"></td></tr>
+
+					<tr>
+						<td class="price__grade" rowspan="8">АИ-95</td>
+						<td class="price__eco-class" rowspan="3">ЕВРО-5</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,43 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">44,43 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Роснефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
+					</tr>
+					<tr>
+						<td class="price__eco-class" rowspan="3">ЕВРО-4</td>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">41,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">40,67 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">-</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Роснефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
+					</tr>
+					<tr>
+						<td class="price__eco-class" rowspan="2">ЕВРО-3</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">-</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="delivery">
+			<div class="delivery__wrapper container">
+				<h2 class="delivery__title">Топливо с доставкой</h2>
+				<div class="delivery__form-wrapper">
+					<form method="POST" action="/" class="delivery__form form form--nojs">
+						
+						<div class="form__item form__item--select select select--close" data-state="" tabindex="0">
+							<!-- <svg class="select__arrow select__arrow--down" width="18" height="18" fill="#5acf28"><use xlink:href="#icon-arrow"></use></svg> -->
+							<div class="select__title" data-default=""></div>							
+							<div class="select__placeholder">ДТ</div>
+							<div class="select__content" style="top: 20px;">
+								<!-- <input id="form__age0" class="select__input" type="radio" name="form__age" value="age"/> -->
+								<!-- <label for="form__age0" class="select__label">age</label> -->
+								<input id="form__dt" class="select__input" type="radio" name="form__kind" value="дт" selected>
+								<label for="form__dt" class="select__label">ДТ</label>
+								<input id="form__ai80" class="select__input" type="radio" name="form__kind" value="аи-80">
+								<label for="form__ai80" class="select__label">АИ-80</label>
+								<input id="form__ai92" class="select__input" type="radio" name="form__kind" value="аи-92">
+								<label for="form__ai92" class="select__label">АИ-92</label>
+								<input id="form__ai95" class="select__input" type="radio" name="form__kind" value="аи-95">
+								<label for="form__ai95" class="select__label">АИ-95</label>
+							</div>
+						</div>
+
+						<p class="delivery__item form__item">
+							<label class="form__label" for="delivery__volume">Объем топлива</label>
+							<p class="form__rahge-val"><output name="ageOutputName" id="ageOutputId">0</output> литров</p>
+							<input type="range" name="delivery__volume" id="delivery__volume" value="0" min="0" max="2000" oninput="ageOutputId.value = delivery__volume.value" class="form__range">
+						</p>
+
+
+
+						<p class="delivery__item form__item">
+							<label class="form__label" for="delivery__place">Место доставки</label>
+							<input class="form__input" type="text" name="delivery__place" id="delivery__place"  value=""
+							placeholder="Укажите имя">
+						</p>
+						<p class="delivery__item form__item">
+							<label class="form__label" for="delivery__name">Ваше имя</label>
+							<input class="form__input" type="text" name="delivery__name" id="delivery__name"  value=""
+							placeholder="Иван">
+						</p>
+						<p class="delivery__item form__item">
+							<label class="form__label" for="delivery__phone">Номер телефона</label>
+							<input class="form__input" type="tel" name="delivery__phone" id="delivery__phone" value="" placeholder="+7 (___) ___-__-__">
+						</p>
+
+						<div class="delivery__total">
+							<input type="submit" class="delivery__submit button form__submit" value="Заказать топливо">	
+						</div>
+
+
+
+
+
+
+
+						
+					</form>
+				</div>
+			</div>			
+			
+		</section>
 
 		<!-- <section class="services">
 			<div class="services__wrapper container">
@@ -254,7 +382,7 @@
 			<div class="page-footer__data">
 				<p class="page-footer__address"><b>211440,</b> Республика Беларусь, <br>г.Новополоцк, <br>ул.Молодежная, д. 134, пом. 178</p>
 				<p class="page-footer__email"><a href="mailto:stf.sergey@gmail.com">stf.sergey@gmail.com</a></p>
-				<p class="page-footer__order"><a href="orders.html">Заказы</a></p>
+				<p class="page-footer__order"><a href="price.html">Заказы</a></p>
 			</div>
 			
 			<ul class="page-footer__menu">
@@ -276,7 +404,8 @@
 	</footer>	
 
 	<script src="js/hamburger.min.js"></script>
-	<script src="js/form.min.js"></script>	
+	<script src="js/form.min.js"></script>
+	<script src="js/select.min.js"></script>
 
 </body>
 </html>
