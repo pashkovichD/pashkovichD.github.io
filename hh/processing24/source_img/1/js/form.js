@@ -24,25 +24,25 @@ inputs.forEach(function(el) {
 		lab.classList.remove('form__label--start');
 	}
 
-	el.addEventListener('focus', function (e) {
-		lab = this.nextSibling.nextSibling;
-		if(lab.classList.contains('form__label--start')) {
-			lab.classList.remove('form__label--start');
-			lab.style.color = '#e28605';
-		} else {
-			lab.style.color = '#e28605';
-		}
-	});
+	// el.addEventListener('focus', function (e) {
+	// 	lab = this.nextSibling.nextSibling;
+	// 	if(lab.classList.contains('form__label--start')) {
+	// 		lab.classList.remove('form__label--start');
+	// 		lab.style.color = '#e28605';
+	// 	} else {
+	// 		lab.style.color = '#e28605';
+	// 	}
+	// });
 
-	el.addEventListener('blur', function (e) {
-		lab = this.nextSibling.nextSibling;
-		if(!lab.classList.contains('form__label--start')) {			
-			lab.style.color = '#c7c7c7';
-			if(this.value == '') {				
-				lab.classList.add('form__label--start');	
-			} else {
+	// el.addEventListener('blur', function (e) {
+	// 	lab = this.nextSibling.nextSibling;
+	// 	if(!lab.classList.contains('form__label--start')) {			
+	// 		lab.style.color = '#c7c7c7';
+	// 		if(this.value == '') {				
+	// 			lab.classList.add('form__label--start');	
+	// 		} else {
 				
-			}
-		}
-	});
+	// 		}
+	// 	}
+	// });
 });

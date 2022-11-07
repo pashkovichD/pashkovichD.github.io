@@ -30,11 +30,9 @@ jQuery(document).ready(function($) {
 		dots: false,		
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		draggable: true,
-		// rows: 0,
-		variableWidth: true,
+		draggable: true,		
+		variableWidth: true,		
 		appendArrows: $('.reviews__arrows'),
-	    
 	    prevArrow: '<p class="arrow__prev"></p>',
 	    nextArrow: '<p class="arrow__next"></p>'
 	});
