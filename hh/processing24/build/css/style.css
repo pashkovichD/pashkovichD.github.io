@@ -1788,6 +1788,10 @@ input[type=range]::-ms-thumb {
 .partners__item:focus {
   opacity: 1;
 }
+.partners__link {
+  display: block;
+  line-height: 0;
+}
 @media (min-width: 480px) {
   .partners__list {
     display: -webkit-box;

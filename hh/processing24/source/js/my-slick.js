@@ -33,7 +33,6 @@ jQuery(document).ready(function($) {
 		draggable: true,
 		// rows: 0,
 		variableWidth: true,
-		
 		appendArrows: $('.reviews__arrows'),
 	    
 	    prevArrow: '<p class="arrow__prev"></p>',
