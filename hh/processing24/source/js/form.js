@@ -14,7 +14,7 @@ labels.forEach(function(el) {
 });
 
 // inputs[0].focus(); // ставим фокус в первый input
-inputs[0].nextSibling.nextSibling.classList.remove('form__label--start'); // состояние фокуса в первом input'е
+// inputs[0].nextSibling.nextSibling.classList.remove('form__label--start'); // состояние фокуса в первом input'е
 
 inputs.forEach(function(el) {	
 
