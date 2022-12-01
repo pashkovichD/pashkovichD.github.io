@@ -1,0 +1,142 @@
+.services {
+	padding: 40px 30px;	
+	background-color: #f2f2f2;
+	border-top: 1px solid #f2f2f2;
+}
+
+.services__title {
+	font-size: 28px;
+	line-height: normal;
+	text-transform: uppercase;	
+	color: #480028;
+}
+
+.services__text {
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: #555555;
+	word-break: normal;
+}
+
+.services__list {
+
+}
+
+.services__item {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,.15);
+	box-sizing: border-box;
+	transition: all .25s ease-out;
+	&:hover {
+		border: 1px solid #E0A100;
+		.services__item-img {		
+			filter: grayscale(0%);
+		}
+		.services__item-text {
+			color: #000000;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: #777777;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+
+.services__item-title {
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: 20px;
+	line-height: normal;
+	text-align: center;
+	color: #480028;
+}
+
+.services__item-img {
+	display: block;	
+	width: 100%;
+	margin-bottom: 10px;
+	filter: grayscale(100%);
+	transition: all .25s ease-out;
+}
+
+.services__item-text {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	line-height: 22px;
+	transition: all .25s ease-out;
+}
+
+@media (min-width: 400px) {
+	.services__item {
+		margin-bottom: 15px;
+		padding: 10px 15px;
+	}
+
+	.services__item-text {
+		text-align: justify;
+	}
+}
+
+
+@media (min-width: @mobile-width) {
+	.services__item {
+		width: 75%;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width: 600px) {
+	.services__text {
+		padding: 0 20%;
+	}
+
+	.services__item {
+		width: 60%;		
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.services__list {
+		padding: 0 5%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.services__item {
+		width: 47%;		
+		margin-bottom: 20px;
+	}
+
+	.services__item-title {
+		margin-bottom: 15px;
+		font-size: 24px;
+	}
+	.services__item-text {	
+		// font-size: 15px;
+		// line-height: 21px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	
+}
+
+@media (min-width: 1100px) {
+	.services__list {
+		padding: 0 15%;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+
+}

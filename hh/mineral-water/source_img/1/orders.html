@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Новополоцкая логистическая компания - Заказы</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<h1 class="visually-hidden">Новополоцкая логистическая компания</h1>
+	<!-- <div style="display: none;">
+		<include src="source/img/sprite.svg"></include>
+	</div> -->
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">		
+		<div class="page-header__wrapper container">			
+			<a class="page-header__logo logo" href="index.html">
+				<svg width="70" height="70">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<span class="logo__text">
+					<span class="logo__name">Новополоцкая логистическая комп<b>А</b>ни<b>Я</b></span>
+					<span class="logo__slogan">Всё для клиента</span>
+				</span>
+			</a>
+			<div class="page-header__box">
+				<div class="page-header__phone phone">
+					<a class="phone__number" href="tel:+375214505070"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg><span>+375(214)</span> 50-50-70</a>
+				</div>
+				
+				<button class="page-header__toggle-nav hamburger" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>
+				
+				<div class="page-header__nav-wrapper">
+				<nav class="page-header__nav menu">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<ul class="page-header__nav-list menu__list">
+						<li class="menu__item menu__item--active"><a href="index.html">Главная</a></li>
+						<li class="menu__item">
+							<a class="menu__item--dropdown" href="#">Услуги</a>
+							<ul class="menu__dropdown">
+								<li><a href="auto.html">Автомобильные перевозки</a></li>
+								<li><a href="rw.html">Железнодорожные перевозки</a></li>
+								<li><a href="sea.html">Морские перевозки</a></li>
+								<li><a href="container.html">Контейнерные перевозки</a></li>
+								<li><a href="avia.html">Авиаперевозки</a></li>
+								<li><a href="groupage.html">Доставка сборных грузов</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="about.html">О компании</a></li>
+						<li class="menu__item"><a href="contact.html">Контакты</a></li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main">		
+		<h2 class="visually-hidden">Новополоцкая логистическая компания - Заказы перевозок</h2>
+		
+
+		<div class="orders__top"></div>
+
+		<section class="orders container">
+			<h2 class="orders__title">Нужно перезвонить</h2>
+			<table class="orders__table">
+				<thead class="orders__thead">
+					<tr>
+						<th>Имя</th>
+						<th>Телефон</th>
+						<th>Дата</th>
+					</tr>
+				</thead>
+				<tbody class="orders__tbody">				
+					<tr>
+						<td class="orders__name">Дмитрий</td>
+						<td class="orders__phone"><a href="tel:+375214505070">+375(29)124-56-79</a></td>						
+						<td class="orders__date">26-08-2021 16:18:43
+							<p class="orders__links">
+								<a class="orders__link orders__link--delete" data-id="<?php echo $tender['tender_id']; ?>" title="Удалить">
+									<svg viewBox="0 0 1000 1000" width="15" height="15"><polygon points="1000,185.2 814.8,0 500,314.8 185.2,0 0,185.2 314.8,500 0,814.8 185.2,1000 500,685.2 814.8,1000 1000,814.8 685.2,500 "/></svg>
+									<span class="visually-hidden">Удалить</span>
+								</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="orders__name">Дмитрий</td>
+						<td class="orders__phone"><a href="tel:+375214505070">+375(29)124-56-79</a></td>
+						<td class="orders__date">26-08-2021 16:18:43
+							<p class="orders__links">
+								<a class="orders__link orders__link--delete" data-id="<?php echo $tender['tender_id']; ?>" title="Удалить">
+									<svg viewBox="0 0 1000 1000" width="15" height="15"><polygon points="1000,185.2 814.8,0 500,314.8 185.2,0 0,185.2 314.8,500 0,814.8 185.2,1000 500,685.2 814.8,1000 1000,814.8 685.2,500 "/></svg>
+									<span class="visually-hidden">Удалить</span>
+								</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="orders__name">Дмитрий</td>
+						<td class="orders__phone"><a href="tel:+375214505070">+375(29)124-56-79</a></td>
+						<td class="orders__date">26-08-2021 16:18:43
+							<p class="orders__links">
+								<a class="orders__link orders__link--delete" data-id="<?php echo $tender['tender_id']; ?>" title="Удалить">
+									<svg viewBox="0 0 1000 1000" width="15" height="15"><polygon points="1000,185.2 814.8,0 500,314.8 185.2,0 0,185.2 314.8,500 0,814.8 185.2,1000 500,685.2 814.8,1000 1000,814.8 685.2,500 "/></svg>
+									<span class="visually-hidden">Удалить</span>
+								</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="orders__name">Дмитрий</td>
+						<td class="orders__phone"><a href="tel:+375214505070">+375(29)124-56-79</a></td>
+						<td class="orders__date">26-08-2021 16:18:43
+							<p class="orders__links">
+								<a class="orders__link orders__link--delete" data-id="<?php echo $tender['tender_id']; ?>" title="Удалить">
+									<svg viewBox="0 0 1000 1000" width="15" height="15"><polygon points="1000,185.2 814.8,0 500,314.8 185.2,0 0,185.2 314.8,500 0,814.8 185.2,1000 500,685.2 814.8,1000 1000,814.8 685.2,500 "/></svg>
+									<span class="visually-hidden">Удалить</span>
+								</a>
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>			
+		</section>
+
+	</main>
+
+	<footer class="page-footer">
+		<section class="page-footer__top">
+			<h2 class="visually-hidden">Контактные данные</h2>
+			<div class="page-footer__top-wrapper container">
+				
+				<a class="page-footer__logo logo" href="index.html">
+					<svg width="70" height="70">
+						<use xlink:href="#icon-logo"></use>
+					</svg>
+					<span class="logo__text">
+						<span class="logo__name">Новополоцкая логистическая комп<b>А</b>ни<b>Я</b></span>
+						<span class="logo__slogan">Всё для клиента</span>
+					</span>
+				</a>
+				
+				<div class="page-footer__phone phone">
+					<a class="phone__number" href="tel:+375214505070"><svg fill="#af9702" width="20" height="20"><use xlink:href="#icon-phone"></use></svg><span>+375(214)</span> 50-50-70</a>					
+				</div>
+
+				<div class="page-footer__schedule schedule">
+					<p class="schedule__item"><span>Пн - чт</span> 09.00 - 18.00</p>
+					<p class="schedule__item"><span>Пт</span> 09.00 - 16.45</p>
+					<p class="schedule__item"><span>Выходной -</span> суббота, воскресенье</p>
+				</div>
+				<svg width="70" height="70" class="page-footer__logo-bg">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+			</div>
+		</section>
+
+		<section class="page-footer__center container">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="page-footer__data">
+				<p class="page-footer__address"><b>211440,</b> Республика Беларусь, <br>г.Новополоцк, <br>ул.Молодежная, д. 134, пом. 178</p>
+				<p class="page-footer__email"><a href="mailto:stf.sergey@gmail.com">stf.sergey@gmail.com</a></p>
+				<p class="page-footer__order"><a href="orders.html">Заказы</a></p>
+			</div>
+			
+			<ul class="page-footer__menu">
+				<li class="page-footer__menu-item"><a href="index.html">Главная</a></li>
+				<li class="page-footer__menu-item"><a href="services.html">Услуги</a></li>
+				<li class="page-footer__menu-item"><a href="about.html">О компании</a></li>
+				<li class="page-footer__menu-item"><a href="contact.html">Контакты</a></li>
+			</ul>
+
+			<div class="page-footer__map">
+				<a href="https://yandex.by/maps/-/CCUiQRFD1A" title="Мы находимся по адресу г.Новополоцк, ул.Молодежная, д.134, пом.178" rel="noopener nofollow" target="_blank"></a>
+			</div>
+		</section>
+
+		<div class="page-footer__bottom">
+			<p class="page-footer__copyright container">Copyright &copy; 2021</p>
+		</div>
+		</div>
+	</footer>
+
+	<script src="js/hamburger.min.js"></script>
+	<script src="js/form.min.js"></script>	
+
+</body>
+</html>

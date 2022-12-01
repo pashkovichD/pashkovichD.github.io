@@ -1,0 +1,31 @@
+.container {
+	width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+	/*background-color: green;*/
+	box-sizing: border-box;
+}
+
+
+@media (min-width: @mobile-width) {
+	.container {
+		width: 460px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.container {
+		width: 748px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+		
+}
+
+@media (min-width: @desktop-full-width) {
+	.container {
+		width: 1120px;
+		padding: 0;
+	}
+}
