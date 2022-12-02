@@ -30,34 +30,32 @@
 	</div>
 
 	<header class="page-header">		
-		<div class="page-header__wrapper container">			
-			<div class="page-header__top">
-				<a class="page-header__logo logo" href="index.html">Эльбрусская<br>Прохлада</a>
-				
-			</div>
-		</div>
-		<div class="page-header__menu container">
-			<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
-				<span class="visually-hidden">Открыть меню</span>
-				<span class="hamburger__line"></span>
-			</button>
-			<div class="page-header__nav-wrapper">
-				<nav class="page-header__nav menu">
-					<h2 class="visually-hidden">Главное меню</h2>
-					<ul class="page-header__nav-list menu__list">
-						<li class="menu__item"><a href="index.html">Главная</a></li>						
-						<li class="menu__item"><a href="#">Каталог</a></li>						
-						<li class="menu__item"><a href="#">Как заказать</a></li>
-						<li class="menu__item"><a href="#">Отзывы</a></li>
-						<li class="menu__item"><a href="#">О нас</a></li>
-						<li class="menu__item"><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="page-header__phone phone">
-					<a class="phone__number" href="tel:+79280761498">+7 928 076 14 98</a>
-				</div>
-				<div class="page-header__box">
-					<button class="page-header__connect button" type="button" aria-label="Заказать обратный звонок">Заказать обратный звонок</button>
+		<div class="page-header__wrapper container">
+			<a class="page-header__logo logo" href="index.html">Эльбрусская<br>Прохлада</a>
+			<div class="page-header__menu">
+				<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>
+				<div class="page-header__nav-wrapper">
+					<nav class="page-header__nav menu">
+						<h2 class="visually-hidden">Главное меню</h2>
+						<ul class="page-header__nav-list menu__list">
+							<li class="menu__item"><a href="index.html">Главная</a></li>						
+							<li class="menu__item"><a href="#">Каталог</a></li>						
+							<li class="menu__item"><a href="#">Как заказать</a></li>
+							<li class="menu__item"><a href="#">Отзывы</a></li>
+							<li class="menu__item"><a href="#">О нас</a></li>
+							<li class="menu__item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="page-header__contacts">
+						<div class="page-header__phone phone">
+							<a class="phone__number" href="tel:+79280761498">+7 (928) 076 14 98</a>
+						</div>
+						<button class="page-header__connect button button--light" type="button" aria-label="Заказать обратный звонок">Заказать обратный звонок</button>
+					</div>
+					<!-- <button type="button" class="menu__close close" tabindex="0" aria-label="Закрыть меню"><span class="visually-hidden">Закрыть меню</span></button> -->
 				</div>
 			</div>
 		</div>
@@ -66,32 +64,52 @@
 	<main class="page-main">
 		<!-- <h1 class="page-main__title container"></h1> -->
 		
-		<section class="slider">
-			<div class="slider-wrapper container">
-				<h2 class="slider__title">Оптовые поставки минеральной воды и безалкогольных напитков</h2>
-				<!-- <div class="slider__arrows arrow"></div> -->
+		<!-- <section class="slider">
+			<div class="slider__wrapper container">
+				<h2 class="slider__title">Оптовые поставки<br> минеральной воды<br> и безалкогольных напитков</h2>
+				<div class="slider__arrows arrow"></div>
+				<div class="slider__number"><span class="current">2</span>/<span>4</span></div>
 				<ul class="slider__list">
 					<li class="slider__item">
 						<picture>
-							<source type="image/webp" srcset="img/certificates/cert_1.webp 1x, img/certificates/cert_1@2x.webp 2x">
-							<img src="img/certificates/cert_1.jpg" srcset="img/certificates/cert_1@2x.jpg 2x" width="215" height="300" alt="Слайд 1">
+							<source type="image/webp" srcset="img/slider/tarhun.webp 1x, img/slider/tarhun@2x.webp 2x">
+							<img src="img/slider/tarhun.jpg" srcset="img/slider/tarhun@2x.jpg 2x" alt="Тархун">
+						</picture>
+					</li>
+					<li class="slider__item">
+						<picture>
+							<source type="image/webp" srcset="img/slider/cherry.webp 1x, img/slider/cherry@2x.webp 2x">
+							<img src="img/slider/cherry.jpg" srcset="img/slider/cherry@2x.jpg 2x" alt="Вишня">
+						</picture>
+					</li>
+					<li class="slider__item">
+						<picture>
+							<source type="image/webp" srcset="img/slider/sweet-water.webp 1x, img/slider/sweet-water@2x.webp 2x">
+							<img src="img/slider/sweet-water.jpg" srcset="img/slider/sweet-water@2x.jpg 2x" alt="Сладкая вода">
+						</picture>
+					</li>
+					<li class="slider__item">
+						<picture>
+							<source type="image/webp" srcset="img/slider/kvas.webp 1x, img/slider/kvas@2x.webp 2x">
+							<img src="img/slider/kvas.jpg" srcset="img/slider/kvas@2x.jpg 2x" alt="Квас">
 						</picture>
 					</li>
 				</ul>
+				<div class="slider__preloader"></div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="about container">
+		<!-- <section class="about container">
 			<h2 class="about__title">Немного о нас</h2>
 			<div class="about-desc">ООО "Эльбрусская прохлада"- отптовые продажи безалкогольных напитков от производителя.Широкий ассортимент лимонадов,минеральной воды,разных сементов.Артезианская питьевая вода,добывается из скважины глубиной 230 м. Автоматизированная система розлива исключает любые загрязнения в процессе производства, а отсутствие поблизости крупных предприятий и сельхозугодий гарантирует чистоту добываемой воды. </div>
-			<!-- <div class="slider__arrows arrow"></div> -->
+			<div class="slider__arrows arrow"></div>
 			<ul class="about__list">
 				<li class="about__item">
 					<svg width="52" height="52" fill="#000000"><use xlink:href="#icon-clock"></use></svg>
 					<span>Индивидуальные скидки в зависимости от объема покупки</span>
 				</li>
 			</ul>
-		</section>
+		</section> -->
 
 		<!-- <section class="order container">
 			<h2 class="order__title">Быстрый <span>заказ топлива</span></h2>			
@@ -509,11 +527,11 @@
 	</section>	
 	<div class="overlay"></div>	 -->
 
-	<script src="js/slick/slick.min.js"></script>
-	<script src="js/my-slick.min.js"></script>
+	<!-- <script src="js/slick/slick.min.js"></script> -->
+	<!-- <script src="js/my-slick.min.js"></script> -->
 	<script src="js/hamburger.min.js"></script>
-	<script src="js/select.min.js"></script>
-	<script src="js/maskedinput.min.js"></script>
-	<script src="js/popup.min.js"></script>
+	<!-- <script src="js/select.min.js"></script> -->
+	<!-- <script src="js/maskedinput.min.js"></script> -->
+	<!-- <script src="js/popup.min.js"></script> -->
 </body>
 </html>
