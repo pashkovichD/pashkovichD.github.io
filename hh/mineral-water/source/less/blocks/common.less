@@ -1,5 +1,6 @@
 body {
 	min-width: 320px;
+	min-height: 2800px;
 	margin: 0 auto;
 	padding: 0;
 	font-family: @ff;
@@ -8,6 +9,18 @@ body {
 	font-weight: 400;  
 	color: @color;
 	background-color: @bg-color;
+	// background-color: red;
+	/*background-image: url(../img/main05.png);
+	background-position: center 0;*/
+	/*background-image: url(../img/main-mobile05.png);
+	background-position: center 3px;*/
+	/*background-image: url(../img/popup-mobile.jpg);
+	background-position: center 93px;*/
+	/*background-image: url(../img/popup.jpg);
+	background-position: center 93px;*/
+	background-repeat: no-repeat;
+	
+	
 }
 :focus {
   outline: none;
@@ -64,11 +77,13 @@ h2 {
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 0;	
-	font-size: 24px;
-	line-height: normal;
+	font-size: 30px;
+	line-height: 41px;
+	// font-size: 72px;
+	// line-height: 75px;
 	font-weight: 700;
-	text-align: center;
-	color: #000000;
+	// text-align: center;
+	color: @blue;
 	box-sizing: border-box;
 	span {
 		color: @blue;
@@ -89,7 +104,7 @@ ul {
 }
 
 .page-main {
-	// padding-top: 50px;
+	// padding-top: 5000px;
 }
 
 .page-main__title {
@@ -110,11 +125,12 @@ ul {
 		line-height: 48px;
 		text-align: left;
 	}
+
 	h2 {
-		font-size: 36px;
-		line-height: 44px;
-		text-align: left;
+		font-size: 40px;
+		line-height: 52px;
 	}
+
 }
 
 @media (min-width: @desktop-width) {
@@ -128,6 +144,13 @@ ul {
 		// font-size: 48px;
 		// line-height: 58px;
 	}	
+}
+
+@media (min-width: @1200-width) {
+	h2 {
+		font-size: 72px;
+		line-height: 75px;
+	}
 }
 
 @media (min-width: @desktop-full-width) {

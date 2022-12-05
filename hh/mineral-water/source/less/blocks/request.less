@@ -1,0 +1,142 @@
+.request {
+	position: relative;	
+	padding: 20px 0 50px 0;
+	// background-color: @blue;
+	box-shadow: 0px 15px 40px rgba(25, 70, 186, 0.1);
+	&::before {
+		content: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 49%;		
+		background-color: #ffffff;
+	}
+}
+
+.request__desc {
+	position: relative;
+	margin-right: 15px;
+	margin-bottom: 40px;
+	padding: 30px 25px 25px 15px;
+	background-color: @blue;
+	overflow: hidden;
+	box-sizing: border-box;
+	svg {
+		position: absolute;
+		top: -35px;
+		right: -15px;
+		width: 180px;
+		height: 205px;
+		fill: #ffffff;
+		opacity: 0.15;
+	}
+}
+
+.request__comment {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.request__title {
+	margin-bottom: 10px;
+	padding-right: 40px;
+	color: #ffffff;
+}
+
+.request__form {
+	padding: 0 15px;
+	z-index: 1;
+}
+
+.request__item {
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 45px;
+	}
+}
+
+
+@media (min-width: @mobile-width) {
+	.request__desc {
+		padding: 40px 45px 35px 40px;
+	}
+
+	.request__form {
+		padding: 0 65px;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.request {
+		padding: 0;
+		background-color: @blue;
+		&::before {
+			content: '';
+		}
+	}
+
+	.request__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.request__desc {
+		width: 49%;
+		margin: 0;
+		background-color: transparent;
+		svg {
+			width: 230px;
+			height: 245px;
+			right: -25px;
+		}
+	}
+
+	.request__title {
+		margin-bottom: 30px;
+		line-height: 47px;
+	}
+
+	.request__form {
+		width: 50%;
+		padding: 40px;		
+	}
+}
+
+@media (min-width: @1200-width) {
+	.request__title {	
+		line-height: 75px;
+	}
+
+	.request__form {
+		padding: 80px 40px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.request__desc {
+		padding: 110px 45px 105px 0px;
+		svg {
+			width: 420px;
+			height: 467px;
+			top: -80px;
+			right: -45px;
+		}
+	}
+
+	.request__title {
+		margin-bottom: 35px;
+		// line-height: 75px;
+	}
+
+	.request__comment {
+		margin-bottom: 0;
+		font-size: 18px;
+	}
+
+	.request__form {
+		padding: 150px 0 40px 115px;
+	}
+}
