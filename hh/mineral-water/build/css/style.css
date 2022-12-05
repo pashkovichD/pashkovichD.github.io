@@ -657,6 +657,21 @@ ul {
   padding: 20px 50px 30px 50px !important;
   overflow: inherit;
 }
+.about__list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about__list .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
