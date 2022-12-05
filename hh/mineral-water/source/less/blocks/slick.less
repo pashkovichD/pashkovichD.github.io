@@ -44,7 +44,7 @@
 	margin-right: 65px;
 	& > div {
 		// background-color: red;
-		text-align: center;
+		// text-align: center;
 	}
 }
 
@@ -99,15 +99,20 @@
 
 
 	.slick-track {
-		display: flex;
+		display: flex; /*!Обязательно -- чтобы слайды были одинаковой высоты */		
 	}
 
 	.slick-slide {
-		display: flex;
-  		height: auto;
+		display: flex; /*!Обязательно -- чтобы слайды были одинаковой высоты */		
+  		height: auto; /*!Обязательно -- чтобы слайды были одинаковой высоты */
   		flex-direction: column;
+  		margin-right: 100px;
+		// margin-right: 25px;
+		// .about__item {
+		// 	display: flex !important;
+		// 	flex-direction: column !important;
+		// }
 	}
-	
 }
 
 
@@ -139,6 +144,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	.about__list {
+		.slick-slide {
+	  		margin-right: 20px;
 		}
 	}
 }
