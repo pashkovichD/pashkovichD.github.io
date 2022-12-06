@@ -1,9 +1,11 @@
 jQuery(document).ready(function($) {
 	
 	$('.slider__list').not('.slick-initialized').slick({
-		// infinite: true,
+		infinite: true,
 		dots: true,
 		arrows: false,
+		autoplay: false,
+		speed: 800,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable: true,
@@ -30,6 +32,54 @@ jQuery(document).ready(function($) {
 	});
 
 
+	/*-------------------------------------------------------*/
+	var percent;
+	var int;
+	var time = 1;
+	var index_bar = 0;	
+
+	$('.slider__preloader .progressBar').each(function(index) {        
+		var progress = "<div class='inProgress inProgress" + index + "'></div>";
+		$(this).html(progress);
+	});
+
+	function startProgressbar() { // запуск отрисовки прогрессбара
+		resetProgressbar(); // сброс всех прогрессбаров (в 0)
+		percent = 0;
+		int = setInterval(interval, 10); // отрисовка прогрессбара (многократное повторение функции interval с задержкой 10)
+	}
+
+	function interval() {
+		if (($('.slider__list .slick-track div[data-slick-index="' + index_bar + '"]').attr("aria-hidden")) === "true") {
+			index_bar = $('.slider__list .slick-track div[aria-hidden="false"]').data("slickIndex");
+			startProgressbar();
+		} else {
+			percent += 1 / (time + 5);
+			$('.inProgress' + index_bar).css({
+				width: percent + "%"
+			});
+			if (percent >= 100) { 
+				$('.slider__list').slick('slickNext');				
+				index_bar++;
+				if (index_bar > 2) {
+					index_bar = 0;
+				}
+				startProgressbar();
+			}
+		}
+	}
+
+	
+	function resetProgressbar() { // сброс прогресса не всех прогрессбарах
+		$('.inProgress').css({ // все div'ы с классом .inProgress получают ширину 0
+			width: 0 + '%'
+		});
+		clearInterval(int); // сброс интервала int
+	}
+
+	startProgressbar(); // запуск прогрессбара на первом слайде
+
+	/*-------------------------------------------------------*/
 
 	
 	
@@ -40,14 +90,16 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
 	$('.about__list').not('.slick-initialized').slick({
-		// infinite: false,		
+		infinite: false,
 		dots: false,
 		arrows: true,
+		autoplay: false,
+		speed: 800,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable: true,
 		variableWidth: true,
-		// centerMode: true,
+		centerMode: true,
 		// adaptiveHeight: true
 		swipe: true,
 		appendArrows: $('.about__arrows'),
@@ -67,4 +119,54 @@ jQuery(document).ready(function($) {
 	$(".about__list").on("afterChange", function(event, slick, currentSlide, nextSlide){
 		$(".about__number .current").text(currentSlide + 1);		
 	});
+
+	/*-------------------------------------------------------*/
+	var about_percent;
+	var about_int;
+	var about_time = 1;
+	var about_index_bar = 0;
+
+	$('.about__preloader .progressBar').each(function(index) {        
+		var about_progress = "<div class='inProgress inProgress" + index + "'></div>";
+		$(this).html(about_progress);
+	});
+
+	function startProgressbar() { // запуск отрисовки прогрессбара
+		resetProgressbar(); // сброс всех прогрессбаров (в 0)
+		about_percent = 0;
+		about_int = setInterval(about_interval, 10); // отрисовка прогрессбара (многократное повторение функции interval с задержкой 10)
+	}
+
+	function about_interval() {
+		if (($('.about__list .slick-track div[data-slick-index="' + about_index_bar + '"]').attr("aria-hidden")) === "true") {
+			about_index_bar = $('.about__list .slick-track div[aria-hidden="false"]').data("slickIndex");
+			startProgressbar();
+		} else {
+			about_percent += 1 / (about_time + 5);
+			$('.inProgress' + about_index_bar).css({
+				width: about_percent + "%"
+			});
+			if (about_percent >= 100) { 
+				$('.about__list').slick('slickNext');				
+				about_index_bar++;
+				if (about_index_bar > 2) {
+					about_index_bar = 0;
+				}
+				startProgressbar();
+			}
+		}
+	}
+
+	
+	function resetProgressbar() { // сброс прогресса не всех прогрессбарах
+		$('.inProgress').css({ // все div'ы с классом .inProgress получают ширину 0
+			width: 0 + '%'
+		});
+		clearInterval(int); // сброс интервала int
+	}
+
+	startProgressbar(); // запуск прогрессбара на первом слайде
+
+	/*-------------------------------------------------------*/
+
 });

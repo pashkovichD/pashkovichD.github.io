@@ -60,18 +60,20 @@
 	height: 4px;
 	background-color: #dedede;
 	box-sizing: border-box;
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 102px;
-		height: 4px;
-		background-color: @blue;
+	div {
+		&.progressBar {
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			display: block;
+			.inProgress {
+				background-color: #1946ba;
+				width: 0%;
+				height: 4px;				
+			}			
+		}
 	}
 }
-
-
 
 @media (min-width: @mobile-width) {
 	.slider__item {	
@@ -142,6 +144,7 @@
 		width: 640px;
 		margin-right: 0;
 		margin-left: auto;
+		// margin-bottom: 10px !important;
 	}
 
 	.slider__item {

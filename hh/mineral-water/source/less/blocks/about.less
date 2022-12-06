@@ -25,9 +25,10 @@
 		// background-color: red;
 		background: linear-gradient(90deg, 
 					rgba(255,255,255,0) 0%,
-					rgba(255,255,255,.8) 30%,
-					rgba(255,255,255,.9) 50%,
-					rgba(255,255,255,.9) 70%,
+					rgba(255,255,255,.3) 5%,
+					rgba(255,255,255,.5) 40%,
+					rgba(255,255,255,.7) 50%,
+					rgba(255,255,255,.8) 70%,
 					rgba(255,255,255,1) 90%,
 					rgba(255,255,255,1) 100%
 				);
@@ -56,7 +57,7 @@
 	}
 }
 
-.about__preloader {
+/*.about__preloader {
 	position: relative;
 	width: 100%;
 	// left: 15px;
@@ -73,6 +74,29 @@
 		width: 20%;
 		height: 4px;
 		background-color: @blue;
+	}
+}*/
+
+.about__preloader {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	height: 4px;
+	background-color: #dedede;
+	box-sizing: border-box;
+	div {
+		&.progressBar {
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			display: block;
+			.inProgress {
+				background-color: #1946ba;
+				width: 0%;
+				height: 4px;				
+			}			
+		}
 	}
 }
 
@@ -173,7 +197,7 @@
 
 @media (min-width: @desktop-full-width) {
 	.about {
-		margin-bottom: 155px;
+		margin-bottom: 130px;
 	}
 
 	.about__title {
@@ -182,10 +206,12 @@
 
 	.about__2-col {
 		width: 56%;
+		padding-left: 35px;
 	}
 
 	.about__nav {
-		margin-bottom: 60px;
+		margin-bottom: 35px;
 		margin-right: 80px;
+		margin-left: -30px;
 	}
 }
