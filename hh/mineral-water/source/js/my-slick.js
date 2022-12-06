@@ -10,12 +10,8 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 1,
 		draggable: true,
 		variableWidth: true,
-		centerMode: true,
-		// adaptiveHeight: true
-		swipe: true
-		// appendArrows: $('.certificates__arrows'),	    
-	    // prevArrow: '<p class="arrow__prev"></p>',
-	    // nextArrow: '<p class="arrow__next"></p>'
+		centerMode: true,		
+		swipe: true		
 	});
 
 	// текущий слайд
@@ -31,12 +27,11 @@ jQuery(document).ready(function($) {
 		$(".slider__number .current").text(currentSlide + 1);		
 	});
 
-
 	/*-------------------------------------------------------*/
 	var percent;
 	var int;
 	var time = 1;
-	var index_bar = 0;	
+	var index_bar = 0;
 
 	$('.slider__preloader .progressBar').each(function(index) {        
 		var progress = "<div class='inProgress inProgress" + index + "'></div>";
@@ -59,11 +54,11 @@ jQuery(document).ready(function($) {
 				width: percent + "%"
 			});
 			if (percent >= 100) { 
-				$('.slider__list').slick('slickNext');				
-				index_bar++;
-				if (index_bar > 2) {
-					index_bar = 0;
-				}
+				$('.slider__list').slick('slickNext');
+				// index_bar++;
+				// if (index_bar > 3) {
+				// 	index_bar = 0;
+				// }
 				startProgressbar();
 			}
 		}
@@ -85,12 +80,9 @@ jQuery(document).ready(function($) {
 	
 });
 
-
-// https://tympanus.net/Development/CreativeLoadingEffects/
-
 jQuery(document).ready(function($) {
 	$('.about__list').not('.slick-initialized').slick({
-		infinite: false,
+		infinite: true,
 		dots: false,
 		arrows: true,
 		autoplay: false,
@@ -99,8 +91,7 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 1,
 		draggable: true,
 		variableWidth: true,
-		centerMode: true,
-		// adaptiveHeight: true
+		centerMode: true,		
 		swipe: true,
 		appendArrows: $('.about__arrows'),
 	    prevArrow: '<button type="button" class="about__prev arrow__prev" tabindex="0" aria-label="Предыдущий"><svg width="19" height="16" fill="#1946ba"><use xlink:href="#icon-arrow"></use></svg><span class="visually-hidden">Предыдущий</span></button>',
@@ -121,52 +112,51 @@ jQuery(document).ready(function($) {
 	});
 
 	/*-------------------------------------------------------*/
-	var about_percent;
-	var about_int;
-	var about_time = 1;
-	var about_index_bar = 0;
+	var ab_percent;
+	var ab_int;
+	var ab_time = 1;
+	var ab_index_bar = 0;
 
-	$('.about__preloader .progressBar').each(function(index) {        
-		var about_progress = "<div class='inProgress inProgress" + index + "'></div>";
-		$(this).html(about_progress);
+	$('.about__preloader .ab_progressBar').each(function(index) {        
+		var ab_progress = "<div class='ab_inProgress ab_inProgress" + index + "'></div>";
+		$(this).html(ab_progress);
 	});
 
-	function startProgressbar() { // запуск отрисовки прогрессбара
-		resetProgressbar(); // сброс всех прогрессбаров (в 0)
-		about_percent = 0;
-		about_int = setInterval(about_interval, 10); // отрисовка прогрессбара (многократное повторение функции interval с задержкой 10)
+	function ab_startProgressbar() {
+		ab_resetProgressbar();
+		ab_percent = 0;
+		ab_int = setInterval(ab_interval, 10);
 	}
 
-	function about_interval() {
-		if (($('.about__list .slick-track div[data-slick-index="' + about_index_bar + '"]').attr("aria-hidden")) === "true") {
-			about_index_bar = $('.about__list .slick-track div[aria-hidden="false"]').data("slickIndex");
-			startProgressbar();
+	function ab_interval() {
+		if (($('.about__list .slick-track div[data-slick-index="' + ab_index_bar + '"]').attr("aria-hidden")) === "true") {
+			ab_index_bar = $('.about__list .slick-track div[aria-hidden="false"]').data("slickIndex");
+			ab_startProgressbar();
 		} else {
-			about_percent += 1 / (about_time + 5);
-			$('.inProgress' + about_index_bar).css({
-				width: about_percent + "%"
+			ab_percent += 1 / (ab_time + 5);
+			$('.ab_inProgress' + ab_index_bar).css({
+				width: ab_percent + "%"
 			});
-			if (about_percent >= 100) { 
-				$('.about__list').slick('slickNext');				
-				about_index_bar++;
-				if (about_index_bar > 2) {
-					about_index_bar = 0;
-				}
-				startProgressbar();
+			if (ab_percent >= 100) { 
+				$('.about__list').slick('slickNext');
+				// ab_index_bar++;
+				// if (ab_index_bar > 3) {
+				// 	ab_index_bar = 0;
+				// }
+				ab_startProgressbar();
 			}
 		}
 	}
 
 	
-	function resetProgressbar() { // сброс прогресса не всех прогрессбарах
-		$('.inProgress').css({ // все div'ы с классом .inProgress получают ширину 0
+	function ab_resetProgressbar() {
+		$('.ab_inProgress').css({
 			width: 0 + '%'
 		});
-		clearInterval(int); // сброс интервала int
+		clearInterval(ab_int);
 	}
 
-	startProgressbar(); // запуск прогрессбара на первом слайде
-
+	ab_startProgressbar();
 	/*-------------------------------------------------------*/
 
 });

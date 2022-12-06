@@ -4,10 +4,6 @@
 	overflow: hidden;
 }
 
-.about__1-col {
-	
-}
-
 .about__desc {
 	margin-bottom: 45px;
 }
@@ -21,15 +17,12 @@
 		top: 50px;
 		left: 360px;
 		right: 0;
-		bottom: -30px;		
-		// background-color: red;
+		bottom: -30px;
 		background: linear-gradient(90deg, 
 					rgba(255,255,255,0) 0%,
-					rgba(255,255,255,.3) 5%,
-					rgba(255,255,255,.5) 40%,
-					rgba(255,255,255,.7) 50%,
-					rgba(255,255,255,.8) 70%,
-					rgba(255,255,255,1) 90%,
+					rgba(255,255,255,.3) 5%,					
+					rgba(255,255,255,.3) 70%,
+					rgba(255,255,255,.8) 90%,
 					rgba(255,255,255,1) 100%
 				);
 	}
@@ -40,13 +33,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// margin-bottom: 20px;
 }
 
 .about__number {
-	// position: absolute;
-	// top: 165px;
-	// left: 15px;
 	margin-right: 15px;
 	font-size: 16px;
 	line-height: 22px;
@@ -57,44 +46,22 @@
 	}
 }
 
-/*.about__preloader {
+.about__preloader {
 	position: relative;
 	width: 100%;
-	// left: 15px;
-	// right: 15px;
-	// bottom: 0;
-	height: 4px;
-	background-color: #dedede;
-	box-sizing: border-box;
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 20%;
-		height: 4px;
-		background-color: @blue;
-	}
-}*/
-
-.about__preloader {
-	position: absolute;
-	left: 15px;
-	right: 15px;
-	bottom: 0;
 	height: 4px;
 	background-color: #dedede;
 	box-sizing: border-box;
 	div {
-		&.progressBar {
+		&.ab_progressBar {
 			position: absolute;
 			width: 100%;
 			height: 4px;
 			display: block;
-			.inProgress {
+			.ab_inProgress {
 				background-color: #1946ba;
 				width: 0%;
-				height: 4px;				
+				height: 4px;
 			}			
 		}
 	}
@@ -110,10 +77,6 @@
 	margin-left: 20px;
 }
 
-.about__list {
-	// padding: 20px 50px 0px;
-}
-
 .about__item {
 	width: 290px !important;
 	padding: 30px 20px 40px 20px;
@@ -121,8 +84,6 @@
 	line-height: 27px;
 	font-weight: 600;
 	text-align: left;
-	// background-color: red;
-	// background-color: #ffffff;
 	box-shadow: 0px 5px 20px rgba(25, 70, 186, 0.2);
 	box-sizing: border-box;
 	svg {
@@ -186,7 +147,7 @@
 	}
 
 	.about__list {
-		// padding-left: 45px;
+		margin-left: -220px;
 	}
 
 	.about__item {
@@ -213,5 +174,9 @@
 		margin-bottom: 35px;
 		margin-right: 80px;
 		margin-left: -30px;
+	}
+
+	.about__list {
+		margin-left: -350px;
 	}
 }

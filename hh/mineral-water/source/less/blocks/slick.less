@@ -1,51 +1,9 @@
-/*.slick-dots {
-	bottom: -60px;
-	li {
-		margin: 0 15px;
-		width: 4px;
-		height: 4px;
-		button {
-			width: 4px;
-			height: 4px;
-			padding: 0;
-			&::before {
-				font-size: 4px;
-				line-height: 0;
-				width:auto;
-				height: 4px;
-				content: '•';
-				text-align: center;
-				opacity: .25;
-			}
-		}
-		&.slick-active {
-			button {
-				&::before {
-					top: 0;
-					left: -2px;
-					font-size: 8px;
-					color: @blue !important;
-				}
-			}
-		}
-	}	
-}*/
-
-// .slick-dots li.slick-active button:before {
-// 	opacity: 1;
-// 	color: green;
-// }
-
 .slick-track {
 	transition: none; // cancel jerky rewind
 }
 
 .slick-slide {
 	margin-right: 65px;
-	& > div {
-		// background-color: red;
-		// text-align: center;
-	}
 }
 
 .slider__list {
@@ -72,7 +30,6 @@
 				&::before {
 					content: '';
 					top: 8px;
-					// font-size: 12px;
 					width: 10px;
 					height: 10px;
 					opacity: 1;
@@ -90,8 +47,7 @@
 }
 
 .about__list {
-	.slick-list {
-		// width: 320px;
+	.slick-list {		
 		box-sizing: content-box;
 		padding: 20px 50px 30px 50px !important;
 		overflow: inherit;
@@ -99,20 +55,16 @@
 
 
 	.slick-track {
-		display: flex; /*!Обязательно -- чтобы слайды были одинаковой высоты */		
+		display: flex;
 	}
 
 	.slick-slide {
-		display: flex; /*!Обязательно -- чтобы слайды были одинаковой высоты */		
-  		height: auto; /*!Обязательно -- чтобы слайды были одинаковой высоты */
+		display: flex;
+  		height: auto;
   		flex-direction: column;
   		margin-right: 100px;
-		// margin-right: 25px;
-		// .about__item {
-		// 	display: flex !important;
-		// 	flex-direction: column !important;
-		// }
 		opacity: 0.5;
+		transition: opacity 0.25s ease-out;
 	}
 
 	.slick-current {			
@@ -178,10 +130,6 @@
 }
 
 @media (min-width: @desktop-full-width) {
-	.slick-slide {
-		// margin-right: 30px;
-	}	
-
 	.slider__list {
 		.slick-dots {
 			right: 0;
@@ -192,10 +140,6 @@
 	.about__list {
 		.slick-list {	
 			padding: 20px 50px 30px 15px !important;			
-		}
-
-		.slick-track {
-			// transform: translate3d(-635px, 0px, 0px) !important;
 		}
 	}
 }
