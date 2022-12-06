@@ -59,6 +59,7 @@ jQuery(document).ready(function($) {
 				// if (index_bar > 3) {
 				// 	index_bar = 0;
 				// }
+				
 				startProgressbar();
 			}
 		}
