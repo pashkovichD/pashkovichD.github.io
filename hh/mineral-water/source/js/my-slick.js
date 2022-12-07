@@ -72,6 +72,7 @@ jQuery(document).ready(function($) {
 		});
 		clearInterval(int); // сброс интервала int
 	}
+	
 
 	startProgressbar(); // запуск прогрессбара на первом слайде
 

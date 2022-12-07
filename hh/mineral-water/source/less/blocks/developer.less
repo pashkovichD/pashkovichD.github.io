@@ -1,0 +1,49 @@
+.developer {
+	margin-bottom: 50px;
+	padding: 20px;
+
+	svg {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+}
+
+.developer__text {
+	display: inline-block;
+	margin: 0;	
+	padding: 5px 10px;
+
+	text-align: center;
+	color: #d56e00;
+
+	border: 1px dashed #e28605;
+	border-radius: 5px;
+}
+
+@media (min-width: @tablet-width) {
+	.developer {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		padding-top: 50px;
+
+		svg {
+			margin: 0;
+		}
+	}
+
+	.developer__text {
+		margin: 0 0 5px 20px;
+	}
+}
+
+@media (min-width: @1200-width) {
+		.developer {			
+			justify-content: flex-end;			
+		}
+}
+
+@media (min-width: @desktop-width) {
+
+}
