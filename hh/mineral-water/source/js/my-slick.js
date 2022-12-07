@@ -64,15 +64,15 @@ jQuery(document).ready(function($) {
 			}
 		}
 	}
-
+	
 	
 	function resetProgressbar() { // сброс прогресса не всех прогрессбарах
 		$('.inProgress').css({ // все div'ы с классом .inProgress получают ширину 0
 			width: 0 + '%'
 		});
+
 		clearInterval(int); // сброс интервала int
-	}
-	
+	}	
 
 	startProgressbar(); // запуск прогрессбара на первом слайде
 
