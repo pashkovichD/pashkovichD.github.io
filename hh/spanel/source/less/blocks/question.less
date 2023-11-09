@@ -1,0 +1,113 @@
+.question {
+	position: relative;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	color: #ffffff;
+	background-color: @dark-blue;
+}
+
+.question__wrapper {
+	position: relative;
+}
+
+.question__title {
+	margin-bottom: 25px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.question__text {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 500;
+	text-align: center;
+	color: rgba(255,255,255,.7);
+}
+
+.question__form {
+	margin-bottom: 30px;
+	background-color: transparent;
+}
+
+.question__politic {
+	font-size: 13px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.question__politic-link {
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 0.7;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 1px;
+		background-color: #ffffff;
+	}
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.question__items {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.question__item {
+		width: 48%;
+	}
+
+	.question__submit {
+		width: 48%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.question__title {
+		
+	}
+
+	.question__text {
+		width: 60%;
+	}
+
+	.question__form {
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.question__items {
+		width: 72%;
+	}
+
+	.question__item {
+		margin-bottom: 0;
+	}
+
+	.question__submit {
+		width: 25%;
+		margin: 0;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

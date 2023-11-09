@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Панели из сотового картона</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Российская компания по продаже панелей из сотового картона">
+	<meta name="keywords" content="картон, панель, сотовый картон, продажа, заказать">
+
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
+	<!-- slick.js -->	
+	<!-- <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"> -->
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<h1 class="visually-hidden">SPanel Production - компания по продаже панелей из сотового картона</h1>
+	<!-- <div style="display: none;">
+		<include src="source/img/sprite.svg"></include>
+	</div> -->
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">		
+		<!-- <div class="page-header__wrapper"> -->
+			<div class="page-header__top container">
+				<div class="page-header__map map">
+					<a class="phone__number" href="https://yandex.by/maps/-/C-fkadC"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg><span>г. Минск</span>, ул. Я.Коласа, 100 - 77</a>
+				</div>
+				<div class="page-header__phone phone">
+					<a class="phone__number" href="tel:+80291234567"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span>8(029)</span> 123-45-67</a>
+				</div>
+
+				
+				<!-- <div class="page-header__box">
+					<button class="page-header__connect button" type="button" aria-label="Напишите нам">
+						<svg width="23" height="17" fill="#ffffff"><use xlink:href="#icon-email"></use></svg>
+						<span>Напишите нам</span>
+					</button>
+					<button class="page-header__user button" type="button" aria-label="Личный кабинет">
+						<svg width="14" height="17" fill="#ffffff"><use xlink:href="#icon-user"></use></svg>
+						<span>Личный кабинет</span>
+					</button>
+				</div> -->
+			</div>
+		<!-- </div> -->
+
+		<div class="page-header__bottom container">
+			<a class="page-header__logo logo" href="https://example.com/">
+				<svg fill="#ffffff" width="135" height="60">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<!-- <picture>
+					<source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+					<img src="img/logo.png" srcset="img/logo@2x.png 2x" width="220" height="45" alt="Процессинг24" class="logo__img">
+				</picture> -->
+			</a>	
+		</div>
+
+		
+
+		<div class="page-header__menu container">
+			<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
+				<span class="visually-hidden">Открыть меню</span>
+				<span class="hamburger__line"></span>
+			</button>
+			<div class="page-header__nav-wrapper">
+				<nav class="page-header__nav menu">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<ul class="page-header__nav-list menu__list">
+						<li class="menu__item"><a href="">Главная</a></li>
+						<li class="menu__item"><a href="#">Каталог</a></li>						
+						<li class="menu__item"><a href="#">Преимущества</a></li>						
+						<li class="menu__item"><a href="#">Отзывы</a></li>						
+						<li class="menu__item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>	
+
+	<main class="page-main">
+		<h1 class="page-main__title container">Доставка топлива</h1>
+		
+		<section class="order container">
+			<h2 class="order__title">Быстрый <span>заказ топлива</span></h2>			
+			<form method="POST" action="/" class="order__form form form--nojs">
+				<div class="order__items">
+					<p class="order__item form__item">
+						<label class="form__label" for="order__name">Ваше имя</label>
+						<input class="form__input" type="text" name="order__name" id="order__name"  value=""
+						placeholder="Иван">
+					</p>
+					<p class="order__item form__item">
+						<label class="form__label" for="order__phone">Номер телефона</label>
+						<input class="form__input" type="tel" name="order__phone" id="order__phone" value="" placeholder="+7 (___) ___-__-__">
+					</p>
+					<label class="order__checkbox form__checkbox-item">
+						<input type="checkbox" class="visually-hidden" name="agreement" value="agree">
+						<span class="form__checkbox-indicator"></span>
+						<span class="form__checkbox-text">Я согласен с условиями обработки данных</span>
+					</label>
+				</div>
+				<input type="submit" class="order__submit button form__submit" aria-label="Заказать топливо" value="Заказать топливо">	
+			</form>
+		</section>		
+
+		<section class="price container">
+			<h2 class="price__title">Стоимость топлива</h2>
+			<table class="price__table">
+				<thead class="price__thead">
+					<tr>
+						<th>Сорт топлива</th>
+						<th>Экологический класс</th>
+						<th>Производитель</th>
+						<th>Наличный расчет</th>
+						<th>Безналичный расчет</th>
+					</tr>
+				</thead>
+				<tbody class="price__tbody">
+
+					<tr class="price__separator"><td colspan="5"></td></tr>
+
+					<tr>
+						<td class="price__grade" rowspan="5">ДТ</td>
+						<td class="price__eco-class" rowspan="3">ЕВРО-5</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,43 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">44,43 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Роснефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
+					</tr>
+					<tr>
+						<td class="price__eco-class" rowspan="2">ЕВРО-4</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">-</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">41,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">40,67 р.</td>
+					</tr>
+
+					<tr class="price__separator"><td colspan="5"></td></tr>
+
+					<tr>
+						<td class="price__grade" rowspan="8">АИ-95</td>
+						<td class="price__eco-class" rowspan="3">ЕВРО-5</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,43 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">44,43 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Роснефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
+					</tr>
+					<tr>
+						<td class="price__eco-class" rowspan="3">ЕВРО-4</td>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">41,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">40,67 р.</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">-</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Роснефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
+					</tr>
+					<tr>
+						<td class="price__eco-class" rowspan="2">ЕВРО-3</td>
+						<td class="price__producer">Газпромнефть</td>
+						<td class="price__cash" data-label="(Наличный расчет)">-</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
+					</tr>
+					<tr>
+						<td class="price__producer">Лукойл</td>
+						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
+						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="development">			
+			<div class="developer">
+				<svg fill="#ffffff" width="73" height="65">
+					<use xlink:href="#icon-developer"></use>
+				</svg>
+				<p class="developer__text"><span class="developer__text-sorry">Извините!</span> Сайт находится в разработке!</p>
+			</div>
+		</section>
+
+		
+	</main>
+
+	<footer class="page-footer">		
+		<p>Copyright &copy; 2023</p>
+	</footer>
+	
+	<!-- <section class="modal-contact modal">
+		<h2 class="visually-hidden">Ваш вопрос</h2>
+		<form id="contact-form" class="form form--nojs" action="/" method="POST">
+			<p class="form__item">
+				<input class="form__input" type="text" name="contact__name" id="contact__name"  value="" placeholder="Ваше имя">
+				<label class="visually-hidden" for="contact__name">Ваше имя</label>
+			</p>
+			<p class="form__item">								
+				<input class="form__input" type="email" name="contact__email" id="contact__email" value="" placeholder="Email">
+				<label class="visually-hidden" for="contact__email">Email</label>
+			</p>					
+	
+			<p class="form__item form__item--textarea">
+				<textarea name="form__message" cols="20" rows="5" class="form__input form__input--textarea" id="contact__message" placeholder="Вопрос"></textarea>
+			</p>
+				
+			<input type="submit" class="form__submit button" value="Отправить">
+		</form>	
+		<button type="button" class="modal-contact__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
+	</section>
+
+	<section class="modal-user modal">
+		<h2 class="visually-hidden">Вход в личный кабинет</h2>
+		<form id="user-form" class="form form--nojs" action="/" method="POST">
+			<p class="form__item">
+				<input class="form__input" type="text" name="user__name" id="user__name"  value="" placeholder="Логин">
+				<label class="visually-hidden" for="user__name">Логин</label>
+			</p>
+			<p class="form__item">								
+				<input class="form__input" type="password" name="user__pass" id="user__pass" value="" placeholder="Пароль">
+				<label class="visually-hidden" for="user__pass">Пароль</label>
+			</p>			
+			<input type="submit" class="form__submit button" value="Войти">
+		</form>	
+		<button type="button" class="modal-user__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
+	</section>	
+	<div class="overlay"></div> -->
+
+	<!-- <script src="js/slick/slick.min.js"></script> -->
+	<!-- <script src="js/my-slick.min.js"></script> -->
+	<!-- <script src="js/hamburger.min.js"></script> -->
+	<!-- <script src="js/select.min.js"></script> -->
+	<script src="js/maskedinput.min.js"></script>
+	<!-- <script src="js/popup.min.js"></script> -->
+</body>
+</html>

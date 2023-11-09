@@ -1,0 +1,93 @@
+/*--- DEVELOPER ---*/
+.developer {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.developer svg {
+	display: block;			
+	width: 100px;
+	height: 90px;
+	margin: 0 auto;
+	margin-bottom: 20px;			
+}
+.developer__text {	
+	display: block;
+	margin: 0 auto;
+	padding: 4px 10px;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #ffffff;
+	border: 1px dashed #ffffff;
+	border-radius: 5px;
+}
+
+.developer__text-sorry {
+	display: block;
+	font-weight: 600;
+}
+
+.developer__gear-one, .developer__gear-two {
+	-webkit-animation-name: rotationGearR;
+			animation-name: rotationGearR;
+	-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+	-webkit-transform-origin: 50% 55.555555555555% 0;
+			-ms-transform-origin: 50% 55.555555555555% 0;
+	    transform-origin: 50% 55.555555555555% 0;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;			
+}
+.developer__gear-two {
+    -webkit-animation-name: rotationGearL;
+			animation-name: rotationGearL;
+	-webkit-animation-duration: 7s;
+			animation-duration: 7s;
+	-webkit-transform-origin: 20% 77.7777777777777777% 0;
+			-ms-transform-origin: 20% 77.7777777777777777% 0;
+	    transform-origin: 20% 77.7777777777777777% 0;
+}
+@-webkit-keyframes rotationGearR {
+	0% {
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }		
+}
+@keyframes rotationGearR {
+	0% {
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+                transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotationGearL {
+	0% {
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(-360deg);
+                transform:rotate(-360deg);
+    }		
+}
+@keyframes rotationGearL {
+	0% {
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(-360deg);
+                transform:rotate(-360deg);
+    }
+}
