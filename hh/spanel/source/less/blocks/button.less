@@ -4,16 +4,36 @@
 	align-items: center;
 	padding: 15px 10px;
 	font-family: @ff;
-	font-size: 13px;
-	line-height: 16px;
+	font-size: 15px;	
+	// line-height: 16px;
 	color: #ffffff;
-	background-color: @blue;
+	text-decoration: none;
+	background-color: @red;
 	border: none;
 	cursor: pointer;
 	transition: @animation;
 	&:hover,
 	&:focus {
-		background-color: darken(@blue, 4%);
+		background-color: darken(@red, 4%);
+	}
+}
+
+.button--light {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 10px;
+	font-family: @ff;
+	font-size: 15px;
+	color: @red;
+	text-decoration: none;
+	background-color: transparent;
+	border: 1px solid @red;
+	cursor: pointer;
+	transition: @animation;
+	&:hover,
+	&:focus {
+		// background-color: darken(@red, 4%);
 	}
 }
 
