@@ -29,29 +29,14 @@
 		<include src="build/img/sprite.svg"></include>
 	</div>
 
-	<header class="page-header">		
-		<!-- <div class="page-header__wrapper"> -->
-			<div class="page-header__top container">
-				<div class="page-header__map map">
-					<a class="phone__number" href="https://yandex.by/maps/-/C-fkadC"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg><span>г. Минск</span>, ул. Я.Коласа, 100 - 77</a>
-				</div>
-				<div class="page-header__phone phone">
-					<a class="phone__number" href="tel:+80291234567"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span>8(029)</span> 123-45-67</a>
-				</div>
-
-				
-				<!-- <div class="page-header__box">
-					<button class="page-header__connect button" type="button" aria-label="Напишите нам">
-						<svg width="23" height="17" fill="#ffffff"><use xlink:href="#icon-email"></use></svg>
-						<span>Напишите нам</span>
-					</button>
-					<button class="page-header__user button" type="button" aria-label="Личный кабинет">
-						<svg width="14" height="17" fill="#ffffff"><use xlink:href="#icon-user"></use></svg>
-						<span>Личный кабинет</span>
-					</button>
-				</div> -->
+	<header class="page-header">
+		<div class="page-header__top">
+			<div class="page-header__top-container container">
+				<a class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg><span>г. Минск</span>, ул. Я.Коласа, 100 - 77</a>
+				<a class="page-header__email email" href="mailto:info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span>info@example.com</span></a>
+				<a class="page-header__phone phone" href="tel:+80291234567"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span>8(029)</span> 123-45-67</a>
 			</div>
-		<!-- </div> -->
+		</div>		
 
 		<div class="page-header__bottom container">
 			<a class="page-header__logo logo" href="https://example.com/">
@@ -63,27 +48,22 @@
 					<img src="img/logo.png" srcset="img/logo@2x.png 2x" width="220" height="45" alt="Процессинг24" class="logo__img">
 				</picture> -->
 			</a>	
-		</div>
+			<nav class="page-header__nav menu">
+				<h2 class="visually-hidden">Главное меню</h2>
+				<ul class="page-header__nav-list menu__list">
+					<li class="menu__item menu__item--active"><a href="">Главная</a></li>
+					<li class="menu__item"><a href="#">Каталог</a></li>
+					<li class="menu__item"><a href="#">Преимущества</a></li>
+					<li class="menu__item"><a href="#">Отзывы</a></li>
+					<li class="menu__item"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
 
-		
-
-		<div class="page-header__menu container">
-			<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
-				<span class="visually-hidden">Открыть меню</span>
-				<span class="hamburger__line"></span>
-			</button>
-			<div class="page-header__nav-wrapper">
-				<nav class="page-header__nav menu">
-					<h2 class="visually-hidden">Главное меню</h2>
-					<ul class="page-header__nav-list menu__list">
-						<li class="menu__item"><a href="">Главная</a></li>
-						<li class="menu__item"><a href="#">Каталог</a></li>						
-						<li class="menu__item"><a href="#">Преимущества</a></li>						
-						<li class="menu__item"><a href="#">Отзывы</a></li>						
-						<li class="menu__item"><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
+			<!-- <div class="page-header__menu container">			
+				<div class="page-header__nav-wrapper">
+					
+				</div>
+			</div> -->
 		</div>
 	</header>	
 
@@ -111,101 +91,6 @@
 				</div>
 				<input type="submit" class="order__submit button form__submit" aria-label="Заказать топливо" value="Заказать топливо">	
 			</form>
-		</section>		
-
-		<section class="price container">
-			<h2 class="price__title">Стоимость топлива</h2>
-			<table class="price__table">
-				<thead class="price__thead">
-					<tr>
-						<th>Сорт топлива</th>
-						<th>Экологический класс</th>
-						<th>Производитель</th>
-						<th>Наличный расчет</th>
-						<th>Безналичный расчет</th>
-					</tr>
-				</thead>
-				<tbody class="price__tbody">
-
-					<tr class="price__separator"><td colspan="5"></td></tr>
-
-					<tr>
-						<td class="price__grade" rowspan="5">ДТ</td>
-						<td class="price__eco-class" rowspan="3">ЕВРО-5</td>
-						<td class="price__producer">Газпромнефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">45,43 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">44,43 р.</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Лукойл</td>
-						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Роснефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
-					</tr>
-					<tr>
-						<td class="price__eco-class" rowspan="2">ЕВРО-4</td>
-						<td class="price__producer">Газпромнефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">-</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Лукойл</td>
-						<td class="price__cash" data-label="(Наличный расчет)">41,16 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">40,67 р.</td>
-					</tr>
-
-					<tr class="price__separator"><td colspan="5"></td></tr>
-
-					<tr>
-						<td class="price__grade" rowspan="8">АИ-95</td>
-						<td class="price__eco-class" rowspan="3">ЕВРО-5</td>
-						<td class="price__producer">Газпромнефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">45,43 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">44,43 р.</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Роснефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Лукойл</td>
-						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
-					</tr>
-					<tr>
-						<td class="price__eco-class" rowspan="3">ЕВРО-4</td>
-						<td class="price__producer">Лукойл</td>
-						<td class="price__cash" data-label="(Наличный расчет)">41,16 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">40,67 р.</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Газпромнефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">-</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Роснефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">42,34 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">41,64 р.</td>
-					</tr>
-					<tr>
-						<td class="price__eco-class" rowspan="2">ЕВРО-3</td>
-						<td class="price__producer">Газпромнефть</td>
-						<td class="price__cash" data-label="(Наличный расчет)">-</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">-</td>
-					</tr>
-					<tr>
-						<td class="price__producer">Лукойл</td>
-						<td class="price__cash" data-label="(Наличный расчет)">45,16 р.</td>
-						<td class="price__non-cash" data-label="(Безналичный расчет)">43,98 р.</td>
-					</tr>
-				</tbody>
-			</table>
 		</section>
 
 		<section class="development">			
@@ -216,7 +101,6 @@
 				<p class="developer__text"><span class="developer__text-sorry">Извините!</span> Сайт находится в разработке!</p>
 			</div>
 		</section>
-
 		
 	</main>
 
@@ -252,7 +136,7 @@
 				<input class="form__input" type="text" name="user__name" id="user__name"  value="" placeholder="Логин">
 				<label class="visually-hidden" for="user__name">Логин</label>
 			</p>
-			<p class="form__item">								
+			<p class="form__item">
 				<input class="form__input" type="password" name="user__pass" id="user__pass" value="" placeholder="Пароль">
 				<label class="visually-hidden" for="user__pass">Пароль</label>
 			</p>			
