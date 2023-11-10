@@ -4,18 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Панели из сотового картона</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
 	<meta name="description" content="Российская компания по продаже панелей из сотового картона">
 	<meta name="keywords" content="картон, панель, сотовый картон, продажа, заказать">
-
 	<script src="js/jquery-3.6.1.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-	<!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
-	<!-- slick.js -->	
-	<!-- <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"> -->
+	<script src="js/jquery.maskedinput.min.js"></script>	
 
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -57,8 +50,7 @@
 		</div>
 	</header>	
 
-	<main class="page-main">
-		<h1 class="visually-hidden">Панели из сотового картона</h1>
+	<main class="page-main">		
 		<section class="banner container">			
 			<div class="banner__description">
 				<h2 class="banner__title">Упаковка из картона</h2>
@@ -76,33 +68,27 @@
 
 		</section>
 
-		<section class="form container">
+		<section class="bid container">
 			<h2 class="visually-hidden">Оставить заявку</h2>
-				
-
-		</section>
-		<!-- <section class="order container">
-			<h2 class="order__title">Быстрый <span>заказ топлива</span></h2>
-			<form method="POST" action="/" class="order__form form form--nojs">
-				<div class="order__items">
-					<p class="order__item form__item">
-						<label class="form__label" for="order__name">Ваше имя</label>
-						<input class="form__input" type="text" name="order__name" id="order__name"  value=""
-						placeholder="Иван">
+			<form method="POST" action="/" class="bid__form form form--nojs">
+				<p class="bid__item form__item">
+					<label class="form__label" for="bid__name">Ваше имя</label>
+					<input class="form__input" type="text" name="bid__name" id="bid__name" value="" placeholder="Алексей">
+				</p>
+				<div class="bid__items">
+					<p class="bid__item bid__item--phone form__item">
+						<label class="form__label" for="bid__phone">Номер телефона</label>
+						<input class="form__input" type="tel" name="bid__phone" id="bid__phone" value="" placeholder="+375 (__) ___-__-__">
 					</p>
-					<p class="order__item form__item">
-						<label class="form__label" for="order__phone">Номер телефона</label>
-						<input class="form__input" type="tel" name="order__phone" id="order__phone" value="" placeholder="+7 (___) ___-__-__">
+					<p class="bid__item form__item">
+						<label class="form__label" for="bid__email">E-mail</label>
+						<input class="form__input" type="tel" name="bid__email" id="bid__email" value="" placeholder="info@site.by">
 					</p>
-					<label class="order__checkbox form__checkbox-item">
-						<input type="checkbox" class="visually-hidden" name="agreement" value="agree">
-						<span class="form__checkbox-indicator"></span>
-						<span class="form__checkbox-text">Я согласен с условиями обработки данных</span>
-					</label>
 				</div>
-				<input type="submit" class="order__submit button form__submit" aria-label="Заказать топливо" value="Заказать топливо">	
+				<input type="submit" class="bid__submit button form__submit" aria-label="Оставить заявку" value="Оставить заявку">	
 			</form>
-		</section> -->
+		</section>
+		
 
 		<section class="development">
 			<h2 class="visually-hidden">Сайт находится в разработке</h2>
@@ -116,7 +102,8 @@
 		
 	</main>
 
-	<footer class="page-footer">		
+	<footer class="page-footer">
+		<h2 class="visually-hidden">Footer сайта</h2>
 		<p>Copyright &copy; 2023</p>
 	</footer>
 	

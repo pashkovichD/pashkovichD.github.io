@@ -38,7 +38,6 @@
   width: 1120px;
   margin: 0 auto;
   padding: 0 10px;
-  /*background-color: green;*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -337,13 +336,25 @@ picture {
 .banner {
   position: relative;
   padding: 0;
+  height: 525px;
+}
+.banner::before {
+  content: '';
+  position: absolute;
+  bottom: -260px;
+  left: -125px;
+  width: 500px;
+  height: 370px;
+  background-image: url('../img/honeycomb.png');
+  background-repeat: no-repeat;
+  opacity: 0.7;
 }
 .banner__img {
   width: 100%;
 }
 .banner__description {
   position: absolute;
-  top: 75px;
+  top: 100px;
   left: 650px;
   right: 60px;
 }
@@ -384,8 +395,6 @@ picture {
   min-height: 160px;
   /*padding: 30px;*/
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
-  border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -418,7 +427,7 @@ picture {
 .form__input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 1px solid #043C77;
+  border: 1px solid #999999;
 }
 .form__input:hover + .form__label,
 .form__input:focus + .form__label {
@@ -434,139 +443,40 @@ picture {
   line-height: 15px;
   font-weight: 500;
 }
-.form__checkbox-item {
-  position: relative;
-  display: block;
-  margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 15px;
-}
-.form__checkbox-text {
-  display: block;
-  padding-left: 35px;
-}
-.form input[type=checkbox]:disabled,
-.form input[type=checkbox]:disabled ~ span {
-  color: #6a6a6a;
-  opacity: 0.7;
-}
-.form input[type=checkbox] + .form__checkbox-indicator {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  margin-top: -12px;
-  border: 1px solid #d5d5d5;
-  background-color: #f9f9f9;
-  background-repeat: no-repeat;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.form input[type=checkbox]:checked + .form__checkbox-indicator {
-  background-image: url('../img/icon-check.svg');
-  background-position: center center;
-}
-.form input[type=checkbox]:disabled + .form__checkbox-indicator {
-  background-image: url('../img/icon-check.svg');
-  opacity: 0.5;
-}
-.form input[type=checkbox]:focus ~ span {
-  opacity: 1;
-}
-/*--- RANGE ---*/
-input[type=range] {
-  -webkit-appearance: none;
-  /* Скрывает слайдер, чтобы можно было создать свой */
-  width: 100%;
-  /* Указание параметра ширины требуется для Firefox. */
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-input[type=range]:focus {
-  outline: none;
-  /* Убирает голубую границу у элемента.*/
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  height: 1px;
-  background: #ddd;
-  border: none;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ccc;
-}
-/*--- СТИЛИЗАЦИЯ ПОЛЗУНКА ---*/
-/* Специальные правила для браузеров на движках WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: #098fcf;
-  cursor: pointer;
-  margin-top: -8px;
-  /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
-  -webkit-box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
-          box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
-}
-/* Тоже самое для Firefox */
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: #098fcf;
-  cursor: pointer;
-}
-/* Тоже самое для IE */
-input[type=range]::-ms-thumb {
-  box-shadow: 0px 4px 16px rgba(4, 60, 119, 0.2);
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background: #098fcf;
-  cursor: pointer;
-}
-.form__range-val {
-  display: inline-block;
-  width: 100%;
-  height: 45px;
-  padding: 13px 10px 13px 15px;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d5d5d5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.form__range {
-  position: relative;
-  top: -13px;
-  left: -2px;
-}
 .form__submit {
   width: 100%;
   height: 45px;
 }
-@media (min-width: 768px) {
-  .form__checkbox-item {
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .form__checkbox-text {
-    padding-left: 40px;
-  }
+.bid {
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+.bid__form {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px 20px 30px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ebebeb;
+}
+.bid__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bid__item {
+  width: 100%;
+}
+.bid__item--phone {
+  margin-right: 15px;
+}
+.bid__submit {
+  z-index: 1;
 }
 /*--- DEVELOPER ---*/
 .developer {
@@ -685,56 +595,3 @@ input[type=range]::-ms-thumb {
   text-align: center;
 }
 /* YES */
-.order {
-  margin-bottom: 60px;
-  padding: 20px 20px 30px 20px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-}
-.order__title {
-  margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .order {
-    padding: 40px 50px;
-  }
-}
-@media (min-width: 960px) {
-  .order {
-    padding: 50px 95px 15px 95px;
-  }
-}
-@media (min-width: 1200px) {
-  .order {
-    margin-bottom: 100px;
-  }
-  .order__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .order__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 560px;
-    margin-right: 15px;
-  }
-  .order__item {
-    width: 49%;
-    margin-bottom: 35px;
-  }
-  .order__checkbox {
-    width: 100%;
-  }
-  .order__submit {
-    width: 260px;
-    margin-top: 23px;
-  }
-}

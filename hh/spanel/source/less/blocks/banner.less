@@ -1,6 +1,19 @@
 .banner {
 	position: relative;
 	padding: 0;
+	height: 525px;
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -260px;
+		left: -125px;
+		width: 500px;
+		height: 370px;
+		background-image: url('../img/honeycomb.png');
+		background-repeat: no-repeat;
+		opacity: 0.7;
+		// z-index: -1;
+	}
 }
 
 .banner__img {
@@ -9,7 +22,7 @@
 
 .banner__description {
 	position: absolute;
-	top: 75px;
+	top: 100px;
 	left: 650px;
 	right: 60px;
 }
