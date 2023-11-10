@@ -152,7 +152,7 @@ picture {
 }
 .button:hover,
 .button:focus {
-  background-color: #c73d35;
+  background-color: #bb3932;
 }
 .button--light {
   display: -webkit-box;
@@ -174,6 +174,11 @@ picture {
   cursor: pointer;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+.button--light:hover,
+.button--light:focus {
+  color: #872924;
+  border: 1px solid #af352f;
 }
 .page-header {
   margin: 0;
@@ -338,28 +343,42 @@ picture {
 }
 .banner__description {
   position: absolute;
-  left: 500px;
-  right: 30px;
+  top: 75px;
+  left: 650px;
+  right: 60px;
 }
 .banner__title {
+  margin-bottom: 15px;
   font-family: 'Intro', sans-serif;
   font-size: 32px;
+  text-align: left;
   text-transform: uppercase;
 }
 .banner__text {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 22px;
 }
 .banner__price {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -30px;
+  right: 0px;
+  padding: 5px 10px;
+  background-color: #cd4b44;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.banner__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .banner__order {
-  margin-bottom: 5px;
+  width: 120px;
+  margin-right: 10px;
 }
 .banner__more {
-  width: auto;
+  width: 120px;
 }
 .form {
   min-height: 160px;
