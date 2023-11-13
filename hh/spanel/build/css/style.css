@@ -712,6 +712,7 @@ picture {
 }
 .banner {
   position: relative;
+  margin-bottom: 30px;
   padding: 0;
 }
 .banner::before {
@@ -774,6 +775,9 @@ picture {
           flex-grow: 1;
 }
 @media (min-width: 768px) {
+  .banner {
+    margin-bottom: 0;
+  }
   .banner::before {
     bottom: -260px;
     opacity: 0.7;
@@ -894,26 +898,17 @@ picture {
   height: 45px;
 }
 .bid {
-  position: relative;
-  margin-top: -40px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  padding: 0 20px;
 }
 .bid__form {
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 20px 30px 20px;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid #ebebeb;
-}
-.bid__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .bid__item {
   width: 100%;
@@ -923,6 +918,35 @@ picture {
 }
 .bid__submit {
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .bid {
+    position: relative;
+    margin-top: -40px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+  .bid__form {
+    width: 60%;
+  }
+  .bid__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 960px) {
+  .bid__form {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .bid__form {
+    width: 40%;
+  }
 }
 /*--- DEVELOPER ---*/
 .developer {
