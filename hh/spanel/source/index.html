@@ -7,6 +7,18 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Российская компания по продаже панелей из сотового картона">
 	<meta name="keywords" content="картон, панель, сотовый картон, продажа, заказать">
+
+	<!-- preload-загрузка изображений для разных экранов -->
+	<link rel="preload" media="(min-width: 1200px)" fetchpriority="high" as="image" href="img/banner@2x.webp" type="image/webp">
+	<link rel="preload" media="(min-width: 768px & max-width: 1199px)" fetchpriority="high" as="image" href="img/banner-tablet@2x.webp" type="image/webp">
+	<link rel="preload" media="(max-width: 767px)" fetchpriority="high" as="image" href="img/banner-mobile@2x.webp" type="image/webp">
+	
+	<link rel="preload" fetchpriority="high" as="image" href="img/honeycomb.webp" type="image/webp">
+
+	<!-- <link rel="preload" fetchpriority="high"  href="js/jquery-3.6.1.min.js" as="script" />	 -->
+
+
+	<!-- <link rel="preload" href="style.min.css" as="style"> -->
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -24,9 +36,9 @@
 	<header class="page-header">
 		<div class="page-header__top">
 			<div class="page-header__top-container container">
-				<a role="link" class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-labelledby="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg>г. Минск<span>, ул. Я.Коласа, 100 - 77</span></a>
-				<a role="link" class="page-header__email email" href="mailto:info@example.com" aria-labelledby="info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span class="tooltip">info@example.com</span></a>
-				<a role="link" class="page-header__phone phone" href="tel:+80291234567" aria-labelledby="8(029)123-45-67"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span class="tooltip">8(029) 123-45-67</span></a>
+				<a class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-label="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg>г. Минск<span>, ул. Я.Коласа, 100 - 77</span></a>
+				<a class="page-header__email email" href="mailto:info@example.com" aria-label="e-mail компании info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span class="tooltip">info@example.com</span></a>
+				<a class="page-header__phone phone" href="tel:+80291234567" aria-label="телефон компании"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span class="tooltip">8(029) 123-45-67</span></a>
 			</div>
 		</div>		
 
@@ -97,7 +109,7 @@
 						<input class="form__input" type="tel" name="bid__email" id="bid__email" value="" placeholder="info@site.by">
 					</p>
 				</div>
-				<input type="submit" class="bid__submit button form__submit" aria-labelledby="Оставить заявку" value="Оставить заявку">	
+				<input type="submit" class="bid__submit button form__submit" aria-label="Оставить заявку" value="Оставить заявку">	
 			</form>
 		</section>
 
@@ -119,9 +131,9 @@
 	</footer>
 
 	<script src="js/jquery-3.6.1.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/maskedinput.min.js"></script>
-	<script src="js/hamburger.min.js"></script>
+	<script async src="js/jquery.maskedinput.min.js"></script>
+	<script async src="js/maskedinput.min.js"></script>
+	<script async src="js/hamburger.min.js"></script>
 	
 </body>
 </html>

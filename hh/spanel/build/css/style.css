@@ -714,6 +714,7 @@ picture {
   position: relative;
   margin-bottom: 30px;
   padding: 0;
+  overflow: hidden;
 }
 .banner::before {
   content: '';
@@ -773,6 +774,11 @@ picture {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+@media (min-width: 480px) {
+  .banner {
+    overflow: visible;
+  }
 }
 @media (min-width: 768px) {
   .banner {
