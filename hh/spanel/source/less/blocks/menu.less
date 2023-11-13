@@ -1,48 +1,124 @@
-.menu {	
-
+.menu {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,.9);
+	transition: all .2s ease-out;
+	z-index: 2;
 }
 
 .menu__list {
-	display: flex;
+
 }
 
 .menu__item {	
-	a {
-		position: relative;
+	a {		
 		display: block;
-		padding: 20px;
+		padding: 15px 20px;
 		font-size: 16px;
-		line-height: 20px;
-		font-weight: 600;
-		color: #000000;
-		text-align: center;	
-		text-align: center;
+	    line-height: normal;
+	    text-decoration: none;
+	    color: #777;
+	    border-bottom: 1px dotted #d8d8d8;		
+		text-align: right;
 		text-decoration: none;		
 		transition: all .2s ease-out;
-		&::before {
-			content: none;
-			position: absolute;
-			left: 15px;
-			right: 15px;
-			bottom: 15px;
-			height: 2px;
-			background-color: @red;
-			transition: all .25s ease-out;
-		}
 		&:hover,
 		&:focus {
-			color: @red;
+			color: #000;
+			background-color: #ddd;
+			box-shadow: none;
 		}
-		
 	}
-	
 }
 
 .menu__item--active {
-	a {			
-		color: @red;
-		&::before {
-			content: '';
+	a {
+		color: #ffffff;
+		background-color: @red;
+		&:hover,
+		&:focus {
+			color: #ffffff;
+			background-color: @red;
 		}
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.menu {
+		left: 40%;
+	}
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.menu {
+		left: 60%;
 	}	
+}
+
+@media (min-width: @desktop-width) {
+	.menu {
+		position: static;
+		display: block;
+	}
+	.menu__list {
+		display: flex;
+	}
+
+	.menu__item {	
+		a {
+			position: relative;			
+			padding: 20px;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 600;
+			color: #000000;
+			text-align: center;			
+			border: none;
+			&::before {
+				content: none;
+				position: absolute;
+				left: 15px;
+				right: 15px;
+				bottom: 15px;
+				height: 2px;
+				background-color: @red;
+				transition: all .25s ease-out;
+			}
+			&:hover,
+			&:focus {
+				color: @red;
+				background-color: transparent;
+			}
+		}
+	}
+
+	.menu__item--active {
+		a {			
+			color: @red;
+			&::before {
+				content: '';
+			}
+		}	
+	}
+
+	.menu__item--active {
+		a {
+			color: @red;
+			background-color: transparent;
+			&:hover,
+			&:focus {
+				color: @red;
+				background-color: transparent;				
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
 }

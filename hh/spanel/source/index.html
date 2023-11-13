@@ -19,14 +19,14 @@
 
 	<div style="display: none;">
 		<include src="build/img/sprite.svg"></include>
-	</div>
+	</div>	
 
 	<header class="page-header">
 		<div class="page-header__top">
 			<div class="page-header__top-container container">
-				<a role="link" class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-labelledby="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg><span>г. Минск</span>, ул. Я.Коласа, 100 - 77</a>
-				<a role="link" class="page-header__email email" href="mailto:info@example.com" aria-labelledby="info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span>info@example.com</span></a>
-				<a role="link" class="page-header__phone phone" href="tel:+80291234567" aria-labelledby="телефон компании 80291234567"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span>8(029)</span> 123-45-67</a>
+				<a role="link" class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-labelledby="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg>г. Минск<span>, ул. Я.Коласа, 100 - 77</span></a>
+				<a role="link" class="page-header__email email" href="mailto:info@example.com" aria-labelledby="info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span class="tooltip">info@example.com</span></a>
+				<a role="link" class="page-header__phone phone" href="tel:+80291234567" aria-labelledby="8(029)123-45-67"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span class="tooltip">8(029) 123-45-67</span></a>
 			</div>
 		</div>		
 
@@ -36,22 +36,51 @@
 					<use xlink:href="#icon-logo"></use>
 				</svg>
 				<span class="visually-hidden">Логотип компании SPanel</span>
-			</a>	
-			<nav class="page-header__nav menu">
-				<h2 class="visually-hidden">Главное меню</h2>
-				<ul class="page-header__nav-list menu__list">
-					<li class="menu__item menu__item--active"><a href="https://example.com/">Главная</a></li>
-					<li class="menu__item"><a href="https://example.com/">Каталог</a></li>
-					<li class="menu__item"><a href="https://example.com/">Преимущества</a></li>
-					<li class="menu__item"><a href="https://example.com/">Отзывы</a></li>
-					<li class="menu__item"><a href="https://example.com/">Контакты</a></li>
-				</ul>
-			</nav>
+			</a>
+
+			<div class="page-header__menu">
+				<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>	
+				<nav class="page-header__nav menu">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<ul class="page-header__nav-list menu__list">
+						<li class="menu__item menu__item--active"><a href="https://example.com/">Главная</a></li>
+						<li class="menu__item"><a href="https://example.com/">Каталог</a></li>
+						<li class="menu__item"><a href="https://example.com/">Преимущества</a></li>
+						<li class="menu__item"><a href="https://example.com/">Отзывы</a></li>
+						<li class="menu__item"><a href="https://example.com/">Контакты</a></li>
+					</ul>
+				</nav>	
+			</div>			
 		</div>
 	</header>	
 
 	<main class="page-main">		
-		<section class="banner container">			
+		<section class="banner container">
+			<picture>
+
+
+				<source media="(min-width: 1200px)" type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
+				<source media="(min-width: 768px)" type="image/webp" srcset="img/banner-tablet.webp 1x, img/banner-tablet@2x.webp 2x">
+				<source type="image/webp" srcset="img/banner-mobile.webp 1x, img/banner-mobile@2x.webp 2x">
+
+				<source media="(min-width: 1200px)" srcset="img/banner.jpg 1x, img/banner@2x.jpg 2x">
+				<source media="(min-width: 768px)" srcset="img/banner-tablet.jpg 1x, img/banner-tablet@2x.jpg 2x">
+				<img src="img/banner-mobile.jpg" srcset="img/banner-mobile@2x.jpg 2x" alt="Упаковка из сотового картона" width="1120" height="525" class="banner__img">
+			
+
+				<!-- <source media="(min-width: 1200px)" type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
+				<source media="(min-width: 768px)" type="image/webp" srcset="img/banner-tablet.webp 1x, img/banner-tablet@2x.webp 2x">
+				<source type="image/webp" srcset="img/banner-mobile.webp 1x, img/banner-mobile@2x.webp 2x">
+				<img src="img/banner-mobile.jpg" srcset="img/banner-mobile@2x.jpg 2x" alt="Упаковка из сотового картона" width="1120" height="525" class="banner__img"> -->
+			</picture>
+
+			<!-- <picture>
+				<source type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
+				<img src="img/banner.jpg" srcset="img/banner@2x.jpg 2x" alt="Упаковка из сотового картона" width="1120" height="525" class="banner__img">
+			</picture> -->
 			<div class="banner__description">
 				<h2 class="banner__title">Упаковка из картона</h2>
 				<p class="banner__text">Упаковка из сотового картона обладает высокими демпферными свойствами. Собственный конструкторский отдел и уникальное оборудование позволяют изготавливать промышленную упаковку любых размеров</p>
@@ -61,14 +90,9 @@
 					<a class="banner__more button--light"href="#">Подробнее</a>
 				</div>
 			</div>
-			<picture>
-				<source type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
-				<img src="img/banner.jpg" srcset="img/banner@2x.jpg 2x" alt="Упаковка из сотового картона" width="1120" height="525" class="banner__img">
-			</picture>
-
 		</section>
 
-		<section class="bid container">
+		<!-- <section class="bid container">
 			<h2 class="visually-hidden">Оставить заявку</h2>
 			<form method="POST" action="/" class="bid__form form">
 				<p class="bid__item form__item">
@@ -88,7 +112,7 @@
 				</div>
 				<input type="submit" class="bid__submit button form__submit" aria-labelledby="Оставить заявку" value="Оставить заявку">	
 			</form>
-		</section>
+		</section> -->
 
 		<section class="development">
 			<h2 class="visually-hidden">Сайт находится в разработке</h2>
@@ -110,6 +134,7 @@
 	<script src="js/jquery-3.6.1.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/maskedinput.min.js"></script>
+	<script src="js/hamburger.min.js"></script>
 	
 </body>
 </html>
