@@ -1,0 +1,61 @@
+.logo {
+	display: block;
+	margin: 0;	
+	padding: 0;
+	text-decoration: none;
+	color: @color;
+	img {
+		width: 43px;
+		height: 34px;		
+	}
+	span {
+		display: none;		
+	}
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.logo {
+		img {
+			width: 180px;
+			height: 42px;
+			margin-bottom: 3px;
+		}
+		span {
+			display: block;
+			margin-left: 7px;			
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.logo {
+		img {
+			margin-bottom: 5px;
+			width: 231px;
+			height: 54px;
+		}
+		span {			
+			margin-left: 10px;
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

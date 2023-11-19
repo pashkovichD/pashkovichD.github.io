@@ -1,0 +1,85 @@
+.hamburger {
+	position: relative;
+	width: 28px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	z-index: 10;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 40px;
+		height: 40px;
+		margin-left: -20px;
+		margin-top: -20px;
+		z-index: -1;
+	}
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+}
+.hamburger__line {
+	position: relative;	
+	display: block;
+	width: 17px;
+	height: 2px;
+	background: @green;
+	-webkit-transition: -webkit-transform 0.35s;
+	        transition: -webkit-transform 0.35s;
+	     -o-transition: transform 0.35s;
+	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
+	-webkit-transform: translate(10px, 0);
+	  -ms-transform: translate(10px, 0);
+	      transform: translate(10px, 0);
+}
+.hamburger__line::before,
+.hamburger__line::after {
+	content: '';
+	display: block;
+	width: 28px;
+	height: 2px;
+	background: @green;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: -webkit-transform 0.35s;
+	-o-transition: transform 0.35s;
+	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
+	-webkit-transform: translate(-10px, -8px);
+	  -ms-transform: translate(-10px, -8px);
+	      transform: translate(-10px, -8px);
+}
+.hamburger__line::after {
+	-webkit-transform: translate(-10px, 6px);
+	  -ms-transform: translate(-10px, 6px);
+	      transform: translate(-10px, 6px);
+}
+.hamburger__click span {
+	-webkit-transform: rotate(90deg);
+	  -ms-transform: rotate(90deg);
+	      transform: rotate(90deg);
+	background: transparent;
+}
+.hamburger__click span:before {
+	-webkit-transform: translate(-5px, -6px) rotate(45deg);
+	  -ms-transform: translate(-5px, -6px) rotate(45deg);
+	      transform: translate(-5px, -6px) rotate(45deg);
+}
+.hamburger__click span:after {
+	-webkit-transform: translate(-5px, -8px) rotate(-45deg);
+	  -ms-transform: translate(-5px, -8px) rotate(-45deg);
+	      transform: translate(-5px, -8px) rotate(-45deg);
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	
+}
