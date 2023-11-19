@@ -132,6 +132,9 @@ picture {
   display: block;
   line-height: 0;
 }
+.green {
+  color: #498837;
+}
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,6 +332,7 @@ picture {
 }
 .page-header {
   margin: 0;
+  margin-bottom: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -895,5 +899,39 @@ picture {
     content: none;
   }
 }
-@media (min-width: 1620px) {
+.promo__title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+}
+.promo__title .green {
+  display: block;
+}
+.promo__description {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.promo__video {
+  position: relative;
+}
+.promo__video video {
+  width: 100%;
+  border-radius: 5px;
+}
+.promo__video-desc {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: red;
+}
+.promo__video-desc .first {
+  display: block;
+  background-color: #383838;
+}
+.promo__video-desc .second {
+  display: block;
+  background-color: #498837;
 }
