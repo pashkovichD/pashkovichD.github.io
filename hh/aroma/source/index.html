@@ -161,7 +161,7 @@
 										<div class="meeting__two">
 											<p class="meeting__item form__item">
 												<label class="form__label visually-hidden" for="meeting__time">Удобное время звонка</label>
-												<input class="form__input" type="tel" name="meeting__time" id="meeting__time" value="" placeholder="Удобное время звонка">
+												<input class="form__input" type="txt" name="meeting__time" id="meeting__time" value="" placeholder="Удобное время звонка">
 											</p>
 											<input type="submit" class="meeting__submit button form__submit" aria-label="Отправить" value="Отправить">
 											<p class="meeting__lock"><svg width="10" height="12"><use xlink:href="#icon-lock"></use></svg><span>Ваши данные не будут переданы третьим лицам</span></p>
@@ -236,15 +236,46 @@
 					<section class="request">
 						<h3 class="visually-hidden">Отправить заявку</h3>
 						<div class="request__manager">
-							<!-- <picture>
-								<img src="img/manager.webp" srcset="img/manager@2x.webp 2x" alt="Ксения Рыбакова" width="231" height="54">
+							<picture>
+								<img src="img/manager.webp" srcset="img/manager@2x.webp 2x" alt="Ксения Рыбакова" width="120" height="120">
 							</picture>
 							<div class="request__manager-wrapper">
 								<p class="request__manager-title">Ксения Рыбакова</p>
 								<p class="request__manager-post">Старший менеджер по оказанию строительных услуг</p>
-							</div> -->
+							</div>
 						</div>
-						<!-- <p class="request__description">Не хотите отвечать на вопросы, оставьте заявку, и я проконсультирую вас по всем вопросам.</p> -->
+						<p class="request__description">Не хотите отвечать на вопросы, оставьте заявку, и я проконсультирую вас по всем вопросам.</p>
+						<form method="POST" action="https://echo.htmlacademy.ru/" class="request__form form">
+							<p class="request__item form__item">
+								<label class="form__label visually-hidden" for="request__name">Ваше имя</label>
+								<input class="form__input" type="text" name="request__name" id="request__name"  value=""
+								placeholder="Ваше имя">
+							</p>
+							<p class="request__item form__item">
+								<label class="form__label visually-hidden" for="request__phone">Номер телефона</label>
+								<input class="form__input" type="tel" name="request__phone" id="request__phone" value="" placeholder="Номер телефона">
+							</p>
+							<p class="request__item form__item">
+								<label class="form__label visually-hidden" for="request__time">Удобное время звонка (необязательно)</label>
+								<input class="form__input" type="txt" name="request__time" id="request__time" value="" placeholder="Удобное время звонка (необязательно)">
+							</p>
+							<div class="request__checkboxs">
+								<label class="request__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="telegram" value="yes">
+									<span class="form__checkbox-text"><svg fill="none" width="17" height="14"><use xlink:href="#icon-telegram"></use></svg>Telegram</span>
+								</label>
+								<label class="request__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="viber" value="yes">
+									<span class="form__checkbox-text form__checkbox-text--viber"><svg fill="none" width="19" height="20"><use xlink:href="#icon-viber"></use></svg>Viber</span>
+								</label>
+								<label class="request__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="whatsapp" value="yes">
+									<span class="form__checkbox-text form__checkbox-text--whatsapp"><svg fill="none" width="19" height="19"><use xlink:href="#icon-whatsapp"></use></svg>WhatsApp</span>
+								</label>
+							</div>
+							<input type="submit" class="request__submit button form__submit" aria-label="Отправить" value="Отправить">
+							<p class="request__lock"><svg width="10" height="12"><use xlink:href="#icon-lock"></use></svg><span>Ваши данные не будут переданы третьим лицам</span></p>
+						</form>
 					</section>
 					<section class="data">
 						<h3 class="visually-hidden">Сведения о проекте</h3>
@@ -275,17 +306,15 @@
 										<span class="label">Вы можете направить нам данные по проекту</span>
 										<span class="icon-file"><svg fill="none" width="16" height="16"><use xlink:href="#icon-file"></use></svg>Прикрепите ваш проект</span>
 									</label>
-									
-									
 								</p>
 								<div class="data__checkboxs">
 									<label class="data__checkbox form__checkbox-item">
-										<input type="checkbox" class="visually-hidden" name="last-level" value="last-level">
+										<input type="checkbox" class="visually-hidden" name="last-level" value="yes">
 										<span class="form__checkbox-indicator"></span>
 										<span class="form__checkbox-text">Последний этаж мансардный</span>
 									</label>
 									<label class="data__checkbox form__checkbox-item">
-										<input type="checkbox" class="visually-hidden" name="ground-level" value="ground-level">
+										<input type="checkbox" class="visually-hidden" name="ground-level" value="yes">
 										<span class="form__checkbox-indicator"></span>
 										<span class="form__checkbox-text">Есть цокольный этаж</span>
 									</label>
