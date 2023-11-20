@@ -1397,7 +1397,8 @@ picture {
 }
 @media (min-width: 1620px) {
   .promo {
-    min-height: 720px;
+    min-height: 690px;
+    margin-bottom: 0;
     padding-top: 75px;
     padding-bottom: 0;
     background-position: right -80px;
@@ -1670,4 +1671,76 @@ picture {
   width: 24px;
   height: 30px;
   margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .price__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #383434;
+  }
+  .price__bonus-title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #498837;
+  }
+  .price__bonus-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price__bonus-item {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .price__bonus-item:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  .price__bonus-title {
+    margin-bottom: 30px;
+  }
+  .price__bonus-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .price__bonus-item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .price__title {
+    margin-bottom: 30px;
+  }
+  .price__bonus-item {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .price__bonus-item svg {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1620px) {
+  .price {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .price__title {
+    margin-bottom: 40px;
+    font-size: 45px;
+    line-height: 53px;
+  }
+  .price__bonus-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
