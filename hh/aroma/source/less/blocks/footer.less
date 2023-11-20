@@ -1,17 +1,36 @@
 .page-footer {	
 	margin: 0;
 	padding: 0;
-	background-color: #e9e9e9;	
+	background-color: #333333;	
 }
 
-.page-footer__copyright {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
+.page-footer__developer {
+	padding: 30px 10px 30px 65px;
+	font-size: 12px;
+	line-height: 14px;
+	color: #6e7c7c;
+	background-image: url('../img/icon-alfa.webp');
+	background-repeat: no-repeat;
+	background-position: left center;
+	a {
+		text-decoration: none;		
+		background: linear-gradient(90.69deg, #1C5771 -13.81%, #4A90AE 23.87%),
+				linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		opacity: 0.8;
+		&:hover,
+		&:focus {
+			opacity: 1;	
+		}
+	}
 }
 
 @media (min-width: @mobile-width) {
-
+	.page-footer__developer {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
 
 @media (min-width: 600px) {
@@ -23,7 +42,10 @@
 }
 
 @media (min-width: @desktop-width) {
-	
+	.page-footer__developer {
+		font-size: 16px;
+		line-height: 19px;
+	}
 }
 
 @media (min-width: @desktop-full-width) {

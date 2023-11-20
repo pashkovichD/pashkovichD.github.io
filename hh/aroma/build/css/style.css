@@ -2348,3 +2348,40 @@ picture {
     line-height: 21px;
   }
 }
+.page-footer {
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+.page-footer__developer {
+  padding: 30px 10px 30px 65px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6e7c7c;
+  background-image: url('../img/icon-alfa.webp');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.page-footer__developer a {
+  text-decoration: none;
+  background: linear-gradient(90.69deg, #1C5771 -13.81%, #4A90AE 23.87%), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+}
+.page-footer__developer a:hover,
+.page-footer__developer a:focus {
+  opacity: 1;
+}
+@media (min-width: 480px) {
+  .page-footer__developer {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 960px) {
+  .page-footer__developer {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
