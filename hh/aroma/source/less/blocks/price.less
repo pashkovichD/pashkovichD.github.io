@@ -1,7 +1,11 @@
 .price {
 	margin-bottom: 50px;
-	padding-left: 36px;
-	padding-right: 36px;	
+}
+
+.price__wrapper {
+	padding: 16px;
+	background-color: #ffffff;
+	box-shadow: 4px 4px 20px 0px rgba(41,45,41,.1);
 }
 
 .price__title {
@@ -38,7 +42,9 @@
 }
 
 @media (min-width: @mobile-width) {
-	
+	.price__wrapper {
+		padding: 20px;
+	}
 }
 
 @media (min-width: 600px) {
@@ -91,6 +97,10 @@
 }
 
 @media (min-width: @desktop-1200-width) {
+	.price__wrapper {
+		padding: 30px;
+	}
+
 	.price__title {
 		margin-bottom: 30px;
 		font-size: 45px;
@@ -109,22 +119,27 @@
 	.price__bonus-item {
 		margin-right: 0;
 		margin-bottom: 0;
-		padding: 10px 15px;
-		font-size: 18px;
-		line-height: 21px;
+		padding: 10px 15px;		
 		box-shadow: 4px 4px 20px 0px rgba(41,45,41,.1);
 		svg {
 			width: 36px;
 			height: 36px;
 			margin-right: 15px;
-		}		
+		}	
+	}
+
+	.price__block {
+		display: flex;
 	}
 }
 
 @media (min-width: @desktop-full-width) {
 	.price {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-right: 0;
+	}
+
+	.price__wrapper {
+		padding: 40px;
 	}
 
 	.price__title {
@@ -139,7 +154,13 @@
 		line-height: 28px;
 	}
 
+	.price__bonus-list {
+		margin-bottom: 55px;
+	}
+
 	.price__bonus-item {		
 		padding: 13px 30px;
+		font-size: 18px;
+		line-height: 21px;
 	}
 }

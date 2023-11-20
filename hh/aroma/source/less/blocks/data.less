@@ -53,6 +53,7 @@
 	.form__label--file {
 		display: inline-flex;
 		align-items: center;
+		margin: 0;
 		.label {
 			display: none;
 		}
@@ -64,6 +65,10 @@
 			}
 		}
 	}
+}
+
+.data__item--file {
+	margin-bottom: 20px;
 }
 
 .data__checkboxs {
@@ -102,6 +107,7 @@
 	.data__two {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 20px;
 	}
 
 	.data__two {
@@ -125,16 +131,17 @@
 	}
 
 	.data__item {
+		margin: 0;
 		label {
 			display: inline-block;
 		}
-		.form__label--file {
+		.form__label--file {			
 			position: relative;
 			.label {
 				display: inline-block;
 				position: absolute;
 				top: -20px;
-				left: 0;
+				left: 0;				
 				padding: 0;
 				height: auto;
 				font-size: 13px;
@@ -162,7 +169,6 @@
 @media (min-width: @desktop-1200-width) {
 	.data {
 		width: 60%;
-		margin-left: auto;
 	}
 
 	.data__indicators {
@@ -237,5 +243,50 @@
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	.data {
+		width: 77%;	
+	}
+
+	.data__indicators {
+		margin-bottom: 48px;
+	}
+
+	.data__indicators-item {
+		margin-right: 48px;
+	}
+
+	.data__description {
+		margin-bottom: 35px;
+	}
+
+	.data__two {
+		margin-bottom: 30px;
+	}
+
+	.data__item {		
+		.form__input {
+			height: 56px;
+			margin-bottom: 30px;
+		}
+		.form__label--file {			
+			span {
+				height: 56px;
+				font-size: 16px;
+				line-height: 48px;
+			}
+			.label {
+				height: 56px;
+				top: -30px;
+				font-size: 16px;
+				line-height: 19px;
+			}			
+		}
+	}
+
+	.data__checkbox {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}	
 }
