@@ -160,8 +160,8 @@
 										</div>
 										<div class="meeting__two">
 											<p class="meeting__item form__item">
-												<label class="form__label visually-hidden" for="meeting__time">Удобное время звонка </label>
-												<input class="form__input" type="tel" name="meeting__time" id="meeting__time" value="" placeholder="Удобное время звонка ">
+												<label class="form__label visually-hidden" for="meeting__time">Удобное время звонка</label>
+												<input class="form__input" type="tel" name="meeting__time" id="meeting__time" value="" placeholder="Удобное время звонка">
 											</p>
 											<input type="submit" class="meeting__submit button form__submit" aria-label="Отправить" value="Отправить">
 											<p class="meeting__lock"><svg width="10" height="12"><use xlink:href="#icon-lock"></use></svg><span>Ваши данные не будут переданы третьим лицам</span></p>
@@ -231,6 +231,60 @@
 					<span>Следите за ремонтом онлайн</span>
 				</li>
 			</ul>
+			<div class="price__block">
+				<section class="request">
+					<h3 class="visually-hidden">Отправить заявку</h3>
+
+				</section>
+				<section class="data">
+					<h3 class="visually-hidden">Сведения о проекте</h3>
+					<ul class="data__indicators">
+						<li class="data__indicators-item data__indicators-item--active"></li>
+						<li class="data__indicators-item"></li>
+						<li class="data__indicators-item"></li>
+						<li class="data__indicators-item"></li>
+						<li class="data__indicators-item"></li>
+					</ul>
+					<p class="data__description">Укажите общую площадь, м<sup>2</sup></p>
+					<form method="POST" action="/" class="data__form form" enctype="multipart/form-data">
+						<div class="data__one">
+							<p class="data__item form__item">
+								<label class="form__label" for="data__area">Укажите общую площадь, м<sup>2</sup></label>
+								<input class="form__input" type="text" name="data__area" id="data__area"  value=""
+								placeholder="Площадь объекта">
+							</p>
+							<p class="data__item form__item">
+								<label class="form__label" for="data__level">Укажите количество этажей</label>
+								<input class="form__input" type="text" name="data__level" id="data__level" value="" placeholder="Количество этажей">
+							</p>										
+						</div>
+						<div class="data__two">
+							<p class="data__item form__item">
+								<label class="form__label form__label--file" for="data__file">
+									<input class="form__input" type="file" name="data__file" id="data__file" value="" placeholder="Прикрепите ваш проект">
+									<!-- <span>Вы можете направить нам данные по проекту</span> -->
+									<span class="icon-file"><svg fill="none" width="16" height="16"><use xlink:href="#icon-file"></use></svg>Прикрепите ваш проект</span>
+								</label>
+								
+								
+							</p>
+							<div class="data__checkboxs">
+								<label class="data__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="last-level" value="last-level">
+									<span class="form__checkbox-indicator"></span>
+									<span class="form__checkbox-text">Последний этаж мансардный</span>
+								</label>
+								<label class="data__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="ground-level" value="ground-level">
+									<span class="form__checkbox-indicator"></span>
+									<span class="form__checkbox-text">Есть цокольный этаж</span>
+								</label>
+							</div>
+						</div>
+						<input type="submit" class="data__submit button button--light form__submit" aria-label="Следующий вопрос" value="Следующий вопрос">						
+					</form>
+				</section>
+			</div>
 		</section>
 			
 	</main>

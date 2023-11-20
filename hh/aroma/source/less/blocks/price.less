@@ -19,13 +19,17 @@
 	color: @gray;
 }
 
+.price__bonus-list {
+	margin-bottom: 15px;
+}
+
 .price__bonus-item {
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 16px;
-	color: @gray;
+	color: @gray;	
 	svg {
 		width: 24px;
 		height: 30px;
@@ -46,16 +50,12 @@
 		margin-bottom: 20px;
 		font-size: 32px;
 		line-height: 38px;
-		// font-size: 45px;
-		// line-height: 53px;
 		color: @color;		
 	}
 
 	.price__bonus-title {
 		font-size: 20px;
 		line-height: 26px;
-		// font-size: 24px;
-		// line-height: 28px;
 		font-weight: 600;
 		color: @green;
 	}
@@ -88,27 +88,20 @@
 	.price__bonus-list {
 		justify-content: space-around;
 	}
-
-	.price__bonus-item {
-		margin-right: 0;
-		margin-bottom: 0;
-		// font-size: 18px;
-		// line-height: 21px;
-		svg {
-			// width: 36px;
-			// height: 36px;
-		}		
-	}
 }
 
 @media (min-width: @desktop-1200-width) {
 	.price__title {
 		margin-bottom: 30px;
-	}
+	}	
 
-	.price__bonus-item {		
+	.price__bonus-item {
+		margin-right: 0;
+		margin-bottom: 0;
+		padding: 10px 15px;
 		font-size: 18px;
 		line-height: 21px;
+		box-shadow: 4px 4px 20px 0px rgba(41,45,41,.1);
 		svg {
 			width: 36px;
 			height: 36px;
@@ -129,8 +122,13 @@
 		line-height: 53px;		
 	}
 
-	.price__bonus-title {		
+	.price__bonus-title {
+		margin-bottom: 20px;		
 		font-size: 24px;
 		line-height: 28px;
+	}
+
+	.price__bonus-item {		
+		padding: 13px 30px;
 	}
 }
