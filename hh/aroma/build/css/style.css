@@ -596,6 +596,9 @@ picture {
       -ms-flex-align: center;
           align-items: center;
 }
+.data__item .form__label--file .label {
+  display: none;
+}
 .data__item .form__label--file .icon-file svg {
   position: relative;
   top: 3px;
@@ -605,6 +608,7 @@ picture {
   margin-bottom: 25px;
 }
 .data__submit {
+  height: 40px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -634,6 +638,9 @@ picture {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .data__two {
+    padding-top: 20px;
+  }
   .data__item,
   .data__checkboxs {
     width: 48%;
@@ -650,8 +657,34 @@ picture {
   .data__item label {
     display: inline-block;
   }
+  .data__item .form__label--file {
+    position: relative;
+  }
+  .data__item .form__label--file .label {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    padding: 0;
+    height: auto;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #383434;
+    border-radius: 0;
+    border: none;
+  }
+  .data__submit {
+    width: 48%;
+  }
 }
 @media (min-width: 960px) {
+  .data__item,
+  .data__checkboxs {
+    width: 49%;
+  }
+}
+@media (min-width: 1200px) {
   .data {
     width: 50%;
   }

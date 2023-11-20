@@ -50,9 +50,12 @@
 	label {
 		display: none;
 	}
-	.form__label--file {		
+	.form__label--file {
 		display: inline-flex;
 		align-items: center;
+		.label {
+			display: none;
+		}
 		.icon-file {
 			svg {
 				position: relative;
@@ -68,6 +71,7 @@
 }
 
 .data__submit {
+	height: 40px;
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -100,6 +104,10 @@
 		justify-content: space-between;
 	}
 
+	.data__two {
+		padding-top: 20px;
+	}
+
 	.data__item,
 	.data__checkboxs {
 		width: 48%;
@@ -120,17 +128,41 @@
 		label {
 			display: inline-block;
 		}
+		.form__label--file {
+			position: relative;
+			.label {
+				display: inline-block;
+				position: absolute;
+				top: -20px;
+				left: 0;
+				padding: 0;
+				height: auto;
+				font-size: 13px;
+				line-height: 15px;
+				font-weight: 500;
+				color: @color;
+				border-radius: 0;
+				border: none;
+			}
+		}
+	}
+
+	.data__submit {
+		width: 48%;		
 	}
 }
 
 @media (min-width: @desktop-width) {
-	.data {
-		width: 50%;
+	.data__item,
+	.data__checkboxs {
+		width: 49%;
 	}
 }
 
 @media (min-width: @desktop-1200-width) {
-
+	.data {
+		width: 50%;
+	}
 }
 
 @media (min-width: @desktop-full-width) {
