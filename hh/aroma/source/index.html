@@ -119,75 +119,120 @@
 			<div class="promo__wrapper container">
 				<h2 class="promo__title">Строим дома в любой точке мира с гарантией <span class="green">50 лет от производителя</span></h2>
 				<p class="promo__description">Построим дом по готовому проекту или разработаем новый специально для вас. Наши архитекторы с 10 летним опытом учтут все ваши пожелания.</p>
-				<div class="promo__video">
-					<div class="promo__video_desc">
-						<p class="first">Выезд на стройку</p>
-						<p class="second">Как выбрать материал для дома?</p>
-					</div>
-					<!-- <svg class="promo__video-desc">
-						<use xlink:href="#icon-video-desc"></use>
-					</svg> -->
-					<video poster="img/video.webp">
-						<source src="video/promo.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-						<source src="video/promo.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+				<div class="promo__block">
+					<div class="promo__video">
+						<div class="promo__video-desc">
+							<p class="first">Выезд на стройку</p>
+							<p class="second">Как выбрать материал для дома?</p>
+						</div>
+						<button class="promo__play" type="button" aria-label="Запустить видео">
+							<span class="visually-hidden">Запустить видео</span>
+							<img src="img/play.webp" alt="запустить видео">
+						</button>
+						<video poster="img/video.webp">
+							<source src="video/promo.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+							<source src="video/promo.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
 							<source src="video/promo.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
-						<a href="video/insparation-for-athlets.mp4">Download video</a>.
-					</video>
+							<a href="video/insparation-for-athlets.mp4">Скачать видео</a>.
+						</video>
+					</div>
 
+					<div class="promo__tabs tabs">						
+						<input id="tab1" type="radio" name="tabs" class="tabs__input" checked="">
+						<label for="tab1" title="Записаться на встречу" class="promo__label tabs__label">Записаться на встречу</label>					
+
+						<div id="tabs__content1" class="promo__section tabs__section">
+							<div class="news__article-wrapper tabs__wrapper">
+								<div class="meeting">
+									<p class="meeting__question">Хотите записаться на встречу с Мастером?</p>
+									<p class="meeting__desc">Оставьте заявку и получите расчёт стоимости и помощь в подборе материалов напрямую от производителя в ПОДАРОК <span class="green">(экономия до 30%)</span></p>
+									<form method="POST" action="/" class="meeting__form form">
+										<div class="meeting__one">
+											<p class="meeting__item form__item">
+												<label class="form__label visually-hidden" for="meeting__name">Ваше имя</label>
+												<input class="form__input" type="text" name="meeting__name" id="meeting__name"  value=""
+												placeholder="Ваше имя">
+											</p>
+											<p class="meeting__item form__item">
+												<label class="form__label visually-hidden" for="meeting__phone">Номер телефона</label>
+												<input class="form__input" type="tel" name="meeting__phone" id="meeting__phone" value="" placeholder="Номер телефона">
+											</p>										
+										</div>
+										<div class="meeting__two">
+											<p class="meeting__item form__item">
+												<label class="form__label visually-hidden" for="meeting__time">Удобное время звонка </label>
+												<input class="form__input" type="tel" name="meeting__time" id="meeting__time" value="" placeholder="Удобное время звонка ">
+											</p>
+											<input type="submit" class="meeting__submit button form__submit" aria-label="Отправить" value="Отправить">
+											<p class="meeting__lock"><svg width="10" height="12"><use xlink:href="#icon-lock"></use></svg><span>Ваши данные не будут переданы третьим лицам</span></p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						
+						<input id="tab2" type="radio" name="tabs" class="tabs__input">
+						<label for="tab2" title="Написать в мессенджер" class="promo__label tabs__label">Написать в мессенджер</label>					
+
+						<div id="tabs__content2" class="promo__section tabs__section">
+							<div class="tabs__wrapper">
+								<div class="to-messenger">
+									<p class="to-messenger__desc">Вы можете написать любое сообщение в мессенджер</p>
+									<form method="POST" action="/" class="to-messenger__form form">
+										<p class="to-messenger__item form__item">
+											<label class="form__label visually-hidden" for="to-messenger__message">Ваше сообщение</label>
+											<textarea class="form__input" name="to-messenger__message" id="to-messenger__message" cols="30" rows="5">Ваше сообщение</textarea>
+										</p>
+										<input type="submit" class="to-messenger__submit button form__submit" aria-label="Отправить" value="Отправить">
+									</form>
+								</div>
+							</div>
+						</div>						
+					</div>
 				</div>
 			</div>
-			<!-- <picture>
-				<source media="(min-width: 1200px)" type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
-				<source media="(min-width: 768px)" type="image/webp" srcset="img/banner-tablet.webp 1x, img/banner-tablet@2x.webp 2x">
-				<source type="image/webp" srcset="img/banner-mobile.webp 1x, img/banner-mobile@2x.webp 2x">
 
-				<source media="(min-width: 1200px)" srcset="img/banner.jpg 1x, img/banner@2x.jpg 2x">
-				<source media="(min-width: 768px)" srcset="img/banner-tablet.jpg 1x, img/banner-tablet@2x.jpg 2x">
-				<img src="img/banner-mobile.jpg" srcset="img/banner-mobile@2x.jpg 2x" alt="Упаковка из сотового картона" width="1120" height="525" class="banner__img">
-			</picture>
-			<div class="banner__description">
-				<h2 class="banner__title">Упаковка из картона</h2>
-				<p class="banner__text">Упаковка из сотового картона обладает высокими демпферными свойствами. Собственный конструкторский отдел и уникальное оборудование позволяют изготавливать промышленную упаковку любых размеров</p>
-				<p class="banner__price">1000 &#8381;</p>
-				<div class="banner__buttons">
-					<a class="banner__order button" href="#">Заказать</a>
-					<a class="banner__more button--light"href="#">Подробнее</a>
-				</div>
-			</div> -->
+			<div class="promo__bookmarks bookmarks">
+				<button class="bookmarks__item" type="button" aria-label="Расчет стоимости">
+					<svg width="26" height="36"><use xlink:href="#icon-calc"></use></svg>
+					<span class="visually-hidden">Расчет стоимости</span>
+				</button>
+				<button class="bookmarks__item" type="button" aria-label="Следить за ремонтом">
+					<svg width="36" height="29"><use xlink:href="#icon-binoculars"></use></svg>
+					<span class="visually-hidden">Следить за ремонтом</span>
+				</button>
+				<button class="bookmarks__item" type="button" aria-label="Замеры">
+					<svg width="36" height="38"><use xlink:href="#icon-divider"></use></svg>
+					<span class="visually-hidden">Замеры</span>
+				</button>
+				<button class="bookmarks__item" type="button" aria-label="Выезд прораба">
+					<svg width="36" height="43"><use xlink:href="#icon-man"></use></svg>
+					<span class="visually-hidden">Выезд прораба</span>
+				</button>
+			</div>
+			
 		</section>
 
-		<!-- <section class="bid container">
-			<h2 class="visually-hidden">Оставить заявку</h2>
-			<form method="POST" action="/" class="bid__form form">
-				<p class="bid__item form__item">
-					<label class="form__label" for="bid__name">Ваше имя</label>
-					<input class="form__input" type="text" name="bid__name" id="bid__name"  value=""
-					placeholder="Алексей">
-				</p>
-				<div class="bid__items">
-					<p class="bid__item bid__item--phone form__item">
-						<label class="form__label" for="bid__phone">Номер телефона</label>
-						<input class="form__input" type="tel" name="bid__phone" id="bid__phone" value="" placeholder="+375 (__) ___-__-__">
-					</p>
-					<p class="bid__item form__item">
-						<label class="form__label" for="bid__email">E-mail</label>
-						<input class="form__input" type="tel" name="bid__email" id="bid__email" value="" placeholder="info@site.by">
-					</p>
-				</div>
-				<input type="submit" class="bid__submit button form__submit" aria-label="Оставить заявку" value="Оставить заявку">	
-			</form>
-		</section> -->
-
-		<!-- <section class="development">
-			<h2 class="visually-hidden">Сайт находится в разработке</h2>
-			<div class="developer container">
-				<svg fill="#ffffff" width="73" height="65">
-					<use xlink:href="#icon-developer"></use>
-				</svg>
-				<p class="developer__text"><span class="developer__text-sorry">Извините!</span> Сайт находится в разработке!</p>
-			</div>
-		</section> -->
-		
+		<section class="price container">
+			<h2 class="visually-hidden">Расчет стоимости строительства</h2>
+			<p class="price__title">Хотите узнать стоимость строительства?</p>
+			<p class="price__bonus-title">Пройдите тест, и получите три бонуса:</p>
+			<ul class="price__bonus-list">
+				<li class="price__bonus-item">
+					<svg fill="none" width="27" height="36"><use xlink:href="#icon-calc-light"></use></svg>
+					<span>Расчет стоимости в 2 вариантах</span>
+				</li>
+				<li class="price__bonus-item">
+					<svg fill="none" width="30" height="36"><use xlink:href="#icon-man-light"></use></svg>
+					<span>Бесплатный выезд прораба</span>
+				</li>
+				<li class="price__bonus-item">
+					<svg fill="none" width="37" height="30"><use xlink:href="#icon-binoculars-light"></use></svg>
+					<span>Следите за ремонтом онлайн</span>
+				</li>
+			</ul>
+		</section>
+			
 	</main>
 
 	<footer class="page-footer">
@@ -195,10 +240,12 @@
 		<p class="page-footer__copyright container">Copyright &copy; 2023</p> -->
 	</footer>
 
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<!-- <script src="js/jquery-3.6.1.min.js"></script> -->
 	<!-- <script async src="js/jquery.maskedinput.min.js"></script> -->
 	<!-- <script async src="js/maskedinput.min.js"></script> -->
 	<script async src="js/hamburger.min.js"></script>
+	<!-- <script async src="js/accordeon.min.js"></script> -->
 	
 </body>
 </html>

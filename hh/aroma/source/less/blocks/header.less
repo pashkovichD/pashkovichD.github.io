@@ -138,7 +138,7 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: all .2s ease-out;
-	z-index: 2;
+	z-index: 3;
 }
 
 .page-header__phone-item {
@@ -255,6 +255,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all .2s ease-out;
+    z-index: 10;
 }
 
 .page-header__nav--show {
@@ -332,6 +333,10 @@
 }
 
 @media (min-width: @desktop-width) {
+	.page-header {
+		margin: 0;
+	}
+
 	.page-header__top {
 		height: 113px;		
 		padding-top: 0;

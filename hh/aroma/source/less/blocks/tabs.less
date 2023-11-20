@@ -1,0 +1,100 @@
+.tabs__section {
+  display: none;
+  box-shadow: 4px 4px 20px 0px #292d291a;
+
+}
+.tabs__section {
+  line-height: 1.5;
+  color: #383838;
+}
+.tabs__wrapper {
+  /* прикрутим анимацию */
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tabs__label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;  
+  color: @color;
+  text-align: center;
+  background-color: #eff1ee;
+  border-radius: 5px 5px 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+  transition: all 0.2s ease-out;  
+}
+.tabs__label:hover {
+  color: @green;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs__input {
+  display: none;
+  position: absolute;
+}
+.tabs__input:checked + label {
+  
+  background-color: #cee7aa;
+  
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked ~ #tabs__content1,
+#tab2:checked ~ #tabs__content2,
+#tab3:checked ~ #tabs__content3,
+#tab4:checked ~ #tabs__content4,
+#tab5:checked ~ #tabs__content5 {
+  display: block;
+}
+
+@media (min-width: @mobile-width) {
+  
+}
+
+@media (min-width: 600px) {
+  
+}
+
+@media (min-width: @tablet-width) {
+  
+}
+
+@media (min-width: @desktop-width) {
+  
+}
+
+@media (min-width: @desktop-1200-width) {
+  
+}
+
+@media (min-width: @desktop-full-width) {
+  .tabs__label {   
+    display: inline-block;
+  }
+}
