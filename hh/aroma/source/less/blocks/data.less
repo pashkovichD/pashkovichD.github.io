@@ -161,7 +161,78 @@
 
 @media (min-width: @desktop-1200-width) {
 	.data {
-		width: 50%;
+		width: 60%;
+		margin-left: auto;
+	}
+
+	.data__indicators {
+		margin-bottom: 40px;
+	}
+
+	.data__indicators-item {
+		margin-right: 45px;
+		width: 46px;
+		height: 46px;		
+		font-size: 20px;
+		line-height: 24px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.data__description {
+		margin-bottom: 30px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.data__item,
+	.data__checkboxs {
+		width: 48%;
+	}
+
+	.data__item {
+		.form__label,
+		.form__input {			
+			margin-bottom: 10px;
+			font-size: 16px;
+			line-height: 19px;
+		}
+
+		.form__input {
+			height: 50px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.data__item {		
+		.form__label--file {			
+			span {
+				height: 50px;
+				font-size: 16px;
+				line-height: 40px;
+			}
+			.label {
+				height: 50px;
+				top: -30px;
+				font-size: 16px;
+				line-height: 19px;
+				white-space: nowrap;
+			}
+			.icon-file {
+				svg {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+	.data__submit {
+		width: 48%;
+		height: 55px;
+		font-size: 18px;
+		line-height: 21px;
 	}
 }
 
