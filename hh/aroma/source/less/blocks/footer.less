@@ -1,18 +1,147 @@
-.page-footer {	
+.page-footer {
 	margin: 0;
 	padding: 0;
+	padding-top: 45px;
 	background-color: #333333;	
 }
 
+.page-footer__logo {
+	margin-left: 10px;
+	margin-bottom: 20px;
+	img {
+		width: 231px;	
+		height: 54px;
+		margin-bottom: 5px;
+	}
+	span {
+		display: inline-block;
+		padding-left: 7px;
+		font-size: 16px;
+		line-height: 19px;
+		color: #ffffff;
+	}
+}
+
+.page-footer__menu {
+	margin-bottom: 20px;
+}
+
+.page-footer__menu-item {
+	a {
+		display: block;
+		padding: 5px 10px;
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 600;		
+		color: #ffffff;
+		text-decoration: none;
+		opacity: 0.7;
+		&:hover,
+		&:focus {
+			opacity: 1;
+			background-color: rgba(255,255,255,.05);
+		}
+	}
+}
+
+.page-footer__bottom {
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+
+.page-footer__socials-title {
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #9ecb5d;
+}
+
+.page-footer__socials {
+	display: flex;
+	margin-bottom: 10px;
+	.page-footer__socials-item {
+		width: 30px;
+		height: 30px;
+		margin-right: 20px;
+		background-image: url('../img/whatsapp.webp');
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.8;
+		&:hover,
+		&:focus {
+			opacity: 1;	
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.telegram {
+		background-image: url('../img/telegram.webp');
+	}
+	.instagram {
+		background-image: url('../img/instagram.webp');
+	}
+	.youtube {
+		background-image: url('../img/youtube.webp');
+	}
+	.facebook {
+		background-image: url('../img/facebook.webp');
+	}
+}
+
+.page-footer__filials-title {
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+}
+
+.page-footer__filials {
+	display: flex;
+	.page-footer__filials-item {
+		width: 30px;
+		height: 30px;
+		margin-right: 20px;
+		background-image: url('../img/icon-united-states.webp');
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.8;
+		&:hover,
+		&:focus {
+			opacity: 1;	
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.russia {
+		background-image: url('../img/icon-russia.webp');
+	}
+}
+
+.page-footer__big-menu {
+	display: flex;
+}
+
+.page-footer__projects,
+.page-footer__order,
+.page-footer__contacts,
+.page-footer__docs {
+	display: none;
+}
+
 .page-footer__developer {
-	padding: 30px 10px 30px 65px;
+	padding: 30px 10px 30px 75px;
 	font-size: 12px;
 	line-height: 14px;
 	color: #6e7c7c;
 	background-image: url('../img/icon-alfa.webp');
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: 5px center;
 	a {
+		line-height: 0;
 		text-decoration: none;		
 		background: linear-gradient(90.69deg, #1C5771 -13.81%, #4A90AE 23.87%),
 				linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
@@ -27,6 +156,22 @@
 }
 
 @media (min-width: @mobile-width) {
+	.page-footer__menu {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 35px;
+	}
+
+	.page-footer__menu-item {	
+		a {			
+			padding: 8px 15px;
+		}
+	}
+
+	.page-footer__socials {
+		margin-bottom: 20px;
+	}
+
 	.page-footer__developer {
 		font-size: 14px;
 		line-height: 18px;
@@ -38,16 +183,98 @@
 }
 
 @media (min-width: @tablet-width) {
-	
+	.page-footer__bottom {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	.page-footer__socials-wrapper {
+		margin-right: 60px;
+	}
+
+	.page-footer__projects {
+		display: block;
+	}
 }
 
 @media (min-width: @desktop-width) {
+	.page-footer__projects {
+		margin-right: 50px;
+	}
+
+	.page-footer__order {
+		display: block;
+	}
+
 	.page-footer__developer {
 		font-size: 16px;
 		line-height: 19px;
 	}
 }
 
+@media (min-width: @desktop-1200-width) {
+	.page-footer {
+		padding-top: 75px;
+	}
+
+	.page-footer__top {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	.page-footer__logo {
+		margin-right: 60px;
+	}
+
+	.page-footer__menu {
+		width: 720px;
+		border-bottom: 1px solid #b5dc83;
+	}
+
+	.page-footer__menu-item {
+		a {			
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+
+	.page-footer__order {
+		margin-right: 50px;
+	}
+
+	.page-footer__contacts {
+		display: block;
+	}
+}
+
 @media (min-width: @desktop-full-width) {
-	
+	.page-footer {
+		padding-top: 140px;
+	}
+
+	.page-footer__top {
+		margin-bottom: 60px;
+		justify-content: space-between;
+	}
+
+	.page-footer__logo {
+		margin-bottom: 0;
+	}
+
+	.page-footer__menu,
+	.page-footer__big-menu {
+		width: 1245px;
+		justify-content: space-between;	
+	}
+
+
+
+	.page-footer__projects,
+	.page-footer__order {
+		margin-right: 0;
+	}
+
+	.page-footer__docs {
+		display: block;
+	}	
 }
