@@ -1,0 +1,186 @@
+.consultation {
+  margin-bottom: 40px;
+}
+
+.consultation__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.consultation__description {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: @gray;
+}
+
+.consultation__item {
+  .form__label--file {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;    
+    .icon-file {
+      svg {
+        position: relative;
+        top: 3px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.consultation__item--file {
+  margin-bottom: 15px;
+}
+
+.consultation__item--textarea {
+  margin-bottom: 10px;
+  textarea {
+    height: 60px;
+    padding-top: 10px;  
+  }  
+}
+
+.consultation__submit {
+  height: 40px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.consultation__lock {
+  font-size: 10px;
+  line-height: 12px;
+  color: @gray;
+  svg {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .consultation__title {
+    margin-bottom: 10px;
+  }
+
+  .consultation__submit {  
+    margin-bottom: 7px;
+  }
+
+  .consultation__lock {
+    font-size: 12px;
+    line-height: 14px;
+    svg {
+      top: 1px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  
+}
+
+@media (min-width: @tablet-width) {
+  .consultation {
+    position: relative;
+    background-image: url('../img/home.webp');
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    background-size: contain;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: '';
+      width: 349px;
+      height: 661px;
+      background-image: url('../img/tree.webp');
+      background-repeat: no-repeat;      
+      background-size: contain;
+    }
+  }
+
+  .consultation__wrapper {
+    padding-left: 20px;
+  }
+
+  .consultation__form-wrapper {
+    width: 507px;
+  }
+
+  .consultation__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;    
+  }
+
+  .consultation__description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px;    
+  }
+
+  .consultation__form-wrapper {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 20px 0px rgba(41,45,41,.1);
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
+
+@media (min-width: @desktop-1200-width) {
+
+}
+
+@media (min-width: @desktop-full-width) {
+  .consultation {
+    padding: 20px 40px 16px 40px;
+  }
+
+  .consultation__question {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .consultation__desc {
+    margin-bottom: 33px;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  .consultation__one,
+  .consultation__two {
+    width: 47%;
+  }
+
+  .consultation__item {
+    input {
+      height: 50px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .consultation__submit {
+    height: 50px;
+    margin-bottom: 0;
+  }
+
+  .consultation__lock {
+    display: inline;
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

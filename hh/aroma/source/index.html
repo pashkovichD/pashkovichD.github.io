@@ -156,7 +156,7 @@
 											<p class="meeting__item form__item">
 												<label class="form__label visually-hidden" for="meeting__phone">Номер телефона</label>
 												<input class="form__input" type="tel" name="meeting__phone" id="meeting__phone" value="" placeholder="Номер телефона">
-											</p>										
+											</p>
 										</div>
 										<div class="meeting__two">
 											<p class="meeting__item form__item">
@@ -323,6 +323,43 @@
 							<input type="submit" class="data__submit button button--light form__submit" aria-label="Следующий вопрос" value="Следующий вопрос">						
 						</form>
 					</section>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="consultation__wrapper container">
+				<div class="consultation__form-wrapper">
+					<h3 class="visually-hidden">Запись на консультацию</h3>
+					<p class="consultation__title">У вас уже есть проект?</p>
+					<p class="consultation__description">Пришлите его нам, мы сделаем расчет и свяжемся с вами для консультации</p>
+					<form method="POST" action="/" class="consultation__form form" enctype="multipart/form-data">
+						
+						<p class="consultation__item form__item">
+							<label class="form__label visually-hidden" for="consultation__name">Ваше имя</label>
+							<input class="form__input" type="text" name="consultation__name" id="consultation__name"  value=""
+							placeholder="Ваше имя">
+						</p>
+						<p class="consultation__item form__item">
+							<label class="form__label visually-hidden" for="consultation__phone">Номер телефона</label>
+							<input class="form__input" type="tel" name="consultation__phone" id="consultation__phone" value="" placeholder="Номер телефона">
+						</p>
+						
+						<p class="consultation__item consultation__item--file form__item">
+							<label class="form__label form__label--file" for="consultation__file">
+								<input class="form__input visually-hidden" type="file" name="consultation__file" id="consultation__file">
+								<span class="icon-file"><svg fill="none" width="16" height="16"><use xlink:href="#icon-file"></use></svg>Прикрепите свой проект</span>
+							</label>
+						</p>
+
+						<p class="consultation__item consultation__item--textarea form__item">
+							<label class="form__label visually-hidden" for="consultation__message">Ваше сообщение (необязательно)</label>
+							<textarea class="consultation__area form__input" name="consultation__message" id="consultation__message" cols="30" rows="5">Ваше сообщение (необязательно)</textarea>
+						</p>		
+						
+						<input type="submit" class="consultation__submit button form__submit" aria-label="Оставить заявку" value="Оставить заявку">
+						<p class="consultation__lock"><svg width="10" height="12"><use xlink:href="#icon-lock"></use></svg><span>Ваши данные не будут переданы третьим лицам</span></p>						
+					</form>
 				</div>
 			</div>
 		</section>
