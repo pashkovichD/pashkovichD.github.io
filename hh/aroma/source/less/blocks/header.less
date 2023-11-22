@@ -137,14 +137,16 @@
 	padding-top: 10px;
 	opacity: 0;
 	visibility: hidden;
+	box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1); 
+				
 	transition: all .2s ease-out;
-	z-index: 3;
+	z-index: 3;	
 }
 
 .page-header__phone-item {
 	padding: 10px 8px;
 	border-bottom: 1px dotted @green;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,1);
 	&:hover,
 	&:focus {
 		.page-header__phone-number {
@@ -357,7 +359,7 @@
 		&:hover,
 		&:focus {			
 			.page-header__phone-list {
-				top: 45px;				
+				top: 25px;				
 			}
 		}	
 	}
@@ -376,7 +378,7 @@
 	}
 
 	.page-header__phone-list {
-		padding-top: 30px;
+		padding-top: 50px;
 	}
 
 	.page-header__phone-item {	

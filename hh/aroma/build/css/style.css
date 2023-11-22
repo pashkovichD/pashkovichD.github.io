@@ -1294,6 +1294,8 @@ picture {
   padding-top: 10px;
   opacity: 0;
   visibility: hidden;
+  -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   z-index: 3;
@@ -1301,7 +1303,7 @@ picture {
 .page-header__phone-item {
   padding: 10px 8px;
   border-bottom: 1px dotted #498837;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
 }
 .page-header__phone-item:hover .page-header__phone-number,
 .page-header__phone-item:focus .page-header__phone-number {
@@ -1485,7 +1487,7 @@ picture {
   }
   .page-header__phone:hover .page-header__phone-list,
   .page-header__phone:focus .page-header__phone-list {
-    top: 45px;
+    top: 25px;
   }
   .page-header__phone-wrapper span {
     font-size: 16px;
@@ -1497,7 +1499,7 @@ picture {
     font-weight: 800;
   }
   .page-header__phone-list {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .page-header__order {
     margin-top: 6px;
@@ -1703,6 +1705,8 @@ picture {
     margin-left: 20px;
     opacity: 0;
     visibility: hidden;
+    -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
@@ -2347,6 +2351,8 @@ picture {
 }
 @media (min-width: 1620px) {
   .price {
+    /**/
+    margin-bottom: 95px;
     padding-right: 0;
   }
   .price__wrapper {
@@ -2371,7 +2377,7 @@ picture {
     line-height: 21px;
   }
 }
-.consultation {
+.consultation__form-wrapper {
   margin-bottom: 40px;
 }
 .consultation__title {
@@ -2448,25 +2454,62 @@ picture {
     position: relative;
     background-image: url('../img/home.webp');
     background-repeat: no-repeat;
-    background-position: 100% 20%;
+    background-position: right -90px bottom -30px;
     background-size: contain;
   }
   .consultation::after {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     content: '';
-    width: 349px;
-    height: 661px;
+    width: 250px;
+    height: 473px;
     background-image: url('../img/tree.webp');
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .consultation__cloud {
+    position: relative;
+    overflow: hidden;
+  }
+  .consultation__cloud::before {
+    position: absolute;
+    bottom: -220px;
+    left: -145px;
+    content: none;
+    width: 836px;
+    height: 364px;
+    background-image: url('../img/cloud-bottom.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+            transform: scale(1, -1);
+    z-index: 1;
+  }
+  .consultation__cloud::after {
+    position: absolute;
+    bottom: -220px;
+    right: -145px;
+    content: '';
+    width: 836px;
+    height: 364px;
+    background-image: url('../img/cloud-bottom.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    z-index: 1;
+  }
   .consultation__wrapper {
+    position: relative;
     padding-left: 20px;
   }
   .consultation__form-wrapper {
+    position: relative;
     width: 507px;
+    z-index: 2;
   }
   .consultation__title {
     margin-bottom: 10px;
@@ -2479,46 +2522,122 @@ picture {
     line-height: 21px;
   }
   .consultation__form-wrapper {
+    margin-bottom: 50px;
     padding: 20px;
     background-color: #ffffff;
     -webkit-box-shadow: 4px 4px 20px 0px rgba(41, 45, 41, 0.1);
             box-shadow: 4px 4px 20px 0px rgba(41, 45, 41, 0.1);
   }
 }
+@media (min-width: 960px) {
+  .consultation {
+    background-position: right -90px bottom -10px;
+  }
+  .consultation::after {
+    width: 300px;
+    height: 568px;
+  }
+  .consultation__cloud::before {
+    content: '';
+    left: 0;
+  }
+  .consultation__cloud::after {
+    bottom: -195px;
+  }
+  .consultation__form-wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .consultation::after {
+    width: 349px;
+    height: 661px;
+  }
+  .consultation__cloud::after {
+    bottom: -185px;
+    right: -100px;
+  }
+  .consultation__form-wrapper {
+    margin-bottom: 100px;
+  }
+}
 @media (min-width: 1620px) {
   .consultation {
-    padding: 20px 40px 16px 40px;
+    background-position: right -420px bottom -10px;
   }
-  .consultation__question {
-    display: block;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: left;
+  .consultation::after {
+    bottom: 50px;
+    width: 400px;
+    height: 757px;
   }
-  .consultation__desc {
-    margin-bottom: 33px;
-    font-size: 17px;
-    line-height: 23px;
-    text-align: left;
+  .consultation__cloud::after {
+    bottom: -150px;
+    right: -60px;
   }
-  .consultation__one,
-  .consultation__two {
-    width: 47%;
+  .consultation__title {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .consultation__description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .consultation__form-wrapper {
+    position: relative;
+    margin-bottom: 115px;
+    width: 547px;
+  }
+  .consultation__form-wrapper::after {
+    position: absolute;
+    bottom: 20px;
+    right: -240px;
+    content: '';
+    width: 206px;
+    height: 167px;
+    background-image: url('../img/helmet.webp');
+    background-repeat: no-repeat;
+    z-index: 1;
   }
   .consultation__item input {
     height: 50px;
     font-size: 16px;
     line-height: 19px;
   }
+  .consultation__item .form__label--file .icon-file {
+    height: 50px;
+    line-height: 40px;
+  }
+  .consultation__item .form__label--file .icon-file svg {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+  }
+  .consultation__item--file {
+    margin-bottom: 15px;
+  }
+  .consultation__item--textarea {
+    margin-bottom: 10px;
+  }
+  .consultation__item--textarea textarea {
+    height: 100px;
+    padding-top: 15px;
+  }
   .consultation__submit {
     height: 50px;
-    margin-bottom: 0;
   }
   .consultation__lock {
-    display: inline;
+    font-size: 14px;
+    line-height: 16px;
   }
   .consultation__lock svg {
     margin-right: 10px;
+  }
+}
+@media (min-width: 1700px) {
+  .consultation {
+    background-position: right -350px bottom -10px;
   }
 }
 .page {
