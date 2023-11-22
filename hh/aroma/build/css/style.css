@@ -973,12 +973,13 @@ picture {
   line-height: 19px;
   color: #ffffff;
   text-decoration: none;
+  border: 1px solid transparent;
   opacity: 0.7;
 }
 .footer-menu__item a:hover,
 .footer-menu__item a:focus {
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 @media (min-width: 768px) {
   .tooltip {
@@ -1697,7 +1698,7 @@ picture {
   .menu__dropdown {
     position: absolute;
     top: 150%;
-    min-width: 200px;
+    min-width: 310px;
     padding-top: 20px;
     margin-left: 20px;
     opacity: 0;
@@ -2370,6 +2371,146 @@ picture {
     line-height: 21px;
   }
 }
+.page {
+  padding-top: 50px;
+}
+.page__title {
+  display: inline-block;
+  position: relative;
+  padding: 5px 15px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #498837;
+  background-color: #efefef;
+}
+.page__title::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #cccccc;
+}
+@media (min-width: 960px) {
+  .page__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+/*--- DEVELOPER ---*/
+.developer {
+  margin: 0 auto;
+}
+.developer svg {
+  display: block;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.developer__text {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #dd9500;
+  border: 1px dashed #dd9500;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.developer__text-sorry {
+  display: block;
+  font-weight: 600;
+}
+.developer__gear-one,
+.developer__gear-two {
+  -webkit-animation-name: rotationGearR;
+  animation-name: rotationGearR;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 50% 55.55555556% 0;
+  -ms-transform-origin: 50% 55.55555556% 0;
+  transform-origin: 50% 55.55555556% 0;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.developer__gear-two {
+  -webkit-animation-name: rotationGearL;
+  animation-name: rotationGearL;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-transform-origin: 20% 77.77777778% 0;
+  -ms-transform-origin: 20% 77.77777778% 0;
+  transform-origin: 20% 77.77777778% 0;
+}
+@-webkit-keyframes rotationGearR {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationGearR {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotationGearL {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotationGearL {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@media (min-width: 768px) {
+  .developer__text {
+    width: 500px;
+  }
+}
+.development {
+  position: relative;
+  min-height: 250px;
+  padding-top: 50px;
+  background-image: url('../img/development-bg.webp');
+}
+.development::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-image: url('../img/ripped-paper.png');
+  background-repeat: repeat-x;
+  z-index: 1;
+}
 .page-footer {
   margin: 0;
   padding: 0;
@@ -2403,12 +2544,13 @@ picture {
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
+  border: 1px solid transparent;
   opacity: 0.7;
 }
 .page-footer__menu-item a:hover,
 .page-footer__menu-item a:focus {
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .page-footer__bottom {
   padding-left: 30px;
@@ -2582,6 +2724,9 @@ picture {
   .page-footer__menu-item a {
     font-size: 18px;
     line-height: 21px;
+  }
+  .page-footer__socials {
+    margin-bottom: 80px;
   }
   .page-footer__order {
     margin-right: 50px;
