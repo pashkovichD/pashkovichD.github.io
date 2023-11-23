@@ -165,6 +165,20 @@ picture {
   font-weight: 600;
   color: #498837;
 }
+.swiper-button-prev,
+.swiper-button-next {
+  height: auto;
+  padding: 0;
+  border: none;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  height: auto;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+}
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2714,6 +2728,7 @@ picture {
   }
 }
 .projects {
+  position: relative;
   margin-bottom: 60px;
 }
 .projects__title {
@@ -2730,13 +2745,15 @@ picture {
   color: #474344;
 }
 .projects__list {
-  padding: 16px;
+  padding: 16px 0 60px;
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 20px 0px rgba(41, 45, 41, 0.1);
           box-shadow: 4px 4px 20px 0px rgba(41, 45, 41, 0.1);
 }
 .projects__item {
-  margin-bottom: 20px;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .projects__item-title {
   margin: 0;
@@ -2817,7 +2834,6 @@ picture {
   margin-bottom: 10px;
 }
 .projects__item-images li img {
-  height: 138px;
   border-radius: 5px;
 }
 .projects__images-dots {
@@ -2852,13 +2868,16 @@ picture {
   margin-bottom: 7px;
 }
 .projects__pagination {
-  position: relative;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
 }
 .projects__pagination .prev,
 .projects__pagination .next {
   position: absolute;
-  left: -5px;
+  left: 15px;
   bottom: 0;
+  width: 18px;
   line-height: 0;
   border: none;
   background-color: transparent;
@@ -2875,7 +2894,7 @@ picture {
 }
 .projects__pagination .next {
   left: auto;
-  right: -5px;
+  right: 55px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2931,6 +2950,129 @@ picture {
 .projects__pagination-list li:hover,
 .projects__pagination-list li:focus {
   color: #498837;
+}
+@media (min-width: 480px) {
+  .projects__title span {
+    display: block;
+  }
+  .projects__list {
+    padding: 20px 0 60px;
+  }
+  .projects__item {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .projects__pagination .prev,
+  .projects__pagination .next {
+    width: 23px;
+    left: 25px;
+  }
+  .projects__pagination .next {
+    left: auto;
+    right: 65px;
+  }
+}
+@media (min-width: 768px) {
+  .projects__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .projects__description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .projects__list {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .projects__item {
+    position: relative;
+    width: 260px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cee7aa;
+  }
+  .projects__item-title {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .projects__item-area {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .projects__item-price {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .projects__item-table tr {
+    margin-bottom: 3px;
+  }
+  .projects__item-table .key {
+    top: auto;
+    bottom: -5px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .projects__item-table .value {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .projects__images-wrapper {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    width: 408px;
+    height: auto;
+    margin: 0;
+  }
+}
+@media (min-width: 960px) {
+  .projects__item {
+    position: relative;
+    width: 260px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding: 20px;
+    padding-bottom: 35px;
+    border-radius: 5px;
+    border: 1px solid #cee7aa;
+  }
+  .projects__item-title {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .projects__area-price {
+    margin-bottom: 10px;
+  }
+  .projects__item-area {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .projects__item-price {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .projects__item-table tr {
+    margin-bottom: 10px;
+  }
+  .projects__item-table .key {
+    top: auto;
+    bottom: -5px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .projects__item-table .value {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 .page {
   padding-top: 50px;
