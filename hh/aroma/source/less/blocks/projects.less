@@ -100,11 +100,7 @@
 }
 
 .projects__item-images {
-  li {
-    img {      
-      border-radius: 5px;
-    }
-  }
+  border-radius: 5px;  
 }
 
 .projects__images-dots {
@@ -112,16 +108,16 @@
   bottom: 8px;
   display: flex;
   justify-content: center;
-  width: 100%;
-  li {
+  width: 100%;  
+  span {
     width: 20px;
     height: 20px;
-    margin: 0 8px;
+    margin: 0 8px !important;
     background-color: #eff1ee;
     border-radius: 50%;
     opacity: 0.7;
     transition: @animation;
-    &.active {
+    &.swiper-pagination-bullet-active {
       background-color: #cee7aa;
     }
     &:hover,
@@ -143,6 +139,7 @@
   position: absolute;
   bottom: 15px;
   width: 100%;
+  z-index: 2;  
   .prev, .next {
     position: absolute;
     left: 15px;
@@ -152,6 +149,7 @@
     border: none;
     background-color: transparent;
     opacity: 0.6;
+    cursor: pointer;
     transition: @animation;
     z-index: 1;
     &:hover,
@@ -278,7 +276,7 @@
   }
 
   .projects__area-price {
-    // margin-bottom: 10px;
+    
   }
 
   .projects__item-area {    
@@ -309,7 +307,7 @@
   }
 
   .projects__images-dots {
-    bottom: 12px;
+    bottom: 12px !important;
   }
 
   .projects__images-wrapper {
