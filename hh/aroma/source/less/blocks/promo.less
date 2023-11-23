@@ -28,12 +28,18 @@
 }
 
 .promo__video {
+	display: flex;
+	align-items: center;
+	height: 184px;
 	position: relative;
 	margin-bottom: 25px;
 	line-height: 0;
+	border-radius: 5px;	
+	background-color: #383838;
+	overflow: hidden;
+	z-index: 1;
 	video {
 		width: 100%;
-		border-radius: 5px;	
 	}
 	&:hover,
 	&:focus {		
@@ -53,8 +59,9 @@
 	line-height: 0;
 	background-color: transparent;
 	border: none;
-	opacity: 0.8;
+	opacity: 0.6;
 	transition: @animation;
+	z-index: 100;	
 	img {
 		width: 40px;
 		height: 40px;
@@ -65,8 +72,12 @@
 	}
 }
 
+.promo__play--hide {
+	display: none;	
+}
+
 .promo__video-desc {
-	position: absolute;	
+	position: absolute;
 	bottom: 15px;
 	font-size: 14px;
 	line-height: 16px;
@@ -76,6 +87,9 @@
 	text-align: center;
 	text-transform: uppercase;
 	transform: rotate(-5deg);
+	transition: @animation;
+	opacity: 1;
+	visibility: visible;
 	p {
 		position: relative;		
 		padding: 5px 15px;
@@ -102,6 +116,12 @@
 	}
 }
 
+.promo__video-desc--hide {
+	bottom: 0;	
+	opacity: 0;
+	visibility: hidden;
+}
+
 .promo__section {
 	margin-bottom: 16px;
 	background-color: rgba(255,255,255,.8);
@@ -124,6 +144,10 @@
 		line-height: 18px;		
 	}
 
+	.promo__video {
+		height: 276px;
+	}
+
 	.promo__video-desc {	
 		bottom: 25px;
 		font-size: 18px;
@@ -132,6 +156,10 @@
 		p {			
 			padding: 7px 25px;		
 		}
+	}
+
+	.promo__video-desc--hide {
+		bottom: 0;
 	}
 }
 
@@ -150,6 +178,10 @@
 		font-size: 16px;
 		line-height: 21px;
 
+	}
+
+	.promo__video {
+		height: 466px;
 	}
 
 	.promo__play {	
@@ -180,6 +212,10 @@
 		.second {
 			
 		}
+	}
+
+	.promo__video-desc--hide {
+		bottom: 0;
 	}
 }
 
@@ -224,19 +260,24 @@
 	}
 
 	.promo__video {
+		height: 296px;
 		margin-bottom: 0;
-		padding-bottom: 30px;
+		margin-bottom: 30px;
 		width: 460px;
 		order: 2;
 	}
 
 	.promo__video-desc {
-		bottom: 55px;
+		bottom: 25px;
 		font-size: 18px;
 		line-height: 21px;
 		.first {
 			margin-left: 35px;
 		}
+	}
+
+	.promo__video-desc--hide {
+		bottom: 0;
 	}
 
 	.promo__tabs {
@@ -270,13 +311,18 @@
 
 	.promo__video {
 		width: 550px;
-		padding-bottom: 0;		
+		height: 362px;
+		margin-bottom: 0;		
 	}
 
 	.promo__video-desc {
 		bottom: 35px;
 		font-size: 24px;
 		line-height: 32px;
+	}
+
+	.promo__video-desc--hide {
+		bottom: 0;
 	}
 
 	.promo__tabs {
@@ -327,6 +373,7 @@
 		top: 40px;
 		right: 0;
 		width: 705px;
+		height: 464px;
 	}
 
 	.promo__video-desc {
@@ -346,6 +393,10 @@
 				transform: skewX(-16deg);
 			}
 		}
+	}
+
+	.promo__video-desc--hide {
+		bottom: 0;
 	}
 
 	.promo__tabs {
