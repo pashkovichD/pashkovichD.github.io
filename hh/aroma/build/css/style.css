@@ -2364,6 +2364,9 @@ picture {
   }
 }
 @media (min-width: 768px) {
+  .price {
+    margin-bottom: 60px;
+  }
   .price__title {
     margin-bottom: 20px;
     font-size: 32px;
@@ -2989,10 +2992,11 @@ picture {
             box-shadow: none;
   }
   .projects__item {
+    margin: 0;
+  }
+  .projects__item-wrapper {
     position: relative;
     width: 260px;
-    margin: 0;
-    margin-bottom: 20px;
     margin-left: auto;
     padding: 10px;
     border-radius: 5px;
@@ -3026,10 +3030,13 @@ picture {
   .projects__images-wrapper {
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 279px;
     width: 408px;
     height: auto;
     margin: 0;
+  }
+  .projects__pagination {
+    bottom: -40px;
   }
 }
 @media (min-width: 960px) {
