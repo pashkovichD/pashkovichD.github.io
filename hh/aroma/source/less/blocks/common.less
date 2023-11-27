@@ -9,6 +9,7 @@ body {
 	font-weight: 400;  
 	color: @color;
 	background-color: @bg-color;
+	overflow-x: hidden;
 }
 :focus {
   outline: none;
@@ -90,4 +91,90 @@ picture {
 .green {
 	font-weight: 600;
 	color: @green;
+}
+
+.h2-style {
+	display: inline-block;
+	position: relative;	
+	width: auto;
+	margin: 0 30px 40px;
+	padding: 5px 10px;
+	font-size: 22px;
+	line-height: 26px;
+	// font-size: 30px;
+	// line-height: 30px;
+	color: #339c1c;	
+	background-color: #f2f2f2;
+	letter-spacing: .5px;
+	&:hover {
+		&:before {
+			top: -15px;
+			left: -15px;
+			// top: -20px;
+			// left: -30px;
+		}
+		&:after {
+			bottom: -15px;
+			right: -15px;
+			// bottom: -20px;
+			// right: -30px;
+		}
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		// top: -15px;
+		// left: -25px;
+		width: 30px;
+		height: 20px;
+		border-top: 2px solid #fddf31;
+		border-left: 2px solid #fddf31;
+		transition: @animation;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -10px;
+		right: -10px;
+		// bottom: -15px;
+		// right: -25px;
+		width: 30px;
+		height: 20px;
+		border-bottom: 2px solid #fddf31;
+		border-right: 2px solid #fddf31;
+		transition: @animation;
+	} 
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.h2-style {		
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.h2-style {		
+		margin: 0 20px 40px;
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+	.h2-style {		
+		font-size: 30px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
 }

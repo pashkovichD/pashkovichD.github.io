@@ -53,12 +53,15 @@
 				<div class="page-header__phone-wrapper">
 					<a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a>
 					<span>Прораб <span>онлайн.</span> Звоните!</span>
+
+					<ul class="page-header__phone-list">
+						<li class="page-header__phone-item"><a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a></li>
+						<li class="page-header__phone-item"><a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a></li>
+						<li class="page-header__phone-item"><a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a></li>
+					</ul>
+
 				</div>
-				<ul class="page-header__phone-list">
-					<li class="page-header__phone-item"><a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a></li>
-					<li class="page-header__phone-item"><a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a></li>
-					<li class="page-header__phone-item"><a class="page-header__phone-number" href="tel:+79151685550" aria-label="+7 (915) 168-55-50">+7 (915) 168-55-50</a></li>
-				</ul>
+				
 			</div>
 			<button class="page-header__order button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
 			<div class="page-header__country">
@@ -109,19 +112,27 @@
 
 	<main class="page-main">
 
-		<section class="page container">
-			<h2 class="page__title">О нас</h2>
-		</section>	
-
-		<section class="development">
-			<h2 class="visually-hidden">Страница находится в разработке</h2>
-			<div class="developer container">
-				<svg fill="#dd9500" width="73" height="65">
-					<use xlink:href="#icon-developer"></use>
-				</svg>
-				<p class="developer__text"><span class="developer__text-sorry">Извините!</span> Страница находится в разработке!</p>
+		<section class="about-us container">
+			<h2 class="about-us__title h2-style">О нас</h2>
+			<div class="about-us__description-wrapper">
+				<picture>
+					<img src="img/pages/about-us/home.webp" srcset="img/pages/about-us/home@2x.webp 2x" alt="Aroma Story Group – строительная компания полного цикла" width="540" height="375">
+				</picture>
+				<div class="about-us__description">
+					<p><strong>Aroma Story Group</strong> – строительная компания полного цикла. <u>Наша цель:</u> взять все хлопоты и ответственность на себя, избавив вас от стресса, и построить в срок готовый дом вашей мечты. Мы производим деревянные дома для круглогодичного проживания из бревна, бруса и клееного бруса, а также изготавливаем каркасные постройки.</p>
+					<p>Преимущество <strong>Aroma Story Group</strong> – это собственное деревообрабатывающее производство. Полностью экологичные материалы мы производим и добываем сами, поэтому уверены в их качестве и надежности на 100%.Мы производим деревянные дома по выверенной технологии на импортном оборудовании: <i>итальянском, немецком и российском.</i></p>
+					<p>При монтаже техники или введении новых методов сборки привлекаются компетентные консультанты от производителей оборудования. Лес для строительства домов пилится в Гомельской области: <i>в самом лесистом регионе нашей страны.</i> Там же находится и наше деревообрабатывающее производство, откуда мы доставляем готовый товар по всему миру.</p>
+				</div>
 			</div>
 		</section>
+
+		<section class="range-services container">
+			<!-- <h2 class="range-services__title">Оказываем широкий спектр услуг</h2>
+			<ul class="range-services__list">
+				<li class="range-services__item"></li>
+			</ul> -->
+		</section>
+		
 			
 	</main>
 
@@ -221,7 +232,27 @@
 		<p class="page-footer__developer container"><a href="https://alfa-digital.agency/" rel="noopener nofollow" target="_blank">Alfa Digital Agency</a> – разработка высоко конверсионных сайтов</p>
 	</footer>
 
+	<section class="modal-order modal">
+		<h2 class="visually-hidden">Заказать звонок консультанта</h2>
+		<p class="modal-order__description">Консультант перезвонит Вам в ближайшее время</p>
+		<form id="order-form" class="form form--nojs" action="/" method="POST">
+			<p class="form__item">
+				<input class="form__input" type="text" name="order__name" id="order__name" value="" placeholder="Ваше имя">
+				<label class="visually-hidden" for="order__name">Ваше имя</label>
+			</p>
+			<p class="form__item">
+				<label class="form__label" for="order__phone">Номер телефона</label>
+				<input class="form__input" type="tel" name="order__phone" id="order__phone" value="" placeholder="+7 (___) ___-__-__">
+			</p>
+			<input type="submit" class="form__submit button" value="Войти">
+		</form>	
+		<button type="button" class="modal-order__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
+	</section>	
+	<div class="overlay"></div>	
+
+	<script async="" src="js/common.min.js"></script>
 	<script async="" src="js/hamburger.min.js"></script>
-	
+	<script src="js/popup.min.js"></script>
+
 </body>
 </html>
