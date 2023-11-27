@@ -3544,13 +3544,11 @@ picture {
     position: relative;
     top: 5px;
     width: 350px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
     float: right;
   }
   .about-us__description p {
-    font-size: 16px;
-    line-height: 22px;
     text-align: justify;
   }
 }
@@ -3565,14 +3563,13 @@ picture {
   }
   .about-us__description-wrapper picture {
     width: 430px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+  }
+  .about-us__description p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 @media (min-width: 1200px) {
-  .about-us__description-wrapper {
-    min-height: 530px;
-  }
   .about-us__description-wrapper picture {
     width: 540px;
   }
