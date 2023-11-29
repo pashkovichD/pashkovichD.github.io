@@ -1,29 +1,35 @@
 .page {
-	padding-top: 50px;	
+	padding-top: 15px;
+}
+
+.page__wrapper {
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: none;
+		width: 945px;
+		height: 776px;
+		background-image: url('../img/pages/about-us/home-bg.webp');
+		background-repeat: no-repeat;
+		background-size: 75%;
+		opacity: 0.16;
+		z-index: -1;
+	}	
 }
 
 .page__title {
-	display: inline-block;
-	position: relative;
-	padding: 5px 15px;
-	font-size: 22px;
-	line-height: 26px;
-	font-weight: 700;
-	color: @green;
-	background-color: #efefef;	
-	&::after {
-		content: '';
-		position: absolute;
-		width: 4px;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		background-color: #cccccc;
-	}
+
 }
 
 @media (min-width: @mobile-width) {
-	
+	.page__wrapper {
+		&:before {
+			content: '';
+			top: 20px;
+		}
+	}
 }
 
 @media (min-width: 600px) {
@@ -31,20 +37,38 @@
 }
 
 @media (min-width: @tablet-width) {
-	
+	.page__wrapper {
+		padding-top: 20px;
+		&:before {	
+			top: 50px;
+			left: -250px;
+		}
+	}
 }
 
 @media (min-width: @desktop-width) {
+	.page__wrapper {
+		padding-top: 50px;
+		&:before {
+			top: 40px;
+			left: -280px;
+			background-size: 100%;
+		}
+	}
+
 	.page__title {
-		font-size: 26px;
-		line-height: 32px;
+		
 	}
 }
 
 @media (min-width: @desktop-1200-width) {
-
+	.page__title {
+		margin-bottom: 60px;	
+	}
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	.page__wrapper {
+		padding-top: 75px;
+	}	
 }

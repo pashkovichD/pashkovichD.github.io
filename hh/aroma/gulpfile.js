@@ -90,7 +90,9 @@ gulp.task("webp", function() {
 gulp.task("copy", function() {
 	return gulp.src([
 			"source/fonts/**/*.{woff,woff2}",
-			"source/img/**"			
+			"source/img/**",
+			"source/video/**",
+			"source/favicon.ico"
 		], {
 			base: "source" // указываем для того, чтобы Gulp не "терял" нужные нам папки (fonts/, img, js/)
 		})
