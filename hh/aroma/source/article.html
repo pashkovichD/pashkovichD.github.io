@@ -109,19 +109,83 @@
 	<main class="page-main page">
 		<div class="page__wrapper container">
 			<p class="page__title h2-style">Строительство деревянного дома: наш опыт</p>
+
+			<div class="article__wrapper">
 		
-			<section class="article">
-				<h2 class="visually-hidden">Строительство деревянного дома: наш опыт</h2>
-				<p class="article__intro">Современный рынок уже перенасыщен количеством строительных фирм, предлагающих услуги по возведению домов, ремонту, проектированию и монтажу. А разнообразие лишь отпугивает клиентов, поэтому выбор строительной компании требует особого внимания и серьезного отношения.</p>
-				<div class="about-us__description-wrapper">
-					<picture>
-						<img src="img/pages/about-us/home.webp" srcset="img/pages/about-us/home@2x.webp 2x" alt="Aroma Story Group – строительная компания полного цикла" width="540" height="375">
-					</picture>
-					<div class="about-us__description">
-						<p>О желании иметь комфортное, постоянное место отдыха для всей семьи в летний период я могу говорить достаточно долго. Дом – большой и красивый, лужайка, красивое и удобное пространство, обрамлённое кустами гортензии,  пионами и фиалками. Детская площадка, как маленький домик с прилегающей территорией, баня и площадка – зона летнего гриль-приготовления. В общем, планов много, учитывая, что в наличии полузаброшенный участок в 4 сотки с полным отсутствием лужайки. Решили начать с дома.</p>
+				<section class="article">
+					<h2 class="visually-hidden">Строительство деревянного дома: наш опыт</h2>
+					<p class="article__intro">Современный рынок уже перенасыщен количеством строительных фирм, предлагающих услуги по возведению домов, ремонту, проектированию и монтажу. А разнообразие лишь отпугивает клиентов, поэтому выбор строительной компании требует особого внимания и серьезного отношения.</p>
+					<div class="article__description-wrapper">
+						<!-- <picture>
+							<img src="img/pages/about-us/home.webp" srcset="img/pages/about-us/home@2x.webp 2x" alt="Aroma Story Group – строительная компания полного цикла" width="540" height="375">
+						</picture> -->
+						<!-- <div class="article__description">
+							<p class="article__text">О желании иметь комфортное, постоянное место отдыха для всей семьи в летний период я могу говорить достаточно долго. Дом – большой и красивый, лужайка, красивое и удобное пространство, обрамлённое кустами гортензии,  пионами и фиалками. Детская площадка, как маленький домик с прилегающей территорией, баня и площадка – зона летнего гриль-приготовления. В общем, планов много, учитывая, что в наличии полузаброшенный участок в 4 сотки с полным отсутствием лужайки. Решили начать с дома.</p>
+						</div> -->
 					</div>
-				</div>				
-			</section>		
+				</section>
+
+				<sidebar class="article__sidebar sidebar">
+					<h2 class="visually-hidden">Дополнительная информация статьи</h2>				
+					<section class="article__links links">
+						<h3 class="links__title"><svg fill="#498837" width="30" height="30"><use xlink:href="#icon-articles"></use></svg>Интересные статьи</h3>
+						<ul class="links__list">
+							<li class="links__item"><a href="#">Строительство деревянного дома: наш опыт</a></li>
+							<li class="links__item"><a href="#">В чем заключается услуга строительства «под ключ»</a></li>
+							<li class="links__item"><a href="#">Строить дом с нуля или купить готовый</a></li>
+							<li class="links__item"><a href="#">Выбор земельного участка</a></li>
+							<li class="links__item"><a href="#">Купил участок. Что делать дальше?</a></li>
+						</ul>
+					</section>					
+
+					<section class="article__sidebar-request request">
+						<h3 class="visually-hidden">Отправить заявку</h3>
+						<div class="request__manager">
+							<picture>
+								<img src="img/manager.webp" srcset="img/manager@2x.webp 2x" alt="Ксения Рыбакова" width="120" height="120">
+							</picture>
+							<div class="request__manager-wrapper">
+								<p class="request__manager-title">Ксения Рыбакова</p>
+								<p class="request__manager-post">Старший менеджер по оказанию строительных услуг</p>
+							</div>
+						</div>
+						<p class="request__description">Не хотите отвечать на вопросы, оставьте заявку, и я проконсультирую вас по всем вопросам.</p>
+						<form method="POST" action="https://echo.htmlacademy.ru/" class="request__form form">
+							<p class="request__item form__item">
+								<label class="form__label visually-hidden" for="request__name">Ваше имя</label>
+								<input class="form__input" type="text" name="request__name" id="request__name"  value=""
+								placeholder="Ваше имя">
+							</p>
+							<p class="request__item form__item">
+								<label class="form__label visually-hidden" for="request__phone">Номер телефона</label>
+								<input class="form__input" type="tel" name="request__phone" id="request__phone" value="" placeholder="Номер телефона">
+							</p>
+							<p class="request__item form__item">
+								<label class="form__label visually-hidden" for="request__time">Удобное время звонка (необязательно)</label>
+								<input class="form__input" type="time" name="request__time" id="request__time" value="">
+							</p>
+							<div class="request__checkboxs">
+								<label class="request__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="telegram" value="yes">
+									<span class="form__checkbox-text"><svg fill="none" width="17" height="14"><use xlink:href="#icon-telegram"></use></svg><span>Telegram</span></span>
+								</label>
+								<label class="request__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="viber" value="yes">
+									<span class="form__checkbox-text form__checkbox-text--viber"><svg fill="none" width="19" height="20"><use xlink:href="#icon-viber"></use></svg><span>Viber</span></span>
+								</label>
+								<label class="request__checkbox form__checkbox-item">
+									<input type="checkbox" class="visually-hidden" name="whatsapp" value="yes">
+									<span class="form__checkbox-text form__checkbox-text--whatsapp"><svg fill="none" width="19" height="19"><use xlink:href="#icon-whatsapp"></use></svg><span>WhatsApp</span></span>
+								</label>
+							</div>
+							<input type="submit" class="request__submit button form__submit" aria-label="Отправить" value="Отправить">
+							<p class="request__lock"><svg width="10" height="12"><use xlink:href="#icon-lock"></use></svg><span>Ваши данные не будут переданы третьим лицам</span></p>
+						</form>
+					</section>
+
+				</sidebar>
+
+			</div>
 
 		</div>		
 			
