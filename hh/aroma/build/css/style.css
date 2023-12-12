@@ -242,13 +242,20 @@ picture {
 }
 .fancybox__wrapper {
   padding: 0 10px !important;
+  -webkit-transition: none;
+  transition: none;
 }
 .fancybox__container {
   background-color: rgba(24, 24, 27, 0.5);
 }
 .fancybox__caption {
+  width: auto !important;
   margin-top: 5px;
-  padding: 5px 10px;
+  margin: 5px 20px;
+  padding: 5px 10px !important;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
@@ -262,6 +269,10 @@ picture {
 @media (min-width: 960px) {
   .h2-style {
     margin: 0 20px 40px;
+  }
+  .fancybox__caption {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 @media (min-width: 1200px) {
@@ -2013,7 +2024,7 @@ picture {
 }
 @media (min-width: 960px) {
   .menu {
-    width: 85%;
+    width: 70%;
   }
   .menu__list {
     display: -webkit-box;
@@ -4021,6 +4032,7 @@ picture {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid transparent;
+  border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.25s ease-out;
@@ -4249,7 +4261,7 @@ picture {
 .article__intro {
   margin-bottom: 10px;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
   text-align: justify;
   color: #1e4b11;
@@ -4261,8 +4273,8 @@ picture {
 .article__block {
   margin-bottom: 40px;
   padding: 0 10px;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 25px;
   font-weight: 300;
 }
 .article__block--start {
@@ -4275,6 +4287,7 @@ picture {
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
+  line-height: 32px;
 }
 .article__block-images {
   position: relative;
@@ -4283,6 +4296,15 @@ picture {
 }
 .article__block-images a {
   position: relative;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+.article__block-images a:last-child {
+  margin-bottom: 0;
+}
+.article__block-images a img {
+  border-radius: 5px;
 }
 .article__text {
   margin: 0;
@@ -4291,9 +4313,82 @@ picture {
 .article__text:last-child {
   margin-bottom: 0;
 }
+.article__ol-list {
+  counter-reset: title;
+  /* Инициируем счетчик */
+  margin-bottom: 20px;
+}
+.article__ol-item {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 0 5px;
+  font-size: 15px;
+}
+.article__ol-item:last-child {
+  margin-bottom: 0;
+}
+.article__ol-item b {
+  display: block;
+  margin: 0 -5px;
+  margin-bottom: 5px;
+  padding: 3px 7px;
+  background-color: #eeeeee;
+  border-left: 1px solid #498837;
+}
+.article__ol-item:before {
+  position: absolute;
+  top: 1px;
+  left: -40px;
+  counter-increment: title;
+  /* Указываем идентификатор счетчика */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23px;
+  height: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #498837;
+  background-color: #e4ede2;
+  border: 2px solid #498837;
+  border-radius: 50%;
+}
+@media (min-width: 480px) {
+  .article__ol-list {
+    margin-left: 20px;
+    padding-left: 30px;
+  }
+  .article__ol-item b {
+    font-size: 16px;
+  }
+  .article__ol-item:before {
+    content: counter(title);
+    /* Выводим текст перед содержимым тега <h2> */
+  }
+}
 @media (min-width: 768px) {
   .article__intro {
     line-height: 24px;
+  }
+  .article__block-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+  }
+  .article__block-images a {
+    width: 49%;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .article__block-images a:last-child {
+    margin-right: 0;
   }
   .article__sidebar-request {
     display: block;
@@ -4310,6 +4405,13 @@ picture {
 @media (min-width: 960px) {
   .article__intro {
     font-size: 16px;
+  }
+  .article__block {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .article__block-images a {
+    width: 400px;
   }
   .article__sidebar-request {
     width: 450px;

@@ -1,6 +1,5 @@
 body {
-	min-width: 320px;
-	// min-height: 3000px;
+	min-width: 320px;	
 	margin: 0 auto;
 	padding: 0;
 	font-family: @ff;
@@ -48,33 +47,6 @@ div, p, a {
 	box-sizing: border-box;
 	transition: all 0.3s ease-out;
 }
-
-// h1 {
-// 	margin: 0;
-// 	padding: 0;
-// 	font-size: 30px;
-// 	line-height: 40px;
-// 	font-weight: 700;
-// 	text-align: center;
-// }
-
-// h2 {
-// 	margin: 0;
-// 	margin-bottom: 20px;
-// 	padding: 0;	
-// 	font-size: 24px;
-// 	line-height: normal;
-// 	font-weight: 700;
-// 	text-align: center;
-// 	color: #000000;
-// 	box-sizing: border-box;
-// }
-
-// h3 {
-// 	margin: 0;
-// 	padding: 0;
-// 	box-sizing: border-box;
-// }
 
 ul {
 	margin: 0;
@@ -143,6 +115,7 @@ picture {
 .fancybox__wrapper {
 	// top:0 !important;
 	padding: 0 10px !important;
+	transition: none;
 }
 
 .fancybox__container {
@@ -150,24 +123,17 @@ picture {
 }
 
 .fancybox__caption {
+	width: auto !important;
 	margin-top: 5px;
-	padding: 5px 10px;
+	margin: 5px 20px;
+	padding: 5px 10px !important;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;	
 	background-color: rgba(255,255,255,.2);
 	border: 1px solid rgba(255,255,255,.1);
 	border-radius: 5px;
 }
-
-
-// body{overflow:visible !important;}
-// .fancybox-lock .fancybox-overlay{overflow-y: hidden !important;}
-
-// body.compensate-for-scrollbar {
-// overflow: auto;  // в css файле fancybox меняем на auto
-// }
-
-// .fancybox-lock {
-// 	overflow: auto;
-// }
 
 
 @media (min-width: @mobile-width) {
@@ -188,6 +154,11 @@ picture {
 @media (min-width: @desktop-width) {
 	.h2-style {		
 		margin: 0 20px 40px;
+	}
+
+	.fancybox__caption {
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
