@@ -506,10 +506,33 @@ picture {
           transform: rotate(-90deg);
 }
 .page-header__phone-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
 }
 .page-header__cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   margin-left: 30px;
+}
+.page-header__cart::after {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ff3e41;
 }
 .page-header__toggle-nav {
   margin-left: 30px;
