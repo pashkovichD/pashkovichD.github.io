@@ -1,0 +1,81 @@
+
+/* Аккордеон */
+.accordeon {
+	/*margin: 10px;*/
+}
+
+.accordeon-title {	
+	margin: 2px 0 0 0;
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+	background: #dcdcdc;
+	color:#000000;
+	border: 1px solid #aaaaaa;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 600;
+	transition: all .3s	ease;	
+}
+
+.accordeon-title:hover {	
+	background-color: #bbbbbb;
+	border: 1px solid #aaaaaa;
+}
+
+.accordeon-content {
+	display: none;
+	padding: 15px 10px 10px 10px;
+	margin: 0;	
+	background: #ecf0f1;
+	border-left: 1px solid #d7e0e2;
+	border-right: 1px solid #d7e0e2;
+	border-bottom: 1px solid #d7e0e2;
+}
+
+.accordeon-content:last-child {	
+/*	border-bottom: 1px solid #d7e0e2;*/
+}
+
+.accordeon-content p {
+	margin: 0 0 5px 0;
+	padding: 5px 10px;
+	font-family: 'Open Sans';
+	font-size: 15px;
+}
+
+.accordeon-content .sub_p {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.accordeon-important .accordeon-title {
+	background: #FFD67C;
+	border: 1px solid #DD9500;	
+}
+
+.accordeon-important .accordeon-title:hover {	
+	background-color: #FFC751;
+	border: 1px solid #D28E00;
+}
+
+.accordeon-important .accordeon-content {
+	border-left: 1px solid #DD9500;
+	border-right: 1px solid #DD9500;
+}
+
+.accordeon-important .accordeon-content:last-child {	
+	border-bottom: 1px solid #DD9500;
+}
+
+.accordeon-content .description {
+	background-color: #ffffff;
+	border: 1px solid #e0e9eb;
+}
+
+.accordeon-content .comment {
+	font-size: 14px;
+	color: red;
+	border-top: 1px dashed #cccccc;
+}

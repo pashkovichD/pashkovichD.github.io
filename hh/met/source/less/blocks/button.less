@@ -1,0 +1,67 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	padding: 10px 30px;
+	font-family: @ff;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 600;
+	color: #ffffff;
+	text-decoration: none;
+	background: linear-gradient(91.24deg, #9ECB5D 0.36%, #498837 103.9%);
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: @animation;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+	// transition: all .2s ease;
+	&:hover,
+	&:focus {
+		background: linear-gradient(91.24deg, #86B73C 0.36%, #498837 103.9%);
+		// box-shadow : 0 0 14px rgba(0,0,0,.2);
+	}
+	&:active {
+		// transform: scale(.98);
+	}
+}
+
+.button--light {
+	color: @color;
+	background: #eff1ee;
+	&:hover,
+	&:focus {
+		background: #dddddd;
+	}
+}
+
+.button--green-border {
+	height: 40px;
+	font-size: 16px;
+	line-height: 19px;
+	color: @color;
+	background: #e4f2d0;
+	border: 1px solid #9ecb5d;	
+	&:hover,
+	&:focus {
+		background: #c9dfa9;
+	}
+}
+
+.button--white-border {
+	height: 40px;
+	font-size: 16px;
+	line-height: 19px;
+	color: @green;
+	background: #ffffff;
+	border: 1px solid @green;
+	&:hover,
+	&:focus {
+		color: @color;
+		border: 1px solid #cccccc;
+		background: #efefef;
+	}
+}
+
+

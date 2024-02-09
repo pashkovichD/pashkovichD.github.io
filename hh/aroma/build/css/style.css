@@ -2024,7 +2024,7 @@ picture {
 }
 @media (min-width: 960px) {
   .menu {
-    width: 70%;
+    width: 85%;
   }
   .menu__list {
     display: -webkit-box;
@@ -2095,6 +2095,11 @@ picture {
   .menu__dropdown li a:hover::before,
   .menu__dropdown li a:focus::before {
     content: none;
+  }
+}
+@media (min-width: 1620px) {
+  .menu {
+    width: 70%;
   }
 }
 .promo {
@@ -3141,7 +3146,7 @@ picture {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 2px dotted #777777;
+  border-bottom: 1px dashed #bbbbbb;
 }
 .projects__item-table .key {
   position: relative;
@@ -4313,6 +4318,26 @@ picture {
 .article__text:last-child {
   margin-bottom: 0;
 }
+.article__text--style {
+  position: relative;
+  margin: 30px 0;
+  padding: 7px 15px;
+  color: #000000;
+  border-top: 1px solid #ffcc00;
+  border-left: 1px solid #ffcc00;
+  background-color: #f5f5f5;
+}
+.article__text--style::after {
+  position: absolute;
+  top: -13px;
+  left: -12px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #ffcc00;
+  border-radius: 7px;
+  border: 5px solid #ffffff;
+}
 .article__ol-list {
   counter-reset: title;
   /* Инициируем счетчик */
@@ -4359,7 +4384,35 @@ picture {
   border: 2px solid #498837;
   border-radius: 50%;
 }
+.article__list {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.article__item {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: dartken(#498837, 10%);
+}
+.article__item::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #383434;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 @media (min-width: 480px) {
+  .article__text--style {
+    margin: 40px 60px 40px 40px;
+  }
   .article__ol-list {
     margin-left: 20px;
     padding-left: 30px;
@@ -4370,6 +4423,9 @@ picture {
   .article__ol-item:before {
     content: counter(title);
     /* Выводим текст перед содержимым тега <h2> */
+  }
+  .article__list {
+    padding-left: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -4401,6 +4457,10 @@ picture {
   .article__sidebar-request picture {
     margin-right: 20px;
   }
+  .article__list {
+    width: 80%;
+    padding-left: 50px;
+  }
 }
 @media (min-width: 960px) {
   .article__intro {
@@ -4418,6 +4478,14 @@ picture {
   }
   .article__sidebar-request picture {
     margin-right: 30px;
+  }
+  .article__text--style {
+    margin: 50px 100px 50px 50px;
+    font-size: 15px;
+  }
+  .article__item {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
 @media (min-width: 1200px) {

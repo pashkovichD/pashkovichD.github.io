@@ -1,0 +1,203 @@
+html {
+	// width:100vw;
+	// scrollbar-width: none; // скрыть скролл для Firefox
+}
+
+body {
+	min-width: 320px;	
+	min-height: 2000px;
+	margin: 0 auto;
+	padding: 0;
+	font-family: @ff;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 500;  
+	// color: @color;
+	background-color: @main-dark;
+	// overflow-x: hidden;		
+}
+:focus {
+  outline: none;
+  // -webkit-box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
+  //         box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
+}
+
+
+/* Стилизация scroll'а */
+/* Работает в Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: @gray-font rgba(255,255,255,.2);
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {  
+  width: 5px;  
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(255,255,255,.02);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: @gray-font;
+  border-radius: 4px;
+  // border: 1px solid white;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	      clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p, ul {	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div, p, a {
+	box-sizing: border-box;
+	transition: all 0.3s ease-out;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+picture {
+	display: block;
+	line-height: 0;
+}
+
+// .green {
+// 	font-weight: 600;
+// 	color: @green;
+// }
+
+.h2-style {
+	display: inline-block;
+	position: relative;	
+	width: auto;
+	margin: 0 30px 40px;
+	padding: 5px 10px;
+	// font-family: @ff-m;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #1c550c;	
+	background-color: #f2f2f2;
+	letter-spacing: .5px;
+	&:hover {
+		&:before {
+			top: -15px;
+			left: -15px;
+		}
+		&:after {
+			bottom: -15px;
+			right: -15px;
+		}
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		width: 30px;
+		height: 20px;
+		border-top: 2px solid #fddf31;
+		border-left: 2px solid #fddf31;
+		transition: @animation;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -10px;
+		right: -10px;
+		width: 30px;
+		height: 20px;
+		border-bottom: 2px solid #fddf31;
+		border-right: 2px solid #fddf31;
+		transition: @animation;
+	} 
+}
+
+.fancybox__wrapper {
+	// top:0 !important;
+	padding: 0 10px !important;
+	transition: none;
+}
+
+.fancybox__container {
+	background-color: rgba(24, 24, 27, 0.5);
+}
+
+.fancybox__caption {
+	width: auto !important;
+	margin-top: 5px;
+	margin: 5px 20px;
+	padding: 5px 10px !important;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;	
+	background-color: rgba(255,255,255,.2);
+	border: 1px solid rgba(255,255,255,.1);
+	border-radius: 5px;
+}
+
+
+/*@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.h2-style {		
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.h2-style {		
+		margin: 0 20px 40px;
+	}
+
+	.fancybox__caption {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+	.h2-style {		
+		font-size: 30px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}*/

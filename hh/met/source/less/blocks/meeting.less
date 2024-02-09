@@ -1,0 +1,142 @@
+.meeting {
+  padding: 16px;
+  padding-top: 9px;
+}
+
+.meeting__question {
+  display: none;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 24px;  
+  font-weight: 600;
+  text-align: center;
+  color: @green;
+}
+
+.meeting__desc {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: @gray;
+}
+
+.meeting__submit {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.meeting__lock {
+  font-size: 10px;
+  line-height: 12px;
+  color: @gray;
+  svg {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .meeting__submit {  
+    margin-bottom: 7px;
+  }
+
+  .meeting__lock {
+    font-size: 12px;
+    line-height: 14px;
+    svg {
+      top: 1px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  
+}
+
+@media (min-width: @tablet-width) {
+  .meeting__question {
+    display: block;
+  }
+
+  .meeting__desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;    
+  }
+
+  .meeting__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .meeting__one,
+  .meeting__two {
+    width: 48%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .meeting {
+    padding-bottom: 0;
+  }
+
+  .meeting__question {
+    display: none;
+  }
+
+  .meeting__lock {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-1200-width) {
+
+}
+
+@media (min-width: @desktop-full-width) {
+  .meeting {
+    padding: 20px 40px 16px 40px;
+  }
+
+  .meeting__question {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .meeting__desc {
+    margin-bottom: 33px;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  .meeting__one,
+  .meeting__two {
+    width: 47%;
+  }
+
+  .meeting__item {
+    input {
+      height: 50px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .meeting__submit {
+    height: 50px;
+    margin-bottom: 0;
+  }
+
+  .meeting__lock {
+    display: inline;
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

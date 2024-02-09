@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <style>
+      body {
+        padding: 100px;
+      }
+
+      .burger {
+        margin-left: 500px;
+      }      
+    </style>
+
+    <div class="burger">
+      <div class="item top"></div>
+      <div class="item middle"></div>
+      <div class="item bottom"></div>
+    </div>
+
+    <script>
+      var btn = document.querySelector('.burger');
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        this.classList.toggle('open');
+        /*if(this.classList.contains('open')) {
+          this.classList.remove('open');
+        } else {
+          this.classList.add('open');
+        }*/
+      });
+    </script>
+    
+  </body>
+</html>
+
+
+
+
+
+
