@@ -117,6 +117,148 @@
 	margin-left: 30px;
 }
 
+.page-header__data-container {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	right: 0;
+	padding: 32px 16px;
+	background-color: @main-dark;	
+    opacity: 0;    
+    visibility: hidden;
+    transition: all .2s ease-out;
+    z-index: 10;
+}
+
+.page-header__data-container--show {
+	top: 56px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.page-header__operation {
+	margin-bottom: 18px;
+	border-bottom: 1px solid #292b32;
+}
+
+.page-header__search {
+	margin-bottom: 28px;
+}
+
+.page-header__ul-container {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 38px;	
+}
+
+.page-header__user,
+.page-header__lang {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 300;
+	color: @menu-font;
+	letter-spacing: .2px;
+	transition: @animation;
+	svg {
+		position: relative;
+		top: 5px;
+		left: 5px;
+		margin-right: 20px;
+		transition: @animation;
+	}
+	&:hover,
+	&:focus {
+		color: @red;
+		svg {
+			fill: @red;
+		}
+	}
+}
+
+.page-header__lang {
+	line-height: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.page-header__nav {
+	margin-bottom: 32px;
+	padding -bottom: 20px;
+	border-bottom: 1px solid #292b32;
+}
+
+.page-header__phone-wrapper {
+	margin-bottom: 25px;
+	svg {
+		display: none;
+	}
+}
+
+.page-header__phone-number {
+	text-decoration: none;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 700;
+	color: @white;
+	letter-spacing: 1px;
+	&:hover,
+	&:focus {
+		color: @red;
+	}
+}
+
+.page-header__socials {
+	display: flex;
+	li {
+		margin-right: 15px;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 48px;
+			height: 48px;
+			line-height: 0;
+			border-radius: 50%;
+			background-color: #313538;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&.page-header__socials-telegram {
+			a {
+				&:hover,
+				&:focus {
+					background-color: #259cd8;
+				}
+			}
+		}
+		&.page-header__socials-whatsapp {
+			a {
+				&:hover,
+				&:focus {
+					background-color: #25cb63;
+				}
+			}
+		}
+		&.page-header__socials-mail {
+			a {
+				&:hover,
+				&:focus {
+					background-color: #ff3e41;
+				}
+			}
+		}
+		&.page-header__socials-message {
+			a {
+				&:hover,
+				&:focus {
+					background-color: #8a8b8b;
+				}
+			}
+		}
+	}
+	
+}
 
 
 
