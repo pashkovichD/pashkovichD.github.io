@@ -428,6 +428,7 @@ picture {
 	}*/
 }
 .search input[type=text] {
+  position: relative;
   width: 100%;
   padding: 12px 20px 12px 20px;
   font-size: 14px;
@@ -439,27 +440,51 @@ picture {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.search input[type=text]:focus {
-  width: 100%;
-}
-.search::after {
+.search svg {
   position: absolute;
-  top: 50%;
-  right: 18px;
-  content: '';
-  margin-top: -8px;
+  top: 14px;
+  right: 19px;
   width: 15px;
   height: 16px;
-  background-image: url('../img/icon-search.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+@media (min-width: 960px) {
+  .search svg {
+    top: 14px;
+    right: 19px;
+    width: 16px;
+    height: 18px;
+  }
 }
 @media (min-width: 1200px) {
   .search {
     position: relative;
   }
+}
+@media (min-width: 1600px) {
   .search input[type=text] {
     width: 45px;
+    padding: 12px 20px 12px 20px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7f8589;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  .search input[type=text]:focus {
+    width: 475px;
+    background-color: #25292c;
+    opacity: 1;
+  }
+  .search input[type=text]:focus + svg {
+    fill: #ffffff;
+  }
+  .search input[type=text]:hover + svg {
+    fill: #ffffff;
   }
 }
 .menu {
@@ -925,7 +950,7 @@ picture {
 .page-header__user svg,
 .page-header__lang svg {
   position: relative;
-  top: 5px;
+  top: 2px;
   left: 5px;
   margin-right: 20px;
   -webkit-transition: all 0.25s ease-out;
@@ -944,9 +969,18 @@ picture {
   fill: #ff3e41;
 }
 .page-header__lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 14px;
   font-weight: 500;
   text-transform: uppercase;
+}
+.page-header__lang svg {
+  top: 0;
 }
 .page-header__nav {
   margin-bottom: 32px;
@@ -1052,6 +1086,7 @@ picture {
   }
   .page-header__ul-container {
     margin-left: auto;
+    padding-bottom: 30px;
   }
   .page-header__lang {
     margin-left: 20px;
@@ -1092,8 +1127,12 @@ picture {
         -ms-flex-order: 3;
             order: 3;
     position: absolute;
-    right: 60px;
+    right: -75px;
     margin-left: 0;
+  }
+  .page-header__cart::after {
+    top: -6px;
+    right: -7px;
   }
   .page-header__data-container {
     position: static;
@@ -1103,6 +1142,9 @@ picture {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1111,6 +1153,7 @@ picture {
         -ms-flex-order: 1;
             order: 1;
     padding: 0;
+    padding-right: 130px;
     background-color: transparent;
     opacity: 1;
     visibility: visible;
@@ -1119,7 +1162,8 @@ picture {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    position: relative;
+    position: absolute;
+    right: -128px;
     margin-bottom: 0;
     margin-left: auto;
     padding-bottom: 0;
@@ -1127,18 +1171,20 @@ picture {
   }
   .page-header__search {
     position: absolute;
-    left: 100px;
-    width: 45px;
+    right: 95px;
+    width: auto;
     margin-bottom: 0;
+    z-index: 1;
   }
   .page-header__ul-container {
-    width: 210px;
+    width: 275px;
     padding-bottom: 0;
   }
   .page-header__user {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    line-height: 0;
   }
   .page-header__user svg {
     margin-right: 0;
@@ -1153,6 +1199,14 @@ picture {
         -ms-flex-order: 1;
             order: 1;
     margin-left: 0;
+    font-size: 12px;
+  }
+  .page-header__lang svg {
+    top: auto;
+    left: auto;
+    width: 19px;
+    height: 19px;
+    margin-right: 15px;
   }
   .page-header__nav {
     -webkit-box-ordinal-group: 2;
@@ -1169,10 +1223,14 @@ picture {
     display: block;
     margin-bottom: 0;
   }
-  .page-header__phone-wrapper svg {
+  .page-header__phone-number {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .page-header__phone-number svg {
     display: none;
   }
-  .page-header__phone-wrapper span {
+  .page-header__phone-number span {
     display: block;
   }
   .page-header__socials {

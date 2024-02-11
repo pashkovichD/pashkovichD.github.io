@@ -185,7 +185,7 @@
 			    user-select: none;
 	svg {
 		position: relative;
-		top: 5px;
+		top: 2px;
 		left: 5px;
 		margin-right: 20px;
 		transition: @animation;
@@ -200,9 +200,14 @@
 }
 
 .page-header__lang {
+	display: flex;
+	align-items: center;
 	line-height: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
+	svg {
+		top: 0;
+	}
 }
 
 .page-header__nav {
@@ -332,6 +337,7 @@
 
 	.page-header__ul-container {
 		margin-left: auto;
+		padding-bottom: 30px;
 	}
 
 	.page-header__lang {
@@ -377,8 +383,12 @@
 	.page-header__cart {
 		order: 3;
 		position: absolute;
-		right: 60px;
-		margin-left: 0;		
+		right: -75px;
+		margin-left: 0;
+		&::after {
+			top: -6px;
+			right: -7px;
+		}
 	}
 
 	.page-header__data-container {
@@ -387,24 +397,21 @@
 		left: auto;
 		right: auto;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		width: 100%;
 		order: 1;
 		padding: 0;
-		background-color: transparent;
-	    // opacity: 0;    
-	    // visibility: hidden;
-	    // transition: all .2s ease-out;
-	    // z-index: 10;
-
-	    // top: 56px;
+		padding-right: 130px;
+		background-color: transparent;	    
 		opacity: 1;
 		visibility: visible;
 	}
 
 	.page-header__operation {
 		order: 3;
-		position: relative;
+		position: absolute;
+		right: -128px;
 		margin-bottom: 0;
 		margin-left: auto;
 		padding-bottom: 0;
@@ -413,18 +420,20 @@
 
 	.page-header__search {
 		position: absolute;
-		left: 100px;
-		width: 45px;
+		right: 95px;
+		width: auto;		
 		margin-bottom: 0;
+		z-index: 1;		
 	}
 
 	.page-header__ul-container {
-		width: 210px;
+		width: 275px;
 		padding-bottom: 0;
 	}
 
 	.page-header__user {
 		order: 2;
+		line-height: 0;
 		svg {
 			margin-right: 0;
 			top: auto;
@@ -437,12 +446,23 @@
 
 	.page-header__lang {
 		order: 1;
+		// display: flex;
+		// align-items: center;
 		margin-left: 0;
+		font-size: 12px;
+		svg {
+			top: auto;
+			left: auto;
+			width: 19px;
+			height: 19px;
+			margin-right: 15px;
+		}
 	}
 
 	.page-header__nav {
 		order: 1;
 		margin-bottom: 0;
+		// margin-right: 105px;
 		padding-bottom: 0;
 		border-bottom: none;
 	}	
@@ -450,14 +470,19 @@
 	.page-header__phone-wrapper {
 		order: 2;
 		display: block;
-		margin-bottom: 0;
+		margin-bottom: 0;		
+	}
+
+	.page-header__phone-number {
+		font-size: 14px;
+		line-height: 14px;
 		svg {
 			display: none;
 		}
 		span {
 			display: block;
 		}
-	}
+	}	
 
 	.page-header__socials {
 		position: fixed;
@@ -470,11 +495,6 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
-		}
-	}
-
-	.page-header__socials {
-		li {			
 			a {
 				position: relative;
 				z-index: 1;				

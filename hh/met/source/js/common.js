@@ -36,15 +36,10 @@ function hideDropdown() {
 }
 
 window.addEventListener('load', function() {
-	let lang = document.querySelector('.page-header__lang span');
-	console.log(lang);
-	lang.addEventListener('click', function() {
-		/*if(lang.innerHTML === 'ENG') {
-			lang.innerHTML = 'RUS';
-		} else {
-			lang.innerHTML = 'ENG';
-		}*/
-		lang.innerHTML = (lang.innerHTML === 'ENG') ? 'RUS' : 'ENG';
+	let lang = document.querySelector('.page-header__lang');	
+	lang.addEventListener('click', function() {		
+		let langText = lang.querySelector('span');
+		langText.innerHTML = (langText.innerHTML === 'ENG') ? 'RUS' : 'ENG';
 	});
 });
 
