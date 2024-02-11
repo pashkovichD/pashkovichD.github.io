@@ -35,6 +35,19 @@ function hideDropdown() {
 	});
 }
 
+window.addEventListener('load', function() {
+	let lang = document.querySelector('.page-header__lang span');
+	console.log(lang);
+	lang.addEventListener('click', function() {
+		/*if(lang.innerHTML === 'ENG') {
+			lang.innerHTML = 'RUS';
+		} else {
+			lang.innerHTML = 'ENG';
+		}*/
+		lang.innerHTML = (lang.innerHTML === 'ENG') ? 'RUS' : 'ENG';
+	});
+});
+
 
 /* замена произвольного номера в href на нужный для телефона 'tel:+.............' */
 /*var number = document.querySelectorAll('.number-phone');

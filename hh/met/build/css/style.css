@@ -503,7 +503,7 @@ picture {
   top: 50%;
   width: 7px;
   height: 7px;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-left: 15px;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -563,6 +563,8 @@ picture {
   /*	.menu {
 		// width: 85%;
 	}
+
+
 
 	.menu__list {
 		display: flex;
@@ -827,7 +829,7 @@ picture {
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
-.page-header__phone-icon {
+.page-header__phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,6 +837,19 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+.page-header__phone span {
+  display: none;
+}
+.page-header__phone:hover,
+.page-header__phone:focus {
+  color: #ff3e41;
 }
 .page-header__cart {
   display: -webkit-box;
@@ -902,6 +917,12 @@ picture {
   letter-spacing: 0.2px;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .page-header__user svg,
 .page-header__lang svg {
@@ -994,4 +1015,47 @@ picture {
 .page-header__socials li.page-header__socials-message a:hover,
 .page-header__socials li.page-header__socials-message a:focus {
   background-color: #8a8b8b;
+}
+@media (min-width: 768px) {
+  .page-header__phone svg {
+    display: none;
+  }
+  .page-header__phone span {
+    display: inline-block;
+  }
+  .page-header__operation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-header__search {
+    width: 400px;
+  }
+  .page-header__ul-container {
+    margin-left: auto;
+  }
+  .page-header__lang {
+    margin-left: 20px;
+  }
+  .page-header__phone-wrapper {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .page-header__search {
+    width: 630px;
+  }
+  .page-header__socials {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__socials {
+    display: fixed;
+  }
 }
