@@ -138,7 +138,7 @@
 .container {
   width: 390px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -578,10 +578,11 @@ picture {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 5px;
     background-color: transparent;
   }
   .menu__item {
-    margin-right: 25px;
+    margin-right: 65px;
     border-bottom: none;
   }
   .menu__item:hover a {
@@ -745,7 +746,8 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: relative;
 }
 .page-header__logo {
@@ -995,6 +997,12 @@ picture {
   background-color: #313538;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .page-header__socials li a:hover,
 .page-header__socials li a:focus {
@@ -1064,7 +1072,8 @@ picture {
 }
 @media (min-width: 1200px) {
   .page-header__container {
-    padding: 0 16px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .page-header__toggle-nav {
     display: none;
@@ -1094,6 +1103,9 @@ picture {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1158,10 +1170,10 @@ picture {
     margin-bottom: 0;
   }
   .page-header__phone-wrapper svg {
-    display: block;
+    display: none;
   }
   .page-header__phone-wrapper span {
-    display: none;
+    display: block;
   }
   .page-header__socials {
     position: fixed;
@@ -1182,12 +1194,6 @@ picture {
   .page-header__socials li a {
     position: relative;
     z-index: 1;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    /* отмена выделения текста */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
   .page-header__socials li span {
     display: block;
