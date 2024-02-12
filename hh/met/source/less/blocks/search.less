@@ -81,12 +81,22 @@
 	}
 }
 
+@media (min-width: @desktop-1600-width) {
+	.search {
+		input[type=text] {
+			&:focus {
+				width: 370px;
+			}
+		}
+	}
+}
+
 @media (min-width: @desktop-full-width) {
-	.search {		
-		input[type=text] {			
-			&:focus {				
-				width: 475px;				
-			}			
+	.search {
+		input[type=text] {
+			&:focus {	
+				width: 475px;
+			}
 		}
 	}
 }

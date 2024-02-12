@@ -167,6 +167,12 @@
     width: 1320px;
   }
 }
+@media (min-width: 1600px) {
+  .container {
+    width: 1500px;
+    padding: 0 93px;
+  }
+}
 body {
   min-width: 320px;
   min-height: 2000px;
@@ -476,6 +482,11 @@ picture {
     fill: #ffffff;
   }
 }
+@media (min-width: 1600px) {
+  .search input[type=text]:focus {
+    width: 370px;
+  }
+}
 @media (min-width: 1920px) {
   .search input[type=text]:focus {
     width: 475px;
@@ -653,7 +664,7 @@ picture {
     background-color: #ff3e41;
   }
   .menu__item--dropdown {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .menu__item--dropdown > a {
     padding-right: 40px !important;
@@ -731,8 +742,11 @@ picture {
   .menu__item {
     margin-right: 65px;
   }
+  .menu__item--dropdown {
+    margin-right: 25px;
+  }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
   .menu__list {
     padding-left: 5px;
   }
@@ -1289,11 +1303,11 @@ picture {
     width: 195px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
   .page-header__logo-container {
     position: absolute;
     top: 25px;
-    left: -125px;
+    left: -25px;
   }
   .page-header__left-nav {
     display: -webkit-box;
@@ -1308,6 +1322,32 @@ picture {
     bottom: 25px;
   }
   .page-header__cart {
+    right: 20px;
+  }
+  .page-header__data-container {
+    padding-right: 170px;
+  }
+  .page-header__operation {
+    right: -35px;
+  }
+  .page-header__search {
+    right: 95px;
+  }
+  .page-header__ul-container {
+    width: 260px;
+  }
+  .page-header__phone-number svg {
+    display: none;
+  }
+  .page-header__phone-number span {
+    display: block;
+  }
+}
+@media (min-width: 1920px) {
+  .page-header__logo-container {
+    left: -125px;
+  }
+  .page-header__cart {
     right: -75px;
   }
   .page-header__data-container {
@@ -1316,16 +1356,7 @@ picture {
   .page-header__operation {
     right: -128px;
   }
-  .page-header__search {
-    right: 95px;
-  }
   .page-header__ul-container {
     width: 275px;
-  }
-  .page-header__phone-number svg {
-    display: none;
-  }
-  .page-header__phone-number span {
-    display: block;
   }
 }
