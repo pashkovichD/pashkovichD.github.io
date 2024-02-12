@@ -1345,7 +1345,7 @@ picture {
 }
 @media (min-width: 1920px) {
   .page-header {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
   .page-header__logo-container {
     left: -125px;
@@ -1363,14 +1363,24 @@ picture {
     width: 275px;
   }
 }
+.intro {
+  position: relative;
+  height: 790px;
+}
 .intro__desc {
+  position: absolute;
+  top: 55px;
+  left: 100px;
+  width: 370px;
   font-size: 32px;
   line-height: 43px;
   font-weight: 700;
   color: #cbcecf;
 }
 .intro__video {
-  position: relative;
+  position: absolute;
+  top: 50px;
+  right: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1402,7 +1412,9 @@ picture {
           transform: rotate(-135deg);
 }
 .intro__buy {
-  position: relative;
+  position: absolute;
+  bottom: 7px;
+  left: 100px;
   padding-bottom: 5px;
   color: #cbcecf;
   font-size: 16px;
@@ -1421,6 +1433,9 @@ picture {
   background-color: #cbcecf;
 }
 .intro__state-register {
+  position: absolute;
+  bottom: 0;
+  right: 90px;
   text-align: center;
 }
 .intro__state-register span {
@@ -1435,4 +1450,22 @@ picture {
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.intro-1 {
+  position: relative;
+  padding-left: 215px;
+}
+.intro-1 .title {
+  position: absolute;
+  top: 345px;
+  left: -110px;
+  font-size: 72px;
+  line-height: 90px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.intro-1 .choice {
+  position: absolute;
+  top: 360px;
+  left: -110px;
 }
