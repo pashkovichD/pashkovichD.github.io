@@ -581,7 +581,7 @@ picture {
 }
 .menu__dropdown li a:hover,
 .menu__dropdown li a:focus {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #3c4042;
 }
 .menu__dropdown li a:focus {
   -webkit-box-shadow: none;
@@ -717,7 +717,7 @@ picture {
   }
   .menu__dropdown li a:hover,
   .menu__dropdown li a:focus {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: #3c4042;
   }
   .menu__dropdown li a:focus {
     -webkit-box-shadow: none;
