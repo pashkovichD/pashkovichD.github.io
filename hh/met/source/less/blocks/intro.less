@@ -1,0 +1,98 @@
+.intro {
+		
+}
+
+.intro__desc {
+	font-size: 32px;
+	line-height: 43px;
+	font-weight: 700;
+	color: @menu-font;
+}
+
+.intro__video {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;	
+	svg {
+		transition: all .35s ease-out;	
+	}
+	svg.play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-48%, -48%);
+	}
+	&:hover,
+	&:focus {
+		svg.play-text {
+			transform: rotate(-135deg);
+			// transform: rotate(230deg);
+		}
+	}
+}
+
+.intro__buy {
+	position: relative;
+	padding-bottom: 5px;
+	color: @menu-font;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		content: '';
+		height: 2px;
+		background-color: @menu-font;
+	}
+}
+
+.intro__state-register {
+	text-align: center;
+	span {
+		display: block;
+		color: @menu-font;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 500;
+		&.upper {
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
+
+@media (min-width: @desktop-1200-width) {
+
+}
+
+
+@media (min-width: @desktop-full-width) {
+
+}
