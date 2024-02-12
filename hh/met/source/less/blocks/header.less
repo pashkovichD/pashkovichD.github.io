@@ -365,6 +365,20 @@
 		padding-bottom: 0;		
 	}
 
+	.page-header__logo-container {
+		position: absolute;
+		top: 25px;
+		left: -25px;
+	}
+
+	.page-header__left-nav {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 175px;
+		bottom: 25px;
+	}
+
 	.page-header__toggle-nav {
 		display: none;
 	}
@@ -383,7 +397,7 @@
 	.page-header__cart {
 		order: 3;
 		position: absolute;
-		right: -75px;
+		right: 35px;
 		margin-left: 0;
 		&::after {
 			top: -6px;
@@ -402,7 +416,7 @@
 		width: 100%;
 		order: 1;
 		padding: 0;
-		padding-right: 130px;
+		padding-right: 195px;
 		background-color: transparent;	    
 		opacity: 1;
 		visibility: visible;
@@ -411,7 +425,8 @@
 	.page-header__operation {
 		order: 3;
 		position: absolute;
-		right: -128px;
+		right: -10px;
+		// right: -128px;
 		margin-bottom: 0;
 		margin-left: auto;
 		padding-bottom: 0;
@@ -420,14 +435,14 @@
 
 	.page-header__search {
 		position: absolute;
-		right: 95px;
+		right: 75px;
 		width: auto;		
 		margin-bottom: 0;
 		z-index: 1;		
 	}
 
 	.page-header__ul-container {
-		width: 275px;
+		width: 195px;
 		padding-bottom: 0;
 	}
 
@@ -477,10 +492,10 @@
 		font-size: 14px;
 		line-height: 14px;
 		svg {
-			display: none;
+			display: block;
 		}
 		span {
-			display: block;
+			display: none;
 		}
 	}	
 
@@ -529,6 +544,28 @@
 	}
 }
 
+@media (min-width: @desktop-1400-width) {
+	.page-header__cart {
+		right: 35px;
+		// right: -75px;
+	}
+
+	.page-header__data-container {
+		padding-right: 195px;
+		// padding-right: 130px;
+	}
+
+	.page-header__search {
+		right: 75px;
+		// right: 95px;
+	}
+
+	.page-header__ul-container {
+		width: 195px;
+		// width: 275px;
+	}
+}
+
 @media (min-width: @desktop-full-width) {
 	.page-header__logo-container {
 		position: absolute;
@@ -542,5 +579,34 @@
 		position: fixed;
 		top: 175px;
 		bottom: 25px;
+	}
+
+	.page-header__cart {		
+		right: -75px;
+	}
+
+	.page-header__data-container {		
+		padding-right: 130px;
+	}
+
+	.page-header__operation {		
+		right: -128px;
+	}
+
+	.page-header__search {		
+		right: 95px;
+	}
+
+	.page-header__ul-container {	
+		width: 275px;
+	}
+
+	.page-header__phone-number {
+		svg {
+			display: none;
+		}
+		span {
+			display: block;
+		}
 	}
 }

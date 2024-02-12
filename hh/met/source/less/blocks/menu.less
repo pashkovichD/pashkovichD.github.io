@@ -9,15 +9,13 @@
 		position: relative;
 		display: block;
 		padding: 15px 0;
-		// padding: 30px 20px;
 		font-size: 14px;
 		line-height: 14px;
-		font-weight: 400;		
-		// text-align: center;
+		font-weight: 400;
 		text-decoration: none;
 		text-transform: uppercase;
 		color: @menu-font;
-		letter-spacing: .9px;		
+		letter-spacing: .9px;
 		transition: all .2s ease-out;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
 		/* отмена выделения текста */
@@ -46,8 +44,7 @@
 		&::after {
 			content: '';
 			position: absolute;
-			top: 50%;
-			// right: 17px;
+			top: 50%;			
 			width: 7px;
 			height: 7px;
 			margin-top: -4px;
@@ -73,9 +70,7 @@
 
 .menu__dropdown {
 	position: relative;
-	height: 0;	
-	// padding-top: 3px;
-	// border-radius: 16px;
+	height: 0;
 	overflow: hidden;
 	transition: all .3s ease;	
 	li {
@@ -88,30 +83,16 @@
 			text-decoration: none;
 			letter-spacing: .2px;
 			color: @menu-font;			
-			text-transform: none;			
-			// background-color: #313538;
+			text-transform: none;
 			transition: all .3s ease-out;
 			&:hover,
-			&:focus {
-				// color: #000000;
+			&:focus {		
 				background-color: rgba(255,255,255,.15);
 			}
 			&:focus {
 				box-shadow: none;
 			}
-		}
-		// &:first-child {
-		// 	a {
-		// 		padding-top: 20px;
-		// 		border-radius: 16px 16px 0 0;
-		// 	}
-		// }
-		// &:last-child {
-		// 	a {
-		// 		padding-bottom: 20px;
-		// 		border-radius: 0 0 16px 16px;
-		// 	}
-		// }
+		}		
 	}
 
 	&::before {
@@ -142,16 +123,17 @@
 }
 
 @media (min-width: @desktop-1200-width) {
-		.menu__list {			
+		.menu__list {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding-left: 5px;
+			padding-left: 50px;
+			// padding-left: 5px;
 			background-color: transparent;
 		}
 
 		.menu__item {
-			margin-right: 65px;
+			margin-right: 35px;			
 			border-bottom: none;
 			&:hover {
 				a {
@@ -230,99 +212,74 @@
 					}
 				}
 			}
-		}
+		}		
 
-		.menu__dropdown {
+		.menu__dropdown {			
 			position: absolute;		
 			top: 120%;
-			left: -25px;
-			height: auto !important;
+			left: -25px;			
 			min-width: 310px;
-			// padding-top: 20px;
+			height: auto !important;
 			margin-left: 0;
+			border-radius: 16px;			
 			opacity: 0;
 			visibility: hidden;
 			box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
 			transition: all 0.2s ease-out;
+			transition: all .3s ease;	
 			li {
 				a {
-					// font-size: 12px;
-					// line-height: 12px;				
-					text-align: left;				
-					// background-color: rgba(28,36,44,.9);
-					// color: #ffffff;
+					display: block;
+					padding: 12px 20px;
+					font-size: 16px;
+					line-height: 16px;
+					font-weight: 300;
+					text-decoration: none;
+					text-align: left;
+					color: @menu-font;			
+					text-transform: none;			
+					background-color: #313538;
+					transition: all .3s ease-out;
 					&:hover,
-					&:focus {				
-						&::before {
-							content: none;
-						}
+					&:focus {						
+						background-color: rgba(255,255,255,.15);
+					}
+					&:focus {
+						box-shadow: none;
+					}
+				}
+				&:first-child {
+					a {
+						padding-top: 20px;
+						border-radius: 16px 16px 0 0;
+					}
+				}
+				&:last-child {
+					a {
+						padding-bottom: 20px;
+						border-radius: 0 0 16px 16px;
 					}
 				}
 			}
+
+			&::before {
+				content: '';
+			}
 		}
+}
+
+@media (min-width: @desktop-1400-width) {
+	.menu__list {
+		padding-left: 65px;
+	}
+
+	.menu__item {
+		margin-right: 65px;
+	}
 }
 
 @media (min-width: @desktop-full-width) {
-		
+	.menu__list {	
+		padding-left: 5px;
+	}
 }
-
-
-
-
-
-/*.menu__dropdown {
-	position: relative;
-	height: 0;	
-	border-radius: 16px;
-	// overflow: hidden;
-	transition: all .3s ease;	
-	li {
-		a {
-			display: block;
-			padding: 12px 20px;
-			// font-size: 14px;
-			// line-height: 14px;
-			font-size: 16px;
-			line-height: 16px;
-			font-weight: 300;
-			text-decoration: none;
-			color: @menu-font;			
-			text-transform: none;			
-			background-color: #313538;
-			transition: all .3s ease-out;
-			&:hover,
-			&:focus {
-				// color: #000000;
-				background-color: rgba(255,255,255,.15);
-			}
-			&:focus {
-				box-shadow: none;
-			}
-		}
-		&:first-child {
-			a {
-				padding-top: 20px;
-				border-radius: 16px 16px 0 0;
-			}
-		}
-		&:last-child {
-			a {
-				padding-bottom: 20px;
-				border-radius: 0 0 16px 16px;
-			}
-		}
-	}
-
-	&::before {
-		position: relative;
-		top: 0;
-		left: 40px;
-		content: '';
-		display: block;
-		width: 50px;
-		height: 27px;		
-		background-image: url('../img/arrow-dropdown.svg');
-		background-repeat: no-repeat;
-
-	}
-}*/
