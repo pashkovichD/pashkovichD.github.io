@@ -1663,15 +1663,8 @@ picture {
     height: 720px;
   }
   .intro__desc {
-    top: 0;
-    left: 16px;
-    width: 180px;
     font-size: 22px;
     line-height: 33px;
-  }
-  .intro__video {
-    top: 2px;
-    right: 10px;
   }
   .intro__video svg.play {
     width: 16px;
@@ -1692,7 +1685,6 @@ picture {
   .intro__state-register svg {
     width: 44px;
     height: 43px;
-    margin-bottom: 2px;
   }
   .intro__state-register span {
     font-size: 9px;
@@ -1744,7 +1736,6 @@ picture {
     line-height: 39px;
   }
   .intro__video {
-    top: 2px;
     right: 20px;
   }
   .intro__video svg.play {
@@ -1814,16 +1805,10 @@ picture {
   }
 }
 @media (min-width: 960px) {
-  .intro {
-    height: 770px;
-  }
   .intro__desc {
     width: 240px;
     font-size: 28px;
     line-height: 37px;
-  }
-  .intro__video {
-    top: 2px;
   }
   .intro__video svg.play {
     width: 20px;
@@ -1855,15 +1840,10 @@ picture {
     font-size: 18px;
     line-height: 24px;
   }
-  .intro-1,
-  .intro-2 {
-    padding-top: 0;
-    text-align: center;
-  }
   .intro-1 .title,
   .intro-2 .title {
     right: auto;
-    bottom: 335px;
+    bottom: 510px;
     left: 30px;
     font-size: 50px;
     line-height: 62px;
@@ -1871,7 +1851,7 @@ picture {
   }
   .intro-1 .choice,
   .intro-2 .choice {
-    bottom: 0;
+    bottom: 470px;
     left: 75px;
     font-size: 16px;
     line-height: 22px;
@@ -1884,6 +1864,170 @@ picture {
   .intro-1 picture,
   .intro-2 picture {
     width: 70%;
+  }
+  .intro-2 .title {
+    bottom: 315px;
+    left: auto;
+    right: 30px;
+    text-align: right;
+  }
+  .intro-2 .title br {
+    display: inline;
+  }
+  .intro-2 .choice {
+    bottom: 275px;
+    left: auto;
+    right: 30px;
+  }
+  .intro-1__hide .title,
+  .intro-2__hide .title {
+    bottom: 360px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .intro-1__hide .title::after,
+  .intro-2__hide .title::after {
+    content: '\2022';
+    right: -75px;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+  .intro-2__hide .title::after {
+    left: -75px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro {
+    height: 790px;
+  }
+  .intro__desc {
+    width: 370px;
+    font-size: 32px;
+    line-height: 43px;
+    top: 50px;
+    left: 80px;
+  }
+  .intro__video {
+    top: 50px;
+  }
+  .intro__video svg.play-text {
+    width: 94px;
+    height: 98px;
+  }
+  .intro__buy {
+    left: 80px;
+  }
+  .intro__state-register {
+    right: 20px;
+  }
+  .intro-1 .title,
+  .intro-2 .title {
+    bottom: 510px;
+    left: 60px;
+    font-size: 50px;
+    line-height: 62px;
+  }
+  .intro-1 .choice,
+  .intro-2 .choice {
+    bottom: 470px;
+    left: 105px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .intro-1 .choice::before,
+  .intro-2 .choice::before {
+    left: -60px;
+    width: 50px;
+  }
+  .intro-1 picture,
+  .intro-2 picture {
+    width: 60%;
+  }
+  .intro-2 .title {
+    bottom: 315px;
+    left: auto;
+    right: 60px;
+  }
+  .intro-2 .title br {
+    display: inline;
+  }
+  .intro-2 .choice {
+    bottom: 275px;
+    left: auto;
+    right: 60px;
+  }
+  .intro-1__hide .title,
+  .intro-2__hide .title {
+    bottom: 360px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .intro-1__hide .title::after,
+  .intro-2__hide .title::after {
+    content: '\2022';
+    right: -75px;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+  .intro-2__hide .title::after {
+    left: -75px;
+  }
+}
+@media (min-width: 1400px) {
+  .intro__desc {
+    top: 72px;
+    left: 100px;
+  }
+  .intro__video {
+    top: 72px;
+  }
+  .intro__buy {
+    left: 100px;
+  }
+  .intro__state-register {
+    right: 90px;
+  }
+  .intro-1 .title,
+  .intro-2 .title {
+    bottom: 335px;
+    left: 60px;
+  }
+  .intro-1 .choice,
+  .intro-2 .choice {
+    bottom: 305px;
+  }
+  .intro-1 .choice::before,
+  .intro-2 .choice::before {
+    left: -60px;
+    width: 50px;
+  }
+  .intro-2 .title {
+    bottom: 315px;
+    left: auto;
+    right: 60px;
+  }
+  .intro-2 .choice {
+    bottom: 275px;
+    left: auto;
+    right: 60px;
+  }
+  .intro-1__hide .title,
+  .intro-2__hide .title {
+    bottom: 360px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .intro-1__hide .title::after,
+  .intro-2__hide .title::after {
+    right: -108px;
+    width: 72px;
+    height: 72px;
+    margin-top: -36px;
+  }
+  .intro-2__hide .title::after {
+    left: -103px;
   }
 }
 /*.intro {
