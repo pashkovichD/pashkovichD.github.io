@@ -1374,7 +1374,7 @@ picture {
 }
 .intro {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
   height: 660px;
 }
 .intro__desc {
@@ -1728,6 +1728,7 @@ picture {
 @media (min-width: 768px) {
   .intro {
     height: 770px;
+    margin-bottom: 100px;
   }
   .intro__desc {
     left: 30px;
@@ -1900,6 +1901,7 @@ picture {
 @media (min-width: 1200px) {
   .intro {
     height: 790px;
+    margin-bottom: 150px;
   }
   .intro__desc {
     width: 370px;
@@ -2102,6 +2104,9 @@ picture {
   }
 }
 @media (min-width: 1920px) {
+  .intro {
+    margin-bottom: 180px;
+  }
   .intro-1 .title,
   .intro-2 .title {
     left: -110px;
@@ -2129,6 +2134,7 @@ picture {
   }
 }
 .advantages h3 {
+  margin: 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
@@ -2136,12 +2142,177 @@ picture {
   color: #ffffff;
 }
 .advantages__reliability {
-  height: 500px;
-  padding: 16px;
+  padding: 360px 24px 30px 24px;
   background-color: #25292c;
   border-radius: 20px;
-  background-image: url('../img/bg-scale.webp');
+  background-image: url('../img/bg-reliability.webp');
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+  background-position: 14px 3px;
+  background-size: 98%;
+}
+h3.advantages__reliability-title {
+  margin-bottom: 30px;
+}
+.advantages__table-title {
+  margin-bottom: 13px;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #7f8589;
+}
+.advantages__table {
+  width: 100%;
+  margin-bottom: 35px;
+  border-collapse: collapse;
+}
+.advantages__table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: 0em;
+  color: #cbcecf;
+  border-bottom: 1px solid #303638;
+}
+.advantages__table tr:last-child {
+  border-bottom: none;
+}
+.advantages__table:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) {
+  .advantages h3 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .advantages__reliability {
+    background-position: 10px -55px;
+  }
+  .advantages__table-title {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .advantages__table tr {
+    font-size: 14px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .advantages h3 {
+    font-size: 32px;
+    line-height: 43px;
+  }
+  .advantages__reliability {
+    padding: 210px 40px 30px 40px;
+    background-position: right 0px top -55px;
+    background-size: 60%;
+  }
+  h3.advantages__reliability-title {
+    width: 46%;
+    margin-bottom: 50px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .advantages__table-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advantages__table-first,
+  .advantages__table-second {
+    width: 46%;
+  }
+  .advantages__table-title {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .advantages__table tr {
+    font-size: 14px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 960px) {
+  .advantages h3 {
+    font-size: 35px;
+    line-height: 47px;
+  }
+  .advantages__reliability {
+    padding: 140px 50px 40px 50px;
+    background-size: 45%;
+  }
+  h3.advantages__reliability-title {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .advantages__table-title {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .advantages__table tr {
+    font-size: 16px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .advantages__reliability {
+    padding: 140px 70px 60px 70px;
+    background-size: 42%;
+  }
+}
+@media (min-width: 1400px) {
+  .advantages h3 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  .advantages__reliability {
+    padding: 100px 70px 80px 70px;
+    background-position: right 0px center;
+    background-size: 42%;
+  }
+  .advantages__table-wrapper {
+    width: 60%;
+  }
+}
+@media (min-width: 1920px) {
+  .advantages {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
+  .advantages__reliability {
+    padding: 94px 72px 90px 72px;
+    background-position: right 0px top 0px;
+    background-size: 46%;
+  }
+  h3.advantages__reliability-title {
+    width: 50%;
+    margin-bottom: 55px;
+  }
+  .advantages__table-wrapper {
+    width: 612px;
+  }
+  .advantages__table-first,
+  .advantages__table-second {
+    width: 270px;
+  }
+  .advantages__table-title {
+    margin-bottom: 25px;
+  }
+  .advantages__table tr {
+    padding: 3px 0;
+  }
 }
