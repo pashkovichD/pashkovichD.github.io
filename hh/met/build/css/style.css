@@ -183,6 +183,7 @@ body {
   line-height: 21px;
   font-weight: 500;
   background-color: #1b1f22;
+  overflow-x: hidden;
 }
 :focus {
   outline: none;
@@ -237,6 +238,12 @@ a {
           box-sizing: border-box;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 ul {
   margin: 0;
@@ -1365,6 +1372,7 @@ picture {
 }
 .intro {
   position: relative;
+  margin-bottom: 100px;
   height: 660px;
 }
 .intro__desc {
@@ -1452,40 +1460,6 @@ picture {
 .intro__buy:focus::after {
   background-color: #ff3e41;
 }
-.intro__choice {
-  position: absolute;
-  bottom: 52px;
-  left: 16px;
-  padding-left: 40px;
-  color: #cbcecf;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  z-index: 1;
-}
-.intro__choice::after {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  content: '';
-  width: 30px;
-  height: 2px;
-  margin-top: -1px;
-  background-color: #cbcecf;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-.intro__choice:hover,
-.intro__choice:focus {
-  color: #ff3e41;
-}
-.intro__choice:hover::after,
-.intro__choice:focus::after {
-  background-color: #ff3e41;
-}
 .intro__state-register {
   position: absolute;
   top: 80px;
@@ -1536,8 +1510,15 @@ picture {
   font-weight: 700;
   color: #ffffff;
   z-index: 1;
+  opacity: 1;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .intro-1 .choice,
 .intro-2 .choice {
@@ -1605,6 +1586,7 @@ picture {
   bottom: 120px;
   font-size: 18px;
   line-height: 23px;
+  opacity: 0.5;
 }
 .intro-1__hide .title::after,
 .intro-2__hide .title::after {
@@ -1673,6 +1655,87 @@ picture {
   -webkit-transform: scale(0.69) translate(525px, -10px);
       -ms-transform: scale(0.69) translate(525px, -10px);
           transform: scale(0.69) translate(525px, -10px);
+}
+@media (min-width: 480px) {
+  .intro {
+    height: 720px;
+  }
+  .intro__desc {
+    top: 0;
+    left: 16px;
+    width: 180px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .intro__video {
+    top: 2px;
+    right: 10px;
+  }
+  .intro__video svg.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-48%, -48%);
+        -ms-transform: translate(-48%, -48%);
+            transform: translate(-48%, -48%);
+    width: 16px;
+    height: 17px;
+  }
+  .intro__video svg.play-text {
+    width: 70px;
+    height: 72px;
+  }
+  .intro__buy {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .intro__state-register {
+    top: 100px;
+    right: 15px;
+  }
+  .intro__state-register svg {
+    width: 44px;
+    height: 43px;
+    margin-bottom: 2px;
+  }
+  .intro__state-register span {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .intro__state-register span.upper {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .intro-1,
+  .intro-2 {
+    padding-top: 25px;
+  }
+  .intro-1 .title,
+  .intro-2 .title {
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .intro-1 .choice,
+  .intro-2 .choice {
+    bottom: 52px;
+    left: 60px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .intro-1 .choice::before,
+  .intro-2 .choice::before {
+    left: -60px;
+    width: 50px;
+  }
+  .intro-1__hide .title,
+  .intro-2__hide .title {
+    bottom: 120px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 /*.intro {
 	position: relative;	
