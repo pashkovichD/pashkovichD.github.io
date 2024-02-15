@@ -280,6 +280,15 @@ picture {
 .page-main {
   overflow-x: hidden;
 }
+.h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1b1f22;
+}
 /*@media (min-width: @mobile-width) {
 	
 }
@@ -359,6 +368,93 @@ picture {
     padding-bottom: 8px;
     font-size: 16px;
     line-height: 22px;
+  }
+}
+.tabs {
+  position: relative;
+}
+.tabs__section {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-shadow: 4px 4px 20px 0px #292d291a;
+          box-shadow: 4px 4px 20px 0px #292d291a;
+}
+.tabs__section {
+  line-height: 1.5;
+  color: #383838;
+}
+.tabs__wrapper {
+  /* прикрутим анимацию */
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tabs__label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #ff3e41;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.tabs__label::after {
+  opacity: 0;
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.tabs__label:hover {
+  color: #ff3e41;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs__input {
+  display: none;
+  position: absolute;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked ~ #tabs__content1,
+#tab2:checked ~ #tabs__content2,
+#tab3:checked ~ #tabs__content3,
+#tab4:checked ~ #tabs__content4,
+#tab5:checked ~ #tabs__content5 {
+  display: block;
+}
+@media (min-width: 768px) {
+  .tabs__label {
+    display: inline-block;
   }
 }
 .hamburger {
@@ -2136,6 +2232,9 @@ picture {
     display: none;
   }
 }
+.advantages {
+  margin-bottom: 55px;
+}
 .advantages h3 {
   margin: 0;
   font-size: 20px;
@@ -2318,6 +2417,7 @@ h3.advantages__dimension-title {
           transform: rotate(-5deg);
 }
 .advantages__security-third {
+  margin-bottom: 0;
   padding: 100px 24px 40px 40px;
 }
 .advantages__security-third .choice {
@@ -2456,6 +2556,9 @@ h3.advantages__security-title {
   }
 }
 @media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 80px;
+  }
   .advantages h3 {
     font-size: 32px;
     line-height: 43px;
@@ -2698,6 +2801,7 @@ h3.advantages__security-title {
 }
 @media (min-width: 1200px) {
   .advantages {
+    margin-bottom: 100px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -2834,6 +2938,9 @@ h3.advantages__security-title {
   }
 }
 @media (min-width: 1600px) {
+  .advantages {
+    margin-bottom: 120px;
+  }
   .advantages__sensors {
     padding: 70px 78px 355px 93px;
     background-position: bottom 0px center;
@@ -2892,6 +2999,7 @@ h3.advantages__security-title {
 }
 @media (min-width: 1920px) {
   .advantages {
+    margin-bottom: 128px;
     padding-left: 93px;
     padding-right: 93px;
   }
@@ -2928,4 +3036,46 @@ h3.advantages__security-title {
   .advantages__dimension-text {
     margin-bottom: 140px;
   }
+}
+.products {
+  padding-top: 45px;
+  background-color: #ffffff;
+}
+.products .tabs__input:checked + label {
+  position: relative;
+  color: #1b1f22;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.products .tabs__input:checked + label::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 2px;
+  background-color: #1b1f22;
+  opacity: 1;
+}
+.products__title {
+  margin-bottom: 20px;
+}
+.products__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 450px;
+}
+.products__label {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: #7f8589;
 }
