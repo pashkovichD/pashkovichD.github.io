@@ -1,0 +1,69 @@
+.link {
+	position: relative;
+	padding-bottom: 5px;
+	font-size: 12px;
+	line-height: 16px;	
+	// font-size: 16px;
+	// line-height: 22px;
+	letter-spacing: 0.03em;
+	font-weight: 550;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: @menu-font;
+	transition: all .5s ease-out;
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		content: '';
+		height: 2px;
+		background-color: @menu-font;
+		transition: all .5s ease-out;
+	}
+	&:hover,
+	&:focus {
+		color: @red;
+	}
+	&:hover::after,
+	&:focus::after {
+		background-color: @red;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	.link {
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	
+}
+
+@media (min-width: @desktop-1200-width) {
+	.link {
+		padding-bottom: 10px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}
+
+&:hover,
+&:focus {
+	
+}
