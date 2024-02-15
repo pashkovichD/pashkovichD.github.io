@@ -2404,6 +2404,56 @@ h3.advantages__security-title {
     font-size: 14px;
     line-height: 23px;
   }
+  .advantages__security-first,
+  .advantages__security-second,
+  .advantages__security-third {
+    padding: 30px 24px 250px 24px;
+  }
+  .advantages__security-first {
+    background-position: bottom 0px left 0px;
+    background-size: 74%;
+  }
+  .advantages__security-second {
+    padding: 270px 24px 30px 24px;
+    background-position: top 42px right 67px;
+    background-size: 45%;
+  }
+  .advantages__security-second::after {
+    top: 50px;
+    left: 100px;
+    width: 150px;
+    height: 181px;
+  }
+  .advantages__security-third {
+    padding: 100px 24px 40px 70px;
+  }
+  .advantages__security-third .choice {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+  }
+  h3.advantages__security-title {
+    margin-bottom: 20px;
+  }
+  .advantages__security-text {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: right;
+  }
+  .advantages__security-desc {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .advantages__security-guarantee {
+    padding-left: 100px;
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .advantages__security-guarantee::before {
+    margin-top: -97px;
+    font-size: 140px;
+    line-height: 189px;
+  }
 }
 @media (min-width: 768px) {
   .advantages h3 {
@@ -2476,6 +2526,41 @@ h3.advantages__security-title {
   .advantages__dimension-text {
     font-size: 14px;
     line-height: 23px;
+  }
+  .advantages__security {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .advantages__security-first,
+  .advantages__security-second,
+  .advantages__security-third {
+    margin-bottom: 0;
+  }
+  .advantages__security-first {
+    width: 50%;
+    margin-right: 24px;
+  }
+  .advantages__security-col {
+    width: 48%;
+  }
+  .advantages__security-second {
+    margin-bottom: 24px;
+    padding: 50px 24px 50px 24px;
+    background-position: bottom -20px right -40px;
+    background-size: 45%;
+  }
+  .advantages__security-second::after {
+    top: auto;
+    left: auto;
+    bottom: -60px;
+    right: 20px;
+    width: 120px;
+    height: 145px;
+  }
+  .advantages__security-desc {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 @media (min-width: 960px) {
