@@ -159,6 +159,109 @@ h3.advantages__dimension-title {
 	}
 }
 
+/*--- security ---*/
+.advantages__security-first,
+.advantages__security-second,
+.advantages__security-third {
+	position: relative;
+	margin-bottom: 25px;
+	padding: 30px 24px 300px 24px;
+	background-color: #25292c;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.advantages__security-first {
+	background-image: url('../img/bg-security.webp');
+	background-repeat: no-repeat;
+	background-position: bottom 0 left 6px;
+	background-size: 88%;
+}
+
+.advantages__security-second {	
+	padding: 270px 24px 30px 24px;
+	background-image: url('../img/security-cd.webp');
+	background-repeat: no-repeat;
+	background-position: top 50px right 67px;
+	background-size: 50%;	
+	&::after {
+		position: absolute;
+		top: 39px;
+		left: 65px;
+		content: '';
+		width: 160px;
+		height: 193px;
+		background-image: url('../img/security-cabel.webp');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		transform: rotate(-5deg);
+	}
+}
+
+.advantages__security-third {
+	padding: 100px 24px 40px 40px;
+	.choice {
+		position: absolute;
+		top: 24px;
+		right: 20px;
+	}	
+}
+
+h3.advantages__security-title {
+	margin-bottom: 15px;
+}
+
+.advantages__security-text {
+	font-size: 12px;	
+	line-height: 22px;
+	// font-size: 16px;
+	// line-height: 29px;
+	font-weight: 300;
+	letter-spacing: 0.03em;	
+	color: @menu-font;	
+}
+
+.advantages__security-desc {
+	font-size: 14px;
+	line-height: 21px;
+	// font-size: 20px;
+	// line-height: 32px;
+	font-weight: 550;
+	letter-spacing: 0em;
+	color: @white;
+}
+
+.advantages__security-guarantee {
+	position: relative;
+	padding-left: 70px;
+	font-size: 24px;
+	line-height: 30px;
+	// font-size: 40px;
+	// line-height: 50px;
+	font-weight: 700;
+	letter-spacing: 0em;
+	text-transform: uppercase;
+	color: @white;
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		content: '3';
+		margin-top: -71px;
+		// width: 100px;
+		// height: 100px;
+		font-size: 100px;
+		line-height: 135px;
+	}
+}
+
+
+
+
+
+
+
 
 @media (min-width: @mobile-width) {
 	.advantages {

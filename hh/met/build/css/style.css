@@ -2278,6 +2278,89 @@ h3.advantages__dimension-title {
 .advantages__dimension-text strong {
   color: #ffffff;
 }
+/*--- security ---*/
+.advantages__security-first,
+.advantages__security-second,
+.advantages__security-third {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 30px 24px 300px 24px;
+  background-color: #25292c;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.advantages__security-first {
+  background-image: url('../img/bg-security.webp');
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 6px;
+  background-size: 88%;
+}
+.advantages__security-second {
+  padding: 270px 24px 30px 24px;
+  background-image: url('../img/security-cd.webp');
+  background-repeat: no-repeat;
+  background-position: top 50px right 67px;
+  background-size: 50%;
+}
+.advantages__security-second::after {
+  position: absolute;
+  top: 39px;
+  left: 65px;
+  content: '';
+  width: 160px;
+  height: 193px;
+  background-image: url('../img/security-cabel.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+.advantages__security-third {
+  padding: 100px 24px 40px 40px;
+}
+.advantages__security-third .choice {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+h3.advantages__security-title {
+  margin-bottom: 15px;
+}
+.advantages__security-text {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #cbcecf;
+}
+.advantages__security-desc {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 550;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.advantages__security-guarantee {
+  position: relative;
+  padding-left: 70px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.advantages__security-guarantee::before {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  content: '3';
+  margin-top: -71px;
+  font-size: 100px;
+  line-height: 135px;
+}
 @media (min-width: 480px) {
   .advantages h3 {
     font-size: 25px;
