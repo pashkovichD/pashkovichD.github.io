@@ -185,7 +185,6 @@ body {
   line-height: 21px;
   font-weight: 500;
   background-color: #1b1f22;
-  overflow-x: hidden;
 }
 :focus {
   outline: none;
@@ -322,6 +321,9 @@ picture {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
+}
+.page-main {
+  overflow-x: hidden;
 }
 /*@media (min-width: @mobile-width) {
 	
@@ -2141,7 +2143,9 @@ picture {
   letter-spacing: 0em;
   color: #ffffff;
 }
+/*--- reliability ---*/
 .advantages__reliability {
+  margin-bottom: 24px;
   padding: 360px 24px 30px 24px;
   background-color: #25292c;
   border-radius: 20px;
@@ -2152,6 +2156,9 @@ picture {
 }
 h3.advantages__reliability-title {
   margin-bottom: 30px;
+}
+.advantages__table-first {
+  margin-bottom: 35px;
 }
 .advantages__table-title {
   margin-bottom: 13px;
@@ -2188,6 +2195,63 @@ h3.advantages__reliability-title {
 .advantages__table:last-child {
   margin-bottom: 0;
 }
+/*--- sensors ---*/
+.advantages__sensors {
+  margin-bottom: 25px;
+  padding: 35px 24px 285px 24px;
+  background-color: #25292c;
+  border-radius: 20px;
+  background-image: url('../img/bg-sensors.webp');
+  background-repeat: no-repeat;
+  background-position: bottom 0px center;
+  background-size: 92%;
+}
+h3.advantages__sensors-title {
+  margin-bottom: 30px;
+}
+.advantages__sensors-wrapper .desc {
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.advantages__sensors-wrapper .list {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #cbcecf;
+}
+.advantages__sensors-wrapper .list .item {
+  position: relative;
+  padding-left: 20px;
+}
+.advantages__sensors-wrapper .list .item::before {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #cbcecf;
+}
+.advantages__sensors-wrapper .more {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ff3e41;
+}
+.advantages__sensors-wrapper .more:hover,
+.advantages__sensors-wrapper .more:focus {
+  text-decoration: none;
+}
+.advantages__sensors-first {
+  margin-bottom: 20px;
+}
 @media (min-width: 480px) {
   .advantages h3 {
     font-size: 25px;
@@ -2204,6 +2268,21 @@ h3.advantages__reliability-title {
     font-size: 14px;
     line-height: 36px;
   }
+  .advantages__sensors {
+    background-size: 77%;
+  }
+  .advantages__sensors-wrapper .desc {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .advantages__sensors-wrapper .list {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .advantages__sensors-wrapper .more {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 @media (min-width: 768px) {
   .advantages h3 {
@@ -2212,6 +2291,7 @@ h3.advantages__reliability-title {
   }
   .advantages__reliability {
     padding: 210px 40px 30px 40px;
+    border-radius: 24px;
     background-position: right 0px top -55px;
     background-size: 60%;
   }
@@ -2241,6 +2321,27 @@ h3.advantages__reliability-title {
     font-size: 14px;
     line-height: 36px;
   }
+  .advantages__sensors {
+    padding: 35px 40px 285px 40px;
+    border-radius: 24px;
+    background-size: 65%;
+  }
+  h3.advantages__sensors-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .advantages__sensors-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advantages__sensors-first,
+  .advantages__sensors-second {
+    width: 38%;
+  }
 }
 @media (min-width: 960px) {
   .advantages h3 {
@@ -2263,6 +2364,38 @@ h3.advantages__reliability-title {
     font-size: 16px;
     line-height: 42px;
   }
+  .advantages__sensors {
+    padding: 50px 50px 285px 50px;
+    background-size: 50%;
+  }
+  h3.advantages__sensors-title {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  .advantages__sensors-wrapper .desc {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .advantages__sensors-wrapper .list {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .advantages__sensors-wrapper .list .item {
+    padding-left: 25px;
+  }
+  .advantages__sensors-wrapper .list .item::before {
+    top: 15px;
+    left: 0;
+    width: 15px;
+    height: 2px;
+  }
+  .advantages__sensors-wrapper .more {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 @media (min-width: 1200px) {
   .advantages {
@@ -2273,6 +2406,21 @@ h3.advantages__reliability-title {
     padding: 140px 70px 60px 70px;
     background-size: 42%;
   }
+  .advantages__sensors {
+    padding: 60px 70px 285px 70px;
+    background-size: 48%;
+  }
+  h3.advantages__sensors-title {
+    margin-bottom: 60px;
+  }
+  .advantages__sensors-wrapper .desc {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .advantages__sensors-first,
+  .advantages__sensors-second {
+    width: 35%;
+  }
 }
 @media (min-width: 1400px) {
   .advantages h3 {
@@ -2281,11 +2429,31 @@ h3.advantages__reliability-title {
   }
   .advantages__reliability {
     padding: 100px 70px 80px 70px;
+    border-radius: 28px;
     background-position: right 0px center;
     background-size: 42%;
   }
   .advantages__table-wrapper {
     width: 60%;
+  }
+  .advantages__sensors {
+    padding: 70px 70px 285px 70px;
+    border-radius: 28px;
+    background-size: 41%;
+  }
+}
+@media (min-width: 1600px) {
+  .advantages__sensors {
+    padding: 70px 78px 355px 93px;
+    background-position: bottom 0px center;
+    background-size: 45%;
+  }
+  h3.advantages__sensors-title {
+    width: 50%;
+    margin-bottom: 120px;
+  }
+  .advantages__sensors-second {
+    width: 23%;
   }
 }
 @media (min-width: 1920px) {
@@ -2294,7 +2462,8 @@ h3.advantages__reliability-title {
     padding-right: 93px;
   }
   .advantages__reliability {
-    padding: 94px 72px 90px 72px;
+    margin-bottom: 30px;
+    padding: 94px 72px 55px 72px;
     background-position: right 0px top 0px;
     background-size: 46%;
   }
@@ -2314,5 +2483,8 @@ h3.advantages__reliability-title {
   }
   .advantages__table tr {
     padding: 3px 0;
+  }
+  .advantages__sensors {
+    background-size: 51%;
   }
 }
