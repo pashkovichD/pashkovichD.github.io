@@ -1,20 +1,20 @@
 .tabs {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.tabs__section {
-  position: absolute;
-  top: 45px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  // width: 100%;
+.tabs__section {  
+  width: 100%;
 
   display: none;
   box-shadow: 4px 4px 20px 0px #292d291a;
-  
-
 }
+
+#tabs__content1 {
+  order: 3;
+}
+
 .tabs__section {
   line-height: 1.5;
   color: #383838;
@@ -47,8 +47,6 @@
 }
 .tabs__label {
   display: block;
-  margin-bottom: 5px;
-  padding: 10px 15px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;  
@@ -96,9 +94,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .tabs__label {   
-    display: inline-block;
-  }
+  // .tabs__label {   
+  //   display: inline-block;
+  // }
 }
 
 @media (min-width: @desktop-width) {

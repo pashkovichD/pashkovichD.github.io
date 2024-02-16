@@ -1,22 +1,22 @@
-const swiper = new Swiper('.projects__list', {
+const swiper = new Swiper('.products__list', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.projects__pagination .next',
-    prevEl: '.projects__pagination .prev',
+    nextEl: '.products__pagination .next',
+    prevEl: '.products__pagination .prev',
   },
 });
 
-const swiperImg = new Swiper('.projects__item-images', {
+const swiperImg = new Swiper('.products__item-images', {
   // Optional parameters  
   loop: true,
   effect: 'fade',
 
   pagination: {
-    el: '.projects__images-dots',
+    el: '.products__images-dots',
     clickable: true,
   },
 });
