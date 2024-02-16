@@ -11,6 +11,18 @@ const swiper = new Swiper('.products__list', {
     nextEl: '.products__pagination .next',
     prevEl: '.products__pagination .prev',
   },
+
+  breakpoints: {    
+    // when window width is >= 768px
+    768: {
+        slidesPerView: 2,
+        spaceBetween: 0        
+    },
+    960: {       
+        spaceBetween: 30
+    }
+  }
+
 });
 
 const swiperImg = new Swiper('.products__item-images', {
