@@ -20,6 +20,9 @@ const swiper = new Swiper('.products__list', {
     },
     960: {       
         spaceBetween: 30
+    },
+    1600: {
+        slidesPerView: 3        
     }
   }
 
