@@ -3040,7 +3040,6 @@ h3.advantages__security-title {
   }
 }
 .products {
-  margin-bottom: 120px;
   padding: 45px 0 42px 0;
   background-color: #ffffff;
 }
@@ -3587,5 +3586,319 @@ h3.advantages__security-title {
   .products__pagination .next {
     left: auto;
     right: -133px;
+  }
+}
+.arguments {
+  padding-top: 53px;
+}
+.arguments__title {
+  margin-bottom: 28px;
+  color: #ffffff;
+}
+.arguments__first {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #25292c;
+  border-radius: 20px;
+}
+.arguments__promo {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 0 0 124px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 550;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.arguments__promo:before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  content: '24';
+  font-size: 100px;
+  line-height: 110px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.arguments__desc {
+  margin-bottom: 23px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: #cbcecf;
+}
+.arguments__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.arguments__links li {
+  width: 48%;
+  margin-bottom: 10px;
+}
+.arguments__links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+  padding: 11px 15px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 550;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #4e5051;
+  border-radius: 52px;
+}
+.arguments__links li a svg {
+  margin-right: 5px;
+}
+.arguments__links li a:hover,
+.arguments__links li a:focus {
+  border: 1px solid #707375;
+}
+.arguments__links li:first-child {
+  margin-right: 10px;
+}
+.arguments__links li:last-child {
+  width: 100%;
+}
+.arguments__second {
+  margin-bottom: 24px;
+  padding: 32px 24px 36px 24px;
+  background-color: #25292c;
+  border-radius: 20px;
+}
+.arguments__partners-title {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 550;
+  text-align: center;
+  color: #ffffff;
+}
+.arguments__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.arguments__partners li {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.arguments__partners li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  border-radius: 10px;
+}
+.arguments__partners li a:hover,
+.arguments__partners li a:focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.arguments__partners li:nth-child(2n+1) {
+  position: relative;
+}
+.arguments__partners li:nth-child(2n+1):after {
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  right: -7px;
+  content: '';
+  width: 1px;
+  background-color: #3f3f3f;
+  opacity: 0.5;
+}
+.parnter__hide {
+  display: none;
+}
+.arguments__partners-more {
+  text-align: center;
+}
+.arguments__partners-more a {
+  padding-bottom: 7px;
+  text-transform: none;
+}
+.arguments__socials {
+  margin-bottom: 30px;
+}
+.arguments__socials li {
+  display: block;
+  margin-bottom: 16px;
+}
+.arguments__socials li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  padding: 10px 24px 10px 34px;
+  text-decoration: none;
+  background-color: #25292c;
+  border-radius: 20px;
+}
+.arguments__socials li a .text .net {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 550;
+  color: #7f8589;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.arguments__socials li a .text .address {
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 550;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.arguments__socials li a .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.arguments__socials li a .icon svg {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.arguments__socials li a.icon-telegram .icon {
+  background-color: #259cd8;
+}
+.arguments__socials li a.icon-email .icon {
+  background-color: #ff3e41;
+}
+.arguments__socials li a.icon-whatsapp .icon {
+  background-color: #25cb63;
+}
+.arguments__socials li a:hover .text .net,
+.arguments__socials li a:focus .text .net {
+  color: #ffffff;
+}
+.arguments__socials li a.icon-telegram:hover,
+.arguments__socials li a.icon-telegram:focus {
+  background-color: #259cd8;
+}
+.arguments__socials li a.icon-telegram:hover .icon,
+.arguments__socials li a.icon-telegram:focus .icon {
+  background-color: #ffffff;
+}
+.arguments__socials li a.icon-telegram:hover .icon svg,
+.arguments__socials li a.icon-telegram:focus .icon svg {
+  fill: #259cd8;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.arguments__socials li a.icon-email:hover,
+.arguments__socials li a.icon-email:focus {
+  background-color: #ff3e41;
+}
+.arguments__socials li a.icon-email:hover .icon,
+.arguments__socials li a.icon-email:focus .icon {
+  background-color: #ffffff;
+}
+.arguments__socials li a.icon-email:hover .icon svg,
+.arguments__socials li a.icon-email:focus .icon svg {
+  fill: #ff3e41;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.arguments__socials li a.icon-whatsapp:hover,
+.arguments__socials li a.icon-whatsapp:focus {
+  background-color: #25cb63;
+}
+.arguments__socials li a.icon-whatsapp:hover .icon,
+.arguments__socials li a.icon-whatsapp:focus .icon {
+  background-color: #ffffff;
+}
+.arguments__socials li a.icon-whatsapp:hover .icon svg,
+.arguments__socials li a.icon-whatsapp:focus .icon svg {
+  fill: #25cb63;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.arguments__socials li:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) {
+  .arguments__title {
+    margin-bottom: 35px;
+  }
+  .arguments__first {
+    padding: 35px;
+  }
+  .arguments__promo {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .arguments__promo:before {
+    top: -1px;
+    font-size: 100px;
+    line-height: 110px;
+  }
+  .arguments__desc {
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .arguments__links li {
+    width: 48%;
+    margin-bottom: 13px;
+  }
+  .arguments__links li a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .arguments__links li a svg {
+    margin-right: 10px;
+  }
+  .arguments__partners-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
