@@ -66,3 +66,32 @@ const swiperImg = new Swiper('.products__item-images', {
     clickable: true,
   },
 });
+
+const swiperProduction = new Swiper('.production__list', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 16,
+
+  direction: 'horizontal',
+  loop: false,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.production__pagination .next',
+    prevEl: '.production__pagination .prev',
+  },
+
+  breakpoints: {    
+    // when window width is >= 768px
+    768: {
+        slidesPerView: 2,
+        spaceBetween: 0        
+    },
+    960: {       
+        spaceBetween: 30
+    },
+    1600: {
+        slidesPerView: 3        
+    }
+  }
+});
