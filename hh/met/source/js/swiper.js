@@ -71,6 +71,7 @@ const swiperProduction = new Swiper('.production__list', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 16,
+  width: 304, // ширина смещения слайдера
 
   direction: 'horizontal',
   loop: false,
@@ -85,13 +86,28 @@ const swiperProduction = new Swiper('.production__list', {
     // when window width is >= 768px
     768: {
         slidesPerView: 2,
-        spaceBetween: 0        
+        spaceBetween: 24,
+        width: 632, // ширина смещения слайдера
     },
     960: {       
-        spaceBetween: 30
+        slidesPerView: 2,
+        spaceBetween: 24,
+        width: 724, // ширина смещения слайдера
+    },
+    1200: {       
+        slidesPerView: 2,
+        spaceBetween: 30,
+        width: 866, // ширина смещения слайдера
+    },
+    1400: {       
+        slidesPerView: 2,
+        spaceBetween: 30,
+        width: 866, // ширина смещения слайдера
     },
     1600: {
-        slidesPerView: 3        
+        slidesPerView: 3,
+        spaceBetween: 30,
+        width: 1314, // ширина смещения слайдера
     }
   }
 });
