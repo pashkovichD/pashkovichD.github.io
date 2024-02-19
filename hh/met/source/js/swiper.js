@@ -116,8 +116,8 @@ const swiperProduction = new Swiper('.production__list', {
 const swiperInfo = new Swiper('.info__list', {
   // Optional parameters
   slidesPerView: 1,
-  spaceBetween: 16,
-  width: 304, // ширина смещения слайдера
+  spaceBetween: 12,
+  width: 314,
 
   direction: 'horizontal',
   loop: false,
@@ -133,7 +133,7 @@ const swiperInfo = new Swiper('.info__list', {
     768: {
         slidesPerView: 2,
         spaceBetween: 24,
-        width: 632, // ширина смещения слайдера
+        width: 652, // ширина смещения слайдера
     },
     960: {       
         slidesPerView: 2,

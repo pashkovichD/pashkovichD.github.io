@@ -2,7 +2,7 @@
 	position: relative;
 	margin-bottom: 100px;
 	padding-top: 47px;
-	padding-bottom: 14px;
+	// padding-bottom: 14px;
 	//padding-right: 0;
 	background-color: @white;
 }
@@ -12,28 +12,41 @@
 }
 
 /*--- slider ---*/
+.info__wrapper {
+	padding-right: 0;
+}
+
 .info__list-wrapper {
-	position: relative;
+	position: relative;	
 }
 
 .info__list {
 	position: relative;
-	padding: 27px 0 90px;	
+	padding: 27px 0 145px;
+	.swiper-wrapper {
+		// display: flex;
+		// align-items: stretch;		
+	}
 }
 
 .info__item {
 	position: relative;
 	box-sizing: border-box;
 	width: 314px !important;
-	// padding-right: 7px;		
+	// padding-right: 7px;
+	
+	// background-color: green;
+	// display: flex;
+	// flex-direction: column;
+	
+	
 	& > a {
 		display: block;
 		margin-bottom: 30px;		
 		picture {
 			overflow: hidden;
 			border-radius: 20px;
-			img {
-				//border-radius: 20px;
+			img {				
 				transition: @animation;
 
 			}
@@ -51,14 +64,14 @@
 
 .info__item-data {
 	padding: 0px 28px;
-	& > a {
+	.info__item-title {
+		display: block;
+		margin-bottom: 40px;
 		text-decoration: none;
-		.info__item-title {
+		h3 {
 			margin: 0;
 			font-size: 14px;
 			line-height: 21px;
-			//font-size: 20px;
-			//line-height: 30px;
 			font-weight: 550;
 			letter-spacing: -0.3px;
 			color: @main-dark;
@@ -66,7 +79,7 @@
 		}
 		&:hover,
 		&:focus {
-			.info__item-title {
+			h3 {
 				color: @red;
 			}
 		}
@@ -77,24 +90,43 @@
 	margin-bottom: 15px;
 	font-size: 12px;
 	line-height: 16px;
-	//font-size: 14px;
-	//line-height: 19px;
 	font-weight: 400;
 	color: @red;
 }
 
 .info__item-bottom {
-	a {
-	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .info__item-date {
+	font-size: 12px;
+	line-height: 16px;
+	// font-size: 14px;
+	// line-height: 19px;
+	font-weight: 400;
+	color: @gray-font;
+}
 
+.info__item-link {
+	margin-right: 5px;
+	svg {
+		width: 10px;
+		height: 10px;
+		transition: @animation;
+	}
+	&:hover,
+	&:focus {
+		svg {
+			fill: @red;
+		}
+	}
 }
 
 .info__pagination {
 	position: absolute;
-	bottom: 48px;
+	bottom: 64px;
 	width: 100%;
 	z-index: 2;  
 	.prev, .next {
@@ -146,6 +178,21 @@
 	}
 }
 
+.info__all {
+	position: absolute;
+	bottom: 64px;
+	right: 16px;	
+	z-index: 1;
+	a {
+		padding-bottom: 8px;
+		color: @main-dark;
+		letter-spacing: 0.1px;
+		&::after {
+			background-color: @main-dark;
+		}
+	}
+}
+
 @media (min-width: @mobile-width) {
 	
 }
@@ -156,9 +203,12 @@
 
 @media (min-width: @tablet-width) {
 	.info {
-		padding-top: 53px;
-		padding-left: 58px;
-		padding-right: 58px;
+		padding-top: 53px;		
+	}
+
+	.info__wrapper {
+		padding-left: 48px;
+		padding-right: 48px;
 	}
 
 	.info__title {
@@ -166,24 +216,54 @@
 	}
 
 	.info__list  {
-		padding: 40px 0 90px 0;
+		padding: 40px 0 110px 0;
 	}
 
 	.info__item {
-		picture {
-			img {
+		& > a {
+			picture {
 				border-radius: 24px;
 			}
 		}
 	}
 
+	.info__item-data {
+		.info__item-title {			
+			h3 {				
+				font-size: 16px;
+				line-height: 24px;
+			}			
+		}
+	}
+
+	.info__item-category {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.info__item-date {
+		font-size: 14px;
+		line-height: 19px;		
+	}
+
+	.info__item-link {		
+		svg {
+			width: 12px;
+			height: 12px;			
+		}		
+	}
+
 	.info__pagination {
+		bottom: 45px;
+	}
+
+	.info__all {
 		bottom: 45px;
 	}
 }
 
 @media (min-width: @desktop-width) {
-	.info {
+	.info__wrapper {
 		padding-left: 108px;
 		padding-right: 108px;
 	}
@@ -196,6 +276,9 @@
 @media (min-width: @desktop-1200-width) {
 	.info {
 		padding-top: 60px;
+	}
+
+	.info__wrapper {		
 		padding-left: 127px;
 		padding-right: 127px;
 	}
@@ -203,21 +286,36 @@
 	.info__item {
 		width: 418px !important;
 	}
+
+	.info__item-data {
+		.info__item-title {			
+			h3 {				
+				font-size: 18px;
+				line-height: 27px;
+				//font-size: 20px;
+				//line-height: 30px;
+			}			
+		}
+	}
 }
 
 @media (min-width: @desktop-1400-width) {
 	.info {
+		padding-bottom: 60px;
+	}
+
+	.info__wrapper {
 		padding-left: 227px;
 		padding-right: 227px;
 	}
 
 	.info__list  {
-		padding: 40px 0 40px 0;
+		padding: 40px 0 60px 0;
 	}
 
 	.info__item {
-		picture {
-			img {
+		& > a {
+			picture {
 				border-radius: 28px;
 			}
 		}
@@ -250,17 +348,35 @@
 			}
 		}
 	}
+
+	.info__all {
+		position: static;
+		text-align: center;
+	}
 }
 
 @media (min-width: @desktop-1600-width) {
 	.info {
-		padding-top: 125px;
+		padding-top: 92px;
+	}
+
+	.info__wrapper {
 		padding-left: 93px;
 		padding-right: 93px;
 	}
 
 	.info__list  {
 		padding: 67px 0 0 0;
+	}
+
+	.info__item-data {
+		padding: 0 35px;
+		.info__item-title {			
+			h3 {
+				font-size: 20px;
+				line-height: 31px;
+			}			
+		}
 	}
 
 	.info__pagination {
