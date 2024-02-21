@@ -8,7 +8,7 @@
 }
 
 .info__title {
-	
+	padding-right: 16px;
 }
 
 /*--- slider ---*/
@@ -25,7 +25,7 @@
 	padding: 27px 0 145px;
 	.swiper-wrapper {
 		// display: flex;
-		// align-items: stretch;		
+		align-items: stretch;
 	}
 }
 
@@ -33,11 +33,15 @@
 	position: relative;
 	box-sizing: border-box;
 	width: 314px !important;
-	// padding-right: 7px;
+	padding-bottom: 10px;
+
+	border-radius: 20px;
+	background-color: @red;
+	// background-color: #f5f5f5;	
 	
-	// background-color: green;
-	// display: flex;
-	// flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	// flex: 1;
 	
 	
 	& > a {
@@ -62,29 +66,30 @@
 	}	
 }
 
-.info__item-data {
+
+	
+.info__item-title {
+	display: block;
+	margin-bottom: 40px;
 	padding: 0px 28px;
-	.info__item-title {
-		display: block;
-		margin-bottom: 40px;
-		text-decoration: none;
+	text-decoration: none;
+	h3 {
+		margin: 0;
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: 550;
+		letter-spacing: -0.3px;
+		color: @main-dark;
+		transition: @animation;
+	}
+	&:hover,
+	&:focus {
 		h3 {
-			margin: 0;
-			font-size: 14px;
-			line-height: 21px;
-			font-weight: 550;
-			letter-spacing: -0.3px;
-			color: @main-dark;
-			transition: @animation;
-		}
-		&:hover,
-		&:focus {
-			h3 {
-				color: @red;
-			}
+			color: @red;
 		}
 	}
 }
+
 
 .info__item-category {
 	margin-bottom: 15px;
@@ -98,6 +103,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: auto;
+	padding: 0px 28px;
 }
 
 .info__item-date {
@@ -184,6 +191,7 @@
 	right: 16px;	
 	z-index: 1;
 	a {
+		display: inline-block;
 		padding-bottom: 8px;
 		color: @main-dark;
 		letter-spacing: 0.1px;
@@ -220,6 +228,7 @@
 	}
 
 	.info__item {
+		border-radius: 24px;
 		& > a {
 			picture {
 				border-radius: 24px;
@@ -314,6 +323,7 @@
 	}
 
 	.info__item {
+		border-radius: 28px;
 		& > a {
 			picture {
 				border-radius: 28px;
@@ -358,6 +368,7 @@
 @media (min-width: @desktop-1600-width) {
 	.info {
 		padding-top: 92px;
+		padding-bottom: 92px;
 	}
 
 	.info__wrapper {
@@ -366,12 +377,13 @@
 	}
 
 	.info__list  {
-		padding: 67px 0 0 0;
+		padding: 67px 0 88px 0;
 	}
 
 	.info__item-data {
 		padding: 0 35px;
-		.info__item-title {			
+		.info__item-title {
+			margin-bottom: 35px;
 			h3 {
 				font-size: 20px;
 				line-height: 31px;
@@ -379,8 +391,22 @@
 		}
 	}
 
+	.info__item-category {
+		margin-bottom: 16px;
+	}
+
+	.info__item-link {
+		margin-right: 0;
+	}
+
 	.info__pagination {
 		display: none;
+	}
+
+	.info__all {
+		a {
+			margin-bottom: 11px;
+		}
 	}
 }
 

@@ -118,6 +118,7 @@ const swiperInfo = new Swiper('.info__list', {
   slidesPerView: 1,
   spaceBetween: 12,
   width: 314,
+  autoHeight: true, // одинаковая высота слайдов
 
   direction: 'horizontal',
   loop: false,
@@ -127,6 +128,15 @@ const swiperInfo = new Swiper('.info__list', {
     nextEl: '.info__pagination .next',
     prevEl: '.info__pagination .prev',
   },
+
+    // on: {
+    //     init: function() {
+    //         setSlidesHeight(this);
+    //     },
+    //     resize: function() {
+    //         setSlidesHeight(this);
+    //     }
+    // },
 
   breakpoints: {    
     // when window width is >= 768px
@@ -157,3 +167,15 @@ const swiperInfo = new Swiper('.info__list', {
     }
   }
 });
+
+/*function setSlidesHeight(swiperInstance) {
+    var maxSlideHeight = 0;
+    swiperInstance.slides.each(function() {
+        var slideHeight = $(this).outerHeight();
+        if (slideHeight > maxSlideHeight) {
+            maxSlideHeight = slideHeight;
+        }
+    });
+    swiperInstance.slides.css('height', maxSlideHeight);
+}*/
+
