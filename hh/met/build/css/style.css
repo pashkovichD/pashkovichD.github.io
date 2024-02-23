@@ -4428,11 +4428,12 @@ h3.advantages__security-title {
 }
 .info {
   position: relative;
-  margin-bottom: 100px;
   padding-top: 47px;
+  padding-bottom: 37px;
   background-color: #ffffff;
 }
 .info__title {
+  margin-bottom: 28px;
   padding-right: 16px;
 }
 /*--- slider ---*/
@@ -4444,7 +4445,7 @@ h3.advantages__security-title {
 }
 .info__list {
   position: relative;
-  padding: 27px 0 145px;
+  padding: 0 0 50px;
 }
 .info__list .swiper-wrapper {
   -webkit-box-align: stretch;
@@ -4456,9 +4457,9 @@ h3.advantages__security-title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 314px !important;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   border-radius: 20px;
-  background-color: #ff3e41;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4467,20 +4468,21 @@ h3.advantages__security-title {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.info__item > a {
+.info__item .info__item-img {
   display: block;
+  margin-bottom: auto;
   margin-bottom: 30px;
 }
-.info__item > a picture {
+.info__item .info__item-img picture {
   overflow: hidden;
   border-radius: 20px;
 }
-.info__item > a picture img {
+.info__item .info__item-img picture img {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-.info__item > a:hover picture img,
-.info__item > a:focus picture img {
+.info__item .info__item-img:hover picture img,
+.info__item .info__item-img:focus picture img {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
@@ -4507,6 +4509,7 @@ h3.advantages__security-title {
 }
 .info__item-category {
   margin-bottom: 15px;
+  padding: 0px 28px;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -4545,9 +4548,7 @@ h3.advantages__security-title {
   fill: #ff3e41;
 }
 .info__pagination {
-  position: absolute;
-  bottom: 64px;
-  width: 100%;
+  position: relative;
   z-index: 2;
 }
 .info__pagination .prev,
@@ -4603,9 +4604,10 @@ h3.advantages__security-title {
   border-right: 2px solid #7f8589;
 }
 .info__all {
-  position: absolute;
-  bottom: 64px;
+  position: relative;
+  bottom: 20px;
   right: 16px;
+  text-align: right;
   z-index: 1;
 }
 .info__all a {
@@ -4626,18 +4628,19 @@ h3.advantages__security-title {
     padding-right: 48px;
   }
   .info__title {
+    margin-bottom: 45px;
     padding-right: 0;
   }
   .info__list {
-    padding: 40px 0 110px 0;
+    padding: 0 0 100px;
   }
   .info__item {
     border-radius: 24px;
   }
-  .info__item > a picture {
+  .info__item .info__item-img picture {
     border-radius: 24px;
   }
-  .info__item-data .info__item-title h3 {
+  .info__item-title h3 {
     font-size: 16px;
     line-height: 24px;
   }
@@ -4652,12 +4655,6 @@ h3.advantages__security-title {
   .info__item-link svg {
     width: 12px;
     height: 12px;
-  }
-  .info__pagination {
-    bottom: 45px;
-  }
-  .info__all {
-    bottom: 45px;
   }
 }
 @media (min-width: 960px) {
@@ -4677,10 +4674,18 @@ h3.advantages__security-title {
     padding-left: 127px;
     padding-right: 127px;
   }
+  .info__title {
+    margin-bottom: 60px;
+  }
+  .info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .info__item {
     width: 418px !important;
   }
-  .info__item-data .info__item-title h3 {
+  .info__item-title h3 {
     font-size: 18px;
     line-height: 27px;
   }
@@ -4693,21 +4698,21 @@ h3.advantages__security-title {
     padding-left: 227px;
     padding-right: 227px;
   }
-  .info__list {
-    padding: 40px 0 60px 0;
-  }
   .info__item {
     border-radius: 28px;
   }
-  .info__item > a picture {
+  .info__item .info__item-img {
+    margin-bottom: 33px;
+  }
+  .info__item .info__item-img picture {
     border-radius: 28px;
   }
   .info__pagination {
-    bottom: auto;
+    position: absolute;
     top: 50%;
     left: 0;
     right: 0;
-    margin-top: -30px;
+    margin-top: -50px;
   }
   .info__pagination .prev,
   .info__pagination .next {
@@ -4732,40 +4737,48 @@ h3.advantages__security-title {
     left: 19px;
   }
   .info__all {
-    position: static;
+    position: relative;
+    right: auto;
+    bottom: 0px;
     text-align: center;
   }
 }
 @media (min-width: 1600px) {
   .info {
     padding-top: 92px;
-    padding-bottom: 92px;
+    padding-bottom: 50px;
   }
   .info__wrapper {
     padding-left: 93px;
     padding-right: 93px;
   }
-  .info__list {
-    padding: 67px 0 88px 0;
+  .info__title {
+    margin-bottom: 65px;
   }
-  .info__item-data {
+  .info__item-title {
+    margin-bottom: 35px;
     padding: 0 35px;
   }
-  .info__item-data .info__item-title {
-    margin-bottom: 35px;
-  }
-  .info__item-data .info__item-title h3 {
+  .info__item-title h3 {
     font-size: 20px;
     line-height: 31px;
   }
   .info__item-category {
     margin-bottom: 16px;
+    padding: 0 35px;
   }
   .info__item-link {
     margin-right: 0;
   }
   .info__pagination {
     display: none;
+    margin-top: -105px;
+  }
+  .info__item-bottom {
+    padding: 0px 35px;
+  }
+  .info__all {
+    bottom: 43px;
   }
   .info__all a {
     margin-bottom: 11px;
@@ -4773,8 +4786,8 @@ h3.advantages__security-title {
 }
 @media (min-width: 1920px) {
   .info__pagination {
+    position: absolute;
     display: block;
-    margin-top: 6px;
   }
   .info__pagination .prev,
   .info__pagination .next {
@@ -4784,4 +4797,12 @@ h3.advantages__security-title {
     left: auto;
     right: -133px;
   }
+}
+.page-footer__logo {
+  display: block;
+  line-height: 0;
+}
+.page-footer__logo svg {
+  width: 57px;
+  height: 23px;
 }
