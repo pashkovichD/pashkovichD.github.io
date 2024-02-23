@@ -895,6 +895,7 @@ picture {
 }
 .page-header__left-nav {
   display: none;
+  z-index: 1;
 }
 .page-header__number {
   position: relative;
