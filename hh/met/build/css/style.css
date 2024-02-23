@@ -4860,6 +4860,7 @@ h3.advantages__security-title {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-align: left;
   letter-spacing: 0.2px;
   color: #ffffff;
   background-color: transparent;
@@ -4922,7 +4923,7 @@ h3.advantages__security-title {
 .page-footer__address .text {
   font-size: 11px;
   line-height: 17px;
-  font-weight: 400;
+  font-weight: 300;
   color: #7f8589;
   letter-spacing: -0.1px;
 }
@@ -5035,4 +5036,46 @@ h3.advantages__security-title {
 .page-footer__politic a:focus {
   text-decoration: underline;
   color: #ffffff;
+}
+@media (min-width: 480px) {
+  .page-footer__phone {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .page-footer__request {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .page-footer__request svg {
+    width: 18px;
+    height: 18px;
+  }
+  .page-footer__email {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .page-footer__address .title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .page-footer__address .text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .page-footer__products-title h3 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .page-footer__product-item a {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .page-footer__company-title h3 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .page-footer__company-item a {
+    font-size: 13px;
+    line-height: 16px;
+  }
 }

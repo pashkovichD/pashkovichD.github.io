@@ -39,8 +39,6 @@
 	margin-bottom: 33px;
 	font-size: 20px;
 	line-height: 25px;
-	// font-size: 32px;
-	// line-height: 40px;
 	font-weight: 550;
 	text-decoration: none;
 	letter-spacing: -0.1px;
@@ -59,9 +57,8 @@
 	padding: 13px 16px 13px 6px;
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: 400;
-	// font-size: 15px;
-	// line-height: 19px;
+	font-weight: 400;	
+	text-align: left;
 	letter-spacing: 0.2px;
 	color: @white;
 	background-color: transparent;
@@ -73,9 +70,7 @@
 		position: relative;
 		top: 2px;
 		width: 17px;
-		height: 17px;
-		// width: 18px;
-		// height: 18px;
+		height: 17px;		
 		margin-right: 25px;
 		transition: @animation;
 	}
@@ -119,19 +114,15 @@
 	.title {
 		margin-bottom: 12px;
 		font-size: 12px;
-		line-height: 15px;
-		// font-size: 15px;
-		// line-height: 19px;
+		line-height: 15px;		
 		font-weight: 700;
 		letter-spacing: 0em;
 		color: @white;
 	}
 	.text {	
 		font-size: 11px;
-		line-height: 17px;
-		// font-size: 15px;
-		// line-height: 23px;
-		font-weight: 400;
+		line-height: 17px;		
+		font-weight: 300;
 		color: @gray-font;
 		letter-spacing: -0.1px;
 	}
@@ -151,9 +142,7 @@
 	h3 {
 		margin: 0;
 		font-size: 12px;
-		line-height: 15px;
-		// font-size: 15px;
-		// line-height: 19px;
+		line-height: 15px;		
 		font-weight: 700;
 		letter-spacing: 0em;
 	}
@@ -199,9 +188,7 @@
 	h3 {
 		margin: 0;
 		font-size: 12px;
-		line-height: 15px;
-		// font-size: 15px;
-		// line-height: 19px;
+		line-height: 15px;		
 		font-weight: 700;
 		letter-spacing: 0em;
 	}
@@ -290,7 +277,76 @@
 
 
 @media (min-width: @mobile-width) {
-	
+	.page-footer__phone {
+		font-size: 24px;
+		line-height: 30px;
+		// font-size: 32px;
+		// line-height: 40px;		
+	}
+
+	.page-footer__request {				
+		font-size: 15px;
+		line-height: 19px;
+		svg {			
+			width: 18px;
+			height: 18px;
+		}		
+	}
+
+	.page-footer__email {
+		font-size: 15px;
+		line-height: 19px;
+	}
+
+	.page-footer__address {
+		.title {
+			font-size: 14px;
+			line-height: 18px;
+			// font-size: 15px;
+			// line-height: 19px;			
+		}
+		.text {	
+			font-size: 14px;
+			line-height: 21px;
+			// font-size: 15px;
+			// line-height: 23px;			
+		}
+	}
+
+	.page-footer__products-title {
+		h3 {
+			font-size: 15px;
+			line-height: 19px;
+		}		
+	}
+
+	.page-footer__product-item {
+		a {
+			font-size: 13px;
+			line-height: 16px;
+			// font-size: 15px;
+			// line-height: 19px;
+		}
+	}
+
+
+
+
+	.page-footer__company-title {
+		h3 {
+			font-size: 15px;
+			line-height: 19px;
+		}		
+	}
+
+	.page-footer__company-item {
+		a {
+			font-size: 13px;
+			line-height: 16px;
+			// font-size: 15px;
+			// line-height: 19px;
+		}
+	}
 }
 
 @media (min-width: 600px) {
