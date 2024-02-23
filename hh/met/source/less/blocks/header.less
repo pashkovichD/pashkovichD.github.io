@@ -23,6 +23,13 @@
 	svg {
 		width: 57px;
 		height: 23px;
+		transition: @animation;
+	}
+	&:hover,
+	&:focus {
+		svg {
+			fill: @red;
+		}
 	}
 }
 
