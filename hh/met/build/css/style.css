@@ -5064,7 +5064,7 @@ h3.advantages__security-title {
   }
   .page-footer__products-title h3 {
     font-size: 15px;
-    line-height: 19px;
+    line-height: 18px;
   }
   .page-footer__product-item a {
     font-size: 13px;
@@ -5072,10 +5072,178 @@ h3.advantages__security-title {
   }
   .page-footer__company-title h3 {
     font-size: 15px;
-    line-height: 19px;
+    line-height: 18px;
   }
   .page-footer__company-item a {
     font-size: 13px;
     line-height: 16px;
+  }
+  .page-footer__menu-item a {
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .page-footer__copyright {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .page-footer__politic a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .page-footer {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  .page-footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+  .page-footer__phone {
+    width: 100%;
+  }
+  .page-footer__contacts-buttons {
+    width: 45%;
+    margin-right: 70px;
+  }
+  .page-footer__email {
+    margin-bottom: 0;
+  }
+  .page-footer__address {
+    width: 43%;
+  }
+  .page-footer__products {
+    width: 45%;
+    margin-right: 70px;
+  }
+  .page-footer__company {
+    width: 43%;
+  }
+}
+@media (min-width: 960px) {
+  .page-footer__phone {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .page-footer__address .title {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .page-footer__address .text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .page-footer__product-item a {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .page-footer__company-item a {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .page-footer__menu-item a {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .page-footer__copyright {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .page-footer__politic a {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 1600px) {
+  .page-footer {
+    padding-top: 88px;
+    padding-bottom: 60px;
+  }
+  .page-footer__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 73px;
+    margin-right: 173px;
+  }
+  .page-footer__logo svg {
+    width: 73px;
+    height: 29px;
+  }
+  .page-footer__contacts {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    display: block;
+    width: 352px;
+    margin-left: auto;
+    margin-bottom: 100px;
+  }
+  .page-footer__phone {
+    margin-bottom: 17px;
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .page-footer__contacts-buttons {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 65px;
+  }
+  .page-footer__address {
+    width: auto;
+  }
+  .page-footer__address .title {
+    margin-bottom: 16px;
+  }
+  .page-footer__address .text {
+    width: 80%;
+  }
+  .page-footer__address .text br {
+    display: none;
+  }
+  .page-footer__products {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 278px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+  }
+  .page-footer__products-title {
+    margin-bottom: 23px;
+  }
+  .page-footer__company {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 278px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+  }
+  .page-footer__company-title {
+    margin-bottom: 23px;
+  }
+  .page-footer__menu-item a {
+    padding: 12px 0;
+  }
+  .page-footer__bottom {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
