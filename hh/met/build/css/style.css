@@ -918,8 +918,6 @@ picture {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
-}
-.page-header__number-item a {
   font-size: 13px;
   font-weight: 600;
   line-height: 18px;
@@ -929,13 +927,34 @@ picture {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-.page-header__number-item a:hover,
-.page-header__number-item a:focus {
+.page-header__number-item--active {
   color: #ff3e41;
 }
-.page-header__number-item--active a {
-  color: #ff3e41;
+/*.page-header__number-item {
+	display: block;
+	width: 17px;
+	margin-bottom: 20px;
+	transform: rotate(-90deg);	
+	a {
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 18px;
+		color: @gray-font;
+		text-decoration: none;
+		letter-spacing: .9px;
+		transition: @animation;
+		&:hover,
+		&:focus {
+			color: @red;
+		}
+	}
 }
+
+.page-header__number-item--active {
+	a {
+		color: @red;
+	}	
+}*/
 .page-header__btn-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
