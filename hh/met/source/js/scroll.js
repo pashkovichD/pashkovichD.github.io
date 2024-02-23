@@ -3,11 +3,13 @@ window.addEventListener('load', function(){
 	let links = this.document.querySelectorAll('.page-header__number .page-header__number-item');
 	let header = document.querySelector('.page-header');
 	let classItem = 'page-header__number-item';
-	let classActiveItem = 'page-header__number-item--active';
+	let classActiveItem = 'active';
 	
 	if(window.location.hash != '') {
 		scrollToId(window.location.hash);
 	}
+
+	scrollToY(0); // при обновлении страницы scroll в начало страницы (если мы находились на момент обновления где-то ниже)
 	
 	menu.addEventListener('click', function(e){
 		
@@ -59,7 +61,7 @@ window.addEventListener('load', function(){
 		}		
 	}
 
-	function scrollToId(id) {
+	function scrollToId(id) {		
 		let target = document.querySelector(id);
 		let styles = window.getComputedStyle(target); // стили целевого блока
 		let marginTopTarget = parseFloat(styles.marginTop); // верхний отступ целевого блока
@@ -67,8 +69,14 @@ window.addEventListener('load', function(){
 		let stylesHeader = window.getComputedStyle(header);	// стили header'а
 		let marginBottomHeader = parseFloat(stylesHeader.marginBottom); // нижний отступ header'а
 
-		if(target !== null) {			
-			let pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget; // вычитаем высоту header'а, нижний отступ header'а и верхний внешний отступ заголовка			
+		if(target !== null) {
+			let pos = elemOffsetTop(target) - marginTopTarget;
+			if(id == '#intro' || id == '#advantages') {
+				console.log('OK');
+				pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget;
+			}
+			
+			// let pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget; // вычитаем высоту header'а, нижний отступ header'а и верхний внешний отступ заголовка			
 			scrollToY(pos);
 		}
 	}

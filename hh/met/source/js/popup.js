@@ -1,7 +1,7 @@
-var popup = document.querySelector('.modal-order');
-var iconCloseModal = document.querySelector('.modal-order__close');
+var popup = document.querySelector('.modal-user');
+var iconCloseModal = document.querySelector('.modal-user__close');
 var overlay = document.querySelector('.overlay');
-var link = document.querySelector('.page-header__order');
+var link = document.querySelector('.page-header__user');
 
 /* показ модального окна и overlay */
 link.addEventListener('click', function(evt) {	
