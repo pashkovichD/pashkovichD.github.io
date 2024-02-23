@@ -46,7 +46,7 @@
 						<li class="page-header__number-item"><a href="#">05</a></li>
 						<li class="page-header__number-item"><a href="#">06</a></li>
 					</ul>
-					<button class="page-header__btn-scroll"><span>вниз</span><svg width="22" height="32"><use xlink:href="#icon-scroll"></use></svg></button>
+					<button class="page-header__btn-scroll" type="button" aria-label="Прокрутить страницу вниз"><span>вниз</span><svg width="22" height="32"><use xlink:href="#icon-scroll"></use></svg></button>
 				</div>
 			</div>
 			
@@ -118,7 +118,7 @@
 		<section class="intro container">
 			<h2 class="visually-hidden">Представление товаров</h2>
 			<p class="intro__desc">Точность без компромисcов</p>
-			<button class="intro__video"><svg class="play" fill="none" width="20" height="22"><use xlink:href="#icon-play"></use></svg><svg class="play-text" fill="none" width="94" height="98"><use xlink:href="#icon-play-text"></use></svg></button>
+			<button class="intro__video" type="button" aria-label="Посмотреть видео"><svg class="play" fill="none" width="20" height="22"><use xlink:href="#icon-play"></use></svg><svg class="play-text" fill="none" width="94" height="98"><use xlink:href="#icon-play-text"></use></svg></button>
 			<a href="#" class="intro__buy">Купить</a>			
 			<div class="intro__state-register"><svg fill="none" width="65" height="64"><use xlink:href="#icon-gost"></use></svg><span class="upper">Госреестр</span><span>средств измерений</span></div>
 
@@ -718,25 +718,25 @@
 				<div class="production__list swiper">
 					<div class="swiper-wrapper">
 						<div class="production__item swiper-slide">
-							<div class="production__item-zoom"><button class="btn-zoom"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
+							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 1">
 							</picture>
 						</div>
 						<div class="production__item swiper-slide">
-							<div class="production__item-zoom"><button class="btn-zoom"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
+							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-2.webp" srcset="img/production/photo-2@2x.webp 2x" alt="Производство - 2">
 							</picture>
 						</div>
 						<div class="production__item swiper-slide">
-							<div class="production__item-zoom"><button class="btn-zoom"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
+							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-3.webp" srcset="img/production/photo-3@2x.webp 2x" alt="Производство - 3">
 							</picture>
 						</div>
 						<div class="production__item swiper-slide">
-							<div class="production__item-zoom"><button class="btn-zoom"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
+							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 4">
 							</picture>
@@ -822,7 +822,7 @@
 				<h3 class="visually-hidden">Контакты компании</h3>
 				<a class="page-footer__phone" href="tel:+88002227526" aria-label="8 (800) 222-75-26">8 (800) 222-75-26</a>
 
-				<button class="page-footer__request"><svg width="18" height="18" fill="white"><use xlink:href="#icon-phone"></use></svg><span>Заказать звонок</span></button>
+				<button class="page-footer__request" type="button" aria-label="Заказать звонок"><svg width="18" height="18" fill="white"><use xlink:href="#icon-phone"></use></svg><span>Заказать звонок</span></button>
 
 				<a class="page-footer__email" href="mailto:mng@tverdomer.ru" rel="noopener nofollow" target="_blank" aria-label="e-mail компании info@example.com"><svg width="18" height="14" fill="white"><use xlink:href="#icon-email"></use></svg><span>info@tverdomer.ru</span></a>
 
@@ -876,7 +876,7 @@
 	<!-- <section class="modal-order modal">
 		<h2 class="visually-hidden">Заказать звонок консультанта</h2>
 		<p class="modal-order__description">Консультант перезвонит Вам в ближайшее время</p>
-		<form id="order-form" class="form form--nojs" action="/" method="POST">
+		<form id="order-form" class="form" action="/" method="POST">
 			<p class="form__item">
 				<input class="form__input" type="text" name="order__name" id="order__name"  value="" placeholder="Ваше имя">
 				<label class="visually-hidden" for="order__name">Ваше имя</label>
