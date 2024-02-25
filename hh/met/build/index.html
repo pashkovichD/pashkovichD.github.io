@@ -46,14 +46,6 @@
 						<a href="index.html#production" class="page-header__number-item">05</a>
 						<a href="index.html#info" class="page-header__number-item">06</a>
 					</div>
-					<!-- <ul class="page-header__number">
-						<li class="page-header__number-item page-header__number-item--active"><a href="#">01</a></li>
-						<li class="page-header__number-item"><a href="#">02</a></li>
-						<li class="page-header__number-item"><a href="#">03</a></li>
-						<li class="page-header__number-item"><a href="#">04</a></li>
-						<li class="page-header__number-item"><a href="#">05</a></li>
-						<li class="page-header__number-item"><a href="#">06</a></li>
-					</ul> -->
 					<button class="page-header__btn-scroll" type="button" aria-label="Прокрутить страницу вниз"><span>вниз</span><svg width="22" height="32"><use xlink:href="#icon-scroll"></use></svg></button>
 				</div>
 			</div>
@@ -898,7 +890,17 @@
 			<input type="submit" class="form__submit button" value="Войти">
 		</form>	
 		<button type="button" class="modal-user__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
-	</section>	
+	</section>
+
+	<section class="modal-video modal">
+		<h2 class="visually-hidden">Видео-презентация</h2>
+		<video controls="controls">		
+			<source src="video/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+			<a href="video/video.mp4">Скачать видео</a>
+		</video>		
+		<button type="button" class="modal-video__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
+	</section>
+
 	<div class="overlay"></div>
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -911,9 +913,11 @@
 	<script async="" src="js/hamburger.min.js"></script>
 	<script async="" src="js/intro.min.js"></script>
 	
-	<!-- <script async src="js/video.min.js"></script> -->
-	<script async="" src="js/swiper.min.js"></script>
 	<script src="js/popup.min.js"></script>
+	<!--<script async src="js/video.min.js"></script>-->
+	
+	<script async="" src="js/swiper.min.js"></script>
+	
 
 </body>
 </html>
