@@ -11,37 +11,37 @@ let overlay = document.querySelector('.overlay');
 workPopup(modalUser, btnModalUser, closeUser, overlay);
 workPopup(modalVideo, btnModalVideo, closeVideo, overlay);
 
-function workPopup(popup, link, close, overlay) {
+function workPopup(modal, btnModal, close, overlay) {
 	/* показ модального окна и overlay */
-	link.addEventListener('click', function(evt) {	
+	btnModal.addEventListener('click', function(evt) {	
 		evt.preventDefault();
-		popup.classList.remove('modal-hide');
-		popup.classList.add('modal-show');
+		modal.classList.remove('modal-hide');
+		modal.classList.add('modal-show');
 		overlay.classList.add('overlay-show');
 	});
 
 	close.addEventListener('click', function(evt) {
 		evt.preventDefault();
-		hideModal(popup, overlay);
+		hideModal(modal, overlay);
 	});
 
 	overlay.addEventListener('click', function(evt) {
 		evt.preventDefault();
-		hideModal(popup, overlay);
+		hideModal(modal, overlay);
 	});
 
 	// open modal windows if click ESC
 	window.addEventListener('keydown', function(evt) {
 		if(evt.keyCode === 27) {
 			evt.preventDefault();
-			hideModal(popup, overlay);
+			hideModal(modal, overlay);
 		}
 	});
 }
 
 /* скрытие модального окна */
-function hideModal(popup, overlay) {
-	popup.classList.remove('modal-show');
-	popup.classList.add('modal-hide');	
+function hideModal(modal, overlay) {
+	modal.classList.remove('modal-show');
+	modal.classList.add('modal-hide');	
 	overlay.classList.remove('overlay-show');
 }
