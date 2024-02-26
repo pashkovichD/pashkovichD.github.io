@@ -8,7 +8,6 @@ let closeVideo = document.querySelector('.modal-video__close');
 
 let overlay = document.querySelector('.overlay');
 
-
 btnModalUser.addEventListener('click', function(evt) {
 	evt.preventDefault();
 	workModal(modalUser, btnModalUser, closeUser, overlay);
@@ -20,8 +19,6 @@ btnModalVideo.addEventListener('click', function(evt) {
 });
 
 function workModal(modal, btnModal, close, overlay) {
-	console.log(modal);
-	
 	/* показ модального окна и overlay */
 	modal.classList.remove('modal-hide');
 	modal.classList.add('modal-show');

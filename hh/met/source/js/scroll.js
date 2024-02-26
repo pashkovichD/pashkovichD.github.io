@@ -1,6 +1,7 @@
 window.addEventListener('load', function(){
 	let menu = document.querySelector('.page-header__number');
 	let links = this.document.querySelectorAll('.page-header__number .page-header__number-item');
+	let btnBottom = document.querySelector('.page-header__btn-scroll');
 	let header = document.querySelector('.page-header');
 	let classItem = 'page-header__number-item';
 	let classActiveItem = 'active';
@@ -19,11 +20,6 @@ window.addEventListener('load', function(){
 			scrollToId(link.hash);			
 		}		
 	});
-
-	/*let btnUp = document.querySelector('.btnUp');
-	btnUp.addEventListener('click', function(e) {
-		scrollToY(0);
-	});*/
 
 	let scrolls = 0;
 	let scrollTimeout;
@@ -72,7 +68,7 @@ window.addEventListener('load', function(){
 		if(target !== null) {
 			let pos = elemOffsetTop(target) - marginTopTarget;
 			if(id == '#intro' || id == '#advantages') {
-				console.log('OK');
+				// console.log('OK');
 				pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget;
 			}
 			
@@ -81,6 +77,50 @@ window.addEventListener('load', function(){
 		}
 	}
 
+	btnBottom.addEventListener('click', function() {	
+		this.removeEventListener('click', getUp());
+
+		let pos = window.pageYOffset;
+		// console.log(pos);
+		for(let i = 0; i <= links.length - 2; i++) {
+			let nextSection = links[i+1].hash;
+			let header = document.querySelector(nextSection);
+			// console.log(nextSection + '= ' + elemOffsetTop(header));
+
+			if(nextSection == '#advantages') {
+				pos = pos + 102;
+			}
+
+			if(nextSection == '#info') {				
+				btnBottom.classList.add('btn-up');
+				// btnBottom.querySelector('span').innerHTML = 'вверх';
+				// let btnUp = document.querySelector('.btn-up');
+				this.addEventListener('click', getUp());
+			}
+
+
+
+			// console.log(pos);
+
+			if(pos < (elemOffsetTop(header))) {
+				scrollToId(nextSection);				
+				break;
+			}
+		}
+	});
+
+	function getUp() {		
+		scrollToY(0);
+		btnBottom.classList.remove('btn-up');
+		// btnBottom.querySelector('span').innerHTML = 'вниз';		
+	}
+
+	
+	/*btnUp.addEventListener('click', function(e) {
+		scrollToY(0);
+		btnBottom.classList.remove('btn-up');
+		// btnBottom.querySelector('span').innerHTML = 'вниз';
+	});*/
 });
 
 function scrollToY(pos) {

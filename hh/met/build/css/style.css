@@ -1443,6 +1443,43 @@ picture {
 		color: @red;
 	}	
 }*/
+/*.page-header__btn-scroll {
+	position: absolute;
+	display: flex;
+	flex-direction: column;	
+	align-items: center;	
+	margin-top: auto;
+	padding-left: 120px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 18px;
+	color: @menu-font;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease-out;
+	transform: rotate(-90deg);
+	svg {
+		position: absolute;
+		transform: rotate(90deg);
+		.ball {
+			transition: all .3s ease-out;
+		}
+	}
+	span {		
+		text-transform: uppercase;
+		letter-spacing: 2.2px;
+		// transform: rotate(-90deg);
+	}	
+}
+
+.btn-up {	
+	svg {
+		.ball {
+			transform: translateY(-9px);
+		}
+	}
+}*/
 .page-header__btn-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1461,6 +1498,13 @@ picture {
   color: #cbcecf;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.page-header__btn-scroll svg path {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .page-header__btn-scroll span {
   margin-bottom: 25px;
@@ -1469,6 +1513,17 @@ picture {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+.page-header__btn-scroll:hover {
+  color: #ff3e41;
+}
+.page-header__btn-scroll:hover svg path {
+  fill: #ff3e41;
+}
+.btn-up svg .ball {
+  -webkit-transform: translateY(-9px);
+      -ms-transform: translateY(-9px);
+          transform: translateY(-9px);
 }
 .page-header__phone {
   display: -webkit-box;
