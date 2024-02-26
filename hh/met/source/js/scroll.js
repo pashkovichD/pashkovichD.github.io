@@ -40,7 +40,7 @@ window.addEventListener('load', function(){
 	});
 
 	function onScroll(e) {		
-		console.log(++scrolls);
+		// console.log(++scrolls);
 		let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей		
 
 		/*if(pos > this.window.innerHeight) {

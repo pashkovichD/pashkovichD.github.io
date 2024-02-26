@@ -8,17 +8,24 @@ let closeVideo = document.querySelector('.modal-video__close');
 
 let overlay = document.querySelector('.overlay');
 
-workPopup(modalUser, btnModalUser, closeUser, overlay);
-workPopup(modalVideo, btnModalVideo, closeVideo, overlay);
 
-function workPopup(modal, btnModal, close, overlay) {
+btnModalUser.addEventListener('click', function(evt) {
+	evt.preventDefault();
+	workModal(modalUser, btnModalUser, closeUser, overlay);
+});
+
+btnModalVideo.addEventListener('click', function(evt) {
+	evt.preventDefault();
+	workModal(modalVideo, btnModalVideo, closeVideo, overlay);
+});
+
+function workModal(modal, btnModal, close, overlay) {
+	console.log(modal);
+	
 	/* показ модального окна и overlay */
-	btnModal.addEventListener('click', function(evt) {	
-		evt.preventDefault();
-		modal.classList.remove('modal-hide');
-		modal.classList.add('modal-show');
-		overlay.classList.add('overlay-show');
-	});
+	modal.classList.remove('modal-hide');
+	modal.classList.add('modal-show');
+	overlay.classList.add('overlay-show');	
 
 	close.addEventListener('click', function(evt) {
 		evt.preventDefault();
@@ -41,6 +48,11 @@ function workPopup(modal, btnModal, close, overlay) {
 
 /* скрытие модального окна */
 function hideModal(modal, overlay) {
+	// console.log(modal);
+	if(modal.querySelector('video')) {
+		// console.log('OK');
+		modal.querySelector('video').pause();
+	}	
 	modal.classList.remove('modal-show');
 	modal.classList.add('modal-hide');	
 	overlay.classList.remove('overlay-show');
