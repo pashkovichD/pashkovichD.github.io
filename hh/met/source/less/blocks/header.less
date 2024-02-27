@@ -146,6 +146,13 @@
 	border: none;
 	cursor: pointer;
 	transition: all .3s ease-out;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+		/* отмена выделения текста */
+		-webkit-user-select: none;
+		 -khtml-user-select: none;
+		   -moz-user-select: none;
+			-ms-user-select: none;
+			    user-select: none;
 	svg {
 		path {
 			transition: all .3s ease-out;
