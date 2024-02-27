@@ -49,6 +49,8 @@ window.addEventListener('load', function(){
 			let link = links[i];
 			let header = document.querySelector(link.hash);			
 
+			// (header == '#info') ? buttonUp() : buttonDown();
+
 			if(pos > (elemOffsetTop(header) - this.window.innerHeight/2)) {
 				menu.querySelector('.' + classActiveItem).classList.remove(classActiveItem);
 				link.classList.add(classActiveItem);
@@ -67,61 +69,55 @@ window.addEventListener('load', function(){
 
 		if(target !== null) {
 			let pos = elemOffsetTop(target) - marginTopTarget;
-			if(id == '#intro' || id == '#advantages') {
-				// console.log('OK');
+			if(id == '#intro' || id == '#advantages') {				
 				pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget;
 			}
+
+			(id == '#info') ? buttonUp() : buttonDown();			
 			
 			// let pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget; // вычитаем высоту header'а, нижний отступ header'а и верхний внешний отступ заголовка			
 			scrollToY(pos);
 		}
 	}
 
-	btnBottom.addEventListener('click', function() {	
-		// this.removeEventListener('click', getUp());
-
-		/*this.classList.remove('btn-up');
-		this.querySelector('span').innerHTML = 'вниз';*/
-
+	btnBottom.addEventListener('click', function() {
 		let pos = window.pageYOffset;
-		// console.log(pos);
+
 		for(let i = 0; i <= links.length - 2; i++) {
 			let nextSection = links[i+1].hash;
-			let header = document.querySelector(nextSection);
-			// console.log(nextSection + '= ' + elemOffsetTop(header));
+			let header = document.querySelector(nextSection);			
 
 			if(nextSection == '#advantages') {
 				pos = pos + 102;
 			}
 
-			if(nextSection == '#info') {				
-				btnBottom.classList.add('btn-up');
-				btnBottom.querySelector('span').innerHTML = 'вверх';
-				// let btnUp = document.querySelector('.btn-up');
-				this.addEventListener('click', getUp());
+			// getBtnUp();
+
+			if(nextSection == '#info') {
+				buttonUp();
 			}
 
-
-
-			// console.log(pos);
-
 			if(pos < (elemOffsetTop(header))) {
-				scrollToId(nextSection);				
+				scrollToId(nextSection);
 				break;
+			} else {
+				scrollToY(0);
+				buttonDown();
 			}
 		}
 	});
 
-	function getUp() {		
-		scrollToY(0);
+	function buttonUp() {
+		btnBottom.classList.add('btn-up');
+		btnBottom.querySelector('span').innerHTML = 'вверх';
 	}
-	
-	/*btnUp.addEventListener('click', function(e) {
-		scrollToY(0);
+
+	function buttonDown() {
 		btnBottom.classList.remove('btn-up');
-		// btnBottom.querySelector('span').innerHTML = 'вниз';
-	});*/
+		btnBottom.querySelector('span').innerHTML = 'вниз';
+	}
 });
+
 
 function scrollToY(pos) {
 	window.scrollTo({
