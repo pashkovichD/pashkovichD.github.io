@@ -2089,6 +2089,12 @@ picture {
   border: none;
   cursor: pointer;
   z-index: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .intro__video svg {
   -webkit-transition: all 0.35s ease-out;

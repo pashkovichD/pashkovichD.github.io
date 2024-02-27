@@ -78,7 +78,10 @@ window.addEventListener('load', function(){
 	}
 
 	btnBottom.addEventListener('click', function() {	
-		this.removeEventListener('click', getUp());
+		// this.removeEventListener('click', getUp());
+
+		/*this.classList.remove('btn-up');
+		this.querySelector('span').innerHTML = 'вниз';*/
 
 		let pos = window.pageYOffset;
 		// console.log(pos);
@@ -93,7 +96,7 @@ window.addEventListener('load', function(){
 
 			if(nextSection == '#info') {				
 				btnBottom.classList.add('btn-up');
-				// btnBottom.querySelector('span').innerHTML = 'вверх';
+				btnBottom.querySelector('span').innerHTML = 'вверх';
 				// let btnUp = document.querySelector('.btn-up');
 				this.addEventListener('click', getUp());
 			}
@@ -111,10 +114,7 @@ window.addEventListener('load', function(){
 
 	function getUp() {		
 		scrollToY(0);
-		btnBottom.classList.remove('btn-up');
-		// btnBottom.querySelector('span').innerHTML = 'вниз';		
 	}
-
 	
 	/*btnUp.addEventListener('click', function(e) {
 		scrollToY(0);
