@@ -11,7 +11,7 @@ menuItem.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
 		// e.preventDefault(); // 
 		var parent = this;
-		dropdown.forEach(function(el) {
+		dropdown.forEach(function(el) {			
 			if(el.parentNode == parent) {
 				if(parent.classList.contains('menu__item--active')) {
 					hideDropdown();
@@ -26,7 +26,7 @@ menuItem.forEach(function(el) { // перебираем массив
 	});
 });
 
-function hideDropdown() { 
+function hideDropdown() {
 	dropdown.forEach(function(el) { //скрыть все подменю
 		el.style.height = '0';			
 	});
@@ -35,6 +35,8 @@ function hideDropdown() {
 	});
 }
 
+
+/* смена языка */
 window.addEventListener('load', function() {
 	let lang = document.querySelector('.page-header__lang');	
 	lang.addEventListener('click', function() {		

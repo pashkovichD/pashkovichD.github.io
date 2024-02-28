@@ -67,7 +67,7 @@ window.addEventListener('load', function(){
 				pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget;
 			}
 
-			(id == '#info') ? buttonUp() : buttonDown();			
+			(id == '#info') ? buttonUp() : buttonDown();
 			
 			// let pos = elemOffsetTop(target) - header.clientHeight - marginBottomHeader - marginTopTarget; // вычитаем высоту header'а, нижний отступ header'а и верхний внешний отступ заголовка			
 			scrollToY(pos);
