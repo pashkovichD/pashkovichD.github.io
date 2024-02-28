@@ -1671,9 +1671,13 @@ picture {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /*&:hover,
+			&:focus {
+				transform: rotate(360deg);
+			}*/
 }
-.page-header__socials li a:hover,
-.page-header__socials li a:focus {
+.page-header__socials li:hover a,
+.page-header__socials li:focus a {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -1684,20 +1688,20 @@ picture {
 .page-header__socials li:last-child {
   margin-right: 0;
 }
-.page-header__socials li.page-header__socials-telegram a:hover,
-.page-header__socials li.page-header__socials-telegram a:focus {
+.page-header__socials li.page-header__socials-telegram:hover a,
+.page-header__socials li.page-header__socials-telegram:focus a {
   background-color: #259cd8;
 }
-.page-header__socials li.page-header__socials-whatsapp a:hover,
-.page-header__socials li.page-header__socials-whatsapp a:focus {
+.page-header__socials li.page-header__socials-whatsapp:hover a,
+.page-header__socials li.page-header__socials-whatsapp:focus a {
   background-color: #25cb63;
 }
-.page-header__socials li.page-header__socials-mail a:hover,
-.page-header__socials li.page-header__socials-mail a:focus {
+.page-header__socials li.page-header__socials-mail:hover a,
+.page-header__socials li.page-header__socials-mail:focus a {
   background-color: #ff3e41;
 }
-.page-header__socials li.page-header__socials-message a:hover,
-.page-header__socials li.page-header__socials-message a:focus {
+.page-header__socials li.page-header__socials-message:hover a,
+.page-header__socials li.page-header__socials-message:focus a {
   background-color: #8a8b8b;
 }
 @media (min-width: 768px) {

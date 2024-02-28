@@ -337,8 +337,14 @@
 				   -moz-user-select: none;
 					-ms-user-select: none;
 					    user-select: none;
-			&:hover,
+			/*&:hover,
 			&:focus {
+				transform: rotate(360deg);
+			}*/
+		}
+		&:hover,
+		&:focus {
+			a {
 				transform: rotate(360deg);
 			}
 		}
@@ -350,33 +356,33 @@
 			margin-right: 0;
 		}
 		&.page-header__socials-telegram {
-			a {
-				&:hover,
-				&:focus {
+			&:hover,
+			&:focus {
+				a {
 					background-color: #259cd8;
 				}
 			}
 		}
 		&.page-header__socials-whatsapp {
-			a {
-				&:hover,
-				&:focus {
+			&:hover,
+			&:focus {
+				a {
 					background-color: #25cb63;
 				}
 			}
 		}
 		&.page-header__socials-mail {
-			a {
-				&:hover,
-				&:focus {
+			&:hover,
+			&:focus {
+				a {
 					background-color: #ff3e41;
 				}
 			}
 		}
 		&.page-header__socials-message {
-			a {
-				&:hover,
-				&:focus {
+			&:hover,
+			&:focus {
+				a {
 					background-color: #8a8b8b;
 				}
 			}
@@ -592,7 +598,7 @@
 			}
 			a {
 				position: relative;
-				z-index: 1;				
+				z-index: 1;
 			}
 			span {
 				display: block;
