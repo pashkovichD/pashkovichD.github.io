@@ -899,6 +899,22 @@
 		<button type="button" class="modal-video__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
 	</section>
 
+	<section class="modal-phone modal">
+		<h2 class="visually-hidden">Заказать звонок</h2>		
+		<form id="phone-form" class="form" action="/" method="POST">
+			<p class="form__item">
+				<input class="form__input" type="text" name="phone__name" id="phone__name"  value="" placeholder="Ваше имя">
+				<label class="visually-hidden" for="phone__name">Ваше имя</label>
+			</p>
+			<p class="form__item">
+				<input class="form__input" type="tel" name="phone__number" id="phone__number"  value="" placeholder="Телефон">
+				<label class="visually-hidden" for="phone__number">Телефон</label>
+			</p>
+			<input type="submit" class="form__submit button" value="Заказать звонок">
+		</form>	
+		<button type="button" class="modal-phone__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
+	</section>
+
 	<div class="overlay"></div>	
 	
 	<script async src="js/common.min.js"></script>
@@ -906,7 +922,7 @@
 	<script async src="js/hamburger.min.js"></script>
 	<script async src="js/intro.min.js"></script>
 	
-	<script src="js/modal.min.js"></script>	
+	<script src="js/modal.min.js"></script>
 	<script async src="js/swiper.min.js"></script>
 	
 

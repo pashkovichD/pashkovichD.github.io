@@ -6,6 +6,10 @@ let modalVideo = document.querySelector('.modal-video');
 let btnModalVideo = document.querySelector('.intro__video');
 let closeVideo = document.querySelector('.modal-video__close');
 
+let modalPhone = document.querySelector('.modal-phone');
+let btnModalPhone = document.querySelector('.page-footer__request');
+let closePhone = document.querySelector('.modal-phone__close');
+
 let overlay = document.querySelector('.overlay');
 
 btnModalUser.addEventListener('click', function(evt) {
@@ -16,6 +20,11 @@ btnModalUser.addEventListener('click', function(evt) {
 btnModalVideo.addEventListener('click', function(evt) {
 	evt.preventDefault();
 	workModal(modalVideo, btnModalVideo, closeVideo, overlay);
+});
+
+btnModalPhone.addEventListener('click', function(evt) {
+	evt.preventDefault();
+	workModal(modalPhone, btnModalPhone, closePhone, overlay);
 });
 
 function workModal(modal, btnModal, close, overlay) {
