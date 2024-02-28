@@ -37,19 +37,13 @@ window.addEventListener('load', function(){
 
 	function onScroll(e) {		
 		// console.log(++scrolls);
-		let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей		
-
-		/*if(pos > this.window.innerHeight) {
-			btnUp.classList.add('btnUp-open');
-		} else {
-			btnUp.classList.remove('btnUp-open');
-		}*/
+		let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей
 		
 		for(let i = links.length - 1; i >= 0; i--) {
 			let link = links[i];
-			let header = document.querySelector(link.hash);			
+			let header = document.querySelector(link.hash);
 
-			// (header == '#info') ? buttonUp() : buttonDown();
+			(link.hash == '#info') ? buttonUp() : buttonDown();
 
 			if(pos > (elemOffsetTop(header) - this.window.innerHeight/2)) {
 				menu.querySelector('.' + classActiveItem).classList.remove(classActiveItem);
@@ -89,9 +83,7 @@ window.addEventListener('load', function(){
 
 			if(nextSection == '#advantages') {
 				pos = pos + 102;
-			}
-
-			// getBtnUp();
+			}			
 
 			if(nextSection == '#info') {
 				buttonUp();
