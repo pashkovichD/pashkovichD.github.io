@@ -12,22 +12,24 @@ let closePhone = document.querySelector('.modal-phone__close');
 
 let overlay = document.querySelector('.overlay');
 
+let removeShowTimeout;
+
 btnModalUser.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	workModal(modalUser, btnModalUser, closeUser, overlay);
+	workModal(modalUser, closeUser, overlay);
 });
 
 btnModalVideo.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	workModal(modalVideo, btnModalVideo, closeVideo, overlay);
+	workModal(modalVideo, closeVideo, overlay);
 });
 
 btnModalPhone.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	workModal(modalPhone, btnModalPhone, closePhone, overlay);
+	workModal(modalPhone, closePhone, overlay);
 });
 
-function workModal(modal, btnModal, close, overlay) {
+function workModal(modal, close, overlay) {
 	/* показ модального окна и overlay */
 	modal.classList.remove('modal-hide');
 	modal.classList.add('modal-show');
@@ -53,13 +55,17 @@ function workModal(modal, btnModal, close, overlay) {
 }
 
 /* скрытие модального окна */
-function hideModal(modal, overlay) {
-	// console.log(modal);
+function hideModal(modal, overlay) {	
+	clearTimeout(removeShowTimeout);
+
 	if(modal.querySelector('video')) {
-		// console.log('OK');
 		modal.querySelector('video').pause();
-	}	
-	modal.classList.remove('modal-show');
+	}
+	
 	modal.classList.add('modal-hide');	
 	overlay.classList.remove('overlay-show');
+	
+	removeShowTimeout = setTimeout(function() {
+		modal.classList.remove('modal-show');
+	}, 600);
 }

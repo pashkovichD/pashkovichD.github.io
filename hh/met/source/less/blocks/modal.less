@@ -24,96 +24,43 @@
 }
 .modal-show {
   display: block !important;
-  position: fixed;
-  // position: absolute;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-}
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-  70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+  position: fixed;  
+  animation-name: bounce;  
+  animation-duration: 0.6s;
 }
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
+      transform: translateY(-2000px);
   }
   70% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+      transform: translateY(30px);
   }
   90% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+      transform: translateY(-10px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+      transform: translateY(0);
   }
 }
-.modal-hide {
-  display: block;
-  position: fixed;
-  -webkit-animation-name: bounceOut;
-          animation-name: bounceOut;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.modal-hide {  
+  animation-name: bounceOut;  
+  animation-duration: 0.6s;  
+  animation-fill-mode: forwards;
 }
-@-webkit-keyframes bounceOut {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(2000%);
-            transform: translateY(2000%);
-  }
-}
+
 @keyframes bounceOut {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(2000%);
-            transform: translateY(2000%);
+    transform: translateY(2000%);
   }
 }
 
 @media (min-width: @mobile-width) {  
-  /*.modal-user {
-    width: 350px;
-    margin-left: -175px;
-    padding: 30px;
-  }
-
-  .modal-user__close {
-    display: block;
-  }  */
+  
 }
 
-
 @media (min-width: @tablet-width) {
-  .modal-user {
-    // width: 500px;
-    // margin-left: -250px;
-  }
+  
 }

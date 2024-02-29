@@ -712,86 +712,73 @@ picture {
   display: block !important;
   position: fixed;
   -webkit-animation-name: bounce;
-  animation-name: bounce;
+          animation-name: bounce;
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70% {
     -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+            transform: translateY(30px);
   }
   90% {
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70% {
     -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+            transform: translateY(30px);
   }
   90% {
     -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 .modal-hide {
-  display: block;
-  position: fixed;
   -webkit-animation-name: bounceOut;
-  animation-name: bounceOut;
+          animation-name: bounceOut;
   -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @-webkit-keyframes bounceOut {
   0% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(2000%);
-    transform: translateY(2000%);
+            transform: translateY(2000%);
   }
 }
 @keyframes bounceOut {
   0% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(2000%);
-    transform: translateY(2000%);
+            transform: translateY(2000%);
   }
-}
-@media (min-width: 480px) {
-  /*.modal-user {
-    width: 350px;
-    margin-left: -175px;
-    padding: 30px;
-  }
-
-  .modal-user__close {
-    display: block;
-  }  */
 }
 .modal-user {
   display: none;
@@ -807,6 +794,8 @@ picture {
           box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
   z-index: 100;
 }
 .modal-user .form__input--textarea {
@@ -5467,6 +5456,7 @@ h3.advantages__security-title {
   opacity: 0.8;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+  cursor: pointer;
 }
 .page-footer__request svg {
   position: relative;
