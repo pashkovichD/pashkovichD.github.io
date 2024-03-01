@@ -45,7 +45,6 @@ window.addEventListener('load', function() {
 	});
 });
 
-
 /* замена произвольного номера в href на нужный для телефона 'tel:+.............' */
 /*var number = document.querySelectorAll('.number-phone');
 

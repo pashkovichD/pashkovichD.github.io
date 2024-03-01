@@ -4854,6 +4854,22 @@ h3.advantages__security-title {
   border: none;
   background-color: transparent;
 }
+.production__big-img-item {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  border: 5px solid #ffffff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.production__big-img-item img {
+  width: 100%;
+}
 .production__pagination {
   position: absolute;
   bottom: 48px;
@@ -4927,6 +4943,9 @@ h3.advantages__security-title {
   .production__item picture img {
     border-radius: 24px;
   }
+  .production__big-img-item {
+    width: 65%;
+  }
   .production__pagination {
     bottom: 45px;
   }
@@ -4949,6 +4968,9 @@ h3.advantages__security-title {
   .production__item {
     width: 418px !important;
   }
+  .production__big-img-item {
+    width: 50%;
+  }
 }
 @media (min-width: 1400px) {
   .production {
@@ -4960,6 +4982,9 @@ h3.advantages__security-title {
   }
   .production__item picture img {
     border-radius: 28px;
+  }
+  .production__big-img-item {
+    width: 35%;
   }
   .production__pagination {
     bottom: auto;

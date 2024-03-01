@@ -715,25 +715,25 @@
 			<div class="production__list-wrapper">
 				<div class="production__list swiper">
 					<div class="swiper-wrapper">
-						<div class="production__item swiper-slide">
+						<div class="production__item 1 swiper-slide">
 							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 1">
-							</picture>
+							</picture>							
 						</div>
-						<div class="production__item swiper-slide">
+						<div class="production__item 2 swiper-slide">
 							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-2.webp" srcset="img/production/photo-2@2x.webp 2x" alt="Производство - 2">
 							</picture>
 						</div>
-						<div class="production__item swiper-slide">
+						<div class="production__item 3 swiper-slide">
 							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-3.webp" srcset="img/production/photo-3@2x.webp 2x" alt="Производство - 3">
 							</picture>
 						</div>
-						<div class="production__item swiper-slide">
+						<div class="production__item 4 swiper-slide">
 							<div class="production__item-zoom"><button class="btn-zoom" type="button" aria-label="Увеличить изображение"><svg fill="white" width="28" height="30"><use xlink:href="#icon-zoom"></use></svg></button></div>
 							<picture>
 								<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 4">
@@ -741,6 +741,7 @@
 						</div>					
 					</div>
 				</div>
+				<div class="production__big-img"></div>
 				<div class="production__pagination">
 					<button class="prev swiper-button-prev" type="button" aria-label="Предыдущий слайд"><span class="visually-hidden">Предыдущий слайд</span>
 					</button>
@@ -915,7 +916,13 @@
 		<button type="button" class="modal-phone__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
 	</section>
 
-	<div class="overlay"></div>	
+	<div class="overlay"></div>
+
+	<template id="big-img-template" style="display: none">
+		<picture class="production__big-img-item">
+			<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 4">
+		</picture>
+	</template>
 	
 	<script async src="js/common.min.js"></script>
 	<script async src="js/scroll.min.js"></script>
@@ -924,6 +931,7 @@
 	
 	<script src="js/modal.min.js"></script>
 	<script async src="js/swiper.min.js"></script>
+	<!-- <script async src="js/production.min.js"></script> -->
 	
 
 </body>
