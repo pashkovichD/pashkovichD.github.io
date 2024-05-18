@@ -39,11 +39,19 @@
 /* смена языка */
 window.addEventListener('load', function() {
 	let lang = document.querySelector('.page-header__lang');	
+	let langText = lang.querySelector('span');
 	lang.addEventListener('click', function() {		
-		let langText = lang.querySelector('span');
+		// let langText = lang.querySelector('span');
 		langText.innerHTML = (langText.innerHTML === 'EN') ? 'RU' : 'EN';
+		langText.classList.add('lang__show');
+		
+
+
 	});
+	setTimeout(langText.classList.remove('lang__show'), 1000);
 });
+
+
 
 /* замена произвольного номера в href на нужный для телефона 'tel:+.............' */
 /*var number = document.querySelectorAll('.number-phone');
