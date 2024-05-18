@@ -1,0 +1,21 @@
+.phone {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #000000;
+	svg {
+		position: relative;
+		// top: 2px;
+		margin-right: 10px;	
+		transition: @animation;
+		fill: @red;
+	}
+	&:hover,
+	&:focus {
+		color: @red;
+		svg {			
+			fill: @red;
+		}
+	}
+}

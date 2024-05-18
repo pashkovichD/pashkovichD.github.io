@@ -1,0 +1,30 @@
+.bookmarks {
+	position: absolute;
+	top: 245px;
+	right: 0;
+	// overflow: hidden;
+}
+
+.bookmarks__item {
+	position: relative;
+	left: 10px;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	width: 97px;
+	height: 60px;
+	margin-bottom: 10px;
+	// padding-right: 10px;
+	border-radius: 3px 0 0 3px;
+	border: none;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,.2);
+	transition: @animation;
+	svg {
+		margin-left: -10px;
+	}
+	&:hover,
+	&:focus {
+		transform: translateX(-10px);
+	}
+}

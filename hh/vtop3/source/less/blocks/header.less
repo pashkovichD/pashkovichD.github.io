@@ -1,0 +1,233 @@
+.page-header {	
+	margin: 0;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #292b32;
+}
+
+.page-header__container {
+	display: flex;
+	align-items: center;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	position: relative;
+}
+
+
+.page-header__lang {
+	min-width: 80px;	
+	svg {
+		width: 15px;
+		height: 15px;
+		margin-right: 5px;
+		fill: @blue-light;
+	}
+}
+
+
+// .page-header__toggle-nav {
+// 	margin-left: 30px;
+// }
+
+// .page-header__data-container {
+// 	position: absolute;
+// 	top: 70px;
+// 	left: 0;
+// 	right: 0;
+// 	padding: 32px 16px;
+// 	background-color: @main-dark;	
+//     opacity: 0;    
+//     visibility: hidden;
+//     transition: all .2s ease-out;
+//     z-index: 10;
+// }
+
+// .page-header__data-container--show {
+// 	top: 56px;
+// 	opacity: 1;
+// 	visibility: visible;
+// }
+
+
+
+// .page-header__ul-container {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	padding-bottom: 38px;	
+// }
+
+// .page-header__user,
+// .page-header__lang {
+// 	font-size: 14px;
+// 	line-height: 21px;
+// 	font-weight: 300;
+// 	color: @menu-font;
+// 	letter-spacing: .2px;
+// 	transition: @animation;
+// 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+// 		/* отмена выделения текста */
+// 		-webkit-user-select: none;
+// 		 -khtml-user-select: none;
+// 		   -moz-user-select: none;
+// 			-ms-user-select: none;
+// 			    user-select: none;
+// 	svg {
+// 		position: relative;
+// 		top: 2px;
+// 		left: 5px;
+// 		margin-right: 20px;
+// 		transition: @animation;
+// 	}
+// 	&:hover,
+// 	&:focus {
+// 		// color: @red;
+// 		svg {
+// 			// fill: @red;
+// 		}
+// 	}
+// }
+
+// .page-header__lang {
+// 	display: flex;
+// 	align-items: center;
+// 	line-height: 14px;
+// 	font-weight: 500;
+// 	text-transform: uppercase;
+// 	svg {
+// 		top: 0;
+// 	}
+// }
+
+
+
+
+// .page-header__nav {
+// 	margin-bottom: 32px;
+// 	padding -bottom: 20px;
+// 	border-bottom: 1px solid #292b32;
+// }
+
+
+
+.page-header__phone-number {
+	text-decoration: none;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 700;
+	color: @white;
+	letter-spacing: 1px;
+	&:hover,
+	&:focus {
+		// color: @red;
+	}
+}
+
+.page-header__socials {
+	display: flex;
+	li {
+		position: relative;
+		margin-right: 15px;		
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 48px;
+			height: 48px;
+			line-height: 0;
+			border-radius: 50%;
+			background-color: #313538;
+			transition: all .5s ease-out;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+				/* отмена выделения текста */
+				-webkit-user-select: none;
+				 -khtml-user-select: none;
+				   -moz-user-select: none;
+					-ms-user-select: none;
+					    user-select: none;
+			/*&:hover,
+			&:focus {
+				transform: rotate(360deg);
+			}*/
+		}
+		&:hover,
+		&:focus {
+			a {
+				transform: rotate(360deg);
+			}
+		}
+		
+		span {
+			display: none;
+		} 
+		&:last-child {
+			margin-right: 0;
+		}
+		&.page-header__socials-telegram {
+			&:hover,
+			&:focus {
+				a {
+					background-color: #259cd8;
+				}
+			}
+		}
+		&.page-header__socials-whatsapp {
+			&:hover,
+			&:focus {
+				a {
+					background-color: #25cb63;
+				}
+			}
+		}
+		&.page-header__socials-mail {
+			&:hover,
+			&:focus {
+				a {
+					background-color: #ff3e41;
+				}
+			}
+		}
+		&.page-header__socials-message {
+			&:hover,
+			&:focus {
+				a {
+					background-color: #8a8b8b;
+				}
+			}
+		}
+	}
+	
+}
+
+
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	
+}
+
+@media (min-width: @desktop-1200-width) {
+	
+}
+
+@media (min-width: @desktop-1400-width) {
+	
+}
+
+@media (min-width: @desktop-1600-width) {
+	
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}

@@ -1,0 +1,368 @@
+/*--- Lexend ---*/
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v19/wlptgwvFAVdoq2_F94zlCfv0bz1WCzsW_LA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v19/wlptgwvFAVdoq2_F94zlCfv0bz1WCwkW_LA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v19/wlptgwvFAVdoq2_F94zlCfv0bz1WC-UR_LA.ttf) format('truetype');
+}
+.container {
+  width: 390px;
+  margin: 0 auto;
+  padding: 0 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 460px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 748px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1120px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1500px;
+    padding: 0 93px;
+  }
+}
+body {
+  min-width: 320px;
+  min-height: 2000px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  background-color: #110a1d;
+  overflow-x: hidden;
+}
+:focus {
+  outline: none;
+}
+/* Стилизация scroll'а */
+/* Работает в Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7f8589 rgba(255, 255, 255, 0.2);
+}
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #7f8589;
+  border-radius: 4px;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+div,
+p,
+a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+picture {
+  display: block;
+  line-height: 0;
+}
+.fancybox__wrapper {
+  padding: 0 10px !important;
+  -webkit-transition: none;
+  transition: none;
+}
+.fancybox__container {
+  background-color: rgba(24, 24, 27, 0.5);
+}
+.fancybox__caption {
+  width: auto !important;
+  margin-top: 5px;
+  margin: 5px 20px;
+  padding: 5px 10px !important;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.page-main {
+  overflow-x: hidden;
+}
+.h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #110a1d;
+}
+@media (min-width: 480px) {
+  .h2 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .h2 {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+@media (min-width: 960px) {
+  .h2 {
+    font-size: 35px;
+    line-height: 47px;
+  }
+}
+@media (min-width: 1400px) {
+  .h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+button {
+  font-family: 'Lexend', sans-serif;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.button-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 8px 10px;
+  border: 2px solid #9dadf2;
+  border-radius: 24px;
+  /*background: 
+		linear-gradient(#ccc 0 0) padding-box, //this is your grey background
+		linear-gradient(to right, #9c20aa, #fb3570) border-box;
+	color: #313149;
+	padding: 10px;
+	border: 5px solid transparent;
+	border-radius: 15px;
+	display: inline-block;
+	margin: 75px 0;*/
+  /*&:active {
+		// transform: scale(.99);
+	}*/
+}
+.menu {
+  padding: 0;
+  list-style-type: none;
+}
+.menu__item {
+  position: relative;
+}
+.menu__item a {
+  position: relative;
+  display: block;
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.9px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.page-header {
+  margin: 0;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #292b32;
+}
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+.page-header__lang {
+  min-width: 80px;
+}
+.page-header__lang svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  fill: #9dadf2;
+}
+.page-header__phone-number {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.page-header__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page-header__socials li {
+  position: relative;
+  margin-right: 15px;
+}
+.page-header__socials li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+  line-height: 0;
+  border-radius: 50%;
+  background-color: #313538;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* отмена выделения текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*&:hover,
+			&:focus {
+				transform: rotate(360deg);
+			}*/
+}
+.page-header__socials li:hover a,
+.page-header__socials li:focus a {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.page-header__socials li span {
+  display: none;
+}
+.page-header__socials li:last-child {
+  margin-right: 0;
+}
+.page-header__socials li.page-header__socials-telegram:hover a,
+.page-header__socials li.page-header__socials-telegram:focus a {
+  background-color: #259cd8;
+}
+.page-header__socials li.page-header__socials-whatsapp:hover a,
+.page-header__socials li.page-header__socials-whatsapp:focus a {
+  background-color: #25cb63;
+}
+.page-header__socials li.page-header__socials-mail:hover a,
+.page-header__socials li.page-header__socials-mail:focus a {
+  background-color: #ff3e41;
+}
+.page-header__socials li.page-header__socials-message:hover a,
+.page-header__socials li.page-header__socials-message:focus a {
+  background-color: #8a8b8b;
+}
