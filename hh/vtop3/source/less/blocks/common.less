@@ -1,6 +1,9 @@
 html {
 	// width:100vw;
 	// scrollbar-width: none; // скрыть скролл для Firefox
+
+	// width:100vw;
+	// overflow-x:hidden;
 }
 
 body {
@@ -32,7 +35,7 @@ body {
 
 /* Работает в Chrome, Edge и Safari */
 *::-webkit-scrollbar {  
-  width: 5px;  
+  width: 5px;
 }
 
 *::-webkit-scrollbar-track {
@@ -130,23 +133,23 @@ picture {
 	overflow-x: hidden;
 }
 
-.h2 {
-	margin: 0;	
-	font-size: 20px;
-	line-height: 27px;	
-	font-weight: 700;
-	letter-spacing: 0em;
-	text-align: center;
-	color: @main-dark;
-}
+// .h2 {
+// 	margin: 0;	
+// 	font-size: 20px;
+// 	line-height: 27px;	
+// 	font-weight: 700;
+// 	letter-spacing: 0em;
+// 	text-align: center;
+// 	color: @main-dark;
+// }
 
 
 
 @media (min-width: @mobile-width) {
-	.h2 {
-		font-size: 25px;
-		line-height: 34px;
-	}
+	// .h2 {
+	// 	font-size: 25px;
+	// 	line-height: 34px;
+	// }
 }
 
 @media (min-width: 600px) {
@@ -154,17 +157,17 @@ picture {
 }
 
 @media (min-width: @tablet-width) {
-	.h2 {
-		font-size: 32px;
-		line-height: 43px;
-	}
+	// .h2 {
+	// 	font-size: 32px;
+	// 	line-height: 43px;
+	// }
 }
 
 @media (min-width: @desktop-width) {
-	.h2 {
-		font-size: 35px;
-		line-height: 47px;
-	}
+	// .h2 {
+	// 	font-size: 35px;
+	// 	line-height: 47px;
+	// }
 }
 
 @media (min-width: @desktop-1200-width) {
@@ -172,13 +175,12 @@ picture {
 }
 
 @media (min-width: @desktop-1400-width) {
-	.h2 {		
-		font-size: 40px;
-		line-height: 54px;
-	}
+	
 }
 
 
 @media (min-width: @desktop-full-width) {
-	
+	html {
+		width:100vw;
+	}
 }

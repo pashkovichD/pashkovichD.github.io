@@ -1,12 +1,10 @@
-.menu {	
+.menu {
 	padding: 0;	
 	list-style-type: none;	
 }
 
 .menu__item {
-	position: relative;
-	// margin-left: -2px;
-	// margin-right: -2px;
+	position: relative;	
 	margin-bottom: 5px;
 	a {
 		position: relative;
@@ -21,8 +19,6 @@
 		border: 2px solid @blue;
 		border-radius: 28px;
 		transition: all .2s ease-out;
-
-		// background-color: rgba(255,0,0,.5);
 		&:hover,
 		&:focus {
 			background-color: rgba(255,255,255,0.1);
@@ -49,7 +45,46 @@
 }
 
 @media (min-width: @desktop-1200-width) {
-		
+	.menu__list {
+		display: flex;
+	}
+
+	.menu__item {		
+		margin-bottom: 0;
+		a {
+			position: relative;
+			display: block;
+			padding: 13px 16px;
+			font-size: 16px;
+			line-height: 20px;			
+			text-decoration: none;
+			letter-spacing: .1px;			
+			border: none;
+			border-radius: 0;			
+			&::after {
+				position: absolute;
+				bottom: 5px;
+				left: 10px;
+				right: 10px;
+				content: '';
+				height: 1px;
+				background-color: @white;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .2s ease-out;
+			}
+			&:hover,
+			&:focus {
+				background-color: transparent;
+			}
+			&:hover::after,
+			&:focus::after {
+				bottom: 10px;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
 }
 
 @media (min-width: @desktop-1400-width) {
@@ -61,5 +96,44 @@
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	/*.menu__list {
+		display: flex;
+	}
+
+	.menu__item {		
+		margin-bottom: 0;
+		a {
+			position: relative;
+			display: block;
+			padding: 13px 16px;
+			font-size: 16px;
+			line-height: 20px;			
+			text-decoration: none;
+			letter-spacing: .1px;			
+			border: none;
+			border-radius: 0;			
+			&::after {
+				position: absolute;
+				bottom: 5px;
+				left: 10px;
+				right: 10px;
+				content: '';
+				height: 1px;
+				background-color: @white;
+				opacity: 0;
+				visibility: hidden;
+				transition: all .2s ease-out;
+			}
+			&:hover,
+			&:focus {
+				background-color: transparent;
+			}
+			&:hover::after,
+			&:focus::after {
+				bottom: 10px;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}*/
 }
