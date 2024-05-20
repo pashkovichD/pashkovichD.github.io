@@ -5,23 +5,32 @@
 
 .menu__item {
 	position: relative;
+	margin-left: -2px;
+	margin-right: -2px;
+	margin-bottom: 5px;
 	a {
 		position: relative;
 		display: block;
-		padding: 15px 0;
-		font-size: 14px;
-		line-height: 14px;
+		padding: 11px 18px;
+		font-size: 18px;
+		line-height: 24px;
 		font-weight: 400;
 		text-decoration: none;
-		text-transform: uppercase;
-		color: @white;
-		letter-spacing: .9px;
-		transition: all .2s ease-out;		
+		
+		color: @white;		
+		border: 2px solid @blue;
+		border-radius: 28px;
+		transition: all .2s ease-out;
+
+		// background-color: rgba(255,0,0,.5);
 		&:hover,
 		&:focus {
 			
-		}		
-	}	
+		}
+	}
+	&.last-child {
+		margin-bottom: 0;
+	}
 }
 
 

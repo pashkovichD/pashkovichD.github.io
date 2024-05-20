@@ -322,20 +322,26 @@ button {
 }
 .menu__item {
   position: relative;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-bottom: 5px;
 }
 .menu__item a {
   position: relative;
   display: block;
-  padding: 15px 0;
-  font-size: 14px;
-  line-height: 14px;
+  padding: 11px 18px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   text-decoration: none;
-  text-transform: uppercase;
   color: #ffffff;
-  letter-spacing: 0.9px;
+  border: 2px solid #478bf9;
+  border-radius: 28px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+.menu__item.last-child {
+  margin-bottom: 0;
 }
 .page-header {
   margin: 0;
@@ -379,6 +385,11 @@ button {
   top: 50%;
   right: 20px;
   margin-top: -8px;
+}
+.page-header__nav-container {
+  position: absolute;
+  top: 84px;
+  width: 100%;
 }
 .page-header__phone-number {
   text-decoration: none;
