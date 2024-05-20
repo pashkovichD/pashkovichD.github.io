@@ -5,8 +5,8 @@
 
 .menu__item {
 	position: relative;
-	margin-left: -2px;
-	margin-right: -2px;
+	// margin-left: -2px;
+	// margin-right: -2px;
 	margin-bottom: 5px;
 	a {
 		position: relative;
@@ -25,10 +25,11 @@
 		// background-color: rgba(255,0,0,.5);
 		&:hover,
 		&:focus {
-			
+			background-color: rgba(255,255,255,0.1);
+			color: rgba(255,255,255,0.8);
 		}
 	}
-	&.last-child {
+	&:last-child {
 		margin-bottom: 0;
 	}
 }
