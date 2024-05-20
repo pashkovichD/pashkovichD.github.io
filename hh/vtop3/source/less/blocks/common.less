@@ -25,28 +25,50 @@ body {
   //         box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
 }
 
-
 /* Стилизация scroll'а */
 /* Работает в Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: @gray-font rgba(255,255,255,.2);
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: @gray-font rgba(255,255,255,.2);
+// }
+
+// /* Работает в Chrome, Edge и Safari */
+// *::-webkit-scrollbar {  
+//   width: 5px;  
+// }
+
+// *::-webkit-scrollbar-track {
+//   background-color: rgba(255,255,255,.02);
+// }
+
+// *::-webkit-scrollbar-thumb {
+//   background-color: @gray-font;
+//   border-radius: 4px;
+//   // border: 1px solid white;
+// }
+
+
+/* Стилизация scroll'а */
+*::-webkit-scrollbar-track {  
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.12);
 }
 
-/* Работает в Chrome, Edge и Safari */
-*::-webkit-scrollbar {  
-  width: 5px;
-}
-
-*::-webkit-scrollbar-track {
-  background-color: rgba(255,255,255,.02);
+*::-webkit-scrollbar {
+  width: 4px;  
+  background-color: rgba(255,255,255,.12);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: @gray-font;
-  border-radius: 4px;
-  // border: 1px solid white;
+  border-radius: 10px;
+  background-color: #478bf9;
 }
+
+// *::-webkit-scrollbar-button:end:increment {  
+//   height: 20%;
+//   display: block;
+//   background: transparent;
+// }
 
 
 
