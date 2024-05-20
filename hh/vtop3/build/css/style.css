@@ -21,7 +21,6 @@
   src: url(https://fonts.gstatic.com/s/lexend/v19/wlptgwvFAVdoq2_F94zlCfv0bz1WC-UR_LA.ttf) format('truetype');
 }
 .container {
-  width: 320px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
