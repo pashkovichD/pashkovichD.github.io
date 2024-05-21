@@ -755,7 +755,7 @@ button {
   background-color: rgba(255, 0, 0, 0.5);
 }
 .blog {
-  padding: 0 10px;
+  padding: 0 10px 5px;
 }
 .blog__title {
   display: block;
@@ -775,12 +775,14 @@ button {
   font-weight: 600;
 }
 .blog__list {
-  height: 420px;
-  padding: 8px 10px 0 8px;
+  height: 418px;
+  padding: 3px 6px 0 3px;
   border-radius: 50px;
-  border: 2px solid #478bf9;
+  border: 6px solid #110a1d;
+  border-top-width: 5px;
   overflow-y: scroll;
   scroll-padding-top: 20px;
+  -webkit-box-shadow: 0 0 0 2px #478bf9;
 }
 .blog__item {
   margin-bottom: 11px;
@@ -812,10 +814,10 @@ button {
   background-color: rgba(255, 255, 255, 0.12);
 }
 .blog__list::-webkit-scrollbar {
-  width: 12px;
-  border: 1px solid red;
+  width: 4px;
 }
 .blog__list::-webkit-scrollbar-thumb {
+  width: 4px;
   border-radius: 10px;
   background-color: #478bf9;
 }
