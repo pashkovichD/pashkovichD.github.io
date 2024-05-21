@@ -60,41 +60,38 @@
 
 
 /*--- Стилизация scroll'а ---*/
-.blog__list::-webkit-scrollbar-track {
+.blog__list::-webkit-scrollbar-track {  
   border-radius: 10px;
   background-color: rgba(255,255,255,.12);
 }
 
 .blog__list::-webkit-scrollbar {
-  width: 12px;  
-  // width: 4px;
-  border: 1px solid red;
-  // background-color: rgba(255,255,255,.12);
+  // position: absolute;
+  // top: 100px;
+  padding-top: 100px;
+
+  width: 4px;
+  // height: 50%;
+  // border: 1px solid red;
+  background-color: rgba(255,255,255,.12);
 }
 
 .blog__list::-webkit-scrollbar-thumb {
   // height: 50%;
-	
   border-radius: 10px;
   background-color: #478bf9;
 }
 
-.blog__list::-webkit-scrollbar-button:end:increment {	
-	// height: 50%;
-	// display: block;
-	// background: transparent;
+.blog__list::-webkit-scrollbar-button:end:increment {
+  height: 50%;
+  display: block;
+  margin-right: 10px;
+  background: transparent;
 }
 
-// .blog__list::-webkit-scrollbar-button:start:increment {
-// 	height: 50%;
-// 	display: block;
-// 	background: transparent;
-// }
-
-.blog__list::-webkit-scrollbar-button {
-    width: 4px;
-    height: 57px;
-    background-color: transparent;
+.blog__list::-webkit-scrollbar:vertical{	
+	position: absolute;
+	
 }
 
 

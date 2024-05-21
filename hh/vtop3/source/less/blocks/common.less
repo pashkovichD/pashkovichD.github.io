@@ -49,20 +49,40 @@ body {
 
 
 /* Стилизация scroll'а */
-*::-webkit-scrollbar-track {  
+/** {  
+  scrollbar-width: thin;
+  scrollbar-color: @gray-font rgba(255,255,255,.2);
+}*/
+
+body::-webkit-scrollbar-track {  
   border-radius: 10px;
   background-color: rgba(255,255,255,.12);
 }
 
-*::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 4px;  
   background-color: rgba(255,255,255,.12);
 }
 
-*::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #478bf9;
 }
+
+/*.blog__list::-webkit-scrollbar-track {  
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.12);
+}
+
+.blog__list::-webkit-scrollbar {
+  width: 4px;  
+  background-color: rgba(255,255,255,.12);
+}
+
+.blog__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #478bf9;
+}*/
 
 // *::-webkit-scrollbar-button:end:increment {  
 //   height: 20%;

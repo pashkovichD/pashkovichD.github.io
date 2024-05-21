@@ -82,18 +82,36 @@ body {
 /* Стилизация scroll'а */
 /* Работает в Firefox */
 /* Стилизация scroll'а */
-*::-webkit-scrollbar-track {
+/** {  
+  scrollbar-width: thin;
+  scrollbar-color: @gray-font rgba(255,255,255,.2);
+}*/
+body::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.12);
 }
-*::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 4px;
   background-color: rgba(255, 255, 255, 0.12);
 }
-*::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #478bf9;
 }
+/*.blog__list::-webkit-scrollbar-track {  
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.12);
+}
+
+.blog__list::-webkit-scrollbar {
+  width: 4px;  
+  background-color: rgba(255,255,255,.12);
+}
+
+.blog__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #478bf9;
+}*/
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -758,13 +776,14 @@ button {
 }
 .blog__list {
   height: 420px;
-  padding: 8px 10px 8px 8px;
+  padding: 8px 10px 0 8px;
   border-radius: 50px;
   border: 2px solid #478bf9;
   overflow-y: scroll;
+  scroll-padding-top: 20px;
 }
 .blog__item {
-  margin-bottom: 5px;
+  margin-bottom: 11px;
   padding: 14px 35px;
   border-radius: 40px;
   background-color: #478bf9;
@@ -786,4 +805,22 @@ button {
   line-height: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
+}
+/*--- Стилизация scroll'а ---*/
+.blog__list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.blog__list::-webkit-scrollbar {
+  width: 12px;
+  border: 1px solid red;
+}
+.blog__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #478bf9;
+}
+.blog__list::-webkit-scrollbar-button {
+  width: 4px;
+  height: 57px;
+  background-color: transparent;
 }
