@@ -779,7 +779,6 @@ button {
   padding: 3px 6px 0 3px;
   border-radius: 50px;
   border: 6px solid #110a1d;
-  border-top-width: 5px;
   overflow-y: scroll;
   scroll-padding-top: 20px;
   -webkit-box-shadow: 0 0 0 2px #478bf9;
