@@ -1,9 +1,12 @@
 .blog {
+	position: relative;
 	margin-bottom: 116px;
 	padding: 0 10px 5px;
+	overflow: hidden;
 }
 
-.blog__title {	
+.blog__title {
+	position: relative;
 	display: block;
 	margin-bottom: 20px;
 	font-size: 32px;
@@ -13,6 +16,7 @@
 	text-decoration: none;
 	text-align: center;
 	color: @white;
+	z-index: 1;
 	h2 {
 		margin: 0;
 		font-size: 32px;
@@ -22,18 +26,17 @@
 }
 
 .blog__list {
+	position: relative;
 	height: 418px;
 	padding: 3px 6px 0 3px;
 	border-radius: 50px;
-	border: 6px solid @main-dark;
-	// border-top-width: 5px;
+	border: 6px solid transparent;	
 	overflow-y: scroll;
-
-	scroll-padding-top: 20px;
-	// direction: rtl;
+	background-color: rgba(255,255,255,.12);
 
 	-webkit-box-shadow: 0 0 0 2px @blue;
-          // box-shadow: 0 0 0 2px white;
+          box-shadow: 0 0 0 2px @blue;
+  z-index: 1;
 }
 
 .blog__item {
@@ -121,7 +124,71 @@
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	.blog {
+		left: 7px;
+		width: 538px;
+		margin: 0;
+		margin-left: auto;
+		padding: 140px 4px 5px 10px;		
+	}
+
+	.blog__title {
+		margin-bottom: 27px;
+		h2 {
+			font-size: 40px;
+		}		
+	}
+
+	.blog__list {
+		height: 590px;
+		padding: 9px 15px 0 9px;
+		border-radius: 100px;
+		border-width: 12px;
+		-webkit-box-shadow: 0 0 0 3px @blue;
+            box-shadow: 0 0 0 3px @blue;
+	}
+
+	.blog__item {
+		margin-bottom: 16px;
+		padding: 17px 64px 16px 64px;
+		border-radius: 196px;		
+	}
+
+	.blog__item-title {
+		margin-bottom: 13px;		
+		h3 {			
+			font-size: 24px;
+			line-height: 28px;			
+		}
+	}
+
+	/*--- Стилизация scroll'а ---*/
+	.blog__list::-webkit-scrollbar-track {
+	  border-radius: 10px;
+	  background-color: rgba(255,255,255,.12);
+	}
+
+	.blog__list::-webkit-scrollbar {	  
+	  width: 8px;	  
+	}
+
+	.blog__list::-webkit-scrollbar-thumb {	  
+		width: 8px;		  
+	}
+
+	.blog__list::-webkit-scrollbar-button:end:increment {	
+		// height: 50%;
+		// display: block;
+		// background: transparent;
+	}
+
+
+
+	.blog__list::-webkit-scrollbar-button {
+	    width: 4px;
+	    height: 80px;
+	    background-color: transparent;
+	}
 }
 
 &:hover,
