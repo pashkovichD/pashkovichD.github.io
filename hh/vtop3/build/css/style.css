@@ -754,7 +754,10 @@ button {
 }
 .dot-light {
   position: absolute;
-  z-index: 0;
+  width: 545px;
+  height: 429px;
+  border: 1px solid red;
+  z-index: 1000;
 }
 .icons {
   height: 165px;
