@@ -1096,6 +1096,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 0;
   }
@@ -1125,6 +1128,7 @@ button {
     width: 50%;
   }
   .page-footer__menu-item {
+    margin-bottom: 5px;
     margin-right: 25px;
   }
   .page-footer__menu-item a {
