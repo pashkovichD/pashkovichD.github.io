@@ -68,6 +68,10 @@
 
 
 @media (min-width: @mobile-width) {
+	.intro {
+		margin-bottom: 45px;
+	}
+
 	.intro__become {
 		width: 80%;
 	}
@@ -88,7 +92,35 @@
 }
 
 @media (min-width: @desktop-width) {
-	
+	.intro {
+		width: 50%;
+	}
+
+	.intro__title {
+		margin-bottom: 20px;
+		font-size: 62px;
+		line-height: 62px;		
+	}
+
+	.intro__desc {
+		// margin-bottom: 48px;
+		font-size: 22px;
+		line-height: 22px;
+		
+	}
+
+	.intro__become {
+		padding: 18px 50px;		
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.dot-light {
+		top: -140px;
+		left: -135px;		
+		width: 900px;
+		height: 708px;	
+	}
 }
 
 @media (min-width: @desktop-1200-width) {
@@ -123,7 +155,6 @@
 		font-size: 96px;
 		line-height: 96px;
 		text-align: left;
-
 	}
 
 	.intro__desc {
