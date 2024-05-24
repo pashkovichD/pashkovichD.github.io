@@ -818,42 +818,80 @@ button {
     display: flex;
     width: 1080px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   .intro {
-    width: 500px;
+    width: 450px;
     margin: 0;
     padding: 0;
-    padding-top: 110px;
+    padding-top: 180px;
     text-align: left;
+  }
+  .intro__desc {
+    font-size: 20px;
   }
   .intro__become {
     width: auto;
   }
+  .dot-light {
+    top: -10px;
+    left: -235px;
+  }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1400px) {
   .intro__wrapper {
-    margin-bottom: 65px;
-    padding: 0 140px;
+    width: 1280px;
+    margin-bottom: 50px;
   }
   .intro {
-    width: 670px;
+    width: 500px;
     margin: 0;
-    margin-right: 48px;
+    margin-right: 30px;
     padding: 216px 10px 0 8px;
   }
   .intro__title {
     margin-bottom: 24px;
-    font-size: 96px;
-    line-height: 96px;
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+@media (min-width: 1600px) {
+  .intro__wrapper {
+    width: 1400px;
+  }
+  .intro {
+    width: 570px;
+  }
+  .intro__title {
+    font-size: 82px;
+    line-height: 82px;
   }
   .intro__desc {
     margin-bottom: 48px;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 24px;
   }
   .intro__become {
     padding: 20px 72px;
     font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .intro__wrapper {
+    width: 1640px;
+    margin-bottom: 65px;
+  }
+  .intro {
+    width: 670px;
+    margin-right: 48px;
+  }
+  .intro__title {
+    font-size: 96px;
+    line-height: 96px;
+  }
+  .intro__desc {
+    font-size: 32px;
     line-height: 32px;
   }
   .dot-light {
@@ -918,6 +956,12 @@ button {
     width: 250px;
     height: 750px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .icons {
+    width: 300px;
+    height: 850px;
   }
 }
 @media (min-width: 1920px) {
@@ -1030,9 +1074,31 @@ button {
 }
 @media (min-width: 1200px) {
   .blog {
-    width: 400px;
+    width: 360px;
     margin: 0;
     margin-left: auto;
+    padding-top: 120px;
+  }
+  .blog__item-title h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .blog {
+    width: 430px;
+  }
+  .blog__list {
+    height: 500px;
+  }
+  .blog__item-title h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1600px) {
+  .blog {
+    width: 470px;
   }
 }
 @media (min-width: 1920px) {
@@ -1052,8 +1118,6 @@ button {
     padding: 9px 15px 0 9px;
     border-radius: 100px;
     border-width: 12px;
-    -webkit-box-shadow: 0 0 0 3px #478bf9;
-    box-shadow: 0 0 0 3px #478bf9;
   }
   .blog__item {
     margin-bottom: 16px;
