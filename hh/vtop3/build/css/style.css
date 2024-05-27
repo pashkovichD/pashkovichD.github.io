@@ -880,7 +880,7 @@ button {
 @media (min-width: 1920px) {
   .intro__wrapper {
     width: 1640px;
-    margin-bottom: 65px;
+    margin-bottom: 0;
   }
   .intro {
     width: 670px;
@@ -942,9 +942,127 @@ button {
 	}*/
 }
 .icons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 165px;
   margin-bottom: 33px;
-  background-color: rgba(255, 0, 0, 0.5);
+  overflow: hidden;
+}
+.icons ul {
+  width: 100px;
+  margin-right: 16px;
+}
+.icons ul li {
+  margin-bottom: 16px;
+}
+.icons ul li svg {
+  width: 100px;
+  height: 100px;
+  fill: #ffffff;
+}
+.icons .purple svg {
+  fill: #9dadf2;
+}
+.icons .light-green svg {
+  fill: #7ddacf;
+}
+.icons .blue svg {
+  fill: #478bf9;
+}
+.icons .white svg {
+  fill: #ffffff;
+}
+.icons::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 250px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#110a1d), color-stop(75%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #110a1d 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+}
+.icons__first {
+  height: 597px;
+  opacity: 0.2;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-animation: scrollY 16s infinite linear;
+  animation: scrollY 16s infinite linear;
+}
+.icons__second {
+  height: 597px;
+  margin-top: 8px;
+  opacity: 0.2;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  /*-webkit-animation: scrollY 16s infinite linear;
+	-moz-animation: scrollY 16s infinite linear;
+	animation: scrollY 16s infinite linear;*/
+}
+/*
+@keyframes slidein {
+  50% {
+    transform: translateY(400px)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}*/
+@-webkit-keyframes scrollY {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+}
+@keyframes scrollY {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+}
+@-webkit-keyframes scrollX {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+@keyframes scrollX {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+.icons__border {
+  position: relative;
+  height: 220px;
+  border: 3px solid #478bf9;
+  border-radius: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.icons__border svg {
+  position: absolute;
+  left: -3px;
+  bottom: -3px;
 }
 @media (min-width: 480px) {
   .icons {
@@ -967,7 +1085,7 @@ button {
 @media (min-width: 1920px) {
   .icons {
     width: 334px;
-    height: 960px;
+    height: 1025px;
   }
 }
 .blog {

@@ -1,7 +1,130 @@
-.icons {
+.icons {	
+	position: relative;
+	display: flex;
 	height: 165px;
 	margin-bottom: 33px;
-	background-color: rgba(255,0,0,.5);	
+	// background-color: rgba(255,0,0,.5);
+
+	overflow: hidden;
+	ul {
+		width: 100px;
+		margin-right: 16px;
+		li {
+			margin-bottom: 16px;
+			svg {
+				width: 100px;
+				height: 100px;
+				fill: @white;
+			}
+		}
+	}
+	.purple {
+		svg {
+			fill: #9dadf2;
+		}
+	}
+	.light-green {
+		svg {
+			fill: #7ddacf;
+		}
+	}
+	.blue {
+		svg {
+			fill: @blue;
+		}
+	}
+	.white {
+		svg {
+			fill: @white;
+		}
+	}
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		content: '';
+		height: 250px;
+		background: linear-gradient(0deg, rgba(17,10,29,1) 0%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
+	}
+}
+
+.icons__first {
+	height: 597px;
+	// display: flex;
+	// flex-direction: column;
+	// margin-top: -635px;
+	// margin-top: -158px;
+	// margin-top: -40px;
+	opacity: 0.2;
+	// animation: 5s linear infinite slidein;
+	transition: @animation;
+	// padding-top: 100%;
+	// padding-left: 100%;
+	-webkit-animation: scrollY 16s infinite linear;
+	-moz-animation: scrollY 16s infinite linear;
+	animation: scrollY 16s infinite linear;
+}
+
+.icons__second {
+	height: 597px;
+	// display: flex;
+	// flex-direction: column;
+	// margin-top: -635px;
+	// margin-top: -158px;
+	margin-top: 8px;
+	opacity: 0.2;
+	// animation: 5s linear infinite slidein;
+	transition: @animation;
+	// padding-top: 100%;
+	// padding-left: 100%;
+
+	/*-webkit-animation: scrollY 16s infinite linear;
+	-moz-animation: scrollY 16s infinite linear;
+	animation: scrollY 16s infinite linear;*/
+}
+
+/*
+@keyframes slidein {
+  50% {
+    transform: translateY(400px)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}*/
+
+@keyframes scrollY {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(0, -100%);
+	}
+}
+
+@keyframes scrollX {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+
+.icons__border {
+	position: relative;
+	height: 220px;
+	border: 3px solid @blue;
+	border-radius: 100px;	
+	box-sizing: border-box;
+	svg {
+		position: absolute;
+		left: -3px;
+		bottom: -3px;
+	}
 }
 
 @media (min-width: @mobile-width) {
@@ -40,7 +163,7 @@
 @media (min-width: @desktop-full-width) {
 	.icons {
 		width: 334px;
-		height: 960px;	
+		height: 1025px;
 	}
 }
 
