@@ -1,15 +1,15 @@
 .icons {	
 	position: relative;
 	display: flex;
-	flex-direction: column;
-	height: 165px;
+	flex-direction: column-reverse;	
 	margin-bottom: 33px;
 	// background-color: rgba(255,0,0,.5);
 	overflow: hidden;
 	ul {
-		width: 304px;
+		width: 305px;
 		// width: 100px;
 		height: 49px;
+		margin-top: 9px;
 		// margin-left: auto;
 		// margin-right: 16px;
 		font-size: 0;
@@ -26,24 +26,37 @@
 				// height: 100px;
 				fill: @white;
 			}
+			&:nth-child(13),
+			&:nth-child(14),
+			&:nth-child(15),
+			&:nth-child(16) {
+				display: none;
+			}
+		}
+		&:last-child {
+			margin-top: 0;
 		}
 	}
 	.purple {
+		border-color: #9dadf2;
 		svg {
 			fill: #9dadf2;
 		}
 	}
 	.light-green {
+		border-color: #7ddacf;
 		svg {
 			fill: #7ddacf;
 		}
 	}
 	.blue {
+		border-color: @blue;
 		svg {
 			fill: @blue;
 		}
 	}
 	.white {
+		border-color: @white;
 		svg {
 			fill: @white;
 		}
@@ -59,21 +72,60 @@
 	}
 }
 
+.icons__border {
+	position: relative;	
+	width: 109px;
+	height: 49px;
+	// height: 220px;
+	border-width: 2px;
+	// border-width: 3px;
+	border-style: solid;
+	border-radius: 100px;	
+	box-sizing: border-box;
+	svg {
+		position: absolute;
+		left: -2px;
+		bottom: -2px;
+		// left: -3px;
+		// bottom: -3px;
+		/*-webkit-animation: iconRotate 10s infinite linear;
+		-moz-animation: iconRotate 10s infinite linear;
+		animation: iconRotate 10s infinite linear;*/
+	}
+	/*&--first {
+		svg {
+			bottom: auto;
+			top: -3px;
+		}
+	}*/	
+}
+
 .icons__first {
 	// height: 596px;
+	margin-left: -305px;
 	// margin-top: -596px;	
 	opacity: 0.2;	
 	transition: @animation;	
-	/*-webkit-animation: bottomScrollY 48s infinite linear;
-	-moz-animation: bottomScrollY 48s infinite linear;
-	animation: bottomScrollY 48s infinite linear;*/
+	-webkit-animation: rightScrollX 5s infinite linear;
+	-moz-animation: rightScrollX 5s infinite linear;
+	animation: rightScrollX 5s infinite linear;
+	.icons__border {
+		svg {
+			left: auto;
+			right: -2px;
+			// right: -3px;
+		}
+	}
 }
 
 .icons__second {
-	height: 596px;	
-	margin-top: 8px;
+	// height: 596px;
+	// margin-top: 8px;
 	opacity: 0.6;	
 	transition: @animation;
+	-webkit-animation: leftScrollX 5s infinite linear;
+	-moz-animation: leftScrollX 5s infinite linear;
+	animation: leftScrollX 5s infinite linear;
 	/*-webkit-animation: topScrollY 16s infinite linear;
 	-moz-animation: topScrollY 16s infinite linear;
 	animation: topScrollY 16s infinite linear;*/
@@ -81,16 +133,24 @@
 
 .icons__third {
 	// height: 596px;
-	margin-left: -304px;
+	margin-left: -305px;
 	// margin-top: -596px;
 	opacity: 0.4;	
 	transition: @animation;	
-	-webkit-animation: rightScrollX 5s infinite linear;
-	-moz-animation: rightScrollX 5s infinite linear;
-	animation: rightScrollX 5s infinite linear;
+	-webkit-animation: rightScrollX 20s infinite linear;
+	-moz-animation: rightScrollX 20s infinite linear;
+	animation: rightScrollX 20s infinite linear;
 	/*-webkit-animation: bottomScrollY 20s infinite linear;
 	-moz-animation: bottomScrollY 20s infinite linear;
 	animation: bottomScrollY 20s infinite linear;*/
+
+	.icons__border {
+		svg {
+			left: auto;
+			right: -2px;
+			// right: -3px;
+		}
+	}
 }
 
 @keyframes topScrollY {
@@ -123,24 +183,23 @@
 	}
 }
 
-.icons__border {
-	position: relative;	
-	width: 109px;
-	height: 49px;
-	// height: 220px;
-	border: 3px solid @blue;
-	border-radius: 100px;	
-	box-sizing: border-box;
-	svg {
-		position: absolute;
-		left: -3px;
-		bottom: -3px;
+@keyframes leftScrollX {
+	0% {
+		transform: translate(0, 0);
 	}
-	&--top {
-		svg {
-			bottom: auto;
-			top: -3px;
-		}
+
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+
+@keyframes iconRotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }
 
@@ -152,7 +211,7 @@
 
 @media (min-width: 600px) {
 	.icons {		
-		height: 165px;
+		// height: 165px;
 		margin-bottom: 33px;		
 		ul {
 			width: 395px;
@@ -167,6 +226,12 @@
 					height: 65px;
 					// width: 100px;
 					// height: 100px;					
+				}
+				&:nth-child(13),
+				&:nth-child(14),
+				&:nth-child(15),
+				&:nth-child(16) {
+					display: inline-block;
 				}
 			}
 		}

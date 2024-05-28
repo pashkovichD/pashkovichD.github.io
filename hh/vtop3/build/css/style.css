@@ -947,16 +947,16 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 165px;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   margin-bottom: 33px;
   overflow: hidden;
 }
 .icons ul {
-  width: 304px;
+  width: 305px;
   height: 49px;
+  margin-top: 9px;
   font-size: 0;
   text-align: right;
   white-space: nowrap;
@@ -970,14 +970,35 @@ button {
   height: 49px;
   fill: #ffffff;
 }
+.icons ul li:nth-child(13),
+.icons ul li:nth-child(14),
+.icons ul li:nth-child(15),
+.icons ul li:nth-child(16) {
+  display: none;
+}
+.icons ul:last-child {
+  margin-top: 0;
+}
+.icons .purple {
+  border-color: #9dadf2;
+}
 .icons .purple svg {
   fill: #9dadf2;
+}
+.icons .light-green {
+  border-color: #7ddacf;
 }
 .icons .light-green svg {
   fill: #7ddacf;
 }
+.icons .blue {
+  border-color: #478bf9;
+}
 .icons .blue svg {
   fill: #478bf9;
+}
+.icons .white {
+  border-color: #ffffff;
 }
 .icons .white svg {
   fill: #ffffff;
@@ -991,34 +1012,66 @@ button {
   background: -webkit-gradient(linear, left bottom, left top, from(#110a1d), color-stop(75%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(0deg, #110a1d 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
 }
+.icons__border {
+  position: relative;
+  width: 109px;
+  height: 49px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*&--first {
+		svg {
+			bottom: auto;
+			top: -3px;
+		}
+	}*/
+}
+.icons__border svg {
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+  /*-webkit-animation: iconRotate 10s infinite linear;
+		-moz-animation: iconRotate 10s infinite linear;
+		animation: iconRotate 10s infinite linear;*/
+}
 .icons__first {
+  margin-left: -305px;
   opacity: 0.2;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  /*-webkit-animation: bottomScrollY 48s infinite linear;
-	-moz-animation: bottomScrollY 48s infinite linear;
-	animation: bottomScrollY 48s infinite linear;*/
+  -webkit-animation: rightScrollX 5s infinite linear;
+  animation: rightScrollX 5s infinite linear;
+}
+.icons__first .icons__border svg {
+  left: auto;
+  right: -2px;
 }
 .icons__second {
-  height: 596px;
-  margin-top: 8px;
   opacity: 0.6;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+  -webkit-animation: leftScrollX 5s infinite linear;
+  animation: leftScrollX 5s infinite linear;
   /*-webkit-animation: topScrollY 16s infinite linear;
 	-moz-animation: topScrollY 16s infinite linear;
 	animation: topScrollY 16s infinite linear;*/
 }
 .icons__third {
-  margin-left: -304px;
+  margin-left: -305px;
   opacity: 0.4;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  -webkit-animation: rightScrollX 5s infinite linear;
-  animation: rightScrollX 5s infinite linear;
+  -webkit-animation: rightScrollX 20s infinite linear;
+  animation: rightScrollX 20s infinite linear;
   /*-webkit-animation: bottomScrollY 20s infinite linear;
 	-moz-animation: bottomScrollY 20s infinite linear;
 	animation: bottomScrollY 20s infinite linear;*/
+}
+.icons__third .icons__border svg {
+  left: auto;
+  right: -2px;
 }
 @-webkit-keyframes topScrollY {
   0% {
@@ -1080,23 +1133,45 @@ button {
             transform: translate(100%, 0);
   }
 }
-.icons__border {
-  position: relative;
-  width: 109px;
-  height: 49px;
-  border: 3px solid #478bf9;
-  border-radius: 100px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@-webkit-keyframes leftScrollX {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
 }
-.icons__border svg {
-  position: absolute;
-  left: -3px;
-  bottom: -3px;
+@keyframes leftScrollX {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
 }
-.icons__border--top svg {
-  bottom: auto;
-  top: -3px;
+@-webkit-keyframes iconRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes iconRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 @media (min-width: 480px) {
   .icons {
@@ -1105,7 +1180,6 @@ button {
 }
 @media (min-width: 600px) {
   .icons {
-    height: 165px;
     margin-bottom: 33px;
   }
   .icons ul {
@@ -1118,6 +1192,12 @@ button {
   .icons ul li svg {
     width: 65px;
     height: 65px;
+  }
+  .icons ul li:nth-child(13),
+  .icons ul li:nth-child(14),
+  .icons ul li:nth-child(15),
+  .icons ul li:nth-child(16) {
+    display: inline-block;
   }
   .icons__third {
     margin-left: -395px;
