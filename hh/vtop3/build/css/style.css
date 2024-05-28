@@ -946,20 +946,28 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 165px;
   margin-bottom: 33px;
   overflow: hidden;
 }
 .icons ul {
-  width: 100px;
-  margin-right: 16px;
+  width: 304px;
+  height: 49px;
+  font-size: 0;
+  text-align: right;
+  white-space: nowrap;
 }
 .icons ul li {
-  margin-bottom: 16px;
+  display: inline-block;
+  margin-right: 12px;
 }
 .icons ul li svg {
-  width: 100px;
-  height: 100px;
+  width: 49px;
+  height: 49px;
   fill: #ffffff;
 }
 .icons .purple svg {
@@ -979,39 +987,40 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  content: '';
   height: 250px;
   background: -webkit-gradient(linear, left bottom, left top, from(#110a1d), color-stop(75%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(0deg, #110a1d 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
 }
 .icons__first {
-  height: 597px;
   opacity: 0.2;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  -webkit-animation: scrollY 16s infinite linear;
-  animation: scrollY 16s infinite linear;
+  /*-webkit-animation: bottomScrollY 48s infinite linear;
+	-moz-animation: bottomScrollY 48s infinite linear;
+	animation: bottomScrollY 48s infinite linear;*/
 }
 .icons__second {
-  height: 597px;
+  height: 596px;
   margin-top: 8px;
-  opacity: 0.2;
+  opacity: 0.6;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  /*-webkit-animation: scrollY 16s infinite linear;
-	-moz-animation: scrollY 16s infinite linear;
-	animation: scrollY 16s infinite linear;*/
+  /*-webkit-animation: topScrollY 16s infinite linear;
+	-moz-animation: topScrollY 16s infinite linear;
+	animation: topScrollY 16s infinite linear;*/
 }
-/*
-@keyframes slidein {
-  50% {
-    transform: translateY(400px)
-  }
-  100%{
-    transform: translateY(0)
-  }
-}*/
-@-webkit-keyframes scrollY {
+.icons__third {
+  margin-left: -304px;
+  opacity: 0.4;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-animation: rightScrollX 5s infinite linear;
+  animation: rightScrollX 5s infinite linear;
+  /*-webkit-animation: bottomScrollY 20s infinite linear;
+	-moz-animation: bottomScrollY 20s infinite linear;
+	animation: bottomScrollY 20s infinite linear;*/
+}
+@-webkit-keyframes topScrollY {
   0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
@@ -1021,7 +1030,7 @@ button {
             transform: translate(0, -100%);
   }
 }
-@keyframes scrollY {
+@keyframes topScrollY {
   0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
@@ -1031,29 +1040,50 @@ button {
             transform: translate(0, -100%);
   }
 }
-@-webkit-keyframes scrollX {
+@-webkit-keyframes bottomScrollY {
   0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
   }
 }
-@keyframes scrollX {
+@keyframes bottomScrollY {
   0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+@-webkit-keyframes rightScrollX {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+}
+@keyframes rightScrollX {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
   }
 }
 .icons__border {
   position: relative;
-  height: 220px;
+  width: 109px;
+  height: 49px;
   border: 3px solid #478bf9;
   border-radius: 100px;
   -webkit-box-sizing: border-box;
@@ -1064,9 +1094,38 @@ button {
   left: -3px;
   bottom: -3px;
 }
+.icons__border--top svg {
+  bottom: auto;
+  top: -3px;
+}
 @media (min-width: 480px) {
   .icons {
     margin-bottom: 45px;
+  }
+}
+@media (min-width: 600px) {
+  .icons {
+    height: 165px;
+    margin-bottom: 33px;
+  }
+  .icons ul {
+    width: 395px;
+    height: 65px;
+  }
+  .icons ul li {
+    margin-right: 14px;
+  }
+  .icons ul li svg {
+    width: 65px;
+    height: 65px;
+  }
+  .icons__third {
+    margin-left: -395px;
+  }
+  .icons__border {
+    position: relative;
+    width: 145px;
+    height: 65px;
   }
 }
 @media (min-width: 1200px) {

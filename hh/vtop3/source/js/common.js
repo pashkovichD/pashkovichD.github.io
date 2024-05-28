@@ -56,30 +56,6 @@ window.addEventListener('load', function() {
 	}	
 });
 
-window.addEventListener('load', function() {
-	let iconsFirstList = document.querySelector('.icons__first');
-	let iconsFirst = iconsFirstList.querySelectorAll('li');
-
-	
-
-	// iconsFirst.forEach((icon) => {
-	// 	console.log(icon);
-	// });
-
-	iconsFirstList.addEventListener('click', function() {
-		// this.style.transform = 'translateY(116px)';
-		// iconsFirst.forEach((icon) => {
-		// 	icon.style.transform('translateY(400px)');
-		// });		
-	});
-
-	// setTimeout(termi, 0, 5000);
-
-	function termi() {
-		iconsFirstList.style.transform = 'translateY(116px)';
-	}
-});
-
 /* замена произвольного номера в href на нужный для телефона 'tel:+.............' */
 /*var number = document.querySelectorAll('.number-phone');
 
