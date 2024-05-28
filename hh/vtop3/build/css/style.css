@@ -1021,28 +1021,17 @@ button {
   border-radius: 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*&--first {
-		svg {
-			bottom: auto;
-			top: -3px;
-		}
-	}*/
 }
 .icons__border svg {
   position: absolute;
   left: -2px;
   bottom: -2px;
-  /*-webkit-animation: iconRotate 10s infinite linear;
-		-moz-animation: iconRotate 10s infinite linear;
-		animation: iconRotate 10s infinite linear;*/
 }
 .icons__first {
   margin-left: -305px;
   opacity: 0.2;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  -webkit-animation: rightScrollX 5s infinite linear;
-  animation: rightScrollX 5s infinite linear;
 }
 .icons__first .icons__border svg {
   left: auto;
@@ -1054,9 +1043,6 @@ button {
   transition: all 0.25s ease-out;
   -webkit-animation: leftScrollX 5s infinite linear;
   animation: leftScrollX 5s infinite linear;
-  /*-webkit-animation: topScrollY 16s infinite linear;
-	-moz-animation: topScrollY 16s infinite linear;
-	animation: topScrollY 16s infinite linear;*/
 }
 .icons__third {
   margin-left: -305px;
@@ -1065,9 +1051,6 @@ button {
   transition: all 0.25s ease-out;
   -webkit-animation: rightScrollX 20s infinite linear;
   animation: rightScrollX 20s infinite linear;
-  /*-webkit-animation: bottomScrollY 20s infinite linear;
-	-moz-animation: bottomScrollY 20s infinite linear;
-	animation: bottomScrollY 20s infinite linear;*/
 }
 .icons__third .icons__border svg {
   left: auto;
@@ -1180,7 +1163,7 @@ button {
 }
 @media (min-width: 600px) {
   .icons {
-    margin-bottom: 33px;
+    margin-bottom: 50px;
   }
   .icons ul {
     width: 395px;
@@ -1199,6 +1182,9 @@ button {
   .icons ul li:nth-child(16) {
     display: inline-block;
   }
+  .icons__first {
+    margin-left: -395px;
+  }
   .icons__third {
     margin-left: -395px;
   }
@@ -1210,9 +1196,57 @@ button {
 }
 @media (min-width: 1200px) {
   .icons {
+    display: block;
     width: 250px;
     height: 750px;
     margin-bottom: 0;
+  }
+  .icons ul {
+    width: 75px;
+    margin-top: 0;
+    margin-right: 16px;
+  }
+  .icons ul li {
+    display: block;
+    margin-right: 0;
+  }
+  .icons ul li svg {
+    width: 75px;
+    height: 75px;
+  }
+  .icons ul:last-child {
+    margin-right: 0;
+  }
+  .icons__border {
+    width: auto;
+    height: 165px;
+    border-width: 3px;
+  }
+  .icons__border svg {
+    left: -3px;
+    bottom: -3px;
+  }
+  .icons__first {
+    margin-left: 0;
+    -webkit-animation-name: bottomScrollY;
+    animation-name: bottomScrollY;
+  }
+  .icons__first .icons__border svg {
+    left: auto;
+    right: -3px;
+  }
+  .icons__second {
+    -webkit-animation: leftScrollX 5s infinite linear;
+    animation: leftScrollX 5s infinite linear;
+  }
+  .icons__third {
+    margin-left: -305px;
+    -webkit-animation: rightScrollX 20s infinite linear;
+    animation: rightScrollX 20s infinite linear;
+  }
+  .icons__third .icons__border svg {
+    left: auto;
+    right: -2px;
   }
 }
 @media (min-width: 1400px) {

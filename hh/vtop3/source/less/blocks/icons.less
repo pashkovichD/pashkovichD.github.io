@@ -1,4 +1,4 @@
-.icons {	
+.icons {
 	position: relative;
 	display: flex;
 	flex-direction: column-reverse;	
@@ -6,24 +6,18 @@
 	// background-color: rgba(255,0,0,.5);
 	overflow: hidden;
 	ul {
-		width: 305px;
-		// width: 100px;
+		width: 305px;		
 		height: 49px;
 		margin-top: 9px;
-		// margin-left: auto;
-		// margin-right: 16px;
 		font-size: 0;
 		text-align: right;
 		white-space: nowrap;
 		li {
 			display: inline-block;
-			margin-right: 12px;
-			// margin-bottom: 16px;
+			margin-right: 12px;			
 			svg {
 				width: 49px;
 				height: 49px;
-				// width: 100px;
-				// height: 100px;
 				fill: @white;
 			}
 			&:nth-child(13),
@@ -76,28 +70,15 @@
 	position: relative;	
 	width: 109px;
 	height: 49px;
-	// height: 220px;
-	border-width: 2px;
-	// border-width: 3px;
+	border-width: 2px;	
 	border-style: solid;
 	border-radius: 100px;	
 	box-sizing: border-box;
 	svg {
 		position: absolute;
 		left: -2px;
-		bottom: -2px;
-		// left: -3px;
-		// bottom: -3px;
-		/*-webkit-animation: iconRotate 10s infinite linear;
-		-moz-animation: iconRotate 10s infinite linear;
-		animation: iconRotate 10s infinite linear;*/
-	}
-	/*&--first {
-		svg {
-			bottom: auto;
-			top: -3px;
-		}
-	}*/	
+		bottom: -2px;		
+	}	
 }
 
 .icons__first {
@@ -106,9 +87,9 @@
 	// margin-top: -596px;	
 	opacity: 0.2;	
 	transition: @animation;	
-	-webkit-animation: rightScrollX 5s infinite linear;
-	-moz-animation: rightScrollX 5s infinite linear;
-	animation: rightScrollX 5s infinite linear;
+	// -webkit-animation: rightScrollX 5s infinite linear;
+	// -moz-animation: rightScrollX 5s infinite linear;
+	// animation: rightScrollX 5s infinite linear;
 	.icons__border {
 		svg {
 			left: auto;
@@ -125,10 +106,7 @@
 	transition: @animation;
 	-webkit-animation: leftScrollX 5s infinite linear;
 	-moz-animation: leftScrollX 5s infinite linear;
-	animation: leftScrollX 5s infinite linear;
-	/*-webkit-animation: topScrollY 16s infinite linear;
-	-moz-animation: topScrollY 16s infinite linear;
-	animation: topScrollY 16s infinite linear;*/
+	animation: leftScrollX 5s infinite linear;	
 }
 
 .icons__third {
@@ -139,10 +117,7 @@
 	transition: @animation;	
 	-webkit-animation: rightScrollX 20s infinite linear;
 	-moz-animation: rightScrollX 20s infinite linear;
-	animation: rightScrollX 20s infinite linear;
-	/*-webkit-animation: bottomScrollY 20s infinite linear;
-	-moz-animation: bottomScrollY 20s infinite linear;
-	animation: bottomScrollY 20s infinite linear;*/
+	animation: rightScrollX 20s infinite linear;	
 
 	.icons__border {
 		svg {
@@ -212,7 +187,7 @@
 @media (min-width: 600px) {
 	.icons {		
 		// height: 165px;
-		margin-bottom: 33px;		
+		margin-bottom: 50px;		
 		ul {
 			width: 395px;
 			// width: 100px;
@@ -237,6 +212,10 @@
 		}
 	}
 
+	.icons__first {
+		margin-left: -395px;
+	}
+
 	.icons__third {
 		margin-left: -395px;
 	}
@@ -259,9 +238,80 @@
 
 @media (min-width: @desktop-1200-width) {
 	.icons {
+		display: block;
 		width: 250px;
 		height: 750px;
 		margin-bottom: 0;
+		ul {
+			width: 75px;
+			// width: 100px;
+			margin-top: 0;
+			margin-right: 16px;
+			li {
+				display: block;
+				// margin-bottom: 16px;
+				margin-right: 0;
+				svg {
+					width: 75px;
+					height: 75px;
+					// width: 100px;
+					// height: 100px;					
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.icons__border {		
+		width: auto;
+		height: 165px;
+		// height: 220px;
+		border-width: 3px;		
+		svg {
+			left: -3px;
+			bottom: -3px;
+		}	
+	}
+
+	.icons__first {
+		// height: 596px;
+		margin-left: 0;
+		// margin-top: -596px;		
+		-webkit-animation-name: bottomScrollY;
+		-moz-animation-name: bottomScrollY;
+		animation-name: bottomScrollY;
+		.icons__border {
+			svg {
+				left: auto;				
+				right: -3px;
+			}
+		}
+	}
+
+	.icons__second {
+		// height: 596px;
+		// margin-top: 8px;		
+		-webkit-animation: leftScrollX 5s infinite linear;
+		-moz-animation: leftScrollX 5s infinite linear;
+		animation: leftScrollX 5s infinite linear;	
+	}
+
+	.icons__third {
+		// height: 596px;
+		margin-left: -305px;
+		// margin-top: -596px;		
+		-webkit-animation: rightScrollX 20s infinite linear;
+		-moz-animation: rightScrollX 20s infinite linear;
+		animation: rightScrollX 20s infinite linear;
+		.icons__border {
+			svg {
+				left: auto;
+				right: -2px;
+				// right: -3px;
+			}
+		}
 	}
 }
 
