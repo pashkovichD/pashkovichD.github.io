@@ -963,6 +963,7 @@ button {
 }
 .icons ul li {
   display: inline-block;
+  height: 49px;
   margin-right: 12px;
 }
 .icons ul li svg {
@@ -976,8 +977,54 @@ button {
 .icons ul li:nth-child(16) {
   display: none;
 }
+.icons ul .icons__border {
+  position: relative;
+  width: 109px;
+  height: 49px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.icons ul .icons__border svg {
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+}
 .icons ul:last-child {
   margin-top: 0;
+}
+.icons ul.icons__first {
+  margin-left: -305px;
+  opacity: 0.2;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-animation: rightScrollX 5s infinite linear;
+  animation: rightScrollX 5s infinite linear;
+}
+.icons ul.icons__first .icons__border svg {
+  left: auto;
+  right: -2px;
+}
+.icons ul.icons__second {
+  opacity: 0.6;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-animation: leftScrollX 5s infinite linear;
+  animation: leftScrollX 5s infinite linear;
+}
+.icons ul.icons__third {
+  margin-left: -305px;
+  opacity: 0.4;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  -webkit-animation: rightScrollX 5s infinite linear;
+  animation: rightScrollX 5s infinite linear;
+}
+.icons ul.icons__third .icons__border svg {
+  left: auto;
+  right: -2px;
 }
 .icons .purple {
   border-color: #9dadf2;
@@ -1011,50 +1058,6 @@ button {
   height: 250px;
   background: -webkit-gradient(linear, left bottom, left top, from(#110a1d), color-stop(75%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(0deg, #110a1d 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
-}
-.icons__border {
-  position: relative;
-  width: 109px;
-  height: 49px;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 100px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.icons__border svg {
-  position: absolute;
-  left: -2px;
-  bottom: -2px;
-}
-.icons__first {
-  margin-left: -305px;
-  opacity: 0.2;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-.icons__first .icons__border svg {
-  left: auto;
-  right: -2px;
-}
-.icons__second {
-  opacity: 0.6;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-  -webkit-animation: leftScrollX 5s infinite linear;
-  animation: leftScrollX 5s infinite linear;
-}
-.icons__third {
-  margin-left: -305px;
-  opacity: 0.4;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-  -webkit-animation: rightScrollX 20s infinite linear;
-  animation: rightScrollX 20s infinite linear;
-}
-.icons__third .icons__border svg {
-  left: auto;
-  right: -2px;
 }
 @-webkit-keyframes topScrollY {
   0% {
@@ -1162,6 +1165,41 @@ button {
   }
 }
 @media (min-width: 600px) {
+  .icons ul li:nth-child(13),
+  .icons ul li:nth-child(14),
+  .icons ul li:nth-child(15),
+  .icons ul li:nth-child(16) {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .icons {
+    margin-bottom: 50px;
+  }
+  .icons ul {
+    width: 342px;
+    height: 55px;
+  }
+  .icons ul li {
+    height: 55px;
+    margin-right: 14px;
+  }
+  .icons ul li svg {
+    width: 55px;
+    height: 55px;
+  }
+  .icons ul .icons__border {
+    width: 121px;
+    height: 55px;
+  }
+  .icons ul.icons__first {
+    margin-left: -342px;
+  }
+  .icons ul.icons__third {
+    margin-left: -342px;
+  }
+}
+@media (min-width: 960px) {
   .icons {
     margin-bottom: 50px;
   }
@@ -1170,44 +1208,43 @@ button {
     height: 65px;
   }
   .icons ul li {
+    height: 65px;
     margin-right: 14px;
   }
   .icons ul li svg {
     width: 65px;
     height: 65px;
   }
-  .icons ul li:nth-child(13),
-  .icons ul li:nth-child(14),
-  .icons ul li:nth-child(15),
-  .icons ul li:nth-child(16) {
-    display: inline-block;
-  }
-  .icons__first {
-    margin-left: -395px;
-  }
-  .icons__third {
-    margin-left: -395px;
-  }
-  .icons__border {
-    position: relative;
+  .icons ul .icons__border {
     width: 145px;
     height: 65px;
+  }
+  .icons ul.icons__first {
+    margin-left: -395px;
+  }
+  .icons ul.icons__third {
+    margin-left: -395px;
   }
 }
 @media (min-width: 1200px) {
   .icons {
-    display: block;
-    width: 250px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
     height: 750px;
     margin-bottom: 0;
   }
   .icons ul {
     width: 75px;
-    margin-top: 0;
     margin-right: 16px;
+    font-size: inherit;
   }
   .icons ul li {
     display: block;
+    height: 75px;
+    margin-bottom: 16px;
     margin-right: 0;
   }
   .icons ul li svg {
@@ -1217,36 +1254,46 @@ button {
   .icons ul:last-child {
     margin-right: 0;
   }
-  .icons__border {
+  .icons ul .icons__border {
     width: auto;
     height: 165px;
     border-width: 3px;
   }
-  .icons__border svg {
+  .icons ul .icons__border svg {
     left: -3px;
     bottom: -3px;
   }
-  .icons__first {
+  .icons ul.icons__first {
+    height: 454px;
+    margin-top: -454px;
     margin-left: 0;
     -webkit-animation-name: bottomScrollY;
     animation-name: bottomScrollY;
   }
-  .icons__first .icons__border svg {
+  .icons ul.icons__first .icons__border svg {
     left: auto;
     right: -3px;
   }
-  .icons__second {
-    -webkit-animation: leftScrollX 5s infinite linear;
-    animation: leftScrollX 5s infinite linear;
+  .icons ul.icons__second {
+    height: 454px;
+    -webkit-animation-name: topScrollY;
+    animation-name: topScrollY;
   }
-  .icons__third {
-    margin-left: -305px;
-    -webkit-animation: rightScrollX 20s infinite linear;
-    animation: rightScrollX 20s infinite linear;
+  .icons ul.icons__second .icons__border svg {
+    left: -3px;
+    bottom: auto;
+    top: -3px;
   }
-  .icons__third .icons__border svg {
+  .icons ul.icons__third {
+    height: 454px;
+    margin-top: -454px;
+    margin-left: 0;
+    -webkit-animation-name: bottomScrollY;
+    animation-name: bottomScrollY;
+  }
+  .icons ul.icons__third .icons__border svg {
     left: auto;
-    right: -2px;
+    right: -3px;
   }
 }
 @media (min-width: 1400px) {
