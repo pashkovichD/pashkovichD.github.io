@@ -97,20 +97,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #478bf9;
 }
-/*.blog__list::-webkit-scrollbar-track {  
-  border-radius: 10px;
-  background-color: rgba(255,255,255,.12);
-}
-
-.blog__list::-webkit-scrollbar {
-  width: 4px;  
-  background-color: rgba(255,255,255,.12);
-}
-
-.blog__list::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #478bf9;
-}*/
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -162,34 +148,8 @@ picture {
   display: block;
   line-height: 0;
 }
-.fancybox__wrapper {
-  padding: 0 10px !important;
-  -webkit-transition: none;
-  transition: none;
-}
-.fancybox__container {
-  background-color: rgba(24, 24, 27, 0.5);
-}
-.fancybox__caption {
-  width: auto !important;
-  margin-top: 5px;
-  margin: 5px 20px;
-  padding: 5px 10px !important;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-}
 .page-main {
   overflow-x: hidden;
-}
-@media (min-width: 480px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 960px) {
 }
 @media (min-width: 1920px) {
   html {
@@ -417,6 +377,107 @@ button {
     height: 24px;
     margin-top: -12px;
   }
+}
+/*--- DEVELOPER ---*/
+.developer {
+  margin: 0 auto;
+}
+.developer svg {
+  display: block;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.developer__text {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #478bf9;
+  border: 1px dashed #478bf9;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.developer__text-sorry {
+  display: block;
+  font-weight: 600;
+}
+.developer__gear-one,
+.developer__gear-two {
+  -webkit-animation-name: rotationGearR;
+  animation-name: rotationGearR;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-transform-origin: 50% 55.55555556% 0;
+  -ms-transform-origin: 50% 55.55555556% 0;
+  transform-origin: 50% 55.55555556% 0;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.developer__gear-two {
+  -webkit-animation-name: rotationGearL;
+  animation-name: rotationGearL;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  -webkit-transform-origin: 20% 77.77777778% 0;
+  -ms-transform-origin: 20% 77.77777778% 0;
+  transform-origin: 20% 77.77777778% 0;
+}
+@-webkit-keyframes rotationGearR {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationGearR {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotationGearL {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotationGearL {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@media (min-width: 768px) {
+  .developer__text {
+    width: 500px;
+  }
+}
+.development {
+  position: relative;
+  min-height: 250px;
+  margin-bottom: 210px;
+  padding: 0 30px;
 }
 .overlay {
   display: none;
@@ -1908,6 +1969,26 @@ button {
     width: 4px;
     height: 80px;
     background-color: transparent;
+  }
+}
+.page {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.page__title {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 960px) {
+  .page__title {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1920px) {
+  .page__title {
+    font-size: 40px;
   }
 }
 .page-footer {
