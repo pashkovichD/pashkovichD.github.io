@@ -49,9 +49,9 @@
 			margin-left: -305px;	
 			opacity: 0.2;	
 			transition: @animation;	
-			-webkit-animation: rightScrollX 5s infinite linear;
-			-moz-animation: rightScrollX 5s infinite linear;
-			animation: rightScrollX 5s infinite linear;
+			-webkit-animation: rightScrollX 55s infinite linear;
+			-moz-animation: rightScrollX 55s infinite linear;
+			animation: rightScrollX 55s infinite linear;
 			.icons__border {
 				svg {
 					left: auto;
@@ -63,18 +63,18 @@
 		&.icons__second {	
 			opacity: 0.6;	
 			transition: @animation;
-			-webkit-animation: leftScrollX 5s infinite linear;
-			-moz-animation: leftScrollX 5s infinite linear;
-			animation: leftScrollX 5s infinite linear;
+			-webkit-animation: leftScrollX 16s infinite linear;
+			-moz-animation: leftScrollX 16s infinite linear;
+			animation: leftScrollX 16s infinite linear;
 		}
 
 		&.icons__third {	
 			margin-left: -305px;	
 			opacity: 0.4;	
 			transition: @animation;	
-			-webkit-animation: rightScrollX 5s infinite linear;
-			-moz-animation: rightScrollX 5s infinite linear;
-			animation: rightScrollX 5s infinite linear;
+			-webkit-animation: rightScrollX 24s infinite linear;
+			-moz-animation: rightScrollX 24s infinite linear;
+			animation: rightScrollX 24s infinite linear;
 
 			.icons__border {
 				svg {
@@ -107,16 +107,7 @@
 		svg {
 			fill: @white;
 		}
-	}
-	&::after {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		// content: '';
-		height: 250px;
-		background: linear-gradient(0deg, rgba(17,10,29,1) 0%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
-	}
+	}	
 }
 
 @keyframes topScrollY {
@@ -232,8 +223,6 @@
 				svg {
 					width: 65px;
 					height: 65px;
-					// width: 100px;
-					// height: 100px;					
 				}				
 			}
 			.icons__border {
@@ -254,28 +243,23 @@
 
 @media (min-width: @desktop-1200-width) {
 	.icons {
-		// display: block;
 		flex-direction: row;
 		width: auto;
 		height: 750px;
 		margin-bottom: 0;
-		// background-color: rgba(255,0,0,.5);
 		ul {			
-			width: 75px;
-			// height: auto;
-			// width: 100px;
-			margin-right: 16px;
+			width: 65px;
+			margin-right: 14px;			
 			font-size: inherit;
 			li {
 				display: block;
-				height: 75px;
-				margin-bottom: 16px;
-				margin-right: 0;
-				svg {
-					width: 75px;
-					height: 75px;
-					// width: 100px;
-					// height: 100px;					
+				margin-bottom: 14px;				
+				margin-right: 0;				
+				&:nth-child(13),
+				&:nth-child(14),
+				&:nth-child(15),
+				&:nth-child(16) {
+					display: block;
 				}
 			}
 			&:last-child {
@@ -284,8 +268,7 @@
 
 			.icons__border {
 				width: auto;
-				height: 165px;
-				// height: 220px;
+				height: 143px;
 				border-width: 3px;
 				svg {
 					left: -3px;
@@ -294,10 +277,8 @@
 			}
 
 			&.icons__first {
-				height: 454px;
-				margin-top: -454px;
-				// height: 596px;
-				// margin-top: -596px;
+				height: 394px;
+				margin-top: -394px;				
 				margin-left: 0;
 				-webkit-animation-name: bottomScrollY;
 				-moz-animation-name: bottomScrollY;
@@ -311,8 +292,7 @@
 			}
 
 			&.icons__second {
-				height: 454px;
-				// height: 596px;				
+				height: 394px;
 				-webkit-animation-name: topScrollY;
 				-moz-animation-name: topScrollY;
 				animation-name: topScrollY;
@@ -328,10 +308,8 @@
 			}
 
 			&.icons__third {
-				height: 454px;
-				margin-top: -454px;
-				// height: 596px;
-				// margin-top: -596px;
+				height: 394px;
+				margin-top: -394px;
 				margin-left: 0;				
 				-webkit-animation-name: bottomScrollY;
 				-moz-animation-name: bottomScrollY;
@@ -348,20 +326,71 @@
 }
 
 @media (min-width: @desktop-1400-width) {
-	.icons {
-		width: 300px;
-		height: 850px;
+	.icons {		
+		height: 900px;		
+		ul {			
+			width: 75px;
+			margin-right: 16px;			
+			li {
+				height: 75px;				
+				margin-bottom: 16px;				
+				svg {
+					width: 75px;
+					height: 75px;
+				}				
+			}			
+
+			.icons__border {				
+				height: 165px;
+			}
+
+			&.icons__first {
+				height: 454px;
+				margin-top: -454px;
+			}
+
+			&.icons__second {				
+				height: 454px;
+			}
+
+			&.icons__third {
+				height: 454px;
+				margin-top: -454px;
+			}
+		}
 	}
 }
 
 @media (min-width: @desktop-full-width) {
 	.icons {
-		width: 334px;
 		height: 1025px;
-	}
-}
+		ul {
+			width: 100px;
+			li {			
+				height: 100px;
+				svg {
+					width: 100px;
+					height: 100px;					
+				}				
+			}			
 
-&:hover,
-&:focus {
-	
+			.icons__border {
+				height: 220px;					
+			}
+
+			&.icons__first {				
+				height: 584px;
+				margin-top: -584px;
+			}
+
+			&.icons__second {
+				height: 584px;
+			}
+
+			&.icons__third {
+				height: 584px;
+				margin-top: -584px;
+			}
+		}
+	}
 }

@@ -3,11 +3,20 @@
 	margin-bottom: 32px;
 	padding: 32px 10px 0 10px;
 	text-align: center;
+	z-index: 1;
 }
 
 .intro__wrapper {
 	position: relative;
-	// overflow: hidden;
+	&::after {
+		width: 450px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -190px;
+		height: 250px;
+		background: linear-gradient(0deg, rgba(17,10,29,1) 0%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%);
+	}
 }
 
 .intro__title {
@@ -58,8 +67,6 @@
 	width: 545px;
 	height: 429px;
 	margin-left: -270px;
-	// border: 1px solid red;
-	// background-color: red;
 	z-index: -1;
 }
 
@@ -123,8 +130,9 @@
 		display: flex;
 		width: 1080px;
 		margin: 0 auto;
-		margin-bottom: 30px;
-		// background-color: rgba(255,0,0,.5);
+		&::after {
+			content: '';
+		}
 	}
 
 	.intro {
@@ -132,28 +140,15 @@
 		margin: 0;
 		padding: 0;
 		padding-top: 180px;
-		// margin-right: 48px;
-		// padding: 216px 10px 0 8px;
 		text-align: left;
-	}
-
-	.intro__title {
-		// margin-bottom: 24px;		
-		
-	}
+	}	
 
 	.intro__desc {
-		// margin-bottom: 48px;
-		font-size: 20px;
-		// line-height: 32px;
-		// text-align: left;
+		font-size: 20px;		
 	}
 
 	.intro__become {
-		width: auto;
-		// padding: 20px 72px;
-		// font-size: 24px;
-		// line-height: 32px;
+		width: auto;		
 	}
 
 	.dot-light {
@@ -166,7 +161,6 @@
 @media (min-width: @desktop-1400-width) {
 	.intro__wrapper {
 		width: 1280px;
-		margin-bottom: 50px;
 	}
 
 	.intro {
@@ -186,6 +180,11 @@
 @media (min-width: @desktop-1600-width) {
 	.intro__wrapper {
 		width: 1400px;
+		&::after {
+			width: 600px;
+			margin-left: -300px;
+			height: 300px;
+		}
 	}
 
 	.intro {
@@ -214,7 +213,9 @@
 	.intro__wrapper {
 		width: 1640px;
 		margin-bottom: 0;
-		// margin-bottom: 65px;
+		&::after {
+			width: 750px;
+		}		
 	}
 
 	.intro {
@@ -238,44 +239,4 @@
 		width: 1100px;
 		height: 866px;	
 	}
-	/*.intro__wrapper {
-		// display: flex;
-		margin-bottom: 65px;
-		padding: 0 140px;
-	}
-
-	.intro {
-		width: 670px;
-		margin: 0;
-		margin-right: 48px;
-		padding: 216px 10px 0 8px;
-	}
-
-	.intro__title {
-		margin-bottom: 24px;
-		font-size: 96px;
-		line-height: 96px;
-		text-align: left;
-	}
-
-	.intro__desc {
-		margin-bottom: 48px;
-		font-size: 32px;
-		line-height: 32px;
-		text-align: left;
-	}
-
-	.intro__become {
-		width: auto;
-		padding: 20px 72px;
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	.dot-light {
-		top: -20px;
-		left: -280px;		
-		width: 1100px;
-		height: 866px;	
-	}*/
 }
