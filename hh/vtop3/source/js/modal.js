@@ -1,32 +1,23 @@
-let modalUser = document.querySelector('.modal-user');
-let btnModalUser = document.querySelector('.page-header__user');
-let closeUser = document.querySelector('.modal-user__close');
+let modalLogin = document.querySelector('.modal-login');
+let btnModalLogin = document.querySelector('.page-header__login');
+let closeLogin = document.querySelector('.modal-login__close');
 
-let modalVideo = document.querySelector('.modal-video');
-let btnModalVideo = document.querySelector('.intro__video');
-let closeVideo = document.querySelector('.modal-video__close');
-
-let modalPhone = document.querySelector('.modal-phone');
-let btnModalPhone = document.querySelector('.page-footer__request');
-let closePhone = document.querySelector('.modal-phone__close');
+let modalSignup = document.querySelector('.modal-signup');
+let btnModalSignup = document.querySelector('.page-header__signup');
+let closeSignup = document.querySelector('.modal-signup__close');
 
 let overlay = document.querySelector('.overlay');
 
 let removeShowTimeout;
 
-btnModalUser.addEventListener('click', function(evt) {
+btnModalLogin.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	workModal(modalUser, closeUser, overlay);
+	workModal(modalLogin, closeLogin, overlay);
 });
 
-btnModalVideo.addEventListener('click', function(evt) {
+btnModalSignup.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	workModal(modalVideo, closeVideo, overlay);
-});
-
-btnModalPhone.addEventListener('click', function(evt) {
-	evt.preventDefault();
-	workModal(modalPhone, closePhone, overlay);
+	workModal(modalSignup, closeSignup, overlay);
 });
 
 function workModal(modal, close, overlay) {

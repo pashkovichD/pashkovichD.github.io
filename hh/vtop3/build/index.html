@@ -7,11 +7,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="House of Gambing">
 	<meta name="keywords" content="gambing, play, casino, online">
-
-	<!-- swiper.js -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -51,20 +46,13 @@
 					</nav>
 
 					<button class="page-header__login button-border"><span>Log in</span></button>
-					<button class="page-header__singup button"><span>Sign up</span></button>
+					<button class="page-header__signup button"><span>Sign up</span></button>
 				</div>
 			</div>
 
 		</div>
 		
 	</header>
-
-
-	<!-- <div class="page-header__phone-wrapper">					
-		<a class="page-header__phone-number" href="tel:+88002227526" aria-label="8 (800) 222-75-26"><svg width="17" height="17" fill="white"><use xlink:href="#icon-phone"></use></svg><span>8 (800) 222-75-26</span></a>
-	</div> -->
-
-	
 
 	<main class="page-main">
 		<div class="intro__wrapper">
@@ -182,6 +170,7 @@
 			</section>
 
 		</div>
+
 	</main>
 
 	<footer class="page-footer">
@@ -251,43 +240,48 @@
 		<!-- <svg class="dot-light-circle" width="784" height="784" viewBox="0 0 784 784" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.7" filter="url(#filter0_f_15974_532)"><circle cx="392" cy="392" r="120" fill="url(#paint0_linear_15974_532)"/></g><defs><filter id="filter0_f_15974_532" x="0.222992" y="0.222992" width="783.554" height="783.554" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="135.889" result="effect1_foregroundBlur_15974_532"/></filter><linearGradient id="paint0_linear_15974_532" x1="512" y1="272" x2="229.647" y2="342.588" gradientUnits="userSpaceOnUse"><stop stop-color="#478BF9"/><stop offset="1" stop-color="#9DADF2"/></linearGradient></defs></svg> -->
 		
 	</footer>
-
-	<!-- <div class="w"><svg width="50" height="50" fill="red"><use xlink:href="#icon-shield"></use></svg></div> -->
-	<!-- <section class="modal-user modal">
-		<h2 class="visually-hidden">Войти в личный кабиинет</h2>		
-		<form id="user-form" class="form" action="/" method="POST">
+	
+	<section class="modal-login modal">
+		<h2 class="visually-hidden">Login to your personal account</h2>
+		<form id="login-form" class="form" action="/" method="POST">
 			<p class="form__item">
-				<input class="form__input" type="text" name="user__name" id="user__name"  value="" placeholder="Ваше имя">
-				<label class="visually-hidden" for="user__name">Ваше имя</label>
+				<input class="form__input" type="text" name="login__name" id="login__name" value="" placeholder="Login">
+				<label class="visually-hidden" for="login__name">Login</label>
 			</p>
 			<p class="form__item">
-				<input class="form__input" type="password" name="user__password" id="user__password"  value="" placeholder="Пароль">
-				<label class="visually-hidden" for="user__password">Пароль</label>
+				<input class="form__input" type="password" name="login__password" id="login__password" value="" placeholder="Password">
+				<label class="visually-hidden" for="login__password">Password</label>
 			</p>
-			<input type="submit" class="form__submit button" value="Войти">
+			<input type="submit" class="form__submit button" value="Log in">
 		</form>	
-		<button type="button" class="modal-user__close close" tabindex="0" aria-label="Закрыть модальное окно"><span class="visually-hidden">Закрыть модальное окно</span></button>
-	</section> -->
+		<button type="button" class="modal-login__close close" tabindex="0" aria-label="Close modal window"><span class="visually-hidden">Close modal window</span></button>
+	</section>
 
-	
+	<section class="modal-signup modal">
+		<h2 class="visually-hidden">Registration on the site</h2>
+		<form id="signupn-form" class="form" action="/" method="POST">
+			<p class="form__item">
+				<input class="form__input" type="text" name="signup__name" id="signup__name" value="" placeholder="Login">
+				<label class="visually-hidden" for="signup__name">Login</label>
+			</p>
+			<p class="form__item">
+				<input class="form__input" type="password" name="signup__password" id="signup__password" value="" placeholder="Password">
+				<label class="visually-hidden" for="signup__password">Password</label>
+			</p>
+			<p class="form__item">
+				<input class="form__input" type="password" name="signup__re-enter-password" id="signup__re-enter-password" value="" placeholder="Re-enter password">
+				<label class="visually-hidden" for="signup__re-enter-password">Re-enter password</label>
+			</p>
+			<input type="submit" class="form__submit button" value="Sign up">
+		</form>	
+		<button type="button" class="modal-signup__close close" tabindex="0" aria-label="Close modal window"><span class="visually-hidden">Close modal window</span></button>
+	</section>
 
-	<div class="overlay"></div>
-
-	<template id="big-img-template" style="display: none">
-		<picture class="production__big-img-item">
-			<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 4">
-		</picture>
-	</template>
+	<div class="overlay"></div>	
 	
-	<script async="" src="js/common.min.js"></script>
-	<!-- <script async src="js/scroll.min.js"></script> -->
-	<script async="" src="js/hamburger.min.js"></script>
-	<!-- <script async src="js/intro.min.js"></script> -->
-	
-	<!-- <script src="js/modal.min.js"></script> -->
-	<!-- <script async src="js/swiper.min.js"></script> -->
-	<!-- <script async src="js/production.min.js"></script> -->
-	
+	<script async="" src="js/common.min.js"></script>	
+	<script async="" src="js/hamburger.min.js"></script>	
+	<script src="js/modal.min.js"></script>
 
 </body>
 </html>
