@@ -78,13 +78,6 @@ body {
 :focus {
   outline: none;
 }
-/* Стилизация scroll'а */
-/* Работает в Firefox */
-/* Стилизация scroll'а */
-/** {  
-  scrollbar-width: thin;
-  scrollbar-color: @gray-font rgba(255,255,255,.2);
-}*/
 body::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.12);
@@ -189,15 +182,6 @@ button {
 .button-border {
   padding: 11px 10px;
   border: 2px solid #9dadf2;
-  /*background: 
-		linear-gradient(#ccc 0 0) padding-box, //this is your grey background
-		linear-gradient(to right, #9c20aa, #fb3570) border-box;
-	color: #313149;
-	padding: 10px;
-	border: 5px solid transparent;
-	border-radius: 15px;
-	display: inline-block;
-	margin: 75px 0;*/
 }
 .button-border:hover,
 .button-border:focus {
@@ -877,48 +861,6 @@ button {
     opacity: 1;
     visibility: visible;
   }
-}
-@media (min-width: 1920px) {
-  /*.menu__list {
-		display: flex;
-	}
-
-	.menu__item {		
-		margin-bottom: 0;
-		a {
-			position: relative;
-			display: block;
-			padding: 13px 16px;
-			font-size: 16px;
-			line-height: 20px;			
-			text-decoration: none;
-			letter-spacing: .1px;			
-			border: none;
-			border-radius: 0;			
-			&::after {
-				position: absolute;
-				bottom: 5px;
-				left: 10px;
-				right: 10px;
-				content: '';
-				height: 1px;
-				background-color: @white;
-				opacity: 0;
-				visibility: hidden;
-				transition: all .2s ease-out;
-			}
-			&:hover,
-			&:focus {
-				background-color: transparent;
-			}
-			&:hover::after,
-			&:focus::after {
-				bottom: 10px;
-				opacity: 1;
-				visibility: visible;
-			}
-		}
-	}*/
 }
 .page-header {
   margin: 0;
@@ -1818,17 +1760,22 @@ button {
   line-height: 40px;
   font-weight: 600;
 }
+.blog__list-wrapper {
+  position: relative;
+}
 .blog__list {
   position: relative;
   height: 418px;
-  padding: 3px 6px 0 3px;
+  padding: 7px 17px 0 8px;
   border-radius: 50px;
-  border: 6px solid transparent;
-  overflow-y: scroll;
+  border: 2px solid #478bf9;
   background-color: rgba(255, 255, 255, 0.12);
-  -webkit-box-shadow: 0 0 0 2px #478bf9;
-  box-shadow: 0 0 0 2px #478bf9;
   z-index: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* скрываем scrollbar для IE */
+  scrollbar-width: none;
+  /* скрываем scrollbar для Firefox */
 }
 .blog__item {
   margin-bottom: 11px;
@@ -1855,22 +1802,26 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 /*--- Стилизация scroll'а ---*/
-.blog__list::-webkit-scrollbar-track {
+.blog__scrollbar-container {
+  position: absolute;
+  top: 60px;
+  right: 7px;
+  bottom: 60px;
+  width: 4px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.12);
 }
-.blog__list::-webkit-scrollbar {
-  width: 4px;
-}
-.blog__list::-webkit-scrollbar-thumb {
+.blog__scrollbar {
+  position: absolute;
+  right: 0;
+  height: 30px;
   width: 4px;
   border-radius: 10px;
   background-color: #478bf9;
 }
-.blog__list::-webkit-scrollbar-button {
-  width: 4px;
-  height: 57px;
-  background-color: transparent;
+.blog__list::-webkit-scrollbar {
+  display: none;
+  /* для Chrome */
 }
 @media (min-width: 768px) {
   .blog {
@@ -1882,9 +1833,8 @@ button {
     font-size: 36px;
   }
   .blog__list {
-    border-width: 9px;
-    -webkit-box-shadow: 0 0 0 3px #478bf9;
-    box-shadow: 0 0 0 3px #478bf9;
+    padding: 11px 16px 0 11px;
+    border-width: 3px;
   }
   .blog__item {
     margin-bottom: 16px;
@@ -1893,6 +1843,9 @@ button {
   .blog__item-title h3 {
     font-size: 20px;
     line-height: 26px;
+  }
+  .blog__scrollbar-container {
+    right: 9px;
   }
 }
 @media (min-width: 1200px) {
@@ -1927,20 +1880,19 @@ button {
 @media (min-width: 1920px) {
   .blog {
     left: 7px;
-    width: 538px;
-    padding: 140px 4px 5px 10px;
+    width: 530px;
+    padding: 140px 0 0 0;
   }
   .blog__title {
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
   .blog__title h2 {
     font-size: 40px;
   }
   .blog__list {
-    height: 590px;
-    padding: 9px 15px 0 9px;
+    height: 596px;
+    padding: 22px 38px 0px 20px;
     border-radius: 100px;
-    border-width: 12px;
   }
   .blog__item {
     margin-bottom: 16px;
@@ -1955,20 +1907,14 @@ button {
     line-height: 28px;
   }
   /*--- Стилизация scroll'а ---*/
-  .blog__list::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.12);
+  .blog__scrollbar-container {
+    top: 97px;
+    right: 17px;
+    bottom: 97px;
+    width: 7px;
   }
-  .blog__list::-webkit-scrollbar {
-    width: 8px;
-  }
-  .blog__list::-webkit-scrollbar-thumb {
-    width: 8px;
-  }
-  .blog__list::-webkit-scrollbar-button {
-    width: 4px;
-    height: 80px;
-    background-color: transparent;
+  .blog__scrollbar {
+    width: 7px;
   }
 }
 .page {

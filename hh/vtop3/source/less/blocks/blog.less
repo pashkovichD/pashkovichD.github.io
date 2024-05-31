@@ -25,18 +25,22 @@
 	}
 }
 
+.blog__list-wrapper {
+	position: relative;
+}
+
 .blog__list {
 	position: relative;
 	height: 418px;
-	padding: 3px 6px 0 3px;
+	padding: 7px 17px 0 8px;
 	border-radius: 50px;
-	border: 6px solid transparent;	
-	overflow-y: scroll;
+	border: 2px solid @blue;
 	background-color: rgba(255,255,255,.12);
+	z-index: 1;
 
-	-webkit-box-shadow: 0 0 0 2px @blue;
-          box-shadow: 0 0 0 2px @blue;
-  z-index: 1;
+	overflow-y: scroll;
+  -ms-overflow-style: none; /* скрываем scrollbar для IE */
+	scrollbar-width: none; /* скрываем scrollbar для Firefox */
 }
 
 .blog__item {
@@ -68,40 +72,28 @@
 
 
 /*--- Стилизация scroll'а ---*/
-.blog__list::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: rgba(255,255,255,.12);
+.blog__scrollbar-container {
+	position: absolute;
+	top: 60px;
+	right: 7px;
+	bottom: 60px;
+	width: 4px;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,.12);
+}
+
+.blog__scrollbar {
+	position: absolute;
+	right: 0;
+	height: 30px;
+	width: 4px;
+	border-radius: 10px;
+	background-color: #478bf9;
 }
 
 .blog__list::-webkit-scrollbar {
-  // width: 12px;  
-  width: 4px;
-  // left: -100px;
-  // border-right: 5px solid red;
-  // background-color: rgba(255,255,255,.12);
+  display: none; /* для Chrome */
 }
-
-.blog__list::-webkit-scrollbar-thumb {
-  // height: 50%;
-	width: 4px;	
-  border-radius: 10px;
-  background-color: #478bf9;
-}
-
-.blog__list::-webkit-scrollbar-button:end:increment {	
-	// height: 50%;
-	// display: block;
-	// background: transparent;
-}
-
-
-
-.blog__list::-webkit-scrollbar-button {
-    width: 4px;
-    height: 57px;
-    background-color: transparent;
-}
-
 
 @media (min-width: @mobile-width) {
 	
@@ -124,10 +116,9 @@
 		}		
 	}
 
-	.blog__list {		
-		border-width: 9px;
-		-webkit-box-shadow: 0 0 0 3px @blue;
-            box-shadow: 0 0 0 3px @blue;
+	.blog__list {
+		padding: 11px 16px 0 11px;
+		border-width: 3px;
 	}
 
 	.blog__item {
@@ -140,6 +131,10 @@
 			font-size: 20px;
 			line-height: 26px;			
 		}
+	}
+
+	.blog__scrollbar-container {
+		right: 9px;
 	}
 }
 
@@ -186,24 +181,21 @@
 @media (min-width: @desktop-full-width) {
 	.blog {
 		left: 7px;
-		width: 538px;
-		padding: 140px 4px 5px 10px;		
+		width: 530px;
+		padding: 140px 0 0 0;
 	}
 
 	.blog__title {
-		margin-bottom: 27px;
+		margin-bottom: 23px;
 		h2 {
 			font-size: 40px;
 		}		
 	}
 
 	.blog__list {
-		height: 590px;
-		padding: 9px 15px 0 9px;
+		height: 596px;
+		padding: 22px 38px 0px 20px;
 		border-radius: 100px;
-		border-width: 12px;
-		// -webkit-box-shadow: 0 0 0 3px @blue;
-    //         box-shadow: 0 0 0 3px @blue;
 	}
 
 	.blog__item {
@@ -221,32 +213,17 @@
 	}
 
 	/*--- Стилизация scroll'а ---*/
-	.blog__list::-webkit-scrollbar-track {
-	  border-radius: 10px;
-	  background-color: rgba(255,255,255,.12);
+	.blog__scrollbar-container {
+		top: 97px;
+		right: 17px;
+		bottom: 97px;
+		width: 7px;
 	}
 
-	.blog__list::-webkit-scrollbar {	  
-	  width: 8px;	  
+	.blog__scrollbar {
+		width: 7px;
 	}
 
-	.blog__list::-webkit-scrollbar-thumb {	  
-		width: 8px;		  
-	}
-
-	.blog__list::-webkit-scrollbar-button:end:increment {	
-		// height: 50%;
-		// display: block;
-		// background: transparent;
-	}
-
-
-
-	.blog__list::-webkit-scrollbar-button {
-	    width: 4px;
-	    height: 80px;
-	    background-color: transparent;
-	}
 }
 
 &:hover,
