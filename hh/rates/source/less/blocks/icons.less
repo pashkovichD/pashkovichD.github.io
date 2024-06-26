@@ -1,0 +1,396 @@
+.icons {
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 33px;
+	overflow: hidden;
+	ul {
+		width: 305px;		
+		height: 49px;
+		margin-top: 9px;
+		font-size: 0;
+		text-align: right;
+		white-space: nowrap;
+		li {
+			display: inline-block;
+			height: 49px;
+			margin-right: 12px;			
+			svg {
+				width: 49px;
+				height: 49px;
+				fill: @white;
+			}
+			&:nth-child(13),
+			&:nth-child(14),
+			&:nth-child(15),
+			&:nth-child(16) {
+				display: none;
+			}
+		}
+		.icons__border {
+			position: relative;	
+			width: 109px;
+			height: 49px;
+			border-width: 2px;	
+			border-style: solid;
+			border-radius: 100px;	
+			box-sizing: border-box;
+			svg {
+				position: absolute;
+				left: -2px;
+				bottom: -2px;		
+			}	
+		}
+		&:last-child {
+			margin-top: 0;
+		}
+
+		&.icons__first {	
+			margin-left: -305px;	
+			opacity: 0.2;	
+			transition: @animation;	
+			-webkit-animation: rightScrollX 55s infinite linear;
+			-moz-animation: rightScrollX 55s infinite linear;
+			animation: rightScrollX 55s infinite linear;
+			.icons__border {
+				svg {
+					left: auto;
+					right: -2px;
+				}
+			}
+		}
+
+		&.icons__second {	
+			opacity: 0.6;	
+			transition: @animation;
+			-webkit-animation: leftScrollX 16s infinite linear;
+			-moz-animation: leftScrollX 16s infinite linear;
+			animation: leftScrollX 16s infinite linear;
+		}
+
+		&.icons__third {	
+			margin-left: -305px;	
+			opacity: 0.4;	
+			transition: @animation;	
+			-webkit-animation: rightScrollX 24s infinite linear;
+			-moz-animation: rightScrollX 24s infinite linear;
+			animation: rightScrollX 24s infinite linear;
+
+			.icons__border {
+				svg {
+					left: auto;
+					right: -2px;			
+				}
+			}
+		}
+	}
+	.purple {
+		border-color: #9dadf2;
+		svg {
+			fill: #9dadf2;
+		}
+	}
+	.light-green {
+		border-color: #7ddacf;
+		svg {
+			fill: #7ddacf;
+		}
+	}
+	.blue {
+		border-color: @blue;
+		svg {
+			fill: @blue;
+		}
+	}
+	.white {
+		border-color: @white;
+		svg {
+			fill: @white;
+		}
+	}	
+}
+
+@keyframes topScrollY {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(0, -100%);
+	}
+}
+
+@keyframes bottomScrollY {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(0, 100%);
+	}
+}
+
+@keyframes rightScrollX {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(100%, 0);
+	}
+}
+
+@keyframes leftScrollX {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(-100%, 0);
+	}
+}
+
+@keyframes iconRotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.icons {
+		margin-bottom: 45px;
+	}
+}
+
+@media (min-width: 600px) {
+	.icons {
+		ul {	
+			li {				
+				&:nth-child(13),
+				&:nth-child(14),
+				&:nth-child(15),
+				&:nth-child(16) {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.icons {
+		margin-bottom: 50px;		
+		ul {
+			width: 342px;			
+			height: 55px;
+			li {
+				height: 55px;
+				margin-right: 14px;				
+				svg {
+					width: 55px;
+					height: 55px;					
+				}				
+			}
+			.icons__border {
+				width: 121px;
+				height: 55px;
+			}
+
+			&.icons__first {
+				margin-left: -342px;
+			}
+
+			&.icons__third {
+				margin-left: -342px;
+			}
+		}
+	}	
+}
+
+@media (min-width: @desktop-width) {
+	.icons {
+		margin-bottom: 50px;		
+		ul {
+			width: 395px;			
+			height: 65px;
+			li {
+				height: 65px;
+				margin-right: 14px;				
+				svg {
+					width: 65px;
+					height: 65px;
+				}				
+			}
+			.icons__border {
+				width: 145px;
+				height: 65px;
+			}
+
+			&.icons__first {
+				margin-left: -395px;
+			}
+
+			&.icons__third {
+				margin-left: -395px;
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+	.icons {
+		flex-direction: row;
+		width: auto;
+		height: 750px;
+		margin-bottom: 0;
+		ul {			
+			width: 65px;
+			margin-right: 14px;			
+			font-size: inherit;
+			li {
+				display: block;
+				margin-bottom: 14px;				
+				margin-right: 0;				
+				&:nth-child(13),
+				&:nth-child(14),
+				&:nth-child(15),
+				&:nth-child(16) {
+					display: block;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.icons__border {
+				width: auto;
+				height: 143px;
+				border-width: 3px;
+				svg {
+					left: -3px;
+					bottom: -3px;
+				}	
+			}
+
+			&.icons__first {
+				height: 394px;
+				margin-top: -394px;				
+				margin-left: 0;
+				-webkit-animation-name: bottomScrollY;
+				-moz-animation-name: bottomScrollY;
+				animation-name: bottomScrollY;
+				.icons__border {
+					svg {
+						left: auto;
+						right: -3px;
+					}
+				}
+			}
+
+			&.icons__second {
+				height: 394px;
+				-webkit-animation-name: topScrollY;
+				-moz-animation-name: topScrollY;
+				animation-name: topScrollY;
+				.icons__border {
+					svg {
+						left: -3px;
+						bottom: auto;
+						top: -3px;
+					}
+				}
+
+				
+			}
+
+			&.icons__third {
+				height: 394px;
+				margin-top: -394px;
+				margin-left: 0;				
+				-webkit-animation-name: bottomScrollY;
+				-moz-animation-name: bottomScrollY;
+				animation-name: bottomScrollY;
+				.icons__border {
+					svg {
+						left: auto;						
+						right: -3px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-1400-width) {
+	.icons {		
+		height: 900px;		
+		ul {			
+			width: 75px;
+			margin-right: 16px;			
+			li {
+				height: 75px;				
+				margin-bottom: 16px;				
+				svg {
+					width: 75px;
+					height: 75px;
+				}				
+			}			
+
+			.icons__border {				
+				height: 165px;
+			}
+
+			&.icons__first {
+				height: 454px;
+				margin-top: -454px;
+			}
+
+			&.icons__second {				
+				height: 454px;
+			}
+
+			&.icons__third {
+				height: 454px;
+				margin-top: -454px;
+			}
+		}
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.icons {
+		height: 1025px;
+		ul {
+			width: 100px;
+			li {			
+				height: 100px;
+				svg {
+					width: 100px;
+					height: 100px;					
+				}				
+			}			
+
+			.icons__border {
+				height: 220px;					
+			}
+
+			&.icons__first {				
+				height: 584px;
+				margin-top: -584px;
+			}
+
+			&.icons__second {
+				height: 584px;
+			}
+
+			&.icons__third {
+				height: 584px;
+				margin-top: -584px;
+			}
+		}
+	}
+}

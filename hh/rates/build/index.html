@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Индивидуальные тренировки - построй своё тело</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Выбор подходящего тарифного плана индивидуальных тренировок">
+	<meta name="keywords" content="тренировка, спорт, тариф, план">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	
+	<h1 class="visually-hidden">Индивидуальные тренировки</h1>
+	<!-- <div style="display: none;">
+		<include src="source/img/sprite.svg"></include>
+	</div> -->
+
+
+	<div style="display: none;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-marker" viewBox="0 0 16 12"><path d="M5.9,11.8c-0.2,0-0.5-0.1-0.7-0.3l-4.6-4c-0.4-0.4-0.5-1-0.1-1.4S1.6,5.6,2,6l3.8,3.4l8-8.9c0.4-0.4,1-0.4,1.4-0.1c0.4,0.4,0.4,1,0.1,1.4l-8.6,9.6C6.5,11.7,6.2,11.8,5.9,11.8z"></path></symbol><symbol id="icon-star-sale" viewBox="0 0 46 47"><path d="M19.1737 2.33184C21.3671 0.421923 24.6329 0.421923 26.8263 2.33184C28.1083 3.44816 29.8138 3.94896 31.4958 3.70294C34.3736 3.28203 37.121 5.04769 37.9336 7.84023C38.4085 9.47243 39.5726 10.8158 41.1206 11.5182C43.769 12.7199 45.1257 15.6907 44.2995 18.4792C43.8167 20.1091 44.0696 21.8686 44.9921 23.2964C46.5705 25.7392 46.1057 28.9718 43.9031 30.871C42.6157 31.9811 41.8772 33.598 41.8814 35.2979C41.8885 38.2063 39.7498 40.6744 36.87 41.0813C35.1868 41.3192 33.6915 42.2802 32.7759 43.7125C31.2095 46.1629 28.0759 47.083 25.4333 45.8684C23.8888 45.1585 22.1112 45.1585 20.5667 45.8684C17.9241 47.083 14.7905 46.1629 13.2241 43.7125C12.3085 42.2802 10.8132 41.3192 9.12998 41.0813C6.25022 40.6744 4.11153 38.2063 4.11862 35.2979C4.12276 33.598 3.38433 31.9811 2.09693 30.871C-0.105695 28.9718 -0.570477 25.7392 1.00786 23.2964C1.93037 21.8686 2.18334 20.1091 1.70045 18.4792C0.874282 15.6907 2.23097 12.7199 4.87945 11.5182C6.42744 10.8158 7.59149 9.47243 8.06643 7.84023C8.87902 5.04769 11.6264 3.28203 14.5042 3.70294C16.1862 3.94896 17.8917 3.44816 19.1737 2.33184Z"></path></symbol></svg>
+	</div>
+
+	<header class="page-header">
+		<h2 class="visually-hidden">Время скидки</h2>
+		<div class="page-header__timer timer container">		
+			<p class="timer__text">Скидка действует:</p>
+			<div class="timer__hm">
+				<p class="timer__hours"><span class="timer__number">09</span><span class="text">часов</span></p>
+				<p class="timer__del"></p>
+				<p class="timer__minutes"><span class="timer__number">59</span><span class="text">минут</span></p>
+			</div>
+		</div>		
+	</header>
+
+	<main class="page-main">
+		<div class="rates__wrapper">
+
+			<section class="rates container">
+				<h2 class="rates__title">Выберите подходящий тарифный план</h2>
+				<picture class="rates__photo">
+					<source media="(min-width: 768px)" srcset="img/man.webp 1x, img/man@2x.webp 2x">
+					<img src="img/man-mobile.webp" srcset="img/man-mobile@2x.webp 2x" alt="Тарифный план">
+				</picture>
+
+				<form id="rates" action="https://echo.htmlacademy.ru" method="POST">
+					<div class="rates__list">
+						<div class="rates__item radio--checked no-sales">
+							<h3 class="rates__item-period">1 месяц</h3>
+							<p class="rates__item-price">
+								<span class="new">699₽</span>
+								<span class="old">999₽</span>
+							</p>
+							<p class="rates__item-tagline rates__item-tagline--super">Чтобы просто начать <span class="icon"></span></p>
+							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-30%</span></p>
+							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1" value="1-month" checked="">
+							<label class="rates__item-label" for="rates-period-1"></label>						
+						</div>
+						<div class="rates__item no-sales">
+							<h3 class="rates__item-period">3 месяца</h3>
+							<p class="rates__item-price">
+								<span class="new">999₽</span>
+								<span class="old">1299₽</span>
+							</p>
+							<p class="rates__item-tagline rates__item-tagline--power">Привести тело в порядок <span class="icon"></span></p>
+							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-40%</span></p>
+							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-3" value="3-months">
+							<label class="rates__item-label" for="rates-period-3"></label>						
+						</div>
+						<div class="rates__item no-sales">
+							<h3 class="rates__item-period">1 год</h3>
+							<p class="rates__item-price">
+								<span class="new">2990₽</span>
+								<span class="old">5990₽</span>
+							</p>
+							<p class="rates__item-tagline rates__item-tagline--fire">Изменить образ жизни <span class="icon"></span></p>
+							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-50%</span></p>
+							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1y" value="1-year">
+							<label class="rates__item-label" for="rates-period-1y"></label>						
+						</div>
+						<div class="rates__item no-sales">
+							<h3 class="rates__item-period">навсегда</h3>
+							<p class="rates__item-price">
+								<span class="new">5990₽</span>
+								<span class="old">18 990₽</span>
+							</p>
+							<p class="rates__item-tagline rates__item-tagline--star">Всегда быть в форме <span class="icon"></span></p>
+							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-70%</span></p>
+							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-forever" value="forever">
+							<label class="rates__item-label" for="rates-period-forever"></label>						
+						</div>						
+					</div>
+
+					<p class="rates__comment">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>
+
+					<label class="rates__rules">
+						<input type="checkbox" name="rules" class="visually-hidden" checked="">
+						<span class="rates__rules-indicator"></span>
+						<span>Я соглашаюсь с <a href="#">Правилами сервиса</a> и условиями <a href="#">Публичной оферты.</a></span>
+					</label>
+					
+					<input type="submit" class="rates__submit button" value="Купить">					
+					
+				</form>				
+
+				
+			</section>
+
+		</div>
+
+	</main>
+
+	<footer class="page-footer">
+		<h2 class="visually-hidden">Footer сайта</h2>
+	</footer>
+	
+	<section class="modal-offer modal">
+		<h2 class="modal-offer__title">Горящее предложение</h2>
+		<p class="modal-offer__tagline">Не упусти свой <span>последний шанс</span></p>
+		<p class="modal-offer__desc">Мы знаем, как трудно начать.. <span>Поэтому!</span></p>
+		<p class="modal-offer__gift">Дарим скидку для <span>легкого старта <span class="icon"></span></span></p>
+		<p class="modal-offer__offer">Посмотри, что мы для тебя приготовили <span class="icon"></span></p>
+
+		<form id="offer-form" class="form" action="https://echo.htmlacademy.ru" method="POST">
+			<div class="modal-offer__list">
+
+				<div class="modal-offer__item">
+					<h3 class="modal-offer__item-period">1 неделя</h3>
+					<div class="modal-offer__price-wrapper">
+						<p class="modal-offer__item-price-new"><span>599</span>₽</p>
+						<p class="modal-offer__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-40%</span></p>
+					</div>
+					<p class="modal-offer__item-price-old"><span>999</span>₽</p>
+					<input class="modal-offer__input visually-hidden" type="radio" name="modal-offer-period" id="modal-offer-period-week" value="1-week">
+					<span class="modal-offer__indicator-radio"></span>
+					<label class="modal-offer__item-label" for="modal-offer-period-week"></label>
+				</div>
+
+				<div class="modal-offer__item">
+					<h3 class="modal-offer__item-period">1 месяц</h3>
+					<div class="modal-offer__price-wrapper">
+						<p class="modal-offer__item-price-new"><span>799</span>₽</p>
+						<p class="modal-offer__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-50%</span></p>
+					</div>
+					<p class="modal-offer__item-price-old"><span>1690</span>₽</p>
+					<input class="modal-offer__input visually-hidden" type="radio" name="modal-offer-period" id="modal-offer-period-month" value="1-month">
+					<span class="modal-offer__indicator-radio"></span>
+					<label class="modal-offer__item-label" for="modal-offer-period-month"></label>
+				</div>
+
+				<div class="modal-offer__item">
+					<h3 class="modal-offer__item-period">3 месяца</h3>
+					<div class="modal-offer__price-wrapper">
+						<p class="modal-offer__item-price-new"><span>1690</span>₽</p>
+						<p class="modal-offer__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-60%</span></p>
+					</div>
+					<p class="modal-offer__item-price-old"><span>3990</span>₽</p>
+					<input class="modal-offer__input visually-hidden" type="radio" name="modal-offer-period" id="modal-offer-period-3-month" value="3-month">
+					<span class="modal-offer__indicator-radio"></span>
+					<label class="modal-offer__item-label" for="modal-offer-period-3-month"></label>
+				</div>
+				
+			</div>
+			<!-- <p class="form__item">
+				<input class="form__input" type="text" name="login__name" id="login__name"  value="" placeholder="Login">
+				<label class="visually-hidden" for="login__name">Login</label>
+			</p>
+			<p class="form__item">
+				<input class="form__input" type="password" name="login__password" id="login__password"  value="" placeholder="Password">
+				<label class="visually-hidden" for="login__password">Password</label>
+			</p> -->
+
+			<input type="submit" class="modal-offer__submit button" value="Начать тренироваться">
+		</form>	
+		<button type="button" class="modal-offer__close close" tabindex="0" aria-label="Закрыть горящее предложение"><span class="visually-hidden">Закрыть горящее предложение</span></button>
+	</section>	
+
+	<div class="overlay"></div>	
+	
+	<script async="" src="js/common.min.js"></script>
+	<script src="js/modal.min.js"></script>
+
+</body>
+</html>

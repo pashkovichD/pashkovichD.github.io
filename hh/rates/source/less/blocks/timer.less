@@ -1,0 +1,101 @@
+.timer {
+	display: flex;
+	align-items: center;
+	// background-color: red;
+	margin: 0 auto;
+}
+
+.timer__text {
+	margin-right: 10px;
+	font-size: 16px;
+	line-height: 130%;
+	font-weight: 500;
+}
+
+.timer__hm {
+	display: flex;
+}
+
+.timer__hours {
+	width: 64px;
+	height: 64px;
+	padding: 4px 5px 5px 5px;
+	text-align: center;
+	// background-color: rgba(255,0,0,.2);
+	.text {
+		display: block;
+		font-size: 14px;
+		line-height: 14px;
+		color: #818798;
+	}
+}
+
+.timer__minutes {
+	width: 64px;
+	height: 64px;
+	padding: 4px 5px 5px 5px;
+	text-align: center;
+	// background-color: rgba(255,0,0,.2);
+	.text {
+		display: block;
+		font-size: 14px;
+		line-height: 14px;
+		color: #818798;
+	}
+}
+
+.timer__number {	
+	font-family: @ff-b;
+	font-size: 40px;
+	line-height: 41px;
+	color: @blue-light;
+}
+
+.timer__del {
+	position: relative;
+	width: 4px;
+	margin: 0 4px;	
+	&::before,
+	&::after {
+		position: absolute;
+		top: 18px;
+		content: '';
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: @blue-light;
+	}
+
+	&::after {
+		top: 28px;		
+	}
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	
+}
+
+@media (min-width: @desktop-1200-width) {
+
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}
+
+&:hover,
+&:focus {
+	
+}
