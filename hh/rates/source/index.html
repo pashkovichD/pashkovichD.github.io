@@ -27,9 +27,10 @@
 		<div class="page-header__timer timer container">		
 			<p class="timer__text">Скидка действует:</p>
 			<div class="timer__hm">
-				<p class="timer__hours"><span class="timer__number">09</span><span class="text">часов</span></p>
+				<!-- <p class="timer__hours"><span class="timer__number">09</span><span class="text">часов</span></p> -->
+				<p class="timer__minutes"><span class="timer__number">09</span><span class="text">минут</span></p>
 				<p class="timer__del"></p>
-				<p class="timer__minutes"><span class="timer__number">59</span><span class="text">минут</span></p>
+				<p class="timer__seconds"><span class="timer__number">59</span><span class="text">секунд</span></p>
 			</div>
 		</div>		
 	</header>
@@ -40,13 +41,13 @@
 			<section class="rates container">
 				<h2 class="rates__title">Выберите подходящий тарифный план</h2>
 				<picture class="rates__photo">
-					<source media="(min-width: 768px)" srcset="img/man.webp 1x, img/man@2x.webp 2x">
+					<source media="(min-width: 1200px)" srcset="img/man.webp 1x, img/man@2x.webp 2x">
 					<img src="img/man-mobile.webp" srcset="img/man-mobile@2x.webp 2x" alt="Тарифный план">
 				</picture>
 
-				<form id="rates" action="https://echo.htmlacademy.ru" method="POST">
+				<form id="rates" class="rates__form" action="https://echo.htmlacademy.ru" method="POST">
 					<div class="rates__list">
-						<div class="rates__item radio--checked no-sales">
+						<div class="rates__item radio--checked">
 							<h3 class="rates__item-period">1 месяц</h3>
 							<p class="rates__item-price">
 								<span class="new">699₽</span>
@@ -57,7 +58,7 @@
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1" value="1-month" checked>
 							<label class="rates__item-label" for="rates-period-1"></label>						
 						</div>
-						<div class="rates__item no-sales">
+						<div class="rates__item">
 							<h3 class="rates__item-period">3 месяца</h3>
 							<p class="rates__item-price">
 								<span class="new">999₽</span>
@@ -68,7 +69,7 @@
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-3" value="3-months">
 							<label class="rates__item-label" for="rates-period-3"></label>						
 						</div>
-						<div class="rates__item no-sales">
+						<div class="rates__item">
 							<h3 class="rates__item-period">1 год</h3>
 							<p class="rates__item-price">
 								<span class="new">2990₽</span>
@@ -79,7 +80,7 @@
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1y" value="1-year">
 							<label class="rates__item-label" for="rates-period-1y"></label>						
 						</div>
-						<div class="rates__item no-sales">
+						<div class="rates__item">
 							<h3 class="rates__item-period">навсегда</h3>
 							<p class="rates__item-price">
 								<span class="new">5990₽</span>
@@ -179,7 +180,8 @@
 	<div class="overlay"></div>	
 	
 	<script async src="js/common.min.js"></script>
-	<script src="js/modal.min.js"></script>
+	<!-- <script src="js/timer.min.js"></script> -->
+	<!-- <script src="js/modal.min.js"></script>	 -->
 
 </body>
 </html>

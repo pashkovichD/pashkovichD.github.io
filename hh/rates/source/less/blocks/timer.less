@@ -1,13 +1,13 @@
 .timer {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	// background-color: red;
 	margin: 0 auto;
 }
 
 .timer__text {
 	margin-right: 10px;
-	font-size: 16px;
+	font-size: 16px;	
 	line-height: 130%;
 	font-weight: 500;
 }
@@ -16,45 +16,77 @@
 	display: flex;
 }
 
-.timer__hours {
+.timer__hours,
+.timer__minutes,
+.timer__seconds {
 	width: 64px;
 	height: 64px;
 	padding: 4px 5px 5px 5px;
-	text-align: center;
-	// background-color: rgba(255,0,0,.2);
+	text-align: center;	
 	.text {
 		display: block;
 		font-size: 14px;
-		line-height: 14px;
+		line-height: 14px;		
 		color: #818798;
 	}
 }
 
-.timer__minutes {
-	width: 64px;
-	height: 64px;
-	padding: 4px 5px 5px 5px;
-	text-align: center;
-	// background-color: rgba(255,0,0,.2);
-	.text {
-		display: block;
-		font-size: 14px;
-		line-height: 14px;
-		color: #818798;
-	}
-}
-
-.timer__number {	
+.timer__number {
 	font-family: @ff-b;
-	font-size: 40px;
+	font-size: 40px;	
 	line-height: 41px;
 	color: @blue-light;
+}
+
+.timer__red {	
+	.timer__number {
+		color: @red;
+		animation: pulsate 1s infinite;
+	}
+	.timer__del {
+		color: @red;
+		&::before,
+		&::after {
+			background-color: @red;
+		}
+	}
+}
+
+.timer__pulsate {
+	&::before,
+	&::after {	
+		animation: glowingDel 1s infinite;
+	}
+}
+
+@keyframes glowingDel {
+	0% {background-color: #fd4d35; box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	50% {background-color: #ff0606;}
+	100% {background-color: #fd4d35; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+}
+
+@-o-keyframes glowingDel {
+	0% {background-color: #fd4d35; box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	50% {background-color: #ff0606;}
+	100% {background-color: #fd4d35; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+}
+
+@-webkit-keyframes glowingDel {
+	0% {background-color: #fd4d35; -webkit-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	50% {background-color: #ff0606;}
+	100% {background-color: #fd4d35; -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+}
+
+@-moz-keyframes glowingDel {
+	0% {background-color: #fd4d35; -moz-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	50% {background-color: #ff0606;}
+	100% {background-color: #fd4d35; -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
 }
 
 .timer__del {
 	position: relative;
 	width: 4px;
-	margin: 0 4px;	
+	margin: 0 4px;
 	&::before,
 	&::after {
 		position: absolute;
@@ -84,7 +116,23 @@
 }
 
 @media (min-width: @desktop-width) {
-	
+
+	.timer__text {
+		font-size: 22px;
+		// font-size: 30px;
+		font-weight: 700;
+	}
+
+	.timer__hours,
+	.timer__minutes,
+	.timer__seconds {		
+		.text {
+			font-size: 15px;
+			line-height: 15px;
+			// font-size: 16px;
+			// line-height: 16px;		
+		}
+	}
 }
 
 @media (min-width: @desktop-1200-width) {
@@ -92,7 +140,50 @@
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	.timer {
+		padding-right: 110px;
+	}
+	.timer__text {
+		margin-right: 15px;
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 700;
+	}
+
+	.timer__number {
+		font-size: 60px;	
+		line-height: 42px;		
+	}
+
+	.timer__hours,
+	.timer__minutes,
+	.timer__seconds {		
+		.text {	
+			font-size: 16px;
+			line-height: 16px;
+		}
+	}
+
+
+	.timer__del {
+		position: relative;
+		width: 4px;
+		margin: 0 4px;
+		&::before,
+		&::after {
+			position: absolute;
+			top: 18px;
+			content: '';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: @blue-light;
+		}
+
+		&::after {
+			top: 28px;		
+		}
+	}
 }
 
 &:hover,

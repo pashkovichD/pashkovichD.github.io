@@ -4,36 +4,33 @@ let overlay = document.querySelector('.overlay');
 
 let removeShowTimeout;
 
-// btnModalLogin.addEventListener('click', function(evt) {
-// 	evt.preventDefault();
-// 	workModal(modalLogin, closeLogin, overlay);
-// });
-
-workModal(modalOffer, closeOffer, overlay);
+// workModal(modalOffer, closeOffer, overlay);
 
 function workModal(modal, close, overlay) {
-	/* показ модального окна и overlay */
-	modal.classList.remove('modal-hide');
-	modal.classList.add('modal-show');
-	overlay.classList.add('overlay-show');	
+	setTimeout(() => {
+		/* показ модального окна и overlay */
+		modal.classList.remove('modal-hide');
+		modal.classList.add('modal-show');
+		overlay.classList.add('overlay-show');	
 
-	close.addEventListener('click', function(evt) {
-		evt.preventDefault();
-		hideModal(modal, overlay);
-	});
-
-	overlay.addEventListener('click', function(evt) {
-		evt.preventDefault();
-		hideModal(modal, overlay);
-	});
-
-	// open modal windows if click ESC
-	window.addEventListener('keydown', function(evt) {
-		if(evt.keyCode === 27) {
+		close.addEventListener('click', function(evt) {
 			evt.preventDefault();
 			hideModal(modal, overlay);
-		}
-	});
+		});
+
+		overlay.addEventListener('click', function(evt) {
+			evt.preventDefault();
+			hideModal(modal, overlay);
+		});
+
+		// open modal windows if click ESC
+		window.addEventListener('keydown', function(evt) {
+			if(evt.keyCode === 27) {
+				evt.preventDefault();
+				hideModal(modal, overlay);
+			}
+		});
+	}, 4000);
 }
 
 /* скрытие модального окна */
