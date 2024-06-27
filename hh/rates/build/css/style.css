@@ -487,17 +487,13 @@ picture {
 .rates__item:last-child {
   margin-bottom: 0;
 }
-/*.radio--checked {
-	-webkit-box-shadow: 0 0 0 2px #01b9c5;
-          	box-shadow: 0 0 0 2px #01b9c5;
-    background-color: rgba(1,185,197,.05);
-}*/
 .rates__item-period {
   margin: 0;
   margin-bottom: 22px;
   font-family: 'Bebas Neue Cyrillic', sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #687078;
 }
@@ -820,8 +816,70 @@ picture {
     margin-left: auto;
   }
   .rates__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     margin: 0;
+  }
+  .rates__item {
+    width: 187px;
+    height: auto;
+    margin-bottom: 40px;
+    padding: 42px 16px 25px;
+  }
+  .rates__item:last-child {
+    width: 100%;
+    margin: 0;
+  }
+  .rates__item-period {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .rates__item-price {
+    position: static;
+    margin-bottom: 17px;
+  }
+  .rates__item-price .new {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .rates__item-price .old {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .rates__item-tagline {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .rates__item-tagline span {
+    position: absolute;
+    display: inline-block;
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+  }
+  .rates__item-discount {
+    top: -14px;
+    right: 8px;
+    padding: 8px 10px;
+    font-weight: 500;
+  }
+  .rates__item-discount span {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
   }
 }
 .overlay {
