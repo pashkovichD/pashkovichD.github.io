@@ -1,4 +1,7 @@
 .modal-offer {
+  // position: absolute;
+  // display: block;
+
   display: none;
   width: 335px;
   padding: 50px 20px 20px;
@@ -322,4 +325,56 @@
 
 @media (min-width: @tablet-width) {
   
+}
+
+@media (min-width: @desktop-1200-width) {
+  .modal-offer {
+    top: 229px;
+    width: 750px;
+    margin-left: -373px;
+    // margin-left: -375px;
+    padding: 62px 20px 20px;
+  }
+
+  .modal-offer__title {    
+    left: 42px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .modal-offer__tagline {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .modal-offer__desc {
+    margin-bottom: 7px;    
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -.2px;
+  }
+
+  .modal-offer__gift {
+    margin-bottom: 27px;
+    padding: 16px 28px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    border: 2px solid @blue-light;
+    border-radius: 30px;
+    span {
+      color: @blue-light;    
+      span.icon {
+        position: absolute;    
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin-left: 3px;
+        background-image: url('../img/icon-man.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;  
+      }
+    }
+  }
 }
