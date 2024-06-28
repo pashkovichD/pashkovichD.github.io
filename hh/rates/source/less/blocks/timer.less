@@ -118,9 +118,13 @@
 @media (min-width: @desktop-width) {
 
 	.timer__text {
-		font-size: 22px;
-		// font-size: 30px;
+		font-size: 22px;		
 		font-weight: 700;
+	}
+
+	.timer__number {
+		font-size: 45px;
+		line-height: 42px;
 	}
 
 	.timer__hours,
@@ -128,18 +132,12 @@
 	.timer__seconds {		
 		.text {
 			font-size: 15px;
-			line-height: 15px;
-			// font-size: 16px;
-			// line-height: 16px;		
+			line-height: 15px;			
 		}
 	}
 }
 
 @media (min-width: @desktop-1200-width) {
-
-}
-
-@media (min-width: @desktop-full-width) {
 	.timer {
 		padding-right: 110px;
 	}
@@ -151,8 +149,8 @@
 	}
 
 	.timer__number {
-		font-size: 60px;	
-		line-height: 42px;		
+		font-size: 60px;
+		line-height: 42px;
 	}
 
 	.timer__hours,
@@ -163,7 +161,6 @@
 			line-height: 16px;
 		}
 	}
-
 
 	.timer__del {
 		position: relative;
@@ -184,6 +181,10 @@
 			top: 28px;		
 		}
 	}
+}
+
+@media (min-width: @desktop-full-width) {
+	
 }
 
 &:hover,
