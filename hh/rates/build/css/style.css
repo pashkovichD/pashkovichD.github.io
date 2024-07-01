@@ -1481,7 +1481,7 @@ span.rates__rules-indicator {
     top: 229px;
     width: 750px;
     margin-left: -373px;
-    padding: 62px 20px 20px;
+    padding: 62px 40px 40px;
   }
   .modal-offer__title {
     left: 42px;
@@ -1500,26 +1500,97 @@ span.rates__rules-indicator {
     letter-spacing: -0.2px;
   }
   .modal-offer__gift {
-    margin-bottom: 27px;
-    padding: 16px 28px;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 700;
-    border: 2px solid #01b9c5;
-    border-radius: 30px;
-  }
-  .modal-offer__gift span {
-    color: #01b9c5;
+    width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 13px 28px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
   }
   .modal-offer__gift span span.icon {
-    position: absolute;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    margin-left: 3px;
-    background-image: url('../img/icon-man.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  .modal-offer__offer {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .modal-offer__offer span {
+    top: 1px;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  .modal-offer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .modal-offer__item {
+    width: 210px;
+    height: 197px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 26px;
+  }
+  .modal-offer__item:last-child {
+    margin-right: 0;
+  }
+  .modal-offer__item-period {
+    margin-bottom: 77px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .modal-offer__item-price-new {
+    font-size: 46px;
+    line-height: 46px;
+  }
+  .modal-offer__item-price-old {
+    bottom: auto;
+    right: auto;
+    top: 65px;
+    left: 25px;
+  }
+  .modal-offer__item-discount {
+    top: -10px;
+    right: -50px;
+  }
+  .modal-offer__item-discount span {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .modal-offer__indicator-radio {
+    top: 27px;
+    right: 23px;
+    width: 22px;
+    height: 22px;
+  }
+  .modal-offer__indicator-radio::after {
+    width: 12px;
+    height: 12px;
+  }
+  .modal-offer__submit {
+    width: 46%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-offer__close {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .modal-offer__close::before,
+  .modal-offer__close::after {
+    top: 10px;
+    left: 0px;
+    width: 20px;
+    height: 2px;
+    background-color: #ced1d8;
   }
 }
