@@ -45,11 +45,12 @@
 					<img src="img/man-mobile.webp" srcset="img/man-mobile@2x.webp 2x" alt="Тарифный план">
 				</picture>
 
-				<form id="rates" class="rates__form" action="https://echo.htmlacademy.ru" method="POST">
+				<form id="rates" class="rates__form" action="/" method="POST">
+
 					<div class="rates__list">
-						<div class="rates__item radio--checked">
+
+						<!-- <div class="rates__item radio--checked">
 							<h3 class="rates__item-period">1 неделя</h3>
-							<!-- <h3 class="rates__item-period">1 месяц</h3> -->
 							<p class="rates__item-price">
 								<span class="new">699₽</span>
 								<span class="old">999₽</span>
@@ -57,11 +58,11 @@
 							<p class="rates__item-tagline rates__item-tagline--super">Чтобы просто начать <span class="icon"></span></p>
 							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-30%</span></p>
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1" value="1-month" checked>
-							<label class="rates__item-label" for="rates-period-1"></label>						
-						</div>
-						<div class="rates__item">
-							<h3 class="rates__item-period">1 месяц</h3>
-							<!-- <h3 class="rates__item-period">3 месяца</h3> -->
+							<label class="rates__item-label" for="rates-period-1"></label>
+						</div> -->
+
+						<!-- <div class="rates__item">
+							<h3 class="rates__item-period">1 месяц</h3>							
 							<p class="rates__item-price">
 								<span class="new">999₽</span>
 								<span class="old">1299₽</span>
@@ -70,10 +71,9 @@
 							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-40%</span></p>
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-3" value="3-months">
 							<label class="rates__item-label" for="rates-period-3"></label>						
-						</div>
-						<div class="rates__item">
-							<h3 class="rates__item-period">3 месяца</h3>
-							<!-- <h3 class="rates__item-period">1 год</h3> -->
+						</div> -->
+						<!-- <div class="rates__item">
+							<h3 class="rates__item-period">3 месяца</h3>							
 							<p class="rates__item-price">
 								<span class="new">2990₽</span>
 								<span class="old">5990₽</span>
@@ -82,8 +82,8 @@
 							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-50%</span></p>
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1y" value="1-year">
 							<label class="rates__item-label" for="rates-period-1y"></label>						
-						</div>
-						<div class="rates__item">
+						</div> -->
+						<!-- <div class="rates__item">
 							<h3 class="rates__item-period">навсегда</h3>
 							<p class="rates__item-price">
 								<span class="new">5990₽</span>
@@ -93,7 +93,7 @@
 							<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-70%</span></p>
 							<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-forever" value="forever">
 							<label class="rates__item-label" for="rates-period-forever"></label>						
-						</div>						
+						</div> -->
 					</div>
 
 					<p class="rates__comment">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>
@@ -128,7 +128,7 @@
 		<p class="modal-offer__gift">Дарим скидку для <span>легкого старта <span class="icon"></span></span></p>
 		<p class="modal-offer__offer">Посмотри, что мы для тебя приготовили <span class="icon"></span></p>
 
-		<form id="offer-form" class="form" action="https://echo.htmlacademy.ru" method="POST">
+		<form id="offer-form" class="form" action="/" method="POST">
 			<div class="modal-offer__list">
 
 				<div class="modal-offer__item">
@@ -182,11 +182,31 @@
 		<button type="button" class="modal-offer__close close" tabindex="0" aria-label="Закрыть горящее предложение"><span class="visually-hidden">Закрыть горящее предложение</span></button>
 	</section>	
 
-	<div class="overlay"></div>	
+	<div class="overlay"></div>
+
+
+	<template id="rates-item" style="display: none">
+		<div class="rates__item radio--checked">
+			<h3 class="rates__item-period">1 неделя</h3>
+			<p class="rates__item-price">
+				<span class="new"><span>699</span>₽</span>
+				<span class="old"><span>999</span>₽</span>
+			</p>
+			<p class="rates__item-tagline"><span class="text">Чтобы просто начать</span> <span class="icon"></span></p>
+			<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-30%</span></p>
+			<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1" value="1-month">
+			<label class="rates__item-label" for="rates-period-1"></label>
+		</div>
+		<!-- <picture class="production__big-img-item">
+			<img src="img/production/photo-1.webp" srcset="img/production/photo-1@2x.webp 2x" alt="Производство - 4">
+		</picture> -->
+	</template>
 	
 	<script async src="js/common.min.js"></script>
 	<script src="js/timer.min.js"></script>
-	<script src="js/modal.min.js"></script>	
+	<script src="js/modal.min.js"></script>
+	<!-- <script src="js/form.min.js"></script> -->
+	<script src="js/json.min.js"></script>
 
 </body>
 </html>

@@ -640,7 +640,7 @@ picture {
   color: #2f4353;
   border: none;
 }
-.rates__item-tagline span {
+.rates__item-tagline span.icon {
   position: absolute;
   display: inline-block;
   margin-left: 5px;
@@ -651,17 +651,17 @@ picture {
   background-position: center;
   background-size: contain;
 }
-.rates__item-tagline--power span {
+.rates__item-tagline--power span.icon {
   background-image: url('../img/icon-power.png');
 }
-.rates__item-tagline--fire span {
+.rates__item-tagline--fire span.icon {
   background-image: url('../img/icon-fire.png');
 }
 .rates__item-tagline--star .hide {
   display: none;
   background-image: none;
 }
-.rates__item-tagline--star span {
+.rates__item-tagline--star span.icon {
   background-image: url('../img/icon-star.png');
 }
 .rates__item-discount {
