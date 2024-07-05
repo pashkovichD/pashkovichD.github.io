@@ -130,7 +130,8 @@ window.addEventListener('load', function() {
 			}
 
 			ratesItemElement.querySelector('.rates__input').value = id;
-			ratesItemElement.querySelector('.rates__input').id = 'rates-' + id;			
+			ratesItemElement.querySelector('.rates__input').id = 'rates-' + id;
+			ratesItemElement.querySelector('.rates__input').ariaLabel = name;
 			ratesItemElement.querySelector('.rates__item-label').setAttribute('for', 'rates-' + id);
 						
 			ratesItemFragment.appendChild(ratesItemElement); // добавляем полученный элемент в наш фрагмент
@@ -164,7 +165,8 @@ window.addEventListener('load', function() {
 			ratesItemModalElement.querySelector('.modal-offer__item-discount > span').textContent = rate;		
 
 			ratesItemModalElement.querySelector('.modal-offer__input').value = id;
-			ratesItemModalElement.querySelector('.modal-offer__input').id = 'modal-offer-' + id;			
+			ratesItemModalElement.querySelector('.modal-offer__input').id = 'modal-offer-' + id;
+			ratesItemModalElement.querySelector('.modal-offer__input').ariaLabel = name;
 			ratesItemModalElement.querySelector('.modal-offer__item-label').setAttribute('for', 'modal-offer-' + id);
 						
 			ratesItemModalFragment.appendChild(ratesItemModalElement); // добавляем полученный элемент в наш фрагмент
