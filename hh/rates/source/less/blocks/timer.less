@@ -38,10 +38,9 @@
 	color: @blue-light;
 }
 
-.timer__red {	
+.timer__red {
 	.timer__number {
 		color: @red;
-		animation: pulsate 1s infinite;
 	}
 	.timer__del {
 		color: @red;
@@ -52,6 +51,12 @@
 	}
 }
 
+.timer__animate {
+	.timer__number {
+		animation: pulsate 1s infinite;
+	}
+}
+
 .timer__pulsate {
 	&::before,
 	&::after {	
@@ -59,28 +64,33 @@
 	}
 }
 
+@keyframes pulsate {
+	0% {opacity: 1;}
+	100% {opacity: .1;}
+}
+
 @keyframes glowingDel {
-	0% {background-color: #fd4d35; box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	0% {background-color: #fd4d35; box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5); opacity: 1;}
 	50% {background-color: #ff0606;}
-	100% {background-color: #fd4d35; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+	100% {background-color: #fd4d35; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); opacity: .1;}
 }
 
 @-o-keyframes glowingDel {
-	0% {background-color: #fd4d35; box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	0% {background-color: #fd4d35; box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5); opacity: 1;}
 	50% {background-color: #ff0606;}
-	100% {background-color: #fd4d35; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+	100% {background-color: #fd4d35; box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); opacity: .1;}
 }
 
 @-webkit-keyframes glowingDel {
-	0% {background-color: #fd4d35; -webkit-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	0% {background-color: #fd4d35; -webkit-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5); opacity: 1;}
 	50% {background-color: #ff0606;}
-	100% {background-color: #fd4d35; -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+	100% {background-color: #fd4d35; -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); opacity: .1;}
 }
 
 @-moz-keyframes glowingDel {
-	0% {background-color: #fd4d35; -moz-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);}
+	0% {background-color: #fd4d35; -moz-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5); opacity: 1;}
 	50% {background-color: #ff0606;}
-	100% {background-color: #fd4d35; -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);}
+	100% {background-color: #fd4d35; -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); opacity: .1;}
 }
 
 .timer__del {

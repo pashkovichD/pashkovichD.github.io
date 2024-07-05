@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() { // DOMContentLoaded -
 	const delElement = hmElement.querySelector('.timer__del');
 	const ratesItems = document.querySelectorAll('.rates__item');
 	
-
 	// id таймера
 	let timerId = null;
 

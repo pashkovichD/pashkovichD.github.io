@@ -30,7 +30,7 @@ function workModal(modal, close, overlay) {
 				hideModal(modal, overlay);
 			}
 		});
-	}, 4000);
+	}, 10000);
 }
 
 /* скрытие модального окна */

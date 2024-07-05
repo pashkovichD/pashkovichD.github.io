@@ -314,8 +314,6 @@ picture {
 }
 .timer__red .timer__number {
   color: #fd4d35;
-  -webkit-animation: pulsate 1s infinite;
-          animation: pulsate 1s infinite;
 }
 .timer__red .timer__del {
   color: #fd4d35;
@@ -324,16 +322,37 @@ picture {
 .timer__red .timer__del::after {
   background-color: #fd4d35;
 }
+.timer__animate .timer__number {
+  -webkit-animation: pulsate 1s infinite;
+          animation: pulsate 1s infinite;
+}
 .timer__pulsate::before,
 .timer__pulsate::after {
   -webkit-animation: glowingDel 1s infinite;
           animation: glowingDel 1s infinite;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 @keyframes glowingDel {
   0% {
     background-color: #fd4d35;
     -webkit-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);
             box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);
+    opacity: 1;
   }
   50% {
     background-color: #ff0606;
@@ -342,12 +361,14 @@ picture {
     background-color: #fd4d35;
     -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
             box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    opacity: 0.1;
   }
 }
 @-webkit-keyframes glowingDel {
   0% {
     background-color: #fd4d35;
     -webkit-box-shadow: 0 0 0 0px rgba(253, 77, 53, 0.5);
+    opacity: 1;
   }
   50% {
     background-color: #ff0606;
@@ -355,6 +376,7 @@ picture {
   100% {
     background-color: #fd4d35;
     -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    opacity: 0.1;
   }
 }
 .timer__del {
@@ -949,9 +971,9 @@ span.rates__rules-indicator {
     line-height: 22px;
     text-align: center;
   }
-  .rates__item-tagline span {
-    position: relative;
-    top: 2px;
+  .rates__item-tagline span.icon {
+    width: 18px;
+    height: 18px;
   }
   .rates__item-tagline--star .hide {
     position: static;
