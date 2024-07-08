@@ -218,8 +218,8 @@ window.addEventListener('load', function() {
 	}
 
 	// длительность работы таймера (сек.)
-	let interval = 12;
-	const timeBoundary = 10;
+	let interval = 120;
+	const timeBoundary = 30;
 
 	// вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
 	function countdownTimer() {
@@ -254,8 +254,8 @@ window.addEventListener('load', function() {
 
 		// daysTextElement.textContent = declensionNum(days, ['день', 'дня', 'дней']);
 		// hoursTextElement.textContent = declensionNum(hours, ['час', 'часа', 'часов']);		
-		minutesTextElement.textContent = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-		secondsTextElement.textContent = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+		minutesTextElement.textContent = declensionNum(minutes, ['минуту', 'минуты', 'минут']);
+		secondsTextElement.textContent = declensionNum(seconds, ['секунду', 'секунды', 'секунд']);
 
 		interval--;
 	}
