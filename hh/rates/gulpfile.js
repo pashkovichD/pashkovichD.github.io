@@ -77,7 +77,8 @@ gulp.task("webp", function() {
 	return gulp.src("source/img/**/*.{png,jpg}")
 		.pipe(
 			imagemin([
-				webp({quality: 90})
+				webp({quality: 70})
+				// webp({quality: 90})
 			])
 		)
 		.pipe(extReplace(".webp"))
