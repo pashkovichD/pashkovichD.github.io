@@ -171,10 +171,6 @@ a {
   transition: all 0.3s ease-out;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   /* отмена выделения текста */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 ul {
   margin: 0;
