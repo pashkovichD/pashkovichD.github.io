@@ -254,9 +254,11 @@ picture {
 .promo {
   position: relative;
   padding: 320px 0 0 160px;
+  min-height: 1005px;
+  margin-bottom: 105px;
 }
 .promo__text {
-  width: 540px;
+  width: 620px;
 }
 .promo__title {
   margin-bottom: 20px;
@@ -311,4 +313,23 @@ picture {
   position: absolute;
   right: 0;
   top: 0;
+}
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.advantages__img {
+  width: 600px;
+}
+.advantages__center {
+  width: 600px;
+}
+.advantages__item {
+  font-size: 24px;
+  line-height: 140%;
+  border-bottom: 1px solid #55565a;
 }
