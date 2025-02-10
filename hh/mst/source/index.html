@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>MATRIX - luxury house construction company</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="We are building high-quality luxury housing">
+	<meta name="keywords" content="construction, buildings, apartments, high-quality, elite">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	
+	<h1 class="visually-hidden">MATRIX - luxury house construction company</h1>
+	<!-- <div style="display: none;">
+		<include src="source/img/sprite.svg"></include>
+	</div> -->
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">
+		<div class="page-header__wrapper container">
+			<a class="page-header__logo" href="#" aria-label="Logo company">Matrix</a>
+			<nav class="page-header__nav menu">
+				<h2 class="visually-hidden">Main menu</h2>
+				<ul class="page-header__nav-list menu__list">
+					<!-- <li class="menu__item menu__item--active"><a href="#">Компания</a></li>				 -->
+					<li class="menu__item"><a href="#">consectetur</a></li>
+					<li class="menu__item"><a href="#">sit amet</a></li>
+					<li class="menu__item"><a href="#">eiusmod tempor</a></li>
+					
+
+					<!-- <li class="menu__item"><a href="#">about company</a></li>
+					<li class="menu__item"><a href="#">catalog</a></li>
+					<li class="menu__item"><a href="#">contacts</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="page-main">
+		<section class="promo container">
+			<h2 class="visually-hidden">Promotion company</h2>
+			<div class="promo__text">
+				<p class="promo__title">Lorem ipsum dolor sit amet</p>
+				<p class="promo__desc">sed do eiusmod tempor</p>
+				<ul class="promo__list">
+					<li class="promo__item">do <span>$10 000</span> consectetur elit</li>
+					<li class="promo__item"><span>30%</span> sed do eiusmod tempor</li>
+					<li class="promo__item">do <span>17%</span> adipiscing elit sed do</li>
+				</ul>
+				<button class="promo__button button" type="button" aria-label="order">order</button>
+			</div>
+
+			<picture class="promo__img">
+				<img src="img/promo.webp" srcset="img/promo@2x.webp 2x" alt="Promotion Company">
+			</picture>
+		</section>
+		<!-- <div class="rates__wrapper">
+			<section class="rates container">
+				<h2 class="rates__title">Выберите подходящий тарифный план</h2>
+				<picture class="rates__photo">
+					<source media="(min-width: 1200px)" srcset="img/man.webp 1x, img/man@2x.webp 2x">
+					<img src="img/man-mobile.webp" srcset="img/man-mobile@2x.webp 2x" alt="Тарифный план">
+				</picture>
+
+				<form id="rates" class="rates__form" action="https://echo.htmlacademy.ru" method="POST">				
+
+					<div class="rates__list"></div>
+
+					<p class="rates__comment">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>
+
+					<label class="rates__rules">
+						<input type="checkbox" name="rules" class="visually-hidden" checked="">
+						<span class="rates__rules-indicator"></span>
+						<span>Я соглашаюсь с <a href="#">Правилами сервиса</a> и условиями <a href="#">Публичной оферты.</a></span>
+					</label>
+					
+					<input type="submit" class="rates__submit button" value="Купить">
+
+					<p class="rates__agree">Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных средств по истечению купленного периода. Дальнейшие списания по тарифам участвующим в акции осуществляются по полной стоимости согласно оферте.</p>					
+				</form>				
+			</section>
+		</div> -->
+
+	</main>
+
+	<footer class="page-footer">
+		<h2 class="visually-hidden">Footer сайта</h2>
+	</footer>
+	
+	<!-- <section class="modal-offer modal">
+		<h2 class="modal-offer__title">Горящее предложение</h2>
+		<p class="modal-offer__tagline">Не упусти свой <span>последний шанс</span></p>
+		<p class="modal-offer__desc">Мы знаем, как трудно начать.. <span>Поэтому!</span></p>
+		<p class="modal-offer__gift">Дарим скидку для <span>легкого старта <span class="icon"></span></span></p>
+		<p class="modal-offer__offer">Посмотри, что мы для тебя приготовили <span class="icon"></span></p>
+
+		<form id="offer-form" class="form" action="https://echo.htmlacademy.ru" method="POST">	
+			<div class="modal-offer__list"></div>
+			<input type="submit" class="modal-offer__submit button" value="Начать тренироваться">
+		</form>	
+		<button type="button" class="modal-offer__close close" tabindex="0" aria-label="Закрыть горящее предложение"><span class="visually-hidden">Закрыть горящее предложение</span></button>
+	</section> -->
+
+	<!-- <div class="overlay"></div> -->
+
+	<!-- <template id="rates-item" style="display: none">
+		<div class="rates__item">
+			<h3 class="rates__item-period">1 неделя</h3>
+			<p class="rates__item-price">
+				<span class="new"><span>699</span>₽</span>
+				<span class="old"><span>999</span>₽</span>
+			</p>
+			<p class="rates__item-tagline"><span class="text">Чтобы просто начать</span><span class="hide"></span> <span class="icon"></span></p>
+			<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-30%</span></p>
+			<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1" value="1-month" aria-label="1 неделя">
+			<label class="rates__item-label" for="rates-period-1"></label>
+		</div>
+	</template> -->
+
+	<!-- <template id="modal-offer__item" style="display: none">
+		<div class="modal-offer__item">
+			<h3 class="modal-offer__item-period">1 неделя</h3>
+			<div class="modal-offer__price-wrapper">
+				<p class="modal-offer__item-price-new"><span>599</span>₽</p>
+				<p class="modal-offer__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-40%</span></p>
+			</div>
+			<p class="modal-offer__item-price-old"><span>999</span>₽</p>
+			<input class="modal-offer__input visually-hidden" type="radio" name="modal-offer-period" id="modal-offer-period-week" value="1-week" aria-label="1 неделя">
+			<span class="modal-offer__indicator-radio"></span>
+			<label class="modal-offer__item-label" for="modal-offer-period-week"></label>
+		</div>
+	</template> -->
+	
+	<script src="js/scroll.min.js"></script>
+
+	<!-- <script src="js/common.min.js"></script>
+	<script src="js/form.min.js"></script>
+	<script src="js/modal.min.js"></script> -->
+
+</body>
+</html>
