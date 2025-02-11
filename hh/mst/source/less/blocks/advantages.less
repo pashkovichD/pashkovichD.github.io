@@ -1,6 +1,11 @@
 .advantages {
+	padding-top: 105px;
+	background-color: #282829;
+}
+
+.advantages__wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;	
 }
 
 .advantages__img {
@@ -9,16 +14,42 @@
 
 .advantages__center {
 	width: 600px;
+	padding-top: 15px;
+	// background-color: rgba(255,0,0,.2);
 }
 
 .advantages__list {
+	margin-bottom: 40px;
 
 }
 
 .advantages__item {
+	position: relative;
+	padding: 31px 10px 31px 93px;
 	font-size: 24px;
 	line-height: 140%;
 	border-bottom: 1px solid #55565a;
+	&:before {
+		position: absolute;
+		left: 15px;
+		top: 38px;
+		content: '';
+		width: 58px;
+		height: 47px;		
+		background-image: url('../img/icon-marker-list.svg');
+		background-repeat: no-repeat;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.advantages__button {
+	width: 100%;
+	display: block;
+	// margin: 0 20px;
+	padding: 22px 54px;
+	// box-sizing: border-box;
 }
 
 

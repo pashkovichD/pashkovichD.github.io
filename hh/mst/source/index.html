@@ -65,56 +65,84 @@
 			</picture>
 		</section>
 
-		<section class="advantages container">
+		<section class="advantages">
 			<h2 class="visually-hidden">Advantages company</h2>			
 
-			<picture class="advantages__img">
-				<img src="img/advantages-1.webp" srcset="img/advantages-1@2x.webp 2x" alt="Development of the southern part of the city">
-			</picture>
-			<div class="advantages__center">
-				<ul class="advantages__list">
-					<li class="advantages__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor</li>
-					<li class="advantages__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-					<li class="advantages__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-					<li class="advantages__item">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
-				</ul>
-				<button class="promo__button button" type="button" aria-label="order">order</button>
-			</div>
-			<picture class="advantages__img">
-				<img src="img/advantages-2.webp" srcset="img/advantages-2@2x.webp 2x" alt="Coastal hotel">
-			</picture>
-		</section>
-		<!-- <div class="rates__wrapper">
-			<section class="rates container">
-				<h2 class="rates__title">Выберите подходящий тарифный план</h2>
-				<picture class="rates__photo">
-					<source media="(min-width: 1200px)" srcset="img/man.webp 1x, img/man@2x.webp 2x">
-					<img src="img/man-mobile.webp" srcset="img/man-mobile@2x.webp 2x" alt="Тарифный план">
+			<div class="advantages__wrapper container">
+				<picture class="advantages__img">
+					<img src="img/advantages-1.webp" srcset="img/advantages-1@2x.webp 2x" alt="Development of the southern part of the city">
 				</picture>
+				<div class="advantages__center">
+					<ul class="advantages__list">
+						<li class="advantages__item">Uncompromising quality of construction and finishing. Investing in Durability</li>
+						<li class="advantages__item">Individual approach and personalization of projects: Create the home of your dreams</li>
+						<li class="advantages__item">Exclusive locations and infrastructure: Life in harmony with nature and comfort. We select only the most prestigious areas</li>
+						<li class="advantages__item">Excellent service and management: Forget about worries, enjoy life</li>
 
-				<form id="rates" class="rates__form" action="https://echo.htmlacademy.ru" method="POST">				
+						<!-- <li class="advantages__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor</li>
+						<li class="advantages__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+						<li class="advantages__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</li>
+						<li class="advantages__item">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor</li> -->
+					</ul>
+					<button class="advantages__button button" type="button" aria-label="order">order</button>
+				</div>
+				<picture class="advantages__img">
+					<img src="img/advantages-2.webp" srcset="img/advantages-2@2x.webp 2x" alt="Coastal hotel">
+				</picture>
+			</div>
+		</section>
 
-					<div class="rates__list"></div>
+		<section class="сonsultation">
+			<div class="сonsultation__wrapper container">
+				<!-- <h2 class="сonsultation__title">Consectetur sed do eiusmod</h2> -->
+				
+				<div class="consultation__wrapper-form">
+					<h2 class="сonsultation__title">Consultation on housing construction</h2>
 
-					<p class="rates__comment">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>
+					<form id="сonsultation" class="сonsultation__form form" action="https://echo.htmlacademy.ru" method="POST">		
 
-					<label class="rates__rules">
-						<input type="checkbox" name="rules" class="visually-hidden" checked="">
-						<span class="rates__rules-indicator"></span>
-						<span>Я соглашаюсь с <a href="#">Правилами сервиса</a> и условиями <a href="#">Публичной оферты.</a></span>
-					</label>
-					
-					<input type="submit" class="rates__submit button" value="Купить">
+						<div class="form__items">
+							<p class="form__item">
+								<input class="form__input" type="text" name="user__name" id="user__name"  value="" placeholder="Name">
+								<label class="visually-hidden" for="user__name">Your name</label>
+							</p>
+							<p class="form__item">
+								<input class="form__input" type="email" name="user__email" id="user__email"  value="" placeholder="E-mail">
+								<label class="visually-hidden" for="user__email">Your e-mail</label>
+							</p>
+						</div>
 
-					<p class="rates__agree">Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных средств по истечению купленного периода. Дальнейшие списания по тарифам участвующим в акции осуществляются по полной стоимости согласно оферте.</p>					
-				</form>				
-			</section>
-		</div> -->
-
+						<label class="form__checkbox-item">
+							<input type="checkbox" name="rules" class="visually-hidden" checked="">
+							<span class="form__checkbox-indicator"></span>
+							<span class="form__checkbox-text">I accept Privacy policy</span>
+						</label>					
+						<input type="submit" class="сonsultation__submit button button--dark" value="Sign up">
+					</form>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer class="page-footer">
-		<h2 class="visually-hidden">Footer сайта</h2>
+		<h2 class="visually-hidden">Website footer</h2>
+		<section class="page-footer__menu container">
+			<h2 class="visually-hidden">Footer menu</h2>
+			<ul class="page-footer__menu-list menu__list">
+					<li class="menu__item"><a href="#">consectetur</a></li>
+					<li class="menu__item"><a href="#">adipiscing</a></li>
+					<li class="menu__item"><a href="#">tempor</a></li>
+					<!-- <li class="menu__item"><a href="#">about company</a></li>
+					<li class="menu__item"><a href="#">catalog</a></li>
+					<li class="menu__item"><a href="#">contacts</a></li> -->
+				</ul>
+		</section>
+
+		<div class="page-footer__bottom">
+			<div class="page-footer__bottom-wrapper">
+				
+			</div>
+		</div>
 	</footer>
 	
 	<!-- <section class="modal-offer modal">
