@@ -62,7 +62,6 @@
 		align-items: center;		
 		min-height: 80px;
 		padding: 22px 0 15px 0;
-		// padding-left: 162px;
 	}
 
 	.page-header__logo {	
@@ -88,6 +87,17 @@
 
 @media (min-width: @desktop-1200-width) {
 
+}
+
+@media (min-width: @desktop-1600-width) {	
+	.page-header {
+		background-color: transparent;	
+	}
+
+	.page-header__wrapper {	
+		justify-content: flex-start;
+		padding-left: 162px;
+	}
 }
 
 @media (min-width: @desktop-full-width) {

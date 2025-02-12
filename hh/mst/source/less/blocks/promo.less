@@ -1,7 +1,5 @@
 .promo {
-	position: relative;
-	// padding: 320px 0 0 160px;
-	// min-height: 1005px;
+	position: relative;	
 }
 
 .promo__img {
@@ -108,8 +106,6 @@
 @media (min-width: @desktop-width) {
 	.promo {
 		padding: 50px 0 0 10px;
-		// padding: 320px 0 0 160px;
-		// min-height: 1005px;
 	}
 
 	.promo__img {
@@ -125,14 +121,32 @@
 	}
 
 	.promo__text {
-		width: 42%;
-		// width: 620px;
-		padding: 0;
+		width: 42%;		
+		padding: 30px 0 0 0;
 	}
 }
 
 @media (min-width: @desktop-1200-width) {
+	.promo__text {
+		width: 45%;
+		// width: 620px;
+		padding: 120px 0 0 0;
+	}
 
+	.promo__img {
+		width: 45%;
+	}
+}
+
+@media (min-width: @desktop-1600-width) {
+	.promo {		
+		// padding: 320px 0 0 160px;
+		// min-height: 1005px;
+	}
+
+	.promo__img {
+		width: auto;
+	}
 }
 
 @media (min-width: @desktop-full-width) {
