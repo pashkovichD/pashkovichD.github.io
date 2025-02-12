@@ -41,21 +41,23 @@
 }
 
 .page-footer__socials {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	li {
-		margin: 0 16px;
-		a {
-			svg {
-				fill: #d5c9be;
-				opacity: 0.7;
-				transition: @animation;
-			}
-			&:hover,
-			&:focus {
+	ul {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		li {
+			margin: 0 16px;
+			a {
 				svg {
-					opacity: 1;
+					fill: #d5c9be;
+					opacity: 0.7;
+					transition: @animation;
+				}
+				&:hover,
+				&:focus {
+					svg {
+						opacity: 1;
+					}
 				}
 			}
 		}
