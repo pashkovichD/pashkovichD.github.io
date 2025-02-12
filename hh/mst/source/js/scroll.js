@@ -13,7 +13,7 @@ window.addEventListener('load', function(){
 
 	function onScroll(e) {		
 		let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей
-		if(pos > 100) {
+		if(pos > 72) {
 			header.classList.add('page-header__scroll');
 		} else {
 			header.classList.remove('page-header__scroll');

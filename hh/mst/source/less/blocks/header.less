@@ -1,11 +1,10 @@
 .page-header {
 	position: fixed;	
 	width: 100%;
-	padding: 22px 0 15px 0;
+	// padding: 22px 0 15px 0;
 	transition: @animation;
 	z-index: 2;
-
-	background-color: rgba(255,0,0,.5);
+	background-color: rgba(0,0,0,.8);
 }
 
 .page-header__scroll {
@@ -17,15 +16,19 @@
 	// align-items: center;
 	position: relative;
 	// min-height: 80px;
+	padding: 22px 65px 15px 20px;
 	// padding-left: 162px;
 }
 
 .page-header__logo {	
-	// margin-right: 200px;
+	// margin-right: 200px;	
 }
 
 .page-header__menu {	
 	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .page-header__nav {
@@ -36,21 +39,21 @@
 
 .page-header__toggle-nav {
 	position: absolute;
-	top: 5px;
+	top: 27px;
 	// top: 20px;
-	right: 15px;
+	right: 20px;
 }
 
 .page-header__nav {
 	position: relative;
-	top: 75px;
+	top: 95px;
     opacity: 0;
     visibility: hidden;
     transition: @animation;
 }
 
 .page-header__nav--show {
-	top: 50px;
+	top: 72px;
 	opacity: 1;
 	visibility: visible;
 }

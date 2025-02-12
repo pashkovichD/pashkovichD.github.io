@@ -149,6 +149,9 @@ picture {
   display: block;
   line-height: 0;
 }
+.page-main {
+  padding-top: 72px;
+}
 @media (min-width: 1920px) {
   html {
     width: 100vw;
@@ -162,8 +165,8 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 28px 54px;
-  font-size: 24px;
+  padding: 20px 40px;
+  font-size: 20px;
   line-height: 150%;
   font-weight: bold;
   text-transform: uppercase;
@@ -381,39 +384,42 @@ picture {
 .page-header {
   position: fixed;
   width: 100%;
-  padding: 22px 0 15px 0;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
   z-index: 2;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .page-header__scroll {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .page-header__wrapper {
   position: relative;
+  padding: 22px 65px 15px 20px;
 }
 .page-header__menu {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .page-header__nav {
   position: absolute;
 }
 .page-header__toggle-nav {
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 27px;
+  right: 20px;
 }
 .page-header__nav {
   position: relative;
-  top: 75px;
+  top: 95px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 .page-header__nav--show {
-  top: 50px;
+  top: 72px;
   opacity: 1;
   visibility: visible;
 }
@@ -428,7 +434,9 @@ picture {
 }
 .menu__list {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   padding-top: 10px;
 }
 .menu__item {
@@ -439,7 +447,7 @@ picture {
 }
 .menu__item a {
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.9px;
@@ -457,22 +465,25 @@ picture {
 }
 .promo {
   position: relative;
-  padding: 320px 0 0 160px;
-  min-height: 1005px;
 }
-.promo__text {
-  width: 620px;
+.promo__img {
+  margin-bottom: 20px;
+}
+.promo__img img {
+  width: 100%;
 }
 .promo__title {
   margin-bottom: 20px;
   font-family: 'Prata', serif;
-  font-size: 80px;
+  font-size: 42px;
   line-height: 120%;
+  text-align: center;
 }
 .promo__desc {
-  margin-bottom: 40px;
-  font-size: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
   line-height: 120%;
+  text-align: center;
 }
 .promo__list {
   margin-bottom: 35px;
@@ -481,8 +492,8 @@ picture {
   position: relative;
   display: block;
   margin-bottom: 18px;
-  padding-left: 60px;
-  font-size: 24px;
+  padding-left: 50px;
+  font-size: 20px;
   line-height: 110%;
 }
 .promo__item span {
@@ -493,7 +504,7 @@ picture {
   top: 5px;
   margin-top: 0px;
   font-family: 'Prata', serif;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 150%;
   line-height: normal;
   letter-spacing: 1px;
@@ -503,19 +514,18 @@ picture {
   left: 3px;
   top: 50%;
   content: '';
-  width: 39px;
-  height: 37px;
+  width: 30px;
+  height: 28px;
   margin-top: -18px;
   background-image: url('../img/icon-marker.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .promo__item:last-child {
   margin-bottom: 0;
 }
-.promo__img {
-  position: absolute;
-  right: 0;
-  top: 0;
+.promo__button {
+  margin: 0 auto;
 }
 .advantages {
   padding-top: 105px;
