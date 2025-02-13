@@ -84,13 +84,19 @@
 }
 
 @media (min-width: @desktop-1600-width) {
-	.menu__list {
-		justify-content: flex-start;
-	}
+	
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	.menu__list {
+		justify-content: flex-start;
+	}
+
+	.menu__item {		
+		a {
+			padding: 0;
+		}
+	}
 }
 
 &:hover,

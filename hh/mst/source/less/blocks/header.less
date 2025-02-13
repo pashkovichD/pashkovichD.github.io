@@ -7,10 +7,6 @@
 	background-color: rgba(0,0,0,.8);
 }
 
-.page-header__scroll {
-	background-color: rgba(0,0,0,.8);
-}
-
 .page-header__wrapper {	
 	position: relative;	
 	padding: 22px 65px 15px 20px;	
@@ -60,7 +56,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;		
-		min-height: 80px;
+		height: 94px;
 		padding: 22px 0 15px 0;
 	}
 
@@ -89,17 +85,25 @@
 
 }
 
-@media (min-width: @desktop-1600-width) {	
-	.page-header {
-		background-color: transparent;	
-	}
-
-	.page-header__wrapper {	
-		justify-content: flex-start;
+@media (min-width: @desktop-1600-width) {
+	.page-header__wrapper {		
+		height: 104px;		
+		padding: 35px 0 15px 0;
 		padding-left: 162px;
 	}
 }
 
 @media (min-width: @desktop-full-width) {
-	
+	.page-header {
+		background-color: transparent;
+	}
+
+	.page-header__scroll {
+		background-color: rgba(0,0,0,.8);
+	}
+
+	.page-header__wrapper {			
+		justify-content: flex-start;
+		height: auto;
+	}
 }
