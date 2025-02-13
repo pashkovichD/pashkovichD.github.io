@@ -37,7 +37,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-}	
+}
 
 .сonsultation__title {
 	// width: 600px;
@@ -68,7 +68,11 @@
 }
 
 @media (min-width: @mobile-width) {
-	
+	.consultation__wrapper-form {	
+		&::after {
+			right: -16px;		
+		}
+	}
 }
 
 @media (min-width: 600px) {
