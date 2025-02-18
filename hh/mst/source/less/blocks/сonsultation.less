@@ -1,7 +1,7 @@
 .сonsultation {
 	padding-top: 40px;
 	background-color: #282829;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	overflow-x: hidden;
 }
 
@@ -13,7 +13,7 @@
 	padding: 20px;
 	border: 2px solid #d5c9be;
 	border-radius: 10px;	
-	background-color: #ffffff;	
+	background-color: #ffffff;
 	&::after {
 		position: absolute;
 		bottom: 0;
@@ -64,9 +64,7 @@
 
 @media (min-width: @tablet-width) {	
 	.сonsultation__submit {
-		// width: 100%;
 		padding: 18px 54px;
-		// padding: 32px 54px;
 		font-size: 20px;
 	}
 	
@@ -75,6 +73,7 @@
 @media (min-width: @desktop-width) {
 	.сonsultation {
 		padding-top: 70px;
+		padding-bottom: 80px;
 	}	
 
 	.consultation__wrapper-form {
@@ -82,7 +81,8 @@
 		border-radius: 20px;		
 		background-image: url('../img/bg-girl.jpg');
 		background-repeat: no-repeat;
-		background-position: center left 530px;		
+		background-position: center left 530px;
+		background-size: contain;
 		&::after {			
 			right: -55px;
 			width: 400px;
@@ -104,87 +104,76 @@
 @media (min-width: @desktop-1200-width) {
 	.сonsultation {	
 		padding-top: 90px;
-	}
-
-	.сonsultation__wrapper {
-		// padding: 0 165px;
-	}
+	}	
 
 	.consultation__wrapper-form {
-		padding: 50px;
-		// padding: 70px 130px;
-		border-radius: 25px;
-		// border-radius: 30px;
+		padding: 50px;		
+		border-radius: 25px;		
 		background-position: center left 600px;
 		&::after {			
-			right: -15px;
-			// right: 220px;
-			// right: 70px;			
-			width: 450px;
-			height: 513px;
-			// width: 597px;
-			// height: 680px;
+			right: -30px;
+			width: 500px;
+			height: 570px;
 		}
 	}
 
 	.сonsultation__title {
-		width: 500px;		
-		// width: 600px;		
-		margin-bottom: 30px;
-		// margin-bottom: 40px;		
+		width: 500px;				
+		margin-bottom: 30px;		
 		font-size: 42px;
-		// font-size: 54px;
 		text-align: left;
 	}
 
 	.сonsultation__form {
 		width: 500px;
-		// width: 780px;
 	}
 }
 
-@media (min-width: @desktop-full-width) {
+@media (min-width: @desktop-1600-width) {
 	.сonsultation {
-		padding-top: 90px;
-		background-color: #282829;
 		padding-bottom: 100px;
 	}
 
 	.сonsultation__wrapper {
-		position: relative;
 		padding: 0 165px;
 	}
 
-	.consultation__wrapper-form {
-		padding: 70px 130px;
-		border: 2px solid #d5c9be;
+	.consultation__wrapper-form {	
+		padding: 70px;
 		border-radius: 30px;
-		background-color: #ffffff;
-		background-image: url('../../img/bg-girl.jpg');
-		background-repeat: no-repeat;
-		background-position: center right;
-		&::after {
-			position: absolute;
-			bottom: 0;
-			right: 220px;
-			// right: 70px;
-			content: '';
+		background-position: center left 640px;
+		&::after {			
+			right: 200px;
 			width: 597px;
 			height: 680px;
-			background-image: url('../../img/girl.png');
-			background-repeat: no-repeat;
+		}
+	}
+
+	.сonsultation__title {		
+		width: 500px;
+		margin-bottom: 40px;
+		font-size: 54px;		
+	}
+
+	.сonsultation__form {
+		width: 500px;		
+	}
+}
+
+@media (min-width: @desktop-full-width) {	
+
+	.consultation__wrapper-form {
+		padding: 70px 130px;		
+		background-position: center right; 
+		&::after {			
+			right: 220px;			
 		}
 	}	
 
 	.сonsultation__title {
 		width: 600px;
 		margin: 0;
-		margin-bottom: 41px;
-		font-family: @ff-p;
-		font-size: 54px;
-		line-height: 110%;
-		font-weight: 300;
-		color: #38535d;
+		margin-bottom: 45px;
 	}
 
 	.сonsultation__form {
