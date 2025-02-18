@@ -26,24 +26,13 @@
 	border-top: 2px solid #d5c9be;
 }
 
-.page-footer__bottom-wrapper {
-	// padding: 0 182px 0 160px;
-}
-
 .page-footer__info {
-	// display: flex;
-	// justify-content: space-between;
-	// align-items: center;
 	margin-bottom: 30px;
 	padding-top: 40px;
-	text-align: center;
-	// text-align: left;
+	text-align: center;	
 }
 
-.page-footer__logo {	
-	
-	// width: 200px;
-	// margin-right: 20px;	
+.page-footer__logo {
 	margin-bottom: 30px;
 }
 
@@ -74,29 +63,22 @@
 
 .page-footer__order {
 	margin: 0 auto;
-	// margin-left: 20px;
-	padding: 22px 54px;
-	// padding: 25px 55px;
+	padding: 22px 54px;	
 	font-size: 20px;
 	font-style: italic;
 	font-weight: 300;
 }
 
 .page-footer__links {
-	// display: flex;
-	// justify-content: space-between;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	font-size: 16px;
-	// font-size: 20px;
 	line-height: 150%;
 	color: #ffffff;
 	text-align: center;
-	// text-align: left;
 	a {
 		font-size: 16px;
-		// font-size: 20px;
 		line-height: 150%;
-		text-decoration: none;		
+		text-decoration: none;
 		color: #d5c9be;
 		opacity: 0.7;
 		&:hover,
@@ -107,23 +89,17 @@
 }
 
 .page-footer__copyright {
-	// width: 250px;
-	// margin-right: 20px;
 	margin-bottom: 10px;
 }
 
 .page-footer__policy {
-	display: block;
-	// width: 700px;
+	display: block;	
 	margin-bottom: 10px;
 	text-align: center;
 }
 
 .page-footer__terms {
 	display: block;
-	// width: 250px;
-	// margin-left: 20px;
-	// text-align: right;
 }
 
 @media (min-width: @mobile-width) {
@@ -158,11 +134,71 @@
 }
 
 @media (min-width: @tablet-width) {
-	
+	.page-footer__order {
+		padding: 25px 55px;
+	}
+
+	.page-footer__links {
+		font-size: 20px;		
+		a {
+			font-size: 20px;
+		}
+	}
+
+	.page-footer__copyright {
+		margin-bottom: 15px;
+	}
+
+	.page-footer__policy {
+		margin-bottom: 15px;		
+	}	
 }
 
 @media (min-width: @desktop-width) {
-	
+	.page-footer__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+
+	.page-footer__logo {
+		width: 200px;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__socials {
+		margin-bottom: 0;
+	}
+
+	.page-footer__order {
+		margin: 0;
+		margin-left: 20px;		
+	}
+
+	.page-footer__links {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.page-footer__copyright {
+		width: 250px;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__policy {		
+		width: 700px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__terms {		
+		width: 250px;
+		margin-left: 20px;
+		text-align: right;
+	}
 }
 
 @media (min-width: @desktop-1200-width) {
@@ -177,12 +213,20 @@
 			}
 		}
 	}
+
+	.page-footer__bottom-wrapper {
+		padding: 0 182px 0 160px;
+	}
+
+	.page-footer__links {
+		margin-bottom: 50px;
+	}
 }
 
 @media (min-width: @desktop-full-width) {
-	.page-footer {		
+	// .page-footer {
 
-	}
+	// }
 
 	.page-footer__menu {
 		padding: 30px;
@@ -194,104 +238,104 @@
 		}
 	}
 
-	.page-footer__menu-list {		
-		li {
-			margin-right: 60px;
-			a {				
-				font-size: 20px;				
-			}
-		}
-	}
+	// .page-footer__menu-list {		
+	// 	li {
+	// 		margin-right: 60px;
+	// 		a {				
+	// 			font-size: 20px;				
+	// 		}
+	// 	}
+	// }
 
-	.page-footer__bottom {
-		border-top: 2px solid #d5c9be;
-	}
+	// .page-footer__bottom {
+	// 	border-top: 2px solid #d5c9be;
+	// }
 
-	.page-footer__bottom-wrapper {
-		padding: 0 182px 0 160px;
-	}
+	// .page-footer__bottom-wrapper {
+	// 	padding: 0 182px 0 160px;
+	// }
 
-	.page-footer__info {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 30px;
-		padding-top: 40px;
-	}
+	// .page-footer__info {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// 	margin-bottom: 30px;
+	// 	padding-top: 40px;
+	// }
 
-	.page-footer__logo {
-		width: 200px;
-		margin-right: 20px;
-	}
+	// .page-footer__logo {
+	// 	width: 200px;
+	// 	margin-right: 20px;
+	// }
 
-	.page-footer__socials {
-		ul {
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			li {
-				margin: 0 16px;
-				a {
-					svg {
-						fill: #d5c9be;
-						opacity: 0.7;
-						transition: @animation;
-					}
-					&:hover,
-					&:focus {
-						svg {
-							opacity: 1;
-						}
-					}
-				}
-			}
-		}
-	}
+	// .page-footer__socials {
+	// 	ul {
+	// 		display: flex;
+	// 		justify-content: center;
+	// 		flex-wrap: wrap;
+	// 		li {
+	// 			margin: 0 16px;
+	// 			a {
+	// 				svg {
+	// 					fill: #d5c9be;
+	// 					opacity: 0.7;
+	// 					transition: @animation;
+	// 				}
+	// 				&:hover,
+	// 				&:focus {
+	// 					svg {
+	// 						opacity: 1;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 
-	.page-footer__order {
-		margin-left: 20px;
-		padding: 25px 55px;
-		font-size: 20px;
-		font-style: italic;
-		font-weight: 300;
-	}
+	// .page-footer__order {
+	// 	margin-left: 20px;
+	// 	padding: 25px 55px;
+	// 	font-size: 20px;
+	// 	font-style: italic;
+	// 	font-weight: 300;
+	// }
 
-	.page-footer__links {
-		display: flex;
-		justify-content: space-between;
-		padding-bottom: 50px;
-		font-size: 20px;
-		line-height: 150%;
-		color: #ffffff;
-		a {
-			font-size: 20px;
-			line-height: 150%;
-			text-decoration: none;		
-			color: #d5c9be;
-			opacity: 0.7;
-			&:hover,
-			&:focus {
-				opacity: 1;
-			}
-		}
-	}
+	// .page-footer__links {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	padding-bottom: 50px;
+	// 	font-size: 20px;
+	// 	line-height: 150%;
+	// 	color: #ffffff;
+	// 	a {
+	// 		font-size: 20px;
+	// 		line-height: 150%;
+	// 		text-decoration: none;		
+	// 		color: #d5c9be;
+	// 		opacity: 0.7;
+	// 		&:hover,
+	// 		&:focus {
+	// 			opacity: 1;
+	// 		}
+	// 	}
+	// }
 
-	.page-footer__copyright {
-		width: 250px;
-		margin-right: 20px;
-	}
+	// .page-footer__copyright {
+	// 	width: 250px;
+	// 	margin-right: 20px;
+	// }
 
-	.page-footer__policy {
-		width: 700px;
-		text-align: center;
-	}
+	// .page-footer__policy {
+	// 	width: 700px;
+	// 	text-align: center;
+	// }
 
-	.page-footer__terms {
-		display: block;
-		width: 250px;
-		margin-left: 20px;
-		text-align: right;
-	}
+	// .page-footer__terms {
+	// 	display: block;
+	// 	width: 250px;
+	// 	margin-left: 20px;
+	// 	text-align: right;
+	// }
 }
 
 &:hover,
