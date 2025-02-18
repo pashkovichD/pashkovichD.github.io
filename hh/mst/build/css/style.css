@@ -402,6 +402,12 @@ picture {
 .form__submit {
   width: 100%;
 }
+@media (min-width: 1200px) {
+  .form__input {
+    padding: 31px 20px 31px 40px;
+    font-size: 24px;
+  }
+}
 .page-header {
   position: fixed;
   width: 100%;
@@ -897,8 +903,6 @@ picture {
   border: 2px solid #d5c9be;
   border-radius: 10px;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center right;
 }
 .consultation__wrapper-form::after {
   position: absolute;
@@ -925,9 +929,69 @@ picture {
   padding: 18px 34px;
   font-size: 18px;
 }
-@media (min-width: 480px) {
+@media (min-width: 375px) {
   .consultation__wrapper-form::after {
     right: -16px;
+  }
+}
+@media (min-width: 480px) {
+  .сonsultation__submit {
+    padding: 18px 50px;
+  }
+}
+@media (min-width: 768px) {
+  .сonsultation__submit {
+    padding: 18px 54px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 960px) {
+  .сonsultation {
+    padding-top: 70px;
+  }
+  .consultation__wrapper-form {
+    padding: 30px;
+    border-radius: 20px;
+    background-image: url('../img/bg-girl.jpg');
+    background-repeat: no-repeat;
+    background-position: center left 530px;
+  }
+  .consultation__wrapper-form::after {
+    right: -55px;
+    width: 400px;
+    height: 456px;
+  }
+  .сonsultation__title {
+    width: 465px;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  .сonsultation__form {
+    width: 465px;
+  }
+}
+@media (min-width: 1200px) {
+  .сonsultation {
+    padding-top: 90px;
+  }
+  .consultation__wrapper-form {
+    padding: 50px;
+    border-radius: 25px;
+    background-position: center left 600px;
+  }
+  .consultation__wrapper-form::after {
+    right: -15px;
+    width: 450px;
+    height: 513px;
+  }
+  .сonsultation__title {
+    width: 500px;
+    margin-bottom: 30px;
+    font-size: 42px;
+    text-align: left;
+  }
+  .сonsultation__form {
+    width: 500px;
   }
 }
 @media (min-width: 1920px) {
