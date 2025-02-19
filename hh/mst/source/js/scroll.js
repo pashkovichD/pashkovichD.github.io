@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
 	let header = document.querySelector('.page-header');
-	// scrollToY(0); // при обновлении страницы scroll в начало страницы (если мы находились на момент обновления где-то ниже)
+	scrollToY(0); // при обновлении страницы scroll в начало страницы (если мы находились на момент обновления где-то ниже)
 
 	// let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей
 	// if(pos > 100) {

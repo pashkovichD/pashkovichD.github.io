@@ -121,9 +121,6 @@
 				<li class="menu__item"><a href="#">Home page</a></li>
 				<li class="menu__item"><a href="#">about company</a></li>
 				<li class="menu__item"><a href="#">contacts</a></li>
-				<!-- <li class="menu__item"><a href="#">consectetur</a></li>
-				<li class="menu__item"><a href="#">adipiscing</a></li>
-				<li class="menu__item"><a href="#">tempor</a></li> -->
 			</ul>
 		</section>
 
@@ -155,58 +152,29 @@
 				</div>
 			</div>
 		</div>
-	</footer>
-	
-	<!-- <section class="modal-offer modal">
-		<h2 class="modal-offer__title">Горящее предложение</h2>
-		<p class="modal-offer__tagline">Не упусти свой <span>последний шанс</span></p>
-		<p class="modal-offer__desc">Мы знаем, как трудно начать.. <span>Поэтому!</span></p>
-		<p class="modal-offer__gift">Дарим скидку для <span>легкого старта <span class="icon"></span></span></p>
-		<p class="modal-offer__offer">Посмотри, что мы для тебя приготовили <span class="icon"></span></p>
+	</footer>	
 
-		<form id="offer-form" class="form" action="https://echo.htmlacademy.ru" method="POST">	
-			<div class="modal-offer__list"></div>
-			<input type="submit" class="modal-offer__submit button" value="Начать тренироваться">
-		</form>	
-		<button type="button" class="modal-offer__close close" tabindex="0" aria-label="Закрыть горящее предложение"><span class="visually-hidden">Закрыть горящее предложение</span></button>
-	</section> -->
-
-	<!-- <div class="overlay"></div> -->
-
-	<!-- <template id="rates-item" style="display: none">
-		<div class="rates__item">
-			<h3 class="rates__item-period">1 неделя</h3>
-			<p class="rates__item-price">
-				<span class="new"><span>699</span>₽</span>
-				<span class="old"><span>999</span>₽</span>
+	<section class="modal-order modal">
+		<h3 class="visually-hidden">Order a consultation</h3>
+		<form id="order-form" class="form" action="https://echo.htmlacademy.ru" method="POST">
+			<p class="form__item">
+				<input class="form__input" type="text" name="order__name" id="order__name" value="" placeholder="Your name">
+				<label class="visually-hidden" for="order__name">Your name</label>
 			</p>
-			<p class="rates__item-tagline"><span class="text">Чтобы просто начать</span><span class="hide"></span> <span class="icon"></span></p>
-			<p class="rates__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-30%</span></p>
-			<input class="rates__input visually-hidden" type="radio" name="rates-period" id="rates-period-1" value="1-month" aria-label="1 неделя">
-			<label class="rates__item-label" for="rates-period-1"></label>
-		</div>
-	</template> -->
+			<p class="form__item">
+				<input class="form__input" type="tel" name="order__number" id="order__number" value="" placeholder="Your phone">
+				<label class="visually-hidden" for="order__number">Your phone</label>
+			</p>
+			<input type="submit" class="modal-order__button button button--dark" value="Order">
+		</form>	
+		<button type="button" class="modal-order__close close" tabindex="0" aria-label="close modal window"><span class="visually-hidden">close modal windows</span></button>
+	</section>
 
-	<!-- <template id="modal-offer__item" style="display: none">
-		<div class="modal-offer__item">
-			<h3 class="modal-offer__item-period">1 неделя</h3>
-			<div class="modal-offer__price-wrapper">
-				<p class="modal-offer__item-price-new"><span>599</span>₽</p>
-				<p class="modal-offer__item-discount"><svg width="46" height="47" fill="#fd4d35"><use xlink:href="#icon-star-sale"></use></svg><span>-40%</span></p>
-			</div>
-			<p class="modal-offer__item-price-old"><span>999</span>₽</p>
-			<input class="modal-offer__input visually-hidden" type="radio" name="modal-offer-period" id="modal-offer-period-week" value="1-week" aria-label="1 неделя">
-			<span class="modal-offer__indicator-radio"></span>
-			<label class="modal-offer__item-label" for="modal-offer-period-week"></label>
-		</div>
-	</template> -->
+	<div class="overlay"></div>	
 	
 	<script src="js/scroll.min.js"></script>
 	<script src="js/hamburger.min.js"></script>
-
-	<!-- <script src="js/common.min.js"></script>
-	<script src="js/form.min.js"></script>
-	<script src="js/modal.min.js"></script> -->
+	<script src="js/modal.min.js"></script>	
 
 </body>
 </html>
