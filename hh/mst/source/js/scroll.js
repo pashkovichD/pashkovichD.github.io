@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
 		animationUp.forEach((up) => {
 			let blockPosition = up.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 210) {
+			if (blockPosition < windowHeight - 100) {
 				up.style.opacity = "1";
 				up.style.transform = "translateY(0)";
 			}
@@ -29,7 +29,7 @@ window.addEventListener('load', function(){
 		animationLeft.forEach((left) => {
 			let blockPosition = left.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 210) {
+			if (blockPosition < windowHeight - 100) {
 				left.style.opacity = "1";
 				left.style.transform = "translateX(0)";
 			}
@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
 		animationRight.forEach((right) => {
 			let blockPosition = right.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 210) {
+			if (blockPosition < windowHeight - 100) {
 				right.style.opacity = "1";
 				right.style.transform = "translateX(0)";
 			}
