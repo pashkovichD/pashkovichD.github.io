@@ -97,7 +97,7 @@ window.addEventListener('load', function(){
 
 	});
 
-	/*function animationAction(elements) {
+	function animationAction(elements) {
 		elements.forEach((el) => {
 			let blockPosition = el.getBoundingClientRect().top;
 			
@@ -106,7 +106,7 @@ window.addEventListener('load', function(){
 				el.style.transform = "translateY(0)";
 			}
 		});
-	}*/
+	}
 
 	function onScroll(e) {		
 		let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей
