@@ -13,52 +13,16 @@ window.addEventListener('load', function(){
 	// 	header.classList.add('page-header__scroll');
 	// }
 
-	let windowHeight = window.innerHeight;
-
-	animationUp.forEach((up) => {
-		let blockPosition = up.getBoundingClientRect().top;
-		
-		if (blockPosition < windowHeight - 10) {
-			up.style.opacity = "1";
-			up.style.transform = "translateY(0)";
-		}
-	});
-
-	animationLeft.forEach((left) => {
-		let blockPosition = left.getBoundingClientRect().top;
-		
-		if (blockPosition < windowHeight - 10) {
-			left.style.opacity = "1";
-			left.style.transform = "translateX(0)";
-		}
-	});
-
-	animationRight.forEach((right) => {
-		let blockPosition = right.getBoundingClientRect().top;
-		
-		if (blockPosition < windowHeight - 10) {
-			right.style.opacity = "1";
-			right.style.transform = "translateX(0)";
-		}
-	});
-
-	animationShow.forEach((show) => {
-		let blockPosition = show.getBoundingClientRect().top;
-		
-		if (blockPosition < windowHeight - 10) {
-			show.style.opacity = "1";
-		}
-	});
-
+	animationAction();
 	
 	window.addEventListener('scroll', function(e) {	
 		onScroll(e);
+		animationAction();
+	});
+
+	function animationAction() {
 
 		let windowHeight = window.innerHeight;
-
-		// animationAction(animationUp);
-		// animationAction(animationLeft);
-		// animationAction(animationRight);
 
 		animationUp.forEach((up) => {
 			let blockPosition = up.getBoundingClientRect().top;
@@ -92,18 +56,6 @@ window.addEventListener('load', function(){
 			
 			if (blockPosition < windowHeight - 10) {
 				show.style.opacity = "1";
-			}
-		});
-
-	});
-
-	function animationAction(elements) {
-		elements.forEach((el) => {
-			let blockPosition = el.getBoundingClientRect().top;
-			
-			if (blockPosition < windowHeight - 120) {
-				el.style.opacity = "1";
-				el.style.transform = "translateY(0)";
 			}
 		});
 	}
