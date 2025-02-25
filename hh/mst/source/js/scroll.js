@@ -3,7 +3,8 @@ window.addEventListener('load', function(){
 
 	let animationUp = document.querySelectorAll('.animation-up');
 	let animationLeft = document.querySelectorAll('.animation-left');
-	let animationRight = document.querySelectorAll('.animation-right');	
+	let animationRight = document.querySelectorAll('.animation-right');
+	let animationShow = document.querySelectorAll('.animation-show');
 	
 	scrollToY(0); // при обновлении страницы scroll в начало страницы (если мы находились на момент обновления где-то ниже)
 
@@ -11,16 +12,58 @@ window.addEventListener('load', function(){
 	// if(pos > 100) {
 	// 	header.classList.add('page-header__scroll');
 	// }
+
+	let windowHeight = window.innerHeight;
+
+	animationUp.forEach((up) => {
+		let blockPosition = up.getBoundingClientRect().top;
+		
+		if (blockPosition < windowHeight - 10) {
+			up.style.opacity = "1";
+			up.style.transform = "translateY(0)";
+		}
+	});
+
+	animationLeft.forEach((left) => {
+		let blockPosition = left.getBoundingClientRect().top;
+		
+		if (blockPosition < windowHeight - 10) {
+			left.style.opacity = "1";
+			left.style.transform = "translateX(0)";
+		}
+	});
+
+	animationRight.forEach((right) => {
+		let blockPosition = right.getBoundingClientRect().top;
+		
+		if (blockPosition < windowHeight - 10) {
+			right.style.opacity = "1";
+			right.style.transform = "translateX(0)";
+		}
+	});
+
+	animationShow.forEach((show) => {
+		let blockPosition = show.getBoundingClientRect().top;
+		
+		if (blockPosition < windowHeight - 10) {
+			show.style.opacity = "1";
+		}
+	});
+
 	
 	window.addEventListener('scroll', function(e) {	
 		onScroll(e);
 
 		let windowHeight = window.innerHeight;
 
+		// animationAction(animationUp);
+		// animationAction(animationLeft);
+		// animationAction(animationRight);
+
 		animationUp.forEach((up) => {
 			let blockPosition = up.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 100) {
+			if (blockPosition < windowHeight - 10) {
 				up.style.opacity = "1";
 				up.style.transform = "translateY(0)";
 			}
@@ -29,7 +72,7 @@ window.addEventListener('load', function(){
 		animationLeft.forEach((left) => {
 			let blockPosition = left.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 100) {
+			if (blockPosition < windowHeight - 10) {
 				left.style.opacity = "1";
 				left.style.transform = "translateX(0)";
 			}
@@ -38,13 +81,32 @@ window.addEventListener('load', function(){
 		animationRight.forEach((right) => {
 			let blockPosition = right.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 100) {
+			if (blockPosition < windowHeight - 10) {
 				right.style.opacity = "1";
 				right.style.transform = "translateX(0)";
 			}
 		});
 
+		animationShow.forEach((show) => {
+			let blockPosition = show.getBoundingClientRect().top;
+			
+			if (blockPosition < windowHeight - 10) {
+				show.style.opacity = "1";
+			}
+		});
+
 	});
+
+	/*function animationAction(elements) {
+		elements.forEach((el) => {
+			let blockPosition = el.getBoundingClientRect().top;
+			
+			if (blockPosition < windowHeight - 120) {
+				el.style.opacity = "1";
+				el.style.transform = "translateY(0)";
+			}
+		});
+	}*/
 
 	function onScroll(e) {		
 		let pos = window.pageYOffset; // количество прокрученных (про'scroll'еных) пикселей

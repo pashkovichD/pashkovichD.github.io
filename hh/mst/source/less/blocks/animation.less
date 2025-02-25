@@ -19,11 +19,17 @@
 	transition: transform 1s, opacity 1s;
 }
 
-.delay-2ms {animation-delay: 0.2s;}
-.delay-4ms {animation-delay: 0.4s;}
-.delay-6ms {animation-delay: 0.6s;}
-.delay-8ms {animation-delay: 0.8s;}
-.delay-1s {animation-delay: 1s;}
+.animation-show {
+	/*--- animation scroll ---*/
+	opacity: 0;	
+	transition: opacity 1s;
+}
+
+.delay-2ms {transition-delay: 0.2s;}
+.delay-4ms {transition-delay: 0.4s;}
+.delay-6ms {transition-delay: 0.6s;}
+.delay-8ms {transition-delay: 0.8s;}
+.delay-1s {transition-delay: 1s;}
 
 @media (min-width: @mobile-width) {
 	

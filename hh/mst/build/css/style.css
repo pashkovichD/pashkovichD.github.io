@@ -771,6 +771,7 @@ picture {
 .advantages__center {
   margin-bottom: 40px;
   padding-top: 15px;
+  overflow: hidden;
 }
 .advantages__list {
   margin-bottom: 40px;
@@ -1298,25 +1299,31 @@ picture {
   transition: transform 1s, opacity 1s;
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
+.animation-show {
+  /*--- animation scroll ---*/
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
 .delay-2ms {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 .delay-4ms {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 .delay-6ms {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 .delay-8ms {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
 }
 .delay-1s {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 .overlay {
   display: none;
