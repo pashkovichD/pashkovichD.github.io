@@ -1,11 +1,10 @@
 /*--- Prata ---*/
 @font-face {
   font-family: 'Prata';
-  src: url('../fonts/Arial/Arial.eot');
-  src: local('Arial') url('../fonts/Arial/Arial.eot?#iefix') format('embedded-opentype'), url('../fonts/Arial/Arial.woff2') format('woff2'), url('../fonts/Arial/Arial.woff') format('woff'), url('../fonts/Arial/Arial.ttf') format('truetype');
-  font-weight: normal;
   font-style: normal;
+  font-weight: 400;
   font-display: swap;
+  src: url(https://fonts.gstatic.com/s/prata/v20/6xKhdSpbNNCT-vWI.ttf) format('truetype');
 }
 /*--- Arial ---*/
 @font-face {
