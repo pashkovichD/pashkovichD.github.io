@@ -1272,10 +1272,10 @@ picture {
   -webkit-transform: translateY(120px);
       -ms-transform: translateY(120px);
           transform: translateY(120px);
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  -webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+  transition: opacity 0.7s, -webkit-transform 0.7s;
+  transition: transform 0.7s, opacity 0.7s;
+  transition: transform 0.7s, opacity 0.7s, -webkit-transform 0.7s;
 }
 .animation-left {
   /*--- animation scroll ---*/
@@ -1283,10 +1283,10 @@ picture {
   -webkit-transform: translateX(-100px);
       -ms-transform: translateX(-100px);
           transform: translateX(-100px);
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  -webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+  transition: opacity 0.7s, -webkit-transform 0.7s;
+  transition: transform 0.7s, opacity 0.7s;
+  transition: transform 0.7s, opacity 0.7s, -webkit-transform 0.7s;
 }
 .animation-right {
   /*--- animation scroll ---*/
@@ -1294,16 +1294,16 @@ picture {
   -webkit-transform: translateX(200px);
       -ms-transform: translateX(200px);
           transform: translateX(200px);
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  -webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+  transition: opacity 0.7s, -webkit-transform 0.7s;
+  transition: transform 0.7s, opacity 0.7s;
+  transition: transform 0.7s, opacity 0.7s, -webkit-transform 0.7s;
 }
 .animation-show {
   /*--- animation scroll ---*/
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
 }
 .delay-1ms {
   -webkit-transition-delay: 0.1s;
