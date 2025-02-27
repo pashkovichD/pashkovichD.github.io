@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
 			
 			if (blockPosition < windowHeight - 10) {
 				element.style.opacity = "1";
-				element.style.transform = "translateY(0)";
+				element.style.transform = "translate(0, 0)";
 			}
 		});		
 	}	
