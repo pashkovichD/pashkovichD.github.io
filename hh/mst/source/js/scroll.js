@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
 		animationElements.forEach((element) => {
 			let blockPosition = element.getBoundingClientRect().top;
 			
-			if (blockPosition < windowHeight - 50) {
+			if (blockPosition < windowHeight - 10) {
 				element.style.opacity = "1";
 				element.style.transform = "translateY(0)";
 			}
