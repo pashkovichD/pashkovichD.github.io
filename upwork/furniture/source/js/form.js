@@ -35,15 +35,15 @@ jQuery(document).ready(function($) {
 	$.datepicker.setDefaults($.datepicker.regional['en']);
 
 	// validate form
-	$.validator.addMethod(
+	/*$.validator.addMethod(
 	    "validDate",
 	    function(value, element) {
 	        // put your own logic here, this is just a (crappy) example
 	        return this.optional(element) || value.match(/^\d\d?\.\d\d?\.\d\d\d\d$/);
 	    }
-	);
+	);*/
 
-	$('#contact-form').validate({
+	/*$('#contact-form').validate({
 		rules: {
 			form__name                : {required: true, minlength: 3},
 			form__phone               : {required: true},
@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
 			sendAjaxForm('form__result', 'contact-form', 'action_ajax_form.php');
 		}
 	});
-
+*/
 	
 
 	
