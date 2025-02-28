@@ -1,6 +1,4 @@
 jQuery(document).ready(function($) {
-	console.log('OK');	
-
 	$('.clients__list').slick({
 		infinite: true,
 		arrows: false,
