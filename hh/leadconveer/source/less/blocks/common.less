@@ -7,23 +7,16 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: @ff;
-	font-size: 24px;	
-	font-weight: 300;  
-	color: @text;
+	font-size: 24px;
+	line-height: 100%;	
+	font-weight: 400;
+	letter-spacing: .8px;
+	color: @dark;
 	background-color: @bg-color;
 }
 :focus {
   outline: none;
 }
-
-.test {
-	font-style: italic;
-}
-
-.h1 {
-	font-family: @ff;
-}
-
 
 body::-webkit-scrollbar-track {  
   border-radius: 10px;
@@ -61,6 +54,10 @@ img {
 	height: auto;
 }
 
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
 p, ul {	
 	margin: 0;
 	padding: 0;
@@ -77,6 +74,32 @@ div, p, a {
 		//    -moz-user-select: none;
 		// 	-ms-user-select: none;
 		// 	    user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: @white;
+	cursor: url('../img/cursor.svg'), pointer;
+	transition: @animation;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+		/* отмена выделения текста */
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+			-ms-user-select: none;
+			    user-select: none;
+	&:hover,
+	&:focus {
+		color: @grey-light;
+	}
+	&:active {
+		color: @orange-juice;
+	}
+	&[disabled] {
+		pointer-events: none;
+    cursor: default;
+		color: #3f3f3f;
+	}
 }
 
 ul {

@@ -1,0 +1,55 @@
+.button {
+	display: block;	
+	justify-content: center;
+	align-items: center;
+	padding: 20px 60px;
+
+	// font-family: @ff-k;
+	font-size: 24px;
+	line-height: 100%;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: @white;
+	border: none;	
+	background-color: @orange-juice;
+	border-radius: 20px;
+	// cursor: pointer;
+	cursor: url('../img/cursor.svg'), pointer;
+	transition: @animation;	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+		/* отмена выделения текста */
+		-webkit-user-select: none;
+		 -khtml-user-select: none;
+		   -moz-user-select: none;
+			-ms-user-select: none;
+			    user-select: none;
+	&:hover,
+	&:focus {
+		background-color: #ff9832;		
+	}
+	&:active {
+		background-color: #cd3400;
+	}
+	&:disabled {
+		background-color: @grey-light;
+		pointer-events: none;
+    	cursor: default;
+	}
+}
+
+.button--dark {
+	color: #ffffff;	
+	background-color: #282829;	
+	&:hover,
+	&:focus {
+		background-color: #333333;
+	}
+}
+
+
+
+@media (min-width: @desktop-1600-width) {
+	
+}
