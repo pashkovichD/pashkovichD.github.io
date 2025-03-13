@@ -265,6 +265,18 @@ picture {
   display: block;
   line-height: 0;
 }
+.h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #2d2d2d;
+}
+.h2 span {
+  display: block;
+  color: #ff6600;
+}
 @media (min-width: 1600px) {
   a {
     cursor: url('../img/cursor.svg'), pointer;
@@ -679,7 +691,7 @@ picture {
   background-color: #f6f6f6;
   border-radius: 0 0 20px 20px;
   overflow-x: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .promo__wrapper {
   display: -webkit-box;
@@ -1079,4 +1091,63 @@ picture {
   .promo__item {
     padding: 10px 30px;
   }
+}
+.target {
+  margin-bottom: 30px;
+}
+.target__title {
+  margin-bottom: 20px;
+}
+.target__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #c0c0c0;
+  overflow: hidden;
+}
+.target__item:after {
+  position: absolute;
+  bottom: -84px;
+  right: -47px;
+  content: none;
+  width: 370px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  z-index: 0;
+}
+.target__item .title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.target__item .title svg {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 35px;
+  height: 35px;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.target__item .text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #808080;
+}
+.target__item picture {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  z-index: 1;
 }
