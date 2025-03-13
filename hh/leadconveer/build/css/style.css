@@ -715,6 +715,7 @@ picture {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   /*&:after {
 		position: absolute;
 		top: 2px;
@@ -775,6 +776,9 @@ picture {
       -ms-transform: rotate(-15deg);
           transform: rotate(-15deg);
 }
+.promo__list {
+  margin: 0 auto;
+}
 .promo__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,7 +791,7 @@ picture {
           align-items: center;
   min-height: 50px;
   margin-bottom: 10px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: 16px;
   text-align: center;
   color: #808080;
