@@ -691,18 +691,20 @@ picture {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .promo__text {
   width: 800px;
-  padding-top: 55px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 30px;
 }
 .promo__title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 30px;
+  line-height: 30px;
   letter-spacing: normal;
+  text-align: center;
 }
 .promo__title span {
   display: block;
@@ -710,24 +712,39 @@ picture {
 }
 .promo__desc {
   position: relative;
-  width: 525px;
-  margin-bottom: 40px;
-  font-size: 32px;
-  line-height: 38px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  /*&:after {
+		position: absolute;
+		top: 2px;
+		right: 0;
+		// right: -90px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		// width: 72px;
+		// height: 72px;
+		background-image: url('../img/money-mouth-face.webp');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}*/
 }
-.promo__desc:after {
-  position: absolute;
-  top: 2px;
-  right: -90px;
-  content: '';
-  width: 72px;
-  height: 72px;
+.promo__desc .money-mouth-face {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
   background-image: url('../img/money-mouth-face.webp');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .promo__button {
   width: 100%;
-  padding: 24px 60px;
+  padding: 15px 20px;
+  font-size: 18px;
 }
 .promo__img {
   position: relative;
@@ -758,15 +775,6 @@ picture {
       -ms-transform: rotate(-15deg);
           transform: rotate(-15deg);
 }
-.promo__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
 .promo__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,13 +785,19 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 280px;
-  height: 88px;
-  font-size: 20px;
+  min-height: 50px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
   text-align: center;
   color: #808080;
-  border-radius: 40px 40px 0 0;
+  border-radius: 20px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.promo__item:last-child {
+  margin-bottom: 0;
 }
 @media (min-width: 1920px) {
   .promo {
