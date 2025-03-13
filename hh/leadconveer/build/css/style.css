@@ -265,29 +265,15 @@ picture {
   display: block;
   line-height: 0;
 }
-.page-main {
-  padding-top: 72px;
-}
-@media (min-width: 960px) {
-  .page-main {
-    padding-top: 94px;
-  }
-}
 @media (min-width: 1600px) {
   a {
     cursor: url('../img/cursor.svg'), pointer;
-  }
-  .page-main {
-    padding-top: 104px;
   }
 }
 @media (min-width: 1920px) {
   html {
     width: 100vw;
     overflow-x: hidden;
-  }
-  .page-main {
-    padding-top: 0;
   }
 }
 .button {
@@ -454,6 +440,7 @@ picture {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 .page-header__toggle-nav {
   position: absolute;
@@ -690,8 +677,8 @@ picture {
 .promo {
   position: relative;
   background-color: #f6f6f6;
-  border-radius: 0 0 40px 40px;
-  overflow-y: hidden;
+  border-radius: 0 0 20px 20px;
+  overflow-x: hidden;
   margin-bottom: 100px;
 }
 .promo__wrapper {
@@ -703,12 +690,9 @@ picture {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 .promo__text {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   width: 800px;
   padding-top: 55px;
   padding-bottom: 50px;
@@ -746,14 +730,9 @@ picture {
   padding: 24px 60px;
 }
 .promo__img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   position: relative;
   display: inline-block;
-  width: 791px;
-  margin-right: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .promo__img .promo__img-svg {
   width: 100%;
@@ -762,20 +741,18 @@ picture {
 .promo__img .promo__star-first,
 .promo__img .promo__star-second {
   position: absolute;
-  bottom: 78px;
+  bottom: 25px;
   left: -30px;
+  width: 40px;
+  height: 40px;
   -webkit-transform: rotate(-8deg);
       -ms-transform: rotate(-8deg);
           transform: rotate(-8deg);
 }
-.promo__img .promo__star-first use path,
-.promo__img .promo__star-second use path {
-  fill: red;
-}
 .promo__img .promo__star-second {
   bottom: auto;
   left: auto;
-  top: 107px;
+  top: 20px;
   right: -29px;
   -webkit-transform: rotate(-15deg);
       -ms-transform: rotate(-15deg);
@@ -788,9 +765,6 @@ picture {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
   width: 100%;
 }
 .promo__item {
@@ -810,4 +784,126 @@ picture {
   color: #808080;
   border-radius: 40px 40px 0 0;
   background-color: #ffffff;
+}
+@media (min-width: 1920px) {
+  .promo {
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 0 0 40px 40px;
+    overflow-y: hidden;
+    margin-bottom: 100px;
+  }
+  .promo__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  .promo__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 800px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+  .promo__title {
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: normal;
+  }
+  .promo__title span {
+    display: block;
+    color: #ff6600;
+  }
+  .promo__desc {
+    position: relative;
+    width: 525px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .promo__desc:after {
+    position: absolute;
+    top: 2px;
+    right: -90px;
+    content: '';
+    width: 72px;
+    height: 72px;
+    background-image: url('../img/money-mouth-face.webp');
+    background-repeat: no-repeat;
+  }
+  .promo__button {
+    width: 100%;
+    padding: 24px 60px;
+  }
+  .promo__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    display: inline-block;
+    width: 791px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+  }
+  .promo__img .promo__img-svg {
+    width: 100%;
+    height: auto;
+  }
+  .promo__img .promo__star-first,
+  .promo__img .promo__star-second {
+    position: absolute;
+    bottom: 78px;
+    left: -30px;
+    -webkit-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  .promo__img .promo__star-second {
+    bottom: auto;
+    left: auto;
+    top: 107px;
+    right: -29px;
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  .promo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+  }
+  .promo__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 280px;
+    height: 88px;
+    font-size: 20px;
+    text-align: center;
+    color: #808080;
+    border-radius: 40px 40px 0 0;
+    background-color: #ffffff;
+  }
 }

@@ -1,8 +1,9 @@
 .promo {
 	position: relative;	
 	background-color: @bg-block;
-	border-radius: 0 0 40px 40px;
-	overflow-y: hidden;
+	border-radius: 0 0 20px 20px;
+	// border-radius: 0 0 40px 40px;
+	overflow-x: hidden;
 
 	margin-bottom: 100px;
 }
@@ -11,11 +12,12 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-top: 60px;
+	padding-top: 30px;
+	// padding-top: 60px;
 }
 
 .promo__text {
-	order: 1;
+	// order: 1;
 	width: 800px;
 	padding-top: 55px;
 	padding-bottom: 50px;
@@ -57,12 +59,13 @@
 }
 
 .promo__img {
-	order: 2;
+	// order: 2;
 	position: relative;
 	display: inline-block;
-	width: 791px;
-	margin-right: 60px;
-	margin-bottom: 60px;
+	// width: 791px;
+	// margin-right: 60px;
+	margin-bottom: 30px;
+	// margin-bottom: 60px;
 	.promo__img-svg {
 		width: 100%;
 		height: auto;
@@ -70,28 +73,29 @@
 	.promo__star-first,
 	.promo__star-second {
 		position: absolute;
-		bottom: 78px;
+		bottom: 25px;
+		// bottom: 78px;
 		left: -30px;
+		width: 40px;
+		height: 40px;
+		// width: 60px;
+		// height: 60px;
 		transform: rotate(-8deg);
-		use {
-			path {
-				fill: red;
-			}
-		}
 	}
 	.promo__star-second {	
 		bottom: auto;
 		left: auto;
-		top: 107px;
+		top: 20px;
+		// top: 107px;
 		right: -29px;
 		transform: rotate(-15deg);		
 	}
 }
 
 .promo__list {
+	// order: 3;
 	display: flex;
 	justify-content: space-between;
-	order: 3;
 	width: 100%;
 }
 
@@ -136,7 +140,111 @@
 }
 
 @media (min-width: @desktop-full-width) {
+	.promo {
+		position: relative;	
+		background-color: @bg-block;
+		border-radius: 0 0 40px 40px;
+		overflow-y: hidden;
 
+		margin-bottom: 100px;
+	}
+
+	.promo__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 60px;
+	}
+
+	.promo__text {
+		order: 1;
+		width: 800px;
+		padding-top: 55px;
+		padding-bottom: 50px;
+	}
+
+	.promo__title {
+		margin-bottom: 40px;
+		font-family: @ff-m;
+		font-size: 80px;
+		line-height: 80px;
+		letter-spacing: normal;
+		span {
+			display: block;
+			color: @orange-juice;	
+		}	
+	}
+
+	.promo__desc {
+		position: relative;
+		width: 525px;
+		margin-bottom: 40px;
+		font-size: 32px;
+		line-height: 38px;
+		&:after {
+			position: absolute;
+			top: 2px;
+			right: -90px;
+			content: '';
+			width: 72px;
+			height: 72px;
+			background-image: url('../img/money-mouth-face.webp');
+			background-repeat: no-repeat;
+		}
+	}
+
+	.promo__button {
+		width: 100%;
+		padding: 24px 60px;
+	}
+
+	.promo__img {
+		order: 2;
+		position: relative;
+		display: inline-block;
+		width: 791px;
+		margin-right: 60px;
+		margin-bottom: 60px;
+		.promo__img-svg {
+			width: 100%;
+			height: auto;
+		}
+		.promo__star-first,
+		.promo__star-second {
+			position: absolute;
+			bottom: 78px;
+			left: -30px;
+			transform: rotate(-8deg);
+		}
+		.promo__star-second {	
+			bottom: auto;
+			left: auto;
+			top: 107px;
+			right: -29px;
+			transform: rotate(-15deg);		
+		}
+	}
+
+	.promo__list {
+		display: flex;
+		justify-content: space-between;
+		order: 3;
+		width: 100%;
+	}
+
+
+	.promo__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 280px;
+		height: 88px;
+		font-size: 20px;
+		text-align: center;
+		color: @grey;
+		border-radius: 40px 40px 0 0;
+		background-color: @white;
+	}
 }
 
 &:hover,
