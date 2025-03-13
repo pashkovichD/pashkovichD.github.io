@@ -27,11 +27,44 @@
 				<stop offset="0.6248" style="stop-color:#169D0D"></stop>
 				<stop offset="0.9166" style="stop-color:#149A0B"></stop>
 			</linearGradient>
-		</defs>
+
+			<mask id="promo-mask">
+				<!-- Ко всему изображению применён красный цвет маски, что делает его полупрозрачным -->
+				<rect width="100%" height="100%" fill="black"></rect>   
+				<!-- К эллипсу применен белый цвет маски, поэтому на этом участке цвет остается неизменным от оригинального изображения    -->
+				<g fill="white">
+					<path d="M552.251 0H40C17.9086 0 0 17.9086 0 40V311.147C0 333.238 17.9086 351.147 39.9999 351.147H143.268C165.36 351.147 183.268 369.055 183.268 391.147V457C183.268 479.091 201.177 497 223.268 497H751C773.091 497 791 479.091 791 457V191.348C791 169.256 773.091 151.348 751 151.348H632.251C610.16 151.348 592.251 133.439 592.251 111.348V40C592.251 17.9086 574.343 0 552.251 0Z"></path>
+				</g>
+			</mask>
+
+			<linearGradient id="grad-star" x1="0" y1="30" x2="60" y2="30" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#FF6600"></stop>
+				<stop offset="0.274" stop-color="#F26659"></stop>
+				<stop offset="0.374" stop-color="#F06177"></stop>
+				<stop offset="0.484" stop-color="#E65D97"></stop>
+				<stop offset="0.714" stop-color="#CA46D2"></stop>
+				<stop offset="1" stop-color="#8D13F9"></stop>
+			</linearGradient>
+
+		</defs> 
 	</svg>
 
 	<div style="display: none;">
-		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-telegram" viewBox="0 0 40 40"><rect y="0" width="40" height="40" fill="none"></rect><path d="M34,0H6C2.7,0,0,2.7,0,6v28c0,3.3,2.7,6,6,6h28c3.3,0,6-2.7,6-6V6C40,2.7,37.3,0,34,0z" fill="#37AEE2"></path><path d="M15.5,31.6c-0.9,0-0.8-0.3-1-1.1L12,22.3L31.2,11" fill="#C8DAEA"></path><path d="M15.5,31.6c0.5,0,0.9-0.3,1.3-0.6l3.5-3.4l-4.4-2.7" fill="#A9C9DD"></path><path class="st4" d="M15.9,24.9l10.5,7.7c1.1,0.7,2,0.3,2.3-1.1l4.3-20.2c0.4-1.7-0.7-2.5-1.9-2L6.2,19.1c-1.6,0.6-1.6,1.6-0.3,2l6.5,2l14.8-9.5c0.7-0.4,1.3-0.2,0.9,0.3" fill="#F6FBFE"></path></symbol><symbol id="icon-whatsapp" viewBox="0 0 40 40"><rect y="0" width="40" height="40" fill="none"></rect><path d="M34,0H6C2.7,0,0,2.7,0,6v28c0,3.3,2.7,6,6,6h28c3.3,0,6-2.7,6-6V6C40,2.7,37.3,0,34,0z" fill="url(#SVG_BG)"></path><path d="M8.5,20c0-6.6,5.3-11.9,11.9-11.9S32.2,13.4,32.2,20c0,6.6-5.3,11.9-11.9,11.9c-2.3,0-4.5-0.7-6.3-1.8c-0.3-0.2-0.8-0.3-1.1-0.2L9,31l1.4-3.4c0.2-0.4,0.1-0.9-0.1-1.3C9.1,24.4,8.5,22.3,8.5,20z M20.3,5.3C12.3,5.3,5.7,11.9,5.7,20c0,2.6,0.7,5,1.8,7.1l-2.2,7.1l7.7-1.5c2.1,1.2,4.6,1.9,7.3,1.9C28.4,34.7,35,28.1,35,20C35,11.9,28.4,5.3,20.3,5.3z M23.5,23l-1.8,1.3c-0.9-0.5-1.8-1.2-2.8-2.1c-1-1-1.7-2-2.3-3l1.2-1c0.5-0.4,0.6-1.1,0.3-1.7l-1.5-2.8c-0.2-0.4-0.6-0.6-1-0.7c-0.4-0.1-0.8,0-1.2,0.3l-0.4,0.4c-1.1,0.9-1.7,2.4-1.2,4c0.5,1.6,1.7,4.1,4,6.5c2.5,2.5,5.1,3.5,6.6,3.9c1.2,0.3,2.4-0.1,3.2-0.8l0.8-0.7c0.4-0.3,0.5-0.7,0.5-1.2c0-0.5-0.3-0.9-0.7-1.1L25.1,23C24.6,22.7,24,22.7,23.5,23z" fill="#ffffff"></path></symbol></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <mask id="msk1">
+            <!-- Ко всему изображению применён красный цвет маски, что делает его полупрозрачным -->
+            <rect width="100%" height="100%" fill="black"></rect>   
+            <!-- К эллипсу применен белый цвет маски, поэтому на этом участке цвет остается неизменным от оригинального изображения    -->
+            <g fill="white">
+                <path d="M552.251 0H40C17.9086 0 0 17.9086 0 40V311.147C0 333.238 17.9086 351.147 39.9999 351.147H143.268C165.36 351.147 183.268 369.055 183.268 391.147V457C183.268 479.091 201.177 497 223.268 497H751C773.091 497 791 479.091 791 457V191.348C791 169.256 773.091 151.348 751 151.348H632.251C610.16 151.348 592.251 133.439 592.251 111.348V40C592.251 17.9086 574.343 0 552.251 0Z"></path>
+            </g>
+        </mask>
+    </defs><symbol id="icon-promo-mask" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet">
+     
+
+    <!-- К изображению применена маска -->
+    <image xlink:href="img/promo-img.webp" width="100%" height="100%" mask="url(#msk1)"></image>
+</symbol><symbol id="icon-star-gradient" viewBox="0 0 49 49"><path d="M24.5 0L29.3508 19.6492L49 24.5L29.3508 29.3508L24.5 49L19.6492 29.3508L0 24.5L19.6492 19.6492L24.5 0Z" fill="url(#grad-star)"></path></symbol><symbol id="icon-telegram" viewBox="0 0 40 40"><rect y="0" width="40" height="40" fill="none"></rect><path d="M34,0H6C2.7,0,0,2.7,0,6v28c0,3.3,2.7,6,6,6h28c3.3,0,6-2.7,6-6V6C40,2.7,37.3,0,34,0z" fill="#37AEE2"></path><path d="M15.5,31.6c-0.9,0-0.8-0.3-1-1.1L12,22.3L31.2,11" fill="#C8DAEA"></path><path d="M15.5,31.6c0.5,0,0.9-0.3,1.3-0.6l3.5-3.4l-4.4-2.7" fill="#A9C9DD"></path><path class="st4" d="M15.9,24.9l10.5,7.7c1.1,0.7,2,0.3,2.3-1.1l4.3-20.2c0.4-1.7-0.7-2.5-1.9-2L6.2,19.1c-1.6,0.6-1.6,1.6-0.3,2l6.5,2l14.8-9.5c0.7-0.4,1.3-0.2,0.9,0.3" fill="#F6FBFE"></path></symbol><symbol id="icon-whatsapp" viewBox="0 0 40 40"><rect y="0" width="40" height="40" fill="none"></rect><path d="M34,0H6C2.7,0,0,2.7,0,6v28c0,3.3,2.7,6,6,6h28c3.3,0,6-2.7,6-6V6C40,2.7,37.3,0,34,0z" fill="url(#SVG_BG)"></path><path d="M8.5,20c0-6.6,5.3-11.9,11.9-11.9S32.2,13.4,32.2,20c0,6.6-5.3,11.9-11.9,11.9c-2.3,0-4.5-0.7-6.3-1.8c-0.3-0.2-0.8-0.3-1.1-0.2L9,31l1.4-3.4c0.2-0.4,0.1-0.9-0.1-1.3C9.1,24.4,8.5,22.3,8.5,20z M20.3,5.3C12.3,5.3,5.7,11.9,5.7,20c0,2.6,0.7,5,1.8,7.1l-2.2,7.1l7.7-1.5c2.1,1.2,4.6,1.9,7.3,1.9C28.4,34.7,35,28.1,35,20C35,11.9,28.4,5.3,20.3,5.3z M23.5,23l-1.8,1.3c-0.9-0.5-1.8-1.2-2.8-2.1c-1-1-1.7-2-2.3-3l1.2-1c0.5-0.4,0.6-1.1,0.3-1.7l-1.5-2.8c-0.2-0.4-0.6-0.6-1-0.7c-0.4-0.1-0.8,0-1.2,0.3l-0.4,0.4c-1.1,0.9-1.7,2.4-1.2,4c0.5,1.6,1.7,4.1,4,6.5c2.5,2.5,5.1,3.5,6.6,3.9c1.2,0.3,2.4-0.1,3.2-0.8l0.8-0.7c0.4-0.3,0.5-0.7,0.5-1.2c0-0.5-0.3-0.9-0.7-1.1L25.1,23C24.6,22.7,24,22.7,23.5,23z" fill="#ffffff"></path></symbol></svg>
 	</div>
 
 	<header class="page-header">
@@ -52,6 +85,7 @@
 				</button>
 
 				<nav class="page-header__nav menu">
+					
 					<h2 class="visually-hidden">Главное меню</h2>
 					<ul class="page-header__nav-list menu__list">
 						<li class="menu__item"><a href="#">Как это работает</a></li>
@@ -59,42 +93,44 @@
 						<li class="menu__item"><a href="#">Отзывы</a></li>
 						<li class="menu__item"><a href="#">Контакты</a></li>
 					</ul>
+
+					<div class="page-header__contacts">
+						<a class="social" href="https://www.whatsapp.com/" rel="noopener nofollow" target="_blank"><svg width="40" height="40"><use xlink:href="#icon-whatsapp"></use></svg><span class="visually-hidden">Мы в WhatsApp</span></a><a class="social" href="https://t.me/telegram" rel="noopener nofollow" target="_blank"><svg width="40" height="40"><use xlink:href="#icon-telegram"></use></svg><span class="visually-hidden">Мы в Telegram</span></a><a class="page-header__phone-number" href="tel:+74951183282" aria-label="+7 495 118-32-82">+7 495 118-32-82</a>
+					</div>
 				</nav>
 			</div>
 
-			<div class="page-header__contacts">
-				<a class="social" href="https://www.whatsapp.com/" rel="noopener nofollow" target="_blank"><svg width="40" height="40"><use xlink:href="#icon-whatsapp"></use></svg><span class="visually-hidden">Мы в WhatsApp</span></a>
-				<a class="social" href="https://t.me/telegram" rel="noopener nofollow" target="_blank"><svg width="40" height="40"><use xlink:href="#icon-telegram"></use></svg><span class="visually-hidden">Мы в Telegram</span></a>
-				<a class="page-header__phone-number" href="tel:+74951183282" aria-label="+7 495 118-32-82">+7 495 118-32-82</a>
-			</div>
+			
 
 		</div>
 	</header>
 
 	<main class="page-main">
-		<section class="promo container">
-			<div class="promo__text">
-				<h2 class="promo__title"><span>Лидогенерация</span>для бизнеса</h2>
-				<p class="promo__desc">Покупайте только целевые лиды по фиксированной цене от 300 ₽</p>
-				<button class="promo__button button" type="button" aria-label="Выбрать пакет лидов">Выбрать пакет лидов</button>	
-			</div>
+		<!-- <section class="promo">
+			<div class="promo__wrapper container">
+				<picture class="promo__img">
+					<svg class="promo__star-first"width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+					<svg class="promo__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="791" height="497" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/promo-img.webp" width="100%" height="100%" mask="url(#promo-mask)" /></svg>
+					<svg class="promo__star-second"width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+				</picture>
 
-
-
-			<picture class="promo__img">
-				<img src="img/promo-img.webp" srcset="img/promo-img@2x.webp 2x" alt="Promotion Company">
-			</picture>
-
-			<div class="promo__text">
-				<p class="promo__title animation-up">Luxury housing for you</p>
-				<p class="promo__desc animation-up delay-1ms">quality and reliability</p>
+				<div class="promo__text">
+					<h2 class="promo__title"><span>Лидогенерация</span>для бизнеса</h2>
+					<p class="promo__desc">Покупайте только целевые лиды по фиксированной цене от 300 ₽</p>
+					<button class="promo__button button" type="button" aria-label="Выбрать пакет лидов">Выбрать пакет лидов</button>	
+				</div>				
+				
 				<ul class="promo__list">
-					<li class="promo__item animation-up delay-2ms">more than <span>1 000</span> completed projects</li>
-					<li class="promo__item animation-up delay-3ms"><span>$5 000</span> discount for repeat customers</li>
-					<li class="promo__item animation-up delay-4ms"><span>80%</span> of orders are made through the website</li>
+					<li class="promo__item">Лидогенерация в b2b</li>
+					<li class="promo__item">Биржа лидов</li>
+					<li class="promo__item">Сервис по Лидгену</li>
+					<li class="promo__item">Лиды для производства</li>
+					<li class="promo__item">Клиенты для бизнеса</li>
+					<li class="promo__item">Определить телефон посетителя сайта</li>
 				</ul>
+				
 			</div>
-		</section>
+		</section> -->
 
 		<!-- <section class="advantages">
 			<h2 class="visually-hidden">Advantages company</h2>
@@ -207,9 +243,9 @@
 
 	<!-- <div class="overlay"></div>	 -->
 	
-	<!-- <script src="js/scroll.min.js"></script>
+	<!-- <script src="js/scroll.min.js"></script> -->
 	<script src="js/hamburger.min.js"></script>
-	<script src="js/modal.min.js"></script>	 -->
+	<!-- <script src="js/modal.min.js"></script> -->
 
 </body>
 </html>
