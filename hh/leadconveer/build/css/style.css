@@ -213,7 +213,8 @@ h4 {
   margin: 0;
 }
 p,
-ul {
+ul,
+li {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -694,7 +695,6 @@ picture {
   padding-bottom: 30px;
 }
 .promo__text {
-  width: 800px;
   padding-top: 0px;
   padding-bottom: 30px;
 }
@@ -716,20 +716,6 @@ picture {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  /*&:after {
-		position: absolute;
-		top: 2px;
-		right: 0;
-		// right: -90px;
-		content: '';
-		width: 20px;
-		height: 20px;
-		// width: 72px;
-		// height: 72px;
-		background-image: url('../img/money-mouth-face.webp');
-		background-repeat: no-repeat;
-		background-size: contain;
-	}*/
 }
 .promo__desc .money-mouth-face {
   display: inline-block;
@@ -803,25 +789,244 @@ picture {
 .promo__item:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 1920px) {
+@media (min-width: 480px) {
+  .promo__button {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .promo__img .promo__star-first,
+  .promo__img .promo__star-second {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
   .promo {
-    position: relative;
-    background-color: #f6f6f6;
-    border-radius: 0 0 40px 40px;
-    overflow-y: hidden;
-    margin-bottom: 100px;
+    border-radius: 0 0 30px 30px;
   }
   .promo__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .promo__text {
+    padding-bottom: 40px;
+  }
+  .promo__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .promo__desc {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .promo__desc .money-mouth-face {
+    width: 25px;
+    height: 25px;
+  }
+  .promo__button {
+    padding: 20px 30px;
+    font-size: 19px;
+  }
+  .promo__img {
+    margin-bottom: 30px;
+  }
+  .promo__img .promo__star-first,
+  .promo__img .promo__star-second {
+    width: 60px;
+    height: 60px;
+  }
+  .promo__img .promo__star-second {
+    bottom: auto;
+    left: auto;
+    top: 20px;
+    right: -29px;
+  }
+  .promo__item {
+    margin-bottom: 15px;
+    padding: 7px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 960px) {
+  .promo__text {
+    margin: 0 auto;
+  }
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .promo__desc {
+    width: 525px;
+    margin-bottom: 40px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .promo__desc .money-mouth-face {
+    width: 30px;
+    height: 30px;
+  }
+  .promo__button {
+    width: 100%;
+    padding: 24px 60px;
+    font-size: 24px;
+  }
+  .promo__img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .promo__img .promo__star-first,
+  .promo__img .promo__star-second {
+    bottom: 80px;
+  }
+  .promo__img .promo__star-second {
+    bottom: auto;
+    top: 70px;
+  }
+  .promo__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 60px;
+    width: 60%;
   }
+  .promo__item {
+    width: 47%;
+    margin: 0 7px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .promo__item:last-child {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__wrapper {
+    padding-bottom: 30px;
+  }
+  .promo__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    margin: 0;
+    padding-top: 30px;
+  }
+  .promo__title {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: left;
+  }
+  .promo__desc {
+    width: 420px;
+    margin-bottom: 40px;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .promo__desc .money-mouth-face {
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+  }
+  .promo__button {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 21px;
+  }
+  .promo__img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 500px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .promo__img .promo__star-first,
+  .promo__img .promo__star-second {
+    bottom: 30px;
+  }
+  .promo__img .promo__star-second {
+    bottom: auto;
+    top: 20px;
+  }
+  .promo__list {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  .promo__item {
+    width: 45%;
+    margin: 0 7px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .promo__item:last-child {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1600px) {
+  .promo {
+    border-radius: 0 0 40px 40px;
+  }
+  .promo__wrapper {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .promo__text {
+    width: 620px;
+    padding-top: 55px;
+  }
+  .promo__title {
+    margin-bottom: 40px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .promo__desc {
+    width: 525px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .promo__desc .money-mouth-face {
+    top: 8px;
+    right: -65px;
+    width: 65px;
+    height: 65px;
+  }
+  .promo__button {
+    padding: 24px 60px;
+    font-size: 24px;
+  }
+  .promo__img {
+    width: 730px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .promo__img .promo__star-first,
+  .promo__img .promo__star-second {
+    bottom: 70px;
+  }
+  .promo__img .promo__star-second {
+    bottom: auto;
+    top: 70px;
+  }
+}
+@media (min-width: 1920px) {
   .promo__text {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -842,25 +1047,14 @@ picture {
     color: #ff6600;
   }
   .promo__desc {
-    position: relative;
-    width: 525px;
-    margin-bottom: 40px;
     font-size: 32px;
     line-height: 38px;
   }
   .promo__desc:after {
-    position: absolute;
     top: 2px;
     right: -90px;
-    content: '';
     width: 72px;
     height: 72px;
-    background-image: url('../img/money-mouth-face.webp');
-    background-repeat: no-repeat;
-  }
-  .promo__button {
-    width: 100%;
-    padding: 24px 60px;
   }
   .promo__img {
     -webkit-box-ordinal-group: 3;
