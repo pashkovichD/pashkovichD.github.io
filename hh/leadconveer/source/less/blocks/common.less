@@ -123,9 +123,8 @@ picture {
 	font-family: @ff-m;
 	font-size: 26px;
 	line-height: 28px;
-	// font-size: 48px;
-	// line-height: 52px;
 	font-weight: 700;
+	letter-spacing: 0;
 	text-align: center;
 	color: @dark;
 	span {
@@ -143,10 +142,17 @@ picture {
 }
 
 @media (min-width: @tablet-width) {
-
+	.h2 {
+		font-size: 32px;
+		line-height: 36px;
+	}
 }
 
 @media (min-width: @desktop-width) {	
+	.h2 {
+		font-size: 40px;
+		line-height: 46px;
+	}
 }
 
 @media (min-width: @desktop-1200-width) {
@@ -164,4 +170,8 @@ picture {
 		width:100vw;
 		overflow-x: hidden;
 	}	
+	.h2 {		
+		font-size: 48px;
+		line-height: 52px;
+	}
 }
