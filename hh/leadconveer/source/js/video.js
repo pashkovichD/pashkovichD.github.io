@@ -1,6 +1,13 @@
 var videoWrapper = document.querySelectorAll('.video__wrapper');
+var presentationVideo = document.querySelector('.presentation__video');
 
-videoWrapper.forEach((el) => {
+videoWrapper.forEach((element) => {
+	workVideo(element);
+});
+
+workVideo(presentationVideo);
+
+function workVideo(el) {
 	var btn = el.querySelector('.play');
 	var video = el.querySelector('video');
 
@@ -21,4 +28,4 @@ videoWrapper.forEach((el) => {
 			btn.classList.remove('play--hide');
 		}	
 	});
-});
+}
