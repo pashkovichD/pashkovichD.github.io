@@ -3354,3 +3354,16 @@ picture {
     font-size: 24px;
   }
 }
+.faq {
+  margin-bottom: 50px;
+}
+@media (min-width: 960px) {
+  .faq {
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .faq {
+    margin-bottom: 120px;
+  }
+}
