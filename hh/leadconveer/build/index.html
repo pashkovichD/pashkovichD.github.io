@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>LeadConveer - лидогенерация для Вашего бизнеса</title>
@@ -37,6 +37,27 @@
 				</g>
 			</mask>
 
+			<mask id="block-mask">
+				<rect width="100%" height="100%" fill="black"></rect>   	
+				<g fill="white">
+					<path d="M0 242.006V41.2804C0 18.4819 16.2546 0 36.3056 0H515.54C535.591 0 551.846 18.4819 551.846 41.2804V89.2689C551.846 112.067 568.1 130.549 588.151 130.549H646.694C666.745 130.549 683 149.031 683 171.83V361.72C683 384.518 666.745 403 646.694 403H180.167C160.116 403 143.861 384.518 143.861 361.72V324.567C143.861 301.769 127.607 283.287 107.555 283.287H36.3056C16.2546 283.287 0 264.805 0 242.006Z" fill="#D9D9D9"></path>
+				</g>
+			</mask>
+
+			<mask id="block-mask-left">
+				<rect width="100%" height="100%" fill="black"></rect>   	
+				<g fill="white">
+					<path d="M683 242.006V41.2804C683 18.4819 666.745 0 646.694 0H167.46C147.409 0 131.154 18.4819 131.154 41.2804V89.2689C131.154 112.067 114.9 130.549 94.8486 130.549H36.3057C16.2547 130.549 6.10352e-05 149.031 6.10352e-05 171.83V361.72C6.10352e-05 384.518 16.2547 403 36.3057 403H502.833C522.884 403 539.139 384.518 539.139 361.72V324.567C539.139 301.769 555.394 283.287 575.445 283.287H646.694C666.745 283.287 683 264.805 683 242.006Z" fill="#D9D9D9"></path>
+				</g>
+			</mask>
+
+			<mask id="faq-mask">
+				<rect width="100%" height="100%" fill="black"></rect>   	
+				<g fill="white">
+					<path d="M559.5 0H40C17.9086 0 0 17.9086 0 40V400.5C0 422.591 17.9086 440.5 40 440.5H239C261.091 440.5 279 458.409 279 480.5V541.5C279 563.591 296.909 581.5 319 581.5H839C861.091 581.5 879 563.591 879 541.5V195C879 172.909 861.091 155 839 155H639.5C617.409 155 599.5 137.091 599.5 115V40C599.5 17.9086 581.591 0 559.5 0Z" fill="#D9D9D9"></path>
+				</g>
+			</mask>
+
 			<linearGradient id="grad-star" x1="0" y1="30" x2="60" y2="30" gradientUnits="userSpaceOnUse">
 				<stop stop-color="#FF6600"></stop>
 				<stop offset="0.274" stop-color="#F26659"></stop>
@@ -59,7 +80,7 @@
                 <path d="M552.251 0H40C17.9086 0 0 17.9086 0 40V311.147C0 333.238 17.9086 351.147 39.9999 351.147H143.268C165.36 351.147 183.268 369.055 183.268 391.147V457C183.268 479.091 201.177 497 223.268 497H751C773.091 497 791 479.091 791 457V191.348C791 169.256 773.091 151.348 751 151.348H632.251C610.16 151.348 592.251 133.439 592.251 111.348V40C592.251 17.9086 574.343 0 552.251 0Z"></path>
             </g>
         </mask>
-    </defs><symbol id="icon-promo-mask" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet">
+    </defs><symbol id="icon-play" viewBox="0 0 53 62"><path d="M53 31L0.499997 61.3109L0.5 0.689109L53 31Z" fill="url(#grad-star)"></path></symbol><symbol id="icon-promo-mask" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet">
      
 
     <!-- К изображению применена маска -->
@@ -109,7 +130,7 @@
 			<div class="promo__wrapper container">
 				<picture class="promo__img">
 					<svg class="promo__star-first" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
-					<svg class="promo__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="791" height="497" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/promo-img.webp" width="100%" height="100%" mask="url(#promo-mask)"></image></svg>
+					<svg class="promo__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="791" height="497" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/mask/promo-img.webp" width="100%" height="100%" mask="url(#promo-mask)"></image></svg>
 					<svg class="promo__star-second" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
 				</picture>
 
@@ -284,7 +305,6 @@
 
 				<ul class="reviews__list">
 					<li class="reviews__item">
-						<!-- <h3 class="tarif">Старт<svg width="56" height="57"><use xlink:href="#icon-star"></use></svg></h3> -->
 						<p class="rating">5,0 
 							<span>
 								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
@@ -297,61 +317,217 @@
 						<p class="content">«Стабильно получаем новые лиды из сервиса. С точки зрения рентабельности нареканий нет. Тёплая заявка 800–1000 рублей, конверсия, цена-качество устраивает. Общее впечатление достаточно хорошее, цена, качество, скорость».</p>
 						<p class="category">Ниша: банкротство, списание долгов</p>
 					</li>
-					
+
+					<li class="reviews__item">
+						<p class="rating">4,8 
+							<span>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+							</span>
+						</p>
+						<p class="content">«С вашим сервисом работаем с июня 22 года. Нас заинтересовало, и мы решили протестировать. Взяли минимальный пакет из 10 новых лидов, а потом, как он закончился, взяли повышенный пакет. Учитывая нашу сферу и посмотреть статистику, из 100 заинтересованных 15 в продажу. Это хороший результат. Это хороший результат».</p>
+						<p class="category">Ниша: банкротство, списание долгов</p>
+					</li>
+
+					<li class="reviews__item">
+						<p class="rating">5,0 
+							<span>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+							</span>
+						</p>
+						<p class="content">«С сервисом работаем чуть меньше года. Немного сомневались, но согласились попробовать, а после продолжили работать. Новые клиенты появились сразу, передали на наш колл-центр. С вашего источника дешевле, чем с других сервисов. Безусловно, с вами стоит работать».</p>
+						<p class="category">Ниша: банкротство, списание долгов</p>
+					</li>
+
+					<li class="reviews__item">
+						<p class="rating">4,9 
+							<span>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+								<svg width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+							</span>
+						</p>
+						<p class="content">«С вашей компанией работаем более 2‑х лет, сотрудничество полезное. Мы все посмотрели, разобрались, что сервис даёт реально целевые заявки. Заключили контракт на 23 000 рублей, окупилось. Понравилась технология, она помогает нам получать лиды».</p>
+						<p class="category">Ниша: банкротство, списание долгов</p>
+					</li>
+				</ul>
+
+				<ul class="video__list">
+					<li class="video__item">
+						<div class="video__wrapper">
+							<button class="play" type="button" aria-label="Запустить видео">
+								<span class="visually-hidden">Запустить видео</span>
+								<svg width="53" height="62"><use xlink:href="#icon-play"></use></svg>								
+							</button>
+							<video loop="loop">
+								<source src="video/test.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+								<a href="video/test.mp4">Скачать видео</a>
+							</video>
+						</div>
+						<p class="name">Отзыв 1: название</p>
+					</li>
+					<li class="video__item">
+						<div class="video__wrapper">
+							<button class="play" type="button" aria-label="Запустить видео">
+								<span class="visually-hidden">Запустить видео</span>
+								<svg width="53" height="62"><use xlink:href="#icon-play"></use></svg>
+							</button>
+							<video loop="loop">
+								<source src="video/test.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+								<a href="video/test.mp4">Скачать видео</a>
+							</video>
+						</div>
+						<p class="name">Отзыв 2: название</p>
+					</li>
+					<li class="video__item">
+						<div class="video__wrapper">
+							<button class="play" type="button" aria-label="Запустить видео">
+								<span class="visually-hidden">Запустить видео</span>
+								<svg width="53" height="62"><use xlink:href="#icon-play"></use></svg>
+							</button>
+							<video loop="loop">
+								<source src="video/test.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+								<a href="video/test.mp4">Скачать видео</a>
+							</video>
+						</div>
+						<p class="name">Отзыв 3: название</p>
+					</li>
 				</ul>
 			</div>
 		</section>
 
-		<!-- <section class="advantages">
-			<h2 class="visually-hidden">Advantages company</h2>
-
-			<div class="advantages__wrapper container">
-				<picture class="advantages__img advantages__img--first animation-left">
-					<img src="img/advantages-1.webp" srcset="img/advantages-1@2x.webp 2x" alt="Development of the southern part of the city">
-				</picture>
-				<div class="advantages__center">
-					<ul class="advantages__list">
-						<li class="advantages__item animation-up">Uncompromising quality of construction and finishing. Investing in Durability</li>
-						<li class="advantages__item animation-up delay-1ms">Individual approach and personalization of projects: Create the home of your dreams</li>
-						<li class="advantages__item animation-up delay-2ms">Exclusive locations and infrastructure: Life in harmony with nature and comfort. We select only the most prestigious areas</li>
-						<li class="advantages__item animation-up delay-3ms">Excellent service and management: Forget about worries, enjoy life</li>
-					</ul>
-					<button class="advantages__button button animation-left delay-4ms" type="button" aria-label="order">order</button>
+		<section class="techno">
+			<div class="techno__wrapper container">
+				<div class="techno__content">
+					<h2 class="techno__title h2">Технология <span>«Лид Конвейер»<span class="smiling-face"></span></span></h2>
+					<div class="techno__text">
+						<p>Мы разработали программный комплекс, который позволяет определять контактные данные (телефон, Telegram, email) тех посетителей вашего сайта, кто был на сайте, но не оставил заявку.</p>
+						<p>Далее, на основе собственных разработок, мы идентифицируем пользователей по интересам и интересующим их товарам и услугам — вам передаём только тех, кто заинтересован в вашей услуге или товаре.</p>
+						<p>Вы платите только за результат — за полученных Лидов (заявки) на свои услуги или товары.</p>
+					</div>
 				</div>
-				<picture class="advantages__img advantages__img--second animation-right delay-5ms">
-					<img src="img/advantages-2.webp" srcset="img/advantages-2@2x.webp 2x" alt="Coastal hotel">
-				</picture>
+				<div class="techno__img">
+					<svg class="techno__star-first" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+					<picture>
+						<img src="img/techno.webp" srcset="img/techno@2x.webp 2x" alt="Технология «Лид Конвейер»">
+					</picture>
+					<svg class="techno__star-second" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+				</div>
+				
 			</div>
-		</section> -->
+		</section>
 
-		<!-- <section class="сonsultation">
-			<div class="сonsultation__wrapper container">
-				<div class="consultation__wrapper-form animation-up delay-1ms">
-					<h2 class="сonsultation__title">Consultation on housing construction</h2>
+		<section class="registration">
+			<div class="registration__wrapper block container">
+				<h2 class="visually-hidden">Регистрация</h2>
+				<div class="block__content">
+					<p class="block__title">Зарегистрируйтесь и добавьте свой проект в систему — начните получать Лидов сегодня!</p>
+					<button class="block__button button" type="button" aria-label="Зарегистрироваться">Зарегистрироваться</button>
+				</div>
+				<div class="block__img">
+					<svg class="star" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+					<svg class="block__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="683" height="403" viewBox="0 0 683 403" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/mask/portrait-young.webp" width="100%" height="100%" mask="url(#block-mask)"></image></svg>
+				</div>
+			</div>
+		</section>
 
-					<form id="сonsultation" class="сonsultation__form form" action="https://echo.htmlacademy.ru" method="POST">
-
-						<div class="form__items">
-							<p class="form__item">
-								<input class="form__input" type="text" name="user__name" id="user__name"  value="" placeholder="Name">
-								<label class="visually-hidden" for="user__name">Your name</label>
-							</p>
-							<p class="form__item">
-								<input class="form__input" type="email" name="user__email" id="user__email"  value="" placeholder="E-mail">
-								<label class="visually-hidden" for="user__email">Your e-mail</label>
-							</p>
+		<section class="steps">
+			<div class="steps__wrapper container">
+				<h2 class="steps__title h2">Как это работает?</h2>
+				
+				<div class="steps__list	swiper">
+					<div class="swiper-wrapper">						
+						<div class="steps__item	swiper-slide">
+							<div class="steps__name">
+								<p class="number">01<span class="man-technologist"></span></p>
+								<h3 class="title">Регистрация <br>и добавление проекта в систему</h3>
+							</div>
+							<ol class="steps__ol">
+								<li class="item">Зарегистрируйтесь в нашем личном кабинете</li>
+								<li class="item">При добавление проекта вам необходимо указать URL (адрес) своего сайта</li>
+								<li class="item">Для вашего сайта будет сгенерирован уникальный код, который необходимо установить на свой сайт (в шаблоне сайта, перед тегом &lt;/head&gt;)</li>
+							</ol>
 						</div>
+						<!-- <div class="steps__item swiper-slide">
+							<div class="steps__name">
+								<p class="number">02<span class="check-mark"></span></p>
+								<h3 class="title">Выбор пакета <br>и количества Лидов</h3>
+							</div>
+							<p class="steps__content">После добавления проекта в систему, вам необходимо выбрать тот пакет и количество Лидов, которое вам необходимо.</p>
+						</div> -->
+						<!-- <div class="steps__item swiper-slide">
+							<div class="steps__name">
+								<p class="number">03<span class="money-with-wings"></span></p>
+								<h3 class="title">Оплата проекта</h3>
+							</div>
+							<p class="steps__content">Оплатить Лидов вы сможете пластиковой картой или безналичным переводом.</p>
+						</div> -->
+						<!-- <div class="steps__item swiper-slide">
+							<div class="steps__name">
+								<p class="number">04<span class="locked"></span></p>
+								<h3 class="title">Получение кода для сайта</h3>
+							</div>
+							<p class="steps__content">После оплаты, система для вас сгенерирует код, который вам необходимо установить на свой сайт (в шаблоне сайта, перед тегом &lt;/head&gt;).</p>
+						</div> -->
+						<!-- <div class="steps__item swiper-slide">
+							<div class="steps__name">
+								<p class="number">05<span class="star-struck"></span></p>
+								<h3 class="title">Начало получения Лидов</h3>
+							</div>
+							<p class="steps__content">В зависимости от вашей тематики (услуги или товара), а также объёма вашего трафика сайта система будет добавлять в личном кабинете контакты потенциальных клиентов, заинтересованных в вашей услуги и из вашего региона.</p>
+						</div> -->
 
-						<label class="form__checkbox-item">
-							<input type="checkbox" name="rules" class="visually-hidden" checked="">
-							<span class="form__checkbox-indicator"></span>
-							<span class="form__checkbox-text">I accept Privacy policy</span>
-						</label>					
-						<input type="submit" class="сonsultation__submit button button--dark" value="Sign up">
-					</form>
+					</div>
+					<div class="steps__dots swiper-pagination">
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>			
+			</div>
+		</section>
+
+		<section class="presentation">
+			<div class="presentation__wrapper container">
+				<h2 class="visually-hidden">Видео-презентация</h2>
+				<p class="presentation__title h2">Мы подготовили для вас видео-презентацию <span>нашей работы</span><span class="video-camera"></span></p>	
+				<div class="presentation__wrapper">
+					<button class="play" type="button" aria-label="Запустить видео">
+						<span class="visually-hidden">Запустить видео</span>
+						<svg width="53" height="62"><use xlink:href="#icon-play"></use></svg>								
+					</button>
+					<video loop="loop">
+						<source src="video/test.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+						<a href="video/test.mp4">Скачать видео</a>
+					</video>
 				</div>
 			</div>
-		</section> -->
+		</section>
+
+		<!-- <div class="block__content">
+			<p class="block__title">Зарегистрируйтесь и добавьте свой проект в систему — начните получать Лидов сегодня!</p>
+			<button class="block__button button" type="button" aria-label="Зарегистрироваться">Зарегистрироваться</button>
+		</div>
+		<div class="block__img">
+			<svg class="star" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
+			<svg class="block__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="683" height="403" viewBox="0 0 683 403" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/mask/portrait-young.webp" width="100%" height="100%" mask="url(#block-mask)" /></svg>
+		</div> -->
+
+		<!-- <svg class="block__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="683" height="403" viewBox="0 0 683 403" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/mask/portrait-happy.webp" width="100%" height="100%" mask="url(#block-mask-left)" /></svg>
+
+		<svg class="block__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="879" height="582" viewBox="0 0 879 582" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/mask/faq-img.webp" width="100%" height="100%" mask="url(#faq-mask)" /></svg> -->
+		
 	</main>
 
 	<!-- <footer class="page-footer">
@@ -416,6 +592,7 @@
 	<!-- <script src="js/scroll.min.js"></script> -->
 	<script src="js/common.min.js"></script>
 	<script src="js/hamburger.min.js"></script>
+	<script src="js/video.min.js"></script>
 	<!-- <script src="js/modal.min.js"></script> -->
 
 </body>

@@ -1,0 +1,352 @@
+.steps {
+	margin-bottom: 50px;
+}
+
+.steps__wrapper {
+	width: auto;
+	margin: 0 20px;
+	padding: 20px 20px 30px 20px;
+	background-color: @bg-block;	
+	border-radius: 20px;
+}
+
+.steps__title {
+	margin-bottom: 20px;
+	font-family: @ff-m;
+	font-weight: 700;	
+	text-align: center;
+	letter-spacing: 0;	
+}
+
+.steps__item {
+	margin-bottom: 40px;
+}
+
+.steps__name {
+	margin-bottom: 20px;
+	font-family: @ff-m;	
+	.number {
+		position: relative;
+		margin-bottom: 25px;
+		font-size: 40px;
+		text-align: center;
+		.man-technologist,
+		.check-mark,
+		.money-with-wings,
+		.locked,
+		.star-struck {
+			display: inline-block;
+			position: relative;
+			top: 3px;
+			width: 40px;
+			height: 40px;
+			margin-left: 10px;
+			background-image: url('../img/man-technologist.webp');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.check-mark {
+			background-image: url('../img/check-mark.webp');
+		}
+		.money-with-wings {
+			background-image: url('../img/money-with-wings.webp');
+		}
+		.locked {
+			background-image: url('../img/locked.webp');
+		}
+		.star-struck {
+			background-image: url('../img/star-struck.webp');
+		}
+
+	}
+
+	.title {
+		font-size: 26px;
+		line-height: 28px;
+		letter-spacing: 0;
+		text-align: center;
+	}
+}
+
+.steps__ol {
+	margin: 0;
+	padding-left: 25px;
+	.item {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: .7px;
+	}
+}
+
+.steps__content {
+	margin: 0;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .7px;
+}
+
+.steps__dots {
+	display: flex;
+	justify-content: center;
+	span {
+		display: block;		
+		margin: 0 5px;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: #dbdbdb;
+		transition: @animation;
+		&.active {
+			background-color: @orange-juice;
+			&:hover,
+			&:focus {
+				background-color: @orange-juice;
+			}
+		}
+		&:hover,
+		&:focus {
+			background-color: @grey-light;
+		}
+		&:active {
+			background-color: @orange-juice;
+		}
+		&[disabled] {
+			background-color: @grey;
+		}
+	}
+}
+
+@media (min-width: 400px) {
+	.steps__wrapper {
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: @mobile-width) {
+	.steps__wrapper {
+		width: 60%;
+	}
+}
+
+@media (min-width: 600px) {
+	.steps__wrapper {
+		width: 50%;
+	}
+}
+
+@media (min-width: @tablet-width) {
+	.steps {
+		margin-bottom: 50px;
+	}
+
+	.steps__wrapper {
+		width: 548px;
+		padding: 30px 30px 40px 30px;
+	}
+
+	.steps__title {
+		margin-bottom: 30px;
+	}
+
+	.steps__name {
+		margin-bottom: 30px;
+		.number {
+			font-size: 50px;
+			.man-technologist,
+			.check-mark,
+			.money-with-wings,
+			.locked,
+			.star-struck {
+				width: 45px;
+				height: 45px;
+				margin-left: 12px;
+			}
+		}
+
+		.title {
+			font-size: 28px;
+			line-height: 32px;			
+		}
+	}
+
+	.steps__ol {
+		margin: 0;
+		padding-left: 35px;
+	}
+
+	.steps__dots {
+		span {
+			margin: 0 7px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.steps {
+		margin-bottom: 70px;
+	}
+
+	.steps__title {
+		margin-bottom: 45px;
+	}
+
+	.steps__name {
+		.number {
+			font-size: 60px;
+			.man-technologist,
+			.check-mark,
+			.money-with-wings,
+			.locked,
+			.star-struck {
+				width: 55px;
+				height: 55px;
+				margin-left: 12px;
+			}
+		}
+
+		.title {
+			font-size: 36px;
+			line-height: 40px;
+		}
+	}
+
+	.steps__ol {
+		.item {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+
+	.steps__content {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+	.steps {
+		margin-bottom: 110px;
+	}
+
+	.steps__wrapper {
+		width: 1060px;
+		padding: 50px 60px 60px 60px;
+	}
+
+	.steps__item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.steps__name {
+		width: 40%;
+		.number {
+			text-align: left;
+		}
+
+		.title {
+			text-align: left;
+		}
+	}
+
+	.steps__ol {
+		width: 50%;
+		padding-top: 30px;
+	}
+
+	.steps__content {
+		width: 50%;
+		padding-top: 30px;
+	}
+}
+
+@media (min-width: @desktop-1600-width) {
+	.steps__wrapper {
+		width: 1460px;
+		padding: 80px 150px 77px 150px;
+		border-radius: 40px;
+	}
+
+	.steps__title {
+		margin-bottom: 55px;
+	}
+
+	.steps__item {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 60px;
+	}
+
+	.steps__name {
+		margin-bottom: 0;
+		.number {
+			font-size: 80px;
+			line-height: 89px;
+			.man-technologist,
+			.check-mark,
+			.money-with-wings,
+			.locked,
+			.star-struck {
+				top: 7px;
+				width: 72px;
+				height: 72px;
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.steps__ol {
+		width: 50%;
+		.item {
+			font-size: 22px;
+			line-height: 29px;
+		}
+	}
+
+	.steps__content {
+		width: 50%;
+		font-size: 22px;
+		line-height: 29px;
+	}
+
+	.steps__dots {
+		span {			
+			margin: 0 8px;
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.steps__wrapper {		
+		width: 1780px;
+	}
+
+	.steps__name {		
+		width: 620px;
+
+		.title {
+			font-size: 48px;
+			line-height: 52px;
+		}
+	}
+
+	.steps__ol {
+		width: 693px;
+		.item {
+			font-size: 24px;
+		}
+	}
+}
+
+&:hover,
+&:focus {
+	
+}

@@ -1,0 +1,101 @@
+.presentation {
+	margin-bottom: 50px;
+}
+
+.presentation__title {
+	span {
+		display: inline-block;
+	}
+	.video-camera {
+		display: inline-block;
+		position: relative;
+		top: 3px;
+		// width: 40px;
+		// height: 40px;
+		width: 72px;
+		height: 72px;
+		margin-left: 10px;
+		background-image: url('../img/video-camera.webp');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.presentation__wrapper {	
+	position: relative;
+	// width: 1180px;
+	margin-bottom: 5px;
+	line-height: 0;
+	border-radius: 20px;
+	overflow: hidden;
+	.play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		padding: 0;
+		transform: translate(-50%, -50%);
+		background-color: transparent;
+		border: none;
+		opacity: 0.7;
+		transition: @animation;
+		svg {
+			position: relative;
+			top: 9px;
+			left: -4px;
+			width: 35px;
+			height: 41px;
+			transform: rotate(120deg);
+		}
+		&--hide {
+			display: none;
+		}
+	}
+	video {
+		width: 100%;
+	}
+	&:hover,
+	&:focus {
+		.play {
+			opacity: 1;
+		}
+	}
+}
+
+
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	.presentation {
+		margin-bottom: 70px;
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+	.presentation {
+		margin-bottom: 120px;
+	}
+}
+
+@media (min-width: @desktop-1600-width) {
+	
+}
+
+@media (min-width: @desktop-full-width) {
+	
+}
+
+&:hover,
+&:focus {
+	
+}
