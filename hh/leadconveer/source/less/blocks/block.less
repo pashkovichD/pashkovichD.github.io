@@ -29,7 +29,8 @@
 .block__img {
 	position: relative;
 	width: 100%;
-	.star {
+	.star-first,
+	.star-second {
 		position: absolute;
 		bottom: -10px;
 		left: -5px;
@@ -43,6 +44,27 @@
 .block__img-svg {
 	width: 100%;
 	height: auto;
+}
+
+.block--left {
+	.block__img  {
+		.star-first {
+			top: -8px;
+			bottom: auto;
+			left: -3px;
+			width: 40px;
+			height: 41px;
+			transform: rotate(5deg);
+		}
+		.star-second {
+			bottom: -9px;
+			left: auto;
+			right: -4px;
+			width: 40px;
+			height: 41px;
+			transform: rotate(-15deg);
+		}
+	}
 }
 
 @media (min-width: 400px) {
@@ -99,12 +121,16 @@
 
 	.block__img {		
 		width: 50%;
-		.star {
-			bottom: -10px;
-			left: -5px;
-			width: 40px;
-			height: 41px;
+	}
+
+	.block--left {
+		.block__content {
+			order:2;
+			width: 46%;
 		}
+		.block__img  {
+			order:1;
+		}		
 	}
 }
 
@@ -127,13 +153,35 @@
 	}
 
 	.block__img {
-		.star {
+		.star-first,
+		.star-second {
 			bottom: 10px;
 			left: 10px;
 			width: 60px;
 			height: 61px;
 		}
 	}
+	.block--left {
+		.block__content {
+			width: 44%;
+		}
+		.block__img {
+			.star-first {
+				top: -8px;
+				bottom: auto;
+				left: -3px;
+				width: 60px;
+				height: 61px;
+			}
+			.star-second {
+				bottom: -9px;
+				left: auto;
+				right: -4px;
+				width: 60px;
+				height: 61px;
+			}
+		}
+	}	
 }
 
 @media (min-width: @desktop-1600-width) {
@@ -158,11 +206,30 @@
 	}
 
 	.block__img {
-		.star {
+		.star-first {
 			bottom: 7px;
 			left: 24px;
 			width: 88px;
 			height: 89px;
+		}
+	}
+
+	.block--left {
+		.block__img {
+			.star-first {				
+				top: 8px;
+				bottom: auto;				
+				left: 5px;
+				width: 70px;
+				height: 71px;
+			}
+			.star-second {
+				bottom: 16px;
+				left: auto;
+				right: 10px;
+				width: 70px;
+				height: 71px;
+			}
 		}
 	}
 }
@@ -184,6 +251,22 @@
 
 	.block__img {		
 		width: 683px;
+	}
+
+	.block--left {
+		.block__content {
+			width: 760px;
+			margin-right: 25px;
+		}
+		.block__img {
+			width: 683px;
+			margin-left: 30px;			
+			.star-second {
+				bottom: 36px;
+				left: auto;				
+				right: 48px;
+			}
+		}
 	}
 }
 
