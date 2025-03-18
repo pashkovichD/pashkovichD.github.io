@@ -1,0 +1,178 @@
+.accordion {
+
+}
+
+/* Стилизация кнопок, которые используются для открытия и закрытия панели аккордеона */
+.accordion__title {
+	position: relative;	
+	width: 100%;
+	padding: 20px 70px 20px 20px;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 3px solid transparent;
+	background-color: @bg-block;
+	letter-spacing: .8px;
+	transition: all 0.25s ease-out;
+	svg {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		width: 25px;
+		height: 25px;
+		margin-top: -12px;
+		transition: .2s ease-out;
+	}	
+}
+
+.accordion__title:focus,
+.accordion__title:hover {
+	border-color: @orange-juice;
+	svg {
+		fill: @orange-juice;
+	}
+}
+
+.active {
+	border-color: @grey;
+	&:focus,
+	&:hover {
+		border-color: @grey;
+	}
+}
+
+/* Стиль .content аккордеона. NOTE: скрыто по умолчанию */
+.accordion__content {
+	margin-top: 20px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	.wrapper {
+		margin-bottom: 20px;
+		background-color: @bg-block;
+		border-radius: 20px;
+		p {
+			margin: 0 20px;
+			margin-bottom: 20px;
+			font-size: 16px;
+			line-height: 22px;
+			&:first-child {
+				padding-top: 20px;
+			}
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 20px;
+			}
+		}	
+	}	
+}
+
+.active {
+	svg {		
+		transform: rotate(180deg);
+		path {
+			fill: @dark;
+		}
+		.plus__vertical {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: @mobile-width) {
+	
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+	.accordion__title {
+		padding: 30px 90px 30px 30px;
+		font-size: 18px;
+		line-height: 24px;
+		svg {
+			right: 30px;
+			width: 30px;
+			height: 30px;
+			margin-top: -15px;
+		}	
+	}
+
+	.accordion__content {
+		.wrapper {
+			p {
+				margin: 0 30px;
+				margin-bottom: 20px;
+				font-size: 18px;
+				line-height: 24px;
+				&:first-child {
+					padding-top: 30px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+					padding-bottom: 30px;
+				}
+			}	
+		}	
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+
+}
+
+@media (min-width: @desktop-1600-width) {
+	.accordion__title {
+		padding: 30px 90px 30px 30px;
+		font-size: 22px;
+		line-height: 29px;	
+		border-radius: 30px;	
+	}
+}
+
+@media (min-width: @desktop-full-width) {
+	.accordion__title {
+		min-height: 126px;
+		padding: 37px 147px 37px 37px;
+		font-size: 24px;		
+		svg {			
+			right: 40px;
+			width: 50px;
+			height: 50px;
+			margin-top: -25px;
+		}	
+	}
+	
+	.accordion__content {
+		.wrapper {			
+			border-radius: 40px;
+			p {
+				margin: 0 40px;
+				margin-bottom: 30px;
+				font-size: 24px;
+				line-height: 29px;
+				&:first-child {
+					padding-top: 40px;
+				}
+				&:last-child {
+					padding-bottom: 40px;
+				}
+			}	
+		}	
+	}
+}
+
+&:hover,
+&:focus {
+	
+}

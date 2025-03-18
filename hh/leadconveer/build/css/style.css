@@ -359,6 +359,148 @@ picture {
     cursor: url('../img/cursor.svg'), pointer;
   }
 }
+/* Стилизация кнопок, которые используются для открытия и закрытия панели аккордеона */
+.accordion__title {
+  position: relative;
+  width: 100%;
+  padding: 20px 70px 20px 20px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-color: #f6f6f6;
+  letter-spacing: 0.8px;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.accordion__title svg {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  margin-top: -12px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.accordion__title:focus,
+.accordion__title:hover {
+  border-color: #ff6600;
+}
+.accordion__title:focus svg,
+.accordion__title:hover svg {
+  fill: #ff6600;
+}
+.active {
+  border-color: #808080;
+}
+.active:focus,
+.active:hover {
+  border-color: #808080;
+}
+/* Стиль .content аккордеона. NOTE: скрыто по умолчанию */
+.accordion__content {
+  margin-top: 20px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+.accordion__content .wrapper {
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+.accordion__content .wrapper p {
+  margin: 0 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.accordion__content .wrapper p:first-child {
+  padding-top: 20px;
+}
+.accordion__content .wrapper p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.active svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.active svg path {
+  fill: #2d2d2d;
+}
+.active svg .plus__vertical {
+  display: none;
+}
+@media (min-width: 960px) {
+  .accordion__title {
+    padding: 30px 90px 30px 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .accordion__title svg {
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+  }
+  .accordion__content .wrapper p {
+    margin: 0 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .accordion__content .wrapper p:first-child {
+    padding-top: 30px;
+  }
+  .accordion__content .wrapper p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .accordion__title {
+    padding: 30px 90px 30px 30px;
+    font-size: 22px;
+    line-height: 29px;
+    border-radius: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .accordion__title {
+    min-height: 126px;
+    padding: 37px 147px 37px 37px;
+    font-size: 24px;
+  }
+  .accordion__title svg {
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+  .accordion__content .wrapper {
+    border-radius: 40px;
+  }
+  .accordion__content .wrapper p {
+    margin: 0 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .accordion__content .wrapper p:first-child {
+    padding-top: 40px;
+  }
+  .accordion__content .wrapper p:last-child {
+    padding-bottom: 40px;
+  }
+}
 .hamburger {
   position: relative;
   width: 25px;
@@ -3357,13 +3499,106 @@ picture {
 .faq {
   margin-bottom: 50px;
 }
+.faq__title {
+  margin-bottom: 20px;
+}
+.faq__img {
+  width: 100%;
+}
 @media (min-width: 960px) {
   .faq {
     margin-bottom: 70px;
   }
+  .faq__wrapper {
+    width: 650px;
+  }
+  .faq__title {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 1200px) {
   .faq {
+    margin-bottom: 120px;
+  }
+  .faq__wrapper {
+    width: 900px;
+  }
+  .faq__title {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .faq__wrapper {
+    width: 1520px;
+  }
+  .faq__title {
+    margin-bottom: 40px;
+  }
+  .faq__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .faq__accordion {
+    width: 700px;
+  }
+  .faq__img {
+    width: 740px;
+  }
+}
+@media (min-width: 1920px) {
+  .faq__wrapper {
+    width: 1920px;
+  }
+  .faq__title {
+    margin-right: 110px;
+  }
+  .faq__accordion {
+    width: 880px;
+  }
+  .faq__img {
+    width: 879px;
+  }
+}
+.info {
+  margin-bottom: 50px;
+}
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.info__left {
+  width: 690px;
+}
+.info__title {
+  position: relative;
+  text-align: left;
+}
+.info__title .rocket {
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url('../img/rocket.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info__content {
+  width: 730px;
+}
+@media (min-width: 960px) {
+  .info {
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .info {
     margin-bottom: 120px;
   }
 }
