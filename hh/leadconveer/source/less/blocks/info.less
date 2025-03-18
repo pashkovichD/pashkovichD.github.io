@@ -4,18 +4,21 @@
 
 .info__wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .info__left {
 	width: 690px;
+	margin-right: 60px;
 }
 
 .info__title {
 	position: relative;
+	margin-bottom: 60px;
 	text-align: left;
 	.rocket {
 		display: block;
+		margin-top: 30px;
 		// position: absolute;
 		// bottom: 1px;
 		// width: 30px;
@@ -28,8 +31,31 @@
 	}
 }
 
+.info__button {
+	width: 100%;
+	padding: 24px 60px;
+	font-size: 24px;
+}
+
 .info__content {
 	width: 730px;
+	font-size: 24px;
+	line-height: 29px;
+	.text {
+		p {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.info__read {
+	padding-top: 10px;
+}
+
+.info__more {
+	p {
+		margin-bottom: 20px;
+	}
 }
 
 @media (min-width: @mobile-width) {
