@@ -22,7 +22,7 @@ var del = require("del"); // библиотека для удаления пап
 
 
 gulp.task("style", function() {
-	gulp.src("source/less/style.less")
+	gulp.src("source/less/style.less")	
 		.pipe(plumber()) //показывает ошибку в консоли, но автоматизация продолжает работать
 		.pipe(less())
 		.pipe(postcss([
@@ -89,6 +89,7 @@ gulp.task("webp", function() {
 
 gulp.task("copy", function() {
 	return gulp.src([
+			"source/css/swiper/**",
 			"source/fonts/**/*.{woff,woff2}",
 			"source/img/**",
 			"source/video/**",
