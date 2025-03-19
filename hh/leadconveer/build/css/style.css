@@ -120,7 +120,7 @@
   font-display: swap;
 }
 .swiper-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .container {
   width: 100%;
@@ -3980,8 +3980,8 @@ picture {
 }
 .contacts__desc {
   margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #808080;
 }
@@ -4053,6 +4053,10 @@ picture {
   }
   .contacts__wrapper {
     width: 500px;
+  }
+  .contacts__desc {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 @media (min-width: 1200px) {
