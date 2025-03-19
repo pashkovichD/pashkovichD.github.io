@@ -1,4 +1,4 @@
-.modal-order {
+.modal-registration {
   display: none;
   width: 280px;  
   padding: 20px;
@@ -14,14 +14,14 @@
   z-index: 100;
 }
 
-.modal-order__button {
+.modal-registration__button {
   width: 100%;
   padding: 15px 30px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
 }
 
-.modal-order__close {  
+.modal-registration__close {  
 	display: none;
 
   position: absolute;
@@ -40,8 +40,8 @@
 	transition: all 0.2s ease;
 }
 
-.modal-order__close::before,
-.modal-order__close::after {
+.modal-registration__close::before,
+.modal-registration__close::after {
   content: '';
   position: absolute;
   top: 12px;
@@ -51,28 +51,32 @@
   background-color: #ffffff;
 }
 
-.modal-order__close::before {
+.modal-registration__close::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.modal-order__close::after {
+.modal-registration__close::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.modal-order__close:hover {
+.modal-registration__close:hover {
   opacity: 1;
 }
 
 @media (min-width: @mobile-width) {  
-  .modal-order {
+  .modal-registration {
     width: 350px;
     margin-left: -175px;
     padding: 30px;
   }
 
-  .modal-order__close {
+  .modal-registration__button {
+    font-size: 16px;
+  }
+
+  .modal-registration__close {
     display: block;
   }  
 }
@@ -83,13 +87,13 @@
 }
 
 @media (min-width: @desktop-1200-width) {
-  .modal-order {
+  .modal-registration {
     width: 450px;
     margin-left: -225px;    
   }
 
-  .modal-order__button {
-    padding: 16px 40px;
+  .modal-registration__button {
+    padding: 24px 40px;
     font-size: 20px;
   }
 }

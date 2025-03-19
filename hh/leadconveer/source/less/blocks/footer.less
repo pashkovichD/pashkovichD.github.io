@@ -1,136 +1,75 @@
 .page-footer {
-	border-top: 2px solid #d5c9be;
+	min-width: 320px;
+	background-color: @dark;
+	border-radius: 20px 20px 0 0;
 }
 
-.page-footer__menu {
-	overflow: hidden;
-	padding: 0;
-	.menu__list {
-		.menu__item {
-
-		}
-	}
-}
-
-.page-footer__menu-list {
-	position: relative;	
-	justify-content: center;
-	li {		
-		a {
-			font-size: 18px;
-			line-height: 150%;
-		}
-	}
-}
-
-.page-footer__bottom {
-	border-top: 2px solid #d5c9be;
-}
-
-.page-footer__info {
-	margin-bottom: 30px;
-	padding-top: 40px;
-	text-align: center;	
-}
-
-.page-footer__logo {
-	margin-bottom: 30px;
-}
-
-.page-footer__socials {
-	margin-bottom: 20px;
-	ul {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		li {
-			margin: 0 16px 10px;
-			line-height: 0;
-			a {
-				display: inline-block;
-				line-height: 0;
-				svg {
-					fill: #d5c9be;
-					opacity: 0.7;
-					transition: @animation;
-				}
-				&:hover,
-				&:focus {
-					svg {
-						opacity: 1;
-					}
-				}
-			}
-		}
-	}
-}
-
-.page-footer__order {
-	margin: 0 auto;
-	padding: 22px 54px;	
-	font-size: 20px;
-	font-style: italic;
-	font-weight: 300;
-}
-
-.page-footer__links {
-	padding-bottom: 20px;
-	font-size: 16px;
-	line-height: 150%;
-	color: #ffffff;
-	text-align: center;
-	a {
-		font-size: 16px;
-		line-height: 150%;
-		text-decoration: none;
-		color: #d5c9be;
-		opacity: 0.7;
-		&:hover,
-		&:focus {
-			opacity: 1;
-		}
-	}
+.page-footer__wrapper {
+	padding: 30px;
 }
 
 .page-footer__copyright {
 	margin-bottom: 10px;
-}
-
-.page-footer__policy {
-	display: block;	
-	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 1px;
 	text-align: center;
+	color: @white;
 }
 
-.page-footer__terms {
-	display: block;
+.page-footer__ogrn {
+	margin-bottom: 25px;
+	font-size: 13px;
+	line-height: 22px;
+	text-align: center;
+	color: @white;
 }
 
-@media (min-width: @mobile-width) {
-	.page-footer__menu {
-		padding: 10px 0;
-		.menu__list {
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			position: relative;
-			left: auto;
-			right: auto;
-			width: auto;
-			background-color: transparent;
-			margin-left: auto;
-			padding-top: 0;
-			padding-right: 20px;		
-			.menu__item {
-				margin-bottom: 0;
-				border-bottom: none;
-			}
+.page-footer__item {
+	position: relative;
+	margin-bottom: 2px;	
+	text-align: center;
+	a {
+		display: inline-block;
+		padding: 0 10px;
+		padding-bottom: 5px;
+		font-size: 14px;
+		line-height: 22px;
+		text-align: center;
+		color: @grey;
+		border-bottom: 1px dotted #5a5a5a;
+		&:hover,
+		&:focus {
+			color: @white;
+		}
+		&:active {
+			color: @orange-juice;
+		}		
+	}
+	&:last-child {
+		a {
+			border-bottom: none;
 		}
 	}
-
-	.page-footer__menu-list {
-		width: auto;
+	&:after {
+		position: absolute;
+		top: 5px;
+		bottom: 5px;
+		right: 0;
+		width: 1px;
+		background-color: @grey;
 	}
+
+	&:last-child {
+		&:after {
+			content: none;
+		}
+	}
+}
+
+
+@media (min-width: @mobile-width) {
+
 }
 
 @media (min-width: 600px) {
@@ -138,103 +77,150 @@
 }
 
 @media (min-width: @tablet-width) {
-	.page-footer__order {
-		padding: 25px 55px;
+	.page-footer {
+		border-radius: 30px 30px 0 0;
 	}
 
-	.page-footer__links {
-		font-size: 20px;		
+	.page-footer__wrapper {
+		padding: 40px;
+	}
+
+	.page-footer__copyright {
+		margin-bottom: 10px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.page-footer__ogrn {
+		margin-bottom: 25px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.page-footer__item {
 		a {
-			font-size: 20px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+		&:last-child {
+			a {
+				border-bottom: none;
+			}
 		}
 	}
+}
 
+@media (min-width: @desktop-width) {
 	.page-footer__copyright {
 		margin-bottom: 15px;
 	}
 
-	.page-footer__policy {
-		margin-bottom: 15px;		
-	}	
-}
+	.page-footer__ogrn {
+		margin-bottom: 30px;
+	}
 
-@media (min-width: @desktop-width) {
-	.page-footer__info {
+	.page-footer__menu {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		text-align: left;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
-	.page-footer__logo {
-		width: 200px;
-		margin-right: 20px;
-		margin-bottom: 0;
-	}
-
-	.page-footer__socials {
-		margin-bottom: 0;
-	}
-
-	.page-footer__order {
-		margin: 0;
-		margin-left: 20px;		
-	}
-
-	.page-footer__links {
-		display: flex;
-		justify-content: space-between;
-		text-align: left;
-	}
-
-	.page-footer__copyright {
-		width: 250px;
-		margin-right: 20px;
-		margin-bottom: 0;
-	}
-
-	.page-footer__policy {		
-		width: 700px;
-		margin-bottom: 0;
-	}
-
-	.page-footer__terms {		
-		width: 250px;
-		margin-left: 20px;
-		text-align: right;
+	.page-footer__item {
+		a {
+			border-bottom: none;
+		}
+		&:last-child {
+			a {
+				border-bottom: none;
+			}
+		}
 	}
 }
 
 @media (min-width: @desktop-1200-width) {
+	.page-footer__copyright {
+		font-size: 24px;
+		line-height: 32px;
+	}
 
-}
+	.page-footer__ogrn {
+		font-size: 20px;
+		line-height: 28px;
+	}
 
-@media (min-width: @desktop-1600-width) {
-	.page-footer__menu-list {		
-		li {			
+	.page-footer__item {
+		a {
+			font-size: 16px;
+			line-height: 22px;
+			text-align: left;			
+		}
+		&:last-child {
 			a {
-				font-size: 20px;
+				
+			}
+		}
+		&:after {
+			content: '';
+		}
+
+		&:last-child {
+			&:after {
+				content: none;
 			}
 		}
 	}
+}
 
-	.page-footer__bottom-wrapper {
-		padding: 0 182px 0 160px;
+@media (min-width: @desktop-1600-width) {
+	.page-footer {
+		border-radius: 40px 40px 0 0;
 	}
 
-	.page-footer__links {
-		margin-bottom: 50px;
+	.page-footer__wrapper {
+		padding: 60px;
+	}
+
+	.page-footer__copyright {
+		margin-bottom: 20px;
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.page-footer__ogrn {
+		margin-bottom: 35px;
+	}
+
+	.page-footer__item {
+		a {
+			font-size: 18px;
+			line-height: 24px;
+		}
 	}
 }
 
 @media (min-width: @desktop-full-width) {
-	.page-footer__menu {
-		padding: 30px;
-		.menu__list {
-			padding: 0;
-			.menu__item {
+	.page-footer {
+		border-radius: 40px 40px 0 0;
+	}
 
-			}
+	.page-footer__wrapper {
+		padding: 80px;
+	}
+
+	.page-footer__copyright {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.page-footer__ogrn {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.page-footer__item {
+		a {
+			font-size: 20px;
+			line-height: 32px;
 		}
 	}
 }

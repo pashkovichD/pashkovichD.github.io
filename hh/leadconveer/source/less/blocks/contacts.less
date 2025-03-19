@@ -4,41 +4,26 @@
 
 .contacts__wrapper {
 	width: auto;
-	// display: flex;
-	// justify-content: space-between;
-	// width: 1780px;
 	margin-left: 20px;
 	margin-right: 20px;
-	// margin-left: 0;
-	// margin-right: 0;
 	padding: 0;
 	border-radius: 20px;
-	// border-radius: 60px;
-	// background-color: @bg-block;
-	background-color: @grey-light;
+	background-color: @bg-block;
 }
 
 .contacts__content {
 	width: auto;
-
-	// width: 840px;
-	// margin-right: 60px;
 	padding: 20px;
-	// padding: 80px 0 20px 80px;
 }
 
 .contacts__title {
 	margin-bottom: 20px;
-	// padding-right: 50px;
 }
 
 .contacts__desc {
 	margin-bottom: 20px;
-	// margin-bottom: 65px;
 	font-size: 18px;
 	line-height: 24px;
-	// font-size: 32px;
-	// line-height: 38px;
 	text-align: center;
 	color: @grey;
 }
@@ -49,13 +34,9 @@
 
 .contacts__item {
 	margin-bottom: 10px;
-	// margin-bottom: 35px;
 	font-size: 16px;
 	line-height: 22px;
-	// font-size: 32px;
-	// line-height: 38px;
 	.title {
-		// margin-bottom: 10px;
 		color: @grey;
 	}
 	.text {
@@ -71,12 +52,8 @@
 }
 
  .contacts__item--socials {
- 	// display: flex;
  	margin-bottom: 0;
  	.title {
- 		// flex-grow: 1;
- 		// width: 500px;
- 		margin-bottom: 0;
  		margin-bottom: 10px;
  	}
  	.text {
@@ -88,22 +65,17 @@
  			svg {
  				width: 40px;
  				height: 40px;
- 				// width: 64px;
- 				// height: 64px;
  			}
  			&:last-child {
 	 			margin-right: 0;
 	 		}
  		}
-
  	}
  }
 
 .contacts__img {
-	// width: 880px;
 	img {		
 		border-radius: 20px;
-		// border-radius: 60px;
 	}
 }
 
@@ -149,27 +121,107 @@
 	.contacts {
 		margin-bottom: 120px;
 	}
+
+	.contacts__wrapper {		
+		display: flex;
+		justify-content: space-between;
+		width: 1120px;	
+		border-radius: 30px;
+	}
+
+	.contacts__content {
+		width: 45%;	
+		padding: 40px 0 20px 40px;
+	}
+
+	.contacts__desc {
+		margin-bottom: 40px;
+	}
+
+	.contacts__item {
+		margin-bottom: 15px;
+		font-size: 18px;
+		line-height: 24px;
+		.title {
+			margin-bottom: 2px;
+		}
+	}
+
+	 .contacts__item--socials {
+	 	margin-bottom: 0;
+	 	.title {
+	 		margin-bottom: 10px;
+	 	}
+	 	.text {
+	 		a {
+	 			svg {
+	 				width: 50px;
+	 				height: 50px;
+	 			}
+	 		}
+
+	 	}
+	 }
+
+	.contacts__img {
+		width: 50%;
+		img {		
+			border-radius: 30px;
+		}
+	}
 }
 
 @media (min-width: @desktop-1600-width) {
-	
+	.contacts__wrapper {
+		width: 1520px;
+		border-radius: 40px;
+	}
+
+	.contacts__content {	
+		padding: 60px 0 20px 60px;
+	}
+
+	.contacts__desc {
+		margin-bottom: 50px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.contacts__item {
+		margin-bottom: 25px;
+		font-size: 22px;
+		line-height: 29px;
+		.title {
+			margin-bottom: 4px;
+		}
+	}
+
+	.contacts__item--socials {
+		margin-bottom: 0;
+		.title {
+			margin-bottom: 10px;
+		}
+		.text {
+			a {
+				svg {
+					width: 64px;
+					height: 64px;
+				}
+			}
+	 	}
+	}
+
+	.contacts__img {
+		img {		
+			border-radius: 40px;
+		}
+	}
 }
 
 @media (min-width: @desktop-full-width) {
-/*	.contacts {
-		margin-bottom: 50px;
-	}
-
 	.contacts__wrapper {
-		display: flex;
-		justify-content: space-between;
 		width: 1780px;
-		// margin-left: auto;
-		// margin-right: auto;
-		padding: 0;
 		border-radius: 60px;
-		// background-color: @bg-block;
-		background-color: @grey-light;
 	}
 
 	.contacts__content {
@@ -179,7 +231,6 @@
 	}
 
 	.contacts__title {
-		margin-bottom: 20px;
 		padding-right: 50px;
 	}
 
@@ -187,12 +238,6 @@
 		margin-bottom: 65px;
 		font-size: 32px;
 		line-height: 38px;
-		text-align: center;
-		color: @grey;
-	}
-
-	.contacts__list {
-
 	}
 
 	.contacts__item {
@@ -201,42 +246,22 @@
 		line-height: 38px;
 		.title {
 			margin-bottom: 10px;
-			color: @grey;
-		}
-		.text {
-			color: @dark;
-			a {
-				color: @dark;
-				&:hover,
-				&:focus {
-					text-decoration: underline;				
-				}
-			}
 		}
 	}
 
-	 .contacts__item--socials {
-	 	display: flex;
-	 	.title {
-	 		// flex-grow: 1;
-	 		width: 500px;
-	 	}
-	 	.text {
-	 		a {
-	 			svg {
-	 				width: 64px;
-	 				height: 64px;
-	 			}
-	 		}
-	 	}
-	 }
+	.contacts__item--socials {
+		margin-bottom: 0;
+		.title {
+			margin-bottom: 10px;
+		}
+	}
 
 	.contacts__img {
 		width: 880px;
-		img {		
+		img {
 			border-radius: 60px;
 		}
-	}*/
+	}
 }
 
 &:hover,

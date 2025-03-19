@@ -60,7 +60,7 @@
 			</mask>
 
 			<linearGradient id="grad-star" x1="0" y1="30" x2="60" y2="30" gradientUnits="userSpaceOnUse">
-				<stop stop-color="#FF6600"/>
+				<stop offset="0" stop-color="#FF6600"/>
 				<stop offset="0.274" stop-color="#F26659"/>
 				<stop offset="0.374" stop-color="#F06177"/>
 				<stop offset="0.484" stop-color="#E65D97"/>
@@ -96,10 +96,10 @@
 					
 					<h2 class="visually-hidden">Главное меню</h2>
 					<ul class="page-header__nav-list menu__list">
-						<li class="menu__item"><a href="#">Как это работает</a></li>
-						<li class="menu__item"><a href="#">Цена</a></li>
-						<li class="menu__item"><a href="#">Отзывы</a></li>
-						<li class="menu__item"><a href="#">Контакты</a></li>
+						<li class="menu__item"><a href="#steps">Как это работает</a></li>
+						<li class="menu__item"><a href="#price">Цена</a></li>
+						<li class="menu__item"><a href="#reviews">Отзывы</a></li>
+						<li class="menu__item"><a href="#contacts">Контакты</a></li>
 					</ul>
 
 					<div class="page-header__contacts">
@@ -115,16 +115,16 @@
 	<main class="page-main">
 		<section class="promo">
 			<div class="promo__wrapper container">
-				<picture class="promo__img">
+				<div class="promo__img">
 					<svg class="promo__star-first" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
 					<svg class="promo__img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="791" height="497" viewBox="0 0 791 497" preserveAspectRatio="xMinYMin meet"><image xlink:href="img/mask/promo-img.webp" width="100%" height="100%" mask="url(#promo-mask)" /></svg>
 					<svg class="promo__star-second" width="60" height="60"><use xlink:href="#icon-star-gradient"></use></svg>
-				</picture>
+				</div>
 
 				<div class="promo__text">
 					<h2 class="promo__title"><span>Лидогенерация</span> для бизнеса</h2>
 					<p class="promo__desc">Покупайте только целевые лиды по фиксированной цене от 300 ₽<span class="money-mouth-face"></span></p>
-					<button class="promo__button button" type="button" aria-label="Выбрать пакет лидов">Выбрать пакет лидов</button>
+					<a class="promo__button button" href="#price">Выбрать пакет лидов</a>
 				</div>
 				
 				<ul class="promo__list">
@@ -174,7 +174,7 @@
 			</div>
 		</section>
 
-		<section class="price">
+		<section id="price" class="price">
 			<div class="price__wrapper container">
 				<h2 class="price__title h2">Стоимость технологий <span>«Лид Конвейер»</span></h2>			
 				<p class="price__desc">Оптимальные тарифы и цены на получение готовых Лидов и заявок с вашего сайта, без переплаты и абонентской платы</p>
@@ -285,7 +285,7 @@
 			</div>
 		</section>
 
-		<section class="reviews">
+		<section id="reviews" class="reviews">
 			<div class="reviews__wrapper container">
 				<h2 class="reviews__title h2">Отзывы клиентов</h2>
 				<p class="reviews__desc">Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении более 2-х лет</p>
@@ -427,7 +427,7 @@
 			</div>
 		</section>
 
-		<section class="steps">
+		<section id="steps" class="steps">
 			<div class="steps__wrapper container">
 				<h2 class="steps__title h2">Как это работает?</h2>
 				
@@ -636,7 +636,7 @@
 				<h2 class="visually-hidden">Информация о компании</h2>
 				<div class="info__left">
 					<p class="info__title h2"><span>Лидогенерация —</span> это новая эра маркетинга!<span class="rocket"></span></p>	
-					<button class="info__button button" type="button" aria-label="Купить лиды">Купить лиды</button>
+					<a class="info__button button" href="#price">Купить лиды</a>
 				</div>
 				
 				<div class="info__content">
@@ -660,7 +660,7 @@
 			</div>
 		</section>
 
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="contacts__wrapper container">
 				
 				<div class="contacts__content">
@@ -689,75 +689,49 @@
 					<img src="img/contacts-img.webp" srcset="img/contacts-img@2x.webp 2x" alt="Здание компании">
 				</picture>
 			</div>
-		</section>	
+		</section>
 		
 	</main>
 
-	<!-- <footer class="page-footer">
-		<h2 class="visually-hidden">Website footer</h2>
-		<section class="page-footer__menu container">
-			<h3 class="visually-hidden">Footer menu</h3>
-			<ul class="page-footer__menu-list menu__list">
-				<li class="menu__item animation-right delay-1ms"><a href="#">Home page</a></li>
-				<li class="menu__item animation-right delay-2ms"><a href="#">about company</a></li>
-				<li class="menu__item animation-right delay-3ms"><a href="#">contacts</a></li>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper container">
+			<h2 class="visually-hidden">Footer сайта</h2>
+			<p class="page-footer__copyright">&copy; 2025 Все права защищены. Технология «Лид Конвейер» - лидогенерация для бизнеса.</p>
+			<p class="page-footer__ogrn">ООО «ДС-ГРУПП» ИНН 7801355174 ОГРН 1187847129425</p>
+			<ul class="page-footer__menu">
+				<li class="page-footer__item"><a href="#">Блог</a></li>
+				<li class="page-footer__item"><a href="#">Договор-оферта</a></li>
+				<li class="page-footer__item"><a href="#">Политика конфиденциальности</a></li>
+				<li class="page-footer__item"><a href="#">Соглашение об обработке данных</a></li>
+				<li class="page-footer__item"><a href="#">Вход в личный кабинет</a></li>
 			</ul>
-		</section>
-
-		<div class="page-footer__bottom animation-left delay-5ms">
-			<div class="page-footer__bottom-wrapper container">
-				<div class="page-footer__info">
-					<a class="page-footer__logo logo" href="#" aria-label="Logo company">Matrix</a>
-
-					<section class="page-footer__socials">
-						<h3 class="visually-hidden">We are on social networks</h3>
-						<ul>
-							<li class="page-footer__socials-insta"><a href="#" rel="noopener nofollow" target="_blank"><svg width="32" height="32"><use xlink:href="#icon-insta"></use></svg><span class="visually-hidden">We are on Telegram</span></a></li>
-							<li class="page-footer__socials-tiktok"><a href="#" rel="noopener nofollow" target="_blank"><svg width="32" height="32"><use xlink:href="#icon-tiktok"></use></svg><span class="visually-hidden">We are on TikTok</span></a></li>
-							<li class="page-footer__socials-in"><a href="#" rel="noopener nofollow" target="_blank"><svg width="32" height="32"><use xlink:href="#icon-in"></use></svg><span class="visually-hidden">We are on LinkedIn</span></a></li>
-							<li class="page-footer__socials-facebook"><a href="#" rel="noopener nofollow" target="_blank"><svg width="32" height="32"><use xlink:href="#icon-facebook"></use></svg><span class="visually-hidden">We are on Facebook</span></a></li>
-							<li class="page-footer__socials-telegram"><a href="#" rel="noopener nofollow" target="_blank"><svg width="32" height="32"><use xlink:href="#icon-telegram"></use></svg><span class="visually-hidden">We are on Telegram</span></a></li>
-							<li class="page-footer__socials-youtube"><a href="#" rel="noopener nofollow" target="_blank"><svg width="32" height="32"><use xlink:href="#icon-youtube"></use></svg><span class="visually-hidden">We are on Youtube</span></a></li>
-						</ul>
-					</section>
-
-					<button class="page-footer__order button" type="button" aria-label="order">order</button>
-
-				</div>
-
-				<div class="page-footer__links">
-					<p class="page-footer__copyright">&copy; 2024, Copyright.</p>
-					<a class="page-footer__policy" href="#" rel="noopener nofollow" target="_blank">Privacy policy</a>
-					<a class="page-footer__terms" href="#" rel="noopener nofollow" target="_blank">Terms of Use</a>
-				</div>
-			</div>
 		</div>
-	</footer> -->
+	</footer>
 
-	<!-- <section class="modal-order modal">
-		<h3 class="visually-hidden">Order a consultation</h3>
-		<form id="order-form" class="form" action="https://echo.htmlacademy.ru" method="POST">
+	<section class="modal-registration modal">
+		<h3 class="visually-hidden">Регистрация в системе</h3>
+		<form id="registration-form" class="form" action="https://echo.htmlacademy.ru" method="POST">
 			<p class="form__item">
-				<input class="form__input" type="text" name="order__name" id="order__name" value="" placeholder="Your name">
-				<label class="visually-hidden" for="order__name">Your name</label>
+				<input class="form__input" type="text" name="registration__name" id="registration__name" value="" placeholder="Ваше имя">
+				<label class="visually-hidden" for="registration__name">Ваше имя</label>
 			</p>
 			<p class="form__item">
-				<input class="form__input" type="tel" name="order__number" id="order__number" value="" placeholder="Your phone">
-				<label class="visually-hidden" for="order__number">Your phone</label>
+				<input class="form__input" type="tel" name="registration__phone" id="registration__phone" value="" placeholder="Телефон">
+				<label class="visually-hidden" for="registration__phone">Телефон</label>
 			</p>
-			<input type="submit" class="modal-order__button button button--dark" value="Order">
+			<input type="submit" class="modal-registration__button button" value="Зарегистрироваться">
 		</form>	
-		<button type="button" class="modal-order__close close" tabindex="0" aria-label="close modal window"><span class="visually-hidden">close modal windows</span></button>
-	</section> -->
+		<button type="button" class="modal-registration__close close" tabindex="0" aria-label="close modal window"><span class="visually-hidden">close modal windows</span></button>
+	</section>
 
-	<!-- <div class="overlay"></div>	 -->
+	<div class="overlay"></div>	
 	
 	<!-- <script src="js/scroll.min.js"></script> -->
 	<script src="js/common.min.js"></script>
 	<script src="js/hamburger.min.js"></script>
 	<script src="js/video.min.js"></script>
 	<script src="js/accordion.min.js"></script>
-	<!-- <script src="js/modal.min.js"></script> -->
+	<script src="js/modal.min.js"></script>
 
 </body>
 </html>

@@ -1,22 +1,22 @@
-let modalOrder = document.querySelector('.modal-order');
+let modalRegistration = document.querySelector('.modal-registration'); // модальное окно
 
-let btnModalPromo = document.querySelector('.promo__button');
-let btnModalAdvantages = document.querySelector('.advantages__button');
-let btnModalFooter = document.querySelector('.page-footer__order');
+// кнопки, при нажатии на которые должно появитьс соответствующее модальное окно
+let btnModalRegistration = document.querySelectorAll('.block__button');
 
-let closeOrder = document.querySelector('.modal-order__close');
+let closeRegistration = document.querySelector('.modal-registration__close');
 let overlay = document.querySelector('.overlay');
 let removeShowTimeout;
 
-modalButtons(btnModalPromo, btnModalAdvantages, btnModalFooter); // функция для добавления события на кнопку
+modalButtons(btnModalRegistration); // функция для добавления события на кнопку
 
 function modalButtons() {
 	let buttons = Object.values(arguments); // преобразовываем объект в массив из значение его ключей
+	const arr = Array.from(buttons[0]); // преобразовываем NodeList в array
 	
-	buttons.forEach((btn) => {
+	arr.forEach((btn) => {
 		btn.addEventListener('click', function(evt) {
 			evt.preventDefault();
-			workModal(modalOrder, closeOrder, overlay);
+			workModal(modalRegistration, closeRegistration, overlay);
 		});	
 	});
 }
