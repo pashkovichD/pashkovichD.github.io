@@ -122,9 +122,6 @@
 .swiper-wrapper {
   margin-bottom: 50px;
 }
-.swiper-pagination-bullet-active {
-  background-color: #ff6600 !important;
-}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -3090,6 +3087,12 @@ picture {
 }
 .steps__dots span[disabled] {
   background-color: #808080;
+}
+.steps__dots.swiper-pagination {
+  bottom: 15px;
+}
+.steps__dots.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ff6600;
 }
 @media (min-width: 400px) {
   .steps__wrapper {
