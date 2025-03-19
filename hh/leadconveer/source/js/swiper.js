@@ -2,20 +2,23 @@ const swiperSteps = new Swiper('.steps__list', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 30,
-  autoHeight: false,
+
+  autoHeight: true,
+  
   direction: 'horizontal',
   loop: false,
 
-  // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true,
   },
+
+  // pagination: {
+  //   el: '.products__images-dots',
+  //   clickable: true,
+  // },
 
   breakpoints: {    
     // when window width is >= 768px
