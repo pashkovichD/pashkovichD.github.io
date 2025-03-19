@@ -1,19 +1,10 @@
 window.addEventListener('load', function(){
-	// let menu = document.querySelector('.page-header__number');
 
-	let links = this.document.querySelectorAll('.menu__list .menu__item a, .promo__button, .info__button');
-	// let links = this.document.querySelectorAll('.page-header__number .page-header__number-item');
-
-	// let btnBottom = document.querySelector('.page-header__btn-scroll');
-	// let header = document.querySelector('.page-header');
-	// let classItem = 'page-header__number-item';
-	// let classActiveItem = 'active';
+	let links = this.document.querySelectorAll('.menu__list .menu__item a, .promo__button, .info__button');	
 	
-	// if(window.location.hash != '') {
-	// 	scrollToId(window.location.hash);
-	// }
-
-	// console.log(links);
+	if(window.location.hash != '') {
+		scrollToId(window.location.hash);
+	}	
 
 	scrollToY(0); // при обновлении страницы scroll в начало страницы (если мы находились на момент обновления где-то ниже)
 	
@@ -23,15 +14,7 @@ window.addEventListener('load', function(){
 			// console.log(link.hash);
 			scrollToId(link.hash);
 		});
-	});	
-
-	/*menu.addEventListener('click', function(e){
-		if(e.target.classList.contains(classItem)) {
-			e.preventDefault();
-			let link = e.target;
-			scrollToId(link.hash);
-		}
-	});*/
+	});
 
 	function scrollToId(id) {		
 		let target = document.querySelector(id);		

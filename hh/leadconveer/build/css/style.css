@@ -2982,7 +2982,7 @@ picture {
   width: auto;
   margin: 0 20px;
   padding: 20px 20px 0 20px;
-  background-color: #f6f6f6;
+  background-color: #c0c0c0;
   border-radius: 20px;
 }
 .steps__title {
@@ -3194,9 +3194,6 @@ picture {
   }
 }
 @media (min-width: 1200px) {
-  .steps {
-    margin-bottom: 175px;
-  }
   .steps__wrapper {
     width: 1060px;
     padding: 50px 60px 0 60px;
@@ -3283,6 +3280,9 @@ picture {
   }
 }
 @media (min-width: 1920px) {
+  .steps {
+    margin-bottom: 175px;
+  }
   .steps__wrapper {
     width: 1780px;
   }
