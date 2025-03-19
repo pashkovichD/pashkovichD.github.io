@@ -2986,6 +2986,7 @@ picture {
 }
 .steps__item {
   margin-bottom: 40px;
+  cursor: default;
 }
 .steps__name {
   margin-bottom: 20px;
