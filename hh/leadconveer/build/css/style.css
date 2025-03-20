@@ -122,9 +122,14 @@
 .swiper-wrapper {
   padding-bottom: 70px;
 }
+@media (min-width: 960px) {
+  .swiper-wrapper {
+    padding-bottom: 100px;
+  }
+}
 @media (min-width: 1600px) {
   .swiper-wrapper {
-    padding-bottom: 115px;
+    padding-bottom: 170px;
   }
 }
 .container {
@@ -1077,7 +1082,7 @@ picture {
   width: 20px;
   height: 20px;
   margin-left: 5px;
-  background-image: url('../img/money-mouth-face.webp');
+  background-image: url('../img/icons/money-mouth-face.webp');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2499,7 +2504,7 @@ picture {
   width: 20px;
   height: 20px;
   margin-left: 5px;
-  background-image: url('../img/smiling-face.webp');
+  background-image: url('../img/icons/smiling-face.webp');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2982,7 +2987,7 @@ picture {
   width: auto;
   margin: 0 20px;
   padding: 20px 20px 0 20px;
-  background-color: #c0c0c0;
+  background-color: #f6f6f6;
   border-radius: 20px;
 }
 .steps__title {
@@ -3016,21 +3021,21 @@ picture {
   width: 40px;
   height: 40px;
   margin-left: 10px;
-  background-image: url('../img/man-technologist.webp');
+  background-image: url('../img/steps/man-technologist.webp');
   background-repeat: no-repeat;
   background-size: contain;
 }
 .steps__name .number .check-mark {
-  background-image: url('../img/check-mark.webp');
+  background-image: url('../img/steps/check-mark.webp');
 }
 .steps__name .number .money-with-wings {
-  background-image: url('../img/money-with-wings.webp');
+  background-image: url('../img/steps/money-with-wings.webp');
 }
 .steps__name .number .locked {
-  background-image: url('../img/locked.webp');
+  background-image: url('../img/steps/locked.webp');
 }
 .steps__name .number .star-struck {
-  background-image: url('../img/star-struck.webp');
+  background-image: url('../img/steps/star-struck.webp');
 }
 .steps__name .title {
   font-size: 26px;
@@ -3192,8 +3197,14 @@ picture {
     font-size: 18px;
     line-height: 24px;
   }
+  .steps__dots.swiper-pagination {
+    bottom: 40px;
+  }
 }
 @media (min-width: 1200px) {
+  .steps {
+    margin-bottom: 120px;
+  }
   .steps__wrapper {
     width: 1060px;
     padding: 50px 60px 0 60px;
@@ -3275,14 +3286,14 @@ picture {
     width: 30px;
     height: 30px;
   }
+  .steps__dots.swiper-pagination {
+    bottom: 80px;
+  }
   .steps__dots.swiper-pagination .swiper-pagination-bullet {
     margin: 0 8px;
   }
 }
 @media (min-width: 1920px) {
-  .steps {
-    margin-bottom: 175px;
-  }
   .steps__wrapper {
     width: 1780px;
   }
@@ -3320,7 +3331,7 @@ picture {
   width: 30px;
   height: 30px;
   margin-left: 10px;
-  background-image: url('../img/video-camera.webp');
+  background-image: url('../img/icons/video-camera.webp');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -3782,7 +3793,7 @@ picture {
   bottom: 1px;
   width: 30px;
   height: 30px;
-  background-image: url('../img/rocket.webp');
+  background-image: url('../img/icons/rocket.webp');
   background-repeat: no-repeat;
   background-size: contain;
 }

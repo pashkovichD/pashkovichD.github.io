@@ -6,8 +6,7 @@
 	width: auto;
 	margin: 0 20px;
 	padding: 20px 20px 0 20px;
-	background-color: @grey-light;
-	// background-color: @bg-block;	
+	background-color: @bg-block;	
 	border-radius: 20px;
 }
 
@@ -43,21 +42,21 @@
 			width: 40px;
 			height: 40px;
 			margin-left: 10px;
-			background-image: url('../img/man-technologist.webp');
+			background-image: url('../img/steps/man-technologist.webp');
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
 		.check-mark {
-			background-image: url('../img/check-mark.webp');
+			background-image: url('../img/steps/check-mark.webp');
 		}
 		.money-with-wings {
-			background-image: url('../img/money-with-wings.webp');
+			background-image: url('../img/steps/money-with-wings.webp');
 		}
 		.locked {
-			background-image: url('../img/locked.webp');
+			background-image: url('../img/steps/locked.webp');
 		}
 		.star-struck {
-			background-image: url('../img/star-struck.webp');
+			background-image: url('../img/steps/star-struck.webp');
 		}
 
 	}
@@ -253,12 +252,17 @@
 		font-size: 18px;
 		line-height: 24px;
 	}
+
+	.steps__dots {
+		&.swiper-pagination {
+			bottom: 40px;
+		}
+	}
 }
 
 @media (min-width: @desktop-1200-width) {
 	.steps {
-		// margin-bottom: 175px;
-		// margin-bottom: 120px;
+		margin-bottom: 120px;
 	}
 
 	.steps__wrapper {
@@ -349,8 +353,9 @@
 		}
 	}
 
-	.steps__dots {
+	.steps__dots {		
 		&.swiper-pagination {
+			bottom: 80px;
 			.swiper-pagination-bullet {
 				margin: 0 8px;
 			}
@@ -360,7 +365,7 @@
 
 @media (min-width: @desktop-full-width) {
 	.steps {
-		margin-bottom: 175px;
+
 	}
 
 	.steps__wrapper {

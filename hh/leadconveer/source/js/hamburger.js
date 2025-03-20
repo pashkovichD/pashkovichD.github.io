@@ -1,13 +1,13 @@
-let hamburger = document.querySelector('.page-header__toggle-nav');
-let nav = document.querySelector('.page-header__nav');
+// let hamburger = document.querySelector('.page-header__toggle-nav');
+// let nav = document.querySelector('.page-header__nav');
 
-hamburger.addEventListener('click', function (e) {
-	e.preventDefault();
+// hamburger.addEventListener('click', function (e) {
+// 	e.preventDefault();
 
-	this.classList.toggle('hamburger__click');
-	if(this.classList.contains('hamburger__click')) {
-		nav.classList.add('page-header__nav--show');
-	} else {
-		nav.classList.remove('page-header__nav--show');
-	}	
-});
+// 	this.classList.toggle('hamburger__click');
+// 	if(this.classList.contains('hamburger__click')) {
+// 		nav.classList.add('page-header__nav--show');
+// 	} else {
+// 		nav.classList.remove('page-header__nav--show');
+// 	}	
+// });
