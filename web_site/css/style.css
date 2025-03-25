@@ -1,0 +1,37 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+.cf::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Стили для комментария к работе */
+h1 {
+  font-weight: 300;
+  margin: 20px;
+}
+
+p {
+  width: 450px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+#header {
+  background: url(../img/slider_1.jpg) center top no-repeat;
+  background-size: cover;
+  height: 500px;
+}

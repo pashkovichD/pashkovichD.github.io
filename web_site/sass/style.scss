@@ -1,0 +1,10 @@
+@import 'vars';
+@import 'normalize';
+@import 'responsive_grid';
+@import 'common';
+
+#header {
+	background: url(../img/slider_1.jpg) center top no-repeat;
+	background-size: cover; 
+	height: 500px;
+}
