@@ -1,0 +1,137 @@
+body {
+/*  background-color: green;*/
+}
+
+/*--- 1.Бетон в Костроме ---*/
+
+.the_pencil {
+  padding-left: 0 !important;
+}
+
+.the_factory {  
+  margin: 31px auto 260px;
+  background-position: -30px 0;
+}
+
+.rastwor {
+  margin-top: -613px;
+  margin-left: 200px;
+}
+
+.tovbet {    
+    height: 128px;
+    margin-top: -613px;
+    right: 156px;
+}
+
+.zbi {  
+  height: 126px;
+  margin-top: -450px;
+  margin-left: 217px;
+}
+
+.nasoss {  
+  margin-top: -450px; 
+  right: 156px;
+}
+
+.pliti {
+/*  height: 138px;*/
+  margin-top: -269px;  
+  margin-left: 217px;
+}
+
+.mixer3 {
+  height: 138px;
+  margin-top: -269px;  
+  right: 185px;
+  margin-left: 444px;
+}
+
+.mixer {  
+  margin-top: -195px;
+}
+
+@media (max-width: 1100px) {
+  .rastwor {  
+    margin-left: 10%;
+  }
+  .tovbet {
+    right: 10%;
+  }  
+  .zbi {
+    margin-left: 12%;
+  }
+  .nasoss {
+    right: 10%;
+  }
+  .pliti {
+    margin-left: 11%;
+  }
+  .mixer3 {
+    right: 12%;
+  }
+  .mixer {
+    margin-left: 38%;
+  }
+}
+
+@media (max-width: 900px) {
+  .rastwor {  
+    margin-left: 3%;
+  }
+  .tovbet {
+    right: 3%;
+  }  
+  .zbi {
+    margin-left: 5%;
+  }
+  .nasoss {
+    right: 3%;
+  }
+  .pliti {
+    margin-left: 5%;
+  }
+  .mixer3 {
+    right: 5%;
+  }
+  .mixer {
+    margin-left: 36%;
+  }
+}
+
+@media (max-width: 769px) {
+  .rastwor {  
+    margin: 25px auto;
+  }
+  .tovbet {    
+    height: 122px;
+    margin: 25px auto;
+    right: auto;
+  }  
+  .zbi {  
+    height: 107px;
+    margin: 25px auto;
+  }
+  .nasoss {  
+    margin: 25px auto;
+    right: auto;
+  }
+  .pliti {  
+    margin: 25px auto;
+  }
+  .mixer3 {
+    height: 133px;
+    margin: 25px auto;
+    right: auto;
+  }
+  .mixer {
+    margin: 25px auto;
+  }
+}
+
+
+/*--- 2.Форма обратной связи ---*/
+.terms-content div a {
+  color: #ba4514;
+}
