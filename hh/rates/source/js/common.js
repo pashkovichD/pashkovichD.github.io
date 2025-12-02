@@ -6,8 +6,8 @@ window.addEventListener('load', function() {
 	async function getUsers() {
 		try {
 			const response = await fetch(
-			// 'https://zyabki.by/JSON/list-test.json',
-			'https://t-pay.iqfit.app/subscribe/list-test',
+			'https://zyabki.by/JSON/list-test.json',
+			// 'https://t-pay.iqfit.app/subscribe/list-test',			
 			{
 				method: 'GET',
 			},

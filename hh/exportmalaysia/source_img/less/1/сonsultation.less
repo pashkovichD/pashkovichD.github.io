@@ -1,0 +1,192 @@
+.сonsultation {
+	padding-top: 40px;
+	background-color: #282829;
+	padding-bottom: 40px;
+	overflow: hidden;	
+}
+
+.сonsultation__wrapper {
+	position: relative;
+}
+
+.consultation__wrapper-form {
+	padding: 20px;
+	border: 2px solid #d5c9be;
+	border-radius: 10px;	
+	background-color: #ffffff;
+	&::after {
+		position: absolute;
+		bottom: 0;
+		right: -70px;		
+		content: '';
+		width: 250px;
+		height: 285px;		
+		background-image: url('../img/girl.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.сonsultation__title {	
+	margin: 0;
+	margin-bottom: 20px;	
+	font-family: @ff-p;
+	font-size: 30px;	
+	line-height: 110%;
+	font-weight: 300;
+	text-align: center;
+	color: #38535d;
+}
+
+.сonsultation__submit {	
+	padding: 18px 34px;
+	font-size: 18px;
+}
+
+@media (min-width: 375px) {
+	.consultation__wrapper-form {
+		&::after {
+			right: -16px;
+		}
+	}
+}
+
+
+@media (min-width: @mobile-width) {
+	.сonsultation__submit {
+		padding: 18px 50px;		
+	}
+}
+
+@media (min-width: 600px) {
+	
+}
+
+@media (min-width: @tablet-width) {	
+	.сonsultation__submit {
+		padding: 18px 54px;
+		font-size: 20px;
+	}
+	
+}
+
+@media (min-width: @desktop-width) {
+	.сonsultation {
+		padding-top: 70px;
+		padding-bottom: 80px;
+	}	
+
+	.consultation__wrapper-form {
+		padding: 30px;
+		border-radius: 20px;		
+		background-image: url('../img/bg-girl.jpg');
+		background-repeat: no-repeat;
+		background-position: center left 530px;
+		background-size: contain;
+		&::after {			
+			right: -55px;
+			width: 400px;
+			height: 456px;
+		}
+	}
+
+	.сonsultation__title {
+		width: 465px;
+		margin-bottom: 20px;		
+		font-size: 36px;
+	}
+
+	.сonsultation__form {
+		width: 465px;
+	}
+}
+
+@media (min-width: @desktop-1200-width) {
+	.сonsultation {	
+		padding-top: 90px;
+	}	
+
+	.consultation__wrapper-form {
+		padding: 50px;		
+		border-radius: 25px;		
+		background-position: center left 600px;
+		&::after {			
+			right: -30px;
+			width: 500px;
+			height: 570px;
+		}
+	}
+
+	.сonsultation__title {
+		width: 500px;				
+		margin-bottom: 30px;		
+		font-size: 42px;
+		text-align: left;
+	}
+
+	.сonsultation__form {
+		width: 500px;
+	}
+}
+
+@media (min-width: @desktop-1600-width) {
+	.сonsultation {
+		padding-bottom: 100px;
+	}
+
+	.сonsultation__wrapper {
+		padding: 0 165px;
+	}
+
+	.consultation__wrapper-form {	
+		padding: 70px;
+		border-radius: 30px;
+		background-position: center left 640px;
+		&::after {			
+			right: 200px;
+			width: 597px;
+			height: 680px;
+		}
+	}
+
+	.сonsultation__title {		
+		width: 500px;
+		margin-bottom: 40px;
+		font-size: 54px;		
+	}
+
+	.сonsultation__form {
+		width: 500px;		
+	}
+}
+
+@media (min-width: @desktop-full-width) {	
+
+	.consultation__wrapper-form {
+		padding: 70px 130px 75px;		
+		background-position: center right; 
+		&::after {			
+			right: 220px;			
+		}
+	}	
+
+	.сonsultation__title {
+		width: 600px;
+		margin: 0;
+		margin-bottom: 45px;
+	}
+
+	.сonsultation__form {
+		width: 780px;
+	}
+
+	.сonsultation__submit {	
+		width: 100%;
+		padding: 32px 54px;
+	}
+}
+
+&:hover,
+&:focus {
+	
+}

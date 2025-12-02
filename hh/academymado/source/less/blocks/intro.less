@@ -1,0 +1,80 @@
+.intro {
+	position: relative;
+	padding-top: 200px;
+	padding-bottom: 110px;
+	background-image: url('../img/bg-intro.webp');	
+	background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;    
+}
+
+.intro__overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.intro__overlay-left {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(90.22deg, #13151a 8.71%, rgba(77, 87, 102, 0) 63.64%);	
+	z-index: -1;
+}
+
+.intro__wrapper {
+	position: relative;	
+	z-index: 1;
+}
+
+.intro__title {
+	max-width: 500px;
+	margin-bottom: 10px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.intro__desc {
+	max-width: 500px;
+	margin-bottom: 40px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.intro__button {
+	width: 200px;
+}
+
+@media (max-width: @tablet-width) {
+	.intro__title {		
+		font-size: 28px;
+		line-height: 36px;
+		margin-bottom: 10px;
+	}
+
+	.intro__desc {		
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+
+@media (max-width: @mobile-width) {
+	.intro {
+		padding-top: 120px;
+		padding-bottom: 70px;
+	}
+}
+
+&:hover,
+&:focus {
+	
+}

@@ -1,0 +1,65 @@
+.recommendations {
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.recommendations__wrapper {
+	position: relative;
+}
+
+.recommendations__title {	
+	margin-bottom: 30px;
+}
+
+.recommendations__list {	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.recommendations__item {
+	position: relative;
+	width: 320px;
+	margin: 20px;
+	padding: 186px 25px 25px 25px;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.recommendations__item:before {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	content: '';
+	width: 136px;
+	height: 136px;
+	margin-left: -68px;
+	background-image: url('../img/translator.webp');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.recommendations__item.teacher:before {background-image: url('../img/teacher.webp');}
+.recommendations__item.notary:before {background-image: url('../img/notary.webp');}
+.recommendations__item.specialist:before {background-image: url('../img/specialist.webp');}
+.recommendations__item.employee:before {background-image: url('../img/employee.webp');}
+.recommendations__item.communication:before {background-image: url('../img/communication.webp');}
+.recommendations__item.student:before {background-image: url('../img/student.webp');}
+.recommendations__item.foreign-economy:before {background-image: url('../img/foreign-economy.webp');}
+
+@media (max-width: 900px) {
+	.recommendations__item {
+		flex-grow: 1;
+		width: 42%;
+	}
+}
+
+@media (max-width: @tablet-width) {
+	.recommendations__item {
+		flex-grow: 0;
+		width: 320px;
+	}
+}
