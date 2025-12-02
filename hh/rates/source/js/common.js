@@ -195,8 +195,6 @@ window.addEventListener('load', function() {
 		}
 	}
 
-
-
 	// 2) Отображение данных в HTML
 	getUsers().then(data => {	
 
