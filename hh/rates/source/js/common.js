@@ -343,6 +343,7 @@ window.addEventListener('load', function() {
 		ratesModalList.appendChild(ratesItemModalFragment); // фрагмент помещаем в итоговый контейнер (список)
 		
 	};
+	
 
 
 	/*--- RADIO кнопки ---*/	
