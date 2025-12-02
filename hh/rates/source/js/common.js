@@ -345,7 +345,6 @@ window.addEventListener('load', function() {
 	};
 	
 
-
 	/*--- RADIO кнопки ---*/	
 
 	radioChecked(ratesList, items);
