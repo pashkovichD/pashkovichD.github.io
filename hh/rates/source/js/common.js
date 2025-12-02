@@ -20,6 +20,7 @@ window.addEventListener('load', function() {
 
 		// const data = await response.json(); // полученные данные
 
+		// Данные со стороннего сервера
 		data = [
 	{
 		"name":"1 неделя",
