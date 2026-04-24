@@ -18,6 +18,26 @@ function hamburgerHide() {
 	hamburger.classList.remove('hamburger__click');
 }
 
+/*--- search.js ---*/
+let searchIcon = document.querySelector('.search svg');
+let searchInput = document.querySelector('.search input');
+searchIcon.addEventListener('click', function (e) {
+	e.preventDefault();
+	if(searchInput.classList.contains('search-show')) {
+		console.log('YES');
+		searchInput.classList.remove('search-show');
+	} else {
+		console.log('NO');
+		searchInput.classList.add('search-show');		
+	}
+});
+
+window.addEventListener('keydown', function(evt) {
+	if(evt.keyCode === 27) {
+		evt.preventDefault();
+		searchInput.classList.remove('search-show');
+	}
+});
 
 /*--- scroll.js ---*/
 window.addEventListener('load', function(){

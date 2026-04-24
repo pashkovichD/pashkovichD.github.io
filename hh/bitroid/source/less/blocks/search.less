@@ -1,0 +1,119 @@
+.search {
+	position: relative;
+	form {
+		line-height: 0;
+	}
+	input[type=text] {
+		position: absolute;
+		top: 200%;
+		right: -20px;
+		width: 250px;
+		padding: 10px 20px;
+		font-size: 14px;
+		line-height: 21px;
+		// color: @gray-font;
+		border-radius: 10px;
+		border: 1px solid @deep-grey;
+		background-color: @white;
+		box-sizing: border-box;
+		cursor: pointer;
+		visibility: hidden;
+		opacity: 0;
+		transition: @animation;
+	}	
+
+	svg {		
+		top: 14px;
+		right: 19px;
+		width: 21px;
+		height: 21px;
+		cursor: pointer;
+		transition: @animation;		
+		&:hover,
+		&:focus {
+			fill: @green;
+		}
+	}
+}
+
+input[type=text].search-show  {
+	top: 150%;
+	visibility: visible;
+	opacity: 1;
+}
+
+
+// @media (min-width: @mobile-width) {
+	
+// }
+
+// @media (min-width: 600px) {
+	
+// }
+
+// @media (min-width: @tablet-width) {
+	
+// }
+
+// @media (min-width: @desktop-width) {
+// 	.search {
+// 		svg {		
+// 			top: 14px;
+// 			right: 19px;
+// 			width: 16px;
+// 			height: 18px;
+// 		}
+// 	}
+// }
+
+// @media (min-width: @desktop-1200-width) {
+// 	.search {
+// 		position: relative;
+// 		input[type=text] {
+// 			width: 45px;			
+// 			// padding: 12px 20px 12px 20px;
+// 			font-size: 14px;
+// 			line-height: 21px;
+// 			// color: @gray-font;			
+// 			background-color: transparent;			
+// 			opacity: 0;			
+// 			transition: width 0.4s ease-in-out;
+// 			&:focus {
+// 				width: 200px;
+// 				// width: 475px;
+// 				background-color: #25292c;
+// 				opacity: 1;
+
+// 				& + svg {
+// 					fill: @white;
+// 				}
+// 			}
+
+// 			&:hover {
+// 				& + svg {
+// 					fill: @white;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (min-width: @desktop-1600-width) {
+// 	.search {
+// 		input[type=text] {
+// 			&:focus {
+// 				width: 370px;
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (min-width: @desktop-full-width) {
+// 	.search {
+// 		input[type=text] {
+// 			&:focus {	
+// 				width: 475px;
+// 			}
+// 		}
+// 	}
+// }
