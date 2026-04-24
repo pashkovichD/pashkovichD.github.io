@@ -1,17 +1,13 @@
 .menu {
-	// background-color: @bg-block;
+	
 }
 
 .menu__list {
-	// padding-top: 10px;
-	// margin-bottom: 10px;
-
 	display: flex;
 	justify-content: center;
 	padding-top: 0;
 	margin-bottom: 0;
-
-	// background-color: red;
+	z-index: 10;
 }
 
 .menu__item {
@@ -42,7 +38,8 @@
 	}
 
 	&.menu__item--dropdown:hover {
-		& > a {			
+		& > a {
+			color: @green;
 			&::after {
 				transform: rotate(405deg);
 				border-color: @green;
@@ -59,19 +56,15 @@
     min-width: 200px;
     height: auto !important;
     margin-left: 0;    
+    padding-bottom: 5px;
     border-radius: 5px;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
+    background-color: @white;
     box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .1);
     transition: all .3s ease;
-
-    // background-color: green;
-}
-
-.menu__dropdown {
-	padding-bottom: 5px;
-	a {
+    a {
 		padding: 8px 25px 8px 25px;
 		font-size: 14px;
 		text-align: left;
@@ -80,7 +73,7 @@
 }
 
 .menu__item--dropdown {
-	& > a {
+	& > a {		
 		&::after {    
 		    content: '';
 		    position: absolute;
