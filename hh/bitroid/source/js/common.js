@@ -70,7 +70,9 @@ window.addEventListener('keydown', function(evt) {
 		evt.preventDefault();
 		searchInput.forEach(function(el) {
 			el.classList.remove('search-show');
-		});		
+		});
+
+		hideDropdown();
 	}
 });
 
