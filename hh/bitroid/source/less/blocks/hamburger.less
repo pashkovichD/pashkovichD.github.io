@@ -73,10 +73,22 @@
 	      transform: translate(0%, -2px) rotate(-45deg);
 }
 
-@media (min-width: @tablet-width) {
-	
-}
+@media (max-width: @desktop-width) {
+	.hamburger {
+		position: relative;
+		right: -3px;
+	}
 
-@media (min-width: @desktop-width) {
-	
+	.hamburger__line {
+		width: 20px;
+	}
+	.hamburger__line::before,
+	.hamburger__line::after {		
+		width: 20px;
+		transform: translate(0%, -6px);
+	}
+
+	.hamburger__line::after {
+		transform: translate(0%, 4px);
+	}
 }

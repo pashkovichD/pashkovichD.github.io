@@ -26,14 +26,14 @@
 		background-color: darken(@green, 10%);
 		color: @white;
 	}
-	&:active {
-		background-color: #cd3400;
-	}
-	&:disabled {
-		background-color: @grey-light;
-		pointer-events: none;
-    	cursor: default;
-	}
+	// &:active {
+	// 	background-color: #cd3400;
+	// }
+	// &:disabled {
+	// 	background-color: @grey-light;
+	// 	pointer-events: none;
+    // 	cursor: default;
+	// }
 }
 
 .button--dark {
@@ -42,13 +42,5 @@
 	&:hover,
 	&:focus {
 		background-color: #333333;
-	}
-}
-
-
-
-@media (min-width: @desktop-1600-width) {
-	.button {
-		cursor: url('../img/cursor.svg'), pointer;
 	}
 }

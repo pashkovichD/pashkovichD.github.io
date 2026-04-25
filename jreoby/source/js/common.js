@@ -79,19 +79,19 @@ function hideDropdown() {
 }
 
 /* сделано из расчета одного такого меню, если их будет несколько, то нужно всё делать через querySelectorAll() и перебор массива */
-linkSeconddown.addEventListener('click', function (e) {
-	e.stopPropagation(); // отменяет событие для родителя
-	var heightList = listSeconddown.style.height; // высота подменю - string
+// linkSeconddown.addEventListener('click', function (e) {
+// 	e.stopPropagation(); // отменяет событие для родителя
+// 	var heightList = listSeconddown.style.height; // высота подменю - string
 
-	if(heightList == 'auto') {
-		listSeconddown.style.height = '0';		
-		this.parentNode.parentNode.style.height = 'auto';
+// 	if(heightList == 'auto') {
+// 		listSeconddown.style.height = '0';		
+// 		this.parentNode.parentNode.style.height = 'auto';
 
-	} else {
-		listSeconddown.style.height = 'auto';
-		this.parentNode.parentNode.style.height = 'auto';
-	}	
-});
+// 	} else {
+// 		listSeconddown.style.height = 'auto';
+// 		this.parentNode.parentNode.style.height = 'auto';
+// 	}	
+// });
 
 // действие по нажатию на ESC
 window.addEventListener('keydown', function (e) {

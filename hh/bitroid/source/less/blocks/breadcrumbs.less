@@ -2,7 +2,7 @@
 	position: relative;
 	top: 2px;
 	display: flex;
-	gap: 33px;
+	gap: 10px 33px;
 	flex-wrap: wrap;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -53,6 +53,33 @@
 			color: @grey;
 		}
 	}
+}
+
+@media (max-width: @mobile-width) {
+	.breadcrumbs {
+		padding-top: 9px;
+		padding-bottom: 9px;
+		gap: 1px 28px;
+		li {
+			&.general {				
+				&::before {
+					width: 16px;
+					height: 16px;
+				}
+			}
+			&::after {			
+				right: -19px;
+			    font-size: 22px;
+			}
+			a {
+				font-size: 14px;
+			}
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+			
 }
 
 &:hover,
