@@ -3,8 +3,7 @@
 }
 
 .recommendation__wrapper {
-	position: relative;
-	z-index: 1;
+
 }
 
 .recommendation__title {
@@ -15,12 +14,22 @@
 .recommendation__list {
 	display: flex;
 	gap: 24px;
+	position: relative;
+	z-index: 1;
+}
+
+.recommendation__list-wrapper {
+	gap: 24px;
 }
 
 .recommendation__item {
 	display: flex;
+	width: calc(34% - 24px);
+}
+
+.recommendation__item-wrap {
+	display: flex;
 	flex-direction: column;
-	width: 35%	;
 	padding: 35px 20px 30px 20px;
 	background-color: @white;
 	border-radius: 30px;
@@ -40,6 +49,127 @@
 	&:hover {
 		transform: scale(1.01);
 	}
+}
+
+.recommendation__images-dots {
+	display: none;
+}
+
+@media (max-width: @desktop-width) {
+	.recommendation__title {
+		width: 575px;
+		margin-bottom: 40px;
+	}	
+
+	.recommendation__list {
+		flex-direction: column;
+		gap: 17px;
+	}
+
+	.recommendation__item {		
+		width: 100%;
+	}
+
+	.recommendation__item-wrap {
+		display: flex;
+		flex-direction: row;
+		width: 100%;		
+		padding: 18px 16px 16px 16px;
+		border-radius: 20px;
+		.content {
+			width: 380px;
+		}
+		h3 {
+			margin-bottom: 12px;
+			font-size: 18px;
+			font-weight: 600;
+		}
+		.text {
+			margin-bottom: 0;
+			font-size: 14px;
+			line-height: 130%;
+		}
+		.img {
+			width: 198px;
+			margin-left: auto;
+		}
+	}
+}
+
+@media (max-width: @tablet-width) {
+	.recommendation__title {
+		width: 90%;
+	}	
+
+	.recommendation__item {
+		.content {			
+			width: 60%;
+			margin-right: 30px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	// .recommendation__list-wrapper {
+	// 	flex-direction: row;		
+	// 	gap: 0;
+	// }
+
+	// .recommendation__images-dots {	
+	// 	display: block;
+	// }
+
+	.recommendation__title {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.recommendation__list {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.recommendation__item {
+		display: flex !important;
+		padding: 0 20px;		
+	}
+
+	.recommendation__item-wrap {
+		// display: block;
+		flex-direction: column;
+		border-radius: 10px;
+		// border: 1px solid #f0f0f0;
+		// box-shadow: none;
+		.content {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 35px;
+		}
+		h3 {
+			margin-bottom: 7px;
+			font-size: 16px;
+		}
+		.img {
+			width: 100%;
+			margin-left: 0;
+			img {
+				width: 100%;
+			}
+		}
+		&:hover {
+			transform: none;
+		}
+	}
+}
+
+
+@media (max-width: @mobile-width) {
+	.recommendation__list {
+		// width: calc(100vw - 2px);
+		// position: relative;
+	    // left: -50%;
+	    // margin-left: calc(100% - 50vw);
+	}	
 }
 
 &:hover,

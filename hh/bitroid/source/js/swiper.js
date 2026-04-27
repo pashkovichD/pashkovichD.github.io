@@ -1,5 +1,31 @@
-// const swiperSteps = new Swiper('.steps__list', {
+var init = false;
+var swiper;
+function swiperCard() {
+  if (window.innerWidth <= 600) {
+    if (!init) {
+      init = true;
+      swiper = new Swiper(".recommendation__list", {
+        direction: "horizontal",
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 32,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+  } else if (init) {
+    swiper.destroy();
+    init = false;
+  }
+}
+swiperCard();
+window.addEventListener("resize", swiperCard);
+
+// const swiperRecommendations = new Swiper('.recommendation__list', {
 //   // Optional parameters
+//   enabled: false,
 //   slidesPerView: 1,
 //   spaceBetween: 30,
 //   autoHeight: true, // слайдер подбирает свою высоту в зависимости от высоты слайла

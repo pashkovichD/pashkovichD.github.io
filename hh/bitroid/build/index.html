@@ -22,14 +22,17 @@
 	<!-- CDN -->
 
 	<!-- локально -->
-	<link rel="stylesheet" href="css/swiper/swiper-bundle.css">
-	<script src="js/swiper/swiper-bundle.min.js"></script>
+	<!-- <link rel="stylesheet" href="css/swiper/swiper-bundle.css"/>
+	<script src="js/swiper/swiper-bundle.min.js"></script> -->
 	<!-- локально -->
 
-	<!-- не работает -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-	<!-- не работает -->
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="js/slick/slick.css">	
+	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+
+	<script type="text/javascript" src="js/jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
 
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -219,7 +222,7 @@
 					<p class="promo__desc">Разработка сайтов с учётом требований по SEO-продвижению с гарантией топовых позиций в поиске. Создаём веб-проекты, которые максимально быстро занимают верхние позиции в поисковиках. Проводим оптимизацию перед запуском, чтобы вам не приходилось менять контент и мета-теги после старта.</p>
 					<a class="promo__button button" href="#">Заказать<span> сайт</span></a>
 					<a class="promo__link" href="#">Рассчитать стоимость</a>
-				</div>		
+				</div>
 				
 			</div>
 		</section>
@@ -227,35 +230,50 @@
 		<section class="recommendation glare">
 			<div class="recommendation__wrapper container">
 				<h2 class="recommendation__title">Кому рекомендуем выбрать создание сайтов с SEO-раскруткой</h2>
-				<ul class="recommendation__list">
-					<li class="recommendation__item">
-						<h3>Интернет-магазин</h3>
-						<p class="text">Создание и продвижение интернет-магазинов. Проектируем структуру фильтров под нечастотные запросы. Внедрим умный фильтр для SEO-тегов.</p>
-						<div class="img">
-							<picture>
-								<img src="img/recommendations/recommendation-1.webp" srcset="img/recommendations/recommendation-1@2x.webp 2x" alt="Интернет-магазин">
-							</picture>
-						</div>	
-					</li>
-					<li class="recommendation__item">
-						<h3>Сфера услуг</h3>
-						<p class="text">Создание и продвижение продающих сайтов. Делаем специализированные сайты под SEO-запросы. Прорабатываем структуру под гео-запросы.</p>
-						<div class="img">
-							<picture>
-								<img src="img/recommendations/recommendation-2.webp" srcset="img/recommendations/recommendation-2@2x.webp 2x" alt="Сфера услуг">
-							</picture>
-						</div>	
-					</li>
-					<li class="recommendation__item">
-						<h3>B2B-сайты</h3>
-						<p class="text">Разработка и продвижение сайтов компаний, специализирующихся на предоставлении услуг корпоративному сегменту.</p>
-						<div class="img">
-							<picture>
-								<img src="img/recommendations/recommendation-3.webp" srcset="img/recommendations/recommendation-3@2x.webp 2x" alt="B2B-сайты">
-							</picture>
-						</div>	
-					</li>
-				</ul>
+				<div class="recommendation__list">
+					<!-- <div class="recommendation__list-wrapper"> -->
+						<div class="recommendation__item">
+							<div class="recommendation__item-wrap">
+								<div class="content">
+									<h3>Интернет-магазин</h3>
+									<p class="text">Создание и продвижение интернет-магазинов. Проектируем структуру фильтров под нечастотные запросы. Внедрим умный фильтр для SEO-тегов.</p>
+								</div>
+								<div class="img">
+									<picture>
+										<img src="img/recommendations/recommendation-1.webp" srcset="img/recommendations/recommendation-1@2x.webp 2x" alt="Интернет-магазин">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="recommendation__item">
+							<div class="recommendation__item-wrap">
+								<div class="content">
+									<h3>Сфера услуг</h3>
+									<p class="text">Создание и продвижение продающих сайтов. Делаем специализированные сайты под SEO-запросы. Прорабатываем структуру под гео-запросы.</p>
+								</div>
+								<div class="img">
+									<picture>
+										<img src="img/recommendations/recommendation-2.webp" srcset="img/recommendations/recommendation-2@2x.webp 2x" alt="Сфера услуг">
+									</picture>
+								</div>	
+							</div>
+						</div>
+						<div class="recommendation__item">
+							<div class="recommendation__item-wrap">
+								<div class="content">
+									<h3>B2B-сайты</h3>
+									<p class="text">Разработка.</p>
+								</div>
+								<div class="img">
+									<picture>
+										<img src="img/recommendations/recommendation-3.webp" srcset="img/recommendations/recommendation-3@2x.webp 2x" alt="B2B-сайты">
+									</picture>
+								</div>	
+							</div>
+						</div>
+					<!-- </div> -->
+					<!-- <div class="recommendation__images-dots swiper-pagination"></div> -->
+				</div>
 				
 			</div>
 		</section>
@@ -843,5 +861,9 @@
 	<div class="overlay"></div>	 -->
 	
 	<script src="js/common.min.js"></script>
+
+	<!-- <script async="" src="js/swiper.min.js"></script> -->	
+
+	<script async="" src="js/slick.min.js"></script>
 </body>
 </html>

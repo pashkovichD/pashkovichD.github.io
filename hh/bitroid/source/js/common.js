@@ -290,17 +290,17 @@ function hideModal(modal, overlay) {
 
 
 /*--- swiper.js ---*/
-const swiperSteps = new Swiper('.steps__list', {
-  // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 30,
-  autoHeight: true, // слайдер подбирает свою высоту в зависимости от высоты слайла
-  direction: 'horizontal',
-  loop: false,
-  // точки навигации
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  }
-});
+// const swiperSteps = new Swiper('.steps__list', {
+//   // Optional parameters
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   autoHeight: true, // слайдер подбирает свою высоту в зависимости от высоты слайла
+//   direction: 'horizontal',
+//   loop: false,
+//   // точки навигации
+//   pagination: {
+//     el: '.swiper-pagination',
+//     type: 'bullets',
+//     clickable: true,
+//   }
+// })
