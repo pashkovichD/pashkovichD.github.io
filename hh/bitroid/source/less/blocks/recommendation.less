@@ -1,5 +1,5 @@
 .recommendation {
-
+	margin-bottom: 150px;
 }
 
 .recommendation__wrapper {
@@ -56,6 +56,10 @@
 }
 
 @media (max-width: @desktop-width) {
+	.recommendation {
+		margin-bottom: 100px;
+	}
+
 	.recommendation__title {
 		width: 575px;
 		margin-bottom: 40px;
@@ -110,15 +114,6 @@
 }
 
 @media (max-width: 600px) {
-	// .recommendation__list-wrapper {
-	// 	flex-direction: row;		
-	// 	gap: 0;
-	// }
-
-	// .recommendation__images-dots {	
-	// 	display: block;
-	// }
-
 	.recommendation__title {
 		width: 100%;
 		margin-bottom: 10px;
@@ -135,11 +130,9 @@
 	}
 
 	.recommendation__item-wrap {
-		// display: block;
 		flex-direction: column;
-		border-radius: 10px;
-		// border: 1px solid #f0f0f0;
-		// box-shadow: none;
+		border-radius: 10px;		
+		box-shadow: 0px 4px 15px 0px rgba(1,8,3,.08);
 		.content {
 			width: 100%;
 			margin-right: 0;
@@ -164,6 +157,10 @@
 
 
 @media (max-width: @mobile-width) {
+	.recommendation {
+		margin-bottom: 56px;
+	}
+
 	.recommendation__list {
 		// width: calc(100vw - 2px);
 		// position: relative;

@@ -1,0 +1,140 @@
+.projects {
+	margin-bottom: 150px;
+}
+
+.projects__wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+.projects__title {
+
+}
+
+.projects__desc {
+	margin-bottom: 60px;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.projects__list {
+	width: 1192px;
+	margin: 0 auto;
+	// background-color: red;
+
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.projects__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 34%;
+	height: 292px;
+	padding: 20px 24px;
+	background-color: @white;
+	border-radius: 30px;
+	box-shadow: 0px 4px 25px 0px rgba(1,8,3,.08);
+	overflow: hidden;
+	.category {
+		display: inline-block;
+		margin: auto auto 10px 0;
+		padding: 4px 8px;
+		font-size: 12px;
+		line-height: 130%;
+		border-radius: 30px;
+		border: 1px solid @deep-grey;
+		z-index: 1;
+	}
+	h3 {
+		width: 85%;
+		font-size: 24px;
+		line-height: 130%;
+		z-index: 1;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: -24px;
+		right: -65px;
+		width: 350px;
+		height: 350px;
+		background-image: url('../img/bg-scroll.png');
+		background-repeat: no-repeat;
+		opacity: 0.4;
+	}
+	&.bg-left::before {		
+		top: -28px;
+		left: -69px;
+		right: auto;
+		transform: rotate(180deg);		
+	}
+	&.bg-gradient {
+		width: 36%;
+		height: 330px;
+		background: linear-gradient(98.54deg, #34AE6B 3.22%, #2587F9 86.86%);
+		box-shadow: none;
+		.category {
+			color: @white;
+			border: 1px solid @white;
+		}
+		h3 {			
+			color: @white;
+		}
+		.desc {
+			width: 80%;
+			margin: 10px 0 20px 0;
+			font-size: 16px;
+			line-height: 130%;
+			color: @white;
+		}
+		.link {
+			position: relative;
+			margin-right: auto;
+			margin-bottom: 25px;
+			font-size: 18px;
+			line-height: 130%;
+			font-weight: 600;
+			color: @white;			
+			&::after {
+				position: absolute;
+				top: 8px;
+				right: -20px;
+				content: '';
+				width: 7px;
+				height: 7px;
+				border-right: 2px solid @white;
+				border-bottom: 2px solid @white;
+				transform: rotate(-45deg);
+				transition: @animation;
+			}
+			&:hover::after,
+			&:focus::after {
+				right: -25px;
+			}
+		}
+		&::before {
+			top: -69px;
+			right: -15px;
+			width: 346px;
+			height: 348px;
+			background-image: url('../img/icon-scroll.svg');
+			
+		}
+	}
+}
+
+.projects__button {
+	position: absolute;
+	top: 45px;
+	right: 60px;
+	padding: 16px 22px;
+	font-weight: 600;
+}
+
+&:hover,
+&:focus {
+	
+}

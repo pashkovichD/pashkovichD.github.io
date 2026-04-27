@@ -1,14 +1,52 @@
 $('.recommendation__list').not('.slick-initialized').slick({
-     mobileFirst: true,
-     arrows: false,
-     dots: true,
-     responsive: [
-        {
-           breakpoint: 600,
-           settings: "unslick"
-        }
-     ]
-  });
+  mobileFirst: true,
+  arrows: false,
+  dots: true,
+  responsive: [
+     {
+        breakpoint: 600,
+        settings: "unslick"
+     }
+  ]
+});
+
+$('.include__list').not('.slick-initialized').slick({
+  mobileFirst: true,
+  arrows: false,
+  dots: true,
+  adaptiveHeight: true,
+  slidesToShow: 1,
+  speed: 300,
+  responsive: [
+     {
+        breakpoint: 480,
+        settings: "unslick"
+     }
+  ]
+});
+
+// $('.projects__list').not('.slick-initialized').slick({
+//   mobileFirst: true,
+//   arrows: false,
+//   dots: true,
+//   adaptiveHeight: true,
+//   slidesToShow: 3,
+//   speed: 300,
+//   responsive: [
+//      {
+//         breakpoint: 480,
+//         settings: "unslick"
+//      }
+//   ]
+// });
+
+// $('.projects__list').not('.slick-initialized').slick({
+//   centerMode: true,
+//   centerPadding: '60px',
+//   slidesToShow: 3,
+//   arrows: true,
+//   dots: true,
+// });
 
 // $(document).ready(function(){
 //   $('.recommendation__list').slick({
