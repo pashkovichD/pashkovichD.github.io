@@ -1,5 +1,5 @@
 .faq {    
-    margin-bottom: 165px;
+    margin-bottom: 100px;
 }
 
 .faq__wrapper {
@@ -198,14 +198,18 @@
 		font-size: 14px;
 	}
 
+	.faq__list-wrapper {
+		margin-bottom: 40px;
+	}
+
 	.faq__list {
 	    max-width: 100%;
 	}
 
 	.faq__accordion {
-		gap:10px;
+		gap:17px;
 		& > div {
-			padding: 20px;
+			padding: 11px 20px;
 		}
 	}
 
@@ -218,10 +222,11 @@
 	}
 
 	.active_faq_question svg {		
-	    margin-top: -20px;
+	    margin-top: -16px;
 	}
 
 	.faq__accordion > div:has(.active_faq_question) {
+		padding-top: 20px;
 		padding-bottom: 20px;
 	}
 
@@ -233,5 +238,68 @@
 		position: relative;
 		top: auto;
 		right: auto;
+		color: @green;
+	}
+
+	.faq__link:hover,
+	.faq__link:focus {
+		color: @deep-grey;
+	}
+
+	.faq__link::after {
+		background-image: url('data:image/svg+xml; utf-8, <svg width="25" height="15" viewBox="0 0 25 15"  fill="rgb(52,174,107)" xmlns="http://www.w3.org/2000/svg"><path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z"/></svg>');
+	}
+
+	.faq__link:hover::after {
+		background-image: url('data:image/svg+xml; utf-8, <svg width="25" height="15" viewBox="0 0 25 15"  fill="rgb(30,30,30)" xmlns="http://www.w3.org/2000/svg"><path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z"/></svg>');
+	}
+}
+
+@media (max-width: @mobile-width) {
+	.faq {
+		margin-bottom: 60px;
+	}
+
+	.faq__desc {
+		margin-bottom: 30px;		
+	}
+
+	.faq__list-wrapper {
+		margin-bottom: 30px;
+	}
+
+	.faq__accordion {
+		gap: 8px;
+		& > div {
+			padding: 11px 10px;
+		}
+	}
+
+	.accordion__title h3 {
+		padding-right: 50px;
+	}
+
+	.active_faq_question h3 {
+		padding-right: 50px;
+		line-height: 120%;
+	}
+
+	.accordion__content { 
+	    line-height: 129%;
+	}
+
+	.faq__link {
+		font-size: 14px;
+	}
+
+	.faq__link::after {
+		top: 1px;
+		right: -29px;
+		width: 18px;
+		height: 18px;		
+	}
+
+	.faq__link:hover::after {
+		right: -35px;	
 	}
 }
