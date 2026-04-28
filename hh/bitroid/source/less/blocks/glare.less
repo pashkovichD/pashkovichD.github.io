@@ -49,6 +49,15 @@
 	}
 }
 
+.faq.glare {
+	&::before {	
+		content: none;
+	}
+	&::after {
+		content: none;
+	}
+}
+
 @media (max-width: @desktop-width) {
 	.glare {
 		&::before {
@@ -58,12 +67,35 @@
 			margin-left: 0;
 		}
 	}
+
+	.projects.glare {
+		&::before {	
+			top: 0px;			
+		}
+		&::after {		
+			top: 120px;
+			margin-left: 140px;
+		}		
+	}
 }
 
 @media (max-width: 600px) {
 	.recommendation.glare {
 		&::before {	
 			top: 410px;
+			margin-left: 100px;		
+			box-shadow: 0 0 100px 100px rgba(52,174,107,.3);
+		}
+		&::after {		
+			top: 380px;
+			margin-left: -100px;
+			box-shadow: 0 0 100px 100px rgba(37,135,249,.3);
+		}		
+	}
+
+	.projects.glare {
+		&::before {	
+			top: 300px;
 			margin-left: 100px;		
 			box-shadow: 0 0 100px 100px rgba(52,174,107,.3);
 		}

@@ -191,40 +191,40 @@ btnMore.forEach((btn) => {
 
 
 /*--- accordion.js ---*/
-let acc = document.querySelectorAll(".accordion__title");
-for (let i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function() {
+// let acc = document.querySelectorAll(".accordion__title");
+// for (let i = 0; i < acc.length; i++) {
+// 	acc[i].addEventListener("click", function() {
 		
-		if(this.classList.contains("active")) {
-			this.classList.remove("active");
-			contentAction(this);
-		} else {
-			// приводим все элементы аккордена в начальное сотояние
-			acc.forEach((elem) => {
-				elem.classList.remove('active');
-				let text = elem.nextElementSibling;
-				if (text.style.maxHeight) {
-					text.style.maxHeight = null; // делаем высоту равной 0
-				}
-			});
+// 		if(this.classList.contains("active")) {
+// 			this.classList.remove("active");
+// 			contentAction(this);
+// 		} else {
+// 			// приводим все элементы аккордена в начальное сотояние
+// 			acc.forEach((elem) => {
+// 				elem.classList.remove('active');
+// 				let text = elem.nextElementSibling;
+// 				if (text.style.maxHeight) {
+// 					text.style.maxHeight = null; // делаем высоту равной 0
+// 				}
+// 			});
 
-			/* Добавление активного класса '.active' кнопке button */		
-			this.classList.add("active");
-			// this.classList.toggle("active");
-			contentAction(this);
-		}		
-	});
-}
+// 			/* Добавление активного класса '.active' кнопке button */		
+// 			this.classList.add("active");
+// 			// this.classList.toggle("active");
+// 			contentAction(this);
+// 		}		
+// 	});
+// }
 
-/* Появление/скрытие .content за активной кнопкой*/
-function contentAction(title) {	
-	let content = title.nextElementSibling;		
-	if (content.style.maxHeight) {
-		content.style.maxHeight = null; // делаем высоту равной 0
-	} else {
-		content.style.maxHeight = content.scrollHeight + "px"; // свойство height делает равным его фактической высоте
-	}
-}
+// /* Появление/скрытие .content за активной кнопкой*/
+// function contentAction(title) {	
+// 	let content = title.nextElementSibling;
+// 	if (content.style.maxHeight) {
+// 		content.style.maxHeight = null; // делаем высоту равной 0
+// 	} else {
+// 		content.style.maxHeight = content.scrollHeight + "px"; // свойство height делает равным его фактической высоте
+// 	}
+// }
 
 
 /*--- modal.js ---*/

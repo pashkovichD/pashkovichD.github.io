@@ -40,13 +40,29 @@ $('.include__list').not('.slick-initialized').slick({
 //   ]
 // });
 
-// $('.projects__list').not('.slick-initialized').slick({
-//   centerMode: true,
-//   centerPadding: '60px',
-//   slidesToShow: 3,
-//   arrows: true,
-//   dots: true,
-// });
+$('.projects__list').not('.slick-initialized').slick({
+   infinite: true,
+   slidesToShow: 3,
+   draggable: true,
+   arrows: true,
+   dots: true,   
+   responsive: [
+      {
+         breakpoint: 600,
+         settings: {
+            arrows: false,
+            slidesToShow: 1
+         }
+      },
+      {
+         breakpoint: 1080,
+         settings: {
+            arrows: false,
+            slidesToShow: 2
+         }
+      }
+   ]
+});
 
 // $(document).ready(function(){
 //   $('.recommendation__list').slick({
