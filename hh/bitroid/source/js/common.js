@@ -27,10 +27,10 @@ menuItem.forEach(function(el) { // перебираем массив
 	el.addEventListener('click', function (e) {
 		e.preventDefault();		
 		
-		// hideDropdown();
+		hideDropdown();
 
 		let dropdown = el.nextElementSibling;
-		// dropdown.style.height = dropdown.scrollHeight + 'px';
+		dropdown.style.height = dropdown.scrollHeight + 'px';
 		
 		if(dropdown.classList.contains('menu__dropdown-show')) {
 			dropdown.classList.remove('menu__dropdown-show');
