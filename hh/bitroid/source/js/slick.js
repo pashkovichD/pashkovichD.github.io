@@ -13,22 +13,7 @@ function slickRecommendation() {
    });   
 }
 
-// $('.include__list').not('.slick-initialized').slick({
-//   // mobileFirst: true,
-//   settings: "unslick",
-//   responsive: [
-//      {
-//         breakpoint: 480,
-//         settings: {
-//            draggable: true,
-//            arrows: false,
-//            dots: true,  
-//            slidesToShow: 1,
-//            speed: 300
-//         }
-//      }
-//   ]
-// });
+
 
 function slickInclude() {
    $('.include__list').not('.slick-initialized').slick({
