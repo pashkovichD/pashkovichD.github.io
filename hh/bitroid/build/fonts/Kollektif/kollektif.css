@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Kollektif';
-	src: url('../fonts/kollektif.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/kollektif.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/kollektif.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/kollektif.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/kollektif.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/kollektif.svg#kollektif') format('svg'); /* Chrome < 4, Legacy iOS */
-}

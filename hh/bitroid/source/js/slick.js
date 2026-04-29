@@ -25,21 +25,6 @@ $('.include__list').not('.slick-initialized').slick({
   ]
 });
 
-// $('.projects__list').not('.slick-initialized').slick({
-//   mobileFirst: true,
-//   arrows: false,
-//   dots: true,
-//   adaptiveHeight: true,
-//   slidesToShow: 3,
-//   speed: 300,
-//   responsive: [
-//      {
-//         breakpoint: 480,
-//         settings: "unslick"
-//      }
-//   ]
-// });
-
 $('.projects__list').not('.slick-initialized').slick({
    infinite: true,
    slidesToShow: 3,
@@ -64,39 +49,8 @@ $('.projects__list').not('.slick-initialized').slick({
    ]
 });
 
-// $(document).ready(function(){
-//   $('.recommendation__list').slick({
-//     settings: "unslick",
-//     infinite: false,
-//     dots: true
-//   });
-// });
-
-// if (window.innerWidth > 600) {
-//   $('.recommendation__list').slick('unslick');
-//   sliderIsLive = false;
-// }
-// else {
-//   if (sliderIsLive) {
-//     $('.recommendation__list').slick();
-//     sliderIsLive = true;
-//   }
-// }
-
-// window.addEventListener("resize", function() {
-//   if (window.innerWidth > 600) {
-//     $('.recommendation__list').slick('unslick');    
-//   }
-//   else {    
-//       $('.recommendation__list').slick({
-//          mobileFirst: true,
-//          arrows: false,
-//          responsive: [
-//             {
-//                breakpoint: 600,
-//                settings: "unslick"
-//             }
-//          ]
-//       });
-//   }
+// $(window).resize(function(){
+//   $('.recommendation__list')[0].slick.refresh();
+//   $('.include__list')[0].slick.refresh();
+//   $('.projects__list')[0].slick.refresh();
 // });

@@ -90,7 +90,7 @@ gulp.task("webp", function() {
 
 gulp.task("copy", function() {
 	return gulp.src([
-			"source/css/swiper/**",
+			"source/js/slick/**",
 			"source/fonts/**",
 			// "source/fonts/**/*.{woff,woff2}",
 			"source/img/**",

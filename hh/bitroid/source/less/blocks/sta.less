@@ -33,6 +33,7 @@
 	top: 45px;
 	right: 183px;
 	padding: 16px 20px;
+	z-index: 1;
 }
 
 @media (max-width: 1080px) {
@@ -85,7 +86,9 @@
 	}
 
 	.sta__button {
-		position: static;
+		position: relative;
+		top: auto;
+		right: auto;
 		display: inline-block;
 		padding: 16px 25px;
 	}
@@ -112,7 +115,6 @@
 		&::after {
 			top: 28px;
 			right: 5px;
-			// right: -32px;
 			width: 245px;
 			height: 182px;
 		}
