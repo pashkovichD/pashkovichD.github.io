@@ -13,8 +13,6 @@ function slickRecommendation() {
    });   
 }
 
-
-
 function slickInclude() {
    $('.include__list').not('.slick-initialized').slick({
      mobileFirst: true,
