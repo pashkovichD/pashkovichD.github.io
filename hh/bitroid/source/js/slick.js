@@ -13,7 +13,6 @@ function slickRecommendation() {
    });   
 }
 
-
 // $('.include__list').not('.slick-initialized').slick({
 //   // mobileFirst: true,
 //   settings: "unslick",
