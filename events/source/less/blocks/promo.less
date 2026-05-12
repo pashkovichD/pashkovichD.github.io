@@ -1,0 +1,203 @@
+.promo {
+	margin-bottom: 158px;
+}
+
+.promo__wrapper {
+	position: relative;
+	padding-top: 200px;
+	padding-bottom: 180px;
+	overflow: hidden;
+}
+
+.promo__text {
+	position: relative;
+	width: 800px;
+	z-index: 1;
+}
+
+.promo__title {
+	margin-bottom: 25px;
+	font-size: 64px;
+	line-height: 130%;
+	font-weight: 900;
+}
+
+.promo__desc {
+	margin-bottom: 80px;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.promo__button {
+	display: inline-block;
+	margin-right: 15px;
+	padding: 16px 65px;
+	span {
+		display: none;
+	}
+}
+
+.promo__link {
+	position: relative;
+	font-size: 16px;
+	color: @deep-grey;
+	&:hover,
+	&:focus {
+		color: @green;		
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: -3px;
+		right: -37px;
+		width: 25px;
+		height: 25px;
+		background-image: url('data:image/svg+xml; utf-8, <svg width="25" height="15" viewBox="0 0 25 15"  fill="rgb(30,30,30)" xmlns="http://www.w3.org/2000/svg"><path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z"/></svg>');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		transition: @animation;
+	}
+
+	&:hover::after {
+		right: -45px;
+		background-image: url('data:image/svg+xml; utf-8, <svg width="25" height="15" viewBox="0 0 25 15"  fill="rgb(52,174,107)" xmlns="http://www.w3.org/2000/svg"><path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z"/></svg>');
+	}
+}
+
+.promo__img {
+	position: absolute;
+	top: 0;	
+	right: -120px;
+}
+
+@media (max-width: @desktop-width) {
+	.promo {
+		margin-bottom: 100px;
+	}
+
+	.promo__wrapper {
+		padding-top: 105px;
+		padding-bottom: 120px;
+	}
+
+	.promo__text {
+		width: 525px;
+	}
+	.promo__title {
+		margin-bottom: 20px;
+		font-size: 42px;
+		font-weight: 600;
+	}
+
+	.promo__desc {
+		margin-bottom: 95px;
+		font-size: 16px;
+	}
+
+	.promo__img {
+		width: 600px;
+		right: -105px;
+	}
+
+	.promo__button {
+		padding: 16px 25px;
+		span {
+			display: inline;
+		}
+	}
+}
+
+@media (max-width: @tablet-width) {
+	.promo__img {
+		width: 500px;
+		top: 100px;
+		right: -50px;
+
+	}
+
+	.promo__text {
+		width: 80%;	
+	}
+
+	.promo__title {
+		font-size: 38px;
+	}
+
+	.promo__link {
+		&:hover,
+		&:focus {
+			color: @deep-grey;
+		}
+		&:hover::after {
+			background-image: url('data:image/svg+xml; utf-8, <svg width="25" height="15" viewBox="0 0 25 15"  fill="rgb(30,30,30)" xmlns="http://www.w3.org/2000/svg"><path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z"/></svg>');
+		}
+	}
+
+}
+
+@media (max-width: 600px) {
+	.promo__text {
+		width: 100%;
+	}
+
+	.promo__title {
+		font-size: 32px;
+	}
+
+	.promo__desc {		
+		font-size: 15px;
+	}
+}
+
+@media (max-width: @mobile-width) {
+	.promo {
+		margin-bottom: 20px;
+	}
+
+	.promo__wrapper {
+		padding-top: 80px;
+		padding-bottom: 115px;
+	}
+
+	.promo__text {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.promo__title {
+		margin-bottom: 12px;
+		padding: 0 15px;
+		font-size: 24px;		
+		text-align: center;
+	}
+
+	.promo__desc {
+		margin-bottom: 104px;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.promo__img {
+		width: 450px;
+		right: -50px;
+		top: 170px;
+	}
+
+	.promo__button {
+		display: block;
+		width: 60%;
+		margin: 0 auto 15px auto;
+	}
+
+	.promo__link {
+		display: block;
+		width: 63%;
+		margin: 0 auto;
+		&::after {
+			right: -2px;
+		}
+		&:hover::after {
+			right: -12px;
+		}
+	}
+}
