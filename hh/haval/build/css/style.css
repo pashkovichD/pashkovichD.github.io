@@ -894,6 +894,7 @@ h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 12px 0;
+  margin-bottom: 28px;
 }
 .models__item .options li {
   display: -webkit-box;
@@ -937,4 +938,9 @@ h2 {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
+}
+.models__item .models__button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
