@@ -934,7 +934,7 @@ h2 {
 }
 .models__item .options li:hover .icon {
   background-color: #00cabf;
-}
-.models__item .options li:hover .icon .tire-bg {
-  fill: #00cabf;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
