@@ -39,7 +39,6 @@
 	position: absolute;
 	bottom: 15px;
 	left: 55px;
-	// left: -303px;
 	display: block;
 	width: 56px;
 	height: 56px;
@@ -49,12 +48,12 @@
 	box-shadow: 0 0 0 7px rgb(194,194,194);
 	transition: @animation;
 	svg {
-		transition: @animation;		
+		transition: @animation;
 	}
 	&:hover {
 		box-shadow: 0 0 0px 8px rgb(194,194,194);
 		svg {
-			
+			transform: rotateY(180deg);
 		}
 	}
 }

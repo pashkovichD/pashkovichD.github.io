@@ -493,6 +493,12 @@ picture {
   height: 24px;
   background-image: url('../img/phone.webp');
   background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.page-header__phone:hover:before {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .page-header__address {
   position: relative;
@@ -510,6 +516,12 @@ picture {
   height: 28px;
   background-image: url('../img/map.webp');
   background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.page-header__address:hover:before {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .page-header__address .time {
   display: block;
@@ -893,9 +905,17 @@ picture {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
+.timer__btn-message svg {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
 .timer__btn-message:hover {
   -webkit-box-shadow: 0 0 0px 8px #c2c2c2;
           box-shadow: 0 0 0px 8px #c2c2c2;
+}
+.timer__btn-message:hover svg {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 @media (max-width: 1600px) {
   .timer__wrapper {

@@ -48,9 +48,15 @@
 	border: none;
 	box-shadow: 0 0 0 7px rgb(194,194,194);
 	transition: @animation;
+	svg {
+		transition: @animation;
+	}
 	&:hover {
 		box-shadow: 0 0 0px 8px rgb(194,194,194);
-	}
+		svg {
+			transform: rotateY(180deg);
+		}
+	}	
 }
 
 
