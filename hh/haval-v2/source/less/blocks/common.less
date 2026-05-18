@@ -1,0 +1,108 @@
+html {
+	
+}
+
+body {	
+	min-width: 320px;	
+	margin: 0 auto;
+	padding: 0;
+	font-family: @ff-tt;
+	font-size: 16px;
+	line-height: 100%;	
+	font-weight: 400;
+	background-color: @bg-color;
+}
+:focus {
+  outline: none;
+}
+
+body::-webkit-scrollbar-track {  
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.12);
+}
+
+body::-webkit-scrollbar {
+  width: 4px;  
+  background-color: rgba(255,255,255,.12);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: @green;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	      clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+p, ul, li {	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div, p, a {
+	box-sizing: border-box;
+	transition: all 0.3s ease-out;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта		
+}
+
+a {
+	text-decoration: none;	
+	cursor: pointer;	
+	transition: @animation;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+		/* отмена выделения текста */
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+			-ms-user-select: none;
+			    user-select: none;
+	&:hover,
+	&:focus {
+		color: @green;
+	}	
+	&[disabled] {
+		pointer-events: none;
+    cursor: default;
+		color: #3f3f3f;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+picture {
+	display: block;
+	line-height: 0;
+}
+
+.fancybox-content {
+	padding-bottom: 30px;
+	overflow: hidden;
+}
