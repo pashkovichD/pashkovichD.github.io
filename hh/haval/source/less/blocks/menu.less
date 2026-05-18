@@ -14,7 +14,6 @@
 	padding: 0;
 	line-height: 0;
 	text-align: center;
-	// background-color: @white;
 	a {
 		display: block;
 		padding: 11px 7px 11px 7px;
@@ -91,6 +90,21 @@
 
 @media (max-width: @desktop-width) {
 
+}
+
+@media (max-width: @tablet-width) {
+	.menu__list {
+		display: block;
+		width: 250px;
+		padding: 15px;
+		background-color: rgba(0,0,0,.95);
+	}
+
+	.menu__item {
+		a {
+			line-height: 140%;
+		}
+	}
 }
 
 @media (max-width: @mobile-width) {

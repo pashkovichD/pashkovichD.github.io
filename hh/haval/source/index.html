@@ -6,14 +6,12 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <!-- <meta name='theme-color' content='#ffffff'> -->
-	<!-- <meta name="robots" content="index, follow"> -->
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<link rel="canonical" href="">
+	<link rel="canonical" href="/">
 
 	<!-- swiper.js -->	
-	<link rel="stylesheet" href="css/swiper/swiper-bundle.css"/>
+	<link rel="stylesheet" href="css/swiper/swiper-bundle.css">
 	<script src="js/swiper/swiper-bundle.min.js"></script>
 
 	<!-- FancyBox 3 -->
@@ -60,7 +58,7 @@
 			<nav class="page-header__nav menu container">
 				<h2 class="visually-hidden">Главное меню</h2>
 				<button class="page-header__btn-models">Модели</button>
-				<!-- <ul class="page-header__nav-models menu__list">
+				<ul class="page-header__nav-models menu__list">
 					<li class="menu__item"><a href="#">M6</a></li>
 					<li class="menu__item"><a href="#">DARGO X</a></li>
 					<li class="menu__item"><a href="#">DARGO</a></li>
@@ -70,17 +68,17 @@
 					<li class="menu__item"><a href="#">H9</a></li>
 					<li class="menu__item"><a href="#">GWM Poer</a></li>
 					<li class="menu__item"><a href="#">GWM Poer KINGKONG</a></li>
-				</ul> -->					
+				</ul>					
 				<ul class="page-header__nav-list menu__list">
-					<!-- <li class="menu__item"><a href="#">Подобрать комплектацию</a></li>
-					<li class="menu__item"><a href="#">Тест-драйв</a></li> -->
+					<li class="menu__item"><a href="#">Подобрать комплектацию</a></li>
+					<li class="menu__item"><a href="#">Тест-драйв</a></li>
 					<li class="menu__item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
-			<!-- <button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
+			<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
 				<span class="visually-hidden">Открыть меню</span>
 				<span class="hamburger__line"></span>
-			</button> -->
+			</button>
 		</div>
 
 		
@@ -183,8 +181,8 @@
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<form id="fos-form" class="form" action="/" method="POST">
 				<p class="form__item">
-					<input class="form__input" type="phone" name="fos__phone" id="fos__phone" value="" required>
-					<label class="visually-hidden" for="fos__phone">Ваш телефон</label>
+					<label class="form__label" for="fos__phone">Ваш телефон</label>
+					<input class="form__input" type="tel" name="fos__phone" id="fos__phone" value="" required>					
 				</p>
 				<input type="submit" class="form__submit button" value="Отправить">
 			</form>
