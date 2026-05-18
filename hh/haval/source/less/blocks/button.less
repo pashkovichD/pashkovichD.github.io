@@ -36,6 +36,27 @@
 	// }
 }
 
+.button-dark {
+	background-color: #000000;
+	&:hover,
+	&:focus {
+		background-color: darken(@green, 10%);
+		color: @white;
+	}
+}
+
+.button-opacity {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	color: #000000;
+	&:hover,
+	&:focus {
+		background-color: #ffffff;
+		border: 1px solid @green;
+		color: @green;
+	}
+}
+
 @media (max-width: @desktop-1200-width) {
 	.button {
 		font-size: 14px;

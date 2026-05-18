@@ -304,3 +304,5 @@ function hideModal(modal, overlay) {
 //     clickable: true,
 //   }
 // })
+
+// $('#fos__phone').mask('+7 (999) 999-99-99');
