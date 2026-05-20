@@ -606,6 +606,39 @@ header {
   margin-bottom: 50px;
 }
 
+.ch-blog-area-s2 .blog-items .blog-item .blog-img-left .blog-img {
+  border-radius: 5px;
+}
+
+.ch-blog-area-s2 .blog-items {
+  margin-bottom: 30px;
+}
+
+.ch-blog-area-s2 .blog-items .blog-item {
+  border: none;
+  background-color: transparent;
+}
+
+.ch-blog-area-s2 .blog-items .blog-item .blog-content {
+  padding-left: 15px;
+}
+
+.blog-content h3 {
+  text-align: left;
+}
+
+.blog-content h3 a {
+  font-size: 18px;
+  font-weight: 700;  
+  color: #2a2c30;
+}
+
+.blog-content p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #47494c;
+}
+
 .ch-blog-area-s2 .blog-area-btn {
   text-align: center;
 }
