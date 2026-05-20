@@ -35,12 +35,12 @@ h3 {
 }
 
 .mouse-circle-mover {
-  display: none;
+  /*display: none;*/
   background-color: #fdc61b;
 }
 
 .mouse-circle-mover-follow {
-  display: none;
+  /*display: none;*/
   border: 1px solid #fdc61b;
 }
 
@@ -523,7 +523,6 @@ header {
 .service-area-s2 .service-wrap .service-item .service-text h3 > a {
   font-family: Inter, sans-serif;
   font-size: 18px;
-  /*line-height: normal;*/
   font-weight: 700;
   text-align: center;
   color: #33354a;
@@ -557,3 +556,9 @@ header {
   text-align: center;
 }
 
+@media (max-width: 575px) {
+  .service-area-s2 .service-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
