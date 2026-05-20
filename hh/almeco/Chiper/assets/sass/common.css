@@ -58,6 +58,38 @@ h3 {
     color: #fff;
 }
 
+.ch-top-title-s2 h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #2a2c30;
+}
+
+.ti-vkontakte:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;  
+  background-image: url('data:image/svg+xml; utf-8, <svg width="30" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4493 5.94799C23.6161 5.40154 23.4493 5 22.6553 5H20.0297C19.3621 5 19.0543 5.34687 18.8874 5.72936C18.8874 5.72936 17.5521 8.92607 15.6606 11.0025C15.0487 11.6036 14.7705 11.7949 14.4367 11.7949C14.2698 11.7949 14.0194 11.6036 14.0194 11.0572V5.94799C14.0194 5.29225 13.8345 5 13.2781 5H9.15213C8.73494 5 8.48403 5.30434 8.48403 5.59278C8.48403 6.21441 9.42974 6.35777 9.52722 8.10641V11.9042C9.52722 12.7368 9.37413 12.8878 9.04032 12.8878C8.15023 12.8878 5.98507 9.67682 4.70093 6.00261C4.44927 5.28847 4.19686 5 3.52583 5H0.900218C0.150044 5 0 5.34687 0 5.72936C0 6.41244 0.890141 9.80039 4.14464 14.2812C6.31429 17.3412 9.37118 19 12.1528 19C13.8218 19 14.0283 18.6316 14.0283 17.997V15.6842C14.0283 14.9474 14.1864 14.8003 14.7149 14.8003C15.1043 14.8003 15.7719 14.9916 17.3296 16.467C19.1099 18.2156 19.4034 19 20.4047 19H23.0304C23.7805 19 24.1556 18.6316 23.9392 17.9045C23.7024 17.1799 22.8525 16.1286 21.7247 14.8823C21.1127 14.1719 20.1947 13.4069 19.9165 13.0243C19.5271 12.5326 19.6384 12.314 19.9165 11.8769C19.9165 11.8769 23.1155 7.45067 23.4493 5.94799Z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ti-telegram:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;  
+  background-image: url('data:image/svg+xml; utf-8, <svg fill="white" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 575px) {
+  .ch-top-title-s2 h2 {
+    font-size: 25px;
+  }
+}
+
 /*.ch-btn-style-1 {
   padding: 12px 25px;
   font-family: Inter, sans-serif;
@@ -560,5 +592,90 @@ header {
   .service-area-s2 .service-wrap {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+
+/*--- Новости компании ---*/
+.ch-blog-area-s2 {
+  padding-top: 50px;
+  background-color: #f7f7f7;
+}
+
+.ch-blog-area-s2 h2 {
+  margin-bottom: 50px;
+}
+
+.ch-blog-area-s2 .blog-area-btn {
+  text-align: center;
+}
+
+
+/*--- FOOTER ---*/
+.footer-section {
+  background-color: #33354a;
+}
+
+.footer-section .upper-footer {
+  padding: 40px 0;
+}
+
+.footer-section .upper-footer .container > .row {
+  align-items: center;
+}
+
+.footer-section .social-widget ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #ffffff;
+  border: none;
+  opacity: 0.5;
+}
+
+.footer-section .social-widget ul li a:focus,
+.footer-section .social-widget ul li a:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+.menu-widget {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-widget li > a {
+  padding: 5px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  opacity: .8;
+}
+
+.menu-widget li > a:focus,
+.menu-widget li > a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1399px) {
+  .menu-widget li > a {
+    padding: 5px 10px;    
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer-section .about-widget,
+  .footer-section .menu-widget {
+    margin-bottom: 30px;
+  }
+  .footer-section .social-widget {
+    /*padding-top: 20px;*/
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-section .upper-footer .col {
+      min-height: auto;
+      margin-bottom: 0;
   }
 }
