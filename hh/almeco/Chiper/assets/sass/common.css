@@ -5,6 +5,21 @@
   font-family: Inter, sans-serif;  
 }
 
+h2, h3 {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #2a2c30;
+  letter-spacing: normal;
+  text-transform: none;  
+}
+
+h3 {  
+  font-size: 18px;
+  color: #33354a;
+}
+
 :focus {
   outline: none;
   /*-webkit-box-shadow: 0 0 0 2px white, 0 0 0 4px #fc0;
@@ -27,6 +42,15 @@
 .mouse-circle-mover-follow {
   display: none;
   border: 1px solid #fdc61b;
+}
+
+.back-btn {
+  background-color: #fdc61b;
+  border-color: #fdc61b;
+}
+
+.back-btn:hover {
+  background-color: #fdc61b;  
 }
 
 .ch-btn-style-2:hover {
@@ -147,14 +171,15 @@ header {
   height: 0;
   border-style: solid;
   border-width: 0px 0px 165px 400px;
-  border-color: transparent transparent #ffffff transparent;
+  border-color: transparent transparent #f7f7f7 transparent;
   transform: rotate(0deg);
 }
 
 .ch-main-slide .ch-main-hero-text h2 {
   margin-bottom: 20px;
   padding-top: 80px;
-  font-size: 58px;  
+  font-size: 58px;
+  text-align: left;
 }
 
 .ch-main-slide .ch-main-hero-text p.wow {
@@ -344,7 +369,8 @@ header {
 /*--- About Us ---*/
 .about-area-s2 {
   padding-top: 180px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
 }
 
 .about-area-s2 .about-left-item {
@@ -391,6 +417,7 @@ header {
   font-size: 35px;
   line-height: 45px;
   font-weight: 900;
+  text-align: left;
   color: #33354a;
 }
 
@@ -462,3 +489,71 @@ header {
     line-height: 38px;
   }
 }
+
+
+/*--- Наши услуги ---*/
+.service-area-s2 {  
+  padding-top: 50px;
+}
+
+.service-area-s2 h2 {
+  margin-bottom: 50px;
+}
+
+.service-area-s2 .service-item {
+  padding: 20px 30px 40px;
+  background-color: #f0f0f0;
+}
+
+.service-area-s2 .service-text {
+
+}
+
+.service-area-s2 .service-text .img {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.service-area-s2 .service-wrap .service-item .service-text h3 {
+  max-width: none;
+  line-height: 22px;
+  text-align: center;
+}
+
+.service-area-s2 .service-wrap .service-item .service-text h3 > a {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  /*line-height: normal;*/
+  font-weight: 700;
+  text-align: center;
+  color: #33354a;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.service-area-s2 .service-wrap .service-item .service-text p {
+  font-size: 16px;  
+  line-height: 24px;
+  font-weight: 400;
+  color: #47494c;
+}
+
+.service-area-s2 .service-wrap .service-item .service-text .read-more {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  color: #33354a;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.service-area-s2 .service-wrap .service-item .service-text .read-more:focus,
+.service-area-s2 .service-wrap .service-item .service-text .read-more:hover {
+  letter-spacing: 1px;
+}
+
+
+
+.service-area-s2 .service-area-btn {
+  text-align: center;
+}
+
