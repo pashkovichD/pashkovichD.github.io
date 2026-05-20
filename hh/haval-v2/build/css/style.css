@@ -204,6 +204,63 @@ picture {
   padding-bottom: 30px;
   overflow: hidden;
 }
+.anim-bottom-up {
+  position: relative;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    opacity: 1;
+  }
+}
 .button {
   display: block;
   -webkit-box-pack: center;

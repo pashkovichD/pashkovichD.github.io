@@ -1,0 +1,221 @@
+/*--- Inter ---*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+  font-family: Inter, sans-serif;
+}
+
+.ch-btn-style-2:hover {
+    background: #133038;
+    color: #fff;
+}
+
+.loader span {
+  background-color: #fdc61b;
+}
+
+/*.ch-btn-style-1 {
+  padding: 12px 25px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1px;
+  border: 5px solid #fdc61b;
+  border-radius: 10px;
+}
+
+.ch-btn-style-1:after {
+  content: '';
+}
+
+.ch-btn-style-2 {
+  padding: 12px 25px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1px;
+  border: 5px solid #33354a;
+  border-radius: 10px;
+  background-color: #33354a;
+}
+
+.ch-btn-style-2:after {
+  content: '';
+}*/
+
+.ch-btn-animated span {
+  background-color: #fdc61b;
+}
+
+
+/*--- HEADER ---*/
+header {
+  background-color: #ffffff;
+}
+
+.cp-header-phone {
+  padding: 10px 25px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fdc61b;
+}
+
+.cp-header-phone:after {
+  content: none;
+}
+
+.cp-header-area .main-menu ul > li > a {
+  color: #404040;
+}
+
+.cp-header-area .main-menu ul > li > a:hover {
+  color: #fdc61b;
+}
+
+.cp-header-area .main-menu ul > li > a:focus {
+  outline: none;
+  color: #fdc61b;
+}
+
+
+/*--- SLIDE ---*/
+.ch-main-slide {
+  padding-bottom: 170px;
+  background-color: #133038;
+  background-image: url('../../assets/images/slide.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom -70px;
+}
+
+.ch-main-slide:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0px 165px 400px;
+  border-color: transparent transparent #ffffff transparent;
+  transform: rotate(0deg);
+}
+
+.ch-main-slide .ch-main-hero-text h2 {
+  margin-bottom: 20px;
+  padding-top: 80px;
+  font-size: 58px;  
+}
+
+.ch-main-slide .ch-main-hero-text p.wow {
+  max-width: 750px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.ch-main-buttons {  
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.ch-main-buttons .ch-btn-style-1 {
+  padding: 10px 25px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1px;
+  border: 5px solid #fdc61b;
+  border-radius: 10px;
+}
+
+.ch-main-buttons .ch-btn-style-1:after {
+  content: '';
+}
+
+.ch-main-buttons .ch-btn-style-2 {
+  padding: 10px 25px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border: 5px solid #33354a;
+  border-radius: 10px;
+  background-color: #33354a;
+}
+
+.ch-main-buttons .ch-btn-style-2:hover {
+  color: #33354a;
+  background-color: #fdc61b;
+  border-color: #fdc61b;
+}
+
+.ch-main-buttons .ch-btn-style-2:after {
+  content: '';
+}
+
+@media (max-width: 1500px) {
+  .ch-main-slide .ch-main-hero-text h2 {
+    line-height: 66px;
+    text-shadow: 0 0 5px rgba(0,0,0,.2);
+  }
+
+  .ch-main-slide .ch-main-hero-text p.wow {
+    text-shadow: 0 0 5px rgba(0,0,0,.2);
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .ch-main-slide {
+    background-position: center bottom 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .ch-main-slide {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .ch-main-slide .ch-main-hero-text {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .ch-main-slide {
+    padding-bottom: 100px;
+  }
+
+  .ch-main-slide > .container {
+    max-width: 90%;
+  }  
+
+  .ch-main-slide .ch-main-hero-text h2 {
+    font-size: 45px;
+    line-height: 57px;
+  }
+
+  .ch-main-buttons .ch-btn-style-1 {
+    padding: 8px 20px;    
+    font-size: 18px;    
+    border: 3px solid #fdc61b;
+    border-radius: 5px;
+  }
+
+  .ch-main-buttons .ch-btn-style-2 {
+    padding: 8px 20px;    
+    font-size: 18px;
+    font-weight: 500;    
+    border: 3px solid #33354a;
+    border-radius: 5px;
+  }
+}
