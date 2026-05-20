@@ -639,10 +639,52 @@ header {
   color: #47494c;
 }
 
+.ch-blog-area-s2 .blog-items .blog-item-photo {
+  margin-bottom: 20px;
+  padding: 10px;  
+}
+
+.ch-blog-area-s2 .blog-items .blog-item-photo .img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ch-blog-area-s2 .blog-items .blog-item-photo .img img {
+  width: 100%;
+}
+
 .ch-blog-area-s2 .blog-area-btn {
   text-align: center;
 }
 
+.ch-blog-area-s2 .read-more {
+    position: relative;
+    font-family: Inter, sans-serif;
+    font-size: 16px;    
+    letter-spacing: normal;
+    text-transform: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    color: #33354a;    
+    padding-right: 25px;
+}
+
+.ch-blog-area-s2 .read-more:before {
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    content: "\e914";
+    font-family: "icomoon";    
+    font-size: 12px;
+    line-height: 100%;
+    transition: all 0.3s;
+}
+
+.ch-blog-area-s2 .read-more:focus,
+.ch-blog-area-s2 .read-more:hover {
+  letter-spacing: 1px;
+}
 
 /*--- FOOTER ---*/
 .footer-section {
