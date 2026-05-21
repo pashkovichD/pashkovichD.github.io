@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 * {
-  font-family: Inter, sans-serif;  
+  font-family: Inter, sans-serif;
 }
 
 h2, h3 {
@@ -987,6 +987,115 @@ header {
     display: none;
   }
 }
+
+/*================*/
+/*--- Новость ---*/
+/*================*/
+.blog-single-page-area .blog-single-wrap .blog-img .date {
+  background-color: #133038;
+}
+
+.blog-sidebar .search-widget form button {
+  background-color: #133038;
+}
+
+.blog-single-page-area .blog-single-wrap .blog-img ul {
+  background-color: #fcdb74;
+}
+
+.blog-single-page-area .blog-single-wrap h2,
+.blog-single-page-area .blog-single-wrap .blog-single-text-wrap h2 {
+  color: #33354a;
+}
+
+.blog-single-page-area .blog-single-wrap blockquote {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.blog-single-page-area .blog-single-wrap blockquote span {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.blog-single-page-area .blog-single-wrap .more-posts .previous-post {
+  padding-right: 50px;
+}
+
+.blog-single-page-area .blog-single-wrap .more-posts .next-post {
+  padding-left: 50px;
+}
+
+.blog-single-page-area .blog-single-wrap .more-posts .previous-post:before,
+.blog-single-page-area .blog-single-wrap .more-posts .next-post:before {
+  background-color: #fdc61b;
+}
+
+.blog-single-page-area .blog-single-wrap .more-posts .post-name {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #33354a;
+}
+
+@media (max-width: 767px) {
+  .blog-single-page-area .blog-single-wrap .more-posts .previous-post {
+    padding-right: 0;
+  }
+
+  .blog-single-page-area .blog-single-wrap .more-posts .next-post {
+    padding-left: 0;
+  }
+}
+
+
+/*====================*/
+/*--- Left Sidebar ---*/
+/*====================*/
+.blog-sidebar .category-widget ul li a {
+  color: #33354a;
+}
+
+.blog-sidebar .recent-post .post .post-content h4 {
+  font-size: 15px;  
+  line-height: 22px;  
+}
+
+.blog-sidebar .recent-post .post .post-content h4 a {
+  color: #33354a;
+}
+
+
+/*===================*/
+/*--- Pagination ---*/
+/*===================*/
+.pagination-wrapper .pg-pagination .active a, .pagination-wrapper .pg-pagination li a:hover {
+  background: #133038;
+  border-color: #133038;    
+}
+
+
+/*================*/
+/*--- Новости ---*/
+/*================*/
+.blog-page-area .blog-item .blog-img ul {
+  max-width: 400px;
+  background-color: #fcdb74;
+}
+
+.blog-page-area .blog-item .blog-content h2 {
+  text-align: left;
+}
+
+.blog-page-area .blog-item .blog-content h2 a {
+  
+}
+
+
+
+
 
 /*==================*/
 /*--- О компании ---*/

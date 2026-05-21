@@ -246,10 +246,10 @@
             },
 
             messages: {
-                name: "Please enter your name",
-                email: "Please enter your email address",
-                phone: "Please enter your phone number",
-                subject: "Please select your contact subject"
+                name: "Пожалуйста, введите ваше имя",
+                email: "Пожалуйста, введите свой адрес электронной почты",
+                phone: "Пожалуйста, введите свой номер телефона",
+                subject: "Пожалуйста, выберите тему вашего обращения"
             },
 
             submitHandler: function (form) {
