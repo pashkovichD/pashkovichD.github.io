@@ -78,7 +78,12 @@ input[type="radio"].visually-hidden {
 }
 
 .back-btn:hover {
-  background-color: #fdc61b;  
+  background-color: #fdc61b;
+}
+
+.ch-btn-style-2 {
+  border: none;
+  background-color: #fdc61b;
 }
 
 .ch-btn-style-2:hover {
@@ -916,19 +921,13 @@ header {
 }
 
 
-
-
-
-/*==================*/
-/*--- О компании ---*/
-/*==================*/
-
 .page-title {
   background-color: #133038;
 }
 
 .page-title .breadcumb-wrap ol li {
   text-align: left;
+  color: #fdc61b;
 }
 
 .page-title .breadcumb-wrap ol li:after {
@@ -945,3 +944,50 @@ header {
       padding-bottom: 50px;
   }
 }
+
+.ch-top-title-s3 h2 {
+  margin-bottom: 20px;
+  color: #33354a;
+}
+
+.ch-top-title p, .ch-top-title-s2 p, .ch-top-title-s3 p {
+  /*margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;*/
+  color: #47494c;
+}
+
+    
+
+
+/*=================*/
+/*--- Контакты ---*/
+/*=================*/
+
+.contact-pg-section .office-info .office-info-item .office-info-icon {
+  background-color: #33354a;
+}
+
+.contact-pg-section .office-info .office-info-item .office-info-icon .icon i {
+  color: #fdc61b;
+}
+
+.contact-map {
+  margin-bottom: 50px;
+  position:relative;  
+  overflow:hidden;
+}
+
+.contact-map iframe {
+  border-radius: 10px;
+}
+ 
+@media (max-width: 575px) {
+  .contact-map {
+    display: none;
+  }
+}
+
+/*==================*/
+/*--- О компании ---*/
+/*==================*/
