@@ -936,6 +936,9 @@ header {
       -ms-transform: none;
           transform: none;
 }
+.page-title .breadcumb-wrap ol li a:hover {
+    color: #fdc61b;
+}
 
 @media (max-width: 991px) {
   .page-title {
@@ -1185,4 +1188,42 @@ header {
 
 .text-moving-sec-s2 .text-moving h1 span {
   font-weight: 800;
+}
+
+.video-area .video-img .video-btn {
+  width: 100px;
+  height: 100px;
+  background-color: #33354a;
+}
+
+.testimonial-section .testimonial-item {
+  background-color: #fcdb74;
+}
+
+.testimonial-section .owl-nav [class*=owl-] {
+  border-color: #fcdb74;
+}
+
+.testimonial-section .owl-nav [class*=owl-]:hover {
+    background: #fcdb74;
+}
+
+.ch-top-title-s3 span {
+  font-family: Inter, sans-serif;
+  letter-spacing: 1px;
+  color: #33354a;
+}
+
+.ch-top-title-s3 h2 {
+  font-size: 37px;
+  line-height: 47px;
+  text-align: left;
+}
+
+.testimonial-section .testimonial-item .testimonial-text .testimonial-info h3 {
+  text-align: left;
+}
+
+.testimonial-section .testimonial-item .testimonial-text:before {
+  font-size: 35px;
 }
