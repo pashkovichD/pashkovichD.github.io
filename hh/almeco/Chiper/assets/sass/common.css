@@ -1190,6 +1190,13 @@ header {
   font-weight: 800;
 }
 
+@media (max-width: 991px) {
+  .text-moving-sec-s2 .text-moving h1 span {        
+      font-size: 35px;
+      letter-spacing: 1.8px;
+  }
+}
+
 .video-area .video-img .video-btn {
   width: 100px;
   height: 100px;
@@ -1226,4 +1233,14 @@ header {
 
 .testimonial-section .testimonial-item .testimonial-text:before {
   font-size: 35px;
+}
+
+.testimonial-section .owl-dots button.active {
+  background-color: #fdc61b;
+}
+
+@media (max-width: 991px) {
+  .ch-top-title-s3 h2 {
+    text-align: center;
+  } 
 }
