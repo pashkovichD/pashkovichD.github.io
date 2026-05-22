@@ -1238,3 +1238,11 @@ header {
     text-align: center;
   } 
 }
+
+
+.owl-carousel .owl-stage,
+.owl-carousel .owl-item {
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: flex;
+}
