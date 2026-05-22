@@ -1170,4 +1170,19 @@ header {
 /*==================*/
 .about-area .about-features-wrap .about-features-item h4 {
   font-family: Inter, sans-serif;
+  font-weight: 900;
+}
+
+.about-area .about-left-item .about-left-bottom .right-text,
+.about-area .about-left-item .about-left-top .icon,
+.text-moving-sec-s2 {
+    background-color: #fcdb74;
+}
+
+.about-area .about-left-item .about-left-top .right-img:before {
+  border-color: #fcdb74;
+}
+
+.text-moving-sec-s2 .text-moving h1 span {
+  font-weight: 800;
 }
