@@ -1171,9 +1171,12 @@ header {
 /*==================*/
 /*--- О компании ---*/
 /*==================*/
-.about-area .about-features-wrap .about-features-item h4 {
+.about-area .about-features-wrap .about-features-item h3 {
   font-family: Inter, sans-serif;
-  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
 }
 
 .about-area .about-left-item .about-left-bottom .right-text,
