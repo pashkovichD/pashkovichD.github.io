@@ -481,10 +481,6 @@ header {
   color: #47494c;
 }
 
-@media (max-width: 1399px) {
-
-}
-
 @media (max-width: 1199px) {
   .about-area-s2 .about-left-item .about-left-img {
     width: 90%;    
