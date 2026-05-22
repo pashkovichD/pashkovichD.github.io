@@ -1093,10 +1093,73 @@ header {
   
 }
 
+/*===============*/
+/*--- Услуги ---*/
+/*===============*/
 
+.service-text .img {
+  margin-bottom: 20px;
+  text-align: center;  
+}
 
+.service-area .service-item .service-text h3 a {
+  color: #33354a;
+}
 
+.service-area .service-item .service-text p {
+  line-height: 26px;
+}
 
-/*==================*/
-/*--- О компании ---*/
-/*==================*/
+.service-area .service-item .service-text a.read-more {
+  font-family: Inter, sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.service-area .service-item .service-text a.read-more:focus,
+.service-area .service-item .service-text a.read-more:hover {
+  letter-spacing: 1px;
+}
+
+.service-single-page .service-sidebar .category-widget ul li a:focus,
+.service-single-page .service-sidebar .category-widget ul li a:hover {
+  background-color: #fcdb74;
+}
+
+/*===============*/
+/*--- Услуга ---*/
+/*===============*/
+.serice-list-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.serice-list {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.serice-list li {
+  margin-bottom: 10px;
+  font-size: 15px; 
+}
+
+.serice-list li span {
+  font-weight: 700;
+}
+
+.serice-list li span > i.ti-check {
+  margin-right: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  background-color: #2A2C30;
+  border-radius: 50%;
+}
+.serice-list li span > i.ti-check:before {
+  font-size: 10px;
+  color: #ffffff;
+}
