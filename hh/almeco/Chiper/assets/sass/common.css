@@ -1180,6 +1180,11 @@ header {
   border-color: #fcdb74;
 }
 
+.about-area .about-left-item .about-left-bottom img {
+  margin-top: 38px;
+  border-radius: 7px;
+}
+
 .text-moving-sec-s2 .text-moving h1 span {
   font-weight: 800;
 }
@@ -1226,7 +1231,7 @@ header {
 }
 
 .testimonial-section .testimonial-item .testimonial-text:before {
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .testimonial-section .owl-dots button.active {
