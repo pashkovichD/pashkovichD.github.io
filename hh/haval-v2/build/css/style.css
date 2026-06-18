@@ -955,13 +955,14 @@ picture {
   width: 570px;
 }
 .timer__title {
-  margin-bottom: 0;
+  margin-bottom: 5px;
   padding-left: 10px;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
 }
-#timer421ee20f7b6354d7edb01d9206242daa {
+#timer421ee20f7b6354d7edb01d9206242daa,
+#timer26f86b17b78c7864c85fef338f306385 {
   background-color: #f6f6f6;
   padding: 7px;
 }
@@ -1040,27 +1041,33 @@ picture {
   .timer__button {
     padding: 20px 18px 18px;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa {
+  #timer421ee20f7b6354d7edb01d9206242daa,
+  #timer26f86b17b78c7864c85fef338f306385 {
     width: 400px !important;
     height: 75px !important;
     min-width: 400px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element,
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element {
     width: 75px !important;
     height: 75px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-number"] {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-number"],
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element span[id^="timer-number"] {
     font-size: 28px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-text"] {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-text"],
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element span[id^="timer-text"] {
     font-size: 13px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element canvas {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element canvas,
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element canvas {
     width: 75px !important;
     height: 75px !important;
     aspect-ratio: auto 1;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-separator {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-separator,
+  #timer26f86b17b78c7864c85fef338f306385 .timer-separator {
     height: 75px !important;
     padding: 0 5px !important;
     font-size: 35px !important;
@@ -1082,27 +1089,33 @@ picture {
   .timer__title {
     font-size: 14px;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa {
+  #timer421ee20f7b6354d7edb01d9206242daa,
+  #timer26f86b17b78c7864c85fef338f306385 {
     width: 320px !important;
     height: 60px !important;
     min-width: 320px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element,
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element {
     width: 60px !important;
     height: 60px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-number"] {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-number"],
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element span[id^="timer-number"] {
     font-size: 24px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-text"] {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element span[id^="timer-text"],
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element span[id^="timer-text"] {
     font-size: 10px !important;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-element canvas {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-element canvas,
+  #timer26f86b17b78c7864c85fef338f306385 .timer-element canvas {
     width: 60px !important;
     height: 60px !important;
     aspect-ratio: auto 1;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa .timer-separator {
+  #timer421ee20f7b6354d7edb01d9206242daa .timer-separator,
+  #timer26f86b17b78c7864c85fef338f306385 .timer-separator {
     height: 60px !important;
     padding: 0 !important;
     font-size: 25px !important;
@@ -1117,7 +1130,8 @@ picture {
   .timer__wrapper {
     gap: 0;
   }
-  #timer421ee20f7b6354d7edb01d9206242daa {
+  #timer421ee20f7b6354d7edb01d9206242daa,
+  #timer26f86b17b78c7864c85fef338f306385 {
     display: none !important;
   }
 }
