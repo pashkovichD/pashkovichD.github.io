@@ -21,7 +21,6 @@
   top: 7px;
   bottom: 7px;
   width: 1px;
-  /*height: auto;*/
   background-color: #E6E7E7;
 }
 
@@ -145,10 +144,13 @@ ul.mobile-nav-list {
   background-color: #000606;
 }
 
-.hero-area-slider .hero1-section-area .hero-header-area h1 {
+.hero-area-slider .hero1-section-area .hero-header-area h2 {
   padding: 0 70px;
-  font-weight: 800;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
   letter-spacing: 1px;
+  color: #ffffff;
 }
 
 .hero-area-slider .hero1-section-area .hero-header-area .btn-area1 > a {
@@ -192,7 +194,7 @@ ul.mobile-nav-list {
 }
 
 @media only screen and (max-width: 991px) {
-  .hero-area-slider .hero1-section-area .hero-header-area h1 {    
+  .hero-area-slider .hero1-section-area .hero-header-area h2 {    
     font-size: 50px;
     line-height: 50px;
   }
@@ -203,7 +205,7 @@ ul.mobile-nav-list {
     height: 550px;
     padding: 180px 0 100px;
   }  
-  .hero-area-slider .hero1-section-area .hero-header-area h1 {
+  .hero-area-slider .hero1-section-area .hero-header-area h2 {
     padding: 0;
     font-size: 40px;
     line-height: 40px;
@@ -237,7 +239,7 @@ ul.mobile-nav-list {
 }
 
 @media only screen and (max-width: 480px) {
-  .hero-area-slider .hero1-section-area .hero-header-area h1 {
+  .hero-area-slider .hero1-section-area .hero-header-area h2 {
     font-size: 30px;
     line-height: 35px;
   }
@@ -271,12 +273,158 @@ ul.mobile-nav-list {
 
 @media only screen and (max-width: 1200px) {
   .about1-section-area .about-images-area .img2 {
-    /*width: 360px;
+    width: 360px;
     height: 200px;
-    margin-bottom: -100px;*/
+    margin-bottom: -100px;
   }
 
   .about-heading.heading1 p.decription {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about1-section-area .about-images-area .img2 {
+    width: 470px;
+    height: 260px;
+    margin-bottom: -170px;
+  }
+
+  .about1-section-area .about-images-area .author-img {
+    right: -50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about1-section-area .about-images-area .img1 img {
+    border-radius: 16px;
+  }
+
+  .about1-section-area .about-images-area .img2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about1-section-area .about-images-area .author-img {
+    right: 0;
+  }
+
+  .author-img.aniamtion-key-1 {
+    margin-top: 30px;
+    animation-name: none;
+  }
+
+  .about-heading.heading1 h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about-heading.heading1 {
+    padding: 0 10px;
+  }
+}
+
+
+/*--- Properties Area ---*/
+.properties-section-area h2 {
+  line-height: 48px;
+}
+
+.properties-section-area .property-feature-slider .tabs-btn-area ul li button {
+  text-transform: none;
+}
+
+.properties-section-area .property-feature-slider .property-boxarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.properties-section-area .property-feature-slider .property-boxarea .img1 {
+  flex-shrink: 0;
+}
+
+.properties-section-area .property-feature-slider .property-boxarea .content-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.properties-section-area .property-feature-slider .property-boxarea .content-area p {
+  line-height: 24px;
+}
+
+.properties-section-area .property-feature-slider .property-boxarea .content-area .btn-area {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.properties-section-area .property-feature-slider .tabs-btn-area ul {
+  display: flex !important;
+  gap: 24px;
+  justify-content: center;
+}
+
+.properties-section-area .property-feature-slider .tabs-btn-area ul li {
+  margin-right: 0;
+}
+
+.property-more {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #073b3a;
+}
+
+.property-more:after {
+  content: none;
+}
+
+.property-more:focus,
+.property-more:hover {
+    color: #030e0f;
+    background: #cbcd30;
+}
+
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 991px) {
+  .properties-section-area.sp2 {
+    padding: 50px 0;
+  }
+
+  .properties-section-area .property-feature-slider .tabs-btn-area ul li button {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .properties-section-area h2 {
+      line-height: 40px;
+  }
+
+  .properties-section-area .property-feature-slider .tabs-btn-area ul {
+    gap: 15px;
+  }
+
+  .properties-section-area .property-feature-slider .tabs-btn-area ul li button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .properties-section-area .property-feature-slider {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
