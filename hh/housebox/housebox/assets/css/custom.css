@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.5.15,
-* Autoprefixer: v10.5.0
-* Browsers: last 4 version
-*/
-
 /*body::-webkit-scrollbar-track {  
   border-radius: 10px;
   background-color: rgba(255,255,255,.12);
@@ -188,7 +181,7 @@ ul.mobile-nav-list {
 .allmobilesection {
   margin-top: 10px;
   padding-top: 15px;
-  border-top: 3px solid #cbcd30;
+  border-top: 1px solid #cbcd30;
 }
 
 .allmobilesection .theme-btn1 {
@@ -212,6 +205,30 @@ ul.mobile-nav-list {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+}
+
+.mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single .contact-info-icon svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;  
+}
+
+.mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single .contact-info-text a {
+  font-size: 18px;
+  opacity: .5;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+.mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single .contact-info-text a:focus,
+.mobile-sidebar.mobile-sidebar1 .footer1-contact-info .contact-info-single .contact-info-text a:hover {
+  opacity: 1;
 }
 
 @media (min-width: 992px) {  
