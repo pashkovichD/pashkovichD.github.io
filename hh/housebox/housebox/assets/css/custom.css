@@ -234,7 +234,7 @@ ul.mobile-nav-list {
 
   .testimonial-arrows {
     position: relative;
-    top: -70px;
+    top: -85px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -255,8 +255,8 @@ ul.mobile-nav-list {
 
 @media only screen and (max-width: 480px) {
   .hero-area-slider .hero1-section-area .hero-header-area h2 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 35px;
+    line-height: 38px;
   }
 }
 
@@ -311,6 +311,10 @@ ul.mobile-nav-list {
 }
 
 @media only screen and (max-width: 767px) {
+  .about1-section-area {
+    padding-top: 10px;
+  }
+
   .about1-section-area .about-images-area .img1 img {
     border-radius: 16px;
   }
