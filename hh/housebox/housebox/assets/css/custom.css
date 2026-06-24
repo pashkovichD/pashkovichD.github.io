@@ -493,3 +493,38 @@ p.items-section-description {
     padding-right: 10px;
   }
 }
+
+
+/*--- Property-Location Area ---*/
+.property-location-section-area {
+
+}
+
+.property-location-section-area h5 {
+  text-transform: none;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .property-location-section-area .property-single-slider .owl-nav {
+      margin-top: 30px;
+      text-align: center;
+  }
+
+  .property-location-section-area .property-single-slider .owl-nav button.owl-prev {
+      position: relative;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      margin-top: 0;
+      margin-right: 16px;
+  }
+
+  .property-location-section-area .property-single-slider .owl-nav button.owl-next {
+      position: relative;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      margin-top: 0;
+  }
+}
