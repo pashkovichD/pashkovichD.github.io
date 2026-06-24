@@ -531,10 +531,21 @@ p.items-section-description {
 
 
 /*--- .Testimonial Area ---*/
+/*.testimonial-slider-area {
+  display: flex;
+}*/
+
+.testimonial-slider-area .slick-track {
+  display:flex;
+}
+.testimonial-slider-area .slick-slide {
+  height:auto;
+  flex:0 0 auto;
+}
+
 .testimonial-slider-area .testimonial-box {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  flex-direction: column;  
 }
 
 .testimonial-slider-area .testimonial-box > img.quotes{
@@ -544,6 +555,8 @@ p.items-section-description {
 .testimonial-slider-area .testimonial-box .test-images {
   margin-top: auto;
 }
+
+
 
 @media (max-width: 575px) {
   .testimonial1-section-area {
