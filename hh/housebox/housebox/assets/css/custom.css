@@ -528,3 +528,26 @@ p.items-section-description {
       margin-top: 0;
   }
 }
+
+
+/*--- .Testimonial Area ---*/
+.testimonial-slider-area .testimonial-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial-slider-area .testimonial-box > img.quotes{
+  width: 50px;
+}
+
+.testimonial-slider-area .testimonial-box .test-images {
+  margin-top: auto;
+}
+
+@media (max-width: 575px) {
+  .testimonial1-section-area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
