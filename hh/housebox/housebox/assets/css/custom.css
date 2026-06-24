@@ -531,10 +531,6 @@ p.items-section-description {
 
 
 /*--- .Testimonial Area ---*/
-/*.testimonial-slider-area {
-  display: flex;
-}*/
-
 .testimonial-slider-area .slick-track {
   display:flex;
 }
@@ -556,11 +552,24 @@ p.items-section-description {
   margin-top: auto;
 }
 
-
-
 @media (max-width: 575px) {
   .testimonial1-section-area {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {  
+  .testimonial1-section-area .testimonial-slider-area .testimonial-box .test-images .auhtor-area .text a {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .testimonial1-section-area .testimonial-slider-area .testimonial-box .test-images .auhtor-area .text p {
+    line-height: 18px;
+  }
+
+  .testimonial1-section-area .testimonial-slider-area .testimonial-box .test-images .auhtor-area .text .space10 {
+    height: 5px;
   }
 }
