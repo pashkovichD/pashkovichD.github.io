@@ -24,6 +24,53 @@ body::-webkit-scrollbar-thumb {
   font-size: 16px;
 }
 
+p.before-title {
+  display: inline-block;
+  padding: 8px 12px;  
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: normal;  
+  text-align: center;
+  color: #073b3a;
+  border-radius: 2px;
+  background: rgba(7, 59, 58, 0.1);
+}
+
+.breadcumb-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+.breadcumb-wrap li {
+  color: rgba(255,255,255,.7);
+}
+
+ol.breadcumb-wrap li > a {
+  position: relative;
+  color: #ffffff !important;
+}
+
+ol.breadcumb-wrap li > a:focus,
+ol.breadcumb-wrap li > a:hover {
+  text-decoration: underline;
+}
+
+ol.breadcumb-wrap li > a::after {
+  content: "/";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  margin-top: -7px;
+  color: rgb(255, 255, 255);
+}
+
+
 /*--- header-elements ---*/
 .homepage1-body .header-area.homepage1 .header-elements .site-logo {
   width: auto;
@@ -670,9 +717,20 @@ p.items-section-description {
   text-align: left;
 }
 
-.footer1-section-area .footer-content h3,
-.footer1-section-area .footer-content2 h3 {
+.footer1-section-area .footer-content h2,
+.footer1-section-area .footer-content2 h2,
+.footer1-section-area .instagram-posts h2 {
   margin-bottom: 25px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  color: #030e0f;
+}
+
+.footer1-section-area .instagram-posts h2 {
+  margin-bottom: 0;
 }
 
 .footer1-section-area .footer-content ul li a,
@@ -773,5 +831,108 @@ p.items-section-description {
   .footer1-section-area {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+
+
+/*===== Контакты =======*/
+.faq-section-area {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contact-inner-section .heading1 .number-address-area .phone-number .img1,
+.contact-inner-section .heading1 .number-address-area2 .phone-number .img1 {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.contact-inner-section .heading1 .number-address-area .phone-number .img1 svg,
+  .contact-inner-section .heading1 .number-address-area2 .phone-number .img1 svg {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-inner-section .heading1 .social ul li {
+  margin-right: 5px;
+}
+
+.contact-inner-section .heading1 .social ul li:last-child {
+  margin-right: 0;
+}
+
+.contact-inner-section .heading1 .social ul li a {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.contact-inner-section .contact-form-area .input-area input,
+.contact-inner-section .contact-form-area .input-area textarea {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.contact-inner-section .contact-form-area .input-area textarea {
+  margin-bottom: 0;
+}
+
+.faq-section-area .faq-area .accordion .accordion-item .accordion-body p {
+  font-size: 16px;
+  color: #777777;
+}
+
+.faq-section-area .faq-area .accordion .accordion-item button {
+  padding-right: 60px;
+  line-height: 25px;
+}
+
+.faq-section-area .faq-area .accordion .accordion-item button::before {
+  margin-top: -7px;
+  top: 50%;
+}
+
+.faq-section-area .faq-area .accordion .accordion-item button::after {
+  top: 50%;
+}
+
+@media (max-width: 1400px) {
+  .contact-inner-section .heading1 .number-address-area {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-inner-section .heading1 .number-address-area2 .phone-number {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-inner-section .heading1 .number-address-area2 .phone-number .img1 {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-inner-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-inner-section .heading1 .number-address-area .phone-number .content a,
+    .contact-inner-section .heading1 .number-address-area2 .phone-number .content a {
+    font-size: 18px;
+  }
+
+  .faq-section-area .faq-area .accordion .accordion-item button {
+    font-size: 18px;
   }
 }
