@@ -1121,3 +1121,105 @@ p.items-section-description {
 .project1-section-area .service-item .project-featured-box .btn-area1 {
   margin-top: auto;
 }
+
+
+/*===== Новости =======*/
+.blog-grid-section-area {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.blog-grid-section-area .blog-item {
+  display: flex;
+}
+
+.blog-grid-section-area .blog-item .blog-single-boxarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-grid-section-area .blog-single-boxarea .content-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;  
+}
+
+.blog-grid-section-area .blog-single-boxarea .content-area .date {
+  display: inline-block;  
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #454545;
+}
+
+.blog-grid-section-area .blog-single-boxarea .content-area .date > svg {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  margin: -5px 4px 0 0;
+}
+
+.blog-grid-section-area .blog-single-boxarea .content-area .readmore {
+  margin-top: auto;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.blog-grid-section-area .blog-single-boxarea .content-area .readmore:focus,
+.blog-grid-section-area .blog-single-boxarea .content-area .readmore:hover {
+  opacity: 1;
+}    
+
+@media (max-width: 1400px) {
+  .blog-grid-section-area .blog-single-boxarea .content-area .date > svg {
+    height: 16px;
+    width: 16px;    
+    margin: -3px 4px 0 0;
+  }
+
+  .blog-grid-section-area .blog-single-boxarea .content-area .date {
+    font-size: 14px;
+  }
+
+  .blog-grid-section-area .blog-single-boxarea .content-area a.head {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-grid-section-area .blog-single-boxarea .content-area .date > svg {
+    height: 20px;
+    width: 20px;    
+    margin: -5px 4px 0 0;
+  }
+
+  .blog-grid-section-area .blog-single-boxarea .content-area .date {
+    font-size: 16px;
+  }
+
+  .blog-grid-section-area .blog-single-boxarea .content-area a.head {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-grid-section-area .blog-single-boxarea .content-area .date > svg {
+    height: 16px;
+    width: 16px;    
+    margin: -3px 4px 0 0;
+  }
+
+  .blog-grid-section-area .blog-single-boxarea .content-area .date {
+    font-size: 14px;
+  }
+
+  .blog-grid-section-area .blog-single-boxarea .content-area a.head {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
