@@ -1,3 +1,134 @@
+/*--- Development START ---*/
+.plug__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 100px 20px 50px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.plug__svg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.plug__info {
+  margin: 0 30px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #003837;  
+}
+.plug__info svg {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.plug__text-sorry {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+}
+.plug__hot {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+.plug__hot span {
+  opacity: .3;
+}
+.plug__gear-one, .plug__gear-two {
+  -webkit-animation-name: rotationGearR;
+     -moz-animation-name: rotationGearR;
+       -o-animation-name: rotationGearR;
+      animation-name: rotationGearR;
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+       -o-animation-duration: 3s;
+      animation-duration: 3s;
+  -webkit-transform-origin: 50% 55.555555555555% 0;
+     -moz-transform-origin: 50% 55.555555555555% 0;
+       -o-transform-origin: 50% 55.555555555555% 0;
+      transform-origin: 50% 55.555555555555% 0;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;      
+}
+.plug__gear-two {
+    -webkit-animation-name: rotationGearL;
+     -moz-animation-name: rotationGearL;
+       -o-animation-name: rotationGearL;
+      animation-name: rotationGearL;
+  -webkit-animation-duration: 7s;
+     -moz-animation-duration: 7s;
+       -o-animation-duration: 7s;
+      animation-duration: 7s;
+  -webkit-transform-origin: 20% 77.7777777777777777% 0;
+     -moz-transform-origin: 20% 77.7777777777777777% 0;
+       -o-transform-origin: 20% 77.7777777777777777% 0;
+      transform-origin: 20% 77.7777777777777777% 0;
+}
+@-webkit-keyframes rotationGearR {
+  0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }   
+}
+@keyframes rotationGearR {
+  0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotationGearL {
+  0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(-360deg);
+    }   
+}
+@keyframes rotationGearL {
+  0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(-360deg);
+    }
+}
+
+@media (min-width: 480px) {
+  .plug__hot br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .plug__wrapper {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+/*--- Development END ---*/
+
 /*body::-webkit-scrollbar-track {  
   border-radius: 10px;
   background-color: rgba(255,255,255,.12);
@@ -574,9 +705,17 @@ p.items-section-description {
   color: #003837;
 }
 
-.items-section-data .name {
+.items-section-data .name > a {
   font-size: 30px;
   font-weight: 700;
+  color: inherit;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+.items-section-data .name > a:focus,
+.items-section-data .name > a:hover {
+  color: #cbcd30;
 }
 
 @media (max-width: 767px) {
