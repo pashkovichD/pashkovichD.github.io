@@ -129,7 +129,7 @@
 }
 /*--- Development END ---*/
 
-/*body::-webkit-scrollbar-track {  
+body::-webkit-scrollbar-track {  
   border-radius: 10px;
   background-color: rgba(255,255,255,.12);
 }
@@ -142,7 +142,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #073b3a;
-}*/
+}
 
 .theme-btn1 {
   font-size: 16px;
@@ -1091,4 +1091,33 @@ p.items-section-description {
   .faq-section-area .faq-area .accordion .accordion-item button {
     font-size: 18px;
   }
+}
+
+
+
+/*===== Услуги =======*/
+.project1-section-area .project-featured-box .img1 img {
+  height: 160px;
+}
+
+.project1-section-area .service-item {
+  display: flex;
+}
+
+.project1-section-area .service-item .project-featured-box {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.project1-section-area .service-item .project-featured-box .head {
+  line-height: 30px;
+}
+
+.project1-section-area .service-item .project-featured-box .description {
+  font-size: 17px;
+}
+
+.project1-section-area .service-item .project-featured-box .btn-area1 {
+  margin-top: auto;
 }
