@@ -992,7 +992,6 @@ p.items-section-description {
 }
 
 
-
 /*===== Контакты =======*/
 .faq-section-area {
   padding-left: 10px;
@@ -1001,7 +1000,8 @@ p.items-section-description {
 
 .contact-inner-section .heading1 .number-address-area .phone-number .img1,
 .contact-inner-section .heading1 .number-address-area2 .phone-number .img1 {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -1059,21 +1059,31 @@ p.items-section-description {
 
 @media (max-width: 1400px) {
   .contact-inner-section .heading1 .number-address-area {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 24px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
 @media (max-width: 767px) {
   .contact-inner-section .heading1 .number-address-area2 .phone-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 20px;
   }
 
   .contact-inner-section .heading1 .number-address-area2 .phone-number .img1 {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-bottom: 0;
   }
 }
@@ -1102,12 +1112,19 @@ p.items-section-description {
 }
 
 .project1-section-area .service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .project1-section-area .service-item .project-featured-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px;
 }
 
@@ -1131,19 +1148,33 @@ p.items-section-description {
 }
 
 .blog-grid-section-area .blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .blog-grid-section-area .blog-item .blog-single-boxarea {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-grid-section-area .blog-single-boxarea .content-area {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;  
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;  
 }
 
 .blog-grid-section-area .blog-single-boxarea .content-area .date {
@@ -1159,7 +1190,8 @@ p.items-section-description {
 .blog-grid-section-area .blog-single-boxarea .content-area .date > svg {
   height: 20px;
   width: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: -5px 4px 0 0;
 }
 
@@ -1224,3 +1256,79 @@ p.items-section-description {
     line-height: 25px;
   }
 }
+
+
+/*===== О компании =======*/
+.mission-section-area .vission-mission-box h3 {
+  font-size: 28px;
+  line-height: 36px;    
+}
+
+.mission-section-area .vission-mission-box h4 {
+  line-height: 24px;
+}
+
+.mission-section-area .vission-mission-box p {
+  font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 575px) {
+  .mission-section-area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+/*--- Offer1 Area ---*/
+.offer1-section-area .offer-boxarea {
+  margin-bottom: 0;
+  background-color: #f7f7f7;
+}
+
+.offer1-section-area .img1 img {
+  height: auto;
+}
+
+.offer1-section-area .offer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer1-section-area .offer-items > .row {
+  gap: 24px 0;
+}
+
+.offer1-section-area .offer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer1-section-area h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.offer1-section-area .offer-boxarea p {
+  font-size: 16px;
+}
+
+@media (max-width: 575px) {
+  .offer1-section-area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
