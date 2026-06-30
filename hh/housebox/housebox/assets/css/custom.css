@@ -487,9 +487,9 @@ ul.mobile-nav-list {
 
 
 /*--- About ---*/
-.about1-section-area .about-images-area .author-img h3 {
+/*.about1-section-area .about-images-area .author-img h3 {
   font-size: 20px;
-}
+}*/
 
 .about-heading.heading1 h2 {
   line-height: 50px;
@@ -1270,6 +1270,12 @@ p.items-section-description {
 
 .mission-section-area .vission-mission-box p {
   font-size: 16px;
+}
+
+.author-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 @media (max-width: 1400px) {
