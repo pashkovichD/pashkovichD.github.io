@@ -1332,3 +1332,37 @@ p.items-section-description {
 }
 
 
+/*===== Каталог =======*/
+#country + div.country-area {
+  margin-top: 0;
+}
+
+.property-inner-section-find .heading1 .tabs-btn .filter-group .nice-select {
+  padding-right: 30px !important;
+}
+
+.property-inner-section-find .property-latest h3 {
+  font-size: 28px;
+  line-height: 20px;
+}
+
+.property-inner-section-find .property-latest .latest-property {
+  align-items: flex-start;
+}
+
+.property-inner-section-find .property-latest .latest-property .content h3,
+.property-inner-section-find .property-latest .latest-property .content h3 > a {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.latest-property .price {
+  font-weight: 700;
+}
+
+.property-inner-section-find .tab-content .tab-pane .property-boxarea .content-area .description,
+.property-inner-section-find .tab-content .tab-pane .property-boxarea2 .content-area .description {
+  font-size: 15px;  
+  line-height: 21px;
+}
+
