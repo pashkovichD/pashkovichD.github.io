@@ -1331,6 +1331,15 @@ p.items-section-description {
 
 
 /*===== Каталог =======*/
+.property-inner-section-find .heading1 .title-projects {
+  padding-left: 20px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left;
+  color: #030e0f;
+}
+
 #country + div.country-area {
   margin-top: 0;
 }
