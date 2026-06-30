@@ -1278,14 +1278,6 @@ p.items-section-description {
   font-weight: 500;
 }
 
-@media (max-width: 1400px) {
-
-}
-
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 575px) {
   .mission-section-area {
     padding-left: 10px;
