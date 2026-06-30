@@ -1038,6 +1038,10 @@ p.items-section-description {
   margin-bottom: 0;
 }
 
+.gmap_canvas iframe {
+  width: 100%;
+}
+
 .faq-section-area .faq-area .accordion .accordion-item .accordion-body p {
   font-size: 16px;
   color: #777777;
