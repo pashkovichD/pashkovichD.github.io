@@ -27,6 +27,15 @@
 
   <!--=====  JS SCRIPT LINK =======-->
   <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+
+  <!--=====  FancyBox 3 =======-->
+  <script src="assets/js/jquery-3.5.1/jquery.min.js"></script>
+  <script src="assets/js/fancybox/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+
+  <!--=====  maskedinput =======-->
+  <script src="assets/js/maskedinput/jquery.maskedinput.min.js"></script>
+
 </head>
 
 <body class="homepage1-body">
@@ -91,7 +100,7 @@
                 </ul>
               </div>
               <div class="btn-area">
-                <a href="#" class="theme-btn1">Заказать звонок</a>
+                <a href="#fos" data-fancybox="" class="theme-btn1">Заказать звонок</a>
               </div>
             </div>
           </div>
@@ -1222,6 +1231,24 @@
     </div>
   </div>
   <!--===== FOOTER AREA ENDS =======-->
+
+  <section id="fos" style="display: none;">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form id="fos-form" class="form" action="/" method="POST">
+      <p class="form__item">
+        <label class="form__label" for="fos__name">Ваше имя</label>
+        <input class="form__input" type="text" name="fos__name" id="fos__name" value="" required>
+      </p>
+      <p class="form__item">
+        <label class="form__label" for="fos__phone">Ваш телефон</label>
+        <input class="form__input" type="tel" name="fos__phone" id="fos__phone" value="" required>
+      </p>
+      <input type="submit" class="form__submit button theme-btn1" value="Отправить">
+    </form>
+    <script>
+      $('#fos__phone').mask('+7 (999) 999-99-99');
+    </script>
+  </section>
 
   <!--===== JS SCRIPT LINK =======-->
   <script src="assets/js/plugins/bootstrap.min.js"></script>
