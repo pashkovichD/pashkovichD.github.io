@@ -1445,3 +1445,6 @@ p.items-section-description {
   line-height: 21px;
 }
 
+.property-inner-section-find .tab-content .tab-pane .property-boxarea .content-area ul li {
+  margin: 0 6px 10px 0;
+}
