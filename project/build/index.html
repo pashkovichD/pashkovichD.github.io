@@ -1,117 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>	
+<head>
 	<meta charset="UTF-8">
-	<title>Проект -компания по производству стендов, адресных табличек и схем</title>
+	<title>Панели из сотового картона</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta name='theme-color' content='#ffffff'> -->
-	<meta name="robots" content="index, follow">
-	<!-- <meta name="keywords" content="битроид, bitroid, системный интегратор, внедрение CRM Битрикс24, стоимость внедрения crm, разработка сайта, создание сайта, создать сайт, seo продвижение, интеграция с 1С , продвинуть сайт, продвижение сайта, разработка приложений">
-	<meta name="description" content="Автоматизация бизнес-процессов,создание сайтов,внедрение CRM Битрикс24,разработка мобильных приложений и поддержка it-инфраструктуры. Лучшее решение Ваших задач - Битроид!"> -->
+	<meta name="description" content="Российская компания по продаже панелей из сотового картона">
+	<meta name="keywords" content="картон, панель, сотовый картон, продажа, заказать">
 
-	<link rel="canonical" href="https://bitroid.ru/">
-	<!-- slick -->
-	<link rel="stylesheet" type="text/css" href="js/slick/slick.css">	
-	<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+	<!-- preload-загрузка изображений для разных экранов -->
+	<link rel="preload" media="(min-width: 1200px)" fetchpriority="high" as="image" href="img/banner@2x.webp" type="image/webp">
+	<link rel="preload" media="(min-width: 768px & max-width: 1199px)" fetchpriority="high" as="image" href="img/banner-tablet@2x.webp" type="image/webp">
+	<link rel="preload" media="(max-width: 767px)" fetchpriority="high" as="image" href="img/banner-mobile@2x.webp" type="image/webp">
+	
+	<link rel="preload" fetchpriority="high" as="image" href="img/honeycomb.webp" type="image/webp">
 
-	<script src="js/jquery/jquery-1.11.0.min.js"></script>
-	<script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/slick/slick.min.js"></script>	
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 	
-	<h1 class="visually-hidden">Компания по производству стендов, адресных табличек и схем</h1>
-
-	<!-- Теперь SVG-спрайт подключается по-другому (иначе не пропускает validator)... с помощью href -->
+	<h1 class="visually-hidden">SPanel Production - компания по продаже панелей из сотового картона</h1>
 	<!-- <div style="display: none;">
-		<include src="build/img/sprite.svg"></include>
+		<include src="source/img/sprite.svg"></include>
 	</div> -->
 
-	<header class="page-header">
-		Header сайта
-	</header>
+	<div style="display: none;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>.cls-1{fill:#fff;fill-opacity:0.3;}</style></defs><symbol id="icon-developer" viewBox="0 0 80 72"><path d="M79,57.2L46.4,3.3c-2.6-4.4-9-4.4-11.6,0L15.5,35.2l5.6-0.4L38.8,5.7c0.6-1,1.9-1.4,3-0.7c0.3,0.2,0.6,0.4,0.7,0.7 l32.6,53.9c0.6,1,0.3,2.4-0.7,3c-0.3,0.2-0.7,0.3-1.1,0.3H35.5l-2.4,4.6h40.1C78.5,67.5,81.7,61.8,79,57.2z"></path><path d="M40.3,32l-2.1,0.2l-0.3,1.2c-0.1,0.5-0.4,0.8-0.8,1.1l0,0c-0.4,0.2-0.9,0.3-1.3,0.1l-1.1-0.4l-1.4,1.7l0.6,1 c0.2,0.4,0.3,0.9,0.2,1.3l0,0c-0.1,0.4-0.5,0.8-0.9,1L32,39.7l0.2,2.1l1.2,0.3c0.5,0.1,0.8,0.4,1.1,0.8l0,0c0.2,0.4,0.3,0.9,0.1,1.3 l-0.4,1.1l1.7,1.4l1-0.6c0.4-0.2,0.9-0.3,1.3-0.2l0,0c0.4,0.1,0.8,0.5,1,0.9l0.5,1.1l2.1-0.2l0.3-1.2c0.1-0.5,0.4-0.8,0.8-1.1l0,0 c0.4-0.2,0.9-0.3,1.3-0.1l1.1,0.4l1.4-1.7l-0.6-1c-0.2-0.4-0.3-0.9-0.2-1.3l0,0c0.1-0.5,0.4-0.8,0.9-1l1.1-0.5l-0.2-2.1l-1.2-0.3 c-0.5-0.1-0.8-0.4-1.1-0.8l0,0c-0.2-0.4-0.3-0.9-0.1-1.3l0.4-1.2l-1.7-1.4l-1,0.6c-0.4,0.2-0.9,0.3-1.3,0.2l0,0 c-0.4-0.1-0.8-0.5-1-0.9L40.3,32z M42.9,39.7c0.2,1.6-1,3-2.6,3.2c-1.6,0.2-3-1-3.2-2.6c-0.2-1.6,1-3,2.6-3.2 C41.3,36.9,42.7,38.1,42.9,39.7L42.9,39.7z" class="developer__gear-one"></path><path d="M20.6,40.7L16.4,40l-1.2,2.1c-0.4,0.8-1.2,1.4-2.1,1.6l0,0c-0.9,0.2-1.9,0-2.6-0.5l-2-1.4L5,44.4l0.7,2.3 c0.3,0.9,0.1,1.9-0.4,2.7l0,0c-0.5,0.8-1.3,1.3-2.2,1.5l-2.4,0.4L0,55.6l2.1,1.2C3,57.2,3.6,58,3.8,58.9l0,0c0.2,0.9,0,1.9-0.5,2.6 l-1.4,2L4.4,67l2.3-0.7c0.9-0.3,1.9-0.1,2.7,0.4l0,0c0.8,0.5,1.3,1.3,1.5,2.2l0.4,2.4l4.2,0.7l1.2-2.1c0.4-0.8,1.2-1.4,2.1-1.6l0,0 c0.9-0.2,1.9,0,2.6,0.5l2,1.4l3.5-2.5l-0.7-2.3c-0.3-0.9-0.1-1.9,0.4-2.7l0,0c0.5-0.8,1.3-1.3,2.2-1.5l2.4-0.4l0.7-4.2l-2.1-1.2 c-0.8-0.4-1.4-1.2-1.6-2.1l0,0c-0.2-0.9,0-1.9,0.5-2.6l1.4-2L27.6,45l-2.3,0.7c-0.9,0.3-1.9,0.1-2.7-0.4l0,0 c-0.8-0.5-1.3-1.3-1.5-2.2L20.6,40.7z M21.8,56.9c-0.5,3.2-3.5,5.3-6.7,4.8c-3.2-0.5-5.3-3.5-4.8-6.7c0.5-3.2,3.5-5.3,6.7-4.8 C20.1,50.8,22.3,53.7,21.8,56.9C21.8,56.9,21.8,56.9,21.8,56.9z" class="developer__gear-two"></path></symbol><symbol id="icon-email" viewBox="0 0 23 17"><path d="M21.2222 0.166664H1.7778C1.40945 0.166664 1.05618 0.312993 0.795712 0.57346C0.535245 0.833927 0.388916 1.1872 0.388916 1.55555V15.4444C0.388916 15.8128 0.535245 16.1661 0.795712 16.4265C1.05618 16.687 1.40945 16.8333 1.7778 16.8333H21.2222C21.5906 16.8333 21.9439 16.687 22.2043 16.4265C22.4648 16.1661 22.6111 15.8128 22.6111 15.4444V1.55555C22.6111 1.1872 22.4648 0.833927 22.2043 0.57346C21.9439 0.312993 21.5906 0.166664 21.2222 0.166664ZM20.1528 15.4444H2.93058L7.79169 10.4167L6.79169 9.45139L1.7778 14.6389V2.61111L10.4097 11.2014C10.67 11.4601 11.022 11.6053 11.3889 11.6053C11.7558 11.6053 12.1079 11.4601 12.3681 11.2014L21.2222 2.39583V14.5486L16.1111 9.4375L15.132 10.4167L20.1528 15.4444ZM2.68753 1.55555H20.0972L11.3889 10.2153L2.68753 1.55555Z"></path></symbol><symbol id="icon-logo" viewBox="0 0 270 120"><path d="M72.9,102.9H43.5l-27-44.2l27-44.2l68.5,0l-5.6-9.1c-1.1-1.8-3-2.9-5.1-2.9H40.2c-2.1,0-4,1.1-5.1,2.9L4.4,55.5c-1.2,1.9-1.2,4.3,0,6.2L35,112c1.1,1.8,3,2.9,5.1,2.9h32.8V102.9z" fill="#CD4B44"></path><g fill="#979695"><path d="M95.4,93.5c2,0,3.7,0.8,5,2.3c1.3,1.5,2,3.4,2,5.6c0,2.2-0.7,4.1-2,5.6c-1.3,1.5-3,2.3-5,2.3c-2.1,0-3.7-0.7-4.9-2.2v7.8h-4.2v-21h4.2v1.8C91.6,94.2,93.3,93.5,95.4,93.5z M94.2,97.2c-0.8,0-1.5,0.2-2.2,0.6s-1.2,1-1.5,1.6v3.9c0.4,0.7,0.9,1.2,1.5,1.6c0.7,0.4,1.4,0.6,2.2,0.6c1.2,0,2.2-0.4,2.9-1.2c0.8-0.8,1.1-1.8,1.1-3c0-1.2-0.4-2.2-1.1-3C96.4,97.6,95.4,97.2,94.2,97.2z"></path><path d="M109.8,108.9h-4.2v-15h4.2v2.5c0.5-0.8,1.2-1.5,2.1-2c1-0.6,2-0.9,3.1-0.9c0.2,0,0.4,0,0.5,0v4.1c-0.4-0.1-0.8-0.2-1.3-0.2c-1,0-1.9,0.3-2.7,0.8c-0.8,0.5-1.4,1.1-1.7,1.8V108.9z"></path><path d="M117.3,101.4c0-2.2,0.8-4.1,2.3-5.6c1.5-1.5,3.5-2.3,6-2.3c2.4,0,4.4,0.8,6,2.3c1.6,1.5,2.3,3.4,2.3,5.6c0,2.2-0.8,4.1-2.3,5.6c-1.6,1.5-3.6,2.3-6,2.3c-2.4,0-4.4-0.8-6-2.3C118.1,105.5,117.3,103.6,117.3,101.4z M121.5,101.4c0,1.2,0.4,2.2,1.2,3c0.8,0.8,1.8,1.2,3,1.2c1.2,0,2.2-0.4,3-1.2c0.8-0.8,1.2-1.8,1.2-3c0-1.2-0.4-2.2-1.2-3c-0.8-0.8-1.8-1.2-3-1.2c-1.2,0-2.2,0.4-3,1.2C121.9,99.2,121.5,100.2,121.5,101.4z"></path><path d="M143.1,109.2c-2,0-3.7-0.8-5.1-2.3c-1.3-1.5-2-3.4-2-5.6c0-2.2,0.7-4.1,2-5.6c1.3-1.5,3-2.3,5.1-2.3c2.1,0,3.7,0.7,4.9,2.2v-7.9h4.2v21H148V107C146.9,108.5,145.3,109.2,143.1,109.2z M144.3,105.6c0.8,0,1.5-0.2,2.2-0.6c0.7-0.4,1.2-1,1.5-1.6v-3.9c-0.4-0.7-0.9-1.2-1.5-1.6c-0.7-0.4-1.4-0.6-2.2-0.6c-1.2,0-2.2,0.4-2.9,1.2c-0.8,0.8-1.1,1.8-1.1,3c0,1.2,0.4,2.2,1.1,3C142.1,105.2,143.1,105.6,144.3,105.6z"></path><path d="M166.6,103.4v-9.5h4.2v15h-4.2v-1.8c-1.3,1.5-3,2.2-5,2.2c-1.7,0-3.1-0.5-4-1.6c-1-1.1-1.4-2.6-1.4-4.5v-9.2h4.2v8.3c0,1.1,0.3,1.9,0.8,2.4c0.5,0.5,1.2,0.8,2.1,0.8c0.6,0,1.3-0.2,1.9-0.6S166.2,104,166.6,103.4z"></path><path d="M182.1,109.2c-2.2,0-4.1-0.7-5.7-2.2c-1.6-1.5-2.4-3.4-2.4-5.8c0-2.4,0.8-4.3,2.4-5.7c1.6-1.4,3.5-2.2,5.8-2.2c1.6,0,3.1,0.3,4.4,1v3.6c-1.3-0.6-2.6-0.9-3.8-0.9c-1.3,0-2.4,0.4-3.3,1.2c-0.9,0.8-1.3,1.8-1.3,3c0,1.2,0.5,2.3,1.3,3c0.9,0.8,2,1.2,3.3,1.2c1.5,0,2.9-0.3,4-1v3.6C185.4,108.9,183.9,109.2,182.1,109.2z"></path><path d="M191.9,104.2v-6.8h-2.9v-3.5h2.9v-4.1h4.2v4.1h4.3v3.5h-4.3v5.9c0,0.7,0.2,1.3,0.5,1.6c0.3,0.3,0.8,0.5,1.6,0.5c0.7,0,1.5-0.2,2.2-0.5v3.5c-0.9,0.5-2.1,0.8-3.6,0.8C193.5,109.2,191.9,107.6,191.9,104.2z"></path><path d="M203.5,89.9c0-0.7,0.2-1.3,0.7-1.8c0.5-0.5,1.1-0.7,1.8-0.7s1.3,0.2,1.8,0.7c0.5,0.5,0.7,1.1,0.7,1.8c0,0.7-0.2,1.3-0.7,1.8s-1.1,0.7-1.8,0.7s-1.3-0.2-1.8-0.7S203.5,90.6,203.5,89.9z M208.1,108.9h-4.2v-15h4.2V108.9z"></path><path d="M211.5,101.4c0-2.2,0.8-4.1,2.3-5.6c1.5-1.5,3.5-2.3,6-2.3s4.4,0.8,6,2.3c1.6,1.5,2.3,3.4,2.3,5.6c0,2.2-0.8,4.1-2.3,5.6c-1.6,1.5-3.6,2.3-6,2.3s-4.4-0.8-6-2.3C212.3,105.5,211.5,103.6,211.5,101.4z M215.6,101.4c0,1.2,0.4,2.2,1.2,3s1.8,1.2,3,1.2c1.2,0,2.2-0.4,3-1.2c0.8-0.8,1.2-1.8,1.2-3c0-1.2-0.4-2.2-1.2-3c-0.8-0.8-1.8-1.2-3-1.2c-1.2,0-2.2,0.4-3,1.2C216,99.2,215.6,100.2,215.6,101.4z"></path><path d="M235.4,99.3v9.5h-4.2v-15h4.2v1.8c1.3-1.5,3-2.2,5-2.2c1.7,0,3.1,0.5,4,1.6s1.4,2.6,1.4,4.5v9.2h-4.2v-8.3c0-1.1-0.3-1.9-0.8-2.4c-0.5-0.5-1.2-0.8-2.1-0.8c-0.6,0-1.3,0.2-1.9,0.6S235.8,98.8,235.4,99.3z"></path></g><g fill="#46433E"><path d="M89.9,45.2c0,10.7-7.4,17.8-18.3,17.8h-8.7v13.5H50v-49h21.5C82.7,27.5,89.9,34.5,89.9,45.2z M76.8,45.2c0-4.2-2.5-6.6-6.6-6.6h-7.4v13.3h7.4C74.4,51.9,76.8,49.4,76.8,45.2z"></path><path d="M139.7,75.8v0.7h-13.8l-2.8-6.2h-18.5l-2.7,6.2H88.1v-0.7l23-48.8h5.6L139.7,75.8z M109.3,59.2h9l-4.4-12L109.3,59.2z"></path><path d="M186.6,27.5v49.1h-5.2l-24.7-25l0.1,8.8v16h-12.6V27.2h5.2l24.8,24.2l-0.2-8.7V27.5H186.6z"></path><path d="M228.3,65v11.5h-31.2v-49h30.6v11.4h-17.9v7.3h16.5v11.2h-16.5V65H228.3z"></path><path d="M267.7,65v11.5h-30.5v-49H250V65H267.7z"></path></g></symbol><symbol id="icon-map" viewBox="0 0 37.05 50.52"><path d="M29.42,3.78A18.54,18.54,0,0,0,18.53.24h0A18.6,18.6,0,0,0,0,18.48,18.4,18.4,0,0,0,3.54,29.67a1.29,1.29,0,0,0,.09.16L17.14,50a1.68,1.68,0,0,0,2.34.43,1.84,1.84,0,0,0,.44-.44l13.5-20.19.09-.16A18.55,18.55,0,0,0,29.42,3.78Zm-1.63,15A9.27,9.27,0,1,1,18.52,9.5a9.27,9.27,0,0,1,9.27,9.27Z" transform="translate(0 -0.24)"></path></symbol><symbol id="icon-phone" viewBox="0 0 30 30"><path class="st0" d="M29.4,22.4c-0.1-0.1-0.2-0.2-2.1-1.4c-3.4-2.3-4.1-2.7-4.3-2.8c-0.5-0.2-1.1-0.2-1.8,0c-0.3,0.1-0.9,0.4-1.3,0.6L19.5,19l1.7,1.4l0.3-0.1c0.3-0.2,0.5-0.2,0.8-0.2c0.3,0.2,2,1.3,3.8,2.5l1.9,1.3l0,0c0,0,0,0,0,0.2c0,0.2,0,0.2-0.4,0.8c-0.6,0.7-1.2,1.4-1.8,2c-0.6,0.6-1,0.9-1.3,1.1l-0.1,0.1l-0.1,0c-0.7,0-1.3-0.2-2.1-0.4c-3.3-1.1-7.1-3.8-11.5-8.2c-4.3-4.3-7-8.1-8-11.3C2.3,7.3,2.1,6.7,2.1,6l0-0.3l0-0.1c0.1-0.3,0.3-0.6,0.8-1.1c0.5-0.5,1.2-1.2,2-1.8C5.7,2.1,5.8,2.1,6,2.1c0.1,0,0.1,0,0.1,0c0.1,0.1,0.4,0.6,1,1.4c0.9,1.3,2,3,2.7,4.1L10,7.8v0c0,0.2,0,0.3-0.1,0.5c-0.1,0.2-0.4,0.7-1.4,2.5L7.8,12l0.2,0.4c0.4,0.7,1.3,1.9,2.4,3.1c2.2,2.4,6.2,6,7.9,7.2l0.3,0.2l0.2-0.2c0.5-0.5,0.5-0.6,0.9-0.9l0.3-0.3l-0.7-0.5c-0.5-0.4-1.4-1-1.6-1.2c-1.1-0.9-2.7-2.4-4-3.6c-1.8-1.8-2.8-2.9-3.6-4c0,0-0.1-0.1-0.1-0.1c0-0.1,0.1-0.2,0.2-0.3c0.9-1.6,1.3-2.3,1.4-2.6C12,8.6,12,8.3,12,7.9c0-0.6-0.1-0.8-0.5-1.4C10.8,5.4,8,1.1,7.8,0.8C7.4,0.3,6.8,0,6.2,0C6,0,5.9,0,5.7,0c-0.3,0-0.7,0.2-1,0.3C4.4,0.5,4,0.8,3.3,1.4C2.7,2,2.2,2.3,1.7,2.9C1.2,3.4,0.9,3.8,0.5,4.2C0.2,4.7,0,5.1,0,5.6C0,6.1,0.1,7.1,0.3,8c0.8,3.1,3.1,6.7,6.7,10.6c0.9,1,2.7,2.8,3.6,3.7c2.7,2.5,5,4.3,7.3,5.6c2.2,1.3,4.3,2,6.1,2.1c0.1,0,0.1,0,0.2,0c0.2,0,0.4,0,0.6-0.1c0.9-0.3,2.4-1.7,3.9-3.6c0.6-0.8,0.9-1.2,1-1.7C30.1,23.7,29.9,22.9,29.4,22.4z"></path></symbol><symbol id="icon-scroll" viewBox="0 0 346 348"><title>icon-scroll</title><path class="cls-1" d="M196.73,128.74h34a115.26,115.26,0,0,1,92.15,46l1.43,1.91A108.06,108.06,0,0,1,346,241.59v.73a106,106,0,0,1-23.28,66.29l-.3.37a104.13,104.13,0,0,1-131.06,26.34l-3.63-2A112.65,112.65,0,0,1,129,234.42V196.5H0V128.74H129V0h67.76Zm0,105.68a44.88,44.88,0,0,0,23.41,39.41l3.63,2a36.36,36.36,0,0,0,45.77-9.19l.3-.38a38.24,38.24,0,0,0,8.4-23.92v-.73a40.34,40.34,0,0,0-8.08-24.21l-1.43-1.91a47.49,47.49,0,0,0-38-19h-34Z" transform="translate(0 0)"></path></symbol><symbol id="icon-search" viewBox="0 0 21 21"><path d="M19.9399 18.348L15.4877 13.8939C16.8226 12.1544 17.4458 9.97216 17.2309 7.78998C17.0161 5.60781 15.9792 3.58907 14.3306 2.14328C12.6821 0.697486 10.5453 -0.0670986 8.35376 0.00462578C6.16221 0.0763502 4.07999 0.979013 2.5295 2.5295C0.979013 4.07999 0.0763502 6.16221 0.00462578 8.35376C-0.0670986 10.5453 0.697486 12.6821 2.14328 14.3306C3.58907 15.9792 5.60781 17.0161 7.78998 17.2309C9.97216 17.4458 12.1544 16.8226 13.8939 15.4877L18.3499 19.9445C18.4545 20.0492 18.5787 20.1322 18.7155 20.1888C18.8522 20.2455 18.9987 20.2746 19.1467 20.2746C19.2947 20.2746 19.4413 20.2455 19.578 20.1888C19.7147 20.1322 19.839 20.0492 19.9436 19.9445C20.0482 19.8399 20.1313 19.7157 20.1879 19.5789C20.2445 19.4422 20.2737 19.2957 20.2737 19.1477C20.2737 18.9997 20.2445 18.8531 20.1879 18.7164C20.1313 18.5797 20.0482 18.4554 19.9436 18.3508L19.9399 18.348ZM2.26891 8.64392C2.26891 7.38306 2.6428 6.15052 3.3433 5.10215C4.04379 4.05379 5.03943 3.23669 6.20431 2.75418C7.36919 2.27167 8.65099 2.14543 9.88762 2.39141C11.1242 2.63739 12.2602 3.24455 13.1517 4.13611C14.0433 5.02767 14.6504 6.16359 14.8964 7.40021C15.1424 8.63684 15.0162 9.91864 14.5336 11.0835C14.0511 12.2484 13.234 13.244 12.1857 13.9445C11.1373 14.645 9.90477 15.0189 8.64392 15.0189C6.95369 15.0172 5.3332 14.345 4.13803 13.1498C2.94286 11.9546 2.27065 10.3341 2.26891 8.64392Z"></path></symbol></svg>
+	</div>	
 
-	<main class="page-main">
-		Main сайта		
+	<header class="page-header">
+		<div class="page-header__top">
+			<div class="page-header__top-container container">
+				<a class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-label="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg>г. Минск<span>, ул. Я.Коласа, 100 - 77</span></a>
+				<a class="page-header__email email" href="mailto:info@example.com" aria-label="e-mail компании info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span class="tooltip">info@example.com</span></a>
+				<a class="page-header__phone phone" href="tel:+80291234567" aria-label="8(029) 123-45-67"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span class="tooltip">8(029) 123-45-67</span></a>
+			</div>
+		</div>		
+
+		<div class="page-header__bottom container">
+			<a class="page-header__logo logo" href="https://example.com/">
+				<svg fill="#ffffff" width="135" height="60">
+					<use xlink:href="#icon-logo"></use>
+				</svg>
+				<span class="visually-hidden">Логотип компании SPanel</span>
+			</a>
+
+			<div class="page-header__menu">
+				<button class="page-header__toggle-nav hamburger" type="button" aria-label="Открыть меню">
+					<span class="visually-hidden">Открыть меню</span>
+					<span class="hamburger__line"></span>
+				</button>	
+				<nav class="page-header__nav menu">
+					<h2 class="visually-hidden">Главное меню</h2>
+					<ul class="page-header__nav-list menu__list">
+						<li class="menu__item menu__item--active"><a href="https://example.com/">Главная</a></li>
+						<li class="menu__item"><a href="https://example.com/">Каталог</a></li>
+						<li class="menu__item"><a href="https://example.com/">Преимущества</a></li>
+						<li class="menu__item"><a href="https://example.com/">Отзывы</a></li>
+						<li class="menu__item"><a href="https://example.com/">Контакты</a></li>
+					</ul>
+				</nav>	
+			</div>			
+		</div>
+	</header>	
+
+	<main class="page-main">		
+		<section class="banner container">
+			<picture>
+				<source media="(min-width: 1200px)" type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
+				<source media="(min-width: 768px)" type="image/webp" srcset="img/banner-tablet.webp 1x, img/banner-tablet@2x.webp 2x">
+				<source type="image/webp" srcset="img/banner-mobile.webp 1x, img/banner-mobile@2x.webp 2x">
+
+				<source media="(min-width: 1200px)" srcset="img/banner.jpg 1x, img/banner@2x.jpg 2x">
+				<source media="(min-width: 768px)" srcset="img/banner-tablet.jpg 1x, img/banner-tablet@2x.jpg 2x">
+				<img src="img/banner-mobile.jpg" srcset="img/banner-mobile@2x.jpg 2x" alt="Упаковка из сотового картона" width="1120" height="525" class="banner__img">
+			</picture>
+			<div class="banner__description">
+				<h2 class="banner__title">Упаковка из картона</h2>
+				<p class="banner__text">Упаковка из сотового картона обладает высокими демпферными свойствами. Собственный конструкторский отдел и уникальное оборудование позволяют изготавливать промышленную упаковку любых размеров</p>
+				<p class="banner__price">1000 &#8381;</p>
+				<div class="banner__buttons">
+					<a class="banner__order button" href="#">Заказать</a>
+					<a class="banner__more button--light" href="#">Подробнее</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="bid container">
+			<h2 class="visually-hidden">Оставить заявку</h2>
+			<form method="POST" action="/" class="bid__form form">
+				<p class="bid__item form__item">
+					<label class="form__label" for="bid__name">Ваше имя</label>
+					<input class="form__input" type="text" name="bid__name" id="bid__name" value="" placeholder="Алексей">
+				</p>
+				<div class="bid__items">
+					<p class="bid__item bid__item--phone form__item">
+						<label class="form__label" for="bid__phone">Номер телефона</label>
+						<input class="form__input" type="tel" name="bid__phone" id="bid__phone" value="" placeholder="+375 (__) ___-__-__">
+					</p>
+					<p class="bid__item form__item">
+						<label class="form__label" for="bid__email">E-mail</label>
+						<input class="form__input" type="tel" name="bid__email" id="bid__email" value="" placeholder="info@site.by">
+					</p>
+				</div>
+				<input type="submit" class="bid__submit button form__submit" aria-label="Оставить заявку" value="Оставить заявку">	
+			</form>
+		</section>
+
+		<section class="development">
+			<h2 class="visually-hidden">Сайт находится в разработке</h2>
+			<div class="developer container">
+				<svg fill="#ffffff" width="73" height="65">
+					<use xlink:href="#icon-developer"></use>
+				</svg>
+				<p class="developer__text"><span class="developer__text-sorry">Извините!</span> Сайт находится в разработке!</p>
+			</div>
+		</section>
+		
 	</main>
 
 	<footer class="page-footer">
-		Footer сайта
+		<h2 class="visually-hidden">Footer сайта</h2>
+		<p class="page-footer__copyright container">Copyright &copy; 2023</p>
 	</footer>
 
-	<!-- <section class="modal-project modal">
-		<h3 class="visually-hidden">Обсудить проект</h3>
-		<form id="project-form" class="form" action="/" method="POST">
-			
-			<p class="form__item">
-				<input class="form__input" type="text" name="project__name" id="project__name" value="" placeholder="Ваше имя">
-				<label class="visually-hidden" for="project__name">Ваше имя</label>
-			</p>
-			<p class="form__item">
-				<input class="form__input" type="tel" name="project__phone" id="project__phone" value="" placeholder="+7 (999) 999-00-00">
-				<label class="visually-hidden" for="project__phone">+7 (999) 999-00-00</label>
-			</p>
-			<p class="form__item">
-				<input class="form__input" type="text" name="project__site" id="project__site" value="" placeholder="Ссылка на сайт">
-				<label class="visually-hidden" for="project__site">Ссылка на сайт</label>
-			</p>			
-			<input type="submit" class="modal-project__button button" value="Отправить">
-		</form>	
-		<button type="button" class="modal-project__close close" tabindex="0" aria-label="close modal window"><span class="visually-hidden">закрыть модальное окно</span></button>
-	</section>
-
-	<section class="modal-order modal">
-		<h3 class="visually-hidden">Заказать проект</h3>
-		<form id="order-form" class="form" action="/" method="POST">
-			
-			<p class="form__item">
-				<input class="form__input" type="text" name="order__name" id="order__name" value="" placeholder="Ваше имя">
-				<label class="visually-hidden" for="order__name">Ваше имя</label>
-			</p>
-			<p class="form__item">
-				<input class="form__input" type="tel" name="order__phone" id="order__phone" value="" placeholder="+7 (999) 999-00-00">
-				<label class="visually-hidden" for="order__phone">+7 (999) 999-00-00</label>
-			</p>
-			<input type="submit" class="modal-order__button button" value="Закзать">
-		</form>	
-		<button type="button" class="modal-order__close close" tabindex="0" aria-label="close modal window"><span class="visually-hidden">закрыть модальное окно</span></button>
-	</section>
-
-	<div class="overlay"></div> -->
-
-<!-- 	<script type="application/ld+json">
-	{
-	    "@context": "https://schema.org",
-	    "@type": "WebSite",
-	    "url": "https://bitroid.ru/",
-	    "author": {
-	      "@type": "Organization",
-	      "name": "Системный интегратор Битроид",
-	      "alternateName": "Битроид",
-	      "logo": "https://pashkovichd.github.io/hh/bitroid/build/img/logo.webp",
-	      "contactPoint": {
-	        "@type": "ContactPoint",
-	        "telephone": "+7 (495) 414 28 08",
-	         "contactType": "customer service",
-	        "email": "b24@bitroid.ru",        
-	        "areaServed": "RU",
-	        "availableLanguage": "Russian"
-	      },
-	      "sameAs": [
-		      "https://www.youtube.com/channel/UCgkA70dsrbVCPwb0VtwLn-w",
-		      "https://t.me/bitroids_bot",
-		      "https://vk.com/bitroid"
-	      ]
-	    }
-	}
-	</script> -->
-
-	<!-- <script src="js/common.min.js"></script>
-	<script async="" src="js/slick.min.js"></script>
-	<script async="" src="js/faq-accordion.min.js"></script> -->
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script async="" src="js/jquery.maskedinput.min.js"></script>
+	<script async="" src="js/maskedinput.min.js"></script>
+	<script async="" src="js/hamburger.min.js"></script>
+	
 </body>
 </html>

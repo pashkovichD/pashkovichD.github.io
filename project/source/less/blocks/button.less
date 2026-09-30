@@ -1,38 +1,38 @@
 .button {
-	display: block;	
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 16px 38px;	
+	padding: 15px 10px;
+	font-family: @ff;
 	font-size: 16px;
-	line-height: 110%;
-	font-weight: 400;	
-	text-align: center;	
+	color: #ffffff;
 	text-decoration: none;
-	color: @white;
-	border: none;	
-	background-color: @green;
-	border-radius: 50px;
+	background-color: @red;
+	border: none;
 	cursor: pointer;
-	transition: @animation;	
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
-		/* отмена выделения текста */
-		-webkit-user-select: none;
-		 -khtml-user-select: none;
-		   -moz-user-select: none;
-			-ms-user-select: none;
-			    user-select: none;
+	transition: @animation;
 	&:hover,
 	&:focus {
-		background-color: darken(@green, 10%);
-		color: @white;
+		background-color: darken(@red, 7%);
 	}
 }
 
-.button--dark {
-	color: #ffffff;	
-	background-color: #282829;	
+.button--light {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 10px;
+	font-family: @ff;
+	font-size: 16px;
+	color: @red;
+	text-decoration: none;
+	background-color: transparent;
+	border: 1px solid @red;
+	cursor: pointer;
+	transition: @animation;
 	&:hover,
 	&:focus {
-		background-color: #333333;
+		color: darken(@red, 20%);
+		border: 1px solid darken(@red, 10%);
 	}
 }

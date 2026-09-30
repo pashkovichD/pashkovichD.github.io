@@ -1,33 +1,31 @@
 .container {
-	width: 1440px;
+	width: 320px;
 	margin: 0 auto;
-	padding: 0 60px;
-	box-sizing: border-box;	
+	padding: 0 10px;
+	box-sizing: border-box;
 }
 
-@media (max-width: @desktop-1440-width) {
+@media (min-width: @mobile-width) {
 	.container {
-		width: 100%;
+		width: 460px;
 	}
 }
 
-@media (max-width: @desktop-width) {
+@media (min-width: @tablet-width) {
 	.container {
-		width: 768px;
-		padding: 0 45px;
+		width: 748px;
 	}
 }
 
-@media (max-width: @tablet-width) {
+@media (min-width: @desktop-width) {
 	.container {
-		width: 100%;		
-	}
-}
-
-@media (max-width: @mobile-width) {
-	.container {
-		width: 360px;
-		padding-left: 16px;
-		padding-right: 16px;
+		width: 940px;
 	}		
+}
+
+@media (min-width: @desktop-full-width) {
+	.container {
+		width: 1120px;
+		padding: 0;
+	}
 }

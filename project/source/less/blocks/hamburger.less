@@ -28,7 +28,7 @@
 	display: block;
 	width: 25px;
 	height: 2px;
-	background: @deep-grey;
+	background: #a0a1a3;
 	-webkit-transition: -webkit-transform 0.35s;
 	        transition: -webkit-transform 0.35s;
 	     -o-transition: transform 0.35s;
@@ -41,7 +41,7 @@
 	display: block;
 	width: 25px;
 	height: 2px;
-	background: @deep-grey;
+	background: #a0a1a3;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: -webkit-transform 0.35s;
 	-o-transition: transform 0.35s;
@@ -73,22 +73,10 @@
 	      transform: translate(0%, -2px) rotate(-45deg);
 }
 
-@media (max-width: @desktop-width) {
-	.hamburger {
-		position: relative;
-		right: -3px;
-	}
+@media (min-width: @tablet-width) {
+	
+}
 
-	.hamburger__line {
-		width: 20px;
-	}
-	.hamburger__line::before,
-	.hamburger__line::after {		
-		width: 20px;
-		transform: translate(0%, -6px);
-	}
-
-	.hamburger__line::after {
-		transform: translate(0%, 4px);
-	}
+@media (min-width: @desktop-width) {
+	
 }
