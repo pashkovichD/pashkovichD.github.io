@@ -1,0 +1,38 @@
+.button {
+	display: block;	
+	justify-content: center;
+	align-items: center;
+	padding: 16px 38px;	
+	font-size: 16px;
+	line-height: 110%;
+	font-weight: 400;	
+	text-align: center;	
+	text-decoration: none;
+	color: @white;
+	border: none;	
+	background-color: @green;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: @animation;	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // отмена синего фона при нажатии на мобильной версии сайта
+		/* отмена выделения текста */
+		-webkit-user-select: none;
+		 -khtml-user-select: none;
+		   -moz-user-select: none;
+			-ms-user-select: none;
+			    user-select: none;
+	&:hover,
+	&:focus {
+		background-color: darken(@green, 10%);
+		color: @white;
+	}
+}
+
+.button--dark {
+	color: #ffffff;	
+	background-color: #282829;	
+	&:hover,
+	&:focus {
+		background-color: #333333;
+	}
+}

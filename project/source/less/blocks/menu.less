@@ -1,0 +1,148 @@
+.menu {
+	z-index: 100;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: center;
+	padding-top: 0;
+	margin-bottom: 0;	
+}
+
+.menu__item {
+	position: relative;
+	padding: 0;
+	line-height: 0;
+	text-align: center;
+	background-color: @white;
+	a {
+		display: block;
+		padding: 15px 22px 15px 22px;
+		font-size: 16px;		
+		line-height: 130%;
+		color: @deep-grey;
+		cursor: pointer;
+		&:hover,
+		&:focus {
+			color: @green;
+		}		
+	}
+
+	&.menu__item--dropdown:hover {
+		& > a {
+			color: @green;
+			&::after {
+				transform: rotate(405deg);
+				border-color: @green;
+			}
+		}
+	}
+}
+
+
+.menu__dropdown {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    min-width: 360px;
+    height: auto;
+    margin-left: 0;    
+    padding-bottom: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background-color: @white;   
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .1);
+    transition: all .3s ease;
+    a {
+		padding: 8px 25px 8px 25px;
+		font-size: 14px;
+		text-align: left;
+		color: lighten(@deep-grey, 40%);
+	}
+}
+
+.menu__dropdown-show {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu__item--dropdown {
+	& > a {
+		&::after {    
+		    content: '';
+		    position: absolute;
+		    top: 50%;
+		    right: 7px;
+		    width: 6px;
+		    height: 6px;    
+		    margin-top: -6px;
+		    transform: rotate(45deg);
+		    border-right: 1px solid @deep-grey;
+		    border-bottom: 1px solid @deep-grey;
+		    transition: @animation;
+		}
+	}
+}
+
+@media (max-width: @desktop-1440-width) {
+	.menu {
+		background-color: @white;
+	}
+
+	.menu__list {
+		display: block;
+		min-width: 380px;
+	}
+
+	.menu__item {
+		text-align: left;
+		a {
+			padding: 10px 22px;
+		}
+	}
+
+	.menu__item--dropdown {
+		& > a {
+			&::after {
+			    top: 20px;
+			    right: 15px;
+			}
+		}
+	}
+
+	.menu__dropdown {
+		position: static;
+		min-width: auto;
+		height: 0;
+		box-shadow: none;
+		opacity: 1;
+	    visibility: visible;
+	    a {
+	    	padding-left: 45px;
+	    }
+	}
+
+}
+
+@media (max-width: @desktop-width) {
+
+}
+
+@media (max-width: @mobile-width) {
+	.menu {
+		width: 360px;
+		right: -16px;
+	}
+
+	.menu__list {		
+		min-width: auto;		
+	}
+}
+
+&:hover,
+&:focus {
+	
+}
