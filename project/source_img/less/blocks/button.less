@@ -1,0 +1,38 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 10px;
+	font-family: @ff;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: @red;
+	border: none;
+	cursor: pointer;
+	transition: @animation;
+	&:hover,
+	&:focus {
+		background-color: darken(@red, 7%);
+	}
+}
+
+.button--light {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 10px;
+	font-family: @ff;
+	font-size: 16px;
+	color: @red;
+	text-decoration: none;
+	background-color: transparent;
+	border: 1px solid @red;
+	cursor: pointer;
+	transition: @animation;
+	&:hover,
+	&:focus {
+		color: darken(@red, 20%);
+		border: 1px solid darken(@red, 10%);
+	}
+}

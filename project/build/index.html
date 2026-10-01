@@ -2,25 +2,25 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Панели из сотового картона</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title>Проект - компания по производству стендов, адресных табличек и схем</title>
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="Российская компания по продаже панелей из сотового картона">
-	<meta name="keywords" content="картон, панель, сотовый картон, продажа, заказать">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 
 	<!-- preload-загрузка изображений для разных экранов -->
-	<link rel="preload" media="(min-width: 1200px)" fetchpriority="high" as="image" href="img/banner@2x.webp" type="image/webp">
+	<!-- <link rel="preload" media="(min-width: 1200px)" fetchpriority="high" as="image" href="img/banner@2x.webp" type="image/webp">
 	<link rel="preload" media="(min-width: 768px & max-width: 1199px)" fetchpriority="high" as="image" href="img/banner-tablet@2x.webp" type="image/webp">
 	<link rel="preload" media="(max-width: 767px)" fetchpriority="high" as="image" href="img/banner-mobile@2x.webp" type="image/webp">
 	
-	<link rel="preload" fetchpriority="high" as="image" href="img/honeycomb.webp" type="image/webp">
+	<link rel="preload" fetchpriority="high" as="image" href="img/honeycomb.webp" type="image/webp"> -->
 
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 	
-	<h1 class="visually-hidden">SPanel Production - компания по продаже панелей из сотового картона</h1>
+	<h1 class="visually-hidden">Компания по производству стендов, адресных табличек и схем</h1>
 	<!-- <div style="display: none;">
 		<include src="source/img/sprite.svg"></include>
 	</div> -->
@@ -32,17 +32,17 @@
 	<header class="page-header">
 		<div class="page-header__top">
 			<div class="page-header__top-container container">
-				<a class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-label="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg>г. Минск<span>, ул. Я.Коласа, 100 - 77</span></a>
+				<a class="page-header__map map" href="https://yandex.by/maps/-/C-fkadC" aria-label="г. Минск, ул. Я.Коласа, 100 - 77"><svg width="20" height="27" fill="#000000"><use xlink:href="#icon-map"></use></svg>г. Минск<span>, ул. Куйбышева, 57</span></a>
 				<a class="page-header__email email" href="mailto:info@example.com" aria-label="e-mail компании info@example.com"><svg fill="#5acf28" width="21" height="14"><use xlink:href="#icon-email"></use></svg><span class="tooltip">info@example.com</span></a>
-				<a class="page-header__phone phone" href="tel:+80291234567" aria-label="8(029) 123-45-67"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span class="tooltip">8(029) 123-45-67</span></a>
+				<a class="page-header__phone phone" href="tel:+80297777777" aria-label="8(029) 777-77-77"><svg width="20" height="20" fill="#000000"><use xlink:href="#icon-phone"></use></svg><span class="tooltip">8(029) 777-77-77</span></a>
 			</div>
 		</div>		
 
 		<div class="page-header__bottom container">
 			<a class="page-header__logo logo" href="https://example.com/">
-				<svg fill="#ffffff" width="135" height="60">
+				<!-- <svg fill="#ffffff" width="135" height="60">
 					<use xlink:href="#icon-logo"></use>
-				</svg>
+				</svg> -->
 				<span class="visually-hidden">Логотип компании SPanel</span>
 			</a>
 
@@ -54,10 +54,9 @@
 				<nav class="page-header__nav menu">
 					<h2 class="visually-hidden">Главное меню</h2>
 					<ul class="page-header__nav-list menu__list">
-						<li class="menu__item menu__item--active"><a href="https://example.com/">Главная</a></li>
-						<li class="menu__item"><a href="https://example.com/">Каталог</a></li>
-						<li class="menu__item"><a href="https://example.com/">Преимущества</a></li>
-						<li class="menu__item"><a href="https://example.com/">Отзывы</a></li>
+						<li class="menu__item menu__item--active"><a href="https://example.com/">О нас</a></li>
+						<li class="menu__item"><a href="https://example.com/">Доставка</a></li>
+						<li class="menu__item"><a href="https://example.com/">Оплата</a></li>
 						<li class="menu__item"><a href="https://example.com/">Контакты</a></li>
 					</ul>
 				</nav>	
@@ -65,8 +64,14 @@
 		</div>
 	</header>	
 
-	<main class="page-main">		
-		<section class="banner container">
+	<main class="page-main">
+		<div class="sidebar">
+			
+		</div>
+		<div class="content">
+			
+		</div>
+		<!-- <section class="banner container">
 			<picture>
 				<source media="(min-width: 1200px)" type="image/webp" srcset="img/banner.webp 1x, img/banner@2x.webp 2x">
 				<source media="(min-width: 768px)" type="image/webp" srcset="img/banner-tablet.webp 1x, img/banner-tablet@2x.webp 2x">
@@ -82,17 +87,18 @@
 				<p class="banner__price">1000 &#8381;</p>
 				<div class="banner__buttons">
 					<a class="banner__order button" href="#">Заказать</a>
-					<a class="banner__more button--light" href="#">Подробнее</a>
+					<a class="banner__more button--light"href="#">Подробнее</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="bid container">
+		<!-- <section class="bid container">
 			<h2 class="visually-hidden">Оставить заявку</h2>
 			<form method="POST" action="/" class="bid__form form">
 				<p class="bid__item form__item">
 					<label class="form__label" for="bid__name">Ваше имя</label>
-					<input class="form__input" type="text" name="bid__name" id="bid__name" value="" placeholder="Алексей">
+					<input class="form__input" type="text" name="bid__name" id="bid__name"  value=""
+					placeholder="Алексей">
 				</p>
 				<div class="bid__items">
 					<p class="bid__item bid__item--phone form__item">
@@ -106,9 +112,9 @@
 				</div>
 				<input type="submit" class="bid__submit button form__submit" aria-label="Оставить заявку" value="Оставить заявку">	
 			</form>
-		</section>
+		</section> -->
 
-		<section class="development">
+		<!-- <section class="development">
 			<h2 class="visually-hidden">Сайт находится в разработке</h2>
 			<div class="developer container">
 				<svg fill="#ffffff" width="73" height="65">
@@ -116,13 +122,13 @@
 				</svg>
 				<p class="developer__text"><span class="developer__text-sorry">Извините!</span> Сайт находится в разработке!</p>
 			</div>
-		</section>
+		</section> -->
 		
 	</main>
 
 	<footer class="page-footer">
 		<h2 class="visually-hidden">Footer сайта</h2>
-		<p class="page-footer__copyright container">Copyright &copy; 2023</p>
+		<p class="page-footer__copyright container">Copyright &copy; 2026</p>
 	</footer>
 
 	<script src="js/jquery-3.6.1.min.js"></script>
