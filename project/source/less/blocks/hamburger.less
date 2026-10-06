@@ -74,3 +74,13 @@
 	  -ms-transform: translate(0%, -2px) rotate(-45deg);
 	      transform: translate(0%, -2px) rotate(-45deg);
 }
+
+@media (max-width: @mobile-width) {
+	.hamburger__line {
+		background: #ffffff;
+		&::before,
+		&::after {
+			background: #ffffff;
+		}
+	}
+}

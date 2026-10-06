@@ -1,0 +1,43 @@
+.top-line {
+	display: flex;
+	margin-bottom: 20px;
+	background-color: @brown;
+	.btn-catalog {
+		display: flex;
+		align-items: center;
+		width: 250px;
+		height: 40px;
+		padding: 10px 20px;
+		font-family: @ff;
+		font-size: 15px;
+		color: #ffffff;
+		border: none;		
+		background-color: rgba(255,255,255,.2);
+		transition: @animation;
+		svg {
+			margin-right: 20px;
+			opacity: 0.7;
+			transition: @animation;
+		}
+		&:hover,
+		&:focus {
+			background-color: rgba(255,255,255,.15);
+			svg {
+				opacity: 1;
+			}				
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.top-line {
+		.btn-catalog {
+			width: auto;
+			.text {
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+}
