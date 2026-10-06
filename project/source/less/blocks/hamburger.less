@@ -44,36 +44,44 @@
 .hamburger__line::after {
 	content: '';
 	display: block;
-	width: 25px;
+	width: 50%;
+	// width: 25px;
 	height: 2px;
 	background: #000000;
 	// background: #a0a1a3;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: -webkit-transform 0.35s;
-	-o-transition: transform 0.35s;
-	transition: transform 0.35s;
-	transition: transform 0.35s, -webkit-transform 0.35s;
+	-webkit-transition: -webkit-transform 0.35s, width 0.25s ease-out;
+	transition: -webkit-transform 0.35s, width 0.25s ease-out;
+	-o-transition: transform 0.35s, width 0.25s ease-out;
+	transition: transform 0.35s, width 0.25s ease-out;
+	transition: transform 0.35s, -webkit-transform 0.35s, width 0.25s ease-out;
 	-webkit-transform: translate(0%, -7px);
 	  -ms-transform: translate(0%, -7px);
 	      transform: translate(0%, -7px);
 }
 .hamburger__line::after {
+	margin-left: auto;
 	-webkit-transform: translate(0%, 5px);
 	  -ms-transform: translate(0%, 5px);
 	      transform: translate(0%, 5px);
 }
-.hamburger__click span {
+.hamburger:hover .hamburger__line::before,
+.hamburger:hover .hamburger__line::after {
+	width: 100%;
+}
+.hamburger__click span {	
 	-webkit-transform: rotate(90deg);
 	  -ms-transform: rotate(90deg);
 	      transform: rotate(90deg);
 	background: transparent;
 }
 .hamburger__click span:before {
+	width: 100%;
 	-webkit-transform: translate(0%, 0px) rotate(45deg);
 	  -ms-transform: translate(0%, 0px) rotate(45deg);
 	      transform: translate(0%, 0px) rotate(45deg);
 }
 .hamburger__click span:after {
+	width: 100%;
 	-webkit-transform: translate(0%, -2px) rotate(-45deg);
 	  -ms-transform: translate(0%, -2px) rotate(-45deg);
 	      transform: translate(0%, -2px) rotate(-45deg);
