@@ -1,21 +1,26 @@
 .sidebar {
 	width: 250px;
 	padding-bottom: 20px;
-	// background-color: green;
 	border-right: 1px solid @brown;
 
 }
 
 .sidebar__menu {
+	padding: 5px 0;
 	background-color: #ffffff;
 	li {
 		& > a {
 			display: block;
-			padding: 10px 20px 10px 10px;
+			padding: 10px 20px 10px 15px;
 			font-size: 14px;
 			line-height: 22px;
+			font-weight: 500;
 			text-decoration: none;
 			color: #000000;
+			&:hover,
+			&:focus {
+				color: @red;
+			}
 		}
 	}
 }
