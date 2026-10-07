@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		body {
+			background-color: green;
+		}
+
+		.hamb {
+			width: 50px;
+			height: 50px;
+			background-color: red;
+		}
+
+		.menu {
+			position: fixed;
+			width: 100%;
+			padding: 20px;
+			top: 100px;
+			left: 0;
+			font-size: 20px;
+        	line-height: 28px;
+        	list-style: none;
+			background: #fff;
+			z-index: 10;
+			overflow: hidden;
+			transform: translateX(-100%);
+			transition: none;
+			height: 100%;
+		}
+
+		.menu.active > li {
+			padding: 10px;
+			animation-fill-mode: forwards;
+			animation-duration: .3s;
+			animation-name: openMenuAnimationList;
+			opacity: 0;
+		}
+
+		.menu.active > li:nth-child(1) {animation-delay: .3s;}
+		.menu.active > li:nth-child(2) {animation-delay: .4s;}
+		.menu.active > li:nth-child(3) {animation-delay: .5s;}
+		.menu.active > li:nth-child(4) {animation-delay: .6s;}
+		.menu.active > li:nth-child(5) {animation-delay: .7s;}
+		.menu.active > li:nth-child(6) {animation-delay: .8s;}
+		.menu.active > li:nth-child(7) {animation-delay: .9s;}
+		
+
+		.menu.active {
+			transform: translateX(0);
+			transition: .6s cubic-bezier(.65, .025, .67, .36);
+		}
+
+		.menu.active.esc {
+		    animation: .6s closeMenu .3s cubic-bezier(.65,.025,.67,.36)
+		}
+
+		.menu.active.esc > li {
+			opacity: 1;
+			animation-duration: .3s;			
+			animation-name: closeMenuAnimationList;			
+			animation-fill-mode: forwards;
+		}
+
+		@-webkit-keyframes openMenuAnimationList {
+		    0% {
+		        transform: translateY(40px);
+		        opacity: 0
+		    }
+
+		    to {
+		        transform: translateY(0);
+		        opacity: 1
+		    }
+		}
+
+		@keyframes openMenuAnimationList {
+		    0% {
+		        transform: translateY(40px);
+		        opacity: 0
+		    }
+
+		    to {
+		        transform: translateY(0);
+		        opacity: 1
+		    }
+		}
+
+		@-webkit-keyframes closeMenuAnimationList {
+		    0% {
+		        transform: translateY(0);
+		        opacity: 1
+		    }
+
+		    to {
+		        transform: translateY(-40px);
+		        opacity: 0
+		    }
+		}
+
+		@keyframes closeMenuAnimationList {
+		    0% {
+		        transform: translateY(0);
+		        opacity: 1
+		    }
+
+		    to {
+		        transform: translateY(-40px);
+		        opacity: 0
+		    }
+		}
+
+		@media (max-width: 767px) {
+		    @-webkit-keyframes openMenuAnimationList {
+		        0% {
+		            transform:translateY(20px);
+		            opacity: 0
+		        }
+
+		        to {
+		            transform: translateY(0);
+		            opacity: 1
+		        }
+		    }
+
+		    @keyframes openMenuAnimationList {
+		        0% {
+		            transform: translateY(20px);
+		            opacity: 0
+		        }
+
+		        to {
+		            transform: translateY(0);
+		            opacity: 1
+		        }
+		    }
+
+		    @-webkit-keyframes closeMenuAnimationList {
+		        0% {
+		            transform: translateY(0);
+		            opacity: 1
+		        }
+
+		        to {
+		            transform: translateY(-20px);
+		            opacity: 0
+		        }
+		    }
+
+		    @keyframes closeMenuAnimationList {
+		        0% {
+		            transform: translateY(0);
+		            opacity: 1
+		        }
+
+		        to {
+		            transform: translateY(-20px);
+		            opacity: 0
+		        }
+		    }
+		}
+
+		@-webkit-keyframes closeMenu {
+		    0% {
+		        transform: translateX(0)
+		    }
+
+		    to {
+		        transform: translateX(100%)
+		    }
+		}
+
+		@keyframes closeMenu {
+		    0% {
+		        transform: translateX(0)
+		    }
+
+		    to {
+		        transform: translateX(100%)
+		    }
+		}
+
+
+	</style>
+
+	<div class="hamb"></div>
+
+	<ul class="menu">
+		<li>Об отеле</li>
+		<li>Проживание</li>
+		<li>Услуги</li>
+		<li>Календарь событий</li>
+		<li>Новости</li>
+		<li>Фотогалерая</li>
+		<li>Контакты</li>
+	</ul>
+
+	<script>
+
+		let hamb = document.querySelector('.hamb');
+		let menu = document.querySelector('.menu');
+
+		hamb.addEventListener('click', function() {
+			if(menu.classList.contains('active')) {
+				// menu.classList.remove('active');
+				menu.classList.add('esc');
+				setTimeout(function() {
+                    menu.classList.remove('active');
+                    menu.classList.remove('esc');
+                }, 850);
+			} else {
+				menu.classList.add('active');
+			}
+			
+		});
+
+
+		// t(document).on("click", ".hamb", (function() {
+        //         t(".main-menu").hasClass("active") ? r || (t(".hamb").removeClass("active"),
+        //         e.addClass("esc"),
+        //         setTimeout((function() {
+        //             (0,
+        //             n.unlockScroll)(),
+        //             e.removeClass("active esc")
+        //         }
+        //         ), i)) : r || (r = !0,
+        //         (0,
+        //         n.lockScroll)(),
+        //         t(".hamb").addClass("active"),
+        //         e.addClass("active"),
+        //         setTimeout((function() {
+        //             r = !1
+        //         }
+        //         ), i))
+        //     }
+        //     ));
+	</script>
+</body>
+</html>

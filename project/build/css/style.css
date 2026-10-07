@@ -34,6 +34,104 @@
   src: url('../fonts/intro.eot?#iefix') format('embedded-opentype'), url('../fonts/intro.woff2') format('woff2'), url('../fonts/intro.woff') format('woff'), url('../fonts/intro.ttf') format('truetype'), url('../fonts/intro.svg#intro') format('svg');
   font-display: swap;
 }
+@-webkit-keyframes openMenuAnimationList {
+  0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes openMenuAnimationList {
+  0% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes closeMenuAnimationList {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+@keyframes closeMenuAnimationList {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0;
+  }
+}
+@media (max-width: 767px) {
+  @-webkit-keyframes openMenuAnimationList {
+    0% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes openMenuAnimationList {
+    0% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes closeMenuAnimationList {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+  @keyframes closeMenuAnimationList {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+}
 .container {
   width: 100%;
   max-width: 1440px;
