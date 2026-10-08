@@ -9,5 +9,17 @@ hamburger.addEventListener('click', function (e) {
 		nav.classList.add('page-header__nav--show');		
 	} else {
 		nav.classList.remove('page-header__nav--show');
-	}	
+	}
+
+	if(nav.classList.contains('active')) {
+		console.log('YES');
+		nav.classList.add('esc');
+		setTimeout(function() {
+            nav.classList.remove('active');
+            nav.classList.remove('esc');
+        }, 850);
+	} else {
+		console.log('NO');
+		nav.classList.add('active');
+	}
 });

@@ -75,6 +75,39 @@
 // }
 
 @media (max-width: @desktop-width) {
+	.page-header__nav.active li.menu__item {
+		animation-fill-mode: forwards;
+		animation-duration: .3s;
+		animation-name: openMenuAnimationList;
+		opacity: 0;		
+	}	
+
+	.page-header__nav.active li.menu__item:nth-child(n) {
+		// .page-header__nav.active li.menu__item:nth-child(1) {animation-delay: .3s;}
+		// .page-header__nav.active li.menu__item:nth-child(2) {animation-delay: .4s;}
+		// .page-header__nav.active li.menu__item:nth-child(3) {animation-delay: .5s;}
+		// .page-header__nav.active li.menu__item:nth-child(4) {animation-delay: .6s;}
+		// .page-header__nav.active li.menu__item:nth-child(5) {animation-delay: .7s;}
+		// .page-header__nav.active li.menu__item:nth-child(6) {animation-delay: .8s;}
+		// .page-header__nav.active li.menu__item:nth-child(7) {animation-delay: .9s;}
+	}
+
+	.page-header__nav.active {
+		transform: translateX(0);
+		transition: .6s cubic-bezier(.65, .025, .67, .36);
+	}
+
+	.page-header__nav.active.esc {
+	    animation: .6s closeMenu .3s cubic-bezier(.65,.025,.67,.36)
+	}
+
+	.page-header__nav.active.esc li.menu__item {
+		opacity: 1;
+		animation-duration: .3s;
+		animation-name: closeMenuAnimationList;
+		animation-fill-mode: forwards;
+	}
+
 	.menu {
 		position: absolute;
 		left: 60%;

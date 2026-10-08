@@ -735,12 +735,11 @@ picture {
     display: block;
   }
   .page-header__nav {
-    top: 160px;
+    top: 134px;
     opacity: 0;
     visibility: hidden;
   }
   .page-header__nav--show {
-    top: 134px;
     opacity: 1;
     visibility: visible;
   }
@@ -841,6 +840,35 @@ picture {
   background-color: transparent;
 }
 @media (max-width: 960px) {
+  .page-header__nav.active li.menu__item {
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: openMenuAnimationList;
+            animation-name: openMenuAnimationList;
+    opacity: 0;
+  }
+  .page-header__nav.active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 0.6s cubic-bezier(0.65, 0.025, 0.67, 0.36);
+    transition: 0.6s cubic-bezier(0.65, 0.025, 0.67, 0.36);
+  }
+  .page-header__nav.active.esc {
+    -webkit-animation: 0.6s closeMenu 0.3s cubic-bezier(0.65, 0.025, 0.67, 0.36);
+            animation: 0.6s closeMenu 0.3s cubic-bezier(0.65, 0.025, 0.67, 0.36);
+  }
+  .page-header__nav.active.esc li.menu__item {
+    opacity: 1;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: closeMenuAnimationList;
+            animation-name: closeMenuAnimationList;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .menu {
     position: absolute;
     left: 60%;
@@ -1067,6 +1095,13 @@ picture {
   padding: 5px 4px 5px 0;
 }
 .sidebar__menu li {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: openMenuAnimationList;
+          animation-name: openMenuAnimationList;
+  opacity: 0;
   margin-bottom: 2px;
 }
 .sidebar__menu li > a {

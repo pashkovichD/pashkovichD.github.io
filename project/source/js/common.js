@@ -1,32 +1,45 @@
-/*--- hamburger.js ---*/
-let hamburger = document.querySelector('.page-header__toggle-nav');
-let nav = document.querySelector('.page-header__nav');
+let menuItem = document.querySelectorAll('.menu__list > li');
+let sidebarMenu = document.querySelectorAll('.sidebar__menu > li');
+addAnimationDelay(menuItem, 100, 100);
+addAnimationDelay(sidebarMenu, 300, 150);
 
-hamburger.addEventListener('click', function (e) {
-	e.preventDefault();
-
-	if(this.classList.contains('hamburger__click')) {
-		hamburgerHide();
-	} else {
-		nav.classList.add('page-header__nav--show');
-		hamburger.classList.add('hamburger__click');
-	}
-
-	if(nav.classList.contains('active')) {
-		nav.classList.add('esc');
-		setTimeout(function() {
-            nav.classList.remove('active');
-            nav.classList.remove('esc');
-        }, 850);
-	} else {
-		nav.classList.add('active');
-	}
-});
-
-function hamburgerHide() {
-	nav.classList.remove('page-header__nav--show');
-	hamburger.classList.remove('hamburger__click');
+function addAnimationDelay(element, start, diff) {
+	element.forEach((el, i) => {
+	  el.style.animationDelay = `${i * diff + start}ms`;
+	});	
 }
+
+/*--- hamburger.js ---*/
+// let hamburger = document.querySelector('.page-header__toggle-nav');
+// let nav = document.querySelector('.page-header__nav');
+
+// hamburger.addEventListener('click', function (e) {
+// 	e.preventDefault();
+
+// 	if(this.classList.contains('hamburger__click')) {
+// 		hamburgerHide();
+// 	} else {
+// 		nav.classList.add('page-header__nav--show');
+// 		hamburger.classList.add('hamburger__click');
+// 	}
+
+// 	if(nav.classList.contains('active')) {
+// 		console.log('YES');
+// 		nav.classList.add('esc');
+// 		setTimeout(function() {
+//             nav.classList.remove('active');
+//             nav.classList.remove('esc');
+//         }, 850);
+// 	} else {
+// 		console.log('NO');
+// 		nav.classList.add('active');
+// 	}
+// });
+
+// function hamburgerHide() {
+// 	nav.classList.remove('page-header__nav--show');
+// 	hamburger.classList.remove('hamburger__click');
+// }
 
 
 // let menuItem = document.querySelectorAll('.menu__item > a');
