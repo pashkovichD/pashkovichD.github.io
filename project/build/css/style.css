@@ -1118,6 +1118,7 @@ picture {
 .sidebar__menu li > a:hover,
 .sidebar__menu li > a:focus {
   color: #cd4b44;
+  background-color: #f7f7f7;
 }
 .content {
   -webkit-box-flex: 1;
