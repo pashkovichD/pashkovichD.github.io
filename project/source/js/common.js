@@ -6,7 +6,7 @@ addAnimationDelay(sidebarMenu, 300, 150);
 function addAnimationDelay(element, start, diff) {
 	element.forEach((el, i) => {
 	  el.style.animationDelay = `${i * diff + start}ms`;
-	});	
+	});
 }
 
 /*--- hamburger.js ---*/

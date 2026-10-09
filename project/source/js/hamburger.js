@@ -6,9 +6,11 @@ hamburger.addEventListener('click', function (e) {
 
 	this.classList.toggle('hamburger__click');
 	if(this.classList.contains('hamburger__click')) {
-		nav.classList.add('page-header__nav--show');		
+		nav.classList.add('page-header__nav--show');
+		// document.body.classList.add('scroll-locked');
 	} else {
 		nav.classList.remove('page-header__nav--show');
+		// document.body.classList.remove('scroll-locked');
 	}
 
 	if(nav.classList.contains('active')) {
