@@ -7,18 +7,18 @@
 }
 
 .sidebar__menu {
+	position: relative;
 	// padding: 5px 4px 5px 0;
+	z-index: 1;
 	li {
-
 		animation-fill-mode: forwards;
 		animation-duration: .3s;
 		animation-name: openMenuAnimationList;
-		opacity: 0;	
-
+		opacity: 0;
 		margin-bottom: 2px;
 		& > a {
 			display: block;
-			padding: 10px 20px 10px 15px;
+			padding: 10px 35px 10px 15px;
 			font-size: 14px;
 			line-height: 22px;
 			font-weight: 500;
@@ -32,6 +32,52 @@
 				color: @red;
 				background-color: #f7f7f7;
 				box-shadow: none;
+				&::after {
+					border-color: @red;
+				}
+			}
+		}
+	}
+	.item-with-submenu {
+		& > a {
+			// position: relative;
+			&::after {
+				position: absolute;
+				top: 50%;
+    			right: 20px;
+				content: '';
+				width: 5px;
+				height: 5px;
+				margin-top: -2px;				
+				border-right: 1px solid #000000;
+    			border-bottom: 1px solid #000000;
+    			transform: rotate(-45deg);
+    			transition: @animation;
+			}
+		}
+	}
+	.submenu {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		width: 250%;
+		padding: 30px;
+		background-color: #ffffff;
+		min-height: calc(100% + 1px);
+		li {
+			a {
+				padding: 10px 15px;
+				box-shadow: none;
+				border-radius: 10px;
+				border: 1px solid @red;
+				&:hover,
+				&:focus {
+					color: #ffffff;
+					background-color: @red;
+				}
 			}
 		}
 	}
