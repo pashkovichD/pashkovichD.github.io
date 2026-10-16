@@ -11,11 +11,13 @@
 	// padding: 5px 4px 5px 0;
 	z-index: 1;
 	li {
+		position: static;
 		animation-fill-mode: forwards;
 		animation-duration: .3s;
 		animation-name: openMenuAnimationList;
 		opacity: 0;
 		margin-bottom: 2px;
+		box-sizing: border-box;
 		& > a {
 			display: block;
 			padding: 10px 35px 10px 15px;
@@ -40,7 +42,7 @@
 	}
 	.item-with-submenu {
 		& > a {
-			// position: relative;
+			position: relative;
 			&::after {
 				position: absolute;
 				top: 50%;
@@ -67,6 +69,8 @@
 		padding: 30px;
 		background-color: #ffffff;
 		min-height: calc(100% + 1px);
+		transition: all .2s ease-out;
+    	transition-delay: .15s;
 		li {
 			a {
 				padding: 10px 15px;

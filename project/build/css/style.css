@@ -1266,6 +1266,7 @@ picture {
   z-index: 1;
 }
 .sidebar__menu li {
+  position: static;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.3s;
@@ -1274,6 +1275,8 @@ picture {
           animation-name: openMenuAnimationList;
   opacity: 0;
   margin-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .sidebar__menu li > a {
   display: block;
@@ -1298,6 +1301,9 @@ picture {
 .sidebar__menu li > a:hover::after,
 .sidebar__menu li > a:focus::after {
   border-color: #cd4b44;
+}
+.sidebar__menu .item-with-submenu > a {
+  position: relative;
 }
 .sidebar__menu .item-with-submenu > a::after {
   position: absolute;
@@ -1329,6 +1335,10 @@ picture {
   padding: 30px;
   background-color: #ffffff;
   min-height: calc(100% + 1px);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 .sidebar__menu .submenu li a {
   padding: 10px 15px;
