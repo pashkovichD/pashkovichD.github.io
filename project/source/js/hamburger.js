@@ -1,5 +1,5 @@
-var hamburger = document.querySelector('.page-header__toggle-nav');
-var nav = document.querySelector('.page-header__nav');
+let hamburger = document.querySelector('.page-header__toggle-nav');
+let nav = document.querySelector('.page-header__nav');
 
 hamburger.addEventListener('click', function (e) {
 	e.preventDefault();
@@ -14,14 +14,14 @@ hamburger.addEventListener('click', function (e) {
 	}
 
 	if(nav.classList.contains('active')) {
-		console.log('YES');
+		// console.log('YES');
 		nav.classList.add('esc');
 		setTimeout(function() {
             nav.classList.remove('active');
             nav.classList.remove('esc');
         }, 850);
 	} else {
-		console.log('NO');
+		// console.log('NO');
 		nav.classList.add('active');
 	}
 });

@@ -9,6 +9,79 @@ function addAnimationDelay(element, start, diff) {
 	});
 }
 
+// let element = document.querySelector('main');
+// getTopOverlay();
+window.addEventListener('resize', () => {
+  // getTopOverlay();
+});
+
+// function getTopOverlay() {	
+// 	let main = element.getBoundingClientRect();
+// 	let topPosition = main.top; // Выведет расстояние от верха элемента до верха видимой области	
+// 	overlay.style.top = topPosition - 20 + 'px';
+// }
+
+let btnCatalog = document.querySelector('.btn-catalog');
+let sidebarMenuList = document.querySelector('.sidebar__menu');
+let overlay = document.querySelector('.overlay');
+
+btnCatalog.addEventListener('click', (e) => {
+	e.preventDefault();
+	overlay.classList.toggle('overlay-show');
+	sidebarMenuList.classList.toggle('sidebar__menu-show');
+
+	if(hamburger.classList.contains('hamburger__click')) {
+		hamburger.classList.remove('hamburger__click');
+		nav.classList.remove('page-header__nav--show');
+
+		if(nav.classList.contains('active')) {
+			nav.classList.add('esc');
+			setTimeout(function() {
+	            nav.classList.remove('active');
+	            nav.classList.remove('esc');
+	        }, 850);
+		} else {
+			nav.classList.add('active');
+		}
+	}
+});
+
+/*--- hamburger.js ---*/
+let hamburger = document.querySelector('.page-header__toggle-nav');
+let nav = document.querySelector('.page-header__nav');
+
+hamburger.addEventListener('click', function (e) {
+	e.preventDefault();
+
+	this.classList.toggle('hamburger__click');
+	if(this.classList.contains('hamburger__click')) {
+		nav.classList.add('page-header__nav--show');
+	} else {
+		nav.classList.remove('page-header__nav--show');
+	}
+
+	if(sidebarMenuList.classList.contains('sidebar__menu-show')) {
+		overlay.classList.remove('overlay-show');
+		sidebarMenuList.classList.remove('sidebar__menu-show');
+	}
+
+	if(nav.classList.contains('active')) {
+		nav.classList.add('esc');
+		setTimeout(function() {
+            nav.classList.remove('active');
+            nav.classList.remove('esc');
+        }, 850);
+	} else {
+		nav.classList.add('active');
+	}
+});
+
+
+
+
+
+
+
 /*--- hamburger.js ---*/
 // let hamburger = document.querySelector('.page-header__toggle-nav');
 // let nav = document.querySelector('.page-header__nav');

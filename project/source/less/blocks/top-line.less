@@ -3,10 +3,12 @@
 }
 
 .top-line {
+	position: relative;
 	// display: flex;
 	min-height: 40px;
 	margin-bottom: 20px;
 	background-color: @brown;
+	z-index: 100;
 	.btn-catalog {
 		display: flex;
 		align-items: center;
@@ -85,6 +87,12 @@
     to {
         transform: translateX(-100%);
     }
+}
+
+@media (max-width: 1100px) {
+	.btn-catalog {
+		cursor: pointer;
+	}
 }
 
 @media (max-width: 600px) {
