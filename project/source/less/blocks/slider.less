@@ -9,6 +9,7 @@
 .slider__item {
 	position: relative;
 	max-height: 450px;
+	margin-bottom: 30px;
 	overflow: hidden;
 	border-radius: 4px;
 	picture {
@@ -106,7 +107,12 @@
 		}
 	}
 
+	.slider__item {
+		max-height: none;
+	}
+
 	.slider__description {
+		position: static;
 		top: 100%;
 		bottom: auto;
 		text-align: center;

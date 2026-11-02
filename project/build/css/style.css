@@ -1300,6 +1300,7 @@ picture {
 .sidebar__menu li {
   display: list-item;
   padding-top: 40px;
+  padding-bottom: 2px;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.3s;
@@ -1307,7 +1308,6 @@ picture {
   -webkit-animation-name: openSidebarAnimationList;
           animation-name: openSidebarAnimationList;
   opacity: 0;
-  margin-bottom: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all 0.25s ease-out;
@@ -1511,6 +1511,7 @@ ul.submenu li a:focus {
 .slider__item {
   position: relative;
   max-height: 450px;
+  margin-bottom: 30px;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -1591,7 +1592,11 @@ ul.submenu li a:focus {
   .slider__item picture img {
     border-radius: 4px 4px 0 0;
   }
+  .slider__item {
+    max-height: none;
+  }
   .slider__description {
+    position: static;
     top: 100%;
     bottom: auto;
     text-align: center;
