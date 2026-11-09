@@ -307,6 +307,9 @@ template {
 [hidden] {
   display: none;
 }
+.swiper-slide {
+  width: 100% !important;
+}
 /*--- Montserrat ---*/
 @font-face {
   font-family: 'Montserrat';

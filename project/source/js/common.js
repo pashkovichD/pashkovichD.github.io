@@ -79,6 +79,71 @@ hamburger.addEventListener('click', function (e) {
 
 
 
+/*--- swiper.js ---*/
+const swiper = new Swiper('.slider__list', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  // // direction: 'horizontal',
+  loop: false,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.pagination__tverdomery .next',
+    prevEl: '.pagination__tverdomery .prev',
+  },
+
+  // breakpoints: {    
+  //   // when window width is >= 768px
+  //   // 768: {
+  //   //     slidesPerView: 2,
+  //   //     spaceBetween: 0        
+  //   // },
+  //   // 960: {       
+  //   //     spaceBetween: 30
+  //   // },
+  //   // 1600: {
+  //   //     slidesPerView: 3        
+  //   // }
+
+  //   // 768: {
+  //   //     slidesPerView: 2,
+  //   //     spaceBetween: 0,
+  //   //     width: 700, // ширина смещения слайдера
+  //   // },
+  //   // 960: {       
+  //   //     slidesPerView: 2,
+  //   //     spaceBetween: 30,
+  //   //     width: 800, // ширина смещения слайдера
+  //   // },
+  //   // 1200: {       
+  //   //     slidesPerView: 2,
+  //   //     spaceBetween: 30,
+  //   //     width: 800, // ширина смещения слайдера
+  //   // },
+  //   // 1400: {       
+  //   //     slidesPerView: 2,
+  //   //     spaceBetween: 30,
+  //   //     width: 800, // ширина смещения слайдера
+  //   // },
+  //   // 1600: {
+  //   //     slidesPerView: 3,
+  //   //     spaceBetween: 30,
+  //   //     width: 1314, // ширина смещения слайдера
+  //   // }
+  // }
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

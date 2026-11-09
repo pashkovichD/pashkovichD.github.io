@@ -15,6 +15,11 @@
 	
 	<link rel="preload" fetchpriority="high" as="image" href="img/honeycomb.webp" type="image/webp"> -->
 
+	<!-- локально -->
+	<link rel="stylesheet" href="css/swiper/swiper-bundle.css">
+	<!-- <script src="js/swiper/swiper-bundle.min.js"></script> -->
+	<!-- локально -->
+
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -161,38 +166,73 @@
 		<div class="content">
 			<section class="slider">
 				<h2 class="visually-hidden">Презентация услуг компании</h2>
-				<ul class="slider__list">
-					<li class="slider__item">
-						<picture>
-							<!-- <source type="image/webp" srcset="https://jreo.by/wp-content/uploads/2020/04/photo1.webp 1x, https://jreo.by/wp-content/uploads/2020/04/photo1@2x.webp 2x"> -->
-							<img src="img/slider/slider-1.webp" srcset="img/slider/slider-1@2x.webp 2x" alt="Адресные таблички">
-						</picture>
-						<div class="slider__description">
-							<h3 class="slider__title">Адресные таблички под заказ</h3>
-							<p class="slider__text">Изготовление адресных табличек, для частных домов, организаций, парковок и общественных мест</p>
+				<div class="slider__list swiper">
+					<div class="swiper-wrapper">
+						<div class="slider__item swiper-slide">
+							<picture>
+								<!-- <source type="image/webp" srcset="https://jreo.by/wp-content/uploads/2020/04/photo1.webp 1x, https://jreo.by/wp-content/uploads/2020/04/photo1@2x.webp 2x"> -->
+								<img src="img/slider/slider-1.webp" srcset="img/slider/slider-1@2x.webp 2x" alt="Адресные таблички">
+							</picture>
+							<div class="slider__description">
+								<h3 class="slider__title">Адресные таблички под заказ</h3>
+								<p class="slider__text">Изготовление адресных табличек, для частных домов, организаций, парковок и общественных мест</p>
+							</div>
 						</div>
-					</li>
-					<li class="slider__item">
-						<picture>
-							<!-- <source type="image/webp" srcset="https://jreo.by/wp-content/uploads/2020/04/photo1.webp 1x, https://jreo.by/wp-content/uploads/2020/04/photo1@2x.webp 2x"> -->
-							<img src="img/slider/slider-2.webp" srcset="img/slider/slider-2@2x.webp 2x" alt="Информационные стенды">
-						</picture>
-						<div class="slider__description">
-							<h3 class="slider__title">Информационные стенды</h3>
-							<p class="slider__text">Создание эффективных визуальных решений для представления информации</p>
+						<div class="slider__item swiper-slide">
+							<picture>
+								<!-- <source type="image/webp" srcset="https://jreo.by/wp-content/uploads/2020/04/photo1.webp 1x, https://jreo.by/wp-content/uploads/2020/04/photo1@2x.webp 2x"> -->
+								<img src="img/slider/slider-2.webp" srcset="img/slider/slider-2@2x.webp 2x" alt="Информационные стенды">
+							</picture>
+							<div class="slider__description">
+								<h3 class="slider__title">Информационные стенды</h3>
+								<p class="slider__text">Создание эффективных визуальных решений для представления информации</p>
+							</div>
 						</div>
-					</li>
-					<li class="slider__item">
-						<picture>
-							<!-- <source type="image/webp" srcset="https://jreo.by/wp-content/uploads/2020/04/photo1.webp 1x, https://jreo.by/wp-content/uploads/2020/04/photo1@2x.webp 2x"> -->
-							<img src="img/slider/slider-3.webp" srcset="img/slider/slider-3@2x.webp 2x" alt="Информационные стенды">
-						</picture>
-						<div class="slider__description">
-							<h3 class="slider__title">Изготовление схем</h3>
-							<p class="slider__text">Делаем информацию доступной, наглядной и понятной для пользователя</p>
+						<div class="slider__item swiper-slide">
+							<picture>
+								<!-- <source type="image/webp" srcset="https://jreo.by/wp-content/uploads/2020/04/photo1.webp 1x, https://jreo.by/wp-content/uploads/2020/04/photo1@2x.webp 2x"> -->
+								<img src="img/slider/slider-3.webp" srcset="img/slider/slider-3@2x.webp 2x" alt="Информационные стенды">
+							</picture>
+							<div class="slider__description">
+								<h3 class="slider__title">Изготовление схем</h3>
+								<p class="slider__text">Делаем информацию доступной, наглядной и понятной для пользователя</p>
+							</div>
 						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
+
+				<!-- <div class="slider__list swiper">
+					<div class="swiper-wrapper">
+						<div class="slider__item swiper-slide">
+							<picture>
+								<img src="img/slider/slider-1.webp" srcset="img/slider/slider-1@2x.webp 2x" alt="Адресные таблички">
+							</picture>
+							<div class="slider__description">
+								<h3 class="slider__title">Адресные таблички под заказ</h3>
+								<p class="slider__text">Изготовление адресных табличек, для частных домов, организаций, парковок и общественных мест</p>
+							</div>
+						</div>
+						<div class="slider__item swiper-slide">
+							<picture>
+								<img src="img/slider/slider-2.webp" srcset="img/slider/slider-2@2x.webp 2x" alt="Информационные стенды">
+							</picture>
+							<div class="slider__description">
+								<h3 class="slider__title">Информационные стенды</h3>
+								<p class="slider__text">Создание эффективных визуальных решений для представления информации</p>
+							</div>
+						</div>
+						<div class="slider__item swiper-slide">
+							<picture>
+								<img src="img/slider/slider-3.webp" srcset="img/slider/slider-3@2x.webp 2x" alt="Информационные стенды">
+							</picture>
+							<div class="slider__description">
+								<h3 class="slider__title">Изготовление схем</h3>
+								<p class="slider__text">Делаем информацию доступной, наглядной и понятной для пользователя</p>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
 			</section>
 
 			<div class="px1000"></div>
@@ -258,6 +298,7 @@
 	</footer>
 
 	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/swiper/swiper-bundle.min.js"></script>
 	<script async="" src="js/jquery.maskedinput.min.js"></script>
 	<script async="" src="js/maskedinput.min.js"></script>
 
