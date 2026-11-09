@@ -88,11 +88,26 @@ const swiper = new Swiper('.slider__list', {
   // // direction: 'horizontal',
   loop: false,
 
-  // Navigation arrows
+  // pagination: {
+  //   el: '.slider__pagination',
+  //   clickable: true
+  // },
   navigation: {
-    nextEl: '.pagination__tverdomery .next',
-    prevEl: '.pagination__tverdomery .prev',
+    nextEl: '.slider__next',
+    prevEl: '.slider__prev',
   },
+  
+
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true
+  // },
+
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: '.next',
+  //   prevEl: '.prev',
+  // },
 
   // breakpoints: {    
   //   // when window width is >= 768px
@@ -133,6 +148,21 @@ const swiper = new Swiper('.slider__list', {
   //   //     width: 1314, // ширина смещения слайдера
   //   // }
   // }
+});
+
+
+swiper.on('slideChangeTransitionStart', () => {
+  document.querySelectorAll('.slider__description').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateX(-120px)';
+  });
+});
+
+swiper.on('slideChangeTransitionEnd', () => {
+  document.querySelectorAll('.swiper-slide-active .slider__description').forEach(el => {
+    el.style.opacity = '1';
+    el.style.transform = 'translateX(0)';
+  });
 });
 
 
