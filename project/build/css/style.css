@@ -1926,14 +1926,10 @@ ul.submenu li a:focus {
   right: 45px;
 }
 .slider__next::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  margin-left: -23px;
-  border-top: 2px solid rgba(255, 255, 255, 0.7);
-  border-left: 2px solid rgba(255, 255, 255, 0.7);
+  left: auto;
+  right: 50%;
+  margin-left: auto;
+  margin-right: -7px;
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
