@@ -84,9 +84,6 @@ const swiper = new Swiper('.slider__list', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 30,
-  // width: 500,
-  // centeredSlides: true,
-
   // // direction: 'horizontal',
   loop: true,
 
@@ -99,18 +96,6 @@ const swiper = new Swiper('.slider__list', {
     prevEl: '.slider__prev',
   },
   
-
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true
-  // },
-
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: '.next',
-  //   prevEl: '.prev',
-  // },
-
   breakpoints: {    
     // when window width is >= 768px
     // 768: {
