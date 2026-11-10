@@ -84,9 +84,11 @@ const swiper = new Swiper('.slider__list', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 30,
+  // width: 500,
+  // centeredSlides: true,
 
   // // direction: 'horizontal',
-  loop: false,
+  loop: true,
 
   // pagination: {
   //   el: '.slider__pagination',
@@ -109,73 +111,67 @@ const swiper = new Swiper('.slider__list', {
   //   prevEl: '.prev',
   // },
 
-  // breakpoints: {    
-  //   // when window width is >= 768px
-  //   // 768: {
-  //   //     slidesPerView: 2,
-  //   //     spaceBetween: 0        
-  //   // },
-  //   // 960: {       
-  //   //     spaceBetween: 30
-  //   // },
-  //   // 1600: {
-  //   //     slidesPerView: 3        
-  //   // }
+  breakpoints: {    
+    // when window width is >= 768px
+    // 768: {
+    //     slidesPerView: auto,
+    //     // spaceBetween: 0
+    // },
+    // 960: {       
+    //     spaceBetween: 30
+    // },
+    // 1600: {
+    //     slidesPerView: 3        
+    // }
 
-  //   // 768: {
-  //   //     slidesPerView: 2,
-  //   //     spaceBetween: 0,
-  //   //     width: 700, // ширина смещения слайдера
-  //   // },
-  //   // 960: {       
-  //   //     slidesPerView: 2,
-  //   //     spaceBetween: 30,
-  //   //     width: 800, // ширина смещения слайдера
-  //   // },
-  //   // 1200: {       
-  //   //     slidesPerView: 2,
-  //   //     spaceBetween: 30,
-  //   //     width: 800, // ширина смещения слайдера
-  //   // },
-  //   // 1400: {       
-  //   //     slidesPerView: 2,
-  //   //     spaceBetween: 30,
-  //   //     width: 800, // ширина смещения слайдера
-  //   // },
-  //   // 1600: {
-  //   //     slidesPerView: 3,
-  //   //     spaceBetween: 30,
-  //   //     width: 1314, // ширина смещения слайдера
-  //   // }
-  // }
+    // 768: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 0,
+    //     width: 700, // ширина смещения слайдера
+    // },
+    // 960: {       
+    //     slidesPerView: 2,
+    //     spaceBetween: 30,
+    //     width: 800, // ширина смещения слайдера
+    // },
+    // 1200: {       
+    //     slidesPerView: 2,
+    //     spaceBetween: 30,
+    //     width: 800, // ширина смещения слайдера
+    // },
+    // 1400: {       
+    //     slidesPerView: 2,
+    //     spaceBetween: 30,
+    //     width: 800, // ширина смещения слайдера
+    // },
+    // 1600: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30,
+    //     width: 1314, // ширина смещения слайдера
+    // }
+  }
 });
 
 
+const sliderDescription = document.querySelectorAll('.slider__description');
+
+addClassShowDescription();
+
 swiper.on('slideChangeTransitionStart', () => {
-  document.querySelectorAll('.slider__description').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateX(-120px)';
+  sliderDescription.forEach(el => {
+    el.classList.remove('slider__description-show');
   });
 });
 
 swiper.on('slideChangeTransitionEnd', () => {
-  document.querySelectorAll('.swiper-slide-active .slider__description').forEach(el => {
-    el.style.opacity = '1';
-    el.style.transform = 'translateX(0)';
-  });
+  addClassShowDescription();
 });
 
-
-
-
-
-
-
-
-
-
-
-
+function addClassShowDescription() {	
+	document.querySelectorAll('.swiper-slide-active .slider__description').forEach(el => {
+    el.classList.add('slider__description-show');
+  });
+}
 
 /*--- hamburger.js ---*/
 // let hamburger = document.querySelector('.page-header__toggle-nav');
